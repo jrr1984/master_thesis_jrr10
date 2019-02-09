@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 19:08
 entering extended mode
 **./ctutest.tex
 (ctutest.tex
@@ -1064,7 +1064,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 120.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<Figs/caratula/logo_uba.png, id=139, 224.84pt x 225.84375pt>
+<Figs/caratula/logo_uba.png, id=135, 224.84pt x 225.84375pt>
 File: Figs/caratula/logo_uba.png Graphic file (type png)
 <use Figs/caratula/logo_uba.png>
 Package pdftex.def Info: Figs/caratula/logo_uba.png  used on input line 120.
@@ -1311,17 +1311,15 @@ Package blindtext Warning: czech not defined, using English instead.
 Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 142.
 
-<ctu_logo_black.pdf, id=628, 366.36874pt x 279.0425pt>
-File: ctu_logo_black.pdf Graphic file (type pdf)
-<use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf  used on input line 157.
-(pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-<ctu_logo_blue.pdf, id=629, 366.36874pt x 279.0425pt>
-File: ctu_logo_blue.pdf Graphic file (type pdf)
-<use ctu_logo_blue.pdf>
-Package pdftex.def Info: ctu_logo_blue.pdf  used on input line 162.
-(pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-[34] [35 <./ctu_logo_black.pdf> <./ctu_logo_blue.pdf>] [36
+File: Figs/caratula/logo_uba.png Graphic file (type png)
+<use Figs/caratula/logo_uba.png>
+Package pdftex.def Info: Figs/caratula/logo_uba.png  used on input line 157.
+(pdftex.def)             Requested size: 145.19778pt x 145.85245pt.
+File: Figs/caratula/logo_uba.png Graphic file (type png)
+<use Figs/caratula/logo_uba.png>
+Package pdftex.def Info: Figs/caratula/logo_uba.png  used on input line 162.
+(pdftex.def)             Requested size: 145.19778pt x 145.85245pt.
+[34] [35] [36
 
 ]
 Kapitola 5.
@@ -1353,58 +1351,11 @@ P\v {r}\'{\i }loha A.
 
 ] [42]
 Missing character: There is no m in font rsfs10!
- [43]) [44]
-<ctutest-zadani.pdf, id=694, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 190.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 190.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<ctutest-zadani.pdf, id=697, page=1, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 190.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [45
-
- <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=719, page=2, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 190.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [46 <./ctutest-zadani.pdf>]
+ [43])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+ [44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
-
-(ctutest.aux)
+ (ctutest.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
 
 
@@ -1541,19 +1492,14 @@ Figs/caratula/logo_uba.png
   mt-euf.cfg    2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 ctutest-1.tex
 ctutest-2.tex
-ctu_logo_black.pdf    Graphic file (type pdf)
-ctu_logo_blue.pdf    Graphic file (type pdf)
+Figs/caratula/logo_uba.png
+Figs/caratula/logo_uba.png
  ctutest.bbl
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `ctutest.out' has not changed.
-(rerunfilecheck)             Checksum: DE4663853D2F1182BA27293C1E1179AC;2428.
+(rerunfilecheck)             Checksum: 6305486B75D03FCD6C7B1DED664FD36C;2360.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 7.81999pt have occurred.
@@ -1561,40 +1507,36 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 23269 strings out of 492946
- 405775 string characters out of 3135528
+ 23242 strings out of 492946
+ 405103 string characters out of 3135528
  685122 words of memory out of 3000000
- 26375 multiletter control sequences out of 15000+200000
+ 26356 multiletter control sequences out of 15000+200000
  650436 words of font info for 220 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,21n,63p,1598b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,21n,63p,1598b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
 .enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-ri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/rsfs/rsfs5.pfb>
-Output written on ctutest.pdf (54 pages, 757487 bytes).
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
+sbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs5.pfb>
+Output written on ctutest.pdf (52 pages, 608386 bytes).
 PDF statistics:
- 853 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 30521 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 30478 words of extra memory for PDF output out of 35830 (max. 10000000)
 

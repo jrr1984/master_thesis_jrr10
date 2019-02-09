@@ -61,4 +61,3 @@
 \contentsline {subsection}{\numberline {5.1.1}Yes, table of contents}{37}{subsection.5.1.1}% 
 \contentsline {part}{P\v r\'ilohy}{40}{part*.10}% 
 \contentsline {chapter}{\numberline {A}Literatura}{41}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}Zad\'an\'i\ pr\'ace}{45}{section*.11}% 
