@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 19:02
 entering extended mode
 **./ctuman-mwe.tex
 (ctuman-mwe.tex
@@ -991,11 +991,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<ctu_logo_black.pdf, id=15, 366.36874pt x 279.0425pt>
-File: ctu_logo_black.pdf Graphic file (type pdf)
-<use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf  used on input line 31.
-(pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
+<Figs/caratula/logo_uba.png, id=15, 224.84pt x 225.84375pt>
+File: Figs/caratula/logo_uba.png Graphic file (type png)
+<use Figs/caratula/logo_uba.png>
+Package pdftex.def Info: Figs/caratula/logo_uba.png  used on input line 31.
+(pdftex.def)             Requested size: 58.53935pt x 58.80002pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1011,8 +1011,8 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 31--31
 
 
 
-{C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./ctu_logo_
-black.pdf>]
+{C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figs/cara
+tula/logo_uba.png>]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 31.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1021,7 +1021,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2
+
+[2
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1057,8 +1058,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-[3
+ [3
 
 
 ] [4
@@ -1140,9 +1140,9 @@ Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 21920 strings out of 492946
- 384170 string characters out of 3135528
- 501810 words of memory out of 3000000
+ 21922 strings out of 492946
+ 384190 string characters out of 3135528
+ 501788 words of memory out of 3000000
  25500 multiletter control sequences out of 15000+200000
  594630 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1151,9 +1151,9 @@ Here is how much of TeX's memory you used:
 iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
 sbx10.pfb>
-Output written on ctuman-mwe.pdf (11 pages, 130461 bytes).
+Output written on ctuman-mwe.pdf (11 pages, 100751 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
  16926 words of extra memory for PDF output out of 17280 (max. 10000000)
 
