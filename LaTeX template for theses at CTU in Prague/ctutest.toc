@@ -5,7 +5,7 @@
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{paragraph*.1}% 
-\contentsline {paragraph}{Vedouc\IeC {\'\i }:}{iv}{paragraph*.2}% 
+\contentsline {paragraph}{Director:}{iv}{paragraph*.2}% 
 \babel@toc {english}{}
 \contentsline {paragraph}{Keywords:}{v}{paragraph*.3}% 
 \contentsline {paragraph}{Title\ translation:}{v}{paragraph*.4}% 
