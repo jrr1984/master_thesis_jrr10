@@ -8,7 +8,7 @@
 
 \message{*******************************************************************}
 \message{LaTeX template for PhD thesis}
-\message{(C) 2018  Jan Stránský  (jan.stransky@fsv.cvut.cz)}
+\message{(C) 2018  Jan Strnsk  (jan.stransky@fsv.cvut.cz)}
 \message{*******************************************************************}
 
 \NeedsTeXFormat{LaTeX2e}%[1996/12/01]
