@@ -1,0 +1,255 @@
+\documentclass[%
+	%handout
+]{phdpresentation}
+
+% example of new theorem-like box styles
+\newtheorem*{remark}{Remark}
+
+
+\begin{document}
+
+\outlineframe%[pausesections] % uncomment if you want the pausesections effect
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{First section}
+
+\subsection{Text}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\emph{\blindtextshortshort}\par
+	\textbf{\blindtextshortshort}\par
+	\textit{\blindtextshortshort}\par
+	\textsl{\blindtextshortshort}\par
+	\alert{\blindtextshortshort}\par
+	\textrm{\blindtextshortshort}\par
+	\textsf{\blindtextshortshort}\par
+	{\color{ctuGreen}{\blindtextshortshort}}\par
+	\structure{\blindtextshortshort}\par
+\end{frame}
+
+\subsection{Columns}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\centering
+	\begin{columns}
+		\begin{column}{.2\textwidth}
+			\blindtextshortshort
+		\end{column}
+		\begin{column}{.3\textwidth}
+			\blindtextshort
+		\end{column}
+		\begin{column}{.4\textwidth}
+			\blindtextshort
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\subsection{Two columns}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\begin{twocolumns}
+		\begin{onecolumn}
+			\blindtextshort
+		\end{onecolumn}
+		\begin{onecolumn}
+			\blindtextshort
+		\end{onecolumn}
+	\end{twocolumns}
+\end{frame}
+
+\subsection{Lists}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\begin{twocolumns}
+		\begin{onecolumn}
+			\blinditemize
+		\end{onecolumn}
+		\begin{onecolumn}
+			\blindenumerate
+		\end{onecolumn}
+	\end{twocolumns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\begin{twocolumns}
+		\begin{onecolumn}
+			\blinddescription
+		\end{onecolumn}
+		\begin{onecolumn}
+			\blindtextshort
+		\end{onecolumn}
+	\end{twocolumns}
+\end{frame}
+
+\subsection{Math}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\blindmathformula[0]
+	\blindmathformula[1]
+	\blindmathformula[2]
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Second section}
+\subsection{Blocks, theorems, \textellipsis}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\begin{block}{A block}
+		\blindtextshortshort
+		\blindenumerate[1]
+	\end{block}
+	\begin{exampleblock}{An exampleblock}
+		\blindtextshortshort
+		\blindenumerate[1]
+	\end{exampleblock}
+	\begin{alertblock}{An alertblock}
+		\blindtextshortshort
+		\blindenumerate[1]
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\begin{twocolumns}
+		\begin{onecolumn}
+			\begin{theorem}[some theorem]
+				\blindtextshortshortmath
+			\end{theorem}
+			\begin{lemma}[some lemma]
+				\blindtextshortshortmath
+			\end{lemma}
+			\begin{proof}[Proof of whatever]
+				\blindtextshortshortmath
+			\end{proof}
+		\end{onecolumn}
+		\begin{onecolumn}
+			\begin{definition}[some definition]
+				\blindtextshortshortmath
+			\end{definition}
+			\begin{corollary}[some corollary]
+				\blindtextshortshortmath
+			\end{corollary}
+			\begin{remark}[some remark]
+				\blindtextshortshortmath
+			\end{remark}
+		\end{onecolumn}
+	\end{twocolumns}
+\end{frame}
+
+\subsection{Graphics}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\blindtextshort
+	\par
+	\vspace{1em}
+	\includegraphics[width=.45\textwidth]{../figs/fig1}
+	\hfill
+	\includegraphics[width=.45\textwidth]{../figs/fig2}
+	\par
+	\vspace{1em}
+	\blindtextshortshort
+\end{frame}
+
+\subsection{Tables}
+\begin{frame}
+	\frametitle{\secname}
+	\framesubtitle{\subsecname}
+	\blindtextshort
+	\par
+	\vspace{1em}
+	\centering
+	\blindtabular
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\begin{frame}
+	\frametitle{\secname}
+	\begin{block}{Conclusions}
+		\blinditemize[3]
+	\end{block}
+	\begin{block}{Future work}
+		\blinditemize[3]
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{discussion}
+	
+\section{Opponent 1}
+\begin{questionframe}{1}
+	\begin{questionblock}
+		\blindquestion
+	\end{questionblock}
+	\begin{answerblock}
+		\blindtextshort
+	\end{answerblock}
+\end{questionframe}
+
+\begin{questionframe}{2}
+	\begin{questionblock}
+		\blindquestion
+	\end{questionblock}
+	\begin{answerblock}
+		\blindtextshortshort
+		\par
+		\vspace{1em}
+		\centering
+		\includegraphics[height=2cm]{../figs/fig1}
+	\end{answerblock}
+\end{questionframe}
+
+\section{Opponent 2}
+\begin{questionframe}{1}
+	\begin{questionblock}
+		\blindquestion
+	\end{questionblock}
+	\begin{answerblock}
+		\begin{center}
+			\includegraphics[height=2cm]{../figs/fig2}
+		\end{center}
+		\vspace{1em}
+		\blindtextshortshort
+	\end{answerblock}
+\end{questionframe}
+
+\begin{questionframe}{2}
+	\begin{questionblock}
+		\blindquestion
+	\end{questionblock}
+	\begin{answerblock}
+		\begin{center}
+			\blindtabular
+		\end{center}
+	\end{answerblock}
+\end{questionframe}
+
+\begin{questionframe}{3}
+	\begin{questionblock}
+		\blindquestion
+	\end{questionblock}
+	\begin{answerblock}
+		\blindtextshortshort
+		\blindmathformula[3]
+		\blindtextshortshort
+		\blindmathformula[4]
+	\end{answerblock}
+\end{questionframe}
+
+\end{discussion}
+
+\end{document}
