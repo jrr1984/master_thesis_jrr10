@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.9)  9 FEB 2019 18:17
 entering extended mode
 **./ctutest.tex
 (ctutest.tex
@@ -210,6 +210,20 @@ File: bk11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 ) (ctuth-names.tex
 File: ctuthesis-names.def 2014/01/18 v0.1 "Names"partoftheclassctuthesis
 ))
+
+! LaTeX3 Error: Key 'ctuthesis/mainlanguage' accepts only a fixed set of
+(LaTeX3)        choices.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.42 }
+      
+
+The key 'ctuthesis/mainlanguage' only accepts predefined values, and 'spanish'
+is not one of these.
+
+
 (ctuth-pkg.tex
 File: ctuth-pkg.tex 2016/06/15 v0.1t1606152353 "Packages" part of the class ctu
 thesis
@@ -370,6 +384,44 @@ Package: babel 2018/11/13 3.27 The Babel package
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
 File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.339 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.339 \ProcessOptions*
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.339 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.339 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@use@ption ...sname ds@\CurrentOption \endcsname 
+                                                  
+l.339 \ProcessOptions*
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
 *************************************
 * Local config file bblopts.cfg used
 *
@@ -405,19 +457,48 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-czech\czech.ldf"
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.469 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.469 \ProcessOptions*
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.469 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \g_ctuthesis_field_mainlanguage_tl 
+l.469 \ProcessOptions*
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@use@ption ...sname ds@\CurrentOption \endcsname 
+                                                  
+l.469 \ProcessOptions*
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
-Language: english 2017/06/06 v3.3r English support from the babel system
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-czech\czech.ldf"
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
-))
 \g_ctuthesis_geometry_textwidth_dim=\dimen143
 \g_ctuthesis_geometry_textheight_dim=\dimen144
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
@@ -1015,14 +1096,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 119.
 
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 119.
 
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 119
@@ -1076,496 +1191,93 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 119.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 119--119
-[]|| [][][] 
- []
-
-[1
-
-
-
-{C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figs/cara
-tula/logo_uba.png>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 119.
-
- ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-[2
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* vratio: 5:6
-* modes: twoside 
-* h-part:(L,W,R)=(93.8031pt, 420.0pt, 83.70477pt)
-* v-part:(T,H,B)=(96.02798pt, 633.78513pt, 115.23373pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=420.0pt
-* \textheight=633.78513pt
-* \oddsidemargin=21.53311pt
-* \evensidemargin=11.43478pt
-* \topmargin=-12.1158pt
-* \headheight=16.0pt
-* \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=90.70477pt
-* \marginparsep=10.0pt
-* \columnsep=30.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
- [3
-
-
-]
-LaTeX Font Info:    Try loading font information for U+euf on input line 119.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd"
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/microtype\mt-euf.cfg"
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-
-) [4
-
-] [5
-
-]
-(ctutest.toc [6
-
-])
-\tf@toc=\write5
-\openout5 = `ctutest.toc'.
-
- [7
-
-] (ctutest.lof)
-\tf@lof=\write6
-\openout6 = `ctutest.lof'.
 
- (ctutest.lot)
-\tf@lot=\write7
-\openout7 = `ctutest.lot'.
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
 
- [8
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
 
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* vratio: 5:6
-* modes: twoside 
-* h-part:(L,W,R)=(93.8031pt, 363.0pt, 140.70477pt)
-* v-part:(T,H,B)=(96.02798pt, 633.78513pt, 115.23373pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=363.0pt
-* \textheight=633.78513pt
-* \oddsidemargin=21.53311pt
-* \evensidemargin=68.43478pt
-* \topmargin=-12.1158pt
-* \headheight=16.0pt
-* \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=90.70477pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+LaTeX does not know anything more about this error, sorry.
 
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 
-Kapitola 1.
-[1
 
+LaTeX Font Info:    Calculating math sizes for size <32.7> on input line 119.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <32.7> on input line 119.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <22.8899> on input line 119.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <16.34999> on input line 119.
 
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <32.7> not available
+(Font)              size <24.88> substituted on input line 119.
 
 
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <22.8899> not available
+(Font)              size <24.88> substituted on input line 119.
 
-] [2
 
-]
-Overfull \vbox (15.52438pt too high) has occurred while \output is active []
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16.34999> not available
+(Font)              size <17.28> substituted on input line 119.
 
 
-[3] [4
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
 
-] (ctutest-1.tex
-Kapitola 2.
-[5
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
 
-]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 50.
- [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]) (ctutest-2.tex [16]
-Kapitola 3.
-[17
+LaTeX does not know anything more about this error, sorry.
 
-] [18] [19] [20] [21] [22]
-Underfull \vbox (badness 2393) has occurred while \output is active []
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 
- [23]
-[24] [25] [26] [27]) [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29
 
-]
-Overfull \vbox (15.52438pt too high) has occurred while \output is active []
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
 
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
 
-[30]
-Kapitola 4.
+LaTeX does not know anything more about this error, sorry.
 
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 
 
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
 
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
 
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
+Type <return> to continue.
+ ...                                              
+                                                  
+l.119 \maketitle
+                
 
+LaTeX does not know anything more about this error, sorry.
 
-Underfull \vbox (badness 1259) has occurred while \output is active []
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 
- [31
 
 
-]
+! Package ctuthesis Error: Field 'titlelanguage' has not been defined for use
+(ctuthesis)                with \ctufield.
 
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-
-Underfull \vbox (badness 5316) has occurred while \output is active []
-
- [32]
-
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-[33]
-
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-<ctu_logo_black.pdf, id=628, 366.36874pt x 279.0425pt>
-File: ctu_logo_black.pdf Graphic file (type pdf)
-<use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf  used on input line 156.
-(pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-<ctu_logo_blue.pdf, id=629, 366.36874pt x 279.0425pt>
-File: ctu_logo_blue.pdf Graphic file (type pdf)
-<use ctu_logo_blue.pdf>
-Package pdftex.def Info: ctu_logo_blue.pdf  used on input line 161.
-(pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-[34] [35 <./ctu_logo_black.pdf> <./ctu_logo_blue.pdf>] [36
-
-]
-Kapitola 5.
-[37] [38]
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 181.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39
-
-]
-Overfull \vbox (15.52438pt too high) has occurred while \output is active []
-
-
-[40]
-No file ctutest.ind.
-
-Package ctuthesis Warning: The macro \appendix should be used only once.
-(ctuthesis)                Silently ignoring.
-
-(ctutest.bbl
-P\v {r}\'{\i }loha A.
-[41
-
-
-] [42]
-Missing character: There is no m in font rsfs10!
- [43]) [44]
-<ctutest-zadani.pdf, id=694, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<ctutest-zadani.pdf, id=697, page=1, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
-(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [45
-
- <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=719, page=2, 597.50786pt x 845.04686pt>
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
-File: ctutest-zadani.pdf Graphic file (type pdf)
-<use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 189.
-(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [46 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
-
-(ctutest.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-
-
- *File List*
-ctuthesis.cls    2016/06/15 v0.1 t1606152353 Class for typesetting CTU theses a
-nd alike
-   expl3.sty    2019-01-28 L3 programming layer (loader) 
-expl3-code.tex    2019-01-28 L3 programming layer 
-l3pdfmode.def    2019-01-28 v L3 Experimental driver: PDF mode
-l3keys2e.sty    2018-10-17 LaTeX2e option processing using LaTeX3 keys
- environ.sty    2014/05/04 v0.3 A new way to define environments
-trimspaces.sty    2009/09/17 v1.1 Trim spaces around a token list
-  xparse.sty    2018-10-17 L3 Experimental document command parser
-inputenc.sty    2018/08/11 v1.3c Input encoding file
-ctuth-core.tex    2016/06/15 v0.1t1606152353 "Core" part of the class ctuthesis
-
-    book.cls    2018/09/03 v1.4i Standard LaTeX document class
-    bk11.clo    2018/09/03 v1.4i Standard LaTeX file (size option)
-ctuth-names.tex
-ctuth-pkg.tex    2016/06/15 v0.1t1606152353 "Packages" part of the class ctuthe
-sis
- lmodern.sty    2009/10/30 v1.6 Latin Modern Fonts
- fontenc.sty
-   t1enc.def    2018/08/11 v2.0j Standard LaTeX file
-microtype.sty    2018/01/14 v2.7a Micro-typographical refinements (RS)
-  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
-microtype-pdftex.def    2018/01/14 v2.7a Definitions specific to pdftex (RS)
-microtype.cfg    2018/01/14 v2.7a microtype main configuration file (RS)
-graphicx.sty    2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-graphics.sty    2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-    trig.sty    2016/01/03 v1.10 sin cos tan (DPC)
-graphics.cfg    2016/06/04 v1.11 sample graphics configuration
-  pdftex.def    2018/01/08 v1.0l Graphics/color driver for pdftex
-pdfpages.sty    2017/10/31 v0.5l Insert pages of external PDF documents (AM)
-  ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-    calc.sty    2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
- eso-pic.sty    2018/04/12 v2.0h eso-pic (RN)
-atbegshi.sty    2016/06/09 v1.18 At begin shipout hook (HO)
-infwarerr.sty    2016/05/16 v1.4 Providing info/warning/error messages (HO)
- ltxcmds.sty    2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-   ifpdf.sty    2018/09/07 v3.3 Provides the ifpdf switch
-  xcolor.sty    2016/05/11 v2.12 LaTeX color extensions (UK)
-   color.cfg    2016/01/02 v1.6 sample color configuration
-pppdftex.def    2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
-   babel.sty    2018/11/13 3.27 The Babel package
- bblopts.cfg    2005/09/08 v0.1 add Arabic and Farsi to "declared" options of b
-abel
-   czech.ldf    2008/07/06 v3.1a Czech support from the babel system
-  slovak.ldf    2008/07/06 v3.1a Slovak support from the babel system
- english.ldf    2017/06/06 v3.3r English support from the babel system
-   czech.ldf    2008/07/06 v3.1a Czech support from the babel system
- english.ldf    2017/06/06 v3.3r English support from the babel system
-   czech.ldf    2008/07/06 v3.1a Czech support from the babel system
-geometry.sty    2018/04/16 v5.8 Page Geometry
-  ifvtex.sty    2016/05/16 v1.6 Detect VTeX and its facilities (HO)
- ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
-geometry.cfg
-titlesec.sty    2016/03/21 v2.10.2 Sectioning titles
-fancyhdr.sty    2019/01/31 v3.10 Extensive control of page headers and footers
-  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
-   float.sty    2001/11/08 v1.3d Float enhancements (AL)
- caption.sty    2018/10/06 v3.3-154 Customizing captions (AR)
-caption3.sty    2018/09/12 v1.8c caption3 kernel (AR)
-booktabs.sty    2005/04/14 v1.61803 publication quality tables
- amsmath.sty    2018/12/01 v2.17b AMS math features
- amstext.sty    2000/06/29 v2.01 AMS text
-  amsgen.sty    1999/11/30 v2.0 generic functions
-  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
-  amsopn.sty    2016/03/08 v2.02 operator names
- amssymb.sty    2013/01/14 v3.01 AMS font symbols
-amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
-  amsthm.sty    2017/10/31 v2.20.4
- makeidx.sty    2014/09/29 v1.0m Standard LaTeX package
-multicol.sty    2018/12/27 v1.8v multicolumn formatting (FMi)
-hyperref.sty    2018/11/30 v6.88e Hypertext links for LaTeX
-hobsub-hyperref.sty    2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-hobsub-generic.sty    2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-  hobsub.sty    2016/05/16 v1.14 Construct package bundles (HO)
-ifluatex.sty    2016/05/16 v1.4 Provides the ifluatex switch (HO)
- intcalc.sty    2016/05/16 v1.2 Expandable calculations with integers (HO)
-etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-kvsetkeys.sty    2016/05/16 v1.17 Key value parser (HO)
-kvdefinekeys.sty    2016/05/16 v1.4 Define keys (HO)
-pdftexcmds.sty    2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
-pdfescape.sty    2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
-  bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
-uniquecounter.sty    2016/05/16 v1.3 Provide unlimited unique counter (HO)
-letltxmacro.sty    2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
- hopatch.sty    2016/05/16 v1.3 Wrapper for package hooks (HO)
-xcolor-patch.sty    2016/05/16 xcolor patch
-atveryend.sty    2016/05/16 v1.9 Hooks at the very end of document (HO)
-refcount.sty    2016/05/16 v3.5 Data extraction from label references (HO)
- hycolor.sty    2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
- auxhook.sty    2016/05/16 v1.4 Hooks for auxiliary files (HO)
-kvoptions.sty    2016/05/16 v3.12 Key value format for package options (HO)
-  pd1enc.def    2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
-hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
-     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
- hpdftex.def    2018/11/30 v6.88e Hyperref driver for pdfTeX
-rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-ctuth-templates.tex    2016/06/15 v0.1t1606152353 "Templates" part of the class
- ctuthesis
-  lineno.sty    2005/11/02 line numbers on paragraphs v4.41
-  lipsum.sty    2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
-  lipsum.ltd
-blindtext.sty    2012/01/06 V2.0 blindtext-Package
-  xspace.sty    2014/10/28 v1.13 Space after command names (DPC,MH)
-mathrsfs.sty    1996/01/01 Math RSFS package v1.0 (jk)
-   t1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
-  mt-cmr.cfg    2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
-RS)
-supp-pdf.mkii
-epstopdf-base.sty    2016/05/15 v2.6 Base part for package epstopdf
-  grfext.sty    2016/05/16 v1.2 Manage graphics extensions (HO)
-pdflscape.sty    2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-  lscape.sty    2000/10/22 v3.01 Landscape Pages (DPC)
- nameref.sty    2016/05/21 v2.44 Cross-referencing by name of section
-gettitlestring.sty    2016/05/16 v1.5 Cleanup title references (HO)
- ctutest.out
- ctutest.out
-  ot1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
-  omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
- omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
- omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
-    umsa.fd    2013/01/14 v3.01 AMS symbols A
-  mt-msa.cfg    2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-    umsb.fd    2013/01/14 v3.01 AMS symbols B
-  mt-msb.cfg    2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-   ursfs.fd    1998/03/24 rsfs font definition file (jk)
-Figs/caratula/logo_uba.png
-  t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
-    ueuf.fd    2013/01/14 v3.01 Euler Fraktur
-  mt-euf.cfg    2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-ctutest-1.tex
-ctutest-2.tex
-ctu_logo_black.pdf    Graphic file (type pdf)
-ctu_logo_blue.pdf    Graphic file (type pdf)
- ctutest.bbl
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
-ctutest-zadani.pdf    Graphic file (type pdf)
- ***********
-
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
-Package rerunfilecheck Info: File `ctutest.out' has not changed.
-(rerunfilecheck)             Checksum: DE4663853D2F1182BA27293C1E1179AC;2428.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
- ) 
-Here is how much of TeX's memory you used:
- 23217 strings out of 492946
- 404644 string characters out of 3135528
- 685048 words of memory out of 3000000
- 26325 multiletter control sequences out of 15000+200000
- 635242 words of font info for 202 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,21n,63p,1598b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
-.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-ri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/rsfs/rsfs10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/rsfs/rsfs5.pfb>
-Output written on ctutest.pdf (54 pages, 757944 bytes).
-PDF statistics:
- 853 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 28473 words of extra memory for PDF output out of 29859 (max. 10000000)
-
+Type <return> to continue.
+ ...                                              
+   
