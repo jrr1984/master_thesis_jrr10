@@ -29,10 +29,128 @@ Rozvíjíme \ldots
 
 \maketitle
 \renewcommand{\chaptername}{Capítulo}
-\chapter{Introduction}
+\chapter*{Plan de Tesis - Juan Reto Reynal}
 
-Foo bar
 
+\textsc{Título:} Construcción e implementación de un sistema integral de caracterización de filtros de interferencia de banda de aplicación en la industria satelital.
+
+
+\hspace{-0.4cm}\textsc{Alumno:} Juan Reto Reynal LU 777/12.
+
+\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, Inv. Adj. CONICET, Prof. Adj. UBA.
+
+\hspace{-0.4cm}\textsc{Lugar de trabajo:} LEC, Departamento de Física, FCEyN, UBA.
+
+
+\section*{Objetivo general}
+Como objetivo general se propone desarrollar métodos para optimizar la
+adquisición de imágenes hiperespectrales en las cuales se recopila y procesa, con
+resolución espacial, información en un rango del espectro electromagnético. Utilizando
+un modelo realista de adquisición que incluya parámetros tales como la respuesta
+espectral del detector y la óptica así como también las características del objeto
+observado, se optimizarán los métodos de sensado y deconvolución espectral. En
+particular se estudiará el efecto de variables físicas de relevancia, como por ejemplo
+número de fotones, resolución espectral, resolución espacial y relación señal ruido. En
+este trabajo, se estudiarán en particular la toma de imágenes hiperespectrales
+mediante sensores remotos y sus aplicaciones en la industria satelital.
+
+
+\section*{Objetivos específicos del proyecto}
+\begin{itemize}
+	\item \texttt{Objetivo 1 - Mayo:} Armar setups de iluminación o detección para distintas longitudes de onda para analizar
+	los espectros de transmisión del filtro.
+	\item \texttt{Objetivo 2 - Junio:} Armar distintos setups experimentales controlando distintas formas de iluminar el filtro
+	para poder encontrar los defectos.
+	\item \texttt{Objetivo 3 - Agosto:} Construcción e implementación de un primer prototipo de un sistema integral que pueda decidir si un filtro está apto o no para ser integrado al satélite.
+	\item \texttt{Objetivo 4 - Septiembre:} Establecer control de una de las cámaras de la empresa Satellogic para poder adquirir las
+	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de características.
+	\item \texttt{Objetivo 5 - Octubre:} Armar un posible setup experimental para poder caracterizar el filtro en su posición final
+	en las cámaras de vuelo del satélite.
+\end{itemize}
+\section*{Antecedentes}
+La toma de imágenes hiperespectrales consiste en colectar y procesar información en frecuencias específicas del campo electromagnético. El objetivo es obtener el espectro para cada pixel en la imagen de una escena, con el propósito de hallar objetos, identificar materiales y sustancias, o detectar procesos.
+Los sensores hiperespectrales colectan información como un  set de imágenes. Cada una de ellas representa un rango estrecho de longitudes de onda del espectro electromagnético, el cual se conoce como banda espectral. Estas imágenes se combinan para formar un cubo de datos tridimensional (x,y,$\lambda$) para el procesamiento y análisis, donde x e y representan dos dimensiones espaciales de la escena, y $\lambda$ representa la dimensión espectral (la cual comprende a un cierto rango de longitudes de onda).
+En los distintos sensores hiperespectrales, las longitudes de onda pueden ser separadas por diferentes tipos de filtros, o mediante el uso de instrumentos que sean sensibles a determinadas longitudes de onda, como por ejemplo interferómetros. La forma en la que las distintas longitudes de onda se combinan en un mismo pixel está intrínsecamente relacionada con el diseño particular del sensor que se emplee. Por este motivo, existe una estrecha relación entre el modelo de sensor que se emplee y el algoritmo de deconvolución requerido. Existen diversos diseños de sensores de escaneo multiespectral, algunos de los cuales se encuentran detallados a continuación [1]. Un resumen de estos diseños y sus respectivas SNR se puede encontrar en la referencia [3]. Otros métodos basados en técnicas de escaneo se pueden hallar en las referencias [4], [5] y  [6]. 
+
+Espectrómetro de escaneo puntual (Point Scanning Spectrometer): El espectro incidente es dispersado a lo largo de un arreglo lineal de elementos de detección, permitiendo tasas de lectura muy rápidas. La escena es escaneada  a través del sensor mediante el empleo de dos espejos galvanométricos (o solamente uno en caso de que el sensor mismo se esté desplazando).
+
+Espectrómetro de barrido (Pushbroom Spectrometer): el input del sensor es una abertura lineal, cuya imagen se dispersa a través de una matriz bidimensional de detectores, de forma que todos los puntos a lo largo de la línea son muestreados simultáneamente. Para completar la dimensión espacial ortogonal a la línea, la escena es escaneada a través de la apertura de entrada. Esto puede tener la forma de objetos moviéndose a través de una cinta transportadora, el suelo desplazándose bajo un satélite o una plataforma espacial, o la escena siendo escaneada a través de la rendija de entrada mediante un espejo galvanométrico.
+
+Cámara de filtros tuneables (Tunable Filter Camera): una cámara de filtros tuneables se caracteriza por utilizar un sistema de filtros ajustables, ya sea eléctrica o mecánicamente. Entre estos sistemas se pueden destacar las ruedas de filtros, los dispositivos Fabry - Perot mecánicamente ajustables [7] [8], y los filtros ajustables tanto de cristal líquido (LCTF) [9] como los acusto ópticos (AOTF) [10], entre otros. Los tiempos de respuesta en el ajuste de los distintos filtros van desde $\approx$1 s para la rueda de filtros, $\approx$50 a 500 ms para el LCTF y el Fabry Perot mecánicamente ajustable, y $\approx$10 a 50 $\mu$s para el AOTF.
+
+Espectrómetro de proyección de transformada de Fourier (Imaging Fourier Transform Spectrometer): se caracteriza por escanear un espejo de un interferómetro de Michelson con el objetivo de obtener mediciones para múltiples diferencias de camino óptico [11] [12]. Una alternativa más reciente es el espectrómetro de proyección de transformada de Fourier birrefringente, desarrollado por Harvey y Fletcher - Holmes, que cuenta con la ventaja de ser menos sensible a las vibraciones. [13]
+
+Espectrómetro hiperespectral por tomografía computada (Computed Tomography Hyperspectral Imaging Spectrometer): es un dispositivo de escaneo similar a la técnica de snapshot CTIS, pero cuenta con la ventaja de ser capaz de colectar proyecciones provenientes de una mayor cantidad de ángulos, de forma que la data reconstruida tenga menos artefactos. La desventaja es que el detector no es usado eficientemente en comparación con otros métodos. [14]
+
+Espectrómetro lineal de apertura codificada (Coded Aperture Line-Imaging Spectrometer): a pesar de que la espectrometría de apertura codificada comenzó como un método para escanear una apertura codificada a través de la rendija de entrada de un espectrómetro convencional, ha sido adaptada a arreglos bidimensionales modernos de detectores, dando lugar a una mejora en la relación señal - ruido. [15] [16]
+
+El tamaño espacial de los pixels en sensores multiespectrales e hiperespectrales es en general lo suficientemente amplio como para que distintas sustancias puedan contribuir al espectro medido por un solo pixel. El objetivo de los algoritmos de deconvolución espectral consiste en extraer de un espectro los materiales constituyentes en la mezcla, así como las proporciones en las que aparecen. 
+La deconvolución espectral es el procedimiento mediante el cual el espectro medido por un pixel es descompuesto en una colección de espectros constituyentes, endmembers, y un set de las correspondientes fracciones, abundancias, que indican la proporción de cada endmember presente en el pixel. Esto es importante en numerosos escenarios en los que el detalle a nivel subpixel es apreciable, los cuales pueden ir desde el campo de la microscopía de fluorescencia [17] (donde se detallan aplicaciones como Timelapse imaging [18] [19] y FRET [20], entre otras) hasta la toma de imágenes satelitales mediante sensores remotos. En el primer caso, los endmembers y las abundancias se pueden asociar a los fluoróforos y canales que se empleen, mientras que en las aplicaciones satelitales los endmembers normalmente corresponden a objetos macroscópicos en la escena, tales como agua, tierra, metal, o cualquier material natural o hecho por el hombre.
+El proceso de deconvolución de principio a fin es en realidad una concatenación de tres procedimientos distintos, cada uno con objetivos específicos. La reducción dimensional reduce la cantidad de datos con el objetivo de disminuir la carga computacional en los pasos de procesamiento subsecuentes. La determinación de endmembers estima el set de distintos espectros que componen los píxeles mixtos en la escena. La etapa de inversión consta de proveer estimaciones de las abundancias fraccionales para los endmembers en cada pixel. 
+La examinación del proceso de deconvolución se puede estudiar mediante tres criterios que categorizan estos algoritmos. 1. La interpretación de la data indica cómo un algoritmo interpreta el espectro combinado de un pixel. Principalmente se pueden distinguir dos clases de algoritmos, los estadísticos y los no estadísticos. 2. La descripción de la aleatoriedad indica cómo un algoritmo incorpora la aleatoriedad de los datos. Se pueden diferenciar según este criterio los métodos paramétricos de los no paramétricos. 3. Por último, el criterio de optimización indica cuál es la función objetiva que se está optimizando. Según este criterio, se pueden diferenciar los algoritmos que optimizan funciones tales como Squared error, Non squared error, Maximum a posteriori, Maximum likelihood, entre otras. [2]
+\section*{Metodología}
+Dentro del marco de esta investigación se realizarán las siguientes actividades. A través del estudio de papers y patentes acerca de los sistemas de sensado multiespectral existentes, se trabajará con los distintos algoritmos existentes de deconvolución espectral con el objetivo de familiarizarse con el estado del arte y conocer sus aplicaciones y restricciones. Se estudiará la aplicabilidad de cada uno de estos métodos en distintos casos. Para esto se cuenta con imágenes satelitales multiespectrales provistas por Satellogic. 
+Paralelamente, se desarrollará un método de generación de imágenes satelitales multiespectrales artificiales que simule las características de la imagen relevantes para su adquisición. Las imágenes generadas se utilizarán para probar los algoritmos de deconvolución en cuestión. Finalmente se emplearán estos métodos en imágenes reales multiespectrales obtenidas de un microscopio confocal. 
+El siguiente paso será el desarrollo de un algoritmo de deconvolución espectral óptimo que tenga en cuenta las variables físicas de relevancia en el sensado de imágenes, tales como el número de fotones, resolución espectral, resolución espacial y relación señal - ruido. En primer caso este estudio se hará para un caso genérico (lo cual tiene aplicaciones de suma importancia en microscopía, por ejemplo), y posteriormente se analizará el caso particular de sensores remotos, el cual presenta aplicaciones en la toma de imágenes satelitales. Las variables de interés serán determinadas en este caso mediante el análisis de imágenes satelitales existentes, las cuales serán provistas por Satellogic.
+El software a desarrollar se encuentra intrínsecamente relacionado con el método de sensado que se emplee en la toma de las imágenes. El análisis del algoritmo desarrollado permitirá estudiar cuál es el método óptimo para la toma de imágenes multiespectrales, pudiendo aplicarse los resultados tanto a la microscopía como a la toma de imágenes satélitales por sensores remotos. El algoritmo de deconvolución se desarrollará en el lenguaje Python. 
+
+\section*{Actividades asociadas al objetivo 1 - Mayo:}
+\section*{Actividades asociadas al objetivo 2 - Junio:}
+\section*{Actividades asociadas al objetivo 3 - Agosto:}
+\section*{Actividades asociadas al objetivo 4 - Septiembre:}
+\section*{Actividades asociadas al objetivo 5 - Octubre:}
+\section*{Factibilidad}
+El plan de trabajo propuesto para esta tesis se enmarca dentro del área de óptica y fotofísica. La tesista será guiada por un investigador con la experiencia en la temática necesaria para llevar el proyecto adelante, siendo el director del Laboratorio de Electrónica Cuántica, en el cual continuamente se aplican técnicas de deconvolución espectral en el área de la microscopía.
+La tetesista se encuentra cursando la última materia de la Licenciatura en Ciencias Físicas. Durante Laboratorio 6 y 7, trabajó en el armado y optimización de un microscopio confocal de fluorescencia. Adicionalmente, cursó la materia optativa “Microscopías de fluorescencia”, por lo que posee conocimientos en microscopía, óptica y fotofísica que serán necesarios para determinar las variables físicas de interés en la optimización de la toma de imágenes hiperespectrales. Posee también conocimientos de programación que serán necesarios para realizar la implementación de los algoritmos de deconvolución.
+Adicionalmente, se cuenta con imágenes satelitales provistas por Satellogic, lo que permitirá testear el funcionamiento de los algoritmos con imágenes de distinta calidad, en aplicaciones satelitales. 
+\section*{Referencias}
+1. [Hagen 2013] Nathan Hagen , Michael W. Kudenov. Review of snapshot spectral imaging technologies. Optical Engineering 52(9), 090901.
+
+2. [Keshava 2003] Nirmal Keshava. A Survey of Spectral Unmixing Algorithms. Lincoln Laboratory Journal, Vol. 14, 1, 2003.
+
+3. [Sellar 2005] R. G. Sellar and G. D. Boreman, “Comparison of relative signal-tonoise
+ratios of different classes of imaging spectrometer,” Appl. Opt. 44(9), 1614–1624 (2005).
+
+4. [Eismann 2012] M. T. Eismann, Hyperspectral Remote Sensing, SPIE Press, Bellingham, WA (2012).
+
+5. [Harvey 2000] A. R. Harvey et al., “Technology options for imaging spectrometry,”
+Proc. SPIE 4132, 13–24 (2000).
+
+6. [Prieto 2008] X. Prieto-Blanco et al., “Optical configurations for imaging spectrometers,” Comput. Intell. Rem. Sens. 133, 1–25 (2008).
+
+7. [Atherton 1981] P. D. Atherton et al., “Tunable Fabry-Perot filters,” Opt. Eng. 20(6),
+806–814 (1981).
+
+8. [Antila 2012] J. Antila et al., “Spectral imaging device based on a tuneable MEMS
+Fabry-Perot interferometer,” Proc. SPIE 8374, 83740F (2012).
+
+9. [Gupta 2008] N. Gupta, “Hyperspectral imager development at Army Research
+Laboratory,” Proc. SPIE 6940, 69401P (2008).
+
+10. [Poger 2001] S. Poger and E. Angelopoulou, “Multispectral sensors in computer
+vision,” Technical Report CS 2001-3, Stevens Institute of Technology (2001).
+
+11. [Potter 1972] A. E. Potter, “Multispectral imaging system,” U.S. Patent No. 3702735 (1972).
+
+12. [Descour 1996] M. R. Descour, “The throughput advantage in imaging Fouriertransform spectrometers,” Proc. SPIE 2819, 285–290 (1996).
+
+13. [Harvey 2004] A. R. Harvey and D. W. Fletcher-Holmes, “Birefringent Fourier-transform imaging spectrometer,” Opt. Express 12(22), 5368–5374 (2004).
+
+14. [Mooney 1995] J. M. Mooney, “Angularly multiplexed spectral imager,” Proc. SPIE
+2480, 65–77 (1995).
+
+15. [Fernandez 2007] C. Fernandez et al., “Longwave infrared (LWIR) coded aperture
+dispersive spectrometer,” Opt. Express 15(9), 5742–5753 (2007).
+
+16. [Gehm 2008] M. E. Gehm et al., “High-throughput, multiplexed pushbroom hyperspectral microscopy,” Opt. Express 16(15), 11032–11043 (2008).
+
+17. [Zimmermann 2005] Timo Zimmermann. Spectral Imaging and Linear Unmixing in Light Microscopy. Adv Biochem Engin/Biotechnol (2005) 95: 245– 265
+
+18. Shima DT, Scales SJ, Kreis TE, Pepperkok R (1999) Curr Biol 9:821 
+
+19. Ellenberg J, Lippincott-Schwartz J, Presley JF (1999) Trends Cell Biol 9:52
+
+20. [Wouters 2001] Wouters FS, Verveer PJ, Bastiaens PI (2001) Trends Cell Biol 11:203
 \chapter{Conclusion}
 
 Lorep ipsum \cite{doe}
