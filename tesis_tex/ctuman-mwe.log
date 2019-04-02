@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1373,7 +1373,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=16, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=50, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 
 <use Figs/Caratula/logo_uba.png>
@@ -1516,27 +1516,46 @@ Package microtype Info: Loading generic settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 
-Cap\IeC {\'\i }tulo 1.
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 45.
+
 [1
 
 
 
 
 
-] [2
+]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 80.
+ [2]
+Underfull \vbox (badness 1953) has occurred while \output is active []
+
+ [3]
+[4] [5]
+Overfull \hbox (10.08188pt too wide) in paragraph at lines 145--146
+[]\T1/lmr/m/n/10.95 (-20) 16. [Gehm 2008] M. E. Gehm et al., ^^PHigh-throughput
+, mul-tiplexed pushbroom
+ []
+
+[6]
+Cap\IeC {\'\i }tulo 1.
+[7
+
+] [8
 
 ]
-Cap\IeC {\'\i }tulo 2.
-[3] [4
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
  (./ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 
 
 Package rerunfilecheck Warning: File `ctuman-mwe.out' has changed.
@@ -1544,28 +1563,30 @@ Package rerunfilecheck Warning: File `ctuman-mwe.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `ctuman-mwe.out':
-(rerunfilecheck)             Before: EB7E3A1EE0AD6D65ADE3675DF2F9A021;139
-(rerunfilecheck)             After:  DB7DE2ED4CE050B1F2CDD3BE116453A7;138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+(rerunfilecheck)             Before: B062A42B46EE7F971FD4754CF465A17D;1022
+(rerunfilecheck)             After:  211BBD9BB961CFEFF112B0E84AA2F73E;999.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 19498 strings out of 493029
- 337627 string characters out of 6136235
- 442355 words of memory out of 5000000
- 22711 multiletter control sequences out of 15000+600000
- 68700 words of font info for 71 fonts, out of 8000000 for 9000
+ 19586 strings out of 493029
+ 338623 string characters out of 6136235
+ 451355 words of memory out of 5000000
+ 22721 multiletter control sequences out of 15000+600000
+ 77430 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,17n,49p,10351b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
-blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on ctuman-mwe.pdf (11 pages, 93513 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
+hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+tt10.pfb>
+Output written on ctuman-mwe.pdf (15 pages, 193635 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 17438 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 21622 words of extra memory for PDF output out of 24883 (max. 10000000)
 
