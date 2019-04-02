@@ -58,7 +58,7 @@
 
 % Name of the university
 \ctusetup{
-	university-endl-czech = {Universidad \\ de \\ Buenos ~ Aires},
+	university-endl-czech = {\v Cesk\'e\\ vysok\'e \\ u\v cen\'i  ~ technick\'e \\ v ~ Praze},
 	university-endl-slovak = {\v Cesk\'e\\ vysok\'e \\ u\v cen\'i  ~ technick\'e \\ v ~ Praze},
 	university-endl-english = {Czech\\ Technical \\ University \\ in ~ Prague},
 	university-czech = {\v Cesk\'e ~ vysok\'e ~ u\v cen\'i  ~ technick\'e ~ v ~ Praze},
@@ -71,7 +71,7 @@
 	\v cervence, srpna, z\'a\v r\'i , \v r\'i jna, listopadu, prosince }
 
 \seq_gset_from_clist:Nn \g_ctuthesis_Months_czech_seq { Leden, \'Unor, B\v rezen, Duben, Kv\v eten, \v Cerven,
-	\v Cervenec, Srpen, Z\'a\v r\'i , \v R\'i jen, Listopad, Diciembre } %% ACA VAN LOS MESE DE LA CARAATULAAA
+	\v Cervenec, Srpen, Z\'a\v r\'i , \v R\'i jen, Listopad, Prosinec }
 
 \seq_gset_from_clist:Nn \g_ctuthesis_months_slovak_seq { janu\'ara, febru\'ara, marca, apr\'i la, m\'aja, j\'una,
 	j\'ula, augusta, septembera, okt\v obera, novembera, decembera }
@@ -108,7 +108,7 @@
 	xdoctype .groups:n = { dc, nopre, nopost },
 
 	xdoctype-B .meta:n = {
-		doctype-english = { Tesis de Licenciatura},
+		doctype-english = { Bachelor ~ Project },
 		doctype-czech = { Tesis ~ de ~ Licenciatura },
 		doctype-slovak = { Bakalárska ~ práca }
 	},
@@ -171,18 +171,11 @@
 		faculty-slovak = { Kloknerův ~ ústav },
 		facultynum = { KÚ },
 	},
-
-xfaculty-KU .meta:n = {
-	faculty-english = { Klokner ~ Institute },
-	faculty-czech = { Kloknerův ~ ústav },
-	faculty-slovak = { Kloknerův ~ ústav },
-	facultynum = { KÚ },
-},
-	xfaculty-FCEyN .meta:n = {
-		faculty-english = { Facultad ~ de ~ Ciencias ~ Exactas ~ y ~ Naturales},
-		faculty-czech = { Facultad ~ de ~ Ciencias ~ Exactas ~ y ~ Naturales},
+	xfaculty-CIIRC .meta:n = {
+		faculty-english = { Czech ~ Institute ~ of ~ Informatics, ~ Robotics ~ and ~ Cybernetics },
+		faculty-czech = { Český ~ institut ~ informatiky, ~ robotiky ~ a ~ kybernetiky },
 		faculty-slovak = { Český ~ institut ~ informatiky, ~ robotiky ~ a ~ kybernetiky },
-		facultynum = { FCEyN },
+		facultynum = { CIIRC },
 	},
 	xfaculty-MUVS .meta:n = {
 		faculty-english = { Masaryk ~ Institute ~ of ~ Advanced ~ Studies },
