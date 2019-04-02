@@ -31,7 +31,7 @@
 	\def\declarationname{Prohl\'a\v sen\'i}
 	\def\listfigurename{Obr\'azky}
 	\def\listtablename{Tabulky}
-	\def\supervisorname{\v Skolitel}
+	\def\supervisorname{Director}
 	\def\supervisorspecialistname{\v Skolitel--specialista}
 	\def\fieldofstudyname{Obor}
 	\def\subfieldofstudyname{Zam\v e\v ren\'i}
@@ -58,7 +58,7 @@
 
 % Name of the university
 \ctusetup{
-	university-endl-czech = {\v Cesk\'e\\ vysok\'e \\ u\v cen\'i  ~ technick\'e \\ v ~ Praze},
+	university-endl-czech = {Universidad\\ \hspace{1cm}de \\ Buenos Aires},
 	university-endl-slovak = {\v Cesk\'e\\ vysok\'e \\ u\v cen\'i  ~ technick\'e \\ v ~ Praze},
 	university-endl-english = {Czech\\ Technical \\ University \\ in ~ Prague},
 	university-czech = {\v Cesk\'e ~ vysok\'e ~ u\v cen\'i  ~ technick\'e ~ v ~ Praze},
@@ -70,8 +70,7 @@
 \seq_gset_from_clist:Nn \g_ctuthesis_months_czech_seq { ledna, \'unora, b\v rezna, dubna, kv\v etna, \v cervna,
 	\v cervence, srpna, z\'a\v r\'i , \v r\'i jna, listopadu, prosince }
 
-\seq_gset_from_clist:Nn \g_ctuthesis_Months_czech_seq { Leden, \'Unor, B\v rezen, Duben, Kv\v eten, \v Cerven,
-	\v Cervenec, Srpen, Z\'a\v r\'i , \v R\'i jen, Listopad, Prosinec }
+\seq_gset_from_clist:Nn \g_ctuthesis_Months_czech_seq { Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre}
 
 \seq_gset_from_clist:Nn \g_ctuthesis_months_slovak_seq { janu\'ara, febru\'ara, marca, apr\'i la, m\'aja, j\'una,
 	j\'ula, augusta, septembera, okt\v obera, novembera, decembera }
@@ -109,7 +108,7 @@
 
 	xdoctype-B .meta:n = {
 		doctype-english = { Bachelor ~ Project },
-		doctype-czech = { Tesis ~ de ~ Licenciatura },
+		doctype-czech = { Tesis ~ de ~ Licenciatura},
 		doctype-slovak = { Bakalárska ~ práca }
 	},
 	xdoctype-M .meta:n = {
@@ -142,8 +141,8 @@
 	},
 	xfaculty-F4 .meta:n = {
 		faculty-english = { Faculty ~ of ~ Nuclear ~ Sciences ~ and ~ Physical ~ Engineering },
-		faculty-czech = { Fakulta ~ jaderná ~ a ~ fyzikálně ~ inženýrská },
-		faculty-slovak = { Fakulta ~ jaderná ~ a ~ fyzikálně ~ inženýrská }
+		faculty-czech = { Facultad ~ de ~ Ciencias ~ Exactas ~ y ~ Naturales},
+		faculty-slovak = { Departamento ~ de ~ Física }
 	},
 	xfaculty-F5 .meta:n = {
 		faculty-english = { Faculty ~ of ~ Architecture },
@@ -176,6 +175,11 @@
 		faculty-czech = { Český ~ institut ~ informatiky, ~ robotiky ~ a ~ kybernetiky },
 		faculty-slovak = { Český ~ institut ~ informatiky, ~ robotiky ~ a ~ kybernetiky },
 		facultynum = { CIIRC },
+	},
+	xfaculty-FCEyN .meta:n = {
+		faculty-english = { Faculty ~ of ~ Nuclear ~ Sciences ~ and ~ Physical ~ Engineering },
+		faculty-czech = { Facultad ~ de ~ Ciencias ~ Exactas ~ y ~ Naturales},
+		faculty-slovak = { Departamento ~ de ~ Física }
 	},
 	xfaculty-MUVS .meta:n = {
 		faculty-english = { Masaryk ~ Institute ~ of ~ Advanced ~ Studies },
