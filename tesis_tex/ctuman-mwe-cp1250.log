@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ctuman-mwe.tex
-(./ctuman-mwe.tex
+**ctuman-mwe-cp1250.tex
+(./ctuman-mwe-cp1250.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./ctuthesis.cls (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -551,7 +551,7 @@ File: ctuthesis-names.def 2014/01/18 v0.1 "Names"partoftheclassctuthesis
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \monthinlanguage with sig. 'sm' on line 94.
+. Defining command \monthinlanguage with sig. 'sm' on line 95.
 .................................................
 ))
 (./ctuth-pkg.tex
@@ -713,26 +713,26 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
 \babel@savecnt=\count123
 \U@D=\dimen141
 )
-Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count124
-Package babel Info: Making - an active character on input line 226.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
+Package babel Info: Making " an active character on input line 172.
+\cs@wordlen=\count124
+Package babel Info: Making - an active character on input line 226.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 ))
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1002,10 +1002,10 @@ Package: amsthm 2015/03/04 v2.20.2
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
-\openout3 = `ctuman-mwe.idx'.
+\openout3 = `ctuman-mwe-cp1250.idx'.
 
 
-Writing index file ctuman-mwe.idx
+Writing index file ctuman-mwe-cp1250.idx
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \c@tracingmulticols=\count146
@@ -1198,29 +1198,29 @@ ass ctuthesis
 . 
 . Redefining command \maketitle with sig. '' on line 227.
 .................................................
-) (./ctuman-mwe.aux)
-\openout1 = `ctuman-mwe.aux'.
+) (./ctuman-mwe-cp1250.aux)
+\openout1 = `ctuman-mwe-cp1250.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 29.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 28.
+LaTeX Info: Redefining \microtypecontext on input line 29.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1310,7 +1310,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 29.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1319,45 +1319,47 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
-(./ctuman-mwe.out) (./ctuman-mwe.out)
+(./ctuman-mwe-cp1250.out) (./ctuman-mwe-cp1250.out)
 \@outlinefile=\write4
-\openout4 = `ctuman-mwe.out'.
+\openout4 = `ctuman-mwe-cp1250.out'.
 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 30.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 31.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 30.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 31.
+
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 31.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 31.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 30.
+(Font)              <10.95> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 30.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 30.
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+(Font)              <6> on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1365,7 +1367,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1373,20 +1375,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=16, 224.84pt x 225.84375pt>
-File: Figs/Caratula/logo_uba.png Graphic file (type png)
+<ctu_logo_black.pdf, id=16, 366.36874pt x 279.0425pt>
+File: ctu_logo_black.pdf Graphic file (type pdf)
+ <use ctu_logo_black.pdf>
+Package pdftex.def Info: ctu_logo_black.pdf used on input line 31.
+(pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 31.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 31.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 31.
 
-<use Figs/Caratula/logo_uba.png>
-Package pdftex.def Info: Figs/Caratula/logo_uba.png used on input line 30.
-(pdftex.def)             Requested size: 48.68272pt x 48.90004pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 30.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 30.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 30.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 30--30
+Overfull \hbox (5.0pt too wide) in paragraph at lines 31--31
 []|| [][][][][][] 
  []
 
@@ -1394,10 +1395,10 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 30--30
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figs/Caratula/logo_uba.p
-ng>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 30.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ctu_logo_black.pdf>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 31.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -1443,42 +1444,42 @@ Package microtype Info: Loading generic settings for font family
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 'som' on line 30.
+. Redefining command \chapter with sig. 'som' on line 31.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \tableofcontents with sig. '' on line 30.
+. Redefining command \tableofcontents with sig. '' on line 31.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoffigures with sig. '' on line 30.
+. Redefining command \listoffigures with sig. '' on line 31.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoftables with sig. '' on line 30.
+. Redefining command \listoftables with sig. '' on line 31.
 .................................................
  [3
 
 
 ] [4
 
-] (./ctuman-mwe.toc)
+] (./ctuman-mwe-cp1250.toc)
 \tf@toc=\write5
-\openout5 = `ctuman-mwe.toc'.
+\openout5 = `ctuman-mwe-cp1250.toc'.
 
 [5
 
 
-] (./ctuman-mwe.lof)
+] (./ctuman-mwe-cp1250.lof)
 \tf@lof=\write6
-\openout6 = `ctuman-mwe.lof'.
+\openout6 = `ctuman-mwe-cp1250.lof'.
 
- (./ctuman-mwe.lot)
+ (./ctuman-mwe-cp1250.lot)
 \tf@lot=\write7
-\openout7 = `ctuman-mwe.lot'.
+\openout7 = `ctuman-mwe-cp1250.lot'.
 
  [6
 
@@ -1517,7 +1518,7 @@ Package microtype Info: Loading generic settings for font family
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Cap\IeC {\'\i }tulo 1.
+Chapter 1.
 [1
 
 
@@ -1527,45 +1528,35 @@ Cap\IeC {\'\i }tulo 1.
 ] [2
 
 ]
-Cap\IeC {\'\i }tulo 2.
+Chapter 2.
 [3] [4
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
- (./ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
-
-
-Package rerunfilecheck Warning: File `ctuman-mwe.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ctuman-mwe.out':
-(rerunfilecheck)             Before: EB7E3A1EE0AD6D65ADE3675DF2F9A021;139
-(rerunfilecheck)             After:  DB7DE2ED4CE050B1F2CDD3BE116453A7;138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+ (./ctuman-mwe-cp1250.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package rerunfilecheck Info: File `ctuman-mwe-cp1250.out' has not changed.
+(rerunfilecheck)             Checksum: C134394106252E81D7800E8A75A89FBB;140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 19498 strings out of 493029
- 337627 string characters out of 6136235
- 442355 words of memory out of 5000000
- 22711 multiletter control sequences out of 15000+600000
- 68700 words of font info for 71 fonts, out of 8000000 for 9000
+ 19487 strings out of 493029
+ 337505 string characters out of 6136235
+ 442949 words of memory out of 5000000
+ 22704 multiletter control sequences out of 15000+600000
+ 65932 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,17n,49p,10351b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
-blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on ctuman-mwe.pdf (11 pages, 93513 bytes).
+ 40i,17n,49p,10358b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on ctuman-mwe-cp1250.pdf (11 pages, 120547 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 17438 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 79 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 16926 words of extra memory for PDF output out of 17280 (max. 10000000)
 
