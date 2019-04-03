@@ -32,6 +32,7 @@ Rozvíjíme \ldots
 
 \maketitle
 \renewcommand{\chaptername}{Capítulo}
+\renewcommand{\figurename}{Figura}
 \chapter*{Plan de Tesis - Juan Reto Reynal}
 
 
@@ -68,11 +69,12 @@ hiperespectrales.
 %mediante sensores remotos y sus aplicaciones en la industria satelital.
 
 %semrock:
-Los filtros ópticos utilizados en la construcción de cámaras hiperespectrales y 
+\hspace{0.5cm} Los filtros ópticos utilizados en la construcción de cámaras 
+hiperespectrales y 
 multiespectrales resultan fundamentales en aplicaciones como la microscopía de 
-fluorescencia \cite{Grecco2016} y en la espectroscopía de reflectancia 
+fluorescencia \cite{Grecco2016} y la espectroscopía de reflectancia 
 utilizada para la toma de 
-imágenes multiespectrales de la superficie de la Tierra \cite{Hogg2008}. En 
+imágenes hiperespectrales de la superficie de la Tierra \cite{Hogg2008}. En 
 estas aplicaciones 
 se distinguen claramente dos señales: una señal de entrada que viene dada por 
 la iluminación (excitación) de una muestra ó la incidencia de la luz sobre la 
@@ -150,7 +152,7 @@ Satellogic.
 	experimental para poder caracterizar el filtro en su posición final
 	en las cámaras de vuelo del satélite.
 \end{itemize}
-\section*{Antecedentes}
+\section*{Antecedentes/Introducción **}
 La captura de imágenes hiperespectrales consiste en colectar y procesar 
 información en longitudes de onda específicas del campo electromagnético. El 
 objetivo es obtener el espectro para cada pixel en la imagen de una escena, con 
@@ -181,23 +183,45 @@ Paralelamente, se desarrollará un método de generación de imágenes satelital
 El siguiente paso será el desarrollo de un algoritmo de deconvolución espectral óptimo que tenga en cuenta las variables físicas de relevancia en el sensado de imágenes, tales como el número de fotones, resolución espectral, resolución espacial y relación señal - ruido. En primer caso este estudio se hará para un caso genérico (lo cual tiene aplicaciones de suma importancia en microscopía, por ejemplo), y posteriormente se analizará el caso particular de sensores remotos, el cual presenta aplicaciones en la toma de imágenes satelitales. Las variables de interés serán determinadas en este caso mediante el análisis de imágenes satelitales existentes, las cuales serán provistas por Satellogic.
 El software a desarrollar se encuentra intrínsecamente relacionado con el método de sensado que se emplee en la toma de las imágenes. El análisis del algoritmo desarrollado permitirá estudiar cuál es el método óptimo para la toma de imágenes multiespectrales, pudiendo aplicarse los resultados tanto a la microscopía como a la toma de imágenes satélitales por sensores remotos. El algoritmo de deconvolución se desarrollará en el lenguaje Python. 
 
-\section*{Actividades asociadas al objetivo 1 - Mayo: Armado de distintos 
-setups de iluminación 
+\section*{Actividades asociadas al objetivo 1 - Mayo:}
+\subsection*{ Armado de distintos setups de iluminación o detección para 
+distintas longitudes de onda para analizar los espectros de transmisión de los 
+filtros.}
+
+\hspace{0.5cm}Debido a las limitaciones de las técnicas de medición estándard 
+de los espectros de transmisión de los filtros ópticos donde se utilizan 
+espectrómetros comerciales, las características de dichos 
+filtros son determinadas generalmente de forma muy imprecisa, especialmente 
+cuando el ancho de banda de transmisión centrado en una cierta de longitud de 
+onda es muy estrecho (menos de una decena de nm para ciertas aplicaciones).
+
+
+Como resultado de estas limitaciones, existen tres discrepancias fundamentales 
+entre el espectro real del filtro y sus mediciones experimentales (Ver Figura 
+\ref{fig:obj1a})
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
+	\caption{Disociación de 3 Hidrógenos con distintos métodos.}
+	\label{fig:obj1a}
+\end{figure} 
+As a result of these limitations, there are three main discrepancies between 
+the actual filter spectrum and its measured representation (see Fig. 1).
+
+\footnote{La densidad óptica, OD (Optical Density), es un parámetro útil para 
+describir 
+la transmisión de la luz a través de un filtro óptico con una transmisión 
+extremedamente baja. Si T es la transmisión del filtro, que varía entre 0 y 1, 
+se define la densidad óptica como $OD = -$log$_{10} (T)$.}
+
+
+
+\section*{Actividades asociadas al objetivo 2 - Junio:}
+\subsection*{Armado de distintos setups de iluminación 
 	o detección para distintas longitudes de onda para analizar los espectros 
 	de transmisión de los filtros.}
 
-It is well known that in order to effectively suppress undesired light, the 
-blocking
-specification of an optical filter must be typically many orders of magnitude 
-higher than that of
-transmission. Optical Density – or OD, as it is commonly called – is a 
-convenient tool to
-describe the transmission of light through a highly blocking optical filter, or 
-one with extremely
-low transmission.
-OD is simply defined as the negative of the logarithm (base 10) of the
-transmission, where the transmission varies between 0 and 1; that is OD = – log 
-10 (T).
 The actual blocking provided by a filter is determined not only by its designed 
 spectrum, but
 also by physical imperfections of the filter, such as pinholes generated during 
@@ -219,47 +243,24 @@ incidence, or via unblocked paths near the edges or mounting. Therefore, it is
 important to evaluate the blocking
 performance of filters after they have been fully manufactured into finished 
 products.
-Generally commercially available spectrophotometers are used to measure the 
-transmission
-and OD spectral performance of optical filters. However, these instruments can 
-have significant
-limitations when the optical filters have high edge steepness and/or very deep 
-blocking.
-The principle of operation of a typical spectrophotometer is illustrated in 
-Figure 1.
-A
-monochromator contains a diffraction grating to disperse light from a broadband 
-source (usually
-a quartz-tungsten-halogen (QTH) or arc lamp) into a range of angles, and then 
-uses an
-adjustable slit to select a narrow band of wavelengths. This 
-quasi-monochromatic probe beam
-is then directed toward the sample (test) filter. In a dual-beam 
-spectrophotometer (as shown
-here), either a beamsplitter is used to split the probe beam into reference and 
-measurement
-beams, or the light is alternated in time between the reference and measurement 
-paths at a
-relatively high rate.
-The reference beam goes directly to the detector, though it might be
-attenuated with a calibrated neutral density filter depending on the blocking 
-level of the sample
-filter. The measurement beam passes through the sample filter and then impinges 
-on the
-detector. The filter spectrum, or its transmission (or blocking) specification 
-as a function of
-wavelength, is established from the ratio of the signals from the two beams as 
-the wavelength is
-scanned over a broad range. The spectrum can also be obtained from a single-beam
-spectrophotometer, except in this case the reference signal is generated 
-without the sample
-filter in the light path and then the measurement signal is generated by 
-inserting the sample
-filter into the light path (as in Fig. 4 below).
-\section*{Actividades asociadas al objetivo 2 - Junio:}
 \section*{Actividades asociadas al objetivo 3 - Agosto:}
+\subsection*{Construcción e implementación de un primer prototipo de un sistema 
+integral que pueda decidir si un filtro está apto o no para ser integrado al 
+satélite.}
+
+
 \section*{Actividades asociadas al objetivo 4 - Septiembre:}
+\subsection*{Establecer control de una de las cámaras de la empresa Satellogic 
+para poder adquirir las
+	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de 
+	características.}
+
+
 \section*{Actividades asociadas al objetivo 5 - Octubre:}
+\subsection*{Armado de un posible setup 
+	experimental para poder caracterizar el filtro en su posición final
+	en las cámaras de vuelo del satélite.}
+
 \section*{Factibilidad}
 El plan de trabajo propuesto para esta tesis se enmarca dentro del área de óptica y fotofísica. La tesista será guiada por un investigador con la experiencia en la temática necesaria para llevar el proyecto adelante, siendo el director del Laboratorio de Electrónica Cuántica, en el cual continuamente se aplican técnicas de deconvolución espectral en el área de la microscopía.
 La tetesista se encuentra cursando la última materia de la Licenciatura en Ciencias Físicas. Durante Laboratorio 6 y 7, trabajó en el armado y optimización de un microscopio confocal de fluorescencia. Adicionalmente, cursó la materia optativa “Microscopías de fluorescencia”, por lo que posee conocimientos en microscopía, óptica y fotofísica que serán necesarios para determinar las variables físicas de interés en la optimización de la toma de imágenes hiperespectrales. Posee también conocimientos de programación que serán necesarios para realizar la implementación de los algoritmos de deconvolución.
@@ -323,7 +324,8 @@ imaging of intracellular protein networks. 2016.
 
 \bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
 	theory of everything”. AIP Conference Proceedings. Vol. 1082.
-	2008, págs. 331-338. arXiv: 0810.3851.
+	2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
+	0810.3851.}
 
 \end{thebibliography}
 

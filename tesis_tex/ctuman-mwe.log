@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  3 APR 2019 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  3 APR 2019 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1373,7 +1373,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=50, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=71, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 
 <use Figs/Caratula/logo_uba.png>
@@ -1522,7 +1522,7 @@ Package microtype Info: Character `029' is missing
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 51.
+(hyperref)                be the same. Added a new anchor on input line 52.
 
 [1
 
@@ -1532,64 +1532,106 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 163.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 165.
  [2] [3] [4]
-Overfull \hbox (357.81252pt too wide) has occurred while \output is active
-|  | \T1/lmss/m/sl/10.95 Actividades asociadas al objetivo 1 - Mayo: Armado de 
-distintos setups de iluminación o detección para distintas longitudes de onda p
-ara analizar los espectros de transmisión de los filtros.
- []
 
-[5] [6]
-Overfull \hbox (10.08188pt too wide) in paragraph at lines 306--307
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 189.
+
+
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=152, 414.04688pt x 33
+8.76563pt>
+File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
+pg)
+ <use Figs/plan_de_tesis/measurement_of_optical_filter.jpg>
+Package pdftex.def Info: Figs/plan_de_tesis/measurement_of_optical_filter.jpg u
+sed on input line 205.
+(pdftex.def)             Requested size: 207.02292pt x 169.38239pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 216.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 216.
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 223.
+
+
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [5]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 249.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 256.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 262.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./Figs/plan_de_tesis/measurement_of_optical_filter.jpg>] [7]
+Overfull \hbox (10.08188pt too wide) in paragraph at lines 307--308
 []\T1/lmr/m/n/10.95 (-20) 16. [Gehm 2008] M. E. Gehm et al., ^^PHigh-throughput
 , mul-tiplexed pushbroom
  []
 
-[7] [8]
+[8]
 Cap\IeC {\'\i }tulo 1.
 
-LaTeX Warning: Citation `doe' on page 9 undefined on input line 317.
+LaTeX Warning: Citation `doe' on page 9 undefined on input line 318.
 
 [9
 
 ] [10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (./ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
-(rerunfilecheck)             Checksum: 7C93FDDEFE175BE515CB365BDEC51F77;1155.
+(rerunfilecheck)             Checksum: 23E98B549BEE9EFF4D1C8FAD5B19A8DE;2065.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 19605 strings out of 493029
- 338835 string characters out of 6136235
- 452400 words of memory out of 5000000
- 22723 multiletter control sequences out of 15000+600000
- 78076 words of font info for 116 fonts, out of 8000000 for 9000
+ 19696 strings out of 493029
+ 340274 string characters out of 6136235
+ 452478 words of memory out of 5000000
+ 22781 multiletter control sequences out of 15000+600000
+ 106914 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,17n,57p,10351b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,57p,10351b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
-hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ctuman-mwe.pdf (17 pages, 219893 bytes).
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on ctuman-mwe.pdf (17 pages, 349992 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 21622 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 32419 words of extra memory for PDF output out of 35830 (max. 10000000)
 
