@@ -6,7 +6,10 @@
 	mainlanguage = czech,
 	titlelanguage = czech,
 	title-english = {Planting Uranium},
-	title-czech = {Construcción e implementación de un sistema integral de caracterización de filtros de interferencia de banda de aplicación en la industria satelital.},
+	title-czech = {Construcción e implementación de un sistema integral de 
+	caracterización de filtros ópticos de interferencia de banda utilizados en 
+	cámaras 
+	hiperespectrales.},
 	department-czech = {Departamento de Física},
 	author = {Juan Reto Reynal},
 	supervisor = {Prof. Dr. Hernán Grecco},
@@ -32,7 +35,10 @@ Rozvíjíme \ldots
 \chapter*{Plan de Tesis - Juan Reto Reynal}
 
 
-\textsc{Título:} Construcción e implementación de un sistema integral de caracterización de filtros de interferencia de banda de aplicación en la industria satelital.
+\textsc{Título:} Construcción e implementación de un sistema integral de 
+caracterización de filtros ópticos de interferencia de banda utilizados en 
+cámaras 
+hiperespectrales.
 
 
 \hspace{-0.4cm}\textsc{Alumno:} Juan Reto Reynal L.U. 777/12.
@@ -43,54 +49,113 @@ Rozvíjíme \ldots
 
 
 \section*{Objetivo general}
-Como objetivo general se propone desarrollar métodos para optimizar la
-adquisición de imágenes hiperespectrales en las cuales se recopila y procesa, con
-resolución espacial, información en un rango del espectro electromagnético. Utilizando
-un modelo realista de adquisición que incluya parámetros tales como la respuesta
-espectral del detector y la óptica así como también las características del objeto
-observado, se optimizarán los métodos de sensado y deconvolución espectral. En
-particular se estudiará el efecto de variables físicas de relevancia, como por ejemplo
-número de fotones, resolución espectral, resolución espacial y relación señal ruido. En
-este trabajo, se estudiarán en particular la toma de imágenes hiperespectrales
-mediante sensores remotos y sus aplicaciones en la industria satelital.
+%conectar càmaras hiperespectrales con filtros y sus aplicaciones
+%Como objetivo general se propone desarrollar métodos para optimizar la
+%adquisición de imágenes hiperespectrales en las cuales se recopila y procesa, 
+%con
+%resolución espacial, información en un rango del espectro electromagnético. 
+%Utilizando
+%un modelo realista de adquisición que incluya parámetros tales como la 
+%respuesta
+%espectral del detector y la óptica así como también las características del 
+%objeto
+%observado, se optimizarán los métodos de sensado y deconvolución espectral. En
+%particular se estudiará el efecto de variables físicas de relevancia, como por 
+%ejemplo
+%número de fotones, resolución espectral, resolución espacial y relación señal 
+%ruido. En
+%este trabajo, se estudiarán en particular la toma de imágenes hiperespectrales
+%mediante sensores remotos y sus aplicaciones en la industria satelital.
+
+%semrock:
+Los filtros ópticos utilizados en la construcción de cámaras hiperespectrales y 
+multiespectrales resultan fundamentales en aplicaciones como la microscopía de 
+fluorescencia \cite{Grecco2016} y en la espectroscopía de reflectancia 
+utilizada para la toma de 
+imágenes multiespectrales de la superficie de la Tierra \cite{Hogg2008}. En 
+estas aplicaciones 
+se distinguen claramente dos señales: una señal de entrada que viene dada por 
+la iluminación (excitación) de una muestra ó la incidencia de la luz sobre la 
+Tierra y, una señal de respuesta dada por la emisión en una muestra 
+biológica ó la reflexión en el caso de la superficie de la Tierra.
+
+Ambas señales no son solo espectralmente distintas sino que además difieren en 
+su intensidad: la señal de entrada puede ser un millón de veces (o más aún) más 
+intensa que la señal de respuesta (reflexión/emisión). En consecuencia, la 
+capacidad de los filtros ópticos para transmitir ciertas longitudes de onda 
+deseadas y bloquear el resto, resulta crítica para estas aplicaciones. Ahora 
+bien, cuando el ancho de banda centrado en una cierta longitud de onda central 
+que se desea transmitir es muy estrecho, las mediciones de las características 
+espectrales y de transmisión de dichos filtros no suelen ser determinadas con 
+precisión. Más aún, si los filtros son construidos especialmente por un 
+proveedor (\textit{custom-made}) para una cierta aplicación específica, resulta 
+fundamental su caracterización para decidir si incorporar o descartar dichos 
+filtros a la carga útil de la aplicación en cuestión.
+
+En el presente proyecto se propone desarrollar un sistema integral de 
+caracterización de filtros de interferencia de banda con la capacidad de 
+decidir si un filtro está apto o no para ser integrado a las cámaras 
+hiperespectrales incorporadas en los satélites desarrollados por la empresa 
+Satellogic.
 
 
-semrock:
+%Optical filters play an important role in enabling applications such as 
+%%%fluorescence
+%microscopy and Raman spectroscopy. In these applications there are two 
+%distinct types of
+%beams: the illumination (or excitation) beam and the signal (or emission) 
+%beam. 
 
-Optical filters play an important role in enabling applications such as fluorescence
-microscopy and Raman spectroscopy. In these applications there are two distinct types of
-beams: the illumination (or excitation) beam and the signal (or emission) beam. Not only are
-these beams spectrally distinct, but also they differ significantly in their intensity – the signal
-beam can be a million times (or more) weaker than the illumination beam. Therefore, the ability
-of filters to selectively transmit desired wavelengths of light while blocking unwanted light is
-critical. The performance of such filters is determined by their spectral characteristics, including
-transmission efficiency of the signal and attenuation (or blocking) of the illumination light and
-undesirable emission wavelengths. In particular, often it is critical for filters to transition from
-deep blocking to high transmission over a very short wavelength range, leading to steep and
-deep spectral edges.
-However, due to limitations of standard metrology techniques, the
-measured spectral characteristics of thin-film interference filters are frequently not determined
-accurately, especially when there are steep and deep edges.
-In this article we explore limitations to accurate filter spectrum measurements with
-standard metrology techniques, and show how these limitations can be managed by a better
-understanding of the limitations as well as more sophisticated measurements when necessary.
+%Not only are
+%these beams spectrally distinct, but also they differ significantly in their 
+%intensity – the signal
+%beam can be a million times (or more) weaker than the illumination beam. 
+%Therefore, the ability
+%of filters to selectively transmit desired wavelengths of light while blocking 
+%unwanted light is
+%critical. The performance of such filters is determined by their spectral 
+%characteristics, including
+%transmission efficiency of the signal and attenuation (or blocking) of the 
+%illumination light and
+%undesirable emission wavelengths. In particular, often it is critical for 
+%filters to transition from
+%deep blocking to high transmission over a very short wavelength range, leading 
+%to steep and
+%deep spectral edges.
+%However, due to limitations of standard metrology techniques, the
+%measured spectral characteristics of thin-film interference filters are 
+%frequently not determined
+%accurately, especially when there are steep and deep edges.
+%In this article we explore limitations to accurate filter spectrum 
+%measurements with
+%standard metrology techniques, and show how these limitations can be managed 
+%by a better
+%understanding of the limitations as well as more sophisticated measurements 
+%when necessary.
 
 \section*{Objetivos específicos del proyecto}
 \begin{itemize}
 	
 	\item \texttt{Objetivo 0 - Abril:} Revisión del estado del arte.
-	\item \texttt{Objetivo 1 - Mayo:} Armar setups de iluminación o detección para distintas longitudes de onda para analizar
-	los espectros de transmisión del filtro.
-	\item \texttt{Objetivo 2 - Junio:} Armar distintos setups experimentales controlando distintas formas de iluminar el filtro
+	\item \texttt{Objetivo 1 - Mayo:} Armado de distintos setups de iluminación 
+	o detección para distintas longitudes de onda para analizar los espectros 
+	de transmisión de los filtros.
+	\item \texttt{Objetivo 2 - Junio:} Armado de distintas configuraciones 
+	experimentales controlando distintas formas de iluminar los filtros
 	para poder encontrar los defectos.
 	\item \texttt{Objetivo 3 - Agosto:} Construcción e implementación de un primer prototipo de un sistema integral que pueda decidir si un filtro está apto o no para ser integrado al satélite.
 	\item \texttt{Objetivo 4 - Septiembre:} Establecer control de una de las cámaras de la empresa Satellogic para poder adquirir las
 	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de características.
-	\item \texttt{Objetivo 5 - Octubre:} Armar un posible setup experimental para poder caracterizar el filtro en su posición final
+	\item \texttt{Objetivo 5 - Octubre:} Armado de un posible setup 
+	experimental para poder caracterizar el filtro en su posición final
 	en las cámaras de vuelo del satélite.
 \end{itemize}
 \section*{Antecedentes}
-La toma de imágenes hiperespectrales consiste en colectar y procesar información en frecuencias específicas del campo electromagnético. El objetivo es obtener el espectro para cada pixel en la imagen de una escena, con el propósito de hallar objetos, identificar materiales y sustancias, o detectar procesos.
+La captura de imágenes hiperespectrales consiste en colectar y procesar 
+información en longitudes de onda específicas del campo electromagnético. El 
+objetivo es obtener el espectro para cada pixel en la imagen de una escena, con 
+el propósito de hallar objetos, identificar materiales y sustancias, o detectar 
+procesos.
 Los sensores hiperespectrales colectan información como un  set de imágenes. Cada una de ellas representa un rango estrecho de longitudes de onda del espectro electromagnético, el cual se conoce como banda espectral. Estas imágenes se combinan para formar un cubo de datos tridimensional (x,y,$\lambda$) para el procesamiento y análisis, donde x e y representan dos dimensiones espaciales de la escena, y $\lambda$ representa la dimensión espectral (la cual comprende a un cierto rango de longitudes de onda).
 En los distintos sensores hiperespectrales, las longitudes de onda pueden ser separadas por diferentes tipos de filtros, o mediante el uso de instrumentos que sean sensibles a determinadas longitudes de onda, como por ejemplo interferómetros. La forma en la que las distintas longitudes de onda se combinan en un mismo pixel está intrínsecamente relacionada con el diseño particular del sensor que se emplee. Por este motivo, existe una estrecha relación entre el modelo de sensor que se emplee y el algoritmo de deconvolución requerido. Existen diversos diseños de sensores de escaneo multiespectral, algunos de los cuales se encuentran detallados a continuación [1]. Un resumen de estos diseños y sus respectivas SNR se puede encontrar en la referencia [3]. Otros métodos basados en técnicas de escaneo se pueden hallar en las referencias [4], [5] y  [6]. 
 
@@ -116,7 +181,81 @@ Paralelamente, se desarrollará un método de generación de imágenes satelital
 El siguiente paso será el desarrollo de un algoritmo de deconvolución espectral óptimo que tenga en cuenta las variables físicas de relevancia en el sensado de imágenes, tales como el número de fotones, resolución espectral, resolución espacial y relación señal - ruido. En primer caso este estudio se hará para un caso genérico (lo cual tiene aplicaciones de suma importancia en microscopía, por ejemplo), y posteriormente se analizará el caso particular de sensores remotos, el cual presenta aplicaciones en la toma de imágenes satelitales. Las variables de interés serán determinadas en este caso mediante el análisis de imágenes satelitales existentes, las cuales serán provistas por Satellogic.
 El software a desarrollar se encuentra intrínsecamente relacionado con el método de sensado que se emplee en la toma de las imágenes. El análisis del algoritmo desarrollado permitirá estudiar cuál es el método óptimo para la toma de imágenes multiespectrales, pudiendo aplicarse los resultados tanto a la microscopía como a la toma de imágenes satélitales por sensores remotos. El algoritmo de deconvolución se desarrollará en el lenguaje Python. 
 
-\section*{Actividades asociadas al objetivo 1 - Mayo:}
+\section*{Actividades asociadas al objetivo 1 - Mayo: Armado de distintos 
+setups de iluminación 
+	o detección para distintas longitudes de onda para analizar los espectros 
+	de transmisión de los filtros.}
+
+It is well known that in order to effectively suppress undesired light, the 
+blocking
+specification of an optical filter must be typically many orders of magnitude 
+higher than that of
+transmission. Optical Density – or OD, as it is commonly called – is a 
+convenient tool to
+describe the transmission of light through a highly blocking optical filter, or 
+one with extremely
+low transmission.
+OD is simply defined as the negative of the logarithm (base 10) of the
+transmission, where the transmission varies between 0 and 1; that is OD = – log 
+10 (T).
+The actual blocking provided by a filter is determined not only by its designed 
+spectrum, but
+also by physical imperfections of the filter, such as pinholes generated during 
+the thin-film
+coating process, dirt and other surface defects, or flaws in the filter 
+mounting. Pinholes can
+allow light to pass through the filter unblocked – a single 10 $\mu$m pinhole 
+(that 
+penetrates
+completely through the coating) limits the blocking of a 10 mm diameter beam to 
+at most OD 6,
+regardless of the designed level of blocking of the filter spectrum. Other 
+surface and mounting
+imperfections can cause scattered light that ''leaks'' through the filter due 
+to 
+a shift of the
+spectrum to a region of high transmission for scattered light at high angles of 
+incidence, or via unblocked paths near the edges or mounting. Therefore, it is 
+important to evaluate the blocking
+performance of filters after they have been fully manufactured into finished 
+products.
+Generally commercially available spectrophotometers are used to measure the 
+transmission
+and OD spectral performance of optical filters. However, these instruments can 
+have significant
+limitations when the optical filters have high edge steepness and/or very deep 
+blocking.
+The principle of operation of a typical spectrophotometer is illustrated in 
+Figure 1.
+A
+monochromator contains a diffraction grating to disperse light from a broadband 
+source (usually
+a quartz-tungsten-halogen (QTH) or arc lamp) into a range of angles, and then 
+uses an
+adjustable slit to select a narrow band of wavelengths. This 
+quasi-monochromatic probe beam
+is then directed toward the sample (test) filter. In a dual-beam 
+spectrophotometer (as shown
+here), either a beamsplitter is used to split the probe beam into reference and 
+measurement
+beams, or the light is alternated in time between the reference and measurement 
+paths at a
+relatively high rate.
+The reference beam goes directly to the detector, though it might be
+attenuated with a calibrated neutral density filter depending on the blocking 
+level of the sample
+filter. The measurement beam passes through the sample filter and then impinges 
+on the
+detector. The filter spectrum, or its transmission (or blocking) specification 
+as a function of
+wavelength, is established from the ratio of the signals from the two beams as 
+the wavelength is
+scanned over a broad range. The spectrum can also be obtained from a single-beam
+spectrophotometer, except in this case the reference signal is generated 
+without the sample
+filter in the light path and then the measurement signal is generated by 
+inserting the sample
+filter into the light path (as in Fig. 4 below).
 \section*{Actividades asociadas al objetivo 2 - Junio:}
 \section*{Actividades asociadas al objetivo 3 - Agosto:}
 \section*{Actividades asociadas al objetivo 4 - Septiembre:}
@@ -179,8 +318,12 @@ Lorep ipsum \cite{doe}
 
 \begin{thebibliography}{1}
 
-\bibitem{doe} J. Doe. \emph{Book on foobar.} Publisher X,
- 2300.
+\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. Multiplexed
+imaging of intracellular protein networks. 2016.
+
+\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
+	theory of everything”. AIP Conference Proceedings. Vol. 1082.
+	2008, págs. 331-338. arXiv: 0810.3851.
 
 \end{thebibliography}
 
