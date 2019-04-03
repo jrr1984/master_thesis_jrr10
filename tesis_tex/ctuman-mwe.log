@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  2 APR 2019 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1532,47 +1532,36 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 80.
- [2]
-Underfull \vbox (badness 1953) has occurred while \output is active []
-
- [3]
-[4] [5]
-Overfull \hbox (10.08188pt too wide) in paragraph at lines 145--146
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 96.
+ [2] [3] [4] [5] [6]
+Overfull \hbox (10.08188pt too wide) in paragraph at lines 167--168
 []\T1/lmr/m/n/10.95 (-20) 16. [Gehm 2008] M. E. Gehm et al., ^^PHigh-throughput
 , mul-tiplexed pushbroom
  []
 
-[6]
-Cap\IeC {\'\i }tulo 1.
-[7
-
-] [8
+[7] [8
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Cap\IeC {\'\i }tulo 1.
+[9] [10
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (./ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
-
-
-Package rerunfilecheck Warning: File `ctuman-mwe.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ctuman-mwe.out':
-(rerunfilecheck)             Before: B062A42B46EE7F971FD4754CF465A17D;1022
-(rerunfilecheck)             After:  211BBD9BB961CFEFF112B0E84AA2F73E;999.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
+(rerunfilecheck)             Checksum: 211BBD9BB961CFEFF112B0E84AA2F73E;999.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 19586 strings out of 493029
- 338623 string characters out of 6136235
+ 19596 strings out of 493029
+ 338723 string characters out of 6136235
  451355 words of memory out of 5000000
  22721 multiletter control sequences out of 15000+600000
- 77430 words of font info for 109 fonts, out of 8000000 for 9000
+ 77762 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,17n,49p,10351b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1583,10 +1572,10 @@ texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on ctuman-mwe.pdf (15 pages, 193635 bytes).
+Output written on ctuman-mwe.pdf (17 pages, 196273 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  21622 words of extra memory for PDF output out of 24883 (max. 10000000)
 
