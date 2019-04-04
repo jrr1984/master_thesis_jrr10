@@ -1,5 +1,5 @@
 \documentclass{ctuthesis}
-
+\usepackage{subfig}
 \ctusetup{
 	xdoctype = B,
 	xfaculty = FCEyN,
@@ -197,24 +197,132 @@ onda es muy estrecho (menos de una decena de nm para ciertas aplicaciones).
 
 
 Como resultado de estas limitaciones, existen tres discrepancias fundamentales 
-entre el espectro real del filtro y sus mediciones experimentales (Ver Figura 
-\ref{fig:obj1a})
+entre el espectro ''real''\footnote{El espectro ''real'' es 
+el espectro de diseño del filtro para el que fue especialmente construido.} de 
+un 
+filtro y sus mediciones experimentales realizadas con 
+espectrómetros comerciales (Ver Figura \ref{fig:obj1a})\cite{Semrock}. La 
+primera discrepancia es el "redondeo" de características espectrales nítidas de 
+los filtros. 
+Esto se debe al ancho de banda no nulo del haz de la sonda del 
+espectrómetro. La segunda discrepancia es el rango limitado de 
+medición de la OD\footnote{La densidad óptica, OD (Optical Density), es un 
+parámetro útil para describir la transmisión de la luz a través de un filtro 
+óptico con una transmisión extremedamente baja. Si T es la transmisión del 
+filtro, que varía entre 0 y 1, se define la densidad óptica como $OD = 
+-$log$_{10} (T)$.} del filtro, que es 
+	producto de la sensibilidad limitada del espectrómetro. 
+	
+	When a filter has high OD (such as OD > 6), very little light reaches the
+	detector, and optical and electronic noise at the detector limit the lowest 
+	signal that can be
+	measured accurately. The signature of this artifact is a flat, noisy 
+	spectrum that appears to be
+	“pinned” to a certain OD value, despite the fact that the actual filter OD 
+	can be substantially
+	higher than the represented value. This signal limit is often called the 
+	“noise floor,” and it can be
+	wavelength dependent due to variations in the light source and detector 
+	response spectra. Note
+	that the noise floor can be decreased allowing for higher OD measurements 
+	by opening up the
+	monochromator slits and letting more light through the system, but this 
+	increased sensitivity
+	must be traded off against poorer spectral resolution.
+	
+	
+	La tercera 
+	discrepancia es propia de las mediciones de transiciones muy 
+	pronunciadas. Esto surge 
+	por el hecho de que el 
+	haz de la sonda no es monocromático, sino que también tiene bandas 
+	laterales débiles de longitudes de onda fuera de su ancho de banda 
+	principal.
+
+  
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
+	\caption{Discrepancias entre las mediciones experimentales con 
+	espectrómetros 
+	comerciales y el espectro ''real'' de un filtro óptico. Adaptado de 
+	\cite{Semrock}.}
+	\label{fig:obj1a}
+\end{figure}
+
+Ahora bien, dependiendo de la aplicación, las limitaciones en las mediciones 
+del espectro de transmisión de los filtros pueden ser determinantes o no. En el 
+presente proyecto se quiere determinar el arreglo experimental óptimo pero que 
+sea compatible con los tiempos y costos de producción de la industria.
+
+En ciertos filtros y aplicaciones, resulta de vital importancia el 
+nivel de bloqueo de ciertos rangos de longitudes de onda pero no así la 
+suavidad de la transición entre el bloqueo y la transmisión. Por ejemplo, en 
+sistemas de 
+imágenes de fluorescencia los espectros de absorción y emisión del fluróforo 
+podrían estar lo suficientemente alejados como para que resulte fundamental que 
+los filtros de banda de la señal de respuesta (de emisión) de la muestra tengan 
+un bloqueo muy alto en la banda de la señal de excitación y así lograr una 
+relación entre la señal y el ruido de adecuada proporción. 
+
+Los filtros 
+diseñados para estas aplicaciones podrían tener decenas de OD de bloqueo pero 
+en 
+la práctica incluso el más pequeño de los defectos físicos en los 
+recubrimientos ópticos (\textit{coatings}) o en el montaje, así como el bajo 
+nivel de control de luz parásita a nivel del sistema (**), puede limitar el 
+bloqueo alcanzable a valores mucho menores que los del diseño original, en el 
+rango de aproximadamente OD 6 a quizás 10.(forma indirecta de medir los scrath 
+and dig!!**))) 
+
+Dado que los espectrómetros 
+comerciales estándard tienen una medición de OD de rango limitado debido al 
+ruido de fondo del instrumento, se propone un arreglo experimental inicial para 
+poder medir los niveles de bloqueo más altos con precisión como se muestra en 
+la Figura \ref{fig:su} y que resulta compatible con la producción industrial 
+deseada por su simplicidad.
+
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.5]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
-	\caption{Disociación de 3 Hidrógenos con distintos métodos.}
-	\label{fig:obj1a}
-\end{figure} 
-As a result of these limitations, there are three main discrepancies between 
-the actual filter spectrum and its measured representation (see Fig. 1).
+	\includegraphics[scale=1.0]{Figs/plan_de_tesis/setup_u.jpeg}
+	\caption{Arreglo experimental compatible con la producción industrial para 
+	medir valores de 
+	OD altos.}
+	\label{fig:su}
+\end{figure}
 
-\footnote{La densidad óptica, OD (Optical Density), es un parámetro útil para 
-describir 
-la transmisión de la luz a través de un filtro óptico con una transmisión 
-extremedamente baja. Si T es la transmisión del filtro, que varía entre 0 y 1, 
-se define la densidad óptica como $OD = -$log$_{10} (T)$.}
+El método experimental de la Figura \ref{fig:su} se denomina 
+\textit{complementary filter method}. Un haz de 
+luz de banda ancha, de una lámpara QTH 
+(\textit{Quartz-Tungsten Halogen}) ó de arco, aproximadamente colimado por una 
+lente  es filtrado utilizando un filtro 
+de referencia ampliamente bloqueador, que es esencialmente un filtro de banda 
+con su banda de paso superpuesta a la región del espectro del filtro de prueba 
+que se quiere analizar donde la medición de valores de OD altos son necesarios. 
+La luz transmitida es enfocada con una lente convergente en un detector de bajo 
+ruido capaz de medir niveles de intensidad de luz muy pequeños, como un 
+fotodiodo de gran área con un circuito amplificador de bajo ruido ó un tubo 
+fotomultiplicador (PMT).
 
+
+Las mediciones se realizan de la siguiente manera. En primer lugar, se mide la 
+intensidad de la señal en el detector con solo el filtro de referencia y un 
+filtro calibrado de densidad neutra (ND) en la trayectoria de la luz. El filtro 
+ND sirve para reducir el nivel de la intensidad de la luz en el detector en 
+una cantidad calibrada de forma tal que el bias \footnote{El bias del 
+detector es el valor medido por el instrumento cuando no hay ninguna fuente 
+de luz incidiendo sobre él, es el valor de \textit{offset} que se le suma a 
+cualquier 
+medición.} del rango 
+dinámico limitado alcanzable por el detector sea reducido para alcanzar los 
+niveles de la señal que el detector va a ver cuando se coloquen los filtros de 
+prueba. En particular, con un filtro ND 3, el rango dinámico del detector tiene 
+que ser de $10^{6}$ para medir hasta un valor de OD 9 de bloqueo. En segundo 
+lugar, se retira el filtro ND y se lo reemplaza por el filtro de prueba para 
+realizar una nueva medición de la intensidad con el detector. El cociente entre 
+las dos mediciones de intensidad de la luz es igual al valor de OD del filtro 
+de prueba, en el rango espectral del filtro de referencia.
 
 
 \section*{Actividades asociadas al objetivo 2 - Junio:}
@@ -243,28 +351,47 @@ incidence, or via unblocked paths near the edges or mounting. Therefore, it is
 important to evaluate the blocking
 performance of filters after they have been fully manufactured into finished 
 products.
-\section*{Actividades asociadas al objetivo 3 - Agosto:}
-\subsection*{Construcción e implementación de un primer prototipo de un sistema 
-integral que pueda decidir si un filtro está apto o no para ser integrado al 
-satélite.}
+%\section*{Actividades asociadas al objetivo 3 - Agosto:}
+%\subsection*{Construcción e implementación de un primer prototipo de un 
+%sistema 
+%integral que pueda decidir si un filtro está apto o no para ser integrado al 
+%satélite.}
 
 
-\section*{Actividades asociadas al objetivo 4 - Septiembre:}
-\subsection*{Establecer control de una de las cámaras de la empresa Satellogic 
-para poder adquirir las
-	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de 
-	características.}
+%\section*{Actividades asociadas al objetivo 4 - Septiembre:}
+%\subsection*{Establecer control de una de las cámaras de la empresa Satellogic 
+%para poder adquirir las
+%	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de 
+%	características.}
 
 
-\section*{Actividades asociadas al objetivo 5 - Octubre:}
-\subsection*{Armado de un posible setup 
-	experimental para poder caracterizar el filtro en su posición final
-	en las cámaras de vuelo del satélite.}
+%\section*{Actividades asociadas al objetivo 5 - Octubre:}
+%\subsection*{Armado de un posible setup 
+%	experimental para poder caracterizar el filtro en su posición final
+%	en las cámaras de vuelo del satélite.}
 
 \section*{Factibilidad}
-El plan de trabajo propuesto para esta tesis se enmarca dentro del área de óptica y fotofísica. La tesista será guiada por un investigador con la experiencia en la temática necesaria para llevar el proyecto adelante, siendo el director del Laboratorio de Electrónica Cuántica, en el cual continuamente se aplican técnicas de deconvolución espectral en el área de la microscopía.
-La tetesista se encuentra cursando la última materia de la Licenciatura en Ciencias Físicas. Durante Laboratorio 6 y 7, trabajó en el armado y optimización de un microscopio confocal de fluorescencia. Adicionalmente, cursó la materia optativa “Microscopías de fluorescencia”, por lo que posee conocimientos en microscopía, óptica y fotofísica que serán necesarios para determinar las variables físicas de interés en la optimización de la toma de imágenes hiperespectrales. Posee también conocimientos de programación que serán necesarios para realizar la implementación de los algoritmos de deconvolución.
-Adicionalmente, se cuenta con imágenes satelitales provistas por Satellogic, lo que permitirá testear el funcionamiento de los algoritmos con imágenes de distinta calidad, en aplicaciones satelitales. 
+
+\hspace{0.5cm}El lugar de trabajo donde el tesista va a desarrollar sus 
+actividades es el 
+Laboratorio de Electrónica Cuántica (LEC) del Departamento de Física de la 
+Facultad de Ciencias Exactas y Naturales, UBA. El LEC cuenta con todas las 
+instalaciones, infraestructura, instrumentos de medición y equipamiento 
+necesarios para llevar a cabo la presente tesis. 
+
+El director de la presente tesis es director del LEC y es experto en temas de 
+óptica y fotofísica, áreas principales del proyecto. Además, tiene la 
+experiencia de haber dirigido a una estudiante que realizó la tesis en conjunto 
+con el LEC y la empresa Satellogic, resultando en una experiencia exitosa.
+
+El tesista se encuentra cursando actualmente sus últimas dos materias de la 
+carrera: 
+Estructura de la Materia 4 e Instrumentación y Control.
+
+El tesista junto a su director firmarán un NDA (Non-Disclosure Agreement) que 
+le permitirán acceder a información importante para lograr el presente proyecto 
+de tesis.**
+
 \section*{Referencias}
 1. [Hagen 2013] Nathan Hagen , Michael W. Kudenov. Review of snapshot spectral imaging technologies. Optical Engineering 52(9), 090901.
 
@@ -317,6 +444,8 @@ dispersive spectrometer,” Opt. Express 15(9), 5742–5753 (2007).
 
 Lorep ipsum \cite{doe}
 
+
+\renewcommand\bibname{Referencias Bibliográficas}
 \begin{thebibliography}{1}
 
 \bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. Multiplexed
@@ -326,6 +455,10 @@ imaging of intracellular protein networks. 2016.
 	theory of everything”. AIP Conference Proceedings. Vol. 1082.
 	2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
 	0810.3851.}
+
+\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. Semrock Technical Note 
+Series: Measurement of 
+Optical Filter Spectra. 
 
 \end{thebibliography}
 
