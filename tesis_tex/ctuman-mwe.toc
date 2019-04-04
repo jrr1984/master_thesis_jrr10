@@ -26,15 +26,9 @@
 \contentsline {section}{Metodolog\IeC {\'\i }a}{4}{section*.6}
 \contentsline {section}{Actividades asociadas al objetivo 1 - Mayo:}{5}{section*.6}
 \contentsline {subsection}{ Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{5}{section*.7}
-\contentsline {section}{Actividades asociadas al objetivo 2 - Junio:}{5}{figure.0.1}
-\contentsline {subsection}{Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{6}{section*.8}
-\contentsline {section}{Actividades asociadas al objetivo 3 - Agosto:}{6}{section*.8}
-\contentsline {subsection}{Construcci\IeC {\'o}n e implementaci\IeC {\'o}n de un primer prototipo de un sistema integral que pueda decidir si un filtro est\IeC {\'a} apto o no para ser integrado al sat\IeC {\'e}lite.}{7}{section*.9}
-\contentsline {section}{Actividades asociadas al objetivo 4 - Septiembre:}{7}{section*.9}
-\contentsline {subsection}{Establecer control de una de las c\IeC {\'a}maras de la empresa Satellogic para poder adquirir las im\IeC {\'a}genes. Procesar las im\IeC {\'a}genes tomadas haciendo HDR y b\IeC {\'u}squeda de caracter\IeC {\'\i }sticas.}{7}{section*.10}
-\contentsline {section}{Actividades asociadas al objetivo 5 - Octubre:}{7}{section*.10}
-\contentsline {subsection}{Armado de un posible setup experimental para poder caracterizar el filtro en su posici\IeC {\'o}n final en las c\IeC {\'a}maras de vuelo del sat\IeC {\'e}lite.}{7}{section*.11}
-\contentsline {section}{Factibilidad}{7}{section*.11}
-\contentsline {section}{Referencias}{7}{section*.11}
-\contentsline {chapter}{\numberline {1}Conclusion}{9}{chapter.1}
-\contentsline {chapter}{Literatura}{11}{chapter*.12}
+\contentsline {section}{Actividades asociadas al objetivo 2 - Junio:}{8}{figure.0.2}
+\contentsline {subsection}{Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{8}{section*.8}
+\contentsline {section}{Factibilidad}{8}{section*.8}
+\contentsline {section}{Referencias}{8}{section*.8}
+\contentsline {chapter}{\numberline {1}Conclusion}{11}{chapter.1}
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{13}{chapter*.9}
