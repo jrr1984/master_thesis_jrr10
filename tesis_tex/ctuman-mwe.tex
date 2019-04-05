@@ -52,81 +52,47 @@ Prof. Adj. UBA.
 
 
 \section*{Objetivo general}
-
-\hspace{0.5cm}La espectroscopía de imágenes hiperespectrales (HSI: 
+La espectroscopía de imágenes hiperespectrales (HSI: 
 \textit{Hyperspectral Spectroscopy Imaging}) combina la 
 espectroscopía 
 y la 
 adquisición de 
-	imágenes en dos dimensiones. Una imagen hiperespectral es generada a partir 
-	de la colección y el procesamiento de imágenes de una muestra conformadas 
-	por un gran número de bandas espectrales (típicamente entre 10 y 100), con 
-	un ancho de banda muy estrecho de unos pocos nm, cubriendo de esta manera 
-	de forma continua un rango espectral deseado. 
+imágenes en dos dimensiones. 
 
-Este método brinda datos espectrales para cada pixel en el campo de 
+Este método brinda datos espectrales para cada 
+pixel en el campo de 
 visión\footnote{El campo de visión, en inglés \textit{field of view} (FOV), es 
 el ángulo sólido a través del cual un sensor puede detectar la radiación 
 electromagnética que se desee capturar.}. A partir de dichos 
 datos se puede extraer información sobre la emisión, reflexión y absorción de 
 la radiación electromagnética, que puede ser utilizada para determinar la 
-composición química en diferentes áreas de la muestra.
-
-Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
-redes de difracción o prismas como elementos dispersivos de la luz. La 
-distancia requerida entre el sensor de detección y  el componente de difracción 
-de la luz, 
-hace que este tipo de cámaras sean muy grandes y muy pesadas, dos condiciones 
-que por ejemplo en la industria satelital se quieren optimizar fuertemente ya 
-que el costo de la puesta en órbita de los satélites es proporcional a su peso 
-y a su tamaño. 
-Estas cámaras suelen ser muy caras y muy sensibles a desalinearse 
-debido a las 
-condiciones mecánicas de su construcción. Además, requieren de una rendija 
-para poder obtener una alta resolución espectral, lo que restringe 
-significativamente la intensidad de la luz a detectar.
-
-En respuesta a las numerosas desventajas de las cámaras estándard de imágenes 
-hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
-interferencia de banda y que resultaron en un producto final robusto, compacto, 
-de bajo costo y de muy buen rendimiento.
+composición química en diferentes áreas de la muestra. De esta forma se pueden 
+localizar las células de una muestra biológica, identificar 
+tumores de un cáncer, realizar un control de calidad de la comida identificando 
+bacterias u optimizar la siembra y la cosecha de ciertos cultivos, entre otras 
+aplicaciones.
 
 
-Hyperspectral imaging has been used in the past for applications such as air 
-reconnaissance, satellite imaging and other markets that are not overly price 
-sensitive. However, the emergence of alternative methods provides hyperspectral 
-imaging with potential in volume markets and even consumer applications and 
-products.
-Precision farming, cancer detection, and food testing in supermarkets are just 
-some examples of where the new approaches could be employed.
+En la tesis de licenciatura de Agustina Pose, dirigida por Hernán Grecco (quien 
+también dirige esta tesis), ambos desarrollaron un prototipo de cámara 
+hiperespectral para uso satelital junto a la empresa Argentina Satellogic. Tras 
+la realización de pruebas y mediciones en tierra, se aprobó la prueba de 
+concepto de este prototipo y se lo adaptó a un diseño robusto. La cámara 
+hiperespectral diseñada es hoy una de las cargas útiles (o \textit{payloads}) a 
+bordo de los satélites argentinos NewSat 1 y NewSat 2 (alias Fresco y Batata), 
+puestos en órbita el 30 de Mayo de 2016, construidos por la empresa Satellogic.
 
-%semrock:
-\hspace{0.5cm} Los filtros ópticos utilizados en la construcción de cámaras 
-hiperespectrales y 
-multiespectrales resultan fundamentales en aplicaciones como la microscopía de 
-fluorescencia \cite{Grecco2016} y la espectroscopía de reflectancia 
-utilizada para la toma de 
-imágenes hiperespectrales de la superficie de la Tierra \cite{Hogg2008}.
- 
- 
- La capacidad de los filtros ópticos para transmitir ciertas longitudes de onda 
-deseadas y bloquear el resto, resulta crítica para estas aplicaciones. Ahora 
-bien, cuando el ancho de banda centrado en una cierta longitud de onda central 
-que se desea transmitir es muy estrecho, las mediciones de las características 
-espectrales y de transmisión de dichos filtros no suelen ser determinadas con 
-precisión. Más aún, si los filtros son construidos especialmente por un 
-proveedor (\textit{custom-made}) para una cierta aplicación específica, resulta 
-fundamental su caracterización para decidir si incorporar o descartar dichos 
-filtros a la carga útil de la aplicación en cuestión.
+En el presente proyecto se propone continuar con dicho trabajo y desarrollar un 
+sistema integral de caracterización de los filtros de interferencia de banda 
+que son utilizados en las cámaras hiperespectrales. Dicho sistema integral 
+permitirá caracterizar el espectro de transmisión del filtro en cada punto del 
+mismo, encontrar defectos que pudieran modificar su capacidad de bloqueo de 
+ciertas longitudes de onda no deseadas.
 
-En una tesis de licenciatura anterior se co-desarrollo una camara 
-hiperespectral ......
-
-En el presente proyecto se propone desarrollar un sistema integral de 
-caracterización de filtros de interferencia de banda con la capacidad de 
-decidir si un filtro está apto o no para ser integrado a las cámaras 
-hiperespectrales incorporadas en los satélites desarrollados por la empresa 
-Satellogic.
+  con la 
+capacidad de decidir si un filtro está apto o no para ser integrado a las 
+cámaras hiperespectrales incorporadas en los satélites desarrollados por la 
+empresa Satellogic.
 
 
 %Optical filters play an important role in enabling applications such as 
@@ -203,12 +169,31 @@ mientras que las hiperespectrales están formadas por un gran número de bandas
 espectrales (de cientos a miles), con una resolución espectral muy estrecha, de 
 unos pocos nm.
 
-El esquema básico de una cámara hiperespectal de propósito general se muestra 
+Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
+redes de difracción o prismas como elementos dispersivos de la luz. La 
+distancia requerida entre el sensor de detección y  el componente de difracción 
+de la luz, 
+hace que este tipo de cámaras sean muy grandes y muy pesadas, dos condiciones 
+que por ejemplo en la industria satelital se quieren optimizar fuertemente ya 
+que el costo de la puesta en órbita de los satélites es proporcional a su peso 
+y a su tamaño. 
+Estas cámaras suelen ser muy caras y muy sensibles a desalinearse 
+debido a las 
+condiciones mecánicas de su construcción. Además, requieren de una rendija 
+para poder obtener una alta resolución espectral, lo que restringe 
+significativamente la intensidad de la luz a detectar.
+
+En respuesta a las numerosas desventajas de las cámaras estándard de imágenes 
+hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
+interferencia de banda y que resultaron en un producto final robusto, compacto, 
+de bajo costo y de muy buen rendimiento. El esquema básico de este tipo de 
+cámaras hiperespectales se muestra 
 en la Figura \ref{fig:camsens}. Los filtros de interferencia de banda 
 utilizados en este tipo de cámaras deben cumplir ciertos requisitos de calidad 
 (no presentar rayones, ni marcas, etc) 
 y ciertas características espectrales y de transmisión antes de ser 
-incorporados a por ejemplo la carga útil de un satélite que va a ser puesto en 
+incorporados a la carga útil de, por ejemplo, un satélite que va a ser puesto 
+en 
 órbita. En consecuencia, resulta fundamental caracterizar completamente dichos 
 filtros antes de construir las cámaras de la aplicación de interés.
 
@@ -571,6 +556,10 @@ Lorep ipsum \cite{doe}
 
 \renewcommand\bibname{Referencias Bibliográficas}
 \begin{thebibliography}{1}
+
+\bibitem{Pose2016} Adquisición, procesamiento y análisis de imágenes 
+hiperespectrales: de la microscopía de fluorescencia a la industria satelital, 
+Agustina Pose / Hernán Grecco. 
 
 \bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
 Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
