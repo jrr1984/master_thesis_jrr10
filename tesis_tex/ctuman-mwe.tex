@@ -52,23 +52,53 @@ Prof. Adj. UBA.
 
 
 \section*{Objetivo general}
-%conectar càmaras hiperespectrales con filtros y sus aplicaciones
-%Como objetivo general se propone desarrollar métodos para optimizar la
-%adquisición de imágenes hiperespectrales en las cuales se recopila y procesa, 
-%con
-%resolución espacial, información en un rango del espectro electromagnético. 
-%Utilizando
-%un modelo realista de adquisición que incluya parámetros tales como la 
-%respuesta
-%espectral del detector y la óptica así como también las características del 
-%objeto
-%observado, se optimizarán los métodos de sensado y deconvolución espectral. En
-%particular se estudiará el efecto de variables físicas de relevancia, como por 
-%ejemplo
-%número de fotones, resolución espectral, resolución espacial y relación señal 
-%ruido. En
-%este trabajo, se estudiarán en particular la toma de imágenes hiperespectrales
-%mediante sensores remotos y sus aplicaciones en la industria satelital.
+
+\hspace{0.5cm}La espectroscopía de imágenes hiperespectrales (HSI: 
+\textit{Hyperspectral Spectroscopy Imaging}) combina la 
+espectroscopía 
+y la 
+adquisición de 
+	imágenes en dos dimensiones. Una imagen hiperespectral es generada a partir 
+	de la colección y el procesamiento de imágenes de una muestra conformadas 
+	por un gran número de bandas espectrales (típicamente entre 10 y 100), con 
+	un ancho de banda muy estrecho de unos pocos nm, cubriendo de esta manera 
+	de forma continua un rango espectral deseado. 
+
+Este método brinda datos espectrales para cada pixel en el campo de 
+visión\footnote{El campo de visión, en inglés \textit{field of view} (FOV), es 
+el ángulo sólido a través del cual un sensor puede detectar la radiación 
+electromagnética que se desee capturar.}. A partir de dichos 
+datos se puede extraer información sobre la emisión, reflexión y absorción de 
+la radiación electromagnética, que puede ser utilizada para determinar la 
+composición química en diferentes áreas de la muestra.
+
+Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
+redes de difracción o prismas como elementos dispersivos de la luz. La 
+distancia requerida entre el sensor de detección y  el componente de difracción 
+de la luz, 
+hace que este tipo de cámaras sean muy grandes y muy pesadas, dos condiciones 
+que por ejemplo en la industria satelital se quieren optimizar fuertemente ya 
+que el costo de la puesta en órbita de los satélites es proporcional a su peso 
+y a su tamaño. 
+Estas cámaras suelen ser muy caras y muy sensibles a desalinearse 
+debido a las 
+condiciones mecánicas de su construcción. Además, requieren de una rendija 
+para poder obtener una alta resolución espectral, lo que restringe 
+significativamente la intensidad de la luz a detectar.
+
+En respuesta a las numerosas desventajas de las cámaras estándard de imágenes 
+hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
+interferencia de banda y que resultaron en un producto final robusto, compacto, 
+de bajo costo y de muy buen rendimiento.
+
+
+Hyperspectral imaging has been used in the past for applications such as air 
+reconnaissance, satellite imaging and other markets that are not overly price 
+sensitive. However, the emergence of alternative methods provides hyperspectral 
+imaging with potential in volume markets and even consumer applications and 
+products.
+Precision farming, cancer detection, and food testing in supermarkets are just 
+some examples of where the new approaches could be employed.
 
 %semrock:
 \hspace{0.5cm} Los filtros ópticos utilizados en la construcción de cámaras 
@@ -76,17 +106,10 @@ hiperespectrales y
 multiespectrales resultan fundamentales en aplicaciones como la microscopía de 
 fluorescencia \cite{Grecco2016} y la espectroscopía de reflectancia 
 utilizada para la toma de 
-imágenes hiperespectrales de la superficie de la Tierra \cite{Hogg2008}. En 
-estas aplicaciones 
-se distinguen claramente dos señales: una señal de entrada que viene dada por 
-la iluminación (excitación) de una muestra ó la incidencia de la luz sobre la 
-Tierra y, una señal de respuesta dada por la emisión en una muestra 
-biológica ó la reflexión en el caso de la superficie de la Tierra.
-
-Ambas señales no son solo espectralmente distintas sino que además difieren en 
-su intensidad: la señal de entrada puede ser un millón de veces (o más aún) más 
-intensa que la señal de respuesta (reflexión/emisión). En consecuencia, la 
-capacidad de los filtros ópticos para transmitir ciertas longitudes de onda 
+imágenes hiperespectrales de la superficie de la Tierra \cite{Hogg2008}.
+ 
+ 
+ La capacidad de los filtros ópticos para transmitir ciertas longitudes de onda 
 deseadas y bloquear el resto, resulta crítica para estas aplicaciones. Ahora 
 bien, cuando el ancho de banda centrado en una cierta longitud de onda central 
 que se desea transmitir es muy estrecho, las mediciones de las características 
@@ -95,6 +118,9 @@ precisión. Más aún, si los filtros son construidos especialmente por un
 proveedor (\textit{custom-made}) para una cierta aplicación específica, resulta 
 fundamental su caracterización para decidir si incorporar o descartar dichos 
 filtros a la carga útil de la aplicación en cuestión.
+
+En una tesis de licenciatura anterior se co-desarrollo una camara 
+hiperespectral ......
 
 En el presente proyecto se propone desarrollar un sistema integral de 
 caracterización de filtros de interferencia de banda con la capacidad de 
