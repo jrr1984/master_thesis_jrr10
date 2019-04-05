@@ -15,6 +15,7 @@
 \select@language {czech}
 \select@language {czech}
 \select@language {czech}
-\contentsline {figure}{\numberline {1}{\ignorespaces Discrepancias entre las mediciones experimentales con espectr\IeC {\'o}metros comerciales y el espectro ''real'' de un filtro \IeC {\'o}ptico. Adaptado de \cite {Semrock}.\relax }}{6}{figure.0.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Arreglo experimental compatible con la producci\IeC {\'o}n industrial para medir valores de OD altos.\relax }}{7}{figure.0.2}
+\contentsline {figure}{\numberline {1}{\ignorespaces Esquema de una c\IeC {\'a}mara hiperespectral. El filtro absorbe el espectro completo de la luz incidente salvo la banda espectral que el usuario determina, por lo que s\IeC {\'o}lo las longitudes de onda elegidas atraviesan el filtro y son detectadas por el sensor. \cite {Mart\IeC {\'\i }nez2016}\relax }}{3}{figure.0.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Discrepancias entre las mediciones experimentales con espectr\IeC {\'o}metros comerciales y el espectro ''real'' de un filtro \IeC {\'o}ptico. Adaptado de \cite {Semrock}.\relax }}{4}{figure.0.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Arreglo experimental compatible con la producci\IeC {\'o}n industrial para medir valores de OD altos.\relax }}{5}{figure.0.3}
 \addvspace {10\p@ }

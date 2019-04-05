@@ -22,13 +22,12 @@
 \contentsline {chapter}{Plan de Tesis - Juan Reto Reynal}{1}{chapter*.5}
 \contentsline {section}{Objetivo general}{1}{section*.6}
 \contentsline {section}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.6}
-\contentsline {section}{Antecedentes/Introducci\IeC {\'o}n **}{2}{section*.6}
-\contentsline {section}{Metodolog\IeC {\'\i }a}{4}{section*.6}
-\contentsline {section}{Actividades asociadas al objetivo 1 - Mayo:}{5}{section*.6}
-\contentsline {subsection}{ Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{5}{section*.7}
-\contentsline {section}{Actividades asociadas al objetivo 2 - Junio:}{8}{figure.0.2}
-\contentsline {subsection}{Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{8}{section*.8}
-\contentsline {section}{Factibilidad}{8}{section*.8}
-\contentsline {section}{Referencias}{8}{section*.8}
-\contentsline {chapter}{\numberline {1}Conclusion}{11}{chapter.1}
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{13}{chapter*.9}
+\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.6}
+\contentsline {section}{Actividades asociadas al objetivo 1 - Mayo:}{4}{figure.0.2}
+\contentsline {subsection}{ Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{4}{section*.7}
+\contentsline {section}{Actividades asociadas al objetivo 2 - Junio:}{6}{figure.0.3}
+\contentsline {subsection}{Armado de distintos setups de iluminaci\IeC {\'o}n o detecci\IeC {\'o}n para distintas longitudes de onda para analizar los espectros de transmisi\IeC {\'o}n de los filtros.}{6}{section*.8}
+\contentsline {section}{Factibilidad}{6}{section*.8}
+\contentsline {section}{Referencias}{7}{section*.8}
+\contentsline {chapter}{\numberline {1}Conclusion}{9}{chapter.1}
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.9}
