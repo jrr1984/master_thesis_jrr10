@@ -1,4 +1,5 @@
 \documentclass{ctuthesis}
+\usepackage{graphicx}
 \usepackage{subfig}
 \ctusetup{
 	xdoctype = B,
@@ -152,43 +153,52 @@ Satellogic.
 	experimental para poder caracterizar el filtro en su posición final
 	en las cámaras de vuelo del satélite.
 \end{itemize}
-\section*{Antecedentes/Introducción **}
-La captura de imágenes hiperespectrales consiste en colectar y procesar 
-información en longitudes de onda específicas del campo electromagnético. El 
-objetivo es obtener el espectro para cada pixel en la imagen de una escena, con 
-el propósito de hallar objetos, identificar materiales y sustancias, o detectar 
-procesos.
-Los sensores hiperespectrales colectan información como un  set de imágenes. Cada una de ellas representa un rango estrecho de longitudes de onda del espectro electromagnético, el cual se conoce como banda espectral. Estas imágenes se combinan para formar un cubo de datos tridimensional (x,y,$\lambda$) para el procesamiento y análisis, donde x e y representan dos dimensiones espaciales de la escena, y $\lambda$ representa la dimensión espectral (la cual comprende a un cierto rango de longitudes de onda).
-En los distintos sensores hiperespectrales, las longitudes de onda pueden ser separadas por diferentes tipos de filtros, o mediante el uso de instrumentos que sean sensibles a determinadas longitudes de onda, como por ejemplo interferómetros. La forma en la que las distintas longitudes de onda se combinan en un mismo pixel está intrínsecamente relacionada con el diseño particular del sensor que se emplee. Por este motivo, existe una estrecha relación entre el modelo de sensor que se emplee y el algoritmo de deconvolución requerido. Existen diversos diseños de sensores de escaneo multiespectral, algunos de los cuales se encuentran detallados a continuación [1]. Un resumen de estos diseños y sus respectivas SNR se puede encontrar en la referencia [3]. Otros métodos basados en técnicas de escaneo se pueden hallar en las referencias [4], [5] y  [6]. 
+\section*{Introducción}
 
-Espectrómetro de escaneo puntual (Point Scanning Spectrometer): El espectro incidente es dispersado a lo largo de un arreglo lineal de elementos de detección, permitiendo tasas de lectura muy rápidas. La escena es escaneada  a través del sensor mediante el empleo de dos espejos galvanométricos (o solamente uno en caso de que el sensor mismo se esté desplazando).
+\hspace{0.5cm}La espectroscopia de imagen hiperespectral (HSI: 
+\textit{Hyperspectral 
+Spectroscopy Imaging}) está siendo desarrollada en numerosas aplicaciones, 
+desde la industria satelital hasta la microscopía de células vivas.
 
-Espectrómetro de barrido (Pushbroom Spectrometer): el input del sensor es una abertura lineal, cuya imagen se dispersa a través de una matriz bidimensional de detectores, de forma que todos los puntos a lo largo de la línea son muestreados simultáneamente. Para completar la dimensión espacial ortogonal a la línea, la escena es escaneada a través de la apertura de entrada. Esto puede tener la forma de objetos moviéndose a través de una cinta transportadora, el suelo desplazándose bajo un satélite o una plataforma espacial, o la escena siendo escaneada a través de la rendija de entrada mediante un espejo galvanométrico.
+Una imagen a color RGB convencional está compuesta por tres canales de 
+imágenes (bandas): rojo 
+($\sim$ 665nm), verde ($\sim$ 550nm) y azul ($\sim$ 470nm). Este tipo de 
+imágenes permiten emular la percepción que el ojo humano tiene del color, pero 
+no permiten la detección e identificación de distintos objetos sólidos y 
+líquidos, menos 
+aún determinar sus propiedades. Para ello 
+es necesario obtener el espectro completo del objeto de estudio que es posible 
+a partir de la captura de imágenes multiespectrales e hiperespectrales.
 
-Cámara de filtros tuneables (Tunable Filter Camera): una cámara de filtros tuneables se caracteriza por utilizar un sistema de filtros ajustables, ya sea eléctrica o mecánicamente. Entre estos sistemas se pueden destacar las ruedas de filtros, los dispositivos Fabry - Perot mecánicamente ajustables [7] [8], y los filtros ajustables tanto de cristal líquido (LCTF) [9] como los acusto ópticos (AOTF) [10], entre otros. Los tiempos de respuesta en el ajuste de los distintos filtros van desde $\approx$1 s para la rueda de filtros, $\approx$50 a 500 ms para el LCTF y el Fabry Perot mecánicamente ajustable, y $\approx$10 a 50 $\mu$s para el AOTF.
+Las imágenes multiespectrales contienen un número acotado de bandas espectrales 
+de hasta un par de decenas, con un gran ancho de banda (varias decenas de nm); 
+mientras que las hiperespectrales están formadas por un gran número de bandas 
+espectrales (de cientos a miles), con una resolución espectral muy estrecha, de 
+unos pocos nm.
 
-Espectrómetro de proyección de transformada de Fourier (Imaging Fourier Transform Spectrometer): se caracteriza por escanear un espejo de un interferómetro de Michelson con el objetivo de obtener mediciones para múltiples diferencias de camino óptico [11] [12]. Una alternativa más reciente es el espectrómetro de proyección de transformada de Fourier birrefringente, desarrollado por Harvey y Fletcher - Holmes, que cuenta con la ventaja de ser menos sensible a las vibraciones. [13]
+El esquema básico de una cámara hiperespectal de propósito general se muestra 
+en la Figura \ref{fig:camsens}. Los filtros de interferencia de banda 
+utilizados en este tipo de cámaras deben cumplir ciertos requisitos de calidad 
+(no presentar rayones, ni marcas, etc) 
+y ciertas características espectrales y de transmisión antes de ser 
+incorporados a por ejemplo la carga útil de un satélite que va a ser puesto en 
+órbita. En consecuencia, resulta fundamental caracterizar completamente dichos 
+filtros antes de construir las cámaras de la aplicación de interés.
 
-Espectrómetro hiperespectral por tomografía computada (Computed Tomography Hyperspectral Imaging Spectrometer): es un dispositivo de escaneo similar a la técnica de snapshot CTIS, pero cuenta con la ventaja de ser capaz de colectar proyecciones provenientes de una mayor cantidad de ángulos, de forma que la data reconstruida tenga menos artefactos. La desventaja es que el detector no es usado eficientemente en comparación con otros métodos. [14]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{Figs/plan_de_tesis/cam_sens.png}
+	\caption{ Esquema de una cámara hiperespectral. El filtro absorbe el 
+	espectro completo de la luz incidente salvo la banda espectral que el 
+	usuario determina, por lo que sólo las longitudes de onda elegidas 
+	atraviesan el filtro y son detectadas por el sensor. \cite{Martínez2016}}
+	\label{fig:camsens}
+\end{figure}
 
-Espectrómetro lineal de apertura codificada (Coded Aperture Line-Imaging Spectrometer): a pesar de que la espectrometría de apertura codificada comenzó como un método para escanear una apertura codificada a través de la rendija de entrada de un espectrómetro convencional, ha sido adaptada a arreglos bidimensionales modernos de detectores, dando lugar a una mejora en la relación señal - ruido. [15] [16]
 
-El tamaño espacial de los pixels en sensores multiespectrales e hiperespectrales es en general lo suficientemente amplio como para que distintas sustancias puedan contribuir al espectro medido por un solo pixel. El objetivo de los algoritmos de deconvolución espectral consiste en extraer de un espectro los materiales constituyentes en la mezcla, así como las proporciones en las que aparecen. 
-La deconvolución espectral es el procedimiento mediante el cual el espectro medido por un pixel es descompuesto en una colección de espectros constituyentes, endmembers, y un set de las correspondientes fracciones, abundancias, que indican la proporción de cada endmember presente en el pixel. Esto es importante en numerosos escenarios en los que el detalle a nivel subpixel es apreciable, los cuales pueden ir desde el campo de la microscopía de fluorescencia [17] (donde se detallan aplicaciones como Timelapse imaging [18] [19] y FRET [20], entre otras) hasta la toma de imágenes satelitales mediante sensores remotos. En el primer caso, los endmembers y las abundancias se pueden asociar a los fluoróforos y canales que se empleen, mientras que en las aplicaciones satelitales los endmembers normalmente corresponden a objetos macroscópicos en la escena, tales como agua, tierra, metal, o cualquier material natural o hecho por el hombre.
-El proceso de deconvolución de principio a fin es en realidad una concatenación de tres procedimientos distintos, cada uno con objetivos específicos. La reducción dimensional reduce la cantidad de datos con el objetivo de disminuir la carga computacional en los pasos de procesamiento subsecuentes. La determinación de endmembers estima el set de distintos espectros que componen los píxeles mixtos en la escena. La etapa de inversión consta de proveer estimaciones de las abundancias fraccionales para los endmembers en cada pixel. 
-La examinación del proceso de deconvolución se puede estudiar mediante tres criterios que categorizan estos algoritmos. 1. La interpretación de la data indica cómo un algoritmo interpreta el espectro combinado de un pixel. Principalmente se pueden distinguir dos clases de algoritmos, los estadísticos y los no estadísticos. 2. La descripción de la aleatoriedad indica cómo un algoritmo incorpora la aleatoriedad de los datos. Se pueden diferenciar según este criterio los métodos paramétricos de los no paramétricos. 3. Por último, el criterio de optimización indica cuál es la función objetiva que se está optimizando. Según este criterio, se pueden diferenciar los algoritmos que optimizan funciones tales como Squared error, Non squared error, Maximum a posteriori, Maximum likelihood, entre otras. [2]
-\section*{Metodología}
-Dentro del marco de esta investigación se realizarán las siguientes actividades. A través del estudio de papers y patentes acerca de los sistemas de sensado multiespectral existentes, se trabajará con los distintos algoritmos existentes de deconvolución espectral con el objetivo de familiarizarse con el estado del arte y conocer sus aplicaciones y restricciones. Se estudiará la aplicabilidad de cada uno de estos métodos en distintos casos. Para esto se cuenta con imágenes satelitales multiespectrales provistas por Satellogic. 
-Paralelamente, se desarrollará un método de generación de imágenes satelitales multiespectrales artificiales que simule las características de la imagen relevantes para su adquisición. Las imágenes generadas se utilizarán para probar los algoritmos de deconvolución en cuestión. Finalmente se emplearán estos métodos en imágenes reales multiespectrales obtenidas de un microscopio confocal. 
-El siguiente paso será el desarrollo de un algoritmo de deconvolución espectral óptimo que tenga en cuenta las variables físicas de relevancia en el sensado de imágenes, tales como el número de fotones, resolución espectral, resolución espacial y relación señal - ruido. En primer caso este estudio se hará para un caso genérico (lo cual tiene aplicaciones de suma importancia en microscopía, por ejemplo), y posteriormente se analizará el caso particular de sensores remotos, el cual presenta aplicaciones en la toma de imágenes satelitales. Las variables de interés serán determinadas en este caso mediante el análisis de imágenes satelitales existentes, las cuales serán provistas por Satellogic.
-El software a desarrollar se encuentra intrínsecamente relacionado con el método de sensado que se emplee en la toma de las imágenes. El análisis del algoritmo desarrollado permitirá estudiar cuál es el método óptimo para la toma de imágenes multiespectrales, pudiendo aplicarse los resultados tanto a la microscopía como a la toma de imágenes satélitales por sensores remotos. El algoritmo de deconvolución se desarrollará en el lenguaje Python. 
 
-\section*{Actividades asociadas al objetivo 1 - Mayo:}
-\subsection*{ Armado de distintos setups de iluminación o detección para 
-distintas longitudes de onda para analizar los espectros de transmisión de los 
-filtros.}
-
-\hspace{0.5cm}Debido a las limitaciones de las técnicas de medición estándard 
+Debido a las limitaciones de las técnicas de 
+medición estándard 
 de los espectros de transmisión de los filtros ópticos donde se utilizan 
 espectrómetros comerciales, las características de dichos 
 filtros son determinadas generalmente de forma muy imprecisa, especialmente 
@@ -198,64 +208,72 @@ onda es muy estrecho (menos de una decena de nm para ciertas aplicaciones).
 
 Como resultado de estas limitaciones, existen tres discrepancias fundamentales 
 entre el espectro ''real''\footnote{El espectro ''real'' es 
-el espectro de diseño del filtro para el que fue especialmente construido.} de 
+	el espectro de diseño del filtro para el que fue especialmente construido.} 
+	de 
 un 
 filtro y sus mediciones experimentales realizadas con 
 espectrómetros comerciales (Ver Figura \ref{fig:obj1a})\cite{Semrock}. La 
 primera discrepancia es el "redondeo" de características espectrales nítidas de 
 los filtros. 
 Esto se debe al ancho de banda no nulo del haz de la sonda del 
-espectrómetro. La segunda discrepancia es el rango limitado de 
-medición de la OD\footnote{La densidad óptica, OD (Optical Density), es un 
-parámetro útil para describir la transmisión de la luz a través de un filtro 
-óptico con una transmisión extremedamente baja. Si T es la transmisión del 
-filtro, que varía entre 0 y 1, se define la densidad óptica como $OD = 
--$log$_{10} (T)$.} del filtro, que es 
-	producto de la sensibilidad limitada del espectrómetro. 
-	
-	When a filter has high OD (such as OD > 6), very little light reaches the
-	detector, and optical and electronic noise at the detector limit the lowest 
-	signal that can be
-	measured accurately. The signature of this artifact is a flat, noisy 
-	spectrum that appears to be
-	“pinned” to a certain OD value, despite the fact that the actual filter OD 
-	can be substantially
-	higher than the represented value. This signal limit is often called the 
-	“noise floor,” and it can be
-	wavelength dependent due to variations in the light source and detector 
-	response spectra. Note
-	that the noise floor can be decreased allowing for higher OD measurements 
-	by opening up the
-	monochromator slits and letting more light through the system, but this 
-	increased sensitivity
-	must be traded off against poorer spectral resolution.
-	
-	
-	La tercera 
-	discrepancia es propia de las mediciones de transiciones muy 
-	pronunciadas. Esto surge 
-	por el hecho de que el 
-	haz de la sonda no es monocromático, sino que también tiene bandas 
-	laterales débiles de longitudes de onda fuera de su ancho de banda 
-	principal.
+espectrómetro. 
 
-  
+
+La segunda discrepancia se debe al rango limitado de 
+medición de la OD\footnote{La densidad óptica, OD (Optical Density), es un 
+	parámetro útil para describir la transmisión de la luz a través de un 
+	filtro 
+	óptico con una transmisión extremedamente baja. Si T es la transmisión del 
+	filtro, que varía entre 0 y 1, se define la densidad óptica como $OD = 
+	-$log$_{10} (T)$.} del filtro, que es 
+producto de la sensibilidad limitada del espectrómetro. Cuando un filtro 
+tiene un valor de OD muy alto, OD $>$ 6, el detector debería medir una 
+intensidad de la luz prácticamente nula pero el ruido óptico y electrónico 
+propio del detector limita el nivel más bajo de intensidad que puede medir 
+con precisión. De esta forma, se puede ver un ruido de piso debido al 
+sensor indicando un cierto valor de OD que no coincide con el valor real 
+del filtro.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.8]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
 	\caption{Discrepancias entre las mediciones experimentales con 
-	espectrómetros 
-	comerciales y el espectro ''real'' de un filtro óptico. Adaptado de 
-	\cite{Semrock}.}
+		espectrómetros 
+		comerciales y el espectro ''real'' de un filtro óptico. Adaptado de 
+		\cite{Semrock}.}
 	\label{fig:obj1a}
 \end{figure}
+
+La tercera 
+discrepancia es propia de las mediciones de transiciones muy 
+pronunciadas. Esto surge 
+por el hecho de que el 
+haz de la sonda no es monocromático, sino que también tiene bandas 
+laterales débiles de longitudes de onda fuera de su ancho de banda 
+principal.
+
+
+
 
 Ahora bien, dependiendo de la aplicación, las limitaciones en las mediciones 
 del espectro de transmisión de los filtros pueden ser determinantes o no. En el 
 presente proyecto se quiere determinar el arreglo experimental óptimo pero que 
-sea compatible con los tiempos y costos de producción de la industria.
+sea compatible con los tiempos y costos de producción de la industria satelital.
 
-En ciertos filtros y aplicaciones, resulta de vital importancia el 
+\section*{Actividades asociadas al objetivo 1 - Mayo:}
+\subsection*{ Armado de distintos setups de iluminación o detección para 
+distintas longitudes de onda para analizar los espectros de transmisión de los 
+filtros.}
+
+
+\hspace{0.5cm}Las discrepancias de medición en espectrómetros convencionales 
+causan 
+importantes problemas al intentar evaluar el rendimiento del filtro para la 
+aplicación prevista.
+
+
+\hspace{0.5cm}En ciertos filtros y aplicaciones, resulta de vital importancia 
+el 
 nivel de bloqueo de ciertos rangos de longitudes de onda pero no así la 
 suavidad de la transición entre el bloqueo y la transmisión. Por ejemplo, en 
 sistemas de 
@@ -448,6 +466,17 @@ Lorep ipsum \cite{doe}
 \renewcommand\bibname{Referencias Bibliográficas}
 \begin{thebibliography}{1}
 
+\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
+Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
+Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
+http://dx.doi.org/10.14569/IJACSA.2018.090808
+
+\bibitem{Martínez2016} Martínez-Usó, Adolfo \& Pla, Filiberto \& Sotoca, José 
+\& 
+García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
+in Hyperspectral Images. 5112. 1091-1100. 
+\href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
+ 
 \bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. Multiplexed
 imaging of intracellular protein networks. 2016.
 
