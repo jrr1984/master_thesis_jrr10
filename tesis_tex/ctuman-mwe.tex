@@ -45,7 +45,8 @@ hiperespectrales.
 
 \hspace{-0.4cm}\textsc{Alumno:} Juan Reto Reynal L.U. 777/12.
 
-\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, Inv. Adj. CONICET, Prof. Adj. UBA.
+\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, Inv. Indep. CONICET, 
+Prof. Adj. UBA.
 
 \hspace{-0.4cm}\textsc{Lugar de trabajo:} LEC, Departamento de Física, FCEyN, UBA.
 
@@ -269,7 +270,86 @@ filtros.}
 \hspace{0.5cm}Las discrepancias de medición en espectrómetros convencionales 
 causan 
 importantes problemas al intentar evaluar el rendimiento del filtro para la 
-aplicación prevista.
+aplicación prevista. 
+
+La elección del instrumento de medición y la técnica 
+empleada determinan la precisión de la medición del espectro de transmisión del 
+filtro. Al mismo tiempo, determinan la duración y por ende también el costo de 
+dichas mediciones, que deben ser compatibles con los tiempos que la industria 
+requiere. Esto se puede ver con un ejemplo tomado de \cite{Semrock}. En la 
+Figura \ref{fig:may_dists} se muestran cinco mediciones distintas de 
+la densidad óptica de un filtro diseñado para bloquear longitudes de onda de 
+532 nm con OD $>$ 6 y tener una transición a un estado de alta transmisión 
+dentro del $0.5\%$ de la longitud de onda del láser utilizado para excitar la 
+muestra, que es de 534.7nm.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{Figs/plan_de_tesis/dists_meds.png}
+	\caption{Distintas mediciones de la OD de un filtro LP03-532RE-
+		25 RazorEdge de la empresa Semrock. Las mediciones fueron realizadas 
+		utilizando tanto espectrómetros comerciales como \textit{custom-made} 
+		de la emppresa con una variedad de arreglos experimentales que se 
+		explican en el texto. Adaptado de 
+		\cite{Semrock}.}
+	\label{fig:may_dists}
+\end{figure}
+
+Las mediciones del método A fueron realizadas por un espectrómetro de diseño 
+propio (\textit{custom-built}) de la empresa,  que tiene un tiempo de 
+integración muy corto y una baja resolución, lo que resulta en una 
+configuración 
+experimental óptima para obtener mediciones de una gran cantidad de filtros de 
+prueba. Este método es utilizado para determinar con precisión la longitud de 
+onda a partir de la cual el filtro pasa a tener una alta transmisión, es decir, 
+localiza la longitud de onda de la transición entre el estado de bloqueo y de 
+transmisión del filtro, la longitud de onda de corte. De esta forma, se 
+garantiza una cierta uniformidad en un lote de filtros a ser utilizado de una 
+forma rápida y eficiente. Ahora bien, como se observa en el gráfico de la 
+Figura \ref{fig:may_dists}, el método A posee una sensibilidad muy mala y una 
+resolución muy baja, obteniéndose un piso de ruido mayor a OD 2.
+
+El método B utiliza un espectrómetro comercial (Perkin Elmer
+Lambda 900) cuyos inconvenientes fueron explicados a partir de las tres 
+discrepancias en la Figura \ref{fig:obj1a}. Con este método no se puede 
+asegurar que el filtro tenga un 0D $>$ 6 en los 532nm.
+
+
+Los métodos C y D utilizan el mismo espectrómetro \textit{custom-built}	del 
+método A, cuyo principio de funcionamiento básico se muestra en la Figura 
+\ref{fig:med_prev}. La diferencia fundamental con el método B que utiliza un 
+espectrómetro comercial es que las mediciones con el espectrómetro 
+\textit{custom-built} realizan la detección con una cámara CMOS de bajo ruido, 
+que consiste en un arreglo de detectores, por lo que puede medir en un rango 
+muy grande de longitudes de onda simultáneamente. Este método permite en 
+consecuencia obtener mediciones en un rango espectral muy grande, con una 
+cierta resolución en un cierto tiempo de integración, de forma muy rápida.
+El inconveniente fundamental de este método es que al utilizar una fuente de 
+iluminación de banda ancha, si el filtro de prueba tuviera, por ejemplo, una 
+autofluorescencia apreciable \cite{Shah2017}, podría interferir con una 
+medición precisa de la transmisión de la muestra.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{Figs/plan_de_tesis/med_mets_prevs.png}
+	\caption{Diseño básico de un espectrómetro \textit{custom-built} que 
+	utiliza una fuente de iluminación de banda ancha y permite la recolección 
+	de una 		amplia gama de
+		longitudes de onda simultáneamente con un conjunto de detectores 
+		situados en la cámara. Este 
+		arreglo experimental permite una medición más rápida con un piso de 
+		ruido y una resolución fijas. Adaptado de 
+		\cite{Semrock}.}
+	\label{fig:med_prev}
+\end{figure}
+
+
+
+
+
+
 
 
 \hspace{0.5cm}En ciertos filtros y aplicaciones, resulta de vital importancia 
@@ -476,6 +556,13 @@ http://dx.doi.org/10.14569/IJACSA.2018.090808
 García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
 in Hyperspectral Images. 5112. 1091-1100. 
 \href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
+ 
+ 
+ 
+\bibitem{Shah2017} Kamal G. Shah y Paul Yager.Wavelengths and Lifetimes of 
+Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
+Sensitivity of Fluorescence-Based Assays in Paper. Anal. Chem. 2017,  89, 22, 
+12023-12029. 2017.
  
 \bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. Multiplexed
 imaging of intracellular protein networks. 2016.

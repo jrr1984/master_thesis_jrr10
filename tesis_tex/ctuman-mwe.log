@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  5 APR 2019 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  5 APR 2019 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1539,7 +1539,7 @@ Package microtype Info: Character `029' is missing
 
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 53.
+(hyperref)                be the same. Added a new anchor on input line 54.
 
 [1
 
@@ -1548,33 +1548,33 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 
 ]
-Overfull \hbox (3.07256pt too wide) in paragraph at lines 158--162
+Overfull \hbox (3.07256pt too wide) in paragraph at lines 159--163
  \T1/lmr/m/n/10.95 (-20) La espectrosco-pia de imagen hi-pe-re-spectral (HSI: \
 T1/lmr/m/it/10.95 (-20) Hy-per-spectral Spectroscopy
  []
 
-<Figs/plan_de_tesis/cam_sens.png, id=113, 380.34404pt x 245.5327pt>
+<Figs/plan_de_tesis/cam_sens.png, id=119, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 
 <use Figs/plan_de_tesis/cam_sens.png>
-Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png used on input line 190
+Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png used on input line 191
 .
 (pdftex.def)             Requested size: 304.27563pt x 196.4264pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 197.
  [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 211.
+(Font)              <9> on input line 212.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 211.
+(Font)              <5> on input line 212.
 
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=128, 414.04688pt x 33
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=134, 414.04688pt x 33
 8.76563pt>
 File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
 pg)
  <use Figs/plan_de_tesis/measurement_of_optical_filter.jpg>
 Package pdftex.def Info: Figs/plan_de_tesis/measurement_of_optical_filter.jpg u
-sed on input line 239.
+sed on input line 240.
 (pdftex.def)             Requested size: 331.23795pt x 271.01285pt.
 
 
@@ -1583,80 +1583,101 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [3 <./Figs/plan_de_tesis/cam_sens.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 266.
+(hyperref)                be the same. Added a new anchor on input line 267.
 
 [4 <./Figs/plan_de_tesis/measurement_of_optical_filter.jpg>]
-<Figs/plan_de_tesis/setup_u.jpeg, id=151, 308.53731pt x 108.405pt>
+<Figs/plan_de_tesis/dists_meds.png, id=158, 479.02039pt x 382.66039pt>
+File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
+
+<use Figs/plan_de_tesis/dists_meds.png>
+Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png used on input line 2
+89.
+(pdftex.def)             Requested size: 383.21683pt x 306.12872pt.
+
+Overfull \hbox (20.21683pt too wide) in paragraph at lines 289--295
+ [][] 
+ []
+
+[5 <./Figs/plan_de_tesis/dists_meds.png>]
+<Figs/plan_de_tesis/med_mets_prevs.png, id=172, 340.96616pt x 216.81pt>
+File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
+
+<use Figs/plan_de_tesis/med_mets_prevs.png>
+Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png used on input li
+ne 336.
+(pdftex.def)             Requested size: 272.77328pt x 173.44823pt.
+ [6 <./Figs/plan_de_tesis/med_mets_prevs.png>] <Figs/plan_de_tesis/setup_u.jpeg
+, id=182, 308.53731pt x 108.405pt>
 File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
 
 <use Figs/plan_de_tesis/setup_u.jpeg>
-Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg used on input line 306
+Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg used on input line 386
 .
 (pdftex.def)             Requested size: 308.53654pt x 108.40472pt.
- [5 <./Figs/plan_de_tesis/setup_u.jpeg>]
+ [7 <./Figs/plan_de_tesis/setup_u.jpeg>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 349.
+(hyperref)                be the same. Added a new anchor on input line 429.
 
-[6]
-Overfull \hbox (10.08188pt too wide) in paragraph at lines 452--453
+[8]
+Overfull \hbox (10.08188pt too wide) in paragraph at lines 532--533
 []\T1/lmr/m/n/10.95 (-20) 16. [Gehm 2008] M. E. Gehm et al., ^^PHigh-throughput
 , mul-tiplexed pushbroom
  []
 
-[7] [8
+[9] [10
 
 ]
 Cap\IeC {\'\i }tulo 1.
 
-LaTeX Warning: Citation `doe' on page 9 undefined on input line 463.
+LaTeX Warning: Citation `doe' on page 11 undefined on input line 543.
 
-[9] [10
+[11] [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
 []\T1/lmr/m/n/10.95 (+20) Muhammad Ma-teen, Junhao Wen, Na-srullah and Mu-ha-m-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
 \T1/lmr/m/n/10.95 (+20) mad Azeem Akbar, ^^PThe Role of Hy-per-spectral Ima-gin
 g:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
 \T1/lmr/m/n/10.95 (+20) A Li-te-ra-ture Re-view^^Q In-ter-nati-o-nal Jour-nal o
 f Advan-ced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
 \T1/lmr/m/n/10.95 (+20) Com-pu-ter Science and Ap-pli-cati-ons(IJACSA), 9(8), 2
 018.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 494.
-[11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 494.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
  (./ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 494.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 494.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
 Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
-(rerunfilecheck)             Checksum: E57397D6EC4DE2D0956C921C22C2620D;1084.
+(rerunfilecheck)             Checksum: 889DC9DA8134F750CD7F83A585AE12CA;1084.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 494.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 581.
  ) 
 Here is how much of TeX's memory you used:
- 19875 strings out of 493029
- 343223 string characters out of 6136235
- 447352 words of memory out of 5000000
- 22943 multiletter control sequences out of 15000+600000
- 111484 words of font info for 142 fonts, out of 8000000 for 9000
+ 19921 strings out of 493029
+ 343982 string characters out of 6136235
+ 448107 words of memory out of 5000000
+ 22956 multiletter control sequences out of 15000+600000
+ 117061 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,17n,57p,10372b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.Mart\355nez2016} has been referenced but doe
@@ -1675,10 +1696,10 @@ exmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt
 10.pfb>
-Output written on ctuman-mwe.pdf (17 pages, 712184 bytes).
+Output written on ctuman-mwe.pdf (19 pages, 980987 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 34421 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 36479 words of extra memory for PDF output out of 42996 (max. 10000000)
 
