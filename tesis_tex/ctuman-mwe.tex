@@ -1,6 +1,19 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
 \usepackage{subfig}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+%\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+		colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
+		coltitle=black,center title}}
+
+
+
 \ctusetup{
 	xdoctype = B,
 	xfaculty = FCEyN,
@@ -95,31 +108,23 @@ cada punto del mismo, es decir en cada posición $(x,y)$ de su superficie, y
 encontrar defectos que pudieran modificar su capacidad de bloqueo de ciertas 
 longitudes de onda no deseadas.
 
-\section*{Objetivos específicos del proyecto}
+\subsection*{Objetivos específicos del proyecto}
 \begin{itemize}
 	
-	\item \texttt{Objetivo 0 - Abril:} Revisión del estado del arte.
-	\item \texttt{Objetivo 1 - Mayo:} Armado de distintos setups de iluminación 
+	\item \texttt{Objetivo 1:} Armado de distintos setups de iluminación 
 	o detección para distintas longitudes de onda para analizar los espectros 
 	de transmisión de los filtros.
-	\item \texttt{Objetivo 2 - Junio:} Armado de distintas configuraciones 
+	\item \texttt{Objetivo 2:} Armado de distintas configuraciones 
 	experimentales controlando distintas formas de iluminar los filtros
 	para poder encontrar los defectos.
-	\item \texttt{Objetivo 3 - Agosto:} Construcción e implementación de un primer prototipo de un sistema integral que pueda decidir si un filtro está apto o no para ser integrado al satélite.
-	\item \texttt{Objetivo 4 - Septiembre:} Establecer control de una de las cámaras de la empresa Satellogic para poder adquirir las
-	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de características.
-	\item \texttt{Objetivo 5 - Octubre:} Armado de un posible setup 
-	experimental para poder caracterizar el filtro en su posición final
-	en las cámaras de vuelo del satélite.
+	\item \texttt{Objetivo 3:} Construcción e implementación de un primer 
+	prototipo de un sistema integral que pueda decidir si un filtro está apto o 
+	no para ser integrado al satélite.
 \end{itemize}
 \section*{Introducción}
 
-\hspace{0.5cm}La espectroscopia de imagen hiperespectral (HSI: 
-\textit{Hyperspectral 
-Spectroscopy Imaging}) está siendo desarrollada en numerosas aplicaciones, 
-desde la industria satelital hasta la microscopía de células vivas.
-
-Una imagen a color RGB convencional está compuesta por tres canales de 
+\hspace{0.5cm}Una imagen a color RGB convencional está compuesta por tres 
+canales de 
 imágenes (bandas): rojo 
 ($\sim$ 665nm), verde ($\sim$ 550nm) y azul ($\sim$ 470nm). Este tipo de 
 imágenes permiten emular la percepción que el ojo humano tiene del color, pero 
@@ -129,11 +134,21 @@ aún determinar sus propiedades. Para ello
 es necesario obtener el espectro completo del objeto de estudio que es posible 
 a partir de la captura de imágenes multiespectrales e hiperespectrales.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{Figs/plan_de_tesis/multivshyper.png}
+	\caption{ Representación de los espectros: (A) Multiespectral: 5 
+	bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
+	generalmente entre cientos y miles de ellas. Los dibujos no se encuentran 
+	realizados a escala. Imagen tomada de \cite{Adão2017}.}
+	\label{fig:spectrus}
+\end{figure}
+
 Las imágenes multiespectrales contienen un número acotado de bandas espectrales 
 de hasta un par de decenas, con un gran ancho de banda (varias decenas de nm); 
 mientras que las hiperespectrales están formadas por un gran número de bandas 
 espectrales (de cientos a miles), con una resolución espectral muy estrecha, de 
-unos pocos nm.
+unos pocos nm (Ver Figura \ref{fig:spectrus}).
 
 Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
 redes de difracción o prismas como elementos dispersivos de la luz. La 
@@ -149,7 +164,7 @@ condiciones mecánicas de su construcción. Además, requieren de una rendija
 para poder obtener una alta resolución espectral, lo que restringe 
 significativamente la intensidad de la luz a detectar.
 
-En respuesta a las numerosas desventajas de las cámaras estándard de imágenes 
+En respuesta a las desventajas de las cámaras estándard de imágenes 
 hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
 interferencia de banda y que resultaron en un producto final robusto, compacto, 
 de bajo costo y de muy buen rendimiento. El esquema básico de este tipo de 
@@ -178,13 +193,7 @@ filtros antes de construir las cámaras de la aplicación de interés.
 Debido a las limitaciones de las técnicas de 
 medición estándard 
 de los espectros de transmisión de los filtros ópticos donde se utilizan 
-espectrómetros comerciales, las características de dichos 
-filtros son determinadas generalmente de forma muy imprecisa, especialmente 
-cuando el ancho de banda de transmisión centrado en una cierta de longitud de 
-onda es muy estrecho (menos de una decena de nm para ciertas aplicaciones).
-
-
-Como resultado de estas limitaciones, existen tres discrepancias fundamentales 
+espectrómetros comerciales, existen tres discrepancias fundamentales 
 entre el espectro ''real''\footnote{El espectro ''real'' es 
 	el espectro de diseño del filtro para el que fue especialmente construido.} 
 	de 
@@ -212,7 +221,7 @@ con precisión. De esta forma, se puede ver un ruido de piso debido al
 sensor indicando un cierto valor de OD que no coincide con el valor real 
 del filtro.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
 	\caption{Discrepancias entre las mediciones experimentales con 
@@ -230,21 +239,7 @@ haz de la sonda no es monocromático, sino que también tiene bandas
 laterales débiles de longitudes de onda fuera de su ancho de banda 
 principal.
 
-
-
-
-Ahora bien, dependiendo de la aplicación, las limitaciones en las mediciones 
-del espectro de transmisión de los filtros pueden ser determinantes o no. En el 
-presente proyecto se quiere determinar el arreglo experimental óptimo pero que 
-sea compatible con los tiempos y costos de producción de la industria satelital.
-
-\section*{Actividades asociadas al objetivo 1 - Mayo:}
-\subsection*{ Armado de distintos setups de iluminación o detección para 
-distintas longitudes de onda para analizar los espectros de transmisión de los 
-filtros.}
-
-
-\hspace{0.5cm}Las discrepancias de medición en espectrómetros convencionales 
+Las discrepancias de medición en espectrómetros convencionales 
 causan 
 importantes problemas al intentar evaluar el rendimiento del filtro para la 
 aplicación prevista. 
@@ -325,11 +320,12 @@ medición precisa de la transmisión de la muestra.
 
 
 
+Ahora bien, dependiendo de la aplicación, las limitaciones en las mediciones 
+del espectro de transmisión de los filtros pueden ser determinantes o no. En el 
+presente proyecto se quiere determinar el arreglo experimental óptimo pero que 
+sea compatible con los tiempos y costos de producción de la industria satelital.
 
-
-
-
-\hspace{0.5cm}En ciertos filtros y aplicaciones, resulta de vital importancia 
+En ciertos filtros y aplicaciones, resulta de vital importancia 
 el 
 nivel de bloqueo de ciertos rangos de longitudes de onda pero no así la 
 suavidad de la transición entre el bloqueo y la transmisión. Por ejemplo, en 
@@ -345,10 +341,10 @@ diseñados para estas aplicaciones podrían tener decenas de OD de bloqueo pero
 en 
 la práctica incluso el más pequeño de los defectos físicos en los 
 recubrimientos ópticos (\textit{coatings}) o en el montaje, así como el bajo 
-nivel de control de luz parásita a nivel del sistema (**), puede limitar el 
+nivel de control de luz parásita a nivel del sistema, puede limitar el 
 bloqueo alcanzable a valores mucho menores que los del diseño original, en el 
-rango de aproximadamente OD 6 a quizás 10.(forma indirecta de medir los scrath 
-and dig!!**))) 
+rango de aproximadamente OD 6 a quizás 10.%(forma indirecta de medir los scrath 
+%and dig!!**))) 
 
 Dado que los espectrómetros 
 comerciales estándard tienen una medición de OD de rango limitado debido al 
@@ -400,60 +396,82 @@ las dos mediciones de intensidad de la luz es igual al valor de OD del filtro
 de prueba, en el rango espectral del filtro de referencia.
 
 
-\section*{Actividades asociadas al objetivo 2 - Junio:}
-\subsection*{Armado de distintos setups de iluminación 
-	o detección para distintas longitudes de onda para analizar los espectros 
-	de transmisión de los filtros.}
+\section*{Actividades y Metodología}
 
-The actual blocking provided by a filter is determined not only by its designed 
-spectrum, but
-also by physical imperfections of the filter, such as pinholes generated during 
-the thin-film
-coating process, dirt and other surface defects, or flaws in the filter 
-mounting. Pinholes can
-allow light to pass through the filter unblocked – a single 10 $\mu$m pinhole 
-(that 
-penetrates
-completely through the coating) limits the blocking of a 10 mm diameter beam to 
-at most OD 6,
-regardless of the designed level of blocking of the filter spectrum. Other 
-surface and mounting
-imperfections can cause scattered light that ''leaks'' through the filter due 
-to 
-a shift of the
-spectrum to a region of high transmission for scattered light at high angles of 
-incidence, or via unblocked paths near the edges or mounting. Therefore, it is 
-important to evaluate the blocking
-performance of filters after they have been fully manufactured into finished 
-products.
-%\section*{Actividades asociadas al objetivo 3 - Agosto:}
-%\subsection*{Construcción e implementación de un primer prototipo de un 
-%sistema 
-%integral que pueda decidir si un filtro está apto o no para ser integrado al 
-%satélite.}
+\hspace{0.5cm}En el presente trabajo de tesis se desarrollarán múltiples 
+arreglos 
+experimentales para caracterizar el espectro de transmisión de distintos 
+filtros de prueba que dispone el LEC, utilizando técnicas de medición en línea 
+con los papers y patentes de la actualidad. Se automatizará la adquisición de 
+las mediciones y se incorporará al arreglo experimental inicial un sistema de 
+detección de defectos de los filtros, utilizando una cámara de bajo costo del 
+laboratorio para realizar las primeras pruebas. 
 
+Una vez caracterizado tanto el espectro como los defectos de los filtros, se 
+diseñará y construirá un primer prototipo de un sistema integral de 
+caracterización para ser aplicado con los filtros que utiliza la empresa 
+Satellogic en sus cámaras hiperespectrales. Se estudiará la aplicabilidad de 
+este prototipo en distintos casos.
 
-%\section*{Actividades asociadas al objetivo 4 - Septiembre:}
-%\subsection*{Establecer control de una de las cámaras de la empresa Satellogic 
-%para poder adquirir las
-%	imágenes. Procesar las imágenes tomadas haciendo HDR y búsqueda de 
-%	características.}
+Utilizando el prototipo del sistema integral de caracterización de los filtros 
+se desarrollará un método y criterios para decidir si un filtro puede ser 
+incorporado a la cámara utilizada en los satélites.
 
+Como aplicación de este proyecto de tesis se utilizarán las cámaras 
+hiperespectrales de la empresa Satellogic, cuyos filtros van a ser 
+caracterizados con el sistema integral que se va a desarrollar, y se tomarán 
+imágenes en tierra utilizando algoritmos de HDR y de búsqueda de 
+características.  Y, finalmente se realizará una caracterización de los filtros 
+en su posición final en las cámaras de vuelo del satélite.
 
-%\section*{Actividades asociadas al objetivo 5 - Octubre:}
-%\subsection*{Armado de un posible setup 
-%	experimental para poder caracterizar el filtro en su posición final
-%	en las cámaras de vuelo del satélite.}
+El cronograma mensual de trabajo se muestra en la siguiente Tabla:
+
+\begin{tcolorbox}[tab2,tabularx={X||Y|Y|Y|Y|Y|Y|Y|Y|Y|Y|Y|Y},title= 
+\textbf{Cronograma 
+mensual 
+de actividades 
+propuestas},boxrule=0.5pt]
+	\textbf{Actividad} & \textbf{4} & \textbf{5} & \textbf{6} & 
+	\textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} & \textbf{11} & 
+	\textbf{12}      
+	\\\hline\hline
+	Revisión del estado del arte   &  \checkmark    &  & & & & & & & \\\hline
+	Caracterización de los espectros de transmisión de los filtros    &   & 
+	\checkmark & \checkmark
+	& \checkmark & & & & &\\ \hline
+	Determinación de defectos de los filtros (\textit{scratch and dig})     &   
+	&  & \checkmark & \checkmark & & & & &\\ \hline
+	Diseño y construcción del primer prototipo del sistema integral de 
+	caracterización de los filtros    &   
+	&  &  & \checkmark & \checkmark & & & &\\ \hline
+	Implementación del sistema integral en las cámaras de Satellogic. 
+	    &   
+	&  &  &  & \checkmark & \checkmark & \checkmark & &\\\hline
+	Procesamiento de imágenes haciendo HDR y búsqueda de características  &   
+	&  &  &  & \checkmark & \checkmark & \checkmark & \checkmark &\\\hline
+	Caracterización de los filtros en su posición final en las cámaras de vuelo 
+	del satélite   &   
+	&  &  &  & &  &  & \checkmark & \checkmark\\
+\end{tcolorbox}
 
 \section*{Factibilidad}
 
 \hspace{0.5cm}El lugar de trabajo donde el tesista va a desarrollar sus 
 actividades es el 
 Laboratorio de Electrónica Cuántica (LEC) del Departamento de Física de la 
-Facultad de Ciencias Exactas y Naturales, UBA. El LEC cuenta con todas las 
-instalaciones, infraestructura, instrumentos de medición y equipamiento 
-necesarios para llevar a cabo la presente tesis. 
-
+Facultad de Ciencias Exactas y Naturales, UBA. El LEC cuenta con diversos 
+equipos de uso general en óptica y electrónica y algunos de uso específico para 
+aplicaciones en investigación de física básica. Entre los equipos de uso 
+relevante para el presente proyecto se pueden encontrar mesas ópticas de 
+suspensión neumática, un microscopio invertido automático Zeiss Observer Z1, 
+diversas placas de adquisición y procesamiento (NI y Red Pitaya, Raspberry Pi y 
+Arduino), cámaras científicas y de bajo ruido (Apogee U2000, QHY183M), 
+elementos de óptica para la construcción de instrumentos (lentes, filtros, 
+objetivos de microscopio, optomecánica, láseres y leds). Adicionalmente, el 
+laboratorio cuenta con acceso a un microscopio confocal de la firma Olympus, 
+modelo FV1000 equipado con una platina motorizada, cámara ambiental y cámara 
+CCD.
+ 
 El director de la presente tesis es director del LEC y es experto en temas de 
 óptica y fotofísica, áreas principales del proyecto. Además, tiene la 
 experiencia de haber dirigido a una estudiante que realizó la tesis en conjunto 
@@ -463,99 +481,57 @@ El tesista se encuentra cursando actualmente sus últimas dos materias de la
 carrera: 
 Estructura de la Materia 4 e Instrumentación y Control.
 
-El tesista junto a su director firmarán un NDA (Non-Disclosure Agreement) que 
-le permitirán acceder a información importante para lograr el presente proyecto 
-de tesis.**
-
-\section*{Referencias}
-1. [Hagen 2013] Nathan Hagen , Michael W. Kudenov. Review of snapshot spectral imaging technologies. Optical Engineering 52(9), 090901.
-
-2. [Keshava 2003] Nirmal Keshava. A Survey of Spectral Unmixing Algorithms. Lincoln Laboratory Journal, Vol. 14, 1, 2003.
-
-3. [Sellar 2005] R. G. Sellar and G. D. Boreman, “Comparison of relative signal-tonoise
-ratios of different classes of imaging spectrometer,” Appl. Opt. 44(9), 1614–1624 (2005).
-
-4. [Eismann 2012] M. T. Eismann, Hyperspectral Remote Sensing, SPIE Press, Bellingham, WA (2012).
-
-5. [Harvey 2000] A. R. Harvey et al., “Technology options for imaging spectrometry,”
-Proc. SPIE 4132, 13–24 (2000).
-
-6. [Prieto 2008] X. Prieto-Blanco et al., “Optical configurations for imaging spectrometers,” Comput. Intell. Rem. Sens. 133, 1–25 (2008).
-
-7. [Atherton 1981] P. D. Atherton et al., “Tunable Fabry-Perot filters,” Opt. Eng. 20(6),
-806–814 (1981).
-
-8. [Antila 2012] J. Antila et al., “Spectral imaging device based on a tuneable MEMS
-Fabry-Perot interferometer,” Proc. SPIE 8374, 83740F (2012).
-
-9. [Gupta 2008] N. Gupta, “Hyperspectral imager development at Army Research
-Laboratory,” Proc. SPIE 6940, 69401P (2008).
-
-10. [Poger 2001] S. Poger and E. Angelopoulou, “Multispectral sensors in computer
-vision,” Technical Report CS 2001-3, Stevens Institute of Technology (2001).
-
-11. [Potter 1972] A. E. Potter, “Multispectral imaging system,” U.S. Patent No. 3702735 (1972).
-
-12. [Descour 1996] M. R. Descour, “The throughput advantage in imaging Fouriertransform spectrometers,” Proc. SPIE 2819, 285–290 (1996).
-
-13. [Harvey 2004] A. R. Harvey and D. W. Fletcher-Holmes, “Birefringent Fourier-transform imaging spectrometer,” Opt. Express 12(22), 5368–5374 (2004).
-
-14. [Mooney 1995] J. M. Mooney, “Angularly multiplexed spectral imager,” Proc. SPIE
-2480, 65–77 (1995).
-
-15. [Fernandez 2007] C. Fernandez et al., “Longwave infrared (LWIR) coded aperture
-dispersive spectrometer,” Opt. Express 15(9), 5742–5753 (2007).
-
-16. [Gehm 2008] M. E. Gehm et al., “High-throughput, multiplexed pushbroom hyperspectral microscopy,” Opt. Express 16(15), 11032–11043 (2008).
-
-17. [Zimmermann 2005] Timo Zimmermann. Spectral Imaging and Linear Unmixing in Light Microscopy. Adv Biochem Engin/Biotechnol (2005) 95: 245– 265
-
-18. Shima DT, Scales SJ, Kreis TE, Pepperkok R (1999) Curr Biol 9:821 
-
-19. Ellenberg J, Lippincott-Schwartz J, Presley JF (1999) Trends Cell Biol 9:52
-
-20. [Wouters 2001] Wouters FS, Verveer PJ, Bastiaens PI (2001) Trends Cell Biol 11:203
-\chapter{Conclusion}
-
-Lorep ipsum \cite{doe}
-
-
 \renewcommand\bibname{Referencias Bibliográficas}
 \begin{thebibliography}{1}
 
-\bibitem{Pose2016} Adquisición, procesamiento y análisis de imágenes 
-hiperespectrales: de la microscopía de fluorescencia a la industria satelital, 
-Agustina Pose / Hernán Grecco. 
+\bibitem{Adão2017} Adão, Telmo \& Hruška, Jonáš \& Pádua, Luís \& Bessa, José 
+\& 
+Peres, Emanuel \& Morais, R \& Sousa, Joaquim. (2017). Hyperspectral Imaging: A 
+Review on UAV-Based Sensors, Data Processing and Applications for Agriculture 
+and Forestry. Remote Sensing. 2017. 1110. 
+\href{https://www.researchgate.net/publication/320716685_Hyperspectral_Imaging_A_Review_on_UAV-Based_Sensors_Data_Processing_and_Applications_for_Agriculture_and_Forestry}{10.3390/rs9111110}.
 
-\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
-Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
-Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
-http://dx.doi.org/10.14569/IJACSA.2018.090808
+\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. 
+\href{https://www.ncbi.nlm.nih.gov/pubmed/27183498}{Multiplexed
+imaging of intracellular protein networks}. 2016.
+
+\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
+theory of everything”. AIP Conference Proceedings. Vol. 1082.
+2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
+	0810.3851.}
 
 \bibitem{Martínez2016} Martínez-Usó, Adolfo \& Pla, Filiberto \& Sotoca, José 
 \& 
 García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
 in Hyperspectral Images. 5112. 1091-1100. 
 \href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
- 
- 
- 
-\bibitem{Shah2017} Kamal G. Shah y Paul Yager.Wavelengths and Lifetimes of 
-Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
-Sensitivity of Fluorescence-Based Assays in Paper. Anal. Chem. 2017,  89, 22, 
-12023-12029. 2017.
- 
-\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. Multiplexed
-imaging of intracellular protein networks. 2016.
 
-\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
-	theory of everything”. AIP Conference Proceedings. Vol. 1082.
-	2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
-	0810.3851.}
+\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
+Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
+Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
+\href{http://dx.doi.org/10.14569/IJACSA.2018.090808}{10.14569/IJACSA.2018.090808}.
 
-\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. Semrock Technical Note 
+\bibitem{Pose2016} 
+\href{https://digital.bl.fcen.uba.ar/download/seminario/seminario_nFIS000029_Pose.pdf}{Adquisición,
+ procesamiento y análisis de imágenes 
+hiperespectrales: de la microscopía de fluorescencia a la industria satelital}, 
+Agustina Pose / Hernán Grecco.  
+
+\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. 
+\href{https://www.semrock.com/Data/Sites/1/semrockpdfs/whitepaper_measurementofopticalfilterspectra.pdf}{Semrock
+ Technical Note 
 Series: Measurement of 
-Optical Filter Spectra. 
+Optical Filter Spectra}.  
+ 
+\bibitem{Shah2017} Kamal G. Shah y Paul Yager. Wavelengths and Lifetimes of 
+Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
+Sensitivity of Fluorescence-Based Assays in Paper. 
+\href{https://www.ncbi.nlm.nih.gov/pubmed/29048155}{Anal. Chem. 2017,  89, 22, 
+12023-12029}. 2017.
+ 
+
+
+
 
 \end{thebibliography}
 
