@@ -4,11 +4,11 @@
 \select@language {czech}
 \select@language {czech}
 \select@language {czech}
-\contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{paragraph*.1}
-\contentsline {paragraph}{Director:}{iv}{paragraph*.2}
+\contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{Doc-Start}
+\contentsline {paragraph}{Director:}{iv}{Doc-Start}
 \select@language {english}
-\contentsline {paragraph}{Keywords:}{iv}{paragraph*.3}
-\contentsline {paragraph}{Title\ translation:}{iv}{paragraph*.4}
+\contentsline {paragraph}{Keywords:}{iv}{Doc-Start}
+\contentsline {paragraph}{Title\ translation:}{iv}{Doc-Start}
 \select@language {czech}
 \select@language {czech}
 \select@language {czech}
@@ -19,10 +19,10 @@
 \select@language {czech}
 \select@language {czech}
 \select@language {czech}
-\contentsline {chapter}{Plan de Tesis - Juan Reto Reynal}{1}{chapter*.5}
-\contentsline {section}{Objetivo general}{1}{section*.6}
-\contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.6}
-\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.6}
+\contentsline {chapter}{Plan de Tesis - Juan Reto Reynal}{1}{chapter*.1}
+\contentsline {section}{Objetivo general}{1}{section*.2}
+\contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.2}
+\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.2}
 \contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.0.6}
 \contentsline {section}{Factibilidad}{9}{figure.0.6}
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.7}
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{10}{chapter*.3}
