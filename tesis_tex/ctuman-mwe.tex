@@ -52,12 +52,11 @@ Prof. Adj. UBA.
 
 
 \section*{Objetivo general}
-La espectroscopía de imágenes hiperespectrales (HSI: 
-\textit{Hyperspectral Spectroscopy Imaging}) combina la 
-espectroscopía 
-y la 
-adquisición de 
-imágenes en dos dimensiones. 
+\hspace{0.5cm}La espectroscopía de imágenes hiperespectrales, en inglés 
+\textit{Hyperspectral 
+Spectroscopy Imaging} (HSI), combina la espectroscopía y la adquisición de 
+imágenes 
+en dos dimensiones. 
 
 Este método brinda datos espectrales para cada 
 pixel en el campo de 
@@ -66,68 +65,35 @@ el ángulo sólido a través del cual un sensor puede detectar la radiación
 electromagnética que se desee capturar.}. A partir de dichos 
 datos se puede extraer información sobre la emisión, reflexión y absorción de 
 la radiación electromagnética, que puede ser utilizada para determinar la 
-composición química en diferentes áreas de la muestra. De esta forma se pueden 
-localizar las células de una muestra biológica, identificar 
-tumores de un cáncer, realizar un control de calidad de la comida identificando 
-bacterias u optimizar la siembra y la cosecha de ciertos cultivos, entre otras 
+composición química en diferentes áreas de una muestra. De esta forma se pueden 
+identificar tumores de un cáncer, realizar un control de calidad de la comida 
+identificando bacterias en tiempo real, localizar las células de una muestra 
+biológica u optimizar la siembra y la cosecha de ciertos cultivos, entre otras 
 aplicaciones.
 
 
-En la tesis de licenciatura de Agustina Pose, dirigida por Hernán Grecco (quien 
-también dirige esta tesis), ambos desarrollaron un prototipo de cámara 
-hiperespectral para uso satelital junto a la empresa Argentina Satellogic. Tras 
-la realización de pruebas y mediciones en tierra, se aprobó la prueba de 
-concepto de este prototipo y se lo adaptó a un diseño robusto. La cámara 
-hiperespectral diseñada es hoy una de las cargas útiles (o \textit{payloads}) a 
-bordo de los satélites argentinos NewSat 1 y NewSat 2 (alias Fresco y Batata), 
-puestos en órbita el 30 de Mayo de 2016, construidos por la empresa Satellogic.
+En la tesis de licenciatura de Agustina Pose \cite{Pose2016}, dirigida por 
+Hernán Grecco quien también dirige esta tesis, ambos desarrollaron un prototipo 
+de cámara hiperespectral para uso satelital junto a la empresa Argentina 
+Satellogic. Tras la realización de pruebas y mediciones en tierra, se aprobó la 
+prueba de concepto de este prototipo y se lo adaptó a un diseño robusto. La 
+cámara hiperespectral diseñada es hoy una de las cargas útiles (o 
+\textit{payloads}) a bordo de los satélites argentinos NewSat 1 y NewSat 2 
+(alias Fresco y Batata), puestos en órbita el 30 de Mayo de 2016, construidos 
+por la empresa Satellogic.
 
 En el presente proyecto se propone continuar con dicho trabajo y desarrollar un 
 sistema integral de caracterización de los filtros de interferencia de banda 
-que son utilizados en las cámaras hiperespectrales. Dicho sistema integral 
-permitirá caracterizar el espectro de transmisión del filtro en cada punto del 
-mismo, encontrar defectos que pudieran modificar su capacidad de bloqueo de 
-ciertas longitudes de onda no deseadas.
-
-  con la 
-capacidad de decidir si un filtro está apto o no para ser integrado a las 
-cámaras hiperespectrales incorporadas en los satélites desarrollados por la 
-empresa Satellogic.
-
-
-%Optical filters play an important role in enabling applications such as 
-%%%fluorescence
-%microscopy and Raman spectroscopy. In these applications there are two 
-%distinct types of
-%beams: the illumination (or excitation) beam and the signal (or emission) 
-%beam. 
-
-%Not only are
-%these beams spectrally distinct, but also they differ significantly in their 
-%intensity – the signal
-%beam can be a million times (or more) weaker than the illumination beam. 
-%Therefore, the ability
-%of filters to selectively transmit desired wavelengths of light while blocking 
-%unwanted light is
-%critical. The performance of such filters is determined by their spectral 
-%characteristics, including
-%transmission efficiency of the signal and attenuation (or blocking) of the 
-%illumination light and
-%undesirable emission wavelengths. In particular, often it is critical for 
-%filters to transition from
-%deep blocking to high transmission over a very short wavelength range, leading 
-%to steep and
-%deep spectral edges.
-%However, due to limitations of standard metrology techniques, the
-%measured spectral characteristics of thin-film interference filters are 
-%frequently not determined
-%accurately, especially when there are steep and deep edges.
-%In this article we explore limitations to accurate filter spectrum 
-%measurements with
-%standard metrology techniques, and show how these limitations can be managed 
-%by a better
-%understanding of the limitations as well as more sophisticated measurements 
-%when necessary.
+que son utilizados en las cámaras hiperespectrales. Estos filtros permiten el 
+paso de las longitudes de onda (colores) que se desean capturar con el sensor 
+de detección principal de la cámara que sólo detecta intensidad lumínica, como 
+se explica en la Introducción. En consecuencia, la caracterización de los 
+filtros resulta fundamental para garantizar la calidad de las imágenes 
+capturadas. El primer prototipo de este sistema integral permitirá 
+principalmente caracterizar el espectro de transmisión del filtro en 
+cada punto del mismo, es decir en cada posición $(x,y)$ de su superficie, y 
+encontrar defectos que pudieran modificar su capacidad de bloqueo de ciertas 
+longitudes de onda no deseadas.
 
 \section*{Objetivos específicos del proyecto}
 \begin{itemize}
