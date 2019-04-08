@@ -1,6 +1,6 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
-\usepackage{hyperref} 
+%\usepackage{hyperref} 
 \usepackage{subfig}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{tcolorbox}
@@ -8,7 +8,7 @@
 \usepackage{array}
 \usepackage{colortbl}
 \tcbuselibrary{skins}
-%\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
 \tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
 		colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
 		coltitle=black,center title}}
@@ -59,8 +59,8 @@ hiperespectrales.
 
 \hspace{-0.4cm}\textsc{Alumno:} Juan Reto Reynal L.U. 777/12.
 
-\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, Inv. Indep. CONICET, 
-Prof. Adj. UBA.
+\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, 
+Prof. Adj. UBA, Inv. Indep. CONICET.
 
 \hspace{-0.4cm}\textsc{Lugar de trabajo:} LEC, Departamento de Física, FCEyN, UBA.
 
@@ -86,7 +86,8 @@ biológica u optimizar la siembra y la cosecha de ciertos cultivos, entre otras
 aplicaciones.
 
 
-En la tesis de licenciatura de Agustina Pose \cite{Pose2016}, dirigida por 
+En la tesis de licenciatura de Agustina Pose \cite{Pose2017}, dirigida 
+por 
 Hernán Grecco quien también dirige esta tesis, ambos desarrollaron un prototipo 
 de cámara hiperespectral para uso satelital junto a la empresa Satellogic. Tras 
 la realización de pruebas y mediciones en tierra, se aprobó la 
@@ -141,7 +142,7 @@ a partir de la captura de imágenes multiespectrales e hiperespectrales.
 	\caption{ Representación de los espectros: (A) Multiespectral: 5 
 	bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
 	generalmente entre cientos y miles de ellas. Los dibujos no se encuentran 
-	realizados a escala. Imagen tomada de \cite{Adão2017}.}
+	realizados a escala. Imagen tomada de \cite{Adao2017}.}
 	\label{fig:spectrus}
 \end{figure}
 
@@ -185,7 +186,7 @@ filtros antes de construir las cámaras de la aplicación de interés.
 	\caption{ Esquema de una cámara hiperespectral. El filtro absorbe el 
 	espectro completo de la luz incidente salvo la banda espectral que el 
 	usuario determina, por lo que sólo las longitudes de onda elegidas 
-	atraviesan el filtro y son detectadas por el sensor. \cite{Martínez2016}}
+	atraviesan el filtro y son detectadas por el sensor. \cite{Martinez2008}}
 	\label{fig:camsens}
 \end{figure}
 
@@ -335,7 +336,7 @@ imágenes de fluorescencia los espectros de absorción y emisión del fluróforo
 podrían estar lo suficientemente alejados como para que resulte fundamental que 
 los filtros de banda de la señal de respuesta (de emisión) de la muestra tengan 
 un bloqueo muy alto en la banda de la señal de excitación y así lograr una 
-relación entre la señal y el ruido de adecuada proporción. 
+relación entre la señal y el ruido de adecuada proporción \cite{Grecco2016}. 
 
 Los filtros 
 diseñados para estas aplicaciones podrían tener decenas de OD de bloqueo pero 
@@ -482,60 +483,60 @@ El tesista se encuentra cursando actualmente sus últimas dos materias de la
 carrera: 
 Estructura de la Materia 4 e Instrumentación y Control.
 
+\bibliographystyle{apalike}
+\bibliography{refs}
 
 \renewcommand\bibname{Referencias Bibliográficas}
-\begin{thebibliography}{1}
-\setcounter{page}{10}
-\bibitem{Adão2017} Adão, Telmo \& Hruška, Jonáš \& Pádua, Luís \& Bessa, José 
-\& 
-Peres, Emanuel \& Morais, R \& Sousa, Joaquim. (2017). Hyperspectral Imaging: A 
-Review on UAV-Based Sensors, Data Processing and Applications for Agriculture 
-and Forestry. Remote Sensing. 2017. 1110. 
-\href{https://www.researchgate.net/publication/320716685_Hyperspectral_Imaging_A_Review_on_UAV-Based_Sensors_Data_Processing_and_Applications_for_Agriculture_and_Forestry}{10.3390/rs9111110}.
-
-\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. 
-\href{https://www.ncbi.nlm.nih.gov/pubmed/27183498}{Multiplexed
-imaging of intracellular protein networks}. 2016.
-
-\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
-theory of everything”. AIP Conference Proceedings. Vol. 1082.
-2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
-	0810.3851.}
-
-\bibitem{Martínez2016} Martínez-Usó, Adolfo \& Pla, Filiberto \& Sotoca, José 
-\& 
-García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
-in Hyperspectral Images. 5112. 1091-1100. 
-\href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
-
-\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
-Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
-Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
-\href{http://dx.doi.org/10.14569/IJACSA.2018.090808}{10.14569/IJACSA.2018.090808}.
-
-\bibitem{Pose2016} 
-\href{https://digital.bl.fcen.uba.ar/download/seminario/seminario_nFIS000029_Pose.pdf}{Adquisición,
- procesamiento y análisis de imágenes 
-hiperespectrales: de la microscopía de fluorescencia a la industria satelital}, 
-Agustina Pose / Hernán Grecco.  
-
-\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. 
-\href{https://www.semrock.com/Data/Sites/1/semrockpdfs/whitepaper_measurementofopticalfilterspectra.pdf}{Semrock
- Technical Note 
-Series: Measurement of 
-Optical Filter Spectra}.  
- 
-\bibitem{Shah2017} Kamal G. Shah y Paul Yager. Wavelengths and Lifetimes of 
-Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
-Sensitivity of Fluorescence-Based Assays in Paper. 
-\href{https://www.ncbi.nlm.nih.gov/pubmed/29048155}{Anal. Chem. 2017,  89, 22, 
-12023-12029}. 2017.
- 
-
-
-
-
-\end{thebibliography}
+%\begin{thebibliography}{1}
+%\setcounter{page}{10}
+%\bibitem{Adão2017} Adão, Telmo \& Hruška, Jonáš \& Pádua, Luís \& Bessa, José 
+%\& 
+%Peres, Emanuel \& Morais, R \& Sousa, Joaquim. (2017). Hyperspectral Imaging: 
+%A 
+%Review on UAV-Based Sensors, Data Processing and Applications for Agriculture 
+%and Forestry. Remote Sensing. 2017. 1110. 
+%\href{https://www.researchgate.net/publication/320716685_Hyperspectral_Imaging_A_Review_on_UAV-Based_Sensors_Data_Processing_and_Applications_for_Agriculture_and_Forestry}{10.3390/rs9111110}.
+%
+%\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. 
+%\href{https://www.ncbi.nlm.nih.gov/pubmed/27183498}{Multiplexed
+%imaging of intracellular protein networks}. 2016.
+%
+%\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
+%theory of everything”. AIP Conference Proceedings. Vol. 1082.
+%2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
+%	0810.3851.}
+%
+%\bibitem{Martínez2016} Martínez-Usó, Adolfo \& Pla, Filiberto \& Sotoca, José 
+%\& 
+%García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
+%in Hyperspectral Images. 5112. 1091-1100. 
+%\href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
+%
+%\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
+%Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
+%Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
+%\href{http://dx.doi.org/10.14569/IJACSA.2018.090808}{10.14569/IJACSA.2018.090808}.
+%
+%\bibitem{Pose2016} 
+%\href{https://digital.bl.fcen.uba.ar/download/seminario/seminario_nFIS000029_Pose.pdf}{Adquisición,
+% procesamiento y análisis de imágenes 
+%hiperespectrales: de la microscopía de fluorescencia a la industria 
+%satelital}, 
+%Agustina Pose / Hernán Grecco.  
+%
+%\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. 
+%\href{https://www.semrock.com/Data/Sites/1/semrockpdfs/whitepaper_measurementofopticalfilterspectra.pdf}{Semrock
+% Technical Note 
+%Series: Measurement of 
+%Optical Filter Spectra}.  
+% 
+%\bibitem{Shah2017} Kamal G. Shah y Paul Yager. Wavelengths and Lifetimes of 
+%Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
+%Sensitivity of Fluorescence-Based Assays in Paper. 
+%\href{https://www.ncbi.nlm.nih.gov/pubmed/29048155}{Anal. Chem. 2017,  89, 22, 
+%12023-12029}. 2017.
+% 
+%\end{thebibliography}
 
 \end{document}
 
