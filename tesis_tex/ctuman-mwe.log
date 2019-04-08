@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  6 APR 2019 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.2)  8 APR 2019 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1882,7 +1882,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-] <Figs/plan_de_tesis/multivshyper.png, id=104, 1820.8025pt x 592.2125pt>
+] <Figs/plan_de_tesis/multivshyper.png, id=102, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 
 <use Figs/plan_de_tesis/multivshyper.png>
@@ -1897,7 +1897,7 @@ Overfull \hbox (1.15405pt too wide) in paragraph at lines 140--144
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 153.
 [2 <./Figs/plan_de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/cam_sens.png, id=120, 380.34404pt x 245.5327pt>
+<Figs/plan_de_tesis/cam_sens.png, id=118, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 
 <use Figs/plan_de_tesis/cam_sens.png>
@@ -1908,7 +1908,7 @@ Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png used on input line 184
 Underfull \vbox (badness 5504) has occurred while \output is active []
 
  [3 <./Figs/plan_de_tesis/cam_sens.png>]
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=132, 414.04688pt x 33
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=130, 414.04688pt x 33
 8.76563pt>
 File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
 pg)
@@ -1917,7 +1917,7 @@ Package pdftex.def Info: Figs/plan_de_tesis/measurement_of_optical_filter.jpg u
 sed on input line 227.
 (pdftex.def)             Requested size: 331.23795pt x 271.01285pt.
  [4 <./Figs/plan_de_tesis/measurement_of_optical_filter.jpg>]
-<Figs/plan_de_tesis/dists_meds.png, id=147, 479.02039pt x 382.66039pt>
+<Figs/plan_de_tesis/dists_meds.png, id=145, 479.02039pt x 382.66039pt>
 File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
 
 <use Figs/plan_de_tesis/dists_meds.png>
@@ -1930,7 +1930,7 @@ Overfull \hbox (20.21683pt too wide) in paragraph at lines 262--268
  []
 
 [5 <./Figs/plan_de_tesis/dists_meds.png>]
-<Figs/plan_de_tesis/med_mets_prevs.png, id=159, 340.96616pt x 216.81pt>
+<Figs/plan_de_tesis/med_mets_prevs.png, id=157, 340.96616pt x 216.81pt>
 File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
 
 <use Figs/plan_de_tesis/med_mets_prevs.png>
@@ -1938,7 +1938,7 @@ Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png used on input li
 ne 309.
 (pdftex.def)             Requested size: 272.77328pt x 173.44823pt.
  [6 <./Figs/plan_de_tesis/med_mets_prevs.png>] <Figs/plan_de_tesis/setup_u.jpeg
-, id=169, 308.53731pt x 108.405pt>
+, id=167, 308.53731pt x 108.405pt>
 File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
 
 <use Figs/plan_de_tesis/setup_u.jpeg>
@@ -2371,20 +2371,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
  (./ctuman-mwe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
-
-
-Package rerunfilecheck Warning: File `ctuman-mwe.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ctuman-mwe.out':
-(rerunfilecheck)             Before: A9AA4432194B6B0ED587698000BF22CD;471
-(rerunfilecheck)             After:  7D599E06DF3FA42F0A19CE6E6BAE621E;471.
+Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
+(rerunfilecheck)             Checksum: 7D599E06DF3FA42F0A19CE6E6BAE621E;471.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
  ) 
 Here is how much of TeX's memory you used:
- 32265 strings out of 493029
- 622822 string characters out of 6136235
+ 32262 strings out of 493029
+ 622792 string characters out of 6136235
  747773 words of memory out of 5000000
  35068 multiletter control sequences out of 15000+600000
  117720 words of font info for 163 fonts, out of 8000000 for 9000
@@ -2395,15 +2388,6 @@ s not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.Ad\343o2017} has been referenced but does not 
 exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.5} has been referenced but does not exist,
- replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
@@ -2419,10 +2403,10 @@ mssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ctuman-mwe.pdf (17 pages, 1190718 bytes).
+Output written on ctuman-mwe.pdf (17 pages, 1190611 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
  36456 words of extra memory for PDF output out of 42996 (max. 10000000)
 
