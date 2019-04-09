@@ -7,6 +7,12 @@ Adão, T., Hruška, J., Pádua, L., Bessa, J., Peres, E., Morais, R., and
   and applications for agriculture and forestry.
 \newblock {\em Remote Sensing}, 2017:1110.
 
+\bibitem[Erdodan and Prabhat, 2012]{Semrock}
+Erdodan, T. and Prabhat, P. (2012).
+\newblock {\em Semrock Technical Note Series: Measurement of Optical Filter
+  Spectra}.
+\newblock Semrock.
+
 \bibitem[Grecco et~al., 2016]{Grecco2016}
 Grecco, H.~E., Imtiaz, S., and Zamir, E. (2016).
 \newblock Multiplexed imaging of intracellular protein networks.
@@ -33,11 +39,5 @@ Shah, K.~G. and Yager, P. (2017).
   assays in paper.
 \newblock {\em Analytical Chemistry}, 89(22):12023--12029.
 \newblock PMID: 29048155.
-
-\bibitem[y~Prashant~Prabhat, 2012]{Semrock}
-y~Prashant~Prabhat, T.~E. (2012).
-\newblock {\em Semrock Technical Note Series: Measurement of Optical Filter
-  Spectra}.
-\newblock Semrock.
 
 \end{thebibliography}

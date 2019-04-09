@@ -1,17 +1,40 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
-%\usepackage{hyperref} 
+%\usepackage[square,authoryear]{natbib}
+%\bibliographystyle{dinat} 
+%\usepackage[style=alphabetic, minalphanames=1, maxalphanames=1, 
+%backend=biber]{biblatex}
 \usepackage{subfig}
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[usenames,dvipsnames,nonamebreak]{xcolor}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{colortbl}
 \tcbuselibrary{skins}
-\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+%\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
 \tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
 		colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
 		coltitle=black,center title}}
+
+%\usepackage{csquotes}
+%\renewcommand*{\labelalphaothers}{}
+%
+%\DeclareLabelalphaTemplate{
+%	\labelelement{
+%		\field[final]{shorthand}
+%		\field{label}
+%		\field{labelname}
+%	}
+%	\labelelement{
+%		\literal{\string\space}
+%	}
+%	\labelelement{
+%		\field{year}
+%	}
+%}
+
+%\addbibresource{refs.bib}
+
 
 
 
@@ -20,7 +43,7 @@
 	xfaculty = FCEyN,
 	mainlanguage = czech,
 	titlelanguage = czech,
-	title-english = {Planting Uranium},
+	title-english = {},
 	title-czech = {Construcción e implementación de un sistema integral de 
 	caracterización de filtros ópticos de interferencia de banda utilizados en 
 	cámaras 
@@ -35,14 +58,14 @@
 
 \ctuprocess
 
-\begin{abstract-english}
-We develop \ldots
-\end{abstract-english}
-
-\begin{abstract-czech}
-Rozvíjíme \ldots
-\end{abstract-czech}
-
+%\begin{abstract-english}
+%We develop \ldots
+%\end{abstract-english}
+%
+%\begin{abstract-czech}
+%Rozvíjíme \ldots
+%\end{abstract-czech}
+%
 \begin{document}
 
 \maketitle
@@ -70,16 +93,14 @@ Prof. Adj. UBA, Inv. Indep. CONICET.
 \textit{Hyperspectral 
 Spectroscopy Imaging} (HSI), combina la espectroscopía y la adquisición de 
 imágenes 
-en dos dimensiones. 
-
-Este método brinda datos espectrales para cada 
+en dos dimensiones. Este método brinda datos espectrales para cada 
 pixel en el campo de 
 visión\footnote{El campo de visión, en inglés \textit{field of view} (FOV), es 
 el ángulo sólido a través del cual un sensor puede detectar la radiación 
 electromagnética que se desee capturar.}. A partir de dichos 
-datos se puede extraer información sobre la emisión, reflexión y absorción de 
-la radiación electromagnética, que puede ser utilizada para determinar la 
-composición química en diferentes áreas de una muestra. De esta forma se pueden 
+datos se puede extraer información sobre la emisión, reflexión ó absorción de 
+una muestra, que puede ser utilizada para determinar su 
+composición físico-química con una resolución espacial. De esta forma se pueden 
 identificar tumores de un cáncer, realizar un control de calidad de la comida 
 identificando bacterias en tiempo real, localizar las células de una muestra 
 biológica u optimizar la siembra y la cosecha de ciertos cultivos, entre otras 
@@ -113,16 +134,13 @@ longitudes de onda no deseadas.
 \subsection*{Objetivos específicos del proyecto}
 \begin{itemize}
 	
-	\item \texttt{Objetivo 1:} Armado de distintos setups de iluminación 
-	o detección para distintas longitudes de onda para analizar los espectros 
-	de transmisión de los filtros.
-	\item \texttt{Objetivo 2:} Armado de distintas configuraciones 
-	experimentales controlando distintas formas de iluminar los filtros
-	para poder encontrar los defectos.
-	\item \texttt{Objetivo 3:} Construcción e implementación de un primer 
-	prototipo de un sistema integral que pueda decidir si un filtro está apto o 
-	no para ser integrado al satélite.
-\end{itemize}
+	\item \texttt{Objetivo 1:} Caracterización de los espectros de transmisión 
+	de los filtros.
+	\item \texttt{Objetivo 2:} Detección de los defectos de los filtros 
+	(\textit{scratch and dig}).
+	\item \texttt{Objetivo 3:} Caracterización de los filtros en su posición 
+	final en las cámaras de vuelo 
+	del satélite. \end{itemize}
 \section*{Introducción}
 
 \hspace{0.5cm}Una imagen a color RGB convencional está compuesta por tres 
@@ -130,21 +148,12 @@ canales de
 imágenes (bandas): rojo 
 ($\sim$ 665nm), verde ($\sim$ 550nm) y azul ($\sim$ 470nm). Este tipo de 
 imágenes permiten emular la percepción que el ojo humano tiene del color, pero 
-no permiten la detección e identificación de distintos objetos sólidos y 
+en general no permiten la detección e identificación de distintos objetos 
+sólidos y 
 líquidos, menos 
 aún determinar sus propiedades. Para ello 
 es necesario obtener el espectro completo del objeto de estudio que es posible 
 a partir de la captura de imágenes multiespectrales e hiperespectrales.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.2]{Figs/plan_de_tesis/multivshyper.png}
-	\caption{ Representación de los espectros: (A) Multiespectral: 5 
-	bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
-	generalmente entre cientos y miles de ellas. Los dibujos no se encuentran 
-	realizados a escala. Imagen tomada de \cite{Adao2017}.}
-	\label{fig:spectrus}
-\end{figure}
 
 Las imágenes multiespectrales contienen un número acotado de bandas espectrales 
 de hasta un par de decenas, con un gran ancho de banda (varias decenas de nm); 
@@ -152,24 +161,46 @@ mientras que las hiperespectrales están formadas por un gran número de bandas
 espectrales (de cientos a miles), con una resolución espectral muy estrecha, de 
 unos pocos nm (Ver Figura \ref{fig:spectrus}).
 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{Figs/plan_de_tesis/multivshyper.png}
+	\caption{ Representación de los espectros: (A) Multiespectral: 5 
+		bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
+		generalmente entre cientos y miles de ellas. Los dibujos no se 
+		encuentran 
+		realizados a escala. Imagen tomada de \cite{Adao2017}.}
+	\label{fig:spectrus}
+\end{figure}
+
+
 Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
 redes de difracción o prismas como elementos dispersivos de la luz. La 
 distancia requerida entre el sensor de detección y  el componente de difracción 
-de la luz, 
-hace que este tipo de cámaras sean muy grandes y muy pesadas, dos condiciones 
-que por ejemplo en la industria satelital se quieren optimizar fuertemente ya 
-que el costo de la puesta en órbita de los satélites es proporcional a su peso 
-y a su tamaño. 
-Estas cámaras suelen ser muy caras y muy sensibles a desalinearse 
-debido a las 
-condiciones mecánicas de su construcción. Además, requieren de una rendija 
+de la luz, hace que este tipo de cámaras sean muy grandes y muy pesadas, dos 
+condiciones que por ejemplo en la industria satelital se quieren optimizar 
+fuertemente ya que el costo de la puesta en órbita de los satélites es 
+proporcional a su peso y a su tamaño. Estas cámaras suelen ser muy caras y muy 
+sensibles a desalinearse debido a las condiciones mecánicas de su construcción. 
+Esta última condición se agrava en sistemas de difícil manipulación como lo son 
+los satélites, que una vez que se encuentra en órbita, sus componentes ópticos 
+ya no puede ser modificados como para corregir una desalineación que empeore la 
+calidad de las imágenes capturadas. Además, requieren de una rendija 
 para poder obtener una alta resolución espectral, lo que restringe 
 significativamente la intensidad de la luz a detectar.
 
 En respuesta a las desventajas de las cámaras estándard de imágenes 
 hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
 interferencia de banda y que resultaron en un producto final robusto, compacto, 
-de bajo costo y de muy buen rendimiento. El esquema básico de este tipo de 
+de bajo costo y de muy buen rendimiento. Una cámara de vuelo 
+de este tipo fue desarrollada en la tesis de licenciatura de Agustina Pose bajo 
+la dirección de Hernán Grecco \cite{Pose2017} como se mencionó anteriormente. 
+La cámara desarrollada tiene la gran ventaja de no presentar partes móviles, 
+evitando posibles desalineaciones de los componentes ópticos. Las partes 
+móviles de la cámara que serían útiles para realizar un barrido espectral de 
+una cierta escena a capturar, no son necesarias pues el barrido es realiizado 
+por el movimiento propio del satélite respecto de la Tierra. El esquema básico 
+de este tipo de 
 cámaras hiperespectales se muestra 
 en la Figura \ref{fig:camsens}. Los filtros de interferencia de banda 
 utilizados en este tipo de cámaras deben cumplir ciertos requisitos de calidad 
@@ -182,7 +213,7 @@ filtros antes de construir las cámaras de la aplicación de interés.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/plan_de_tesis/cam_sens.png}
+	\includegraphics[scale=0.535]{Figs/plan_de_tesis/cam_sens.png}
 	\caption{ Esquema de una cámara hiperespectral. El filtro absorbe el 
 	espectro completo de la luz incidente salvo la banda espectral que el 
 	usuario determina, por lo que sólo las longitudes de onda elegidas 
@@ -483,60 +514,11 @@ El tesista se encuentra cursando actualmente sus últimas dos materias de la
 carrera: 
 Estructura de la Materia 4 e Instrumentación y Control.
 
+
+\renewcommand\bibname{Referencias Bibliográficas}
 \bibliographystyle{apalike}
 \bibliography{refs}
 
-\renewcommand\bibname{Referencias Bibliográficas}
-%\begin{thebibliography}{1}
-%\setcounter{page}{10}
-%\bibitem{Adão2017} Adão, Telmo \& Hruška, Jonáš \& Pádua, Luís \& Bessa, José 
-%\& 
-%Peres, Emanuel \& Morais, R \& Sousa, Joaquim. (2017). Hyperspectral Imaging: 
-%A 
-%Review on UAV-Based Sensors, Data Processing and Applications for Agriculture 
-%and Forestry. Remote Sensing. 2017. 1110. 
-%\href{https://www.researchgate.net/publication/320716685_Hyperspectral_Imaging_A_Review_on_UAV-Based_Sensors_Data_Processing_and_Applications_for_Agriculture_and_Forestry}{10.3390/rs9111110}.
-%
-%\bibitem{Grecco2016} Hernán E. Grecco, Sarah Imtiaz y Eli Zamir. 
-%\href{https://www.ncbi.nlm.nih.gov/pubmed/27183498}{Multiplexed
-%imaging of intracellular protein networks}. 2016.
-%
-%\bibitem{Hogg2008} David W. Hogg y Dustin Lang. “Astronomical imaging: The
-%theory of everything”. AIP Conference Proceedings. Vol. 1082.
-%2008, págs. 331-338. \href{https://arxiv.org/pdf/0810.3851.pdf}{arXiv: 
-%	0810.3851.}
-%
-%\bibitem{Martínez2016} Martínez-Usó, Adolfo \& Pla, Filiberto \& Sotoca, José 
-%\& 
-%García-Sevilla, Pedro.(2008). From Narrow to Broad Band Design and Selection 
-%in Hyperspectral Images. 5112. 1091-1100. 
-%\href{https://www.researchgate.net/publication/221472272_From_Narrow_to_Broad_Band_Design_and_Selection_in_Hyperspectral_Images}{10.1007/978-3-540-69812-8\_109}.
-%
-%\bibitem{Mateen2018} Muhammad Mateen, Junhao Wen, Nasrullah and Muhammad Azeem 
-%Akbar, “The Role of Hyperspectral Imaging: A Literature Review” International 
-%Journal of Advanced Computer Science and Applications(IJACSA), 9(8), 2018. 
-%\href{http://dx.doi.org/10.14569/IJACSA.2018.090808}{10.14569/IJACSA.2018.090808}.
-%
-%\bibitem{Pose2016} 
-%\href{https://digital.bl.fcen.uba.ar/download/seminario/seminario_nFIS000029_Pose.pdf}{Adquisición,
-% procesamiento y análisis de imágenes 
-%hiperespectrales: de la microscopía de fluorescencia a la industria 
-%satelital}, 
-%Agustina Pose / Hernán Grecco.  
-%
-%\bibitem{Semrock} Turan Erdogan y Prashant Prabhat. 
-%\href{https://www.semrock.com/Data/Sites/1/semrockpdfs/whitepaper_measurementofopticalfilterspectra.pdf}{Semrock
-% Technical Note 
-%Series: Measurement of 
-%Optical Filter Spectra}.  
-% 
-%\bibitem{Shah2017} Kamal G. Shah y Paul Yager. Wavelengths and Lifetimes of 
-%Paper Autofluorescence: A Simple Substrate Screening Process to Enhance the 
-%Sensitivity of Fluorescence-Based Assays in Paper. 
-%\href{https://www.ncbi.nlm.nih.gov/pubmed/29048155}{Anal. Chem. 2017,  89, 22, 
-%12023-12029}. 2017.
-% 
-%\end{thebibliography}
 
 \end{document}
 
