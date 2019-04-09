@@ -24,5 +24,5 @@
 \contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.6}
 \contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.6}
 \contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.0.6}
-\contentsline {section}{Factibilidad}{10}{figure.0.6}
-\contentsline {chapter}{Literatura}{11}{chapter*.7}
+\contentsline {section}{Factibilidad}{9}{figure.0.6}
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.7}
