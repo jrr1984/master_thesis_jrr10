@@ -1,0 +1,44 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {paragraph}{Keywords:}{iv}{paragraph*.1}% 
+\contentsline {paragraph}{Supervisor:}{iv}{paragraph*.2}% 
+\babel@toc {czech}{}
+\contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{paragraph*.3}% 
+\contentsline {paragraph}{P\v reklad\ n\'azvu:}{iv}{paragraph*.4}% 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {czech}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {section}{Why was this project created}{1}{section*.5}% 
+\contentsline {chapter}{\numberline {2}User Guide}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Installing the class}{3}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Minimal example}{4}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Setting up the class}{5}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Options to \string \documentclass }{5}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Parameters to \string \ctusetup }{6}{subsection.2.3.2}% 
+\contentsline {paragraph}{Text fields}{6}{paragraph*.6}% 
+\contentsline {paragraph}{General fields}{7}{paragraph*.7}% 
+\contentsline {paragraph}{Default package loading}{7}{paragraph*.8}% 
+\contentsline {subsection}{\numberline {2.3.3}Text environments used in the preamble}{8}{subsection.2.3.3}% 
+\contentsline {section}{\numberline {2.4}Various parts of the document}{8}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Frontmatter}{8}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Mainmatter and backmatter. Sectioning}{8}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Bibliography}{9}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.4}Index}{9}{subsection.2.4.4}% 
+\contentsline {subsection}{\numberline {2.4.5}List of notation. Nomenclature}{10}{subsection.2.4.5}% 
+\contentsline {subsection}{\numberline {2.4.6}Floating objects: Figures and tables}{10}{subsection.2.4.6}% 
+\contentsline {subsection}{\numberline {2.4.7}Mathematics}{11}{subsection.2.4.7}% 
+\contentsline {subsection}{\numberline {2.4.8}Colors}{11}{subsection.2.4.8}% 
+\contentsline {section}{\numberline {2.5}Features not described in this manual. Troubleshooting}{12}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Creating and modifying templates}{13}{chapter.3}% 

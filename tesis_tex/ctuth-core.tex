@@ -178,9 +178,9 @@
 }
 
 % "abstract" itself is not used, the language of the abstract has to be specified
-\msg_new:nnn { ctuthesis } { abstract-forbidden } { The~environment~'abstract'~should~be~replaced~
-	by~'abstract-lang'~with~the~proper~language~specified. }
-\DeclareDocumentEnvironment{ abstract }{ }{ \msg_error:nn { ctuthesis } { abstract-forbidden } }{ }
+%\msg_new:nnn { ctuthesis } { %abstract-forbidden } { The~environment~'abstract'~should~be~replaced~
+%	by~'abstract-lang'~with~the~proper~language~specified. }
+%\DeclareDocumentEnvironment{ %abstract }{ }{ \msg_error:nn { ctuthesis } { abstract-forbidden } }{ }
 
 % "thanks" and "declaration" are fields, but set up as environments rather then KVs
 \cs_undefine:c { thanks }

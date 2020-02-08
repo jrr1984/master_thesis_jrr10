@@ -1,0 +1,20 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section*.5}{Why was this project created}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{User Guide}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Installing the class}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Minimal example}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Setting up the class}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Options to \protect}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.2}{Parameters to ctusetup}{section.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.3.3}{Text environments used in the preamble}{section.2.3}% 9
+\BOOKMARK [1][-]{section.2.4}{Various parts of the document}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.4.1}{Frontmatter}{section.2.4}% 11
+\BOOKMARK [2][-]{subsection.2.4.2}{Mainmatter and backmatter. Sectioning}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.3}{Bibliography}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.4}{Index}{section.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4.5}{List of notation. Nomenclature}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.6}{Floating objects: Figures and tables}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.7}{Mathematics}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.8}{Colors}{section.2.4}% 18
+\BOOKMARK [1][-]{section.2.5}{Features not described in this manual. Troubleshooting}{chapter.2}% 19
+\BOOKMARK [0][-]{chapter.3}{Creating and modifying templates}{}% 20
