@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  8 FEB 2020 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  8 FEB 2020 14:56
 entering extended mode
 **./ctutest.tex
 (ctutest.tex
@@ -1217,27 +1217,16 @@ Package microtype Info: Loading generic protrusion settings for font family
  [3
 
 
-]
-LaTeX Font Info:    Try loading font information for U+euf on input line 119.
+] [4
 
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd"
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-euf.c
-fg"
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 
-) [4
-
-] [5
-
-] (ctutest.toc [6
+] (ctutest.toc [5
 
 ])
 \tf@toc=\write5
 \openout5 = `ctutest.toc'.
 
- [7
+ [6
 
 ] (ctutest.lof)
 \tf@lof=\write6
@@ -1247,7 +1236,7 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 \tf@lot=\write7
 \openout7 = `ctutest.lot'.
 
- [8
+ [7
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1283,13 +1272,14 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+ [8
 
+
+
+
+]
 Kapitola 1.
 [1
-
-
-
-
 
 ] [2
 
@@ -1304,6 +1294,16 @@ Kapitola 2.
 [5
 
 ]
+LaTeX Font Info:    Try loading font information for U+euf on input line 19.
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd"
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-euf.c
+fg"
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+
+)
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 50.
  [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]) (ctutest-2.tex [16]
@@ -1333,14 +1333,7 @@ Package blindtext Warning: czech not defined, using English instead.
 Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 141.
 
-
-Package blindtext Warning: czech not defined, using English instead.
-(blindtext)                 on input line 141.
-
-
-Underfull \vbox (badness 1259) has occurred while \output is active []
-
- [31
+[31
 
 
 ]
@@ -1356,10 +1349,11 @@ Package blindtext Warning: czech not defined, using English instead.
 Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 141.
 
+[32]
 
-Underfull \vbox (badness 5316) has occurred while \output is active []
+Package blindtext Warning: czech not defined, using English instead.
+(blindtext)                 on input line 141.
 
- [32]
 
 Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 141.
@@ -1369,17 +1363,18 @@ Package blindtext Warning: czech not defined, using English instead.
 Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 141.
 
-<ctu_logo_black.pdf, id=628, 366.36874pt x 279.0425pt>
+[34]
+<ctu_logo_black.pdf, id=637, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
 Package pdftex.def Info: ctu_logo_black.pdf  used on input line 156.
 (pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-<ctu_logo_blue.pdf, id=629, 366.36874pt x 279.0425pt>
+<ctu_logo_blue.pdf, id=638, 366.36874pt x 279.0425pt>
 File: ctu_logo_blue.pdf Graphic file (type pdf)
 <use ctu_logo_blue.pdf>
 Package pdftex.def Info: ctu_logo_blue.pdf  used on input line 161.
 (pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-[34] [35 <./ctu_logo_black.pdf> <./ctu_logo_blue.pdf>] [36
+ [35 <./ctu_logo_black.pdf> <./ctu_logo_blue.pdf>] [36
 
 ]
 Kapitola 5.
@@ -1406,7 +1401,7 @@ P\v {r}\'{\i }loha A.
 ] [42]
 Missing character: There is no m in font rsfs10!
  [43]) [44]
-<ctutest-zadani.pdf, id=694, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=689, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
 Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
@@ -1415,7 +1410,7 @@ File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
 Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<ctutest-zadani.pdf, id=697, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=692, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
 Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
@@ -1439,7 +1434,7 @@ Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
  [45
 
  <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=719, page=2, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=715, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 2>
 Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 189.
@@ -1590,9 +1585,9 @@ gettitlestring.sty    2016/05/16 v1.5 Cleanup title references (HO)
    ursfs.fd    1998/03/24 rsfs font definition file (jk)
 Figs/Caratula/logo_uba.png
   t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
+ctutest-1.tex
     ueuf.fd    2013/01/14 v3.01 Euler Fraktur
   mt-euf.cfg    2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-ctutest-1.tex
 ctutest-2.tex
 ctu_logo_black.pdf    Graphic file (type pdf)
 ctu_logo_blue.pdf    Graphic file (type pdf)
@@ -1605,52 +1600,64 @@ ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
-Package rerunfilecheck Info: File `ctutest.out' has not changed.
-(rerunfilecheck)             Checksum: DF88C1E240C05AE7B523696E24787E68;2429.
+
+Package rerunfilecheck Warning: File `ctutest.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ctutest.out':
+(rerunfilecheck)             Before: AB09DE2EAFB284996C00CAD4E7A6D448;2425
+(rerunfilecheck)             After:  7225AA1AC4467ED6EA88C07776A5B9F3;2425.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 23942 strings out of 492895
- 424670 string characters out of 3123735
- 706855 words of memory out of 3000000
- 27067 multiletter control sequences out of 15000+200000
- 635242 words of font info for 202 fonts, out of 3000000 for 9000
+ 23927 strings out of 492895
+ 424348 string characters out of 3123735
+ 706571 words of memory out of 3000000
+ 27059 multiletter control sequences out of 15000+200000
+ 634993 words of font info for 199 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,21n,61p,1598b,1032s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
-y.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athit.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-mathex.enc}<C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanr/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/juanr/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/juan
-r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pf
-b><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx1
-0.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmex10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmmi10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmmi6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmmi8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/lm/lmr6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmr8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmri10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/juanr/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/juanr/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Users/juanr/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/juanr/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/juanr/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/juanr/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/
-juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs5.pfb>
-Output written on ctutest.pdf (54 pages, 761732 bytes).
+ 53i,21n,62p,1598b,929s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{section*.7} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{part*.6} has been referenced but does not exist, re
+placed by a fixed one
+
+{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
+{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
+enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hit.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
+-mathex.enc}<C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanr/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/juanr/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/juanr/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb>
+<C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
+pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
+x8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmex10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmmi10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmmi8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmri10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmro10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/juanr/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Users/juanr/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/juanr/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/juanr/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/juanr/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/ju
+anr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs5.pfb>
+Output written on ctutest.pdf (54 pages, 754568 bytes).
 PDF statistics:
- 853 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
  28473 words of extra memory for PDF output out of 29859 (max. 10000000)
 
