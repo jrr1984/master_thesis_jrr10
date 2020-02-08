@@ -1,4 +1,4 @@
-%!TEX ROOT = ctutest.tex
+%!TEX ROOT = ctuman-mwe.tex
 
 \ProvidesExplFile{ctuth-templates.tex}%
 	{2016/06/15}{0.1 t1606152353}%MY TIMESTAMP HERE {0.1}
@@ -102,54 +102,40 @@
 	\ctutemplate{include.specification}
 }
 
-\ctutemplateset{twocolumn.abstract.in.titlelanguage}{
+\ctutemplateset{abstract}{
 		\selectctulanguage{title}
 		\chapter{\abstractname}\noindent
 		\ctufield[title]{abstract}\par
 		{ \raggedright
 		\paragraph{\keywordsname :}
 		\ctufield[title]{keywords}
-		\paragraph{\supervisorname :}
-		\ctuiffield*{supervisor}{
-			\ctufield{supervisor}
-			\ctuiffield*{supervisor-address}{
-				\\
-				\ctufield{supervisor-address}
-			}{}
-		}{}
 		\par }
 }
 
-\ctutemplateset{twocolumn.abstract.in.secondlanguage}{
-		\selectctulanguage{second}
-		\chapter{\abstractname}\noindent
-		\ctufield[second]{abstract}\par
-		{ \raggedright
-		\paragraph{\keywordsname :}
-		\ctufield[second]{keywords}
-		\paragraph{\titletranslationname :}
-		\ctufield[second]{title}
-		\ctuiffield*[second]{subtitle}{
-			\ --- \ \ctufield[second]{subtitle}
-		} { }
-		\par }
-}
+%\ctutemplateset{twocolumn.abstract.in.secondlanguage}{
+%		\selectctulanguage{second}
+%		\chapter{\abstractname}\noindent
+%		\ctufield[second]{abstract}\par
+%		{ \raggedright
+%		\paragraph{\keywordsname :}
+%		\ctufield[second]{keywords}
+%		\paragraph{\titletranslationname :}
+%		\ctufield[second]{title}
+%		\ctuiffield*[second]{subtitle}{
+%			\ --- \ \ctufield[second]{subtitle}
+%		} { }
+%		\par }
+%}
 
 \ctutemplateset{twocolumn.tableofcontents}{
 		\selectctulanguage{main}
 		\tableofcontents
 }
 
-\ctutemplateset{twocolumn.thanks}{
+\ctutemplateset{thanks}{
 		\selectctulanguage{title}
 		\chapter{\thanksname}\noindent
 		\ctufield{thanks}
-}
-
-\ctutemplateset{twocolumn.declaration}{
-		\selectctulanguage{title}
-		\chapter{\declarationname}\noindent
-		\ctufield{declaration}
 }
 
 \ctutemplateset{twocolumn.listoffigures}{
@@ -166,14 +152,6 @@
 % the abstracts are accompanied by the keywords and possibly other information
 \ctutemplateset{maketitle.twocolumn.default}{
 	\begin{twocolumnfrontmatterpage}
-		\ctutemplate{twocolumn.thanks}
-	\newpage
-		\ctutemplate{twocolumn.declaration}
-	\clearpage
-		\ctutemplate{twocolumn.abstract.in.titlelanguage}
-	\newpage
-		\ctutemplate{twocolumn.abstract.in.secondlanguage}
-	\clearpage
 		\ctutemplate{twocolumn.tableofcontents}
 	% The "loft" template is included only if at least one of the lists is enabled
 	\bool_if:nTF {
@@ -206,6 +184,8 @@
 		\ctutemplate{include.specification}
 		\cleardoublepage*
 	} { }
+	\ctutemplate{thanks}
+	\ctutemplate{abstract}
 	% The abstract and alike
 	\ctutemplate{maketitle.twocolumn.default}
 	\def\thepage{}

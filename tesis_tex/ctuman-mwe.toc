@@ -2,27 +2,22 @@
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \babel@toc {czech}{}
+\contentsline {chapter}{}{iii}{chapter*.1}% 
+\contentsline {chapter}{}{iii}{chapter*.1}% 
+\babel@toc {czech}{}
+\contentsline {chapter}{Resumen}{v}{chapter*.2}% 
+\contentsline {chapter}{Resumen}{v}{chapter*.2}% 
+\contentsline {paragraph}{Palabras clave:}{v}{paragraph*.3}% 
 \babel@toc {czech}{}
 \babel@toc {czech}{}
-\contentsline {paragraph}{Kl\'i \v cov\'a\ slova:}{iv}{paragraph*.1}% 
-\contentsline {paragraph}{Director:}{iv}{paragraph*.2}% 
-\babel@toc {english}{}
-\contentsline {paragraph}{Keywords:}{iv}{paragraph*.3}% 
-\contentsline {paragraph}{Title\ translation:}{iv}{paragraph*.4}% 
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {english}{}
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
-\contentsline {section}{Objetivo general}{1}{section*.5}% 
-\contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.5}% 
-\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.5}% 
-\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.1.6}% 
-\contentsline {section}{Factibilidad}{8}{figure.1.6}% 
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.6}% 
+\contentsline {section}{Objetivo general}{1}{section*.4}% 
+\contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.4}% 
+\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.4}% 
+\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{9}{figure.1.6}% 
+\contentsline {section}{Factibilidad}{9}{figure.1.6}% 
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.5}% 
