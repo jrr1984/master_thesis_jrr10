@@ -102,74 +102,27 @@
 	\ctutemplate{include.specification}
 }
 
-\ctutemplateset{abstract}{
+\ctutemplateset{thetableofcontents}{
 		\selectctulanguage{title}
-		\chapter{\abstractname}\noindent
-		\ctufield[title]{abstract}\par
-		{ \raggedright
-		\paragraph{\keywordsname :}
-		\ctufield[title]{keywords}
-		\par }
-}
-
-%\ctutemplateset{twocolumn.abstract.in.secondlanguage}{
-%		\selectctulanguage{second}
-%		\chapter{\abstractname}\noindent
-%		\ctufield[second]{abstract}\par
-%		{ \raggedright
-%		\paragraph{\keywordsname :}
-%		\ctufield[second]{keywords}
-%		\paragraph{\titletranslationname :}
-%		\ctufield[second]{title}
-%		\ctuiffield*[second]{subtitle}{
-%			\ --- \ \ctufield[second]{subtitle}
-%		} { }
-%		\par }
-%}
-
-\ctutemplateset{twocolumn.tableofcontents}{
-		\selectctulanguage{main}
 		\tableofcontents
 }
 
 \ctutemplateset{thanks}{
 		\selectctulanguage{title}
-		\chapter{\thanksname}\noindent
+		\chapter*{\thanksname}\noindent
 		\ctufield{thanks}
+		
 }
 
-\ctutemplateset{twocolumn.listoffigures}{
-		\selectctulanguage{main}
-		\listoffigures
+\ctutemplateset{declaration}{
+	\selectctulanguage{title}
+	\chapter*{\abstractname}\noindent
+	\ctufield{declaration}
 }
 
-\ctutemplateset{twocolumn.listoftables}{
-		\selectctulanguage{main}
-		\listoftables
-}
 
-% Abstract template includes the Acknowledgements, Declaration and two Abstracts
-% the abstracts are accompanied by the keywords and possibly other information
-\ctutemplateset{maketitle.twocolumn.default}{
-	\begin{twocolumnfrontmatterpage}
-		\ctutemplate{twocolumn.tableofcontents}
-	% The "loft" template is included only if at least one of the lists is enabled
-	\bool_if:nTF {
-		\ctuthesis_if_switch_p:n { front-list-of-figures }
-		|| \ctuthesis_if_switch_p:n { front-list-of-tables }
-	} {
-		\clearpage
-		\ctutemplate{twocolumn.loft}
-	} { }
-	\end{twocolumnfrontmatterpage}
-}
 
-% Lists of Figures and Tables
-\ctutemplateset{twocolumn.loft}{
-		\ctuifswitch { front-list-of-figures } { \ctutemplate{twocolumn.listoffigures} } { }
-	\newpage
-		\ctuifswitch { front-list-of-tables } { \ctutemplate{twocolumn.listoftables} } { }
-}
+
 
 % The maketitle command (moreorless): roman page numbering
 \ctutemplateset{maketitle}{
@@ -185,9 +138,9 @@
 		\cleardoublepage*
 	} { }
 	\ctutemplate{thanks}
-	\ctutemplate{abstract}
+	\ctutemplate{declaration}
+	\ctutemplate{thetableofcontents}
 	% The abstract and alike
-	\ctutemplate{maketitle.twocolumn.default}
 	\def\thepage{}
 	% Start the mainmatter
 	\mainmatter

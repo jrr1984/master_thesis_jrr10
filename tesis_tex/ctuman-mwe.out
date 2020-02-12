@@ -1,11 +1,18 @@
 \BOOKMARK [0][-]{chapter*.1}{}{}% 1
-\BOOKMARK [0][-]{chapter*.1}{}{}% 2
-\BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 3
-\BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 4
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 5
-\BOOKMARK [1][-]{section*.4}{Objetivo general}{chapter.1}% 6
-\BOOKMARK [2][-]{section*.4}{Objetivos espec\355ficos del proyecto}{chapter.1}% 7
-\BOOKMARK [1][-]{section*.4}{Introducci\363n}{chapter.1}% 8
-\BOOKMARK [1][-]{figure.1.6}{Actividades y Metodolog\355a}{chapter.1}% 9
-\BOOKMARK [1][-]{figure.1.6}{Factibilidad}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter*.5}{Referencias Bibliogr\341ficas}{}% 11
+\BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{\315ndice}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 4
+\BOOKMARK [1][-]{section*.4}{Objetivo general}{chapter.1}% 5
+\BOOKMARK [2][-]{section*.4}{Objetivos espec\355ficos del proyecto}{chapter.1}% 6
+\BOOKMARK [1][-]{section*.4}{Introducci\363n}{chapter.1}% 7
+\BOOKMARK [1][-]{figure.1.6}{Actividades y Metodolog\355a}{chapter.1}% 8
+\BOOKMARK [1][-]{figure.1.6}{Factibilidad}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter*.5}{Referencias Bibliogr\341ficas}{}% 10
+\BOOKMARK [0][-]{chapter.2}{Primer prototipo del equipo y caracterizaci\363n de los espectros de transmisi\363n}{}% 11
+\BOOKMARK [0][-]{chapter.3}{Spectral GUI y software del primer prototipo: Integraci\363n clases del espectr\363metro y de los motores de thorlabs - Implementaci\363n con Multithreading}{}% 12
+\BOOKMARK [0][-]{chapter.4}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Montaje Microespectr\363metro, caracterizaci\363n resoluci\363n espacial y calibraci\363n}{}% 14
+\BOOKMARK [0][-]{chapter.6}{Integraci\363n c\341mara al microespectr\363metro}{}% 15
+\BOOKMARK [0][-]{chapter.7}{Cuantificaci\363n de los defectos a partir de las im\341genes tomadas con el ZEISS con scikit-image y OpenCV}{}% 16
+\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 17
+\BOOKMARK [0][-]{chapter.9}{Trabajo a futuro}{}% 18
