@@ -3,21 +3,22 @@
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \contentsline {chapter}{}{iii}{chapter*.1}% 
-\contentsline {chapter}{}{iii}{chapter*.1}% 
 \babel@toc {czech}{}
 \contentsline {chapter}{Resumen}{v}{chapter*.2}% 
-\contentsline {chapter}{Resumen}{v}{chapter*.2}% 
-\contentsline {paragraph}{Palabras clave:}{v}{paragraph*.3}% 
 \babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
-\babel@toc {czech}{}
+\contentsline {chapter}{\IeC {\'I}ndice\ttl@gmk {\@mkboth {\MakeUppercase {\IeC {\'I}ndice}}{\MakeUppercase {\IeC {\'I}ndice}}}}{}{chapter*.3}% 
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
 \contentsline {section}{Objetivo general}{1}{section*.4}% 
 \contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.4}% 
 \contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.4}% 
-\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{9}{figure.1.6}% 
-\contentsline {section}{Factibilidad}{9}{figure.1.6}% 
+\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.1.6}% 
+\contentsline {section}{Factibilidad}{8}{figure.1.6}% 
 \contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.5}% 
+\contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterizaci\IeC {\'o}n de los espectros de transmisi\IeC {\'o}n}{13}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Spectral GUI y software del primer prototipo: Integraci\IeC {\'o}n clases del espectr\IeC {\'o}metro y de los motores de thorlabs - Implementaci\IeC {\'o}n con Multithreading}{15}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{17}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Montaje Microespectr\IeC {\'o}metro, caracterizaci\IeC {\'o}n resoluci\IeC {\'o}n espacial y calibraci\IeC {\'o}n}{19}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Integraci\IeC {\'o}n c\IeC {\'a}mara al microespectr\IeC {\'o}metro}{21}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Cuantificaci\IeC {\'o}n de los defectos a partir de las im\IeC {\'a}genes tomadas con el ZEISS con scikit-image y OpenCV}{23}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Conclusiones}{25}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Trabajo a futuro}{27}{chapter.9}% 

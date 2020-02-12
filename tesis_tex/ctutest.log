@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  8 FEB 2020 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  8 FEB 2020 15:44
 entering extended mode
 **./ctutest.tex
 (ctutest.tex
@@ -1180,7 +1180,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 [2
 
-]
+] [3
+
+] [4
+
+] [5]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1214,19 +1218,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [3
+ (ctutest.toc [6
 
-
-] [4
-
-
-] (ctutest.toc [5
 
 ])
 \tf@toc=\write5
 \openout5 = `ctutest.toc'.
 
- [6
+ [7
 
 ] (ctutest.lof)
 \tf@lof=\write6
@@ -1236,7 +1235,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 \tf@lot=\write7
 \openout7 = `ctutest.lot'.
 
- [7
+ [8
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1272,14 +1271,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [8
 
-
-
-
-]
 Kapitola 1.
 [1
+
+
+
+
 
 ] [2
 
@@ -1364,12 +1362,12 @@ Package blindtext Warning: czech not defined, using English instead.
 (blindtext)                 on input line 141.
 
 [34]
-<ctu_logo_black.pdf, id=637, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=639, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
 Package pdftex.def Info: ctu_logo_black.pdf  used on input line 156.
 (pdftex.def)             Requested size: 145.19778pt x 110.58887pt.
-<ctu_logo_blue.pdf, id=638, 366.36874pt x 279.0425pt>
+<ctu_logo_blue.pdf, id=640, 366.36874pt x 279.0425pt>
 File: ctu_logo_blue.pdf Graphic file (type pdf)
 <use ctu_logo_blue.pdf>
 Package pdftex.def Info: ctu_logo_blue.pdf  used on input line 161.
@@ -1401,7 +1399,7 @@ P\v {r}\'{\i }loha A.
 ] [42]
 Missing character: There is no m in font rsfs10!
  [43]) [44]
-<ctutest-zadani.pdf, id=689, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=691, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
 Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
@@ -1410,7 +1408,7 @@ File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
 Package pdftex.def Info: ctutest-zadani.pdf  used on input line 189.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<ctutest-zadani.pdf, id=692, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=694, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
 Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
@@ -1434,7 +1432,7 @@ Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 189.
  [45
 
  <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=715, page=2, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=717, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 2>
 Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 189.
@@ -1606,22 +1604,22 @@ Package rerunfilecheck Warning: File `ctutest.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `ctutest.out':
-(rerunfilecheck)             Before: AB09DE2EAFB284996C00CAD4E7A6D448;2425
-(rerunfilecheck)             After:  7225AA1AC4467ED6EA88C07776A5B9F3;2425.
+(rerunfilecheck)             Before: 7225AA1AC4467ED6EA88C07776A5B9F3;2425
+(rerunfilecheck)             After:  3AFE2664AF19F02C4D0DFB4BC6C48C98;2624.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 23927 strings out of 492895
- 424348 string characters out of 3123735
- 706571 words of memory out of 3000000
- 27059 multiletter control sequences out of 15000+200000
+ 23928 strings out of 492895
+ 424318 string characters out of 3123735
+ 706506 words of memory out of 3000000
+ 27058 multiletter control sequences out of 15000+200000
  634993 words of font info for 199 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,21n,62p,1598b,929s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.7} has been referenced but does not exis
+ 53i,21n,62p,1598b,920s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{section*.8} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{part*.6} has been referenced but does not exist, re
+pdfTeX warning (dest): name{part*.7} has been referenced but does not exist, re
 placed by a fixed one
 
 {C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
@@ -1655,9 +1653,9 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/juanr/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/ju
 anr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs5.pfb>
-Output written on ctutest.pdf (54 pages, 754568 bytes).
+Output written on ctutest.pdf (54 pages, 754450 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
  28473 words of extra memory for PDF output out of 29859 (max. 10000000)
 

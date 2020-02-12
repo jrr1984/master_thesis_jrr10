@@ -1,12 +1,23 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
-%\usepackage[square,authoryear]{natbib}
-%\bibliographystyle{dinat} 
-%\usepackage[style=alphabetic, minalphanames=1, maxalphanames=1, 
-%backend=biber]{biblatex}
+\usepackage{lipsum}                     
+\usepackage{xargs}                     
+\usepackage[pdftex,dvipsnames,usenames,nonamebreak]{xcolor}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+\def\justifying{%
+	\rightskip=0pt
+	\spaceskip=0pt
+	\xspaceskip=0pt
+	\relax
+}
 \usepackage{subfig}
 \usepackage{multicol}
-\usepackage[usenames,dvipsnames,nonamebreak]{xcolor}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
 \usepackage{array}
@@ -99,35 +110,36 @@
 }
 
 
+
 \begin{thanks}
 	
 	\raggedright
-\textsc{TEMA:} Construcción e implementación de un sistema integral de caracterización de filtros ópticos utilizados en cámaras hiperespectrales.
+	\textsc{TEMA:} Construcción e implementación de un sistema integral de caracterización de filtros ópticos utilizados en cámaras hiperespectrales.
 	
 	\bigskip
 	
-\textsc{ALUMNO:} Juan Reto Reynal
+	\textsc{ALUMNO:} Juan Reto Reynal
 	
 	\bigskip
 	
-\textsc{L.U. N$^{\circ}$:} 777/12
+	\textsc{L.U. N$^{\circ}$:} 777/12
 	
 	\bigskip
 	
-\textsc{LUGAR DE TRABAJO:} LEC, Departamento de Física, FCEyN, UBA.
+	\textsc{LUGAR DE TRABAJO:} LEC, Departamento de Física, FCEyN, UBA.
 	
 	
 	\bigskip
 	
-\textsc{DIRECTOR DEL TRABAJO:} Dr. Hernán E. Grecco
+	\textsc{DIRECTOR DEL TRABAJO:} Dr. Hernán E. Grecco
 	
 	\bigskip
 	
-\textsc{FECHA DE INICIACIÓN:} Abril de 2019
+	\textsc{FECHA DE INICIACIÓN:} Abril de 2019
 	
 	\bigskip
 	
-\textsc{FECHA DE FINALIZACIÓN:} Abril de 2020
+	\textsc{FECHA DE FINALIZACIÓN:} Abril de 2020
 	
 	\bigskip
 	
@@ -135,48 +147,42 @@
 	
 	\bigskip
 	
-\textsc{INFORME FINAL APROBADO POR:}
+	\textsc{INFORME FINAL APROBADO POR:}
 	\vspace{2cm}
 	
 	\begin{center}
-	\begin{tabular}{lll}
-		\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
-		Autor:  & \hspace{2cm} & Jurado\ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-		\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\
-		&& \\
-		&& \\
-		&& \\
-		\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
-		Director: \ \ \ \ \ \ \ \ \ \ \ \ \  & \hspace{2cm} & Jurado\\
-		&& \\
-		&& \\
-		&& \\
-		\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
-		Profesor: Juan Pablo Paz  & \hspace{2cm} & Jurado\\
-		&& \\
-		&& \\
-		&& \\
-	\end{tabular}	
-\end{center}
-	
-
+		\begin{tabular}{lll}
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Autor:  & \hspace{2cm} & Jurado\ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+			\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\
+			&& \\
+			&& \\
+			&& \\
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Director: \ \ \ \ \ \ \ \ \ \ \ \ \  & \hspace{2cm} & Jurado\\
+			&& \\
+			&& \\
+			&& \\
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Profesor: Juan Pablo Paz  & \hspace{2cm} & Jurado\\
+			&& \\
+			&& \\
+			&& \\
+		\end{tabular}	
+	\end{center}
+\justifying
 \end{thanks}
 
+\begin{declaration}
 
+	Resumen copado al final..
+	
+	dkfjakdj
+\end{declaration}
 
-
-\begin{abstract-czech}
-
-\end{abstract-czech}
-\begin{abstract-english}
-
-\end{abstract-english}
 
 
 \begin{document}
-
-	
-
 
 \maketitle
 
@@ -626,6 +632,58 @@ Estructura de la Materia 4 e Instrumentación y Control.
 \renewcommand\bibname{Referencias Bibliográficas}
 \bibliographystyle{apalike}
 \bibliography{refs}
+
+
+\chapter{Primer prototipo del equipo y caracterización de los espectros de transmisión}
+
+\chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs - Implementación con Multithreading}
+
+\chapter{Desarrollo XZStage y calibración - Desarrollo del software integrando el arduino con algoritmos asincrónicos}
+
+\chapter{Montaje Microespectrómetro, caracterización resolución espacial y calibración}
+
+\chapter{Integración cámara al microespectrómetro}
+
+\chapter{Cuantificación de los defectos a partir de las imágenes tomadas con el ZEISS con scikit-image y OpenCV}
+
+De forma complementaria a las mediciones del microespectrómetro, se tomaron imágenes por transmisión del filtro con un microscopio ZEISS Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando el objetivo ZEISS de magnificación 10X. 
+
+De acuerdo a la calibración de fábrica del ZEISS, 1 pixel de la imagen equivale a 0.586 micrones. 
+\vspace{1cm}
+\todo[inline]{CALIBRAR ZEISS con alguna reglita de calibración}
+\vspace{1cm}
+
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{Figs/defectosZEISS/b.jpg}
+	\caption{ }
+	\label{fig:ZEISSdellabo}
+\end{figure}
+
+Se montó el filtro sobre el portamuestras del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS}.
+Utilizando el software ZEN PRO 2.5.
+
+\vspace{1cm}
+\todo[inline]{chequear versión del ZEN PRO y tomar screenshot del gráfico del histograma - rango dinámico}
+\vspace{1cm} 
+
+Luego de poner en foco una de las superficies del filtro con el software y refinando la distancia entre el objetivo y el filtro con las perillas manuales del microscopio, se realizaron distintos 'barridos' del filtro.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{Figs/defectosZEISS/a.jpg}
+	\caption{ }
+	\label{fig:filtroenZEISS}
+\end{figure}
+
+\chapter{Conclusiones}
+
+\chapter{Trabajo a futuro}
+
 
 
 \end{document}
