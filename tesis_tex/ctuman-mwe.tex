@@ -1,7 +1,8 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
-\usepackage{lipsum}                     
-\usepackage{xargs}                     
+\usepackage{lipsum}      
+\usepackage{xargs}
+\usepackage{setspace}                     
 \usepackage[pdftex,dvipsnames,usenames,nonamebreak]{xcolor}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
@@ -16,12 +17,15 @@
 	\xspaceskip=0pt
 	\relax
 }
+
+
 \usepackage{subfig}
 \usepackage{multicol}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{tikz}
+\usepackage{fontawesome5}
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 \usepackage{colortbl}
 \tcbuselibrary{skins}
@@ -29,6 +33,9 @@
 \tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
 		colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
 		coltitle=black,center title}}
+	
+
+
 
 %\usepackage{csquotes}
 %\renewcommand*{\labelalphaothers}{}
@@ -78,7 +85,7 @@
 
 \def\ctucaptionsenglish{
 	\def\appendicesname{Appendices}
-	\def\thanksname{}
+	\def\thanksname{Carátula}
 	\def\abstractname{Abstract}
 	\def\declarationname{}
 	\def\listfigurename{Figures}
@@ -108,8 +115,8 @@
 	\def\keywordsname{Palabras clave}
 	\def\titletranslationname{P\v reklad\ n\'azvu}
 }
-
-
+%\newcommand\Chapter[2]{\chapter[#1:{\itshape#2}]{#1\\[2ex]\Large\itshape#2}}
+\newcommand\Chapter[2]{\chapter[#1]{#1\\[1ex]\large#2}}
 
 \begin{thanks}
 	
@@ -188,8 +195,16 @@
 
 \renewcommand{\chaptername}{Capítulo}
 \renewcommand{\figurename}{Figura}
-\chapter{Introducción}
 
+
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{1em}
+
+
+
+
+\chapter{Introducción}
+QUÉ ES UN DEFECTO Y QUÉ LE ESTÁ HACIENDO A LAS IMÁGENES, MOSTRAR IMAGEN QUE TIENE PUNTOS CON DIFRACCIÓN, LOS TIFFS..
 
 \textsc{Título:} Construcción e implementación de un sistema integral de 
 caracterización de filtros ópticos utilizados en cámaras hiperespectrales.
@@ -636,27 +651,33 @@ Estructura de la Materia 4 e Instrumentación y Control.
 
 \chapter{Primer prototipo del equipo y caracterización de los espectros de transmisión}
 
-\chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs - Implementación con Multithreading}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CAPITULO 3:%%%%%%%%%%%%%%%%%%%%%%%% Cuantificación de los defectos a partir de las imágenes tomadas con el ZEISS con scikit-image y OpenCV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Desarrollo XZStage y calibración - Desarrollo del software integrando el arduino con algoritmos asincrónicos}
 
-\chapter{Montaje Microespectrómetro, caracterización resolución espacial y calibración}
+%\Chapter{Cuantificación de los defectos a partir de las imágenes tomadas con el ZEISS con scikit-image y OpenCV}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
 
-\chapter{Integración cámara al microespectrómetro}
+\Chapter{Cuantificación de los defectos}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
+\spacing{1.5}
+\hspace{0.5cm}En este capítulo se describe la cuantificación de los defectos de cada una de las bandas espectrales que el filtro presenta, determinados a partir de la adquisición de imágenes por transmisión en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de 'campo brillante' para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}).} con un microscopio invertido. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
 
-\chapter{Cuantificación de los defectos a partir de las imágenes tomadas con el ZEISS con scikit-image y OpenCV}
+Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado no cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
 
-De forma complementaria a las mediciones del microespectrómetro, se tomaron imágenes por transmisión del filtro con un microscopio ZEISS Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando el objetivo ZEISS de magnificación 10X. 
+\singlespacing
+\section*{Adquisición de las imágenes de cada banda}
+\spacing{1.5}
+\singlespacing
+\section*{Procesamiento }
+\spacing{1.5}
+\singlespacing
+
+
+De forma complementaria a las mediciones del microespectrómetro, se tomaron imágenes por transmisión del filtro con un microscopio ZEISS Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando el objetivo ZEISS de ma	gnificación 10X. 
 
 De acuerdo a la calibración de fábrica del ZEISS, 1 pixel de la imagen equivale a 0.586 micrones. 
 \vspace{1cm}
 \todo[inline]{CALIBRAR ZEISS con alguna reglita de calibración}
 \vspace{1cm}
-
-
-
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.1]{Figs/defectosZEISS/b.jpg}
@@ -667,18 +688,33 @@ De acuerdo a la calibración de fábrica del ZEISS, 1 pixel de la imagen equival
 Se montó el filtro sobre el portamuestras del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS}.
 Utilizando el software ZEN PRO 2.5.
 
-\vspace{1cm}
-\todo[inline]{chequear versión del ZEN PRO y tomar screenshot del gráfico del histograma - rango dinámico}
-\vspace{1cm} 
-
-Luego de poner en foco una de las superficies del filtro con el software y refinando la distancia entre el objetivo y el filtro con las perillas manuales del microscopio, se realizaron distintos 'barridos' del filtro.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.1]{Figs/defectosZEISS/a.jpg}
 	\caption{ }
 	\label{fig:filtroenZEISS}
 \end{figure}
+
+\vspace{1cm}
+\todo[inline]{chequear versión del ZEN PRO y tomar screenshot del gráfico del histograma - rango dinámico}
+\vspace{1cm} 
+
+Luego de poner en foco una de las superficies del filtro mirando la imagen en vivo con el software y refinando la distancia entre el objetivo y el filtro con las perillas manuales del microscopio, se realizaron distintos 'barridos' del filtro.
+
+
+
+
+
+
+\chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs - Implementación con Multithreading}
+
+\chapter{Desarrollo XZStage y calibración - Desarrollo del software integrando el arduino con algoritmos asincrónicos}
+
+\chapter{Montaje Microespectrómetro, caracterización resolución espacial y calibración}{}
+
+\chapter{Integración cámara al microespectrómetro}
+
+
 
 \chapter{Conclusiones}
 
