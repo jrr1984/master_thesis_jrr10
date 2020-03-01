@@ -39,22 +39,6 @@
 
 %\usepackage{csquotes}
 %\renewcommand*{\labelalphaothers}{}
-%
-%\DeclareLabelalphaTemplate{
-%	\labelelement{
-%		\field[final]{shorthand}
-%		\field{label}
-%		\field{labelname}
-%	}
-%	\labelelement{
-%		\literal{\string\space}
-%	}
-%	\labelelement{
-%		\field{year}
-%	}
-%}
-
-%\addbibresource{refs.bib}
 
 
 
@@ -121,7 +105,9 @@
 \begin{thanks}
 	
 	\raggedright
-	\textsc{TEMA:} Construcción e implementación de un sistema integral de caracterización de filtros ópticos utilizados en cámaras hiperespectrales.
+	\textsc{TEMA:} Construcción e implementación de un sistema integral de caracterización de filtros
+	
+	 \hspace{1.6cm}ópticos utilizados en cámaras hiperespectrales.
 	
 	\bigskip
 	
@@ -659,51 +645,101 @@ Estructura de la Materia 4 e Instrumentación y Control.
 
 \Chapter{Cuantificación de los defectos}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
 \spacing{1.5}
+
 \hspace{0.5cm}En este capítulo se describe la cuantificación de los defectos de cada una de las bandas espectrales que el filtro presenta, determinados a partir de la adquisición de imágenes por transmisión en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de 'campo brillante' para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}).} con un microscopio invertido. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
 
-Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado no cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
+Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado \underline{no} cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
 
 \singlespacing
 \section*{Adquisición de las imágenes de cada banda}
 \spacing{1.5}
-\singlespacing
-\section*{Procesamiento }
-\spacing{1.5}
-\singlespacing
 
-
-De forma complementaria a las mediciones del microespectrómetro, se tomaron imágenes por transmisión del filtro con un microscopio ZEISS Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando el objetivo ZEISS de ma	gnificación 10X. 
-
-De acuerdo a la calibración de fábrica del ZEISS, 1 pixel de la imagen equivale a 0.586 micrones. 
-\vspace{1cm}
-\todo[inline]{CALIBRAR ZEISS con alguna reglita de calibración}
-\vspace{1cm}
+\hspace{0.5cm}Para la adquisición de las imágenes del filtro se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando un objetivo Zeiss de magnificación 10X.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Figs/defectosZEISS/b.jpg}
-	\caption{ }
+	\includegraphics[scale=0.08]{Figs/defectosZEISS/b.jpg}
+	\caption{Microscopio invertido Zeiss Axio Observer Z1.}
 	\label{fig:ZEISSdellabo}
 \end{figure}
-
-Se montó el filtro sobre el portamuestras del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS}.
-Utilizando el software ZEN PRO 2.5.
-
+Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca. Se montó el filtro sobre el portamuestras de la platina del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS} y mirando por el ocular se puso en foco la superficie del filtro a medir.  
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Figs/defectosZEISS/a.jpg}
+	\includegraphics[scale=0.08]{Figs/defectosZEISS/a.jpg}
 	\caption{ }
 	\label{fig:filtroenZEISS}
 \end{figure}
+La cámara del microscopio, conectada a una computadora vía su puerto USB, fue controlada a través del software 'ZEN  BLUE PRO 2.5' de la empresa Zeiss. Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición se su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
+
+\singlespacing
+\subsection*{\textit{Tile scan}}
+\spacing{1.5}
+
+\hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}\footnote{La cámara del microscopio posee un filtro de IR (Infrarrojo), motivo por el cual no se tomaron imágenes de esa banda espectral.} ó para cada banda espectral del filtro en particular.
+
+La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilescan}) en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio.
+
+Hay distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la elección visual individual vía \textit{click} de las cuatro esquinas de la misma, como se muestra en la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/tilescan.png}
+	\caption{\textit{Tile scan} de la banda pancromática.}
+	\label{fig:tilescan}
+\end{figure} 
+
+Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también es realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración del \textit{tile scan} la opción de autofoco que posee el microscopio que se aplica automáticamente para cada \textit{tile}, y que cada baldosa sea exportada como una imagen individual para su posterior análisis.
+
+\singlespacing
+\subsection*{Superficies y 'mapa' de los defectos del filtro}
+\spacing{1.5}
+
+
+
+
+
+
+
+
+
+PRIMERO SE VIERON LAS DOS CARAS COMO SE MUESTRA EN LAS FIGURAS.. COMO NO ERAN MUY DISTINTOS LOS RESULTADOS, SE TUNEO INTENSIDAD Y TIEMPO DE INTEGRACION PARA CADA BANDA DE UNA SOLA CARA, PARA LA OTRA ES ANALOGO EL PROCEDIMIENTO. NO SE ESPERAN RESULTAN MUY DISTINTOS..
+
+
+
+\singlespacing
+\section*{Procesamiento }
+\spacing{1.5}
 
 \vspace{1cm}
+\todo[inline]{CALIBRAR ZEISS con alguna reglita de calibración \par De acuerdo a la calibración de fábrica del ZEISS, 1 pixel de la imagen equivale a 0.586 micrones. }
+\vspace{1cm}
+\vspace{1cm}
 \todo[inline]{chequear versión del ZEN PRO y tomar screenshot del gráfico del histograma - rango dinámico}
-\vspace{1cm} 
+\vspace{1cm}
+\vspace{1cm}
+\todo[inline]{chequear 'modelo' completo del objetivo 10x del zeiss}
+\vspace{1cm}
 
-Luego de poner en foco una de las superficies del filtro mirando la imagen en vivo con el software y refinando la distancia entre el objetivo y el filtro con las perillas manuales del microscopio, se realizaron distintos 'barridos' del filtro.
+\vspace{1cm}
+\todo[inline]{falta incluir qué fuente de luz usa el microscopio, qué lampara usa + buscar el espectro de la lámpara para ver que se solapa con las bandas del filtro + MODELO Y MARCA DE LA CÁMARA}
+\vspace{1cm}
+
+\vspace{1cm}
+\todo[inline]{si hay tiempo REsacar las imágenes y de ambas caras del filtro para asegurar que sea indistinta la cara en la que se coloca el filtro..}
+\vspace{1cm}
 
 
+\vspace{1cm}
+\todo[inline]{	PARA CHEQUEAR QUE VAYA FUNCIONANDO EL ALGORITMO MEJOR VER IMAGEN POR IMAGEN}
+\vspace{1cm}
 
 
+\vspace{1cm}
+\todo[inline]{la camara se conecta via usb a la computadora?}
+\vspace{1cm}
+
+\vspace{1cm}
+\todo[inline]{chequear si se estaba usando la opción de autofoco en el tile scan}
+\vspace{1cm}
 
 
 \chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs - Implementación con Multithreading}
