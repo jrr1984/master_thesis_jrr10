@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  1 MAR 2020 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  2 MAR 2020 18:48
 entering extended mode
 **./ctuman-mwe.tex
 (ctuman-mwe.tex
@@ -1519,7 +1519,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=90, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=91, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 <use Figs/Caratula/logo_uba.png>
 Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 180.
@@ -1595,7 +1595,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 ]
-<Figs/plan_de_tesis/multivshyper.png, id=165, 1820.8025pt x 592.2125pt>
+<Figs/plan_de_tesis/multivshyper.png, id=166, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 <use Figs/plan_de_tesis/multivshyper.png>
 Package pdftex.def Info: Figs/plan_de_tesis/multivshyper.png  used on input lin
@@ -1607,7 +1607,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 291.
  [2]
-<Figs/plan_de_tesis/cam_sens.png, id=181, 380.34404pt x 245.5327pt>
+<Figs/plan_de_tesis/cam_sens.png, id=182, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 <use Figs/plan_de_tesis/cam_sens.png>
 Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 33
@@ -1617,7 +1617,7 @@ Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 33
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./Figs/plan_de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=195, 414.04688pt x 33
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=196, 414.04688pt x 33
 8.76563pt>
 File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
 pg)
@@ -1629,7 +1629,7 @@ used on input line 375.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./Figs/plan_de_tesis/cam_sens.png>]
-<Figs/plan_de_tesis/dists_meds.png, id=214, 479.02039pt x 382.66039pt>
+<Figs/plan_de_tesis/dists_meds.png, id=215, 479.02039pt x 382.66039pt>
 File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
 <use Figs/plan_de_tesis/dists_meds.png>
 Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png  used on input line 
@@ -1642,7 +1642,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./Figs/plan_de_tesis/dists_meds.png>]
-<Figs/plan_de_tesis/med_mets_prevs.png, id=233, 340.96616pt x 216.81pt>
+<Figs/plan_de_tesis/med_mets_prevs.png, id=234, 340.96616pt x 216.81pt>
 File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
 <use Figs/plan_de_tesis/med_mets_prevs.png>
 Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png  used on input l
@@ -1652,7 +1652,7 @@ ine 457.
 Underfull \vbox (badness 1902) has occurred while \output is active []
 
  [7 <./Figs/plan_de_tesis/med_mets_prevs.png>]
-<Figs/plan_de_tesis/setup_u.jpeg, id=245, 308.53731pt x 108.405pt>
+<Figs/plan_de_tesis/setup_u.jpeg, id=246, 308.53731pt x 108.405pt>
 File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
 <use Figs/plan_de_tesis/setup_u.jpeg>
 Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg  used on input line 50
@@ -1691,7 +1691,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 654.
 
-<Figs/defectosZEISS/b.jpg, id=282, 4143.48pt x 2330.7075pt>
+<Figs/defectosZEISS/b.jpg, id=283, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/b.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/b.jpg>
 Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 660.
@@ -1700,30 +1700,67 @@ Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 660.
 Underfull \vbox (badness 7888) has occurred while \output is active []
 
  [15]
-<Figs/defectosZEISS/a.jpg, id=292, 4143.48pt x 2330.7075pt>
+<Figs/defectosZEISS/a.jpg, id=293, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/a.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/a.jpg>
 Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 667.
 (pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
 
-[16 <./Figs/defectosZEISS/b.jpg> <./Figs/defectosZEISS/a.jpg>]
+Underfull \vbox (badness 2285) has occurred while \output is active []
+
+ [16 <./Figs/defectosZEISS/b.jpg> <./Figs/defectosZEISS/a.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 674.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 676.
 
 <Figs/cuantificaciondefectos/tilescan.png, id=302, 949.04562pt x 245.91875pt>
 File: Figs/cuantificaciondefectos/tilescan.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/tilescan.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/tilescan.png  used on inpu
-t line 685.
+t line 687.
 (pdftex.def)             Requested size: 440.0pt x 114.0133pt.
- [17 <./Figs/cuantificaciondefectos/tilescan.png>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 713.
- [18] [19] [20
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+<Figs/cuantificaciondefectos/supfiltrocondensador.png, id=313, 496.35437pt x 46
+5.23813pt>
+File: Figs/cuantificaciondefectos/supfiltrocondensador.png Graphic file (type p
+ng)
+<use Figs/cuantificaciondefectos/supfiltrocondensador.png>
+Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltrocondensador.png  
+used on input line 703.
+(pdftex.def)             Requested size: 199.16685pt x 199.16821pt.
+
+Overfull \hbox (1.1682pt too wide) in paragraph at lines 703--704
+ [][] 
+ []
+
+<Figs/cuantificaciondefectos/supfiltroobjetivo.png, id=314, 456.20438pt x 457.7
+1pt>
+File: Figs/cuantificaciondefectos/supfiltroobjetivo.png Graphic file (type png)
+
+<use Figs/cuantificaciondefectos/supfiltroobjetivo.png>
+Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltroobjetivo.png  use
+d on input line 708.
+(pdftex.def)             Requested size: 199.16429pt x 199.1651pt.
+
+Overfull \hbox (1.16563pt too wide) in paragraph at lines 708--709
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./Figs/cuantificaciondefectos/tilescan.png>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 736.
+ [19 <./Figs/cuantificaciondefectos/supfiltrocondensador.png> <./Figs/cuantific
+aciondefectos/supfiltroobjetivo.png>]
+[20]
 Cap\IeC {\'\i }tulo 4.
-[21] [22
+[21
+
+] [22
 
 ]
 Cap\IeC {\'\i }tulo 5.
@@ -1744,30 +1781,30 @@ Cap\IeC {\'\i }tulo 8.
 ]
 Cap\IeC {\'\i }tulo 9.
 [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 761.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 761.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
  (ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 761.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 761.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 784.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
 Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
-(rerunfilecheck)             Checksum: 3B2BB8373B01996C581D85B29BA2FF61;1736.
+(rerunfilecheck)             Checksum: AD2787C294CAA21385B4ABD12CDDCD85;1734.
  )
 (\end occurred inside a group at level 5)
 
-### semi simple group (level 5) entered at line 710 (\begingroup)
-### semi simple group (level 4) entered at line 694 (\begingroup)
-### semi simple group (level 3) entered at line 675 (\begingroup)
+### semi simple group (level 5) entered at line 733 (\begingroup)
+### semi simple group (level 4) entered at line 696 (\begingroup)
+### semi simple group (level 3) entered at line 677 (\begingroup)
 ### semi simple group (level 2) entered at line 655 (\begingroup)
 ### semi simple group (level 1) entered at line 647 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39757 strings out of 492895
- 787205 string characters out of 3123735
- 989334 words of memory out of 3000000
- 42812 multiletter control sequences out of 15000+200000
- 661633 words of font info for 205 fonts, out of 3000000 for 9000
+ 39767 strings out of 492895
+ 787704 string characters out of 3123735
+ 989475 words of memory out of 3000000
+ 42822 multiletter control sequences out of 15000+200000
+ 661497 words of font info for 204 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,96p,1224b,1190s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,96p,1096b,1198s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-ec.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/fontawesome5/fa5brands0.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.
@@ -1794,9 +1831,9 @@ grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/juanr/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/juanr/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ctuman-mwe.pdf (39 pages, 6889096 bytes).
+Output written on ctuman-mwe.pdf (39 pages, 7359277 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
+ 473 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
- 42735 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 42745 words of extra memory for PDF output out of 42996 (max. 10000000)
 
