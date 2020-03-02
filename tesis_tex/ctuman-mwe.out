@@ -12,8 +12,8 @@
 \BOOKMARK [0][-]{chapter.3}{Cuantificaci\363n de los defectos}{}% 12
 \BOOKMARK [1][-]{section*.6}{Adquisici\363n de las im\341genes de cada banda}{chapter.3}% 13
 \BOOKMARK [2][-]{figure.3.2}{Tile scan}{chapter.3}% 14
-\BOOKMARK [2][-]{figure.3.3}{Superficies y 'mapa' de los defectos del filtro}{chapter.3}% 15
-\BOOKMARK [1][-]{figure.3.3}{Procesamiento }{chapter.3}% 16
+\BOOKMARK [2][-]{figure.3.3}{Superficies y mapa de los defectos del filtro}{chapter.3}% 15
+\BOOKMARK [1][-]{figure.3.4}{Procesamiento }{chapter.3}% 16
 \BOOKMARK [0][-]{chapter.4}{Spectral GUI y software del primer prototipo: Integraci\363n clases del espectr\363metro y de los motores de thorlabs - Implementaci\363n con Multithreading}{}% 17
 \BOOKMARK [0][-]{chapter.5}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 18
 \BOOKMARK [0][-]{chapter.6}{Montaje Microespectr\363metro, caracterizaci\363n resoluci\363n espacial y calibraci\363n}{}% 19

@@ -668,13 +668,15 @@ Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuent
 	\caption{ }
 	\label{fig:filtroenZEISS}
 \end{figure}
-La cámara del microscopio, conectada a una computadora vía su puerto USB, fue controlada a través del software 'ZEN  BLUE PRO 2.5' de la empresa Zeiss. Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición se su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
+La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara 	que viene de fábrica del microscopio, donde 1 pixel equivale a 0.586 $\mu m$ x 0.586 $\mu m$.
+
+Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
 
 \singlespacing
 \subsection*{\textit{Tile scan}}
 \spacing{1.5}
 
-\hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}\footnote{La cámara del microscopio posee un filtro de IR (Infrarrojo), motivo por el cual no se tomaron imágenes de esa banda espectral.} ó para cada banda espectral del filtro en particular.
+\hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.} ó para cada banda espectral del filtro en particular.
 
 La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilescan}) en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio.
 
@@ -687,11 +689,32 @@ Hay distintas formas de elegir el área total a adquirir en el software. Se elig
 	\label{fig:tilescan}
 \end{figure} 
 
-Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también es realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración del \textit{tile scan} la opción de autofoco que posee el microscopio que se aplica automáticamente para cada \textit{tile}, y que cada baldosa sea exportada como una imagen individual para su posterior análisis.
+Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también es realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
 
 \singlespacing
-\subsection*{Superficies y 'mapa' de los defectos del filtro}
+\subsection*{Superficies y mapa de los defectos del filtro}
 \spacing{1.5}
+
+Se adquirió una imagen completa del filtro, a excepción de la banda espectral del NIR, para las dos superficies exteriores del filtro como se muestra en la Figura \ref{fig:supsdelfiltro}
+
+\begin{figure}[H]
+	\begin{minipage}[b]{0.45\linewidth}
+		\centering
+		\includegraphics[width=7.0cm,height=7.0cm]{Figs/cuantificaciondefectos/supfiltrocondensador.png}
+	\end{minipage}\hfill
+	\hspace{1.0cm}
+	\begin{minipage}[b]{0.45\linewidth}
+		\centering
+\includegraphics[width=7.0cm,height=7.0cm]{Figs/cuantificaciondefectos/supfiltroobjetivo.png}
+	\end{minipage}
+
+\caption{Imágenes de las dos superficies exteriores del filtro adquiridas a partir de un \textit{tile scan} con el microscopio.}
+\label{fig:supsdelfiltro}
+\end{figure}
+
+Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de forma tal que los defectos dejen de ser visibles. Al mismo tiempo se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no saturen  
+
+
 
 
 
