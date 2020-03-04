@@ -5,18 +5,20 @@
 \BOOKMARK [1][-]{section*.4}{Objetivo general}{chapter.1}% 5
 \BOOKMARK [2][-]{section*.4}{Objetivos espec\355ficos del proyecto}{chapter.1}% 6
 \BOOKMARK [1][-]{section*.4}{Introducci\363n}{chapter.1}% 7
-\BOOKMARK [1][-]{figure.1.6}{Actividades y Metodolog\355a}{chapter.1}% 8
-\BOOKMARK [1][-]{figure.1.6}{Factibilidad}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter*.5}{Referencias Bibliogr\341ficas}{}% 10
-\BOOKMARK [0][-]{chapter.2}{Primer prototipo del equipo y caracterizaci\363n de los espectros de transmisi\363n}{}% 11
-\BOOKMARK [0][-]{chapter.3}{Cuantificaci\363n de los defectos}{}% 12
-\BOOKMARK [1][-]{section*.6}{Adquisici\363n de las im\341genes de cada banda}{chapter.3}% 13
-\BOOKMARK [2][-]{figure.3.2}{Tile scan}{chapter.3}% 14
-\BOOKMARK [2][-]{figure.3.3}{Superficies y mapa de los defectos del filtro}{chapter.3}% 15
-\BOOKMARK [1][-]{figure.3.4}{Procesamiento }{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Spectral GUI y software del primer prototipo: Integraci\363n clases del espectr\363metro y de los motores de thorlabs - Implementaci\363n con Multithreading}{}% 17
-\BOOKMARK [0][-]{chapter.5}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 18
-\BOOKMARK [0][-]{chapter.6}{Montaje Microespectr\363metro, caracterizaci\363n resoluci\363n espacial y calibraci\363n}{}% 19
-\BOOKMARK [0][-]{chapter.7}{Integraci\363n c\341mara al microespectr\363metro}{}% 20
-\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 21
-\BOOKMARK [0][-]{chapter.9}{Trabajo a futuro}{}% 22
+\BOOKMARK [1][-]{figure.caption.10}{Actividades y Metodolog\355a}{chapter.1}% 8
+\BOOKMARK [1][-]{figure.caption.10}{Factibilidad}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Primer prototipo del equipo y caracterizaci\363n de los espectros de transmisi\363n}{}% 10
+\BOOKMARK [0][-]{chapter.3}{Cuantificaci\363n de los defectos}{}% 11
+\BOOKMARK [1][-]{section*.11}{Adquisici\363n de las im\341genes de cada banda}{chapter.3}% 12
+\BOOKMARK [2][-]{figure.caption.13}{Tile scan}{chapter.3}% 13
+\BOOKMARK [2][-]{figure.caption.14}{Superficies y mapa de los defectos del filtro}{chapter.3}% 14
+\BOOKMARK [2][-]{figure.caption.17}{Adquisici\363n de im\341genes individuales de cada banda espectral}{chapter.3}% 15
+\BOOKMARK [1][-]{figure.caption.18}{Pre-pocesamiento de las im\341genes de cada banda espectral }{chapter.3}% 16
+\BOOKMARK [1][-]{figure.caption.20}{Algoritmo de detecci\363n de los defectos}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Spectral GUI y software del primer prototipo: Integraci\363n clases del espectr\363metro y de los motores de thorlabs - Implementaci\363n con Multithreading}{}% 18
+\BOOKMARK [0][-]{chapter.5}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 19
+\BOOKMARK [0][-]{chapter.6}{Montaje Microespectr\363metro, caracterizaci\363n resoluci\363n espacial y calibraci\363n}{}% 20
+\BOOKMARK [0][-]{chapter.7}{Integraci\363n c\341mara al microespectr\363metro}{}% 21
+\BOOKMARK [0][-]{chapter.8}{Conclusiones}{}% 22
+\BOOKMARK [0][-]{chapter.9}{Trabajo a futuro}{}% 23
+\BOOKMARK [0][-]{chapter*.22}{Referencias Bibliogr\341ficas}{}% 24
