@@ -11,18 +11,20 @@
 \contentsline {section}{Objetivo general}{1}{section*.4}% 
 \contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.4}% 
 \contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.4}% 
-\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.1.6}% 
-\contentsline {section}{Factibilidad}{9}{figure.1.6}% 
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{11}{chapter*.5}% 
-\contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterizaci\IeC {\'o}n de los espectros de transmisi\IeC {\'o}n}{13}{chapter.2}% 
-\contentsline {chapter}{\numberline {3}Cuantificaci\IeC {\'o}n de los defectos}{15}{chapter.3}% 
-\contentsline {section}{Adquisici\IeC {\'o}n de las im\IeC {\'a}genes de cada banda}{15}{section*.6}% 
-\contentsline {subsection}{\textit {Tile scan}}{17}{figure.3.2}% 
-\contentsline {subsection}{Superficies y mapa de los defectos del filtro}{18}{figure.3.3}% 
-\contentsline {section}{Procesamiento }{19}{figure.3.4}% 
-\contentsline {chapter}{\numberline {4}Spectral GUI y software del primer prototipo: Integraci\IeC {\'o}n clases del espectr\IeC {\'o}metro y de los motores de thorlabs - Implementaci\IeC {\'o}n con Multithreading}{21}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{23}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Montaje Microespectr\IeC {\'o}metro, caracterizaci\IeC {\'o}n resoluci\IeC {\'o}n espacial y calibraci\IeC {\'o}n}{25}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Integraci\IeC {\'o}n c\IeC {\'a}mara al microespectr\IeC {\'o}metro}{27}{chapter.7}% 
-\contentsline {chapter}{\numberline {8}Conclusiones}{29}{chapter.8}% 
-\contentsline {chapter}{\numberline {9}Trabajo a futuro}{31}{chapter.9}% 
+\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.caption.10}% 
+\contentsline {section}{Factibilidad}{9}{figure.caption.10}% 
+\contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterizaci\IeC {\'o}n de los espectros de transmisi\IeC {\'o}n}{11}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Cuantificaci\IeC {\'o}n de los defectos}{13}{chapter.3}% 
+\contentsline {section}{Adquisici\IeC {\'o}n de las im\IeC {\'a}genes de cada banda}{13}{section*.11}% 
+\contentsline {subsection}{\textit {Tile scan}}{15}{figure.caption.13}% 
+\contentsline {subsection}{Superficies y mapa de los defectos del filtro}{16}{figure.caption.14}% 
+\contentsline {subsection}{Adquisici\IeC {\'o}n de im\IeC {\'a}genes individuales de cada banda espectral}{19}{figure.caption.17}% 
+\contentsline {section}{Pre-pocesamiento de las im\IeC {\'a}genes de cada banda espectral }{20}{figure.caption.18}% 
+\contentsline {section}{Algoritmo de detecci\IeC {\'o}n de los defectos}{22}{figure.caption.20}% 
+\contentsline {chapter}{\numberline {4}Spectral GUI y software del primer prototipo: Integraci\IeC {\'o}n clases del espectr\IeC {\'o}metro y de los motores de thorlabs - Implementaci\IeC {\'o}n con Multithreading}{25}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{27}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Montaje Microespectr\IeC {\'o}metro, caracterizaci\IeC {\'o}n resoluci\IeC {\'o}n espacial y calibraci\IeC {\'o}n}{29}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Integraci\IeC {\'o}n c\IeC {\'a}mara al microespectr\IeC {\'o}metro}{31}{chapter.7}% 
+\contentsline {chapter}{\numberline {8}Conclusiones}{33}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Trabajo a futuro}{35}{chapter.9}% 
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{37}{chapter*.22}% 
