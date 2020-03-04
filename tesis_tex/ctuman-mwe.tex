@@ -791,12 +791,39 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 
 \hspace{0.5cm}Con las imágenes pre-procesadas la detección de los defectos fue realizada utilizando algoritmos de procesamientos de imágenes. El algoritmo consistió de los siguientes pasos:
 \begin{enumerate}
-	\item Se determina el valor de intensidad umbral (en adelante, \textit{threshold}) a partir del cual se distingue entre un defecto en la región de la imagen que se \textit{foreground} y el fondo de la imagen (\textit{background}). Iterando sobre los conjuntos completos completos de \textit{tiles} de cada banda se determinó que el t
+	\item Se determina el valor de intensidad umbral (en adelante, \textit{threshold}) a partir del cual se distingue entre un defecto en la región de la imagen que se \textit{foreground} y el fondo de la imagen (\textit{background}). %Iterando sobre los conjuntos completos completos de \textit{tiles} de cada banda se determinó que el t
 \end{enumerate}
 
 
 
 
+
+\singlespacing
+\section*{Resultados del algoritmo de detección de los defectos}
+\spacing{1.5}
+
+
+\hspace{0.5cm}Los resultados del algoritmo de detección de los defectos son guardados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que puede ser abierto y manipulados sus datos con la librería \textit{pandas} de python en el marco de lo que se conoce como un \textit{pandas dataframe} que no es más que un objeto de python que permite una manipulación de los datos muy eficiente. A continuación se muestra un resumen de los resultados para cada banda espectral del filtro.
+
+\singlespacing
+\subsection*{Defectos de la banda NIR}
+\spacing{1.5}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth,height= 5.0cm]{Figs/resultados_defectos/banda_nir.png}
+	\caption{\textit{tile scan} obtenido de la banda NIR.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth,height= 5.0cm]{Figs/resultados_defectos/tabla_nir.png}
+	\caption{Tabla del resumen de resultados del dataframe de la banda NIR.}
+	\label{fig:bgcel}
+\end{figure}
 
 
 
