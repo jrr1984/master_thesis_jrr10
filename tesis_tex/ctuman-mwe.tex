@@ -1,6 +1,6 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
-\usepackage{lipsum}      
+\usepackage{lipsum}    
 \usepackage{floatrow}
 \usepackage{xargs}
 \usepackage{setspace}                     
@@ -50,7 +50,7 @@
 	titlelanguage = czech,
 	title-english = {},
 	title-czech = {Construcción e implementación de un sistema integral de 
-		caracterización de filtros ópticos de interferencia de banda utilizados en 
+		caracterización de filtros ópticos utilizados en 
 		cámaras 
 		hiperespectrales.},
 	department-czech = {Departamento de Física},
@@ -642,16 +642,30 @@ Estructura de la Materia 4 e Instrumentación y Control.
 
 %\Chapter{Cuantificación de los defectos a partir de las imágenes tomadas con el ZEISS con scikit-image y OpenCV}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
 
+\singlespacing
 \Chapter{Cuantificación de los defectos}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
 \spacing{1.5}
 
-\hspace{0.5cm}En este capítulo se describe la cuantificación de los defectos de cada una de las bandas espectrales que el filtro presenta, determinados a partir de la adquisición de imágenes por transmisión en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de 'campo brillante' para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}).} con un microscopio invertido. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
+\vspace{1.0cm}
+\todo[inline]{Definir en algún lugar qué se considera un defecto en esta parte de la óptica y ver de usar las normas vigentes}
+\vspace{1.0cm}
+
+\hspace{0.5cm}En este capítulo se define qué es lo que se considera un defecto de un componente óptico, se muestran las características del filtro óptico utilizado en el presente trabajo y la cuantificación de los defectos de cada una de las bandas espectrales que el filtro presenta. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
 
 Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado \underline{no} cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
 
 \singlespacing
-\section*{Adquisición de las imágenes de cada banda}
+\section*{Defecto de superficie de un componente óptico}
 \spacing{1.5}
+
+	
+
+
+
+\singlespacing
+\section*{Adquisición de las imágenes del filtro}
+\spacing{1.5}
+
 
 \hspace{0.5cm}Para la adquisición de las imágenes del filtro se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25.
 \begin{figure}[H]
@@ -660,16 +674,21 @@ Asimismo, se detalla el algoritmo utilizado para realizar la detección de los d
 	\caption{Microscopio invertido Zeiss Axio Observer Z1.}
 	\label{fig:ZEISSdellabo}
 \end{figure}
-Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca. Se montó el filtro sobre el portamuestras de la platina del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS} y mirando por el ocular se puso en foco la superficie del filtro a medir.  
+
+Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca, en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de 'campo brillante' para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}).}. Se montó el filtro sobre el portamuestras de la platina del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS} y mirando por el ocular se puso en foco la superficie del filtro a medir.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.08]{Figs/defectosZEISS/a.jpg}
 	\caption{Montaje del filtro sobre el portamuestras de la platina del microscopio.}
 	\label{fig:filtroenZEISS}
 \end{figure}
-La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara 	que viene de fábrica del microscopio, donde 1 pixel equivale a 0.586 $\mu m$ x 0.586 $\mu m$.
+La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara 	que viene de fábrica del microscopio, donde las medidas de 1 pixel son de a 0.586 $\mu m$ x 0.586 $\mu m$.
 
 Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
+
+\vspace{1.0cm}
+\todo[inline]{no medi con el ocular entonces no decir nada del ocular.}
+\vspace{1.0cm}
 
 \singlespacing
 \subsection*{\textit{Tile scan}}
@@ -679,7 +698,7 @@ Se configuró el software para adquirir las imágenes por transmisión, en parti
 
 La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilescan}) en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio.
 
-Hay distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la elección visual individual vía \textit{click} de las cuatro esquinas de la misma, como se muestra en la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen.
+Hay distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la selección visual individual de las cuatro esquinas de la misma, como se muestra en la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen.
 
 \begin{figure}[!h]
 	\centering
@@ -688,11 +707,15 @@ Hay distintas formas de elegir el área total a adquirir en el software. Se elig
 	\label{fig:tilescan}
 \end{figure} 
 
-Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
+Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\todo{explicar que es lo que hace el software}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones\todo{explicar mas xq el 10 porciento con ayuda del stitching}, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
 
 \singlespacing
 \subsection*{Superficies y mapa de los defectos del filtro}
 \spacing{1.5}
+
+\vspace{1.0cm}
+\todo[inline]{presentar el filtro real, con las dimensiones}
+\vspace{1.0cm}
 
 \hspace{0.5cm}Se adquirieron imágenes completas del filtro, a excepción de la banda espectral del NIR, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}.
 
@@ -701,10 +724,18 @@ Entre otros parámetros del barrido, se elige el \textit{overlap} entre las bald
 		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supfiltrocondensador.png}}{\caption{Imagen de la superficie exterior superior del filtro, para un barrido de 15.18 mm x 15.30 m.}\label{fig:supfiltrocondensador}}
 		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supfiltroobjetivo.png}}{\caption{Imagen de la superficie exterior inferior del filtro, para un barrido de 22.09 mm x 16.24 mm.}\label{fig:supfiltroobjetivo}}
 	\end{floatrow}
-
-
 \end{figure}
+
+\vspace{1.0cm}
+\todo[inline]{imagenes de las mismas dimensiones, recortarlas lo que sea. Escala verde y roja por ejemplo}
+\vspace{1.0cm}
+
+
 En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Celeste (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
+
+\vspace{1.0cm}
+\todo[inline]{ponerlo en la presentacion oficial del sr filtro}
+\vspace{1.0cm}
 
 Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no saturen alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se muestra en la Figura \ref{fig:histograma15x15} el histograma de la intensidad de los píxeles de la cámara para el barrido de la Figura \ref{fig:supfiltrocondensador}.
 
@@ -713,9 +744,13 @@ Para realizar el barrido completo de cada superficie se verificó en las cuatro 
 	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/histograma15x15.png}
 	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior superior del filtro.}
 	\label{fig:histograma15x15}
-\end{figure} 
+\end{figure}
+ 
+\vspace{1.0cm}
+\todo[inline]{oracion de abajo es super larga, reescribir y partir en 2 por lo menos}
+\vspace{1.0cm}
 
-Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature\footnote{Si se aumentaban estos dos parámetros de la adquisición se saturaba en particular la banda espectral pancromática.}, no era posible obtener una buena calidad de la imagen en esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{Zeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión de baja intensidad en la región del NIR, como se muestra en la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. Ahora bien, la banda espectral del NIR fue medida individualmente posteriormente como se explica más adelante.
+Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature\todo{quedo muy informal, ponerlo en infinitivo Aumentar estos dos paSi se aumentaban estos dos parámetros de la adquisición se saturaba en particular la banda espectral pancromática.}, no era posible obtener una buena calidad de la imagen en esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{Zeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión de baja intensidad en la región del NIR, como se muestra en la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. Ahora bien, la banda espectral del NIR fue medida individualmente posteriormente como se explica más adelante.
 Para poder obtener una imagen del filtro completo, incluida la banda del NIR, se debería cambiar la fuente de luz que tenga una mayor intensidad en dicha región.
 
 
@@ -723,9 +758,16 @@ Para poder obtener una imagen del filtro completo, incluida la banda del NIR, se
 	\begin{floatrow}
 		\ffigbox{\includegraphics[width=7.0cm,height=7.0cm]{Figs/defectosZEISS/eficienciacuanticacamarazeiss.png}}{\caption{Gráfico de la eficiencia cuántica de la cámara monocromática del microscopio Aiocam 702 en función de la longitud de onda.}\label{fig:eficienciacuanticamara}}
 		\ffigbox{\includegraphics[width=7.0cm,height=7.0cm]{Figs/defectosZEISS/espectrolampZEISSacolor.png}}{\caption{Espectro de emisión de la fuente de luz del microscopio.}\label{fig:espectrolamparazeiss}}
-	\end{floatrow}
-	
+	\end{floatrow}	
 \end{figure}
+
+\vspace{1.0cm}
+\todo[inline]{mejorar esas figuras, no se ve nada y quedan desentonados}
+\vspace{1.0cm}
+\todo[inline]{cambiar escala de la longitud de onda a un rango mas chico, u.a no a.u. en castellano}
+\vspace{1.0cm}
+\todo[inline]{explicar que tipo de lampara es la del Zeiss}
+\vspace{1.0cm}
 
 La imagen completa de cada superficie exterior del filtro permitió:
 \begin{itemize}
@@ -734,7 +776,6 @@ La imagen completa de cada superficie exterior del filtro permitió:
 	\item Determinar que ninguna de las dos superficies exteriores del filtro presentaba una cantidad mayor notable de defectos que la otra como se puede observar en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}, por lo que el análisis individual de cada una de las bandas fue realizado sobre una de las caras únicamente.
 	\item Obtener un mapa de los defectos con su ubicación precisa en la superficie del filtro.
 \end{itemize}
-
 \singlespacing
 \subsection*{Adquisición de imágenes individuales de cada banda espectral}
 \spacing{1.5}
@@ -756,33 +797,44 @@ En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja
 \section*{Pre-pocesamiento de las imágenes de cada banda espectral }
 \spacing{1.5}
 
+\vspace{1.0cm}
+\todo[inline]{reescribir oracion de abajo}
+\vspace{1.0cm}
+\todo[inline]{xq necesito cada etapa, qué hago cone l pre-procesamiento y después con el resto}
+\vspace{1.0cm}
+
 \hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
 
 El pre-procesamiento de las imágenes de cada banda espectral consiste en la corrección en las imágenes de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo. Este preprocesamiento consiste de dos pasos:
 \begin{enumerate}
-\item  Se construyó cada imagen de fondo a partir de tomar la mediana de cada píxel de todas las imágenes adquiridas en el \textit{tile scan} \cite{nonuniform}. Esta imagen de fondo contiene la información de cada píxel que está presente en todas las imágenes adquiridas en el barrido completo de una banda y debe ser generada para cada banda en particular, considerando que cada una de ellas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.2]{Figs/defectosZEISS/bg_celeste.png}
-	\caption{Imagen de fondo de la banda celeste del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido.}
-	\label{fig:bgcel}
-\end{figure}
-
-\hspace{0.5cm}En la Figura \ref{fig:bgcel} se muestra la imagen de fondo adquirida para la banda celeste, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de un defecto en algún componente óptico del microscopio, ya advertido por otros usuarios del equipo. El código escrito de la construcción de la imagen de fondo se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/background.py}{\faGithub}.
-
-\item Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda. En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente. El código escrito de este paso se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/bg_normalization.py}{\faGithub}.
-
-
-\begin{figure}[H]
-	\begin{floatrow}
-		\ffigbox{\includegraphics[width=7.0cm,height=10.0cm]{Figs/defectosZEISS/Experiment-11_m001_ORG.png}}{\caption{Imagen original de una \textit{tile} del barrido completo de la banda del NIR. }\label{fig:sinnorm}}
-		\ffigbox{\includegraphics[width=7.0cm,height=10.0cm]{Figs/defectosZEISS/normNIR_1.png}}{\caption{Imagen normalizada a partir de la imagen de fondo.}\label{fig:connorm}}
-	\end{floatrow}
+	\item  Se construyó cada imagen de fondo a partir de tomar la mediana de cada píxel de todas las imágenes adquiridas en el \textit{tile scan} \cite{Nordenfelt}. Esta imagen de fondo contiene la información de cada píxel que está presente en todas las imágenes adquiridas en el barrido completo de una banda y debe ser generada para cada banda en particular, considerando que cada una de ellas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
 	
-\end{figure}
-
-
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{Figs/defectosZEISS/bg_celeste.png}
+		\caption{Imagen de fondo de la banda celeste del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido.}
+		\label{fig:bgcel}
+	\end{figure}
+	\hspace{0.5cm}En la Figura \ref{fig:bgcel} se muestra la imagen de fondo adquirida para la banda celeste, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de un defecto en algún componente óptico del microscopio, ya advertido por otros usuarios del equipo. El código escrito de la construcción de la imagen de fondo se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub}.
+	
+	\vspace{1.0cm}
+	\todo[inline]{aclarar al principio de todo que el simolito es un link a github}
+	\vspace{1.0cm}
+	
+	\item Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda. En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente. El código escrito de este paso se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}.
+	
+	\todo{el defecto de la imagen de fondo puede ser la reflexión del objetivo}
+	\begin{figure}[H]
+		\begin{floatrow}
+			\ffigbox{\includegraphics[width=7.0cm,height=10.0cm]{Figs/defectosZEISS/Experiment-11_m001_ORG.png}}{\caption{Imagen original de una \textit{tile} del barrido completo de la banda del NIR. }\label{fig:sinnorm}}
+			\ffigbox{\includegraphics[width=7.0cm,height=10.0cm]{Figs/defectosZEISS/normNIR_1.png}}{\caption{Imagen normalizada a partir de la imagen de fondo.}\label{fig:connorm}}
+		\end{floatrow}
+	\end{figure}
+	
+	\vspace{1.0cm}
+	\todo[inline]{restar las dos imágenes, mejorar eso.}
+	\vspace{1.0cm}
+	
 \end{enumerate}
 
 \singlespacing
@@ -840,7 +892,7 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth,height= 5.0cm]{Figs/resultados_defectos/tabla_NIR.png}
+	\includegraphics[width=1.0\textwidth,height= 5.0cm]{Figs/resultados_defectos/tabla_roja.png}
 	\caption{Tabla del resumen de resultados del dataframe de la banda roja.}
 	\label{fig:bgcel}
 \end{figure}
@@ -853,20 +905,173 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 El código de este capítulo fue escrito utilizando python 3.6.7 y paquetes numpy 1.17.3, scikit-image 0.16.2 y matplotlib 3.1.2, entre otros.
 
 
+\vspace{1cm}
+\todo[inline]{estimacion de errores, ROI estimacion de falsos positivos falsos negativos tasa de error del sistema, por inspeccion visual nomas}
+\vspace{1cm}
 
 
+\vspace{1cm}
+\todo[inline]{ver imagenes y cuantificar cuantos defectos de los mas chicos no agarra, se hace a ojo si o si, revisar banda completa tomando nota de defectos reales vs defectos encontrados y cuantificarlo de alguna manera}
+\vspace{1cm}
+
+\vspace{1cm}
+\todo[inline]{diagrama de flujo para el algoritmo de deteccion}
+\vspace{1cm}
 
 \vspace{1cm}
 \todo[inline]{poner grafico del espectro de la lampara con colores facha y explicar que tipo de lampara es, escuchar audio hernan}
 \vspace{1cm}
 
-\chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs - Implementación con Multithreading}
+%\chapter{Spectral GUI y software del primer prototipo: Integración clases del espectrómetro y de los motores de thorlabs -Implementación con Multithreading}
 
 \chapter{Desarrollo XZStage y calibración - Desarrollo del software integrando el arduino con algoritmos asincrónicos}
 
-\chapter{Montaje Microespectrómetro, caracterización resolución espacial y calibración}{}
+\singlespacing
+\chapter{Microespectrómetro}
+\spacing{1.5}
 
-\chapter{Integración cámara al microespectrómetro}
+\hspace{0.5cm}En este capítulo se describe el montaje y la caracterización de un microespectrómetro utilizado para caracterizar espectralmente los defectos del filtro.
+
+
+
+\singlespacing
+\section*{Diseño óptico del microespectrómetro}
+\spacing{1.5}
+
+\singlespacing
+\section*{Montaje y alineación preliminar del microespectrómetro}
+\spacing{1.5}
+
+\singlespacing
+\section*{Foco y resolución espacial del microespectrómetro}
+\spacing{1.5}
+
+\hspace{0.5cm}Para poner en foco el microespectrómetro sobre la cara externa del filtro más cerca al objetivo, se buscó el mínimo de la resolución espacial.
+
+La resolución espacial se obtiene a partir del ajuste de las mediciones de una transición banda-cromo.
+
+Para no alargar el tiempo de duración de las mediciones se mapeó el espectrómetro con la cámara. De lo contrario el único feedback que se tiene para saber si se está en una banda o en el cromo es la medición del espectro.
+
+En consecuencia se conectó la fibra óptica montada sobre el cage destinado a medir con el espectrómetro, a la fuente de luz y por reflexión se observó en la adquisición en vivo de la cámara en qué posición de la imagen se observaba el haz de luz reflejado. Se centró dicho haz al centro de la cámara y de esa forma se determinó que el centro de la cámara está asociado con la medición efectiva del microespectrómetro. Se hace notar que la cámara no se encuentra en foco todavía, solo fue puesta aproximadamente a la misma distancia focal que la lente de tubo.
+
+El setup para realizar este mapeo es el siguiente:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{Figs/microespectrometro/mapespeccam.jpg}
+	\caption{Setup para mapear el espectrómetro con la cámara.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+Con los tornillos de la tapa de arriba del beamsplitter se puede ajustar en altura el beamsplitter para poder observar en el centro de la cámara la medición del espectrómetro.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/microespectrometro/b4c.png}
+	\caption{Tapa de arriba del beamsplitter.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/microespectrometro/mapespeccampuntos.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+No se tocó ni la cámara ni ninguna parte del setup a partir de ese momento para no perder este mapeo, a pesar de que la cámara no se encuentre perfectamente en foco, es decir que la imagen no se vea del todo nítida.
+Luego se puso en foco el microespectrómetro.
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/microespectrometro/medtransicion.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+durante el experimento se tiene el feedback de cutelog:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/microespectrometro/cutelog.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/microespectrometro/fincutelog.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+Las mediciones son ajustadas en matlab con una función error:
+\begin{equation}
+	(a/2)*erfc(sqrt(2)*(x-b)/c)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{Figs/microespectrometro/fit0.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+Resultados del ajuste:
+
+General model:\par
+$f(x) = (a/2)*erfc(sqrt(2)*(x-b)/c)$ \par
+Coefficients (with 95$\%$ confidence bounds): \par
+$a =       42.43  (42.2, 42.66)$\par
+$b =       108.2  (107.8, 108.7)$\par
+$c =       50.46  (49.25, 51.68)$\par
+
+Goodness of fit:\par
+SSE: 151.1\par
+R-square: 0.9976\par
+Adjusted R-square: 0.9976\par
+RMSE: 0.8758\par
+
+Luego moviendo la perilla del SM1Z para cambiar la distancia entre el objetivo y el filtro se repite la medición.
+
+
+Comentar bien la siguiente foto, poner en la imagen que distancia se está variando, ettc
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Figs/microespectrometro/refinacionparam.png}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+Para hacer el ajuste se refinan los parámetros del modelo:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{Figs/microespectrometro/sm1zcambio.jpg}
+	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
+	\label{fig:bgcel}
+\end{figure}
+
+
+La idea es poner en foco el espectrómetro en alguna región del filtro, enfocar luego la cámara y después al mover el filtro a alguna otra región, tan solo hay que poner en foco el 'sistema' mirando la cámara. Al mismo tiempo si se quiere se puede volver a repetir el procedimiento de buscar el mínimo.
+
+
+
+\singlespacing
+\section*{Integración de una cámara web}
+\spacing{1.5}
+
+\singlespacing
+\subsection*{Mapeando el espectrómetro con la cámara}
+\spacing{1.5}
+
 
 
 
@@ -875,8 +1080,11 @@ El código de este capítulo fue escrito utilizando python 3.6.7 y paquetes nump
 \chapter{Trabajo a futuro}
 
 \renewcommand\bibname{Referencias Bibliográficas}
-\bibliographystyle{apalike}
+\bibliographystyle{amsalpha}
 \bibliography{refs}
+
+
+
 
 
 \end{document}
