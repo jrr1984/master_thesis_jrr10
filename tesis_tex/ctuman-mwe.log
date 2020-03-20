@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  5 MAR 2020 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  14 MAR 2020 14:32
 entering extended mode
 **./ctuman-mwe.tex
 (ctuman-mwe.tex
@@ -1373,6 +1373,33 @@ LaTeX Warning: Label `fig:bgcel' multiply defined.
 
 LaTeX Warning: Label `fig:bgcel' multiply defined.
 
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
 )
 \openout1 = `ctuman-mwe.aux'.
 
@@ -1568,7 +1595,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=111, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=124, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 <use Figs/Caratula/logo_uba.png>
 Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 181.
@@ -1620,18 +1647,11 @@ Package microtype Info: Character `029' is missing
 
 ] [5] [6
 
-] (ctuman-mwe.toc)
+] (ctuman-mwe.toc [7])
 \tf@toc=\write8
 \openout8 = `ctuman-mwe.toc'.
 
- [7]pdfTeX warning (ext4): destination with the same identifier (name{page.}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.181 \maketitle
-                 [8
-
-]
+ [8]
 Cap\IeC {\'\i }tulo 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
@@ -1643,8 +1663,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 217.
 [1
 
+
 ]
-<Figs/plan_de_tesis/multivshyper.png, id=191, 1820.8025pt x 592.2125pt>
+<Figs/plan_de_tesis/multivshyper.png, id=211, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 <use Figs/plan_de_tesis/multivshyper.png>
 Package pdftex.def Info: Figs/plan_de_tesis/multivshyper.png  used on input lin
@@ -1656,7 +1677,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 292.
  [2]
-<Figs/plan_de_tesis/cam_sens.png, id=207, 380.34404pt x 245.5327pt>
+<Figs/plan_de_tesis/cam_sens.png, id=227, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 <use Figs/plan_de_tesis/cam_sens.png>
 Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 33
@@ -1666,7 +1687,7 @@ Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 33
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./Figs/plan_de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=221, 414.04688pt x 33
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=241, 414.04688pt x 33
 8.76563pt>
 File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
 pg)
@@ -1678,7 +1699,7 @@ used on input line 376.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./Figs/plan_de_tesis/cam_sens.png>]
-<Figs/plan_de_tesis/dists_meds.png, id=240, 479.02039pt x 382.66039pt>
+<Figs/plan_de_tesis/dists_meds.png, id=260, 479.02039pt x 382.66039pt>
 File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
 <use Figs/plan_de_tesis/dists_meds.png>
 Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png  used on input line 
@@ -1691,7 +1712,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 4673) has occurred while \output is active []
 
  [6 <./Figs/plan_de_tesis/dists_meds.png>]
-<Figs/plan_de_tesis/med_mets_prevs.png, id=259, 340.96616pt x 216.81pt>
+<Figs/plan_de_tesis/med_mets_prevs.png, id=279, 340.96616pt x 216.81pt>
 File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
 <use Figs/plan_de_tesis/med_mets_prevs.png>
 Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png  used on input l
@@ -1701,7 +1722,7 @@ ine 458.
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
  [7 <./Figs/plan_de_tesis/med_mets_prevs.png>]
-<Figs/plan_de_tesis/setup_u.jpeg, id=271, 308.53731pt x 108.405pt>
+<Figs/plan_de_tesis/setup_u.jpeg, id=291, 308.53731pt x 108.405pt>
 File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
 <use Figs/plan_de_tesis/setup_u.jpeg>
 Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg  used on input line 50
@@ -1717,258 +1738,335 @@ Cap\IeC {\'\i }tulo 2.
 ]
 Cap\IeC {\'\i }tulo 3.
 LaTeX Font Info:    Try loading font information for U+fontawesomebrands0 on in
-put line 645.
+put line 646.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\ufont
 awesomebrands0.fd")
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 645.
+n input line 646.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 645.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 646.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 645.
+(Font)              <12> on input line 646.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 645.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 646.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 645.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 653.
-
-<Figs/defectosZEISS/b.jpg, id=300, 4143.48pt x 2330.7075pt>
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 646.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 650.
+<Figs/defectosZEISS/b.jpg, id=319, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/b.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/b.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 659.
+Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 673.
 (pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
 
-Underfull \vbox (badness 6725) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-<Figs/defectosZEISS/a.jpg, id=310, 4143.48pt x 2330.7075pt>
+<Figs/defectosZEISS/a.jpg, id=328, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/a.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/a.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 666.
+Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 681.
 (pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
 
-Underfull \vbox (badness 1024) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./Figs/defectosZEISS/b.jpg> <./Figs/defectosZEISS/a.jpg>]
+ [14 <./Figs/defectosZEISS/b.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 675.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 694.
 
-<Figs/cuantificaciondefectos/tilescan.png, id=319, 949.04562pt x 245.91875pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Figs/defectosZEISS/a.jpg>]
+<Figs/cuantificaciondefectos/tilescan.png, id=344, 949.04562pt x 245.91875pt>
 File: Figs/cuantificaciondefectos/tilescan.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/tilescan.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/tilescan.png  used on inpu
-t line 686.
+t line 705.
 (pdftex.def)             Requested size: 440.0pt x 114.0133pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15]
-<Figs/cuantificaciondefectos/supfiltrocondensador.png, id=331, 496.35437pt x 46
+ [16 <./Figs/cuantificaciondefectos/tilescan.png>]
+<Figs/cuantificaciondefectos/supfiltrocondensador.png, id=358, 496.35437pt x 46
 5.23813pt>
 File: Figs/cuantificaciondefectos/supfiltrocondensador.png Graphic file (type p
 ng)
 <use Figs/cuantificaciondefectos/supfiltrocondensador.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltrocondensador.png  
-used on input line 701.
+used on input line 724.
 (pdftex.def)             Requested size: 206.28618pt x 256.08052pt.
 File: Figs/cuantificaciondefectos/supfiltrocondensador.png Graphic file (type p
 ng)
 <use Figs/cuantificaciondefectos/supfiltrocondensador.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltrocondensador.png  
-used on input line 701.
+used on input line 724.
 (pdftex.def)             Requested size: 206.28618pt x 256.08052pt.
-<Figs/cuantificaciondefectos/supfiltroobjetivo.png, id=332, 456.20438pt x 457.7
+<Figs/cuantificaciondefectos/supfiltroobjetivo.png, id=359, 456.20438pt x 457.7
 1pt>
 File: Figs/cuantificaciondefectos/supfiltroobjetivo.png Graphic file (type png)
 
 <use Figs/cuantificaciondefectos/supfiltroobjetivo.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltroobjetivo.png  use
-d on input line 702.
+d on input line 725.
 (pdftex.def)             Requested size: 206.27853pt x 256.08537pt.
 File: Figs/cuantificaciondefectos/supfiltroobjetivo.png Graphic file (type png)
 
 <use Figs/cuantificaciondefectos/supfiltroobjetivo.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supfiltroobjetivo.png  use
-d on input line 702.
+d on input line 725.
 (pdftex.def)             Requested size: 206.27853pt x 256.08537pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./Figs/cuantificaciondefectos/tilescan.png>]
-<Figs/defectosZEISS/histograma15x15.png, id=342, 207.77625pt x 60.72687pt>
+[17 <./Figs/cuantificaciondefectos/supfiltrocondensador.png> <./Figs/cuantifica
+ciondefectos/supfiltroobjetivo.png>]
+<Figs/defectosZEISS/histograma15x15.png, id=371, 207.77625pt x 60.72687pt>
 File: Figs/defectosZEISS/histograma15x15.png Graphic file (type png)
 <use Figs/defectosZEISS/histograma15x15.png>
 Package pdftex.def Info: Figs/defectosZEISS/histograma15x15.png  used on input 
-line 713.
+line 744.
 (pdftex.def)             Requested size: 440.0pt x 128.61427pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation `Zeiss' on page 17 undefined on input line 718.
+LaTeX Warning: Citation `Zeiss' on page 18 undefined on input line 753.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Figs/cuantificaciondefectos/supfiltrocondensador.png> <./Figs/cuantific
-aciondefectos/supfiltroobjetivo.png>]
-<Figs/defectosZEISS/eficienciacuanticacamarazeiss.png, id=353, 406.01688pt x 24
+ [18 <./Figs/defectosZEISS/histograma15x15.png>]
+<Figs/defectosZEISS/eficienciacuanticacamarazeiss.png, id=384, 406.01688pt x 24
 4.915pt>
 File: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png Graphic file (type p
 ng)
 <use Figs/defectosZEISS/eficienciacuanticacamarazeiss.png>
 Package pdftex.def Info: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png  
-used on input line 724.
+used on input line 759.
 (pdftex.def)             Requested size: 199.16684pt x 199.1723pt.
 File: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png Graphic file (type p
 ng)
 <use Figs/defectosZEISS/eficienciacuanticacamarazeiss.png>
 Package pdftex.def Info: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png  
-used on input line 724.
+used on input line 759.
 (pdftex.def)             Requested size: 199.16684pt x 199.1723pt.
-<Figs/defectosZEISS/espectrolampZEISSacolor.png, id=354, 925.056pt x 450.2421pt
+<Figs/defectosZEISS/espectrolampZEISSacolor.png, id=385, 925.056pt x 450.2421pt
 >
 File: Figs/defectosZEISS/espectrolampZEISSacolor.png Graphic file (type png)
 <use Figs/defectosZEISS/espectrolampZEISSacolor.png>
 Package pdftex.def Info: Figs/defectosZEISS/espectrolampZEISSacolor.png  used o
-n input line 725.
+n input line 760.
 (pdftex.def)             Requested size: 199.16547pt x 199.172pt.
 File: Figs/defectosZEISS/espectrolampZEISSacolor.png Graphic file (type png)
 <use Figs/defectosZEISS/espectrolampZEISSacolor.png>
 Package pdftex.def Info: Figs/defectosZEISS/espectrolampZEISSacolor.png  used o
-n input line 725.
+n input line 760.
 (pdftex.def)             Requested size: 199.16547pt x 199.172pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./Figs/defectosZEISS/histograma15x15.png>] [19 <./Figs/defectosZEISS/efic
-ienciacuanticacamarazeiss.png> <./Figs/defectosZEISS/espectrolampZEISSacolor.pn
-g>]
-<Figs/defectosZEISS/tilebandaroja.png, id=370, 914.41624pt x 131.99312pt>
+ [19 <./Figs/defectosZEISS/eficienciacuanticacamarazeiss.png> <./Figs/defectosZ
+EISS/espectrolampZEISSacolor.png>]
+<Figs/defectosZEISS/tilebandaroja.png, id=398, 914.41624pt x 131.99312pt>
 File: Figs/defectosZEISS/tilebandaroja.png Graphic file (type png)
 <use Figs/defectosZEISS/tilebandaroja.png>
 Package pdftex.def Info: Figs/defectosZEISS/tilebandaroja.png  used on input li
-ne 746.
+ne 787.
 (pdftex.def)             Requested size: 440.00314pt x 142.27249pt.
 
 
-LaTeX Warning: Citation `nonuniform' on page 20 undefined on input line 763.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20 <./Figs/defectosZEISS/tilebandaroja.png>]
-<Figs/defectosZEISS/bg_celeste.png, id=378, 1220.56pt x 1927.2pt>
+[20]
+
+LaTeX Warning: Citation `Nordenfelt' on page 21 undefined on input line 810.
+
+[21 <./Figs/defectosZEISS/tilebandaroja.png>]
+<Figs/defectosZEISS/bg_celeste.png, id=413, 1220.56pt x 1927.2pt>
 File: Figs/defectosZEISS/bg_celeste.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_celeste.png>
 Package pdftex.def Info: Figs/defectosZEISS/bg_celeste.png  used on input line 
-767.
+814.
 (pdftex.def)             Requested size: 244.10767pt x 385.43318pt.
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
 ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 772.
- [21 <./Figs/defectosZEISS/bg_celeste.png (PNG copy)>]
-<Figs/defectosZEISS/Experiment-11_m001_ORG.png, id=390, 233.87375pt x 365.86688
+n input line 818.
+ [22 <./Figs/defectosZEISS/bg_celeste.png (PNG copy)>]
+<Figs/defectosZEISS/Experiment-11_m001_ORG.png, id=424, 233.87375pt x 365.86688
 pt>
 File: Figs/defectosZEISS/Experiment-11_m001_ORG.png Graphic file (type png)
 <use Figs/defectosZEISS/Experiment-11_m001_ORG.png>
 Package pdftex.def Info: Figs/defectosZEISS/Experiment-11_m001_ORG.png  used on
- input line 779.
+ input line 829.
 (pdftex.def)             Requested size: 199.17902pt x 284.5432pt.
 File: Figs/defectosZEISS/Experiment-11_m001_ORG.png Graphic file (type png)
 <use Figs/defectosZEISS/Experiment-11_m001_ORG.png>
 Package pdftex.def Info: Figs/defectosZEISS/Experiment-11_m001_ORG.png  used on
- input line 779.
+ input line 829.
 (pdftex.def)             Requested size: 199.17902pt x 284.5432pt.
-<Figs/defectosZEISS/normNIR_1.png, id=391, 234.8775pt x 366.87062pt>
+<Figs/defectosZEISS/normNIR_1.png, id=425, 234.8775pt x 366.87062pt>
 File: Figs/defectosZEISS/normNIR_1.png Graphic file (type png)
 <use Figs/defectosZEISS/normNIR_1.png>
-Package pdftex.def Info: Figs/defectosZEISS/normNIR_1.png  used on input line 7
-80.
+Package pdftex.def Info: Figs/defectosZEISS/normNIR_1.png  used on input line 8
+30.
 (pdftex.def)             Requested size: 199.17015pt x 284.5457pt.
 File: Figs/defectosZEISS/normNIR_1.png Graphic file (type png)
 <use Figs/defectosZEISS/normNIR_1.png>
-Package pdftex.def Info: Figs/defectosZEISS/normNIR_1.png  used on input line 7
-80.
+Package pdftex.def Info: Figs/defectosZEISS/normNIR_1.png  used on input line 8
+30.
 (pdftex.def)             Requested size: 199.17015pt x 284.5457pt.
- [22 <./Figs/defectosZEISS/Experiment-11_m001_ORG.png> <./Figs/defectosZEISS/no
+ [23 <./Figs/defectosZEISS/Experiment-11_m001_ORG.png> <./Figs/defectosZEISS/no
 rmNIR_1.png>]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 809.
+(hyperref)                be the same. Added a new anchor on input line 861.
 
-<Figs/resultados_defectos/banda_nir.png, id=398, 711.65875pt x 118.4425pt>
+<Figs/resultados_defectos/banda_nir.png, id=436, 711.65875pt x 118.4425pt>
 File: Figs/resultados_defectos/banda_nir.png Graphic file (type png)
 <use Figs/resultados_defectos/banda_nir.png>
 Package pdftex.def Info: Figs/resultados_defectos/banda_nir.png  used on input 
-line 815.
+line 867.
 (pdftex.def)             Requested size: 439.9968pt x 142.26762pt.
-<Figs/resultados_defectos/tabla_nir.png, id=399, 629.85312pt x 186.19562pt>
+<Figs/resultados_defectos/tabla_nir.png, id=437, 688.5725pt x 180.17313pt>
 File: Figs/resultados_defectos/tabla_nir.png Graphic file (type png)
 <use Figs/resultados_defectos/tabla_nir.png>
 Package pdftex.def Info: Figs/resultados_defectos/tabla_nir.png  used on input 
-line 823.
-(pdftex.def)             Requested size: 440.00037pt x 142.2687pt.
-<Figs/resultados_defectos/banda_roja.png, id=400, 710.655pt x 90.3375pt>
+line 875.
+(pdftex.def)             Requested size: 440.00194pt x 142.26372pt.
+[24 <./Figs/resultados_defectos/banda_nir.png>]
+<Figs/resultados_defectos/banda_roja.png, id=444, 710.655pt x 90.3375pt>
 File: Figs/resultados_defectos/banda_roja.png Graphic file (type png)
 <use Figs/resultados_defectos/banda_roja.png>
 Package pdftex.def Info: Figs/resultados_defectos/banda_roja.png  used on input
- line 835.
+ line 887.
 (pdftex.def)             Requested size: 440.01598pt x 142.27815pt.
+<Figs/resultados_defectos/tabla_roja.png, id=445, 694.09312pt x 181.67876pt>
+File: Figs/resultados_defectos/tabla_roja.png Graphic file (type png)
+<use Figs/resultados_defectos/tabla_roja.png>
+Package pdftex.def Info: Figs/resultados_defectos/tabla_roja.png  used on input
+ line 895.
+(pdftex.def)             Requested size: 440.01346pt x 142.26605pt.
 
-Underfull \vbox (badness 2042) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./Figs/resultados_defectos/banda_nir.png> <./Figs/resultados_defectos/tab
-la_nir.png>]
-<Figs/resultados_defectos/tabla_NIR.png, id=408, 629.85312pt x 186.19562pt>
-File: Figs/resultados_defectos/tabla_NIR.png Graphic file (type png)
-<use Figs/resultados_defectos/tabla_NIR.png>
-Package pdftex.def Info: Figs/resultados_defectos/tabla_NIR.png  used on input 
-line 843.
-(pdftex.def)             Requested size: 440.00037pt x 142.2687pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 860.
-[24 <./Figs/resultados_defectos/banda_roja.png> <./Figs/resultados_defectos/tab
-la_NIR.png>]
+ [25 <./Figs/resultados_defectos/tabla_nir.png> <./Figs/resultados_defectos/ban
+da_roja.png> <./Figs/resultados_defectos/tabla_roja.png>] [26]
 Cap\IeC {\'\i }tulo 4.
-[25
+[27
 
-] [26
+] [28
 
 ]
 Cap\IeC {\'\i }tulo 5.
-[27] [28
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 938.
+
+[29]
+<Figs/microespectrometro/mapespeccam.jpg, id=473, 4143.48pt x 2330.7075pt>
+File: Figs/microespectrometro/mapespeccam.jpg Graphic file (type jpg)
+<use Figs/microespectrometro/mapespeccam.jpg>
+Package pdftex.def Info: Figs/microespectrometro/mapespeccam.jpg  used on input
+ line 960.
+(pdftex.def)             Requested size: 414.37227pt x 233.0844pt.
+<Figs/microespectrometro/b4c.png, id=474, 149.05687pt x 112.42pt>
+File: Figs/microespectrometro/b4c.png Graphic file (type png)
+<use Figs/microespectrometro/b4c.png>
+Package pdftex.def Info: Figs/microespectrometro/b4c.png  used on input line 96
+9.
+(pdftex.def)             Requested size: 74.52824pt x 56.20985pt.
+<Figs/microespectrometro/mapespeccampuntos.png, id=475, 865.73438pt x 488.32437
+pt>
+File: Figs/microespectrometro/mapespeccampuntos.png Graphic file (type png)
+<use Figs/microespectrometro/mapespeccampuntos.png>
+Package pdftex.def Info: Figs/microespectrometro/mapespeccampuntos.png  used on
+ input line 977.
+(pdftex.def)             Requested size: 432.86613pt x 244.16158pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./Figs/microespectrometro/mapespeccam.jpg> <./Figs/microespectrometro/b4c
+.png>]
+<Figs/microespectrometro/medtransicion.png, id=482, 865.73438pt x 490.83376pt>
+File: Figs/microespectrometro/medtransicion.png Graphic file (type png)
+<use Figs/microespectrometro/medtransicion.png>
+Package pdftex.def Info: Figs/microespectrometro/medtransicion.png  used on inp
+ut line 990.
+(pdftex.def)             Requested size: 432.86613pt x 245.41628pt.
+<Figs/microespectrometro/cutelog.png, id=483, 963.6pt x 504.38437pt>
+File: Figs/microespectrometro/cutelog.png Graphic file (type png)
+<use Figs/microespectrometro/cutelog.png>
+Package pdftex.def Info: Figs/microespectrometro/cutelog.png  used on input lin
+e 1000.
+(pdftex.def)             Requested size: 481.79883pt x 252.19156pt.
+
+Overfull \hbox (41.79883pt too wide) in paragraph at lines 1000--1001
+ [][] 
+ []
+
+[31 <./Figs/microespectrometro/mapespeccampuntos.png> <./Figs/microespectrometr
+o/medtransicion.png>]
+<Figs/microespectrometro/fincutelog.png, id=490, 963.6pt x 500.36937pt>
+File: Figs/microespectrometro/fincutelog.png Graphic file (type png)
+<use Figs/microespectrometro/fincutelog.png>
+Package pdftex.def Info: Figs/microespectrometro/fincutelog.png  used on input 
+line 1008.
+(pdftex.def)             Requested size: 481.79883pt x 250.18407pt.
+
+Overfull \hbox (41.79883pt too wide) in paragraph at lines 1008--1009
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./Figs/microespectrometro/cutelog.png> <./Figs/microespectrometro/fincute
+log.png>]
+<Figs/microespectrometro/fit0.png, id=497, 1445.4pt x 612.03656pt>
+File: Figs/microespectrometro/fit0.png Graphic file (type png)
+<use Figs/microespectrometro/fit0.png>
+Package pdftex.def Info: Figs/microespectrometro/fit0.png  used on input line 1
+021.
+(pdftex.def)             Requested size: 433.62335pt x 183.61238pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./Figs/microespectrometro/fit0.png (PNG copy)>]
+<Figs/microespectrometro/refinacionparam.png, id=504, 286.57062pt x 329.23pt>
+File: Figs/microespectrometro/refinacionparam.png Graphic file (type png)
+<use Figs/microespectrometro/refinacionparam.png>
+Package pdftex.def Info: Figs/microespectrometro/refinacionparam.png  used on i
+nput line 1047.
+(pdftex.def)             Requested size: 114.6262pt x 131.68965pt.
+<Figs/microespectrometro/sm1zcambio.jpg, id=505, 4143.48pt x 2330.7075pt>
+File: Figs/microespectrometro/sm1zcambio.jpg Graphic file (type jpg)
+<use Figs/microespectrometro/sm1zcambio.jpg>
+Package pdftex.def Info: Figs/microespectrometro/sm1zcambio.jpg  used on input 
+line 1057.
+(pdftex.def)             Requested size: 414.37227pt x 233.0844pt.
+
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
+ [34 <./Figs/microespectrometro/refinacionparam.png> <./Figs/microespectrometro
+/sm1zcambio.jpg>]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 1072.
+
+[35] [36
 
 ]
 Cap\IeC {\'\i }tulo 6.
-[29] [30
+[37] [38
 
 ]
 Cap\IeC {\'\i }tulo 7.
-[31] [32
+(ctuman-mwe.bbl [39] [40
 
-]
-Cap\IeC {\'\i }tulo 8.
-[33] [34
-
-]
-Cap\IeC {\'\i }tulo 9.
-(ctuman-mwe.bbl [35] [36
-
-]) [37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 882.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 882.
+]) [41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1090.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1090.
  (ctuman-mwe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 882.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 882.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1090.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1090.
+
 Package rerunfilecheck Info: File `ctuman-mwe.out' has not changed.
-(rerunfilecheck)             Checksum: 37DE20756DF909A38031698B93515A13;2276.
+(rerunfilecheck)             Checksum: C0BA10CE634E36E76CDEDAE9E326C785;2498.
 
 
 LaTeX Warning: There were undefined references.
@@ -1977,27 +2075,34 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 10)
+(\end occurred inside a group at level 17)
 
-### semi simple group (level 10) entered at line 830 (\begingroup)
-### semi simple group (level 9) entered at line 810 (\begingroup)
-### semi simple group (level 8) entered at line 803 (\begingroup)
-### semi simple group (level 7) entered at line 790 (\begingroup)
-### semi simple group (level 6) entered at line 757 (\begingroup)
-### semi simple group (level 5) entered at line 740 (\begingroup)
+### semi simple group (level 17) entered at line 1073 (\begingroup)
+### semi simple group (level 16) entered at line 1069 (\begingroup)
+### semi simple group (level 15) entered at line 947 (\begingroup)
+### semi simple group (level 14) entered at line 943 (\begingroup)
+### semi simple group (level 13) entered at line 939 (\begingroup)
+### semi simple group (level 12) entered at line 931 (\begingroup)
+### semi simple group (level 11) entered at line 882 (\begingroup)
+### semi simple group (level 10) entered at line 862 (\begingroup)
+### semi simple group (level 9) entered at line 855 (\begingroup)
+### semi simple group (level 8) entered at line 842 (\begingroup)
+### semi simple group (level 7) entered at line 798 (\begingroup)
+### semi simple group (level 6) entered at line 781 (\begingroup)
+### semi simple group (level 5) entered at line 714 (\begingroup)
 ### semi simple group (level 4) entered at line 695 (\begingroup)
-### semi simple group (level 3) entered at line 676 (\begingroup)
-### semi simple group (level 2) entered at line 654 (\begingroup)
-### semi simple group (level 1) entered at line 646 (\begingroup)
+### semi simple group (level 3) entered at line 667 (\begingroup)
+### semi simple group (level 2) entered at line 659 (\begingroup)
+### semi simple group (level 1) entered at line 647 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40331 strings out of 492895
- 797501 string characters out of 3123735
- 1002649 words of memory out of 3000000
- 43330 multiletter control sequences out of 15000+200000
- 666009 words of font info for 218 fonts, out of 3000000 for 9000
+ 40528 strings out of 492895
+ 802039 string characters out of 3123735
+ 1010997 words of memory out of 3000000
+ 43477 multiletter control sequences out of 15000+200000
+ 669400 words of font info for 222 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,87p,1462b,1378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,87p,1523b,2197s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-ec.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/fontawesome5/fa5brands0.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.
@@ -2017,17 +2122,18 @@ ublic/lm/lmr6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 e1/public/lm/lmr9.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmri10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmri9.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmssbo10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/juanr/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Users/juanr/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/juanr/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/juanr/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/juanr/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ctuman-mwe.pdf (45 pages, 9694375 bytes).
+fonts/type1/public/lm/lmro10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/juanr/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/juanr/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Users/juanr/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/juanr/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/juanr/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/juanr
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on ctuman-mwe.pdf (49 pages, 20272086 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 43352 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
+ 45477 words of extra memory for PDF output out of 51595 (max. 10000000)
 
