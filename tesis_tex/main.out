@@ -9,23 +9,26 @@
 \BOOKMARK [1][-]{figure.caption.10}{Factibilidad}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{Primer prototipo del equipo y caracterizaci\363n de los espectros de transmisi\363n}{}% 10
 \BOOKMARK [0][-]{chapter.3}{Cuantificaci\363n de los defectos}{}% 11
-\BOOKMARK [1][-]{section*.11}{Defecto de superficie de un componente \363ptico}{chapter.3}% 12
-\BOOKMARK [1][-]{section*.11}{Adquisici\363n de las im\341genes del filtro}{chapter.3}% 13
-\BOOKMARK [2][-]{section*.14}{Tile scan}{section*.11}% 14
-\BOOKMARK [2][-]{section*.17}{Superficies y mapa de los defectos del filtro}{section*.11}% 15
-\BOOKMARK [2][-]{section*.28}{Adquisici\363n de im\341genes individuales de cada banda espectral}{section*.11}% 16
-\BOOKMARK [1][-]{figure.caption.29}{Pre-pocesamiento de las im\341genes de cada banda espectral }{chapter.3}% 17
-\BOOKMARK [1][-]{section*.36}{Algoritmo de detecci\363n de los defectos}{chapter.3}% 18
-\BOOKMARK [1][-]{Item.3}{Resultados del algoritmo de detecci\363n de los defectos}{chapter.3}% 19
-\BOOKMARK [2][-]{section*.37}{Defectos de la banda NIR}{Item.3}% 20
-\BOOKMARK [2][-]{figure.caption.39}{Defectos de la banda Roja}{Item.3}% 21
-\BOOKMARK [0][-]{chapter.4}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 22
-\BOOKMARK [0][-]{chapter.5}{Microespectr\363metro}{}% 23
-\BOOKMARK [1][-]{section*.46}{Dise\361o \363ptico del microespectr\363metro}{chapter.5}% 24
-\BOOKMARK [1][-]{section*.46}{Montaje y alineaci\363n preliminar del microespectr\363metro}{chapter.5}% 25
-\BOOKMARK [1][-]{section*.46}{Foco y resoluci\363n espacial del microespectr\363metro}{chapter.5}% 26
-\BOOKMARK [1][-]{figure.caption.55}{Integraci\363n de una c\341mara web}{chapter.5}% 27
-\BOOKMARK [2][-]{section*.56}{Mapeando el espectr\363metro con la c\341mara}{figure.caption.55}% 28
-\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 29
-\BOOKMARK [0][-]{chapter.7}{Trabajo a futuro}{}% 30
-\BOOKMARK [0][-]{chapter*.57}{Referencias Bibliogr\341ficas}{}% 31
+\BOOKMARK [1][-]{section*.11}{Defectos de superficie de un componente \363ptico}{chapter.3}% 12
+\BOOKMARK [2][-]{figure.caption.13}{MIL-PRF-13830B: especificaciones de scratch \046 dig}{chapter.3}% 13
+\BOOKMARK [2][-]{figure.caption.15}{ISO 10110: defectos de superficie}{chapter.3}% 14
+\BOOKMARK [1][-]{equation.3.0.4}{Caracter\355sticas del filtro utilizado}{chapter.3}% 15
+\BOOKMARK [1][-]{equation.3.0.4}{Adquisici\363n de las im\341genes del filtro}{chapter.3}% 16
+\BOOKMARK [2][-]{section*.18}{Tile scan}{equation.3.0.4}% 17
+\BOOKMARK [2][-]{section*.21}{Superficies y mapa de los defectos del filtro}{equation.3.0.4}% 18
+\BOOKMARK [2][-]{section*.32}{Adquisici\363n de im\341genes individuales de cada banda espectral}{equation.3.0.4}% 19
+\BOOKMARK [1][-]{figure.caption.33}{Pre-pocesamiento de las im\341genes de cada banda espectral }{chapter.3}% 20
+\BOOKMARK [1][-]{section*.40}{Algoritmo de detecci\363n de los defectos}{chapter.3}% 21
+\BOOKMARK [1][-]{Item.3}{Resultados del algoritmo de detecci\363n de los defectos}{chapter.3}% 22
+\BOOKMARK [2][-]{section*.41}{Defectos de la banda NIR}{Item.3}% 23
+\BOOKMARK [2][-]{figure.caption.43}{Defectos de la banda Roja}{Item.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 25
+\BOOKMARK [0][-]{chapter.5}{Microespectr\363metro}{}% 26
+\BOOKMARK [1][-]{section*.50}{Dise\361o \363ptico del microespectr\363metro}{chapter.5}% 27
+\BOOKMARK [1][-]{section*.50}{Montaje y alineaci\363n preliminar del microespectr\363metro}{chapter.5}% 28
+\BOOKMARK [1][-]{section*.50}{Foco y resoluci\363n espacial del microespectr\363metro}{chapter.5}% 29
+\BOOKMARK [1][-]{figure.caption.59}{Integraci\363n de una c\341mara web}{chapter.5}% 30
+\BOOKMARK [2][-]{section*.60}{Mapeando el espectr\363metro con la c\341mara}{figure.caption.59}% 31
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 32
+\BOOKMARK [0][-]{chapter.7}{Trabajo a futuro}{}% 33
+\BOOKMARK [0][-]{chapter*.61}{Referencias Bibliogr\341ficas}{}% 34
