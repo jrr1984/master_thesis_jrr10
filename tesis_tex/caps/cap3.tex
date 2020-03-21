@@ -64,13 +64,13 @@ N  <  \frac{\Phi}{20}
 \end{itemize}
 
 
-Así por ejemplo, una óptica de geometría circular con un diámetro de 200 mm y una calidad óptica especificada por el fabricante con \textit{scratch and dig numbers} S/D 20-10, puede tener rayones con un brillo calibrado de 20 y la suma de todas las longitudes de los rayones de brillo 20 no podrá ser superior a los 50 mm (de acuerdo a \eqref{eq:snumb}). Al mismo tiempo, la óptica no podrá tener más de 10 hoyos de tamaño máximo de 0.1 mm, es decir de \textit{dig number} igual a 10 (de acuerdo a  \eqref{eq:nphi20}) y la suma de los diámetros de todos los hoyos no podrá ser superior a los 2 mm (de acuerdo a \eqref{eq:dmenorig}.
+Así por ejemplo, una óptica de geometría circular con un diámetro de 200 mm y una calidad óptica especificada por el fabricante con \textit{scratch and dig numbers} S/D 30-20, puede tener rayones con un brillo calibrado de 30 y la suma de todas las longitudes de los rayones de brillo 30 no podrá ser superior a los 50 mm (de acuerdo a \eqref{eq:snumb}). Al mismo tiempo, la óptica no podrá tener más de 10 hoyos de tamaño máximo de 0.2 mm, es decir de \textit{dig number} igual a 20 (de acuerdo a  \eqref{eq:nphi20}) y la suma de los diámetros de todos los hoyos no podrá ser superior a los 4 mm (de acuerdo a \eqref{eq:dmenorig}).
 
 La Figura \ref{fig:samplescratchs} muestra una comparación de cuatro muestras de calibración de rayaduras, medidas bajo idénticas condiciones de iluminación \cite{Aikens}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/samplesscratch.png}
-	\caption{Brillo relativo de cuatro muestras calibradas de \textit{scratch number}. \textit{Sample} en inglés significa muestra. La muestra 1 es de la empresa FLIR/Brysen (S\&D 1109), la muestra 2 es de Davidson Optronics (D-667A S/N 2431), la muestra 3 es de Eastman Kodak Paddle (EKCO CM2) y la muestra 4 es de Jenoptik (\textit{paddle} EO \#53-157 CM1). La muestra 4 es vendida comercialmente por los proveedores Edmund Optics y por Thorlabs. Análisis tomado de \cite{Aikens}.}
+	\caption{Brillo relativo de cuatro muestras calibradas de \textit{scratch number}. \textit{Sample} en inglés significa muestra. La muestra 1 es de la empresa FLIR/Brysen (S\&D 1109), la muestra 2 es de Davidson Optronics (D-667A S/N 2431), la muestra 3 es de Eastman Kodak (\textit{paddle} EKCO CM2) y la muestra 4 es de Jenoptik (\textit{paddle} EO \#53-157 CM1). La muestra 4 es vendida comercialmente por los proveedores Edmund Optics y por Thorlabs. Gráfico tomado de \cite{Aikens}.}
 	\label{fig:samplescratchs}
 \end{figure}
 
@@ -87,11 +87,13 @@ Si bien la métrica de \textit{scratch and dig} sigue siendo ampliamente utiliza
 
 \hspace{0.5cm}Las especificaciones de la ISO 10110 determinan de forma cuantitativa el tamaño y número de defectos de superficie que un componente óptico puede presentar. El concepto de defecto de superficie para esta normativa se corresponde con la definición de defecto dada en la primera sección de este capítulo (Ver \ref{sec:defectsurf}). Es decir, contiene a todos los tipos de defectos que representan una inhomogeneidad en la superficie óptica del componente. Esto es, no distingue las rayaduras de los hoyos ni de cualquier otro tipo de defecto para determinar la calidad óptica de un componente.
 
-La normativa ISO 10110 indica el número de defectos permitidos ($N_{p}$) y un coeficiente dado en fracciones de milímetros denominado \textit{grade number} ($A_{g}$) que es igual a la raíz cuadrada del área del defecto de tamaño máximo permitido. Estos dos valores son expresados en las hojas de datos de los componentes ópticos de la siguiente manera: 5/$N_{p}$x$A_{g}$. El número 5 hace referencia a que la especificación técnica dada se refiere a las tolerancias de los defectos de superficie. Por ejemplo, la especificación 5/10x0.05 brindada por un cierto fabricante, indica que el componente cumple que tiene como máximo 10 defectos de 0.1 mm. A su vez, el área del componente óptico cubierta por los defectos permitida está dada por la siguiente expresión:
+La normativa ISO 10110 indica el número de defectos permitidos ($N_{p}$) y un coeficiente dado en fracciones de milímetros denominado \textit{grade number} ($A_{g}$) que es igual a la raíz cuadrada del área del defecto de tamaño máximo permitido. Estos dos valores son expresados en las hojas de datos de los componentes ópticos de la siguiente manera: 5/$N_{p}$x$A_{g}$. El número 5 hace referencia a que la especificación técnica dada se refiere a las tolerancias de los defectos de superficie. A su vez, el área del componente óptico cubierta por los defectos permitida está dada por la siguiente expresión:
 
 \begin{equation}
 A_{defectos} = N_{p}\hspace{2pt} .\hspace{2pt} A_{g}^{2}
 \end{equation}
+
+Por ejemplo, la especificación 5/5x0.05 brindada por un cierto fabricante, indica que el componente cumple que tiene como máximo 5 defectos de 50 micrones y el área máxima cubierta por los defectos puede ser de 12500 $\mu m^{2}$.
 
 Se hace notar que el control de calidad de los componentes ópticos bajo la normativa ISO 10110, al ser meramente cuantitativo, resulta más preciso y objetivo que el control de calidad bajo las especificaciones de \textit{scratch \& dig}. Mientras que para esta última normativa, el control de calidad del componente suele ser realizado por un técnico entrenado vía una inspección visual, para el análisis de las especificaciones de la ISO 10110 de un cierto componente, se utilizan microscopios con la suficiente magnificación como para poder cuantificar los defectos.
 
@@ -99,12 +101,48 @@ Se hace notar que el control de calidad de los componentes ópticos bajo la norm
  En esta sección se definió el concepto de defecto de superficie de un componente óptico como cualquier inhomogeneidad presente en la superficie bajo análisis. Se describieron las dos especificaciones técnicas más utilizadas para determinar la calidad óptica de la superficie de un componente, ambas presentes en la hoja de datos del filtro a analizar en la presente tesis. Por un lado, las especificaciones de \textit{scratch \& dig} que resultan un poco ambiguas debido a la determinación subjetiva de los \textit{scratch numbers} del componente. Y, por otro lado, la ISO 10110 que propone superar esta ambiguedad no distinguiendo los tipos de defectos presentes en la óptica, sino tratándolos a todos por defectos en general por igual. Ahora bien, en la práctica, la mayoría de los proveedores (entre ellos Edmund Optics, Thorlabs) en la actualidad utilizan las especificaciones de \textit{scratch \& dig} para indicar la calidad de la superficie óptica del componente en cuestión. A continuación se describen las características y dimensiones del filtro analizado en este trabajo y luego se describe el análisis de la cuantificación de los defectos determinados en el filtro a partir de la adquisición de imágenes por transmisión con un microscopio.
 \end{tcolorbox}
 
-Alerta Spoiler Capítulo 4: En el capítulo 3 se realizó una descripción cuantitativa de los defectos: se determinó su tamaño, área, la cantidad de defectos presentes en cada banda. Este tipo de análisis de los defectos sigue la línea de las especificaciones técnicas de \textit{scratch \& dig} y la ISO 10110 en cuanto a que no realizan un análisis cualitativo de los defectos. En el presente trabajo se montó un microespectrómetro para caracterizar espectralmente los defectos. Esto es,
+
 
 
 \singlespacing
-\section*{Características del filtro utilizado}
+\section*{Características del filtro}
 \spacing{1.5}
+
+\vspace{1cm}
+\todo[inline]{Eventualmente esto va en la introd?}
+\vspace{1cm}
+
+\hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante simplemente filtro, consiste de un arreglo de cinco filtros ópticos de interferencia \todo{si hace falta explicar un poco en qu[e consisten este tipo de filtros..}    considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:filtroposta} se muestra el filtro real analizado y en la Figura \ref{fig:dimsfiltr} se muestran las diimensiones especificadas por el fabricante.
+
+Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espectral de transmisión de la siguiente manera:
+\begin{itemize}
+\item Zona 1 - Banda Azul: (450-510) nm
+\item Zona 2 - Banda Verde: (510-580) nm
+\item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático signfica color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm
+\item Zona 4 - Banda Roja: (590-690) nm
+\item Zona 5 - Banda NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}: (750-900) nm
+\end{itemize}
+ 
+ \vspace{1cm}
+\todo[inline]{ver de explicar para qué sirve cada banda, usar por ej: \href{http://gspperu.com/pdf/res_landsat7etm.pdf}{link}}
+\vspace{1cm}
+
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/dimsfiltro.png}}{\caption{Dimensiones del filtro especificadas por el fabricante.}\label{fig:dimsfiltr}}
+		\ffigbox{\includegraphics[scale=0.15]{Figs/cuantificaciondefectos/filtro_real.jpg}}{\caption{Imagen del filtro real analizado.}\label{fig:filtroposta}}
+	\end{floatrow}
+\end{figure}
+
+Las especificaciones ópticas de la calidad de la superficie del filtro brindadas por el fabricante son las siguientes:
+\begin{center}
+5/2x0.063 (\textit{according to MIL PRF 13830, S/D 20-10}).
+\end{center}
+
+Estas especificaciones implican para el caso de la ISO 10110, 5/2x0.063, que en la superficie óptica del filtro puede haber un máximo de 2 defectos de 63 micrones de lado y que el área total máxima cubierta por defectos puede ser de 7938 $\mu m^{2}$. Y, las especificaciones de \textit{scratch \& dig}, S/D 20-10, indican que puede haber rayaduras con un brillo calibrado de 20 (de acuerdo a una muestra calibrada indicada por el proveedor) y que la suma de todas las longitudes de las rayaduras de brillo 20 no podrá ser superior a los 7.5 mm (de acuerdo a \ref{eq:snumb})\footnote{ El diámetro equivalente del filtro es de $(30.0 \pm 0.1 )mm$, si se considera el área útil del filtro como la región central que comprende a las bandas que es de $((25.0 \pm 0.1)mm$ x $(27.0 \pm 0.1) mm = (675 \pm 4) mm^{2}$}. El filtro no deberá tener más de 2 hoyos de tamaño máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20}) y la suma de los diámetros de todos los hoyos no podrá ser superior a los 0.4 mm (de acuerdo a \ref{eq:dmenorig}).
+
+
+A continuación se describe el proceso de adquisición de las imágenes del filtro, posteriormente su procesamiento y el algoritmo de detección de los defectos y por último se discute un análisis cuantitativo de los mismos.
 
 
 
@@ -113,7 +151,7 @@ Alerta Spoiler Capítulo 4: En el capítulo 3 se realizó una descripción cuant
 \spacing{1.5}
 
 
-\hspace{0.5cm}Para la adquisición de las imágenes del filtro se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, utilizando un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25.
+\hspace{0.5cm}Para la adquisición de las imágenes del filtro se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:ZEISSdellabo}, con un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.08]{Figs/defectosZEISS/b.jpg}
@@ -128,19 +166,16 @@ Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuent
 	\caption{Montaje del filtro sobre el portamuestras de la platina del microscopio.}
 	\label{fig:filtroenZEISS}
 \end{figure}
-La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio, donde las medidas de 1 pixel son de a 0.586 $\mu m$ x 0.586 $\mu m$.
+La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio, donde las medidas de 1 píxel son de a 0.586 $\mu m$ x 0.586 $\mu m$. \todo{esta calibración hecha por la gente de zeiss es infinitamente mejor que la pueda hacer con una reglita y el FIJI..}
 
 Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
 
-\vspace{1.0cm}
-\todo[inline]{no medi con el ocular entonces no decir nada del ocular.}
-\vspace{1.0cm}
 
 \singlespacing
 \subsection*{\textit{Tile scan}}
 \spacing{1.5}
 
-\hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.} ó para cada banda espectral del filtro en particular.
+\hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR ó para cada banda espectral del filtro en particular.
 
 La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilescan}) en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio.
 
@@ -177,7 +212,7 @@ Entre otros parámetros del barrido, se elige el \textit{overlap} entre las bald
 \vspace{1.0cm}
 
 
-En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Celeste (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
+En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
 
 \vspace{1.0cm}
 \todo[inline]{ponerlo en la presentacion oficial del sr filtro}
@@ -258,10 +293,10 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{Figs/defectosZEISS/bg_celeste.png}
-		\caption{Imagen de fondo de la banda celeste del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido.}
+		\caption{Imagen de fondo de la banda azul del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido.}
 		\label{fig:bgcel}
 	\end{figure}
-	\hspace{0.5cm}En la Figura \ref{fig:bgcel} se muestra la imagen de fondo adquirida para la banda celeste, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de un defecto en algún componente óptico del microscopio, ya advertido por otros usuarios del equipo. El código escrito de la construcción de la imagen de fondo se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub}.
+	\hspace{0.5cm}En la Figura \ref{fig:bgcel} se muestra la imagen de fondo adquirida para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de un defecto en algún componente óptico del microscopio, ya advertido por otros usuarios del equipo. El código escrito de la construcción de la imagen de fondo se puede ver en el siguiente link: \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub}.
 	
 	\vspace{1.0cm}
 	\todo[inline]{aclarar al principio de todo que el simolito es un link a github}
@@ -349,6 +384,8 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 
 
 El código de este capítulo fue escrito utilizando python 3.6.7 y paquetes numpy 1.17.3, scikit-image 0.16.2 y matplotlib 3.1.2, entre otros.
+
+En el capítulo 3 se realizó una descripción cuantitativa de los defectos: se determinó su tamaño, área, la cantidad de defectos presentes en cada banda. Este tipo de análisis de los defectos sigue la línea de las especificaciones técnicas de \textit{scratch \& dig} y la ISO 10110 en cuanto a que no realizan un análisis cualitativo de los defectos. En el presente trabajo se montó un microespectrómetro para caracterizar espectralmente los defectos. Esto es,
 
 
 \vspace{1cm}
