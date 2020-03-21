@@ -15,23 +15,26 @@
 \contentsline {section}{Factibilidad}{9}{figure.caption.10}% 
 \contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterizaci\IeC {\'o}n de los espectros de transmisi\IeC {\'o}n}{11}{chapter.2}% 
 \contentsline {chapter}{\numberline {3}Cuantificaci\IeC {\'o}n de los defectos}{13}{chapter.3}% 
-\contentsline {section}{Defecto de superficie de un componente \IeC {\'o}ptico}{13}{section*.11}% 
-\contentsline {section}{Adquisici\IeC {\'o}n de las im\IeC {\'a}genes del filtro}{14}{section*.11}% 
-\contentsline {subsection}{\textit {Tile scan}}{15}{section*.14}% 
-\contentsline {subsection}{Superficies y mapa de los defectos del filtro}{17}{section*.17}% 
-\contentsline {subsection}{Adquisici\IeC {\'o}n de im\IeC {\'a}genes individuales de cada banda espectral}{20}{section*.28}% 
-\contentsline {section}{Pre-pocesamiento de las im\IeC {\'a}genes de cada banda espectral }{21}{figure.caption.29}% 
-\contentsline {section}{Algoritmo de detecci\IeC {\'o}n de los defectos}{23}{section*.36}% 
-\contentsline {section}{Resultados del algoritmo de detecci\IeC {\'o}n de los defectos}{24}{Item.3}% 
-\contentsline {subsection}{Defectos de la banda NIR}{24}{section*.37}% 
-\contentsline {subsection}{Defectos de la banda Roja}{25}{figure.caption.39}% 
-\contentsline {chapter}{\numberline {4}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{27}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Microespectr\IeC {\'o}metro}{29}{chapter.5}% 
-\contentsline {section}{Dise\IeC {\~n}o \IeC {\'o}ptico del microespectr\IeC {\'o}metro}{29}{section*.46}% 
-\contentsline {section}{Montaje y alineaci\IeC {\'o}n preliminar del microespectr\IeC {\'o}metro}{29}{section*.46}% 
-\contentsline {section}{Foco y resoluci\IeC {\'o}n espacial del microespectr\IeC {\'o}metro}{29}{section*.46}% 
-\contentsline {section}{Integraci\IeC {\'o}n de una c\IeC {\'a}mara web}{35}{figure.caption.55}% 
-\contentsline {subsection}{Mapeando el espectr\IeC {\'o}metro con la c\IeC {\'a}mara}{35}{section*.56}% 
-\contentsline {chapter}{\numberline {6}Conclusiones}{37}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Trabajo a futuro}{39}{chapter.7}% 
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{41}{chapter*.57}% 
+\contentsline {section}{Defectos de superficie de un componente \IeC {\'o}ptico}{13}{section*.11}% 
+\contentsline {subsection}{MIL-PRF-13830B: especificaciones de \textit {scratch \& dig}}{14}{figure.caption.13}% 
+\contentsline {subsection}{ISO 10110: defectos de superficie}{18}{figure.caption.15}% 
+\contentsline {section}{Caracter\IeC {\'\i }sticas del filtro utilizado}{18}{equation.3.0.4}% 
+\contentsline {section}{Adquisici\IeC {\'o}n de las im\IeC {\'a}genes del filtro}{19}{equation.3.0.4}% 
+\contentsline {subsection}{\textit {Tile scan}}{20}{section*.18}% 
+\contentsline {subsection}{Superficies y mapa de los defectos del filtro}{22}{section*.21}% 
+\contentsline {subsection}{Adquisici\IeC {\'o}n de im\IeC {\'a}genes individuales de cada banda espectral}{25}{section*.32}% 
+\contentsline {section}{Pre-pocesamiento de las im\IeC {\'a}genes de cada banda espectral }{26}{figure.caption.33}% 
+\contentsline {section}{Algoritmo de detecci\IeC {\'o}n de los defectos}{29}{section*.40}% 
+\contentsline {section}{Resultados del algoritmo de detecci\IeC {\'o}n de los defectos}{29}{Item.3}% 
+\contentsline {subsection}{Defectos de la banda NIR}{29}{section*.41}% 
+\contentsline {subsection}{Defectos de la banda Roja}{30}{figure.caption.43}% 
+\contentsline {chapter}{\numberline {4}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{33}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Microespectr\IeC {\'o}metro}{35}{chapter.5}% 
+\contentsline {section}{Dise\IeC {\~n}o \IeC {\'o}ptico del microespectr\IeC {\'o}metro}{35}{section*.50}% 
+\contentsline {section}{Montaje y alineaci\IeC {\'o}n preliminar del microespectr\IeC {\'o}metro}{35}{section*.50}% 
+\contentsline {section}{Foco y resoluci\IeC {\'o}n espacial del microespectr\IeC {\'o}metro}{35}{section*.50}% 
+\contentsline {section}{Integraci\IeC {\'o}n de una c\IeC {\'a}mara web}{42}{figure.caption.59}% 
+\contentsline {subsection}{Mapeando el espectr\IeC {\'o}metro con la c\IeC {\'a}mara}{42}{section*.60}% 
+\contentsline {chapter}{\numberline {6}Conclusiones}{43}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Trabajo a futuro}{45}{chapter.7}% 
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{47}{chapter*.61}% 
