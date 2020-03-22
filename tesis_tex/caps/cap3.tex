@@ -15,9 +15,7 @@ Asimismo, se detalla el algoritmo utilizado para realizar la detección de los d
 \label{sec:defectsurf}
 \spacing{1.5}
 
-\vspace{1.0cm}
-\todo[inline]{Cómo asociar errores a las dimensiones medidas tanto con el fiji como con el algoritmo. Al error de las imágenes del zeiss se le pone la calibración, por ej $\pm$ 0.586 $\mu$m , aprox 0.59 micrones de error }
-\vspace{1.0cm}
+
 
 \hspace{0.5cm}Se define un defecto de superficie de un componente óptico de manera general como una imperfección localizada, es decir una ruptura de la homogeneidad de la superficie óptica \cite{Gomez_1998}. Estas imperfecciones consisten de rayones (en inglés \textit{scratches}), hoyos (en inglés, \textit{digs}), huecos, manchas, burbujas, entre otras consideradas en las especificaciones estándard de la industria. La terminología varía dependiendo del sector de la industria óptica que se trate. En particular, en el presente trabajo se caracterizaron defectos de superficie denominados en adelante huecos (Ver Figura \ref{fig:huecocel}) y manchas ó defectos de transmisión (Ver Figura \ref{fig:manchacel}). 
 
@@ -63,7 +61,6 @@ N  <  \frac{\Phi}{20}
 \end{equation}
 \end{itemize}
 
-
 Así por ejemplo, una óptica de geometría circular con un diámetro de 200 mm y una calidad óptica especificada por el fabricante con \textit{scratch and dig numbers} S/D 30-20, puede tener rayones con un brillo calibrado de 30 y la suma de todas las longitudes de los rayones de brillo 30 no podrá ser superior a los 50 mm (de acuerdo a \eqref{eq:snumb}). Al mismo tiempo, la óptica no podrá tener más de 10 hoyos de tamaño máximo de 0.2 mm, es decir de \textit{dig number} igual a 20 (de acuerdo a  \eqref{eq:nphi20}) y la suma de los diámetros de todos los hoyos no podrá ser superior a los 4 mm (de acuerdo a \eqref{eq:dmenorig}).
 
 La Figura \ref{fig:samplescratchs} muestra una comparación de cuatro muestras de calibración de rayaduras, medidas bajo idénticas condiciones de iluminación \cite{Aikens}.
@@ -85,7 +82,7 @@ Si bien la métrica de \textit{scratch and dig} sigue siendo ampliamente utiliza
 \spacing{1.5}
 
 
-\hspace{0.5cm}Las especificaciones de la ISO 10110 determinan de forma cuantitativa el tamaño y número de defectos de superficie que un componente óptico puede presentar. El concepto de defecto de superficie para esta normativa se corresponde con la definición de defecto dada en la primera sección de este capítulo (Ver \ref{sec:defectsurf}). Es decir, contiene a todos los tipos de defectos que representan una inhomogeneidad en la superficie óptica del componente. Esto es, no distingue las rayaduras de los hoyos ni de cualquier otro tipo de defecto para determinar la calidad óptica de un componente.
+\hspace{0.5cm}Las especificaciones de la ISO 10110 determinan de forma cuantitativa el tamaño y número de defectos de superficie que un componente óptico puede presentar. El concepto de defecto de superficie para esta normativa se corresponde con la definición de defecto dada en la primera sección de este capítulo (Ver \hyperref[sec:defectsurf]{def.}). Es decir, contiene a todos los tipos de defectos que representan una inhomogeneidad en la superficie óptica del componente. Esto es, no distingue las rayaduras de los hoyos ni de cualquier otro tipo de defecto para determinar la calidad óptica de un componente.
 
 La normativa ISO 10110 indica el número de defectos permitidos ($N_{p}$) y un coeficiente dado en fracciones de milímetros denominado \textit{grade number} ($A_{g}$) que es igual a la raíz cuadrada del área del defecto de tamaño máximo permitido. Estos dos valores son expresados en las hojas de datos de los componentes ópticos de la siguiente manera: 5/$N_{p}$x$A_{g}$. El número 5 hace referencia a que la especificación técnica dada se refiere a las tolerancias de los defectos de superficie. A su vez, el área del componente óptico cubierta por los defectos permitida está dada por la siguiente expresión:
 
@@ -97,35 +94,27 @@ Por ejemplo, la especificación 5/5x0.05 brindada por un cierto fabricante, indi
 
 Se hace notar que el control de calidad de los componentes ópticos bajo la normativa ISO 10110, al ser meramente cuantitativo, resulta más preciso y objetivo que el control de calidad bajo las especificaciones de \textit{scratch \& dig}. Mientras que para esta última normativa, el control de calidad del componente suele ser realizado por un técnico entrenado vía una inspección visual, para el análisis de las especificaciones de la ISO 10110 de un cierto componente, se utilizan microscopios con la suficiente magnificación como para poder cuantificar los defectos.
 
-\begin{tcolorbox}
- En esta sección se definió el concepto de defecto de superficie de un componente óptico como cualquier inhomogeneidad presente en la superficie bajo análisis. Se describieron las dos especificaciones técnicas más utilizadas para determinar la calidad óptica de la superficie de un componente, ambas presentes en la hoja de datos del filtro a analizar en la presente tesis. Por un lado, las especificaciones de \textit{scratch \& dig} que resultan un poco ambiguas debido a la determinación subjetiva de los \textit{scratch numbers} del componente. Y, por otro lado, la ISO 10110 que propone superar esta ambiguedad no distinguiendo los tipos de defectos presentes en la óptica, sino tratándolos a todos por defectos en general por igual. Ahora bien, en la práctica, la mayoría de los proveedores (entre ellos Edmund Optics, Thorlabs) en la actualidad utilizan las especificaciones de \textit{scratch \& dig} para indicar la calidad de la superficie óptica del componente en cuestión. A continuación se describen las características y dimensiones del filtro analizado en este trabajo y luego se describe el análisis de la cuantificación de los defectos determinados en el filtro a partir de la adquisición de imágenes por transmisión con un microscopio.
-\end{tcolorbox}
-
-
-
+%\begin{tcolorbox}[colback=blue!10!white,colframe=blue!43!black]
+ En esta sección se definió el concepto de defecto de superficie de un componente óptico como cualquier inhomogeneidad presente en la superficie bajo análisis. Se describieron las dos especificaciones técnicas más utilizadas para determinar la calidad óptica de la superficie de un componente, ambas presentes en la hoja de datos del filtro a analizar en la presente tesis. Por un lado, las especificaciones de \textit{scratch \& dig} que resultan un poco ambiguas debido a la determinación subjetiva de los \textit{scratch numbers} del componente. Y, por otro lado, la ISO 10110 que propone superar esta ambiguedad no distinguiendo los tipos de defectos presentes en la óptica, sino tratándolos a todos por defectos en general por igual. Ahora bien, en la práctica, la mayoría de los proveedores (entre ellos Edmund Optics, Thorlabs) en la actualidad utilizan las especificaciones de \textit{scratch \& dig} para indicar la calidad de la superficie óptica del componente en cuestión. 
+ 
+ A continuación se describen las características y dimensiones del filtro analizado en este trabajo y luego se describe el análisis de la cuantificación de los defectos determinados en el filtro a partir de la adquisición de imágenes por transmisión con un microscopio.
 
 \singlespacing
 \section*{Características del filtro}
 \spacing{1.5}
 
-\vspace{1cm}
-\todo[inline]{Eventualmente esto va en la introd?}
-\vspace{1cm}
-
-\hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante simplemente filtro, consiste de un arreglo de cinco filtros ópticos de interferencia \todo{si hace falta explicar un poco en qu[e consisten este tipo de filtros..}    considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:filtroposta} se muestra el filtro real analizado y en la Figura \ref{fig:dimsfiltr} se muestran las diimensiones especificadas por el fabricante.
+\hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante simplemente filtro, consiste de un arreglo de cinco filtros ópticos de interferencia  considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:filtroposta} se muestra el filtro real analizado y en la Figura \ref{fig:dimsfiltr} se muestran las diimensiones especificadas por el fabricante.
 
 Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espectral de transmisión de la siguiente manera:
 \begin{itemize}
 \item Zona 1 - Banda Azul: (450-510) nm
 \item Zona 2 - Banda Verde: (510-580) nm
-\item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático signfica color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm
+\item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático viene de la familia de la palabra color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm
 \item Zona 4 - Banda Roja: (590-690) nm
 \item Zona 5 - Banda NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}: (750-900) nm
 \end{itemize}
  
- \vspace{1cm}
-\todo[inline]{ver de explicar para qué sirve cada banda, usar por ej: \href{http://gspperu.com/pdf/res_landsat7etm.pdf}{link}}
-\vspace{1cm}
+
 
 \begin{figure}[H]
 	\begin{floatrow}
@@ -141,6 +130,7 @@ Las especificaciones ópticas de la calidad de la superficie del filtro brindada
 
 Estas especificaciones implican para el caso de la ISO 10110, 5/2x0.063, que en la superficie óptica del filtro puede haber un máximo de 2 defectos de 63 micrones de lado y que el área total máxima cubierta por defectos puede ser de 7938 $\mu m^{2}$. Y, las especificaciones de \textit{scratch \& dig}, S/D 20-10, indican que puede haber rayaduras con un brillo calibrado de 20 (de acuerdo a una muestra calibrada indicada por el proveedor) y que la suma de todas las longitudes de las rayaduras de brillo 20 no podrá ser superior a los 7.5 mm (de acuerdo a \ref{eq:snumb})\footnote{ El diámetro equivalente del filtro es de $(30.0 \pm 0.1 )mm$, si se considera el área útil del filtro como la región central que comprende a las bandas que es de $((25.0 \pm 0.1)mm$ x $(27.0 \pm 0.1) mm = (675 \pm 4) mm^{2}$}. El filtro no deberá tener más de 2 hoyos de tamaño máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20}) y la suma de los diámetros de todos los hoyos no podrá ser superior a los 0.4 mm (de acuerdo a \ref{eq:dmenorig}).
 
+Se hace notar que entre las bandas se encuentran unas banditas de un material no declarado por el fabricante, denominado en adelante cromo, de 500 $\mu$ de largo como se muestra en la Figura \ref{fig:dimsfiltr}. El mismo material cubre toda la región del filtro no contenida por las cinco bandas.
 
 A continuación se describe el proceso de adquisición de las imágenes del filtro, posteriormente su procesamiento y el algoritmo de detección de los defectos y por último se discute un análisis cuantitativo de los mismos.
 
@@ -148,6 +138,7 @@ A continuación se describe el proceso de adquisición de las imágenes del filt
 
 \singlespacing
 \section*{Adquisición de las imágenes del filtro}
+\label{sec:conf}
 \spacing{1.5}
 
 
@@ -166,9 +157,9 @@ Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuent
 	\caption{Montaje del filtro sobre el portamuestras de la platina del microscopio.}
 	\label{fig:filtroenZEISS}
 \end{figure}
-La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y 2.3 megapíxeles, fue controlada a través del software ZEN 2.5 (Blue edition, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio, donde las medidas de 1 píxel son de a 0.586 $\mu m$ x 0.586 $\mu m$. \todo{esta calibración hecha por la gente de zeiss es infinitamente mejor que la pueda hacer con una reglita y el FIJI..}
+La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y una resolución de 2.3 megapíxeles (1216x1920 píxeles), fue controlada a través del software ZEN 2.5 (\textit{Blue edition}, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio para la configuración utilizada (Ver \hyperref[sec:conf]{config.}), donde las medidas de 1 píxel son de 0.586 $\mu m$ x 0.586 $\mu m$. Cada \textit{tile} individual tiene dimensiones de 713 $\mu m$ x 1125 $\mu m$. 
 
-Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora.
+Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora. 
 
 
 \singlespacing
@@ -181,96 +172,92 @@ La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilesc
 
 Hay distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la selección visual individual de las cuatro esquinas de la misma, como se muestra en la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/tilescan.png}
 	\caption{\textit{Tile scan} de la banda pancromática.}
 	\label{fig:tilescan}
 \end{figure} 
 
-Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual,  realizando un \textit{stitching}\todo{explicar que es lo que hace el software}\footnote{El \textit{stitching} de las imágenes (baldosas) es el 'pegado' de cada una con sus vecinas para que en la imagen final no se observen los bordes de cada baldosa sino que la imagen completa se vea como si hubiese sido adquirida individualmente.} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones\todo{explicar mas xq el 10 porciento con ayuda del stitching}, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
+Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual para su visualización,  realizando un \textit{stitching}\footnote{El \textit{stitching} es el proceso computacional por el cual se combinan múltiples \textit{tiles} para
+producir una sola imagen que permita una mejor visualización (Ver técnica SIFT (\textit{Scale Invariant Feature Transform}), \cite{Lowe}).} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
 
 \singlespacing
 \subsection*{Superficies y mapa de los defectos del filtro}
 \spacing{1.5}
 
-\vspace{1.0cm}
-\todo[inline]{presentar el filtro real, con las dimensiones}
-\vspace{1.0cm}
-
-\hspace{0.5cm}Se adquirieron imágenes completas del filtro, a excepción de la banda espectral del NIR, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}.
+\hspace{0.5cm}Se adquirieron imágenes completas del filtro, a excepción de la banda espectral del NIR, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}. Las dos superficies exteriores denominadas arbitrariamente A y B son las que se muestran especificadas en la Figura \ref{fig:espfil} y que se encuentran en la interfaz filtro-aire.
 
 \begin{figure}[H]
 	\begin{floatrow}
-		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supfiltrocondensador.png}}{\caption{Imagen de la superficie exterior superior del filtro, para un barrido de 15.18 mm x 15.30 m.}\label{fig:supfiltrocondensador}}
-		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supfiltroobjetivo.png}}{\caption{Imagen de la superficie exterior inferior del filtro, para un barrido de 22.09 mm x 16.24 mm.}\label{fig:supfiltroobjetivo}}
+		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supextex2216.png}}{\caption{Imagen de la superficie exterior A del filtro, para un barrido de 15.54 mm x 14.94 m.}\label{fig:supfiltrocondensador}}
+		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supextex1515.png}}{\caption{Imagen de la superficie exterior B del filtro, para un barrido de 15.50 mm x 15.55 mm.}\label{fig:supfiltroobjetivo}}
 	\end{floatrow}
 \end{figure}
 
-\vspace{1.0cm}
-\todo[inline]{imagenes de las mismas dimensiones, recortarlas lo que sea. Escala verde y roja por ejemplo}
-\vspace{1.0cm}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{Figs/cuantificaciondefectos/espesorfiltro.png}
+	\caption{Dimensiones del espesor del filtro. Las superficies exteriores del filtro son las superficies A y B, que se encuentran en la interfaz filtro-aire.}
+	\label{fig:espfil}
+\end{figure}
 
 En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
 
-\vspace{1.0cm}
-\todo[inline]{ponerlo en la presentacion oficial del sr filtro}
-\vspace{1.0cm}
+Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no saturen alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se puede ver en el histograma de la intensidad de los píxeles de la Figura \ref{fig:histograma15x15} para el barrido de la superficie A del filtro.
 
-Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no saturen alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se muestra en la Figura \ref{fig:histograma15x15} el histograma de la intensidad de los píxeles de la cámara para el barrido de la Figura \ref{fig:supfiltrocondensador}.
-
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/histograma15x15.png}
-	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior superior del filtro.}
+	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior A del filtro.}
 	\label{fig:histograma15x15}
 \end{figure}
- 
-\vspace{1.0cm}
-\todo[inline]{oracion de abajo es super larga, reescribir y partir en 2 por lo menos}
-\vspace{1.0cm}
 
-Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature\todo{quedo muy informal, ponerlo en infinitivo Aumentar estos dos paSi se aumentaban estos dos parámetros de la adquisición se saturaba en particular la banda espectral pancromática.}, no era posible obtener una buena calidad de la imagen en esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{Zeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión de baja intensidad en la región del NIR, como se muestra en la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. Ahora bien, la banda espectral del NIR fue medida individualmente posteriormente como se explica más adelante.
-Para poder obtener una imagen del filtro completo, incluida la banda del NIR, se debería cambiar la fuente de luz que tenga una mayor intensidad en dicha región.
+Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature, no era posible obtener una imagen de esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{Zeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión de baja intensidad en la región del NIR, como se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. 
 
 
 \begin{figure}[H]
-	\begin{floatrow}
-		\ffigbox{\includegraphics[width=7.0cm,height=7.0cm]{Figs/defectosZEISS/eficienciacuanticacamarazeiss.png}}{\caption{Gráfico de la eficiencia cuántica de la cámara monocromática del microscopio Aiocam 702 en función de la longitud de onda.}\label{fig:eficienciacuanticamara}}
-		\ffigbox{\includegraphics[width=7.0cm,height=7.0cm]{Figs/defectosZEISS/espectrolampZEISSacolor.png}}{\caption{Espectro de emisión de la fuente de luz del microscopio.}\label{fig:espectrolamparazeiss}}
-	\end{floatrow}	
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/eficienciacuanticacamarazeiss.png}
+	\caption{Gráfico de la eficiencia cuántica de la cámara monocromática del microscopio Aiocam 702 en función de la longitud de onda.}
+	\label{fig:eficienciacuanticamara}
 \end{figure}
 
-\vspace{1.0cm}
-\todo[inline]{mejorar esas figuras, no se ve nada y quedan desentonados}
-\vspace{1.0cm}
-\todo[inline]{cambiar escala de la longitud de onda a un rango mas chico, u.a no a.u. en castellano}
-\vspace{1.0cm}
-\todo[inline]{explicar que tipo de lampara es la del Zeiss}
-\vspace{1.0cm}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/espectrolampZEISSacolor.png}
+	\caption{Espectro de emisión de la fuente de luz del microscopio.}
+	\label{fig:espectrolamparazeiss}
+\end{figure}
+
+Ahora bien, la banda espectral del NIR fue medida individualmente posteriormente como se explica más adelante. Para poder obtener una imagen del filtro completo, incluida la banda del NIR, se debería cambiar la fuente de luz por una que tenga una mayor intensidad en dicha región espectral.
 
 La imagen completa de cada superficie exterior del filtro permitió:
 \begin{itemize}
 	\item Realizar un primer diagnóstico visual por imagen de la calidad óptica de construcción del filtro. 
-	\item Observar la cantidad y tipo de defectos así como la densidad de los mismos.
 	\item Determinar que ninguna de las dos superficies exteriores del filtro presentaba una cantidad mayor notable de defectos que la otra como se puede observar en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}, por lo que el análisis individual de cada una de las bandas fue realizado sobre una de las caras únicamente.
+	\item Observar los tipos de defectos.
 	\item Obtener un mapa de los defectos con su ubicación precisa en la superficie del filtro.
 \end{itemize}
+
+A continuación se explica el proceso de adquisición de las imágenes individuales de cada banda espectral, el pre-procesamiento de las mismas que consiste en la corrección de la iluminación no uniforme del microscopio y luego se describe el algoritmo de detección de los defectos.
+
 \singlespacing
 \subsection*{Adquisición de imágenes individuales de cada banda espectral}
 \spacing{1.5}
 
-\hspace{0.5cm}Para realizar una cuantificación de los defectos del filtro, se adquirieron imágenes individuales de cada banda espectral del filtro para una de las superficies exteriores del filtro. Para cada banda, se configuró la intensidad de la lámpara y el tiempo de integración de la cámara de forma tal de utilizar la mayor parte del rango dinámico de la cámara que se encuentra alrededor del 70 \% recomendado por el fabricante y de esta forma obtener la mejor calidad de imagen para cada banda y para su posterior análisis. 
+\hspace{0.5cm}Para realizar una cuantificación de los defectos del filtro, se adquirieron imágenes individuales de cada banda espectral del filtro para una de las superficies exteriores del filtro. Para cada banda, se configuró la intensidad de la lámpara y el tiempo de integración de la cámara de forma tal de utilizar la mayor parte del rango dinámico de la cámara que se encuentra alrededor del 70 \% recomendado por el fabricante y de esta forma obtener la mejor calidad de imagen para el posterior análisis de cada banda. Así también se verificó que las cuatro esquinas de la banda a medir estuvieran en foco a partir de la visualización en vivo de la cámara. Dichas esquinas fueron elegidas en el software para determinar el área a ser barrida con el \textit{tile scan} teniendo cuidado de no incluir parte del cromo en el campo de visión de la imagen. Esto resultó importante pues sino el algoritmo de detección de los defectos detectaba al cromo como un centenar de defectos, que serían falsos positivos de defectos, lo que arruinaría claramente el análisis estadístico que se muestra más adelante.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth,height= 5.0cm]{Figs/defectosZEISS/tilebandaroja.png}
 	\caption{Imagen de la banda roja del filtro obtenida mediante un \textit{Tile scan}.}
 	\label{fig:tilebandaroja}
 \end{figure}
 
-En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja obtenida mediante un \textit{tile scan} de 27.65 mm x 4.16 mm, intensidad de la lámpara configurada en 30\% y el tiempo de exposición de la cámara fue de 13 ms. En la sección de Resultados se muestran las imágenes de cada banda utilizadas para su análisis y su discusión.
+En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja obtenida mediante un \textit{tile scan} de 27.65 mm x 4.16 mm, 124 \textit{tiles},intensidad de la lámpara configurada en 30\% y el tiempo de exposición de la cámara fue de 13 ms. En la sección de Resultados se muestran las imágenes de cada banda utilizadas para su análisis y su discusión.
 
 
 
@@ -278,13 +265,7 @@ En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja
 \section*{Pre-pocesamiento de las imágenes de cada banda espectral }
 \spacing{1.5}
 
-\vspace{1.0cm}
-\todo[inline]{reescribir oracion de abajo}
-\vspace{1.0cm}
-\todo[inline]{xq necesito cada etapa, qué hago cone l pre-procesamiento y después con el resto}
-\vspace{1.0cm}
-
-\hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
+\hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa\footnote{Vale aclarar que las imágenes completas ya sea de una banda ó las del filtro completo, fueron el resultado de realizar un \textit{stitching} de todas las \textit{tiles} individuales de cada adquisición y, fueron procesadas de esta manera simplemente para optimizar su visualización pero no para realizar el análisis ni detección de defectos sobre las mismas.}, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
 
 El pre-procesamiento de las imágenes de cada banda espectral consiste en la corrección en las imágenes de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo. Este preprocesamiento consiste de dos pasos:
 \begin{enumerate}
@@ -386,6 +367,26 @@ El pre-procesamiento de las imágenes de cada banda espectral consiste en la cor
 El código de este capítulo fue escrito utilizando python 3.6.7 y paquetes numpy 1.17.3, scikit-image 0.16.2 y matplotlib 3.1.2, entre otros.
 
 En el capítulo 3 se realizó una descripción cuantitativa de los defectos: se determinó su tamaño, área, la cantidad de defectos presentes en cada banda. Este tipo de análisis de los defectos sigue la línea de las especificaciones técnicas de \textit{scratch \& dig} y la ISO 10110 en cuanto a que no realizan un análisis cualitativo de los defectos. En el presente trabajo se montó un microespectrómetro para caracterizar espectralmente los defectos. Esto es,
+
+\vspace{1cm}
+\todo[inline]{Eventualmente la seccion caracteristicas del filtro va en la introd?}
+\vspace{1cm}
+
+ \vspace{1cm}
+\todo[inline]{en la seccion caracteristicas del filtro, en el itemize de las bandas..ver de explicar para qué sirve cada banda, usar por ej: \href{http://gspperu.com/pdf/res_landsat7etm.pdf}{link}}
+\vspace{1cm}
+
+\vspace{1cm}
+\todo[inline]{si hace falta explicar un poco en que consisten los filtros opticos de interferencia..}   
+\vspace{1cm}
+
+\vspace{1.0cm}
+\todo[inline]{explicar que tipo de lampara es la del Zeiss}
+\vspace{1.0cm}
+
+\vspace{1.0cm}
+\todo[inline]{Cómo asociar errores a las dimensiones medidas tanto con el fiji como con el algoritmo. Al error de las imágenes del zeiss se le pone la calibración, por ej $\pm$ 0.586 $\mu$m , aprox 0.59 micrones de error }
+\vspace{1.0cm}
 
 
 \vspace{1cm}
