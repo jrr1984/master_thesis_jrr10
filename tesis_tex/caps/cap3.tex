@@ -182,6 +182,18 @@ Hay distintas formas de elegir el área total a adquirir en el software. Se elig
 Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual para su visualización,  realizando un \textit{stitching}\footnote{El \textit{stitching} es el proceso computacional por el cual se combinan múltiples \textit{tiles} para
 producir una sola imagen que permita una mejor visualización (Ver técnica SIFT (\textit{Scale Invariant Feature Transform}), \cite{Lowe}).} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
 
+\begin{warningbox}{}
+\faExclamationTriangle \hspace{2pt} \texttt{Advertencias:}\par
+\begin{itemize}
+\justifying
+\item Cada barrido completo de una banda es guardado por el software de Zeiss en un archivo de extensión .czi que contiene toda la \textit{metadata} como la información referida a la configuración del microscopio utilizada. Dicho archivo puede ser manipulado con el software de Zeiss, ó con el \href{https://imagej.net/Fiji}{Fiji-ImageJ} (tiene más herramientas que el software ImageJ a secas) ó a través del lenguaje \textit{python} utilizando la librería \href{https://pypi.org/project/czifile/}{\textit{czifile}} (Ejemplo sencillo: \href{https://github.com/jrr1984/defects_analysis/blob/master/zeiss_cfi.ipynb}{\faGithub}).
+\item El archivo .czi de la banda completa además contiene todas las \textit{tiles} del barrido que pueden ser exportadas como archivos individuales utilizando las herramientas de procesamiento del software de Zeiss \cite{tilezeiss}. Es muy importante exportar dichas imágenes eligiendo un formato de imagen que no modifique la calidad de la imagen original, esto es, que no se pierda precisión sobre los valores de intensidad de cada píxel. 
+\item Se recomienda para el guardado, manipulación, operaciones, etc., utilizar el formato de imagen TIFF (\textit{Tagged Image File Format}) pues es un formato que guarda los datos de intensidad de cada píxel originales, sin pérdida de precisión por compresión. Y, definitivamente no se puede utilizar el formato de imagen JPEG (\textit{Joint Photographic Experts Group}) en el campo de la microscopía pues el tipo de compresión que realiza sobre los datos originales resulta en una pérdida de precisión.
+\item Por último, se hace notar que la pérdida de precisión de una imagen puede ocurrir tanto en el guardado como en las operaciones sobre las imágenes. Un ejemplo de esta pérdida de precisión sería convertir las imágenes de una precisión original de 16 bits ($2^{16} = 65536$ posibles valores de intensidad) a una precisión de 8 bits ($2^{8} = 256$). Este inconveniente podría ser producido automáticamente por ejemplo en alguna operación utilizando la librería \textit{scikit-image} \cite{van2014scikit}, por lo que se sugiere controlar la precisión con la que se manipulan las imágenes en cada operación realizada.
+\end{itemize}
+
+\end{warningbox}	
+
 \singlespacing
 \subsection*{Superficies y mapa de los defectos del filtro}
 \spacing{1.5}
@@ -252,7 +264,7 @@ A continuación se explica el proceso de adquisición de las imágenes individua
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6.0cm,width=1.0\textwidth]{Figs/defectosZEISS/tilebandaroja.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/tilebandaroja.png}
 	\caption{Imagen de la banda roja del filtro obtenida mediante un \textit{Tile scan}.}
 	\label{fig:tilebandaroja}
 \end{figure}
@@ -261,6 +273,9 @@ En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja
 
 A partir de la adquisición de los barridos de las cinco bandas del filtro, cada uno compuesto por imágenes individuales, se realizó el pre-procesamiento de las mismas que se explica a continuación.
 	
+
+
+
 \singlespacing
 \section*{Pre-pocesamiento de las imágenes de cada banda espectral }
 \spacing{1.5}
@@ -403,8 +418,13 @@ En el capítulo 3 se realizó una descripción cuantitativa de los defectos: se 
 \vspace{1cm}
 
 \vspace{1cm}
-\todo[inline]{poner grafico del espectro de la lampara con colores facha y explicar que tipo de lampara es, escuchar audio hernan}
+\todo[inline]{explicar que tipo de lampara es, escuchar audio hernan, poner el codigo de github del espectro con colores facha}
 \vspace{1cm}
+
+\vspace{1cm}
+\todo[inline]{buscar warning box FACHA}
+\vspace{1cm}
+
 
 \vspace{1cm}
 \todo[inline]{Falta: poner siempre la barrita de la escala en las imágenes}
