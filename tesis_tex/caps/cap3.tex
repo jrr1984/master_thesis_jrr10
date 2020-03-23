@@ -11,7 +11,7 @@
 Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado \underline{no} cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
 
 \singlespacing
-\section*{Defectos de superficie de un componente óptico}
+\section{Defectos de superficie de un componente óptico}
 \label{sec:defectsurf}
 \spacing{1.5}
 
@@ -29,7 +29,7 @@ Asimismo, se detalla el algoritmo utilizado para realizar la detección de los d
 Los defectos de superficie de un componente óptico pueden estar originados en el proceso de fabricación mismo, en el tratamiento y manipulación de la óptica (en inglés, \textit{handling}) en distintas etapas de un proceso de montaje ó en el transporte del proveedor al cliente. Estos defectos pueden provocar un cambio de las propiedades ópticas del componente, como por ejemplo una merma en la intensidad esperada ó una variación del espectro de tranmisión, y en consecuencia los usuarios finales de los componentes deben verificar la calidad óptica que los proveedores detallan en las especificaciones técnicas. A continuación se describen las dos especificaciones técnicas más utilizadas en la industria para determinar la calidad óptica de un componente, que son la \textit{U.S. Military Performance Specification} MIL-PRF-13830B y la ISO 10110 \cite{milprf}\cite{iso10110}.
 
 \singlespacing
-\subsection*{MIL-PRF-13830B: especificaciones de \textit{scratch \& dig}}
+\subsection{MIL-PRF-13830B: especificaciones de \textit{scratch \& dig}}
 \spacing{1.5}
 
 \hspace{0.5cm}La especificación técnica MIL-PRF-13830B define los defectos permitidos en una superficie óptica utilizando una métrica dada por un par de números denominados \textit{scratch and dig numbers}: S/D. El \textit{scratch number} puede tomar alguno de los siguientes valores arbitrarios: 10,20,40,60,80, que representan en orden creciente el nivel de brillo de la rayadura. Este número no proviene de una medición experimental exacta, sino que es el resultado de comparar el brillo de la rayadura del componente a analizar con muestras de rayaduras calibradas como las que se muestran esquemáticamente en la Figura \ref{fig:scratchanddig}, bajo ciertas condiciones de iluminación específicas. En consecuencia, la asignación de un cierto \textit{scratch number} a un componente es una inspección visual subjetiva, es decir que varía de inspector a inspector.
@@ -78,7 +78,7 @@ Así también el brillo del \textit{scratch number} 60 de la muestra 2 es más d
 Si bien la métrica de \textit{scratch and dig} sigue siendo ampliamente utilizada en la industria, el hecho de que el análisis de las rayaduras sea dependiente del inspector de turno sumado a que las muestras de brillo calibradas varían de acuerdo al fabricante de las mismas, hacen que estas especificaciones técnicas para determinar la calidad de una óptica resulten técnicamente ambiguas. A continuación se explican las especificaciones técnicas de la ISO 10110 y se hace notar que ambas especificaciones técnicas figuran en la hoja de datos del filtro analizado en el presente trabajo. Luego se muestran las características del filtro analizado en esta tesis junto a sus especificaciones ópticas.
 
 \singlespacing
-\subsection*{ISO 10110: defectos de superficie}
+\subsection{ISO 10110: defectos de superficie}
 \spacing{1.5}
 
 
@@ -100,7 +100,7 @@ Se hace notar que el control de calidad de los componentes ópticos bajo la norm
  A continuación se describen las características y dimensiones del filtro analizado en este trabajo y luego se describe el análisis de la cuantificación de los defectos determinados en el filtro a partir de la adquisición de imágenes por transmisión con un microscopio.
 
 \singlespacing
-\section*{Características del filtro}
+\section{Características del filtro}
 \spacing{1.5}
 
 \hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante simplemente filtro, consiste de un arreglo de cinco filtros ópticos de interferencia  considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:filtroposta} se muestra el filtro real analizado y en la Figura \ref{fig:dimsfiltr} se muestran las diimensiones especificadas por el fabricante.
@@ -137,7 +137,7 @@ A continuación se describe el proceso de adquisición de las imágenes del filt
 
 
 \singlespacing
-\section*{Adquisición de las imágenes del filtro}
+\section{Adquisición de las imágenes del filtro}
 \label{sec:conf}
 \spacing{1.5}
 
@@ -163,7 +163,7 @@ Se configuró el software para adquirir las imágenes por transmisión, en parti
 
 
 \singlespacing
-\subsection*{\textit{Tile scan}}
+\subsection{\textit{Tile scan}}
 \spacing{1.5}
 
 \hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR ó para cada banda espectral del filtro en particular.
@@ -195,7 +195,7 @@ producir una sola imagen que permita una mejor visualización (Ver técnica SIFT
 \end{warningbox}	
 
 \singlespacing
-\subsection*{Superficies y mapa de los defectos del filtro}
+\subsection{Superficies y mapa de los defectos del filtro}
 \spacing{1.5}
 
 \hspace{0.5cm}Se adquirieron imágenes completas del filtro, a excepción de la banda espectral del NIR, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo}. Las dos superficies exteriores denominadas arbitrariamente A y B son las que se muestran especificadas en la Figura \ref{fig:espfil} y que se encuentran en la interfaz filtro-aire.
@@ -257,7 +257,7 @@ La imagen completa de cada superficie exterior del filtro permitió:
 A continuación se explica el proceso de adquisición de las imágenes individuales de cada banda espectral, el pre-procesamiento de las mismas que consiste en la corrección de la iluminación no uniforme del microscopio y luego se describe el algoritmo de detección de los defectos.
 
 \singlespacing
-\subsection*{Adquisición de imágenes individuales de cada banda espectral}
+\subsection{Adquisición de imágenes individuales de cada banda espectral}
 \spacing{1.5}
 
 \hspace{0.5cm}Para realizar una cuantificación de los defectos del filtro, se adquirieron imágenes individuales de cada banda espectral del filtro para una de las superficies exteriores del filtro. Para cada banda, se configuró la intensidad de la lámpara y el tiempo de integración de la cámara de forma tal de utilizar la mayor parte del rango dinámico de la cámara que se encuentra alrededor del 70 \% recomendado por el fabricante y de esta forma obtener la mejor calidad de imagen para el posterior análisis de cada banda. Así también se verificó que las cuatro esquinas de la banda a medir estuvieran en foco a partir de la visualización en vivo de la cámara. Dichas esquinas fueron elegidas en el software para determinar el área a ser barrida con el \textit{tile scan} teniendo cuidado de no incluir parte del cromo en el campo de visión de la imagen. Esto resultó importante pues de lo contrario el algoritmo de detección de los defectos detectaba al cromo como un centenar de defectos, que serían falsos positivos de defectos, lo que arruinaría claramente el análisis estadístico que se muestra más adelante.
@@ -277,7 +277,7 @@ A partir de la adquisición de los barridos de las cinco bandas del filtro, cada
 
 
 \singlespacing
-\section*{Pre-pocesamiento de las imágenes de cada banda espectral }
+\section{Pre-pocesamiento de las imágenes de cada banda espectral }
 \spacing{1.5}
 
 \hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa\footnote{Vale aclarar que las imágenes completas ya sea de una banda ó las del filtro completo, fueron el resultado de realizar un \textit{stitching} de todas las \textit{tiles} individuales de cada adquisición y, fueron procesadas de esta manera simplemente para optimizar su visualización pero no para realizar el análisis ni detección de defectos sobre las mismas.}, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
@@ -311,7 +311,7 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 \end{enumerate}
 
 \singlespacing
-\section*{Algoritmo de detección de los defectos}
+\section{Algoritmo de detección de los defectos}
 \spacing{1.5}
 
 \hspace{0.5cm}Con las imágenes pre-procesadas la detección de los defectos fue realizada utilizando algoritmos de procesamientos de imágenes. El algoritmo consistió de los siguientes pasos:
@@ -324,14 +324,14 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 
 
 \singlespacing
-\section*{Resultados del algoritmo de detección de los defectos}
+\section{Resultados del algoritmo de detección de los defectos}
 \spacing{1.5}
 
 
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos son guardados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que puede ser abierto y manipulados sus datos con la librería \textit{pandas} de python en el marco de lo que se conoce como un \textit{pandas dataframe} que no es más que un objeto de python que permite una manipulación de los datos muy eficiente. A continuación se muestra un resumen de los resultados para cada banda espectral del filtro.
 
 \singlespacing
-\subsection*{Defectos de la banda NIR}
+\subsection{Defectos de la banda NIR}
 \spacing{1.5}
 
 
@@ -351,7 +351,7 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 \end{figure}
 
 \singlespacing
-\subsection*{Defectos de la banda Roja}
+\subsection{Defectos de la banda Roja}
 \spacing{1.5}
 
 
