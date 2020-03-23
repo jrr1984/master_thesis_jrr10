@@ -42,13 +42,17 @@
 %\usepackage{csquotes}
 %\renewcommand*{\labelalphaothers}{}
 
-\newtcolorbox{warningbox}[2][]
-{
-  colframe = red!25,
-  colback  = red!10,
-  coltitle = red!20!black,
-  title    = #2,
-  #1,
+\newtcolorbox{warningbox}[1][]{%
+  enhanced jigsaw, % better frame drawing
+  borderline west={2pt}{0pt}{red}, % straight vertical line at the left edge
+  sharp corners, % No rounded corners
+  boxrule=0pt, % no real frame,
+  fonttitle={\large\bfseries},
+  colframe = {red!25},  
+  colback  = {red!10},
+  coltitle={red!20!black},  % Black colour for title
+  attach title to upper, % Move the title into the box
+  #1
 }
 
 
