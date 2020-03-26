@@ -352,17 +352,27 @@ Al mismo tiempo, se observa en la imagen de fondo de la Figura \ref{fig:bgazul} 
 \end{figure}	
 
 
-Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://drive.google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}. Se hace notar que para generar la imagen de fondo se utiizaron las imágenes originales de cada banda y que al ser manipuladas en el lenguaje de programación \textit{python} para tomarles la mediana, dichas imágenes fueron tratadas como matrices donde cada elemento de matriz contenía un valor numérico cuyo tipo de dato computacional era un entero sin signo de 16 bits de precisión, es decir un número entre 0 y 65536. Dichos valores son tratados como números de punto flotante, con una precisión de 64 bits al momento de tomar la mediana para cada píxel del conjunto de imágenes. En consecuencia la imagen de salida tiene la misma precisión y los valores de intensidad son reescaleados al intervalo comprendido entre 0 y 1.
+Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://drive.google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}. Se hace notar por un lado que para generar la imagen de fondo se utiizaron las imágenes originales de cada banda y que al ser manipuladas en el lenguaje de programación \textit{python} para tomarles la mediana, dichas imágenes fueron tratadas como matrices donde cada elemento de matriz contenía un valor numérico cuyo tipo de dato computacional era un entero sin signo de 16 bits de precisión, es decir un número entre 0 y 65536. Dichos valores son tratados como números de punto flotante, con una precisión de 64 bits al momento de tomar la mediana para cada píxel del conjunto de imágenes. En consecuencia la imagen de salida tiene la misma precisión y los valores de intensidad son reescaleados al intervalo comprendido entre 0 y 1.
 
-A continuación se explica el proceso de corrección de la iluminación no uniforme del microscopio en las imágenes individuales de cada banda adquirida.
+A continuación se explica el proceso de corrección de la iluminación no uniforme del microscopio en las imágenes individuales de cada banda adquirida.	
 	
 \singlespacing
 \subsection{Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}}
 \spacing{1.5}
 
-\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la Figura \ref{fig:bgazul}.
-
-
+\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la Figura \ref{fig:bgazul}). Esta normalización fue realizada a partir de los siguientes pasos:
+\begin{enumerate}
+\justifying
+\item Se calcula el valor medio de la intensidad de la imagen de fondo (\textit{bg\_img}) y de la imagen individual (\textit{tile\_img}) de una banda a normalizar. Esto es, se calcula la media aritmética de todos los elementos de matriz que representan a cada imagen, que es el resultado de la división entre la suma de todos los elementos de la matriz y el número total de los mismos.
+\item Se multiplican la imagen de fondo por el valor medio de la imagen individual y viceversa, es decir:
+\begin{equation}
+\textit{bg\_pes} = mean(\textit{tile\_img})\hspace{2pt} . \hspace{2pt}\textit{bg\_img}
+\end{equation}
+\begin{equation}
+\textit{tile\_pes} = mean(\textit{bg\_img})\hspace{2pt} . \hspace{2pt}\textit{tile\_img}
+\end{equation},
+donde \textit{bg\_pes} y \textit{tile\_pes} son la imagen de fondo y la imagen individual pesadas con la contribución del valor medio de la imagen correspondiente.
+\end{enumerate}
 
 
 
