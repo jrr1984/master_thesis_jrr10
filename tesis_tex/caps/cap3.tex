@@ -324,7 +324,7 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 \begin{enumerate}
 \justifying
 \item Generación de la imagen de fondo.
-\item Normalización de las imágenes individuales del barrido de una banda.
+\item Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo.
 \item Expansión del histograma (\textit{Histogram equalization} \cite{anilfund}).
 \end{enumerate}
 
@@ -339,24 +339,35 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 			\ffigbox{\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul_mean.png}}{\caption{Imagen de fondo de la banda azul del filtro obtenida tomando el \underline{valor medio} para cada píxel de todas las imágenes del barrido.}\label{fig:bgazulmean}}
 		\end{floatrow}
 	\end{figure}
-	\hspace{0.5cm}En la Figura \ref{fig:bgazul} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. Se observa en la imagen de fondo de la Figura \ref{fig:bgazul} que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración del microscopio.
+	\hspace{0.5cm}En la Figura \ref{fig:bgazul} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. 
+	
+Al mismo tiempo, se observa en la imagen de fondo de la Figura \ref{fig:bgazul} que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración del microscopio.
 
-\hspace{0.5cm}En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. Los valores atípicos (en inglés \textit{outliers}) influencian enormemente el valor medio de lEn la Figura \ref{fig:bgazulmean} se muestra la imagen de fondo 
+\hspace{0.5cm}En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. En la misma figura se graficaron las curvas de densidad estimadas a partir de los datos originales. Se observa que la imagen de fondo generada con el valor medio tiene una mayor cantidad de píxeles más oscuros que la imagen de fondo generada con la mediana. Los valores atípicos (en inglés \textit{outliers}) de intensidad influencian enormemente el valor medio de los datos. Dichos \textit{outliers} pueden observarse como manchas presentes en la imagen de fondo generada a partir del valor medio de la Figura \ref{fig:bgazulmean} y en la curva de densidad esto se refleja en el hecho de que la curva del valor medio tiene una mayor concentración en las menores intensidades que la curva de la mediana. Ahora bien, la curva de densidad de la imagen de la mediana muestra que la generación de la imagen de fondo tomando la mediana es una forma exitosa de evitar incluir los \textit{outliers} en la imagen. Resulta fundamental deshacerse de estos \textit{outliers} en la imagen de fondo para no corromper las imágenes individuales del barrido. Esto es, si se utilizara la imagen de fondo del valor medio para corregir la iluminación no uniforme en las imágenes individuales, las mismas tendrían luego los \textit{outliers} presentes.
 \begin{figure}[H]
 	\centering
 \includegraphics[scale=1.0	]{Figs/defectosZEISS/comparhistsmedi.png}
-\caption{Histograma de la imagen de fondo de la banda azul del filtro.}
+\caption{Histogramas de las imágenes de fondo de la banda azul del filtro generadas a partir de tomar el valor medio y la mediana para cada píxel del conjunto de imágenes de la banda. Se graficaron simultáneamente las curvas de distribución estiamdas a partir de los datos de las imágenes. El eje vertical se encuentra normalizado por el máximo valor de la frecuencia de píxeles para un cierto valor de intensidad.}
 \label{fig:comparhists}
 \end{figure}	
 
 
-Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://drive.google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}.
+Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://drive.google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}. Se hace notar que para generar la imagen de fondo se utiizaron las imágenes originales de cada banda y que al ser manipuladas en el lenguaje de programación \textit{python} para tomarles la mediana, dichas imágenes fueron tratadas como matrices donde cada elemento de matriz contenía un valor numérico cuyo tipo de dato computacional era un entero sin signo de 16 bits de precisión, es decir un número entre 0 y 65536. Dichos valores son tratados como números de punto flotante, con una precisión de 64 bits al momento de tomar la mediana para cada píxel del conjunto de imágenes. En consecuencia la imagen de salida tiene la misma precisión y los valores de intensidad son reescaleados al intervalo comprendido entre 0 y 1.
+
+A continuación se explica el proceso de corrección de la iluminación no uniforme del microscopio en las imágenes individuales de cada banda adquirida.
 	
 \singlespacing
-\subsection{Normalización de las imágenes individuales \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}}
+\subsection{Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}}
 \spacing{1.5}
 
-\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt}. En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente.	
+\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la Figura \ref{fig:bgazul}.
+
+
+
+
+
+
+ En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente.	
 	
 	\begin{figure}[H]
 		\begin{floatrow}
