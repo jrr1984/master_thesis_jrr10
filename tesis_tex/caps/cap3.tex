@@ -271,29 +271,11 @@ A continuación se explica el proceso de adquisición de las imágenes individua
 
 En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja obtenida mediante un \textit{tile scan} de 27.65 mm x 4.16 mm, compuesta por 124 \textit{tiles}, con la intensidad de la lámpara configurada en 30\% y el tiempo de exposición de la cámara fue de 13 ms. En la sección de Resultados se muestran las adquisiciones de cada banda junto a su análisis y su discusión.
 
-A partir de la adquisición de los barridos de las cinco bandas del filtro, cada uno compuesto por imágenes individuales, se realizó el pre-procesamiento de las mismas que se explica a continuación.
-	
-
-
+%A partir de la adquisición de los barridos de las cinco bandas del filtro, cada uno compuesto por imágenes individuales, se realizó el pre-procesamiento de las mismas que se explica a continuación.
+A continuación se da una breve explicación sobre las consecuencias de una iluminación no uniforme del microscopio sobre una muestra y como esto repercute en la segmentación\footnote{En el contexto de la presente tesis, el término segmentación hace referencia a la identificación individual de cada defecto presente en una imagen.} posterior de los defectos. Luego se explica el procesamiento de las imágenes realizado para obtener la cuantificación de los defectos de cada banda del filtro.
 
 \singlespacing
-\section{Pre-pocesamiento de las imágenes de cada banda espectral }
-\spacing{1.5}
-
-\hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa\footnote{Vale aclarar que las imágenes completas ya sea de una banda ó las del filtro completo, fueron el resultado de realizar un \textit{stitching} de todas las \textit{tiles} individuales de cada adquisición y, fueron procesadas de esta manera simplemente para optimizar su visualización pero no para realizar el análisis ni detección de defectos sobre las mismas.}, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
-
-El pre-procesamiento de las imágenes individuales de cada banda espectral consistió en la corrección de la iluminación no uniforme del microscopio, realizada en los siguiente pasos:
-\begin{enumerate}
-\justifying
-\item Generación de la imagen de fondo.
-\item Normalización de las imágenes individuales del barrido de una banda.
-\item Expansión del histograma (\textit{Histogram equalization} \cite{anilfund}).
-\end{enumerate}
-
-A continuación se da una breve explicación sobre las consecuencias de una iluminación no uniforme del microscopio sobre una muestra y como esto repercute en la segmentación posterior de los defectos. Luego se explican los pasos mencionados anteriormente.
-
-\singlespacing
-\subsection{Iluminación no uniforme del microscopio}
+\section{Iluminación no uniforme del microscopio}
 \spacing{1.5}
 
 \hspace{0.5cm}Las imágenes microscópicas pueden estar corrompidas por las variaciones de intensidad debido a las imperfecciones inherentes del proceso de formación de imágenes. Estas variaciones de intensidad pueden venir dadas por la iluminación no uniforme de la muestra, por la orientación misma de la muestra al montarla sobre la platina del microscopio ó por el efecto de \textit{vignetting} (la aparición de bordes negros en las imágenes) propio de la configuración del sensor de la cámara. Estos efectos pueden dar lugar a falsos positivos\footnote{En el contexto de esta tesis, un falso positivo consistiría en la detección errónea mediante un algoritmo de procesamiento de imágenes de un defecto que en realidad no lo es.} en el proceso de segmentación de los defectos, lo que constituye un grave problema a solucionar.
@@ -319,44 +301,62 @@ En la Figura \ref{fig:fondideal} se muestra una imagen de fondo ficticia que ten
 		\end{floatrow}
 	\end{figure}
 	
-En adelante, el fondo de cada imagen será denominado el \textit{background} de la imagen, para diferenciarlo de los defectos que se encuentran en lo que en adelante se llamará el \textit{foreground}. Para resaltar la importancia de la corrección de la iluminación no uniforme y del \textit{vignetting}, supongamos una imagen de alguna banda del filtro analizado en la presente tesis, adquirida sin estos inconvenientes donde se puedan observar dos defectos (en color negro).
-
+En adelante, el fondo de cada imagen será denominado el \textit{background} de la imagen, para diferenciarlo de los defectos que se encuentran en lo que en adelante se llamará el \textit{foreground} de la imagen. Para resaltar la importancia de la corrección de la iluminación no uniforme y del \textit{vignetting}, supongamos una imagen ficticia de alguna banda del filtro analizado en la presente tesis, adquirida con una iluminación de fondo uniforme ideal y sin problemas de \textit{vignetting}, donde se puedan observar dos defectos (en color negro).
 
 	\begin{figure}[H]
 		\begin{floatrow}
-			\ffigbox{\includegraphics[width=5.0cm,height=7.0cm]{Figs/defectosZEISS/img_ideal_2defectos.png}}{\caption{Imagen con dos `defectos' con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. }\label{fig:ideal2def}}
-			\ffigbox{\includegraphics[scale=1.2]{Figs/defectosZEISS/hist_bg_condefectos_teorico.png}}{\caption{Histograma de la intensidad de los píxeles de la imagen de fondo ideal.}\label{fig:histideal2def}}
+			\ffigbox{\includegraphics[width=5.0cm,height=7.0cm]{Figs/defectosZEISS/img_ideal_2defectos.png}}{\caption{Imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. }\label{fig:ideal2def}}
+			\ffigbox{\includegraphics[scale=1.2]{Figs/defectosZEISS/hist_bg_condefectos_teorico.png}}{\caption{Histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}.}\label{fig:histideal2def}}
 		\end{floatrow}
 	\end{figure}
-poner pixeles, defectos negros y volver a plotear el histograma ficticio..
-El pre-procesamiento de las imágenes individuales de cada banda espectral consistió en la corrección de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo \cite{Nordenfelt}. Este pre-procesamiento consistió de dos pasos:\todo{poner un enumerate solo con los titulos}
+
+En la Figura \ref{fig:histideal2def} se muestra el histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. En dicho histograma se distingue de forma binaria el \textit{foreground} (defectos) con valores de intensidad iguales a 0, del \textit{background} con valores de intensidad iguales a 195. Bajo estas condiciones ideales, la segmentación de los defectos puede ser realizada de inmediato eligiendo cualquier umbral de intensidad que se encuentre entre el \textit{foreground} y el \textit{background}. 
+
+A continuación se explica el análisis computacional de las imágenes realizado desde su pre-procesamiento, la segmentación posterior y finalmente la cuantificación de los defectos.
+
+\singlespacing
+\section{Pre-pocesamiento de las imágenes de cada banda espectral }
+\spacing{1.5}
+
+\hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa\footnote{Vale aclarar que las imágenes completas ya sea de una banda ó las del filtro completo, fueron el resultado de realizar un \textit{stitching} de todas las \textit{tiles} individuales de cada adquisición y, fueron procesadas de esta manera simplemente para optimizar su visualización pero no para realizar el análisis ni detección de defectos sobre las mismas.}, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
+
+El pre-procesamiento de las imágenes individuales de cada banda espectral consistió en la corrección de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo \cite{Nordenfelt}. Este pre-procesamiento consistió de los siguientes pasos:
 \begin{enumerate}
 \justifying
-	\item \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub} Se construyó la imagen de fondo de cada banda a partir de tomar la mediana para cada píxel de todas las imágenes individuales adquiridas de la banda. Esta imagen de fondo contiene idealmente la información para cada píxel que está presente en todas las imágenes adquiridas en el barrido completo de una banda y debe ser generada para cada banda en particular. Esto último es así ya que cada una de las bandas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
-	
-\begin{figure}[H]
-	\centering
-      \includegraphics[scale=1.0]{Figs/defectosZEISS/bg_celeste.png}
-\caption{Imagen de fondo de la banda azul del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido. }
-\label{fig:bgazul}
-\end{figure}
+\item Generación de la imagen de fondo.
+\item Normalización de las imágenes individuales del barrido de una banda.
+\item Expansión del histograma (\textit{Histogram equalization} \cite{anilfund}).
+\end{enumerate}
 
+\singlespacing
+\subsection{Generación de la imagen de fondo: \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub}}
+\spacing{1.5}
+
+\hspace{0.5cm}Se construyó computacionalmente la imagen de fondo de cada banda a partir de tomar la \underline{mediana} para cada píxel de todas las imágenes individuales adquiridas de la banda. Esta imagen de fondo contiene la información de la no uniformidad de la iluminación del microscopio. Dicha imagen debe ser generada para cada banda en particular ya que cada una de las bandas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
+	\begin{figure}[H]
+		\begin{floatrow}
+			\ffigbox{\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul.png}}{\caption{Imagen de fondo de la banda azul del filtro obtenida tomando la \underline{mediana} para cada píxel de todas las imágenes del barrido.}\label{fig:bgazul}}
+			\ffigbox{\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul_mean.png}}{\caption{Imagen de fondo de la banda azul del filtro obtenida tomando el \underline{valor medio} para cada píxel de todas las imágenes del barrido.}\label{fig:bgazulmean}}
+		\end{floatrow}
+	\end{figure}
+	\hspace{0.5cm}En la Figura \ref{fig:bgazul} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. Se observa en la imagen de fondo de la Figura \ref{fig:bgazul} que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración del microscopio.
+
+\hspace{0.5cm}En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. Los valores atípicos (en inglés \textit{outliers}) influencian enormemente el valor medio de lEn la Figura \ref{fig:bgazulmean} se muestra la imagen de fondo 
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.8]{Figs/defectosZEISS/hist_bg_azul.png}
+\includegraphics[scale=1.0	]{Figs/defectosZEISS/comparhistsmedi.png}
 \caption{Histograma de la imagen de fondo de la banda azul del filtro.}
-\label{fig:histbgazul}
+\label{fig:comparhists}
 \end{figure}	
-
-	\hspace{0.5cm}En la Figura \ref{fig:bgazul} se muestra la imagen de fondo adquirida para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. Se observa en la imagen de fondo de la Figura \ref{fig:bgazul} que la iluminación del microscopio no es uniforme ya que por ejemplo en la región de la esquina superior izquierda la intensidad de luz es mucho más alta que en la esquina inferior derecha.  
-
-\hspace{0.5cm}En la Figura \ref{fig:histbgazul} se muestra el histograma de la intensidad de los píxeles que indica en primer lugar que la imagen está mayoritariamente compuesta por píxeles cuya intensidad es la m.. 
-	
 
 
 Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://drive.google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}.
 	
-	\item \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt}. En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente.	
+\singlespacing
+\subsection{Normalización de las imágenes individuales \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}}
+\spacing{1.5}
+
+\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt}. En las Figuras \ref{fig:sinnorm} y \ref{fig:connorm} se muestra una imagen de una \textit{tile} individual del barrido de la banda del NIR antes y después de ser normalizada, respectivamente.	
 	
 	\begin{figure}[H]
 		\begin{floatrow}
@@ -370,8 +370,7 @@ Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en 
 	\vspace{1.0cm}
 	
 	\hspace{0.5cm} Resultó fundamental realizar esta corrección de la no uniformidad de la iluminación ya que facilitó la segmentación de los defectos contenidos en cada imagen y su posterior cuantificación.
-	
-\end{enumerate}
+
 
 \singlespacing
 \section{Algoritmo de detección de los defectos}
