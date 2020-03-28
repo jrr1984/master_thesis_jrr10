@@ -6,9 +6,9 @@
 \Chapter{Cuantificación de los defectos}{\textcolor{MidnightBlue}{\faGithub \href{https://github.com/jrr1984/defects_analysis}{\texttt{defects$\_$analysis}}}}
 \spacing{1.5}
 
-\hspace{0.5cm}En este capítulo se define qué es lo que se considera un defecto de un componente óptico, se muestran las características del filtro óptico utilizado en el presente trabajo y la cuantificación de los defectos de cada una de las bandas espectrales que el filtro presenta. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
+\hspace{0.5cm}En este capítulo se define qué es lo que se considera un defecto de un componente óptico y se muestran las características del filtro óptico utilizado en el presente trabajo. Se explica el proceso de adquisición de las imágenes de cada banda del filtro y su posterior procesamiento. 
 
-Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de criterios de normas de calidad que permiten determinar que el filtro analizado \underline{no} cumple las especificaciones técnicas necesarias para ser montado en un sensor de imagen para aplicaciones aeroespaciales.
+Asimismo, se detalla el algoritmo utilizado para realizar la detección de los defectos en las imágenes adquiridas y se analizan los resultados: número de defectos por unidad de superficie, diámetro y área de los defectos, etc. Finalmente, considerando las reglamentaciones vigentes en la industria, se explica la aplicación de los criterios de normas de calidad.
 
 \singlespacing
 \section{Defectos de superficie de un componente óptico}
@@ -216,12 +216,12 @@ producir una sola imagen que permita una mejor visualización (Ver técnica SIFT
 
 En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
 
-Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no saturen alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se puede ver en el histograma de la intensidad de los píxeles de la Figura \ref{fig:histograma15x15} para el barrido de la superficie A del filtro.
+Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no sature alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se puede ver en el histograma de la intensidad de los píxeles de la Figura \ref{fig:histograma15x15} para el barrido de la superficie A del filtro. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/histograma15x15.png}
-	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior A del filtro.}
+	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior A del filtro que se observa en el software ZEN del microscopio.}
 	\label{fig:histograma15x15}
 \end{figure}
 
@@ -276,6 +276,7 @@ A continuación se da una breve explicación sobre las consecuencias de una ilum
 
 \singlespacing
 \section{Iluminación no uniforme del microscopio}
+\label{sec:ilumnou}
 \spacing{1.5}
 
 \hspace{0.5cm}Las imágenes microscópicas pueden estar corrompidas por las variaciones de intensidad debido a las imperfecciones inherentes del proceso de formación de imágenes. Estas variaciones de intensidad pueden venir dadas por la iluminación no uniforme de la muestra, por la orientación misma de la muestra al montarla sobre la platina del microscopio ó por el efecto de \textit{vignetting} (la aparición de bordes negros en las imágenes) propio de la configuración del sensor de la cámara. Estos efectos pueden dar lugar a falsos positivos\footnote{En el contexto de esta tesis, un falso positivo consistiría en la detección errónea mediante un algoritmo de procesamiento de imágenes de un defecto que en realidad no lo es.} en el proceso de segmentación de los defectos, lo que constituye un grave problema a solucionar.
@@ -320,12 +321,11 @@ A continuación se explica el análisis computacional de las imágenes realizado
 
 \hspace{0.5cm}El análisis de las imágenes fue realizado sobre cada \textit{tile} individual del barrido completo de una banda, dado que su tamaño típico es de 3 MB por lo que el procesamiento en la computadora es mucho más rápido que el de analizar las imágenes de una banda completa\footnote{Vale aclarar que las imágenes completas ya sea de una banda ó las del filtro completo, fueron el resultado de realizar un \textit{stitching} de todas las \textit{tiles} individuales de cada adquisición y, fueron procesadas de esta manera simplemente para optimizar su visualización pero no para realizar el análisis ni detección de defectos sobre las mismas.}, de tamaños típicos de 1 GB ó del filtro completo que tienen más de 5 GB.
 
-El pre-procesamiento de las imágenes individuales de cada banda espectral consistió en la corrección de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo \cite{Nordenfelt}. Este pre-procesamiento consistió de los siguientes pasos:
+El pre-procesamiento de las imágenes individuales de cada banda espectral consistió en la corrección de la iluminación no uniforme del microscopio que se realiza normalizando las imágenes individuales del barrido con una imagen de fondo \cite{Nordenfelt}. Este pre-procesamiento consistió de las siguientes dos etapas que se explican a continuación:
 \begin{enumerate}
 \justifying
 \item Generación de la imagen de fondo.
 \item Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo.
-\item Expansión del histograma (\textit{Histogram equalization} \cite{anilfund}).
 \end{enumerate}
 
 \singlespacing
@@ -386,25 +386,30 @@ donde \textit{bg\_pes} (Ver imagen \texttt{d)}) y \textit{tile\_pes} (Ver imagen
 \begin{equation}
 \textit{dif} = \textit{tile\_pes} - \textit{bg\_pes}
 \end{equation}
-\item Finalmente, para maximizar el contraste de la imagen, es decir para aumentar la variación de los valores de intensidad de la imagen, se realizó la expansión del histograma (\cite{anilfund}). Para ello, se definió el mínimo valor de la intensidad en 0 (en un rango de valores de intensidad entre 0 y 1, con precisión de 64 bits):
+\item Finalmente, para maximizar el contraste de la imagen, es decir para aumentar la variación de los valores de intensidad de la imagen, se realizó la expansión del histograma (\cite{anilfund}) que consiste en una transformación lineal para expandir el intervalo comprendido entre los valores mínimo y máximo de intensidad presentes en la imagen, a todo el rango posible entre 0 y 1 (Ver Ecuación \ref{eq:histexpp}). Para ello, se definió el mínimo valor de la intensidad en 0 (en un rango de valores de intensidad entre 0 y 1, con precisión de 64 bits):
 \begin{equation}
 	\textit{min\_dif} = \textit{dif} - min(\textit{dif})
 \end{equation},
-donde min(\textit{dif}) es el mínimo valor de intensidad de la imagen \textit{dif}. A la imagen resultante \textit{min\_dif}
-
+donde min(\textit{dif}) es el mínimo valor de intensidad de la imagen \textit{dif}. A la imagen resultante \textit{min\_dif} se la normaliza de la siguiente manera:
+\begin{equation}
+	\textit{imagen\_final} = \frac{\textit{min\_dif}}{max(\textit{dif})-min(\textit{dif})} = \frac{\textit{dif} - min(\textit{dif})}{max(\textit{dif})-min(\textit{dif})}
+	\label{eq:histexpp}
+\end{equation},
+donde max(\textit{dif}) es el máximo valor de intensidad de la imagen \textit{dif} e \textit{imagen\_final} es la imagen resultante del proceso de normalización.
 \end{itemize}
 
+Se hace notar que el proceso de corrección de la iluminación no uniforme y del \textit{vignetting} resultó fundamental para poder aplicar el algoritmo de detección de los defectos, esto es para distinguir el \textit{foreground} del \textit{background}, como se explicó en la sección \ref{sec:ilumnou}. Para ejemplificar esto y para ilustrar la operación de la expansión del histograma de la ecuación \ref{eq:histexpp}, en la Figura \ref{fig:defecthi} se muestra una región con un defecto de la imagen original y de la final así como los histogramas de intensidad de los píxeles de la diagonal de la misma región asociados.
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.0]{Figs/defectosZEISS/correccionilum/defectoehist.png}
+	\caption{\texttt{i)} Imagen original de una región con un defecto. \texttt{ii)} Imagen resultante del proceso de normalización de la misma región que \texttt{i)}. \texttt{iii)} Histograma de los píxeles de la diagonal de la imagen \texttt{i)}. \texttt{iv)} Histograma de los píxeles de la diagonal de la imagen \texttt{ii)}.}
+	\label{fig:defecthi}
+\end{figure}
 
+De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa que el rango de intensidades de los píxeles de la región con un defecto de la imagen original se extiende desde el intervalo [0.19,0.70] al intervalo [0.00,0.98] en la imagen final\footnote{Para la imagen completa, el rango se extiende desde [0.19,0.73] para la imagen original al rango [0.00,1.00] de la imagen final, es decir el rango de intensidades de la imagen original se extiende a todo el rango posible de acuerdo a la ecuación \ref{eq:histexpp} de la expansión del histograma.}. De esta manera, se mejora el contraste de la imagen y la distinción entre el \textit{foreground} (defectos) y el \textit{background} se puede realizar ajustando un umbral de intensidad  (\textit{threshold}). A continuación se explica el algoritmo de detección de los defectos y su cuantificación.
 
-
-despu[es de poner las imagenes y el proceso.. hacer zoom en 1 defecto con los histogramas en diagonal tb pero solo de la imagen inicial y la final.. puede ser de la imagen 22 de NIR.
-
-	
-
-	
-	\hspace{0.5cm} Resultó fundamental realizar esta corrección de la no uniformidad de la iluminación ya que facilitó la segmentación de los defectos contenidos en cada imagen y su posterior cuantificación.
 
 
 \singlespacing
@@ -416,9 +421,6 @@ despu[es de poner las imagenes y el proceso.. hacer zoom en 1 defecto con los hi
 	\item Se determina el valor de intensidad umbral (en adelante, \textit{threshold}) a partir del cual se distingue entre un defecto en la región de la imagen que se \textit{foreground} y el fondo de la imagen (\textit{background}). %Iterando sobre los conjuntos completos completos de \textit{tiles} de cada banda se determinó que el t
 \end{enumerate}
 
-\vspace{1cm}
-\todo[inline]{decir algo primero de que este m[etodo est[a bueno xq si uno no es elusuario del equipo sino solo el que procesa las imagenes que fueron sacadas hace mucho y no se saben los valores de intensidad y de integracion etc con esto se salva y puede corregirlas igual..}
-\vspace{1cm}
 
 \singlespacing
 \section{Resultados del algoritmo de detección de los defectos}
