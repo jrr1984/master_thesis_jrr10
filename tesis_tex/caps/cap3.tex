@@ -21,7 +21,7 @@ Asimismo, se detalla el algoritmo utilizado para realizar la detección de los d
 
 \begin{figure}[H]
 	\begin{floatrow}
-		\ffigbox{\includegraphics[width=4.0cm,height=4.0cm]{Figs/cuantificaciondefectos/hueco_cel_112.png}}{\caption{Defecto de superficie denominado hueco, de (48.45 $\pm$0.59)$\mu$m de diámetro equivalente. }\label{fig:huecocel}}
+		\ffigbox{\includegraphics[width=4.0cm,height=4.0cm]{Figs/cuantificaciondefectos/hueco_cel_112.png}}{\caption{Defecto de superficie denominado hueco, de (62.83 $\pm$0.59)$\mu$m de diámetro equivalente. }\label{fig:huecocel}}
 		\ffigbox{\includegraphics[width=4.0cm,height=4.0cm]{Figs/cuantificaciondefectos/mancha_cel_112.png}}{\caption{Defecto de superficie denominado mancha ó defecto de transmisión, de (6.33 $\pm$0.59)$\mu$m de diámetro equivalente.}\label{fig:manchacel}}
 	\end{floatrow}
 \end{figure}
@@ -79,6 +79,7 @@ Si bien la métrica de \textit{scratch and dig} sigue siendo ampliamente utiliza
 
 \singlespacing
 \subsection{ISO 10110: defectos de superficie}
+\label{sec:iso10110}
 \spacing{1.5}
 
 
@@ -433,7 +434,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 %19918,40505, AZUL
 \end{enumerate}
 \hspace{0.5cm}Una vez determinado el \textit{threshold} aplicable a todas las imágenes de todas las bandas, se desarrolló el algoritmo de detección y cuantificación de los defectos del filtro que se explica en la siguiente sección.
-
+\todo{Explico un toque la física del threshold del Sr. Yen?, sino solo muestro que lo elegi por descarte (así fue jej)}
 \singlespacing
 \section{Algoritmo de detección y cuantificación de los defectos \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/defects_thresholding.py}{\faGithub}}
 \spacing{1.5}
@@ -451,24 +452,40 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.5]{Figs/defectosZEISS/algor_defecs.png}
-\caption{\texttt{a)} Región de una imagen normalizada de la banda celeste que contiene un agujero. \texttt{b)} Histograma de intensidad de los píxeles de la imagen \texttt{a)}. La línea roja vertical indica el valor del \textit{threshold} de \textit{Yen} para dicha imagen. \texttt{c)} Imagen binaria generada a partir del \textit{threshold} de \textit{Yen}. \texttt{d)} Agujeros tapados con el método \textit{binary\_fill\_holes} de la librería \textit{ndimage} del lenguaje \textit{python}.}
+\caption{\texttt{a)} Imagen normalizada de la banda celeste que contiene un agujero.  \texttt{b)} Imagen binaria generada a partir del \textit{threshold} de \textit{Yen}. \texttt{c)} Imagen con los agujeros de la imagen \texttt{b)} tapados con el método \textit{binary\_fill\_holes} de la clase \textit{ndimage} de la librería \textit{scipy} del lenguaje \textit{python}. \texttt{d)} Imagen binaria con el agujero detectado.}
 \label{fig:flujoalgo}
 \end{figure} 
 
 Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figura \ref{fig:flujoalgo} como guías didácticas, a continuación se explican los pasos del algoritmo aplicado para cada imagen individual de cada banda:
 \begin{enumerate}
 \justifying
-\item Se lee la imagen normalizada. En la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo} se muestra una región de una imagen que contiene el agujero más grande encontrado en el filtro (caracterizado espectralmente en el capítulo \ref{}) y otros defectos de transmisión (manchas) más pequeños. En consecuencia, la imagen es representativa de lo que sería el caso más general de una imagen individual de cualquier banda.
-\item Se calcula el \textit{threshold} de \textit{Yen} con el método \textit{threshold\_yen} de la librería \textit{scikit-image}. En la Figura \ref{fig:flujoalgo} se muestra el histograma de intensidad de píxeles de la imagen, con el eje vertical en escala logarítmica. La línea vertical roja indica el valor calculado del \textit{threshold} de \textit{Yen}.
-\item Se genera una imagen binaria de la imagen normalizada como se muestra en la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo}. Para cada píxel de la imagen original se compara su valor de intensidad con el valor del \textit{threshold} y se asigna un 1 si el valor de intensidad del píxel es menor que el \textit{threshold} y un 0 si ocurre lo contrario.
-\item Se tapan los agujeros como se muestra en la imagen \texttt{d)} de la Figura \ref{fig:flujoalgo} con el método \textit{binary\_fill\_holes} de la librería \textit{ndimage} del lenguaje \textit{python}. 
+\item \texttt{INPUT: Imagen Normalizada.} Se lee la imagen normalizada. En la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo} se muestra una imagen normalizada de la banda azul que contiene el agujero más grande encontrado en el filtro (caracterizado espectralmente en el capítulo \ref{}) y otros defectos de transmisión (manchas negras) más pequeños. En consecuencia, la imagen es representativa de lo que sería el caso más general de la aplicación del algoritmo para detectar tanto defectos de transmisión como agujeros. 
+\item \texttt{\textit{threshold\_yen}.} Se calcula el \textit{threshold} de \textit{Yen} con el método \textit{threshold\_yen} de la librería \textit{scikit-image}. En la Figura \ref{fig:histalgor} se muestra el histograma de intensidad de píxeles de la imagen, con el eje vertical en escala logarítmica. La línea vertical roja indica el valor calculado del \textit{threshold} de \textit{Yen} que para esta imagen de ejemplo su valor fue de 0.57. Se hace notar que dicho valor de intensidad umbral es global de toda la imagen y para cada imagen se calcula un \textit{threshold} de \textit{Yen} individual.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.65]{Figs/defectosZEISS/hist_algor_agujero.png}
+\caption{Histograma de intensidad de los píxeles de la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo}, con el eje vertical en escala logarítmica. La línea roja vertical indica el valor del \textit{threshold} de \textit{Yen} para dicha imagen.}
+\label{fig:histalgor}
+\end{figure}
+
+\item \texttt{Defects Binary Image.}Se genera una imagen binaria de la imagen normalizada como se muestra en la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo}. Para cada píxel de la imagen normalizada se compara su valor de intensidad con el valor del \textit{threshold} y se asigna un 1 (blanco, \textit{background} y agujeros) si el valor de intensidad del píxel es mayor que el \textit{threshold} y un 0 (negro, defectos) si ocurre lo contrario. Esto último se puede ver en el histograma de la Figura \ref{fig:histalgor}.
+\item \texttt{\textit{fill\_holes}.} Se tapan los agujeros como se muestra en la imagen \texttt{d)} de la Figura \ref{fig:flujoalgo} con el método \textit{binary\_fill\_holes} de la clase \textit{ndimage} de la librería \textit{scipy} del lenguaje \textit{python} \cite{scipy}.
+
+\hspace{0.5cm}Se hace notar que \underline{en el contexto de imágenes binarias} un defecto de transmisión es un objeto matricial de ciertas dimensiones en píxeles cuyos elementos de matriz son \underline{todos} iguales a 1 (color blanco). Y, un agujero es un objeto matricial cuyo borde tiene elementos de matriz iguales a 1 (color blanco) pero los elementos de matriz del interior de dicho borde son iguales a 0 (color negro). Lo que el método \textit{binary\_fill\_holes} realiza es encontrar objetos que cumplan la condición matricial de un agujero y llenar su interior de píxeles blancos. El tamaño del agujero a tapar puede ser elegido por el usuario a partir de las dimensiones de la matriz de píxeles blancos utilizada. Esta matriz es especificada en el argumento \textit{structure} del método \textit{binary\_fill\_holes} y es un parámetro fundamental que debe ser especificado de acuerdo a los requerimientos de calidad óptica del usuario ya que su tamaño define el tamaño mínimo del agujero a detectar. En la presente tesis dicho parámetro fue dejado sin especificar por lo que el método tomó el valor por \textit{default} por lo que todos los agujeros encontrados fueron tapados.
+
+\hspace{0.5cm}A continuación se explica la bifurcación en el algoritmo de la detección de defectos en general por un lado sin discriminar su tipo y la detección específica de agujeros por el otro lado.
+\begin{enumerate}
+\justifying
+\item \texttt{\textit{measure\_defects}}. La detección de los defectos en general fue realizada sobre las imágenes binarias con los agujeros tapados (Ver imagen \texttt{c)} de la Figura \ref{fig:flujoalgo}). En consecuencia, no se distinguieron los agujeros de los defectos de transmisión, sino que todos los defectos fueron considerados defectos de superficie de acuerdo a las especificaciones técnicas de la ISO 10110 (Ver Sección \ref{sec:iso10110}). Por este motivo resultó importante realizar el tapado de los agujeros ya que sino se modificaría el valor del área total de los defectos con estas características, considerando a estos como un solo objeto compuesto por una mancha negra que bordea a un agujero blanco, como por ejemplo de acuerdo al defecto más grande de la Figura \ref{fig:flujoalgo}. Este mismo defecto sin tapar tenía un área (dada por el número de píxeles) de (4108.39 $\pm$ 0.59)$\mu m^{2}$ pero el mismo agujero tapado tenía un área de (5174.29 $\pm$ 0.59)$\mu m^{2}$, es decir un 20.6\% de diferencia. 
+
+\item \texttt{Holes Binary Image}.
+\end{enumerate}
+\item
+
 \end{enumerate}
 
-agujero 112 TAPADO: 110.702257
-sin tapar: 110.658804
 
-tapados: 19918 defectos
-sin tapar: 19930
 
 para poner el error del metodo en decir un defecto es de 15 mics $\pm$ poner el error del m[etodo triangle que le emboca a todos los defectos pero SOBREESTIMA el tamaño, los hace mucho más grandes..
 
@@ -482,6 +499,8 @@ para poner el error del metodo en decir un defecto es de 15 mics $\pm$ poner el 
 
 
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos son guardados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que puede ser abierto y manipulados sus datos con la librería \textit{pandas} de python en el marco de lo que se conoce como un \textit{pandas dataframe} que no es más que un objeto de python que permite una manipulación de los datos muy eficiente. A continuación se muestra un resumen de los resultados para cada banda espectral del filtro.
+
+
 
 
 deteccion de agujeros no funciona para defectos muy chicos xq tiene muchos falsos positivos (defectos que en realidad no son)
