@@ -2,33 +2,36 @@
 \BOOKMARK [0][-]{chapter*.2}{Resumen}{}% 2
 \BOOKMARK [0][-]{chapter*.3}{\315ndice}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 4
-\BOOKMARK [1][-]{section*.4}{Objetivo general}{chapter.1}% 5
-\BOOKMARK [2][-]{section*.4}{Objetivos espec\355ficos del proyecto}{chapter.1}% 6
-\BOOKMARK [1][-]{section*.4}{Introducci\363n}{chapter.1}% 7
-\BOOKMARK [1][-]{figure.caption.10}{Actividades y Metodolog\355a}{chapter.1}% 8
-\BOOKMARK [1][-]{figure.caption.10}{Factibilidad}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.1}{Objetivo general}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.1}{Objetivos espec\355ficos del proyecto}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Introducci\363n}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Actividades y Metodolog\355a}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Factibilidad}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{Primer prototipo del equipo y caracterizaci\363n de los espectros de transmisi\363n}{}% 10
 \BOOKMARK [0][-]{chapter.3}{Cuantificaci\363n de los defectos}{}% 11
-\BOOKMARK [1][-]{section*.11}{Defectos de superficie de un componente \363ptico}{chapter.3}% 12
-\BOOKMARK [2][-]{figure.caption.13}{MIL-PRF-13830B: especificaciones de scratch \046 dig}{chapter.3}% 13
-\BOOKMARK [2][-]{figure.caption.15}{ISO 10110: defectos de superficie}{chapter.3}% 14
-\BOOKMARK [1][-]{equation.3.0.4}{Caracter\355sticas del filtro utilizado}{chapter.3}% 15
-\BOOKMARK [1][-]{equation.3.0.4}{Adquisici\363n de las im\341genes del filtro}{chapter.3}% 16
-\BOOKMARK [2][-]{section*.18}{Tile scan}{equation.3.0.4}% 17
-\BOOKMARK [2][-]{section*.21}{Superficies y mapa de los defectos del filtro}{equation.3.0.4}% 18
-\BOOKMARK [2][-]{section*.32}{Adquisici\363n de im\341genes individuales de cada banda espectral}{equation.3.0.4}% 19
-\BOOKMARK [1][-]{figure.caption.33}{Pre-pocesamiento de las im\341genes de cada banda espectral }{chapter.3}% 20
-\BOOKMARK [1][-]{section*.40}{Algoritmo de detecci\363n de los defectos}{chapter.3}% 21
-\BOOKMARK [1][-]{Item.3}{Resultados del algoritmo de detecci\363n de los defectos}{chapter.3}% 22
-\BOOKMARK [2][-]{section*.41}{Defectos de la banda NIR}{Item.3}% 23
-\BOOKMARK [2][-]{figure.caption.43}{Defectos de la banda Roja}{Item.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 25
-\BOOKMARK [0][-]{chapter.5}{Microespectr\363metro}{}% 26
-\BOOKMARK [1][-]{section*.50}{Dise\361o \363ptico del microespectr\363metro}{chapter.5}% 27
-\BOOKMARK [1][-]{section*.50}{Montaje y alineaci\363n preliminar del microespectr\363metro}{chapter.5}% 28
-\BOOKMARK [1][-]{section*.50}{Foco y resoluci\363n espacial del microespectr\363metro}{chapter.5}% 29
-\BOOKMARK [1][-]{figure.caption.59}{Integraci\363n de una c\341mara web}{chapter.5}% 30
-\BOOKMARK [2][-]{section*.60}{Mapeando el espectr\363metro con la c\341mara}{figure.caption.59}% 31
-\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 32
-\BOOKMARK [0][-]{chapter.7}{Trabajo a futuro}{}% 33
-\BOOKMARK [0][-]{chapter*.61}{Referencias Bibliogr\341ficas}{}% 34
+\BOOKMARK [1][-]{section.3.1}{Defectos de superficie de un componente \363ptico}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{MIL-PRF-13830B: especificaciones de scratch \046 dig}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{ISO 10110: defectos de superficie}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Caracter\355sticas del filtro}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Adquisici\363n de las im\341genes del filtro}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{Tile scan}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.2}{Superficies y mapa de los defectos del filtro}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.3}{Adquisici\363n de im\341genes individuales de cada banda espectral}{section.3.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Iluminaci\363n no uniforme del microscopio}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{Pre-pocesamiento de las im\341genes de cada banda espectral }{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.5.1}{Generaci\363n de la imagen de fondo: }{section.3.5}% 22
+\BOOKMARK [2][-]{subsection.3.5.2}{Normalizaci\363n de las im\341genes individuales del barrido de una banda con la imagen de fondo }{section.3.5}% 23
+\BOOKMARK [1][-]{section.3.6}{Algoritmo de detecci\363n de los defectos }{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.7}{Resultados del algoritmo de detecci\363n de los defectos}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.7.1}{Defectos de la banda NIR}{section.3.7}% 26
+\BOOKMARK [2][-]{subsection.3.7.2}{Defectos de la banda Roja}{section.3.7}% 27
+\BOOKMARK [0][-]{chapter.4}{Desarrollo XZStage y calibraci\363n - Desarrollo del software integrando el arduino con algoritmos asincr\363nicos}{}% 28
+\BOOKMARK [0][-]{chapter.5}{Microespectr\363metro}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Dise\361o \363ptico del microespectr\363metro}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Montaje y alineaci\363n preliminar del microespectr\363metro}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Foco y resoluci\363n espacial del microespectr\363metro}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.4}{Integraci\363n de una c\341mara web}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.4.1}{Mapeando el espectr\363metro con la c\341mara}{section.5.4}% 34
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 35
+\BOOKMARK [0][-]{chapter.7}{Trabajo a futuro}{}% 36
+\BOOKMARK [0][-]{chapter*.56}{Referencias Bibliogr\341ficas}{}% 37

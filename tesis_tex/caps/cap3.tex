@@ -37,7 +37,7 @@ Los defectos de superficie de un componente óptico pueden estar originados en e
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/scratchanddig.png}
+	\includegraphics[scale=1.1]{Figs/cuantificaciondefectos/scratchanddig.png}
 	\caption{El \textit{scratch number} es determinado a partir de la comparación de la rayadura de la óptica bajo análisis con las muestras calibradas, bajo ciertas condiciones de iluminación específicas. Adaptado de \href{https://bit.ly/2w1apWq}{\texttt{https://bit.ly/2w1apWq}}.}
 	\label{fig:scratchanddig}
 \end{figure}
@@ -66,7 +66,7 @@ Así por ejemplo, una óptica de geometría circular con un diámetro de 200 mm 
 La Figura \ref{fig:samplescratchs} muestra una comparación de cuatro muestras de calibración de rayaduras, medidas bajo idénticas condiciones de iluminación \cite{Aikens}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/samplesscratch.png}
+	\includegraphics[scale=0.75]{Figs/cuantificaciondefectos/samplesscratch.png}
 	\caption{Brillo relativo de cuatro muestras calibradas de \textit{scratch number}. \textit{Sample} en inglés significa muestra. La muestra 1 es de la empresa FLIR/Brysen (S\&D 1109), la muestra 2 es de Davidson Optronics (D-667A S/N 2431), la muestra 3 es de Eastman Kodak (\textit{paddle} EKCO CM2) y la muestra 4 es de Jenoptik (\textit{paddle} EO \#53-157 CM1). La muestra 4 es vendida comercialmente por los proveedores Edmund Optics y por Thorlabs. Gráfico tomado de \cite{Aikens}.}
 	\label{fig:samplescratchs}
 \end{figure}
@@ -104,9 +104,15 @@ Se hace notar que el control de calidad de los componentes ópticos bajo la norm
 \spacing{1.5}
 
 \hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante simplemente filtro, consiste de un arreglo de cinco filtros ópticos de interferencia  considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:filtroposta} se muestra el filtro real analizado y en la Figura \ref{fig:dimsfiltr} se muestran las diimensiones especificadas por el fabricante.
-
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/dimsfiltro.png}}{\caption{Dimensiones del filtro especificadas por el fabricante.}\label{fig:dimsfiltr}}
+		\ffigbox{\includegraphics[scale=0.15]{Figs/cuantificaciondefectos/filtro_real.jpg}}{\caption{Imagen del filtro real analizado.}\label{fig:filtroposta}}
+	\end{floatrow}
+\end{figure}
 Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espectral de transmisión de la siguiente manera:
 \begin{itemize}
+\justifying
 \item Zona 1 - Banda Azul: (450-510) nm
 \item Zona 2 - Banda Verde: (510-580) nm
 \item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático viene de la familia de la palabra color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm
@@ -116,12 +122,6 @@ Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espect
  
 
 
-\begin{figure}[H]
-	\begin{floatrow}
-		\ffigbox{\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/dimsfiltro.png}}{\caption{Dimensiones del filtro especificadas por el fabricante.}\label{fig:dimsfiltr}}
-		\ffigbox{\includegraphics[scale=0.15]{Figs/cuantificaciondefectos/filtro_real.jpg}}{\caption{Imagen del filtro real analizado.}\label{fig:filtroposta}}
-	\end{floatrow}
-\end{figure}
 
 Las especificaciones ópticas de la calidad de la superficie del filtro brindadas por el fabricante son las siguientes:
 \begin{center}
@@ -168,9 +168,11 @@ Se configuró el software para adquirir las imágenes por transmisión, en parti
 
 \hspace{0.5cm}A continuación se explica cómo se adquirieron las imágenes para una determinada región del filtro, ya sea para el filtro completo a excepción de la banda del NIR ó para cada banda espectral del filtro en particular.
 
-La palabra en inglés \textit{tile} significa baldosa(ver Figura \ref{fig:tilescan}) en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio.
+La palabra en inglés \textit{tile} significa baldosa en castellano y realizar un \textit{tile scan} implica realizar un barrido de adquisición de imágenes de una cierta área a elección de una muestra donde el área total a adquirir está compuesta por múltiples baldosas. Cada baldosa, es decir cada \textit{tile} constituye una imagen del microscopio de acuerdo al \textit{field of view} (FOV) \footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.} que se tiene del arreglo óptico de la cámara integrada al microscopio. En la Figura \ref{fig:tilescan} se muestra un ejemplo de un \textit{tile scan} de la banda pancromática del filtro.
 
-Hay distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la selección visual individual de las cuatro esquinas de la misma, como se muestra en la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen.
+Existen distintas formas de elegir el área total a adquirir en el software. Se eligió la opción de determinar la región a adquirir a partir de la selección visual individual de las cuatro esquinas de la misma, es decir las posiciones [0,0],[xf,0],[0,yf], [xf,yf] de acuerdo al sistema de coordenadas de la Figura \ref{fig:tilescan}. Para elegir estas esquinas el microscopio cuenta con un \textit{joystick} que permite mover la platina motorizada del microscopio en el plano de la imagen y se tiene activada la adquisición en vivo en el software ZEN para elegirlas visualmente.
+
+Cada trayectoria del barrido fue realizada automáticamente de la siguiente manera: la platina motorizada se posicionó en el centro del FOV de la primera \textit{tile} a adquirir asociada a las coordenadas [0,0] de la imagen de la Figura \ref{fig:tilescan} y se adquirió la primera imagen individual del barrido completo de la banda. A continuación la platina motorizada se desplazó en el sentido definido positivo del eje x hasta el centro del FOV de la segunda \textit{tile} a adquirir teniendo en cuenta el \textit{overlap} configurado y así siguiendo una trayectoria que barre por `filas' completa a lo largo del eje x y se desplaza verticalmente en el eje y cuando se llega a los extremos del eje x.
 
 \begin{figure}[H]
 	\centering
@@ -182,8 +184,7 @@ Hay distintas formas de elegir el área total a adquirir en el software. Se elig
 Entre otros parámetros del barrido, se elige el \textit{overlap} entre las baldosas, es decir la superposición entre las mismas que luego permite obtener una imagen completa individual para su visualización,  realizando un \textit{stitching}\footnote{El \textit{stitching} es el proceso computacional por el cual se combinan múltiples \textit{tiles} para
 producir una sola imagen que permita una mejor visualización (Ver técnica SIFT (\textit{Scale Invariant Feature Transform}), \cite{Lowe}).} como post-procesamiento de las imágenes. Este último procedimiento también fue realizado con el software de Zeiss. Se configuró el \textit{overlap} en 10$\%$ para todas las mediciones, siendo este valor el mínimo encontrado para que el \textit{stitching} entre las imágenes consecutivas sea realizado correctamente sin dejar espacios en blanco y para que dicha superposición elimine de la imagen la menor cantidad de defectos posibles. Por último, se elige en la configuración que cada baldosa sea exportada como una imagen individual para su posterior análisis.
 
-\begin{warningbox}{}
-\faExclamationTriangle \hspace{2pt} \texttt{Advertencias:}\par
+A continuación se explican algunas consideraciones importantes que se tuvieron respecto de los formatos de las imágenes y de los tipos de datos así como su precisión:
 \begin{itemize}
 \justifying
 \item Cada barrido completo de una banda es guardado por el software de Zeiss en un archivo de extensión .czi que contiene toda la \textit{metadata} como la información referida a la configuración del microscopio utilizada. Dicho archivo puede ser manipulado con el software de Zeiss, ó con el \href{https://imagej.net/Fiji}{Fiji-ImageJ} (tiene más herramientas que el software ImageJ a secas) ó a través del lenguaje \textit{python} utilizando la librería \href{https://pypi.org/project/czifile/}{\textit{czifile}} (Ejemplo sencillo: \href{https://github.com/jrr1984/defects_analysis/blob/master/zeiss_cfi.ipynb}{\faGithub}).
@@ -192,7 +193,6 @@ producir una sola imagen que permita una mejor visualización (Ver técnica SIFT
 \item Por último, se hace notar que la pérdida de precisión de una imagen puede ocurrir tanto en el guardado como en las operaciones sobre las imágenes. Un ejemplo de esta pérdida de precisión sería convertir las imágenes de una precisión original de 16 bits ($2^{16} = 65536$ posibles valores de intensidad) a una precisión de 8 bits ($2^{8} = 256$). Este inconveniente podría ser producido automáticamente por ejemplo en alguna operación utilizando la librería \textit{scikit-image} \cite{van2014scikit}, por lo que se sugiere controlar la precisión con la que se manipulan las imágenes en cada operación realizada.
 \end{itemize}
 
-\end{warningbox}	
 
 \singlespacing
 \subsection{Superficies y mapa de los defectos del filtro}
@@ -202,18 +202,17 @@ producir una sola imagen que permita una mejor visualización (Ver técnica SIFT
 
 \begin{figure}[H]
 	\begin{floatrow}
-		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supextex2216.png}}{\caption{Imagen de la superficie exterior A del filtro, para un barrido de 15.54 mm x 14.94 m.}\label{fig:supfiltrocondensador}}
-		\ffigbox{\includegraphics[width=7.25cm,height=9.0cm]{Figs/cuantificaciondefectos/supextex1515.png}}{\caption{Imagen de la superficie exterior B del filtro, para un barrido de 15.50 mm x 15.55 mm.}\label{fig:supfiltroobjetivo}}
+		\ffigbox{\includegraphics[width=7.5cm,height=11.0cm]{Figs/cuantificaciondefectos/supextex2216.png}}{\caption{Imagen de la superficie exterior A del filtro, para un barrido de 15.54 mm x 14.94 m.}\label{fig:supfiltrocondensador}}
+		\ffigbox{\includegraphics[width=7.5cm,height=11.0cm]{Figs/cuantificaciondefectos/supextex1515.png}}{\caption{Imagen de la superficie exterior B del filtro, para un barrido de 15.50 mm x 15.55 mm.}\label{fig:supfiltroobjetivo}}
 	\end{floatrow}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Figs/cuantificaciondefectos/espesorfiltro.png}
-	\caption{Dimensiones del espesor del filtro. Las superficies exteriores del filtro son las superficies A y B, que se encuentran en la interfaz filtro-aire.}
+	\includegraphics[scale=0.7]{Figs/cuantificaciondefectos/espesorfiltro.png}
+	\caption{Dimensiones del espesor del filtro: (1.0 $\pm$ 0.1)mm. Las superficies exteriores del filtro son las superficies A y B, que se encuentran en la interfaz filtro-aire.}
 	\label{fig:espfil}
 \end{figure}
-
 En las Figuras \ref{fig:supfiltrocondensador} y \ref{fig:supfiltroobjetivo} se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ. 
 
 Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no sature alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara, como se puede ver en el histograma de la intensidad de los píxeles de la Figura \ref{fig:histograma15x15} para el barrido de la superficie A del filtro. 
@@ -224,7 +223,6 @@ Para realizar el barrido completo de cada superficie se verificó en las cuatro 
 	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior A del filtro que se observa en el software ZEN del microscopio.}
 	\label{fig:histograma15x15}
 \end{figure}
-
 Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature, no era posible obtener una imagen de esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{Zeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión de baja intensidad en la región del NIR, como se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. 
 
 
@@ -271,7 +269,6 @@ A continuación se explica el proceso de adquisición de las imágenes individua
 
 En la Figura \ref{fig:tilebandaroja} se muestra la adquisición de la banda roja obtenida mediante un \textit{tile scan} de 27.65 mm x 4.16 mm, compuesta por 124 \textit{tiles}, con la intensidad de la lámpara configurada en 30\% y el tiempo de exposición de la cámara fue de 13 ms. En la sección de Resultados se muestran las adquisiciones de cada banda junto a su análisis y su discusión.
 
-%A partir de la adquisición de los barridos de las cinco bandas del filtro, cada uno compuesto por imágenes individuales, se realizó el pre-procesamiento de las mismas que se explica a continuación.
 A continuación se da una breve explicación sobre las consecuencias de una iluminación no uniforme del microscopio sobre una muestra y como esto repercute en la segmentación\footnote{En el contexto de la presente tesis, el término segmentación hace referencia a la identificación individual de cada defecto presente en una imagen.} posterior de los defectos. Luego se explica el procesamiento de las imágenes realizado para obtener la cuantificación de los defectos de cada banda del filtro.
 
 \singlespacing
@@ -294,23 +291,19 @@ Una imagen microscópica adquirida idealmente con una iluminación uniforme perf
 Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la matriz representa el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad.
 
 En la Figura \ref{fig:fondideal} se muestra una imagen de fondo ficticia que tendría una iluminación ideal uniforme y sin problemas de  \textit{vignetting}. Dicha imagen tiene un histograma como el que se muestra en la Figura \ref{fig:histbgteo}, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
-
 	\begin{figure}[H]
 		\begin{floatrow}
 			\ffigbox{\includegraphics[width=5.0cm,height=6.0cm]{Figs/defectosZEISS/bg_teorico.png}}{\caption{Imagen de fondo con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. }\label{fig:fondideal}}
 			\ffigbox{\includegraphics[scale=1.4]{Figs/defectosZEISS/hist_bg_teorico.png}}{\caption{Histograma de la intensidad de los píxeles de la imagen de fondo ideal.}\label{fig:histbgteo}}
 		\end{floatrow}
 	\end{figure}
-	
 En adelante, el fondo de cada imagen será denominado el \textit{background} de la imagen, para diferenciarlo de los defectos que se encuentran en lo que en adelante se llamará el \textit{foreground} de la imagen. Para resaltar la importancia de la corrección de la iluminación no uniforme y del \textit{vignetting}, supongamos una imagen ficticia de alguna banda del filtro analizado en la presente tesis, adquirida con una iluminación de fondo uniforme ideal y sin problemas de \textit{vignetting}, donde se puedan observar dos defectos (en color negro).
-
 	\begin{figure}[H]
 		\begin{floatrow}
 			\ffigbox{\includegraphics[width=5.0cm,height=7.0cm]{Figs/defectosZEISS/img_ideal_2defectos.png}}{\caption{Imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. }\label{fig:ideal2def}}
 			\ffigbox{\includegraphics[scale=1.2]{Figs/defectosZEISS/hist_bg_condefectos_teorico.png}}{\caption{Histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}.}\label{fig:histideal2def}}
 		\end{floatrow}
 	\end{figure}
-
 En la Figura \ref{fig:histideal2def} se muestra el histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. En dicho histograma se distingue de forma binaria el \textit{foreground} (defectos) con valores de intensidad iguales a 0, del \textit{background} con valores de intensidad iguales a 195. Bajo estas condiciones ideales, la segmentación de los defectos puede ser realizada de inmediato eligiendo cualquier umbral de intensidad que se encuentre entre el \textit{foreground} y el \textit{background}. 
 
 A continuación se explica el análisis computacional de las imágenes realizado desde su pre-procesamiento, la segmentación posterior y finalmente la cuantificación de los defectos.
@@ -333,25 +326,23 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 \spacing{1.5}
 
 \hspace{0.5cm}Se construyó computacionalmente la imagen de fondo de cada banda a partir de tomar la \underline{mediana} para cada píxel de todas las imágenes individuales adquiridas de la banda. Esta imagen de fondo contiene la información de la no uniformidad de la iluminación del microscopio. Dicha imagen debe ser generada para cada banda en particular ya que cada una de las bandas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
+
+En la Figura \ref{fig:bgazul} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. 
 	\begin{figure}[H]
 		\begin{floatrow}
 			\ffigbox{\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul.png}}{\caption{Imagen de fondo de la banda azul del filtro obtenida tomando la \underline{mediana} para cada píxel de todas las imágenes del barrido.}\label{fig:bgazul}}
 			\ffigbox{\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul_mean.png}}{\caption{Imagen de fondo de la banda azul del filtro obtenida tomando el \underline{valor medio} para cada píxel de todas las imágenes del barrido.}\label{fig:bgazulmean}}
 		\end{floatrow}
 	\end{figure}
-	\hspace{0.5cm}En la Figura \ref{fig:bgazul} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que se observan en la imagen son resultado de alguna reflexión no deseada en el microscopio, ya advertida por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas. 
-	
 Al mismo tiempo, se observa en la imagen de fondo de la Figura \ref{fig:bgazul} que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración del microscopio.
 
-\hspace{0.5cm}En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. En la misma figura se graficaron las curvas de densidad estimadas a partir de los datos originales. Se observa que la imagen de fondo generada con el valor medio tiene una mayor cantidad de píxeles más oscuros que la imagen de fondo generada con la mediana. Los valores atípicos (en inglés \textit{outliers}) de intensidad influencian enormemente el valor medio de los datos. Dichos \textit{outliers} pueden observarse como manchas presentes en la imagen de fondo generada a partir del valor medio de la Figura \ref{fig:bgazulmean} y en la curva de densidad esto se refleja en el hecho de que la curva del valor medio tiene una mayor concentración en las menores intensidades que la curva de la mediana. Ahora bien, la curva de densidad de la imagen de la mediana muestra que la generación de la imagen de fondo tomando la mediana es una forma exitosa de evitar incluir los \textit{outliers} en la imagen. Resulta fundamental deshacerse de estos \textit{outliers} en la imagen de fondo para no corromper las imágenes individuales del barrido. Esto es, si se utilizara la imagen de fondo del valor medio para corregir la iluminación no uniforme en las imágenes individuales, las mismas tendrían luego los \textit{outliers} presentes.
+En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. En la misma figura se graficaron las curvas de densidad estimadas a partir de los datos originales. Se observa que la imagen de fondo generada con el valor medio tiene una mayor cantidad de píxeles más oscuros que la imagen de fondo generada con la mediana. Los valores atípicos (en inglés \textit{outliers}) de intensidad influencian enormemente el valor medio de los datos. Dichos \textit{outliers} pueden observarse como manchas presentes en la imagen de fondo generada a partir del valor medio de la Figura \ref{fig:bgazulmean} y en la curva de densidad esto se refleja en el hecho de que la curva del valor medio tiene una mayor concentración en las menores intensidades que la curva de la mediana. Ahora bien, la curva de densidad de la imagen de la mediana muestra que la generación de la imagen de fondo tomando la mediana es una forma exitosa de evitar incluir los \textit{outliers} en la imagen. Resulta fundamental deshacerse de estos \textit{outliers} en la imagen de fondo para no corromper las imágenes individuales del barrido. Esto es, si se utilizara la imagen de fondo del valor medio para corregir la iluminación no uniforme en las imágenes individuales, las mismas tendrían luego los \textit{outliers} presentes.
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=1.0	]{Figs/defectosZEISS/comparhistsmedi.png}
+\includegraphics[scale=0.7]{Figs/defectosZEISS/comparhistsmedi.png}
 \caption{Histogramas de las imágenes de fondo de la banda azul del filtro generadas a partir de tomar el valor medio y la mediana para cada píxel del conjunto de imágenes de la banda. Se graficaron simultáneamente las curvas de distribución estiamdas a partir de los datos de las imágenes. El eje vertical se encuentra normalizado por el máximo valor de la frecuencia de píxeles para un cierto valor de intensidad.}
 \label{fig:comparhists}
 \end{figure}	
-
-
 Por completitud, las imágenes de fondo de cada banda pueden ser descargadas en el siguiente \href{https://google.com/open?id=1LfXvzmIMxf18PmQXzHdFhJl9xa6Ot2BS}{link}(ó Ver Apéndice ?, ó nada?..). Se hace notar por un lado que para generar la imagen de fondo se utiizaron las imágenes originales de cada banda y que al ser manipuladas en el lenguaje de programación \textit{python} para tomarles la mediana, dichas imágenes fueron tratadas como matrices donde cada elemento de matriz contenía un valor numérico cuyo tipo de dato computacional era un entero sin signo de 16 bits de precisión, es decir un número entre 0 y 65536. Dichos valores son tratados como números de punto flotante, con una precisión de 64 bits al momento de tomar la mediana para cada píxel del conjunto de imágenes. En consecuencia la imagen de salida tiene la misma precisión y los valores de intensidad son reescaleados al intervalo comprendido entre 0 y 1.
 
 A continuación se explica el proceso de corrección de la iluminación no uniforme del microscopio en las imágenes individuales de cada banda adquirida.	
@@ -360,9 +351,7 @@ A continuación se explica el proceso de corrección de la iluminación no unifo
 \subsection{Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub}}
 \spacing{1.5}
 
-\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la Figura \ref{fig:bgazul}). 
-
-En la Figura \ref{fig:correcilumims} se muestra el proceso de normalización de una imagen individual (\textit{tile}) del barrido completo de la banda NIR. A continuación se explican las operaciones realizadas sobre la imagen original (Imagen \texttt{a)}) de la Figura \ref{fig:correcilumims}) como ejemplo didáctico. El mismo proceso fue realizado para cada imagen individual de cada banda adquirida.	
+\hspace{0.5cm} Con la imagen de fondo ya construida, se normalizaron las imágenes originales del barrido completo de una banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la Figura \ref{fig:bgazul}). En la Figura \ref{fig:correcilumims} se muestran las operaciones del proceso de normalización de una imagen individual (\textit{tile}) del barrido completo de la banda NIR. El mismo proceso fue realizado para cada imagen individual de cada banda adquirida.	
 \begin{figure}[H]
 	\centering
 \includegraphics[scale=1.1	]{Figs/defectosZEISS/correccionilum/NIR/1.png}
@@ -408,19 +397,84 @@ Se hace notar que el proceso de corrección de la iluminación no uniforme y del
 	\label{fig:defecthi}
 \end{figure}
 
-De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa que el rango de intensidades de los píxeles de la región con un defecto de la imagen original se extiende desde el intervalo [0.19,0.70] al intervalo [0.00,0.98] en la imagen final\footnote{Para la imagen completa, el rango se extiende desde [0.19,0.73] para la imagen original al rango [0.00,1.00] de la imagen final, es decir el rango de intensidades de la imagen original se extiende a todo el rango posible de acuerdo a la ecuación \ref{eq:histexpp} de la expansión del histograma.}. De esta manera, se mejora el contraste de la imagen y la distinción entre el \textit{foreground} (defectos) y el \textit{background} se puede realizar ajustando un umbral de intensidad  (\textit{threshold}). A continuación se explica el algoritmo de detección de los defectos y su cuantificación.
-
-
+De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa que el rango de intensidades de los píxeles de la región con un defecto de la imagen original se extiende desde el intervalo [0.19,0.70] al intervalo [0.00,0.98] en la imagen final\footnote{Para la imagen completa, el rango se extiende desde [0.19,0.73] para la imagen original al rango [0.00,1.00] de la imagen final, es decir el rango de intensidades de la imagen original se extiende a todo el rango posible de acuerdo a la ecuación \ref{eq:histexpp} de la expansión del histograma.}. De esta manera, se mejora el contraste de la imagen y la distinción entre el \textit{foreground} (defectos) y el \textit{background} se puede realizar ajustando un umbral de intensidad  (\textit{threshold}). A continuación se explica el criterio de elección del método del \textit{threshold} aplicado y luego se describe el algoritmo de detección de los defectos y su cuantificación.
 
 \singlespacing
-\section{Algoritmo de detección de los defectos}
+\section{Criterio de elección del \textit{threshold} \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/try_all_thresholds.py}{\faGithub}}
 \spacing{1.5}
 
-\hspace{0.5cm}Con las imágenes pre-procesadas la detección de los defectos fue realizada utilizando algoritmos de procesamientos de imágenes. El algoritmo consistió de los siguientes pasos:
+\hspace{0.5cm}Con las imágenes pre-procesadas la detección de los defectos fue realizada utilizando algoritmos de procesamientos de imágenes. En particular se utilizaron algoritmos de \textit{thresholding} que determinan un umbral de intensidad a partir del cual se crea una imagen binaria que distingue el \textit{background} de los defectos \cite{shapi}.
+
+Para determinar el umbral de intensidad óptimo para todas y cada una de las imágenes individuales de una banda se utilizó el método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} \cite{van2014scikit}. Se hace notar que si bien se podrían haber utilizado distintos \textit{thresholds} para cada imagen ó para distintos sets de imágenes de una misma banda, se decidió elegir un sólo método de umbral para todas y cada una de las bandas para poder automatizar la aplicación del algoritmo de detección de los defectos y de la posterior asociación de incertezas a los resultados.
+
+El criterio de elección del método del umbral fue adoptado a partir de la inspección visual. Se observó visualmente el resultado (en adelante \textit{output}) de la aplicación de los distintos \textit{thresholds} para cada imagen de cada banda. A continuación se muestran algunas imágenes representativas en conjunto con el \textit{output} de la aplicación de los distintos \textit{thresholds} para explicar el criterio de elección del umbral aplicado a todas las imágenes de todas las bandas.
 \begin{enumerate}
-	\item Se determina el valor de intensidad umbral (en adelante, \textit{threshold}) a partir del cual se distingue entre un defecto en la región de la imagen que se \textit{foreground} y el fondo de la imagen (\textit{background}). %Iterando sobre los conjuntos completos completos de \textit{tiles} de cada banda se determinó que el t
+\justifying
+\item Se descartaron los \textit{thresholds} a partir de los cuales algunas de las imágenes binarias generadas contenían una gran cantidad de falsos positivos. Esto último resultó ser el caso de los métodos \textit{Li}\cite{Lie}, \textit{Mean}\cite{Glasmean} y \textit{Otsu}\cite{otsuu}, como se puede observar en la Figura \ref{fig:threshcom}. Por el motivo contrario, es decir por no contener ningún defecto en algunas de las imágenes binarias generadas, el umbral \textit{Minimum}\cite{pericles} fue descartado.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=2.3]{Figs/defectosZEISS/thresh_comparison.png}
+	\caption{Figura del \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/try_all_thresholds.py}{\faGithub}).} 
+	\label{fig:threshcom}
+\end{figure}
+
+\item Si bien en la gran mayoría de las imágenes los métodos \textit{Isodata}\cite{ridler}, \textit{Triangle}\cite{triang} y \textit{Yen}\cite{yen} tuvieron una buena relación entre el número de falsos positivos y el número de defectos detectados por inspección visual, el único \textit{threshold} que mantuvo dicha relación con un valor menor a 1 para todas las imágenes de todas las bandas fue el del método \textit{Yen}. Por ejemplo en la Figura \ref{fig:threshcom2} se muestra una región de una imagen con 2 defectos detectados por inspección visual y el método \textit{Yen} fue el único capaz de detectarlos de forma singular.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.2]{Figs/defectosZEISS/thresh_vivos_compar3.png}
+	\caption{Región de una imagen individual en conjunto con el \textit{output} de lFigura del \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/try_all_thresholds.py}{\faGithub}).} 
+	\label{fig:threshcom2}
+\end{figure}
+%# de defectos por metodo: yen,isodata,triangle
+%2828,4439,274176  ROJO
+%4015,6674,156695 PANC
+%5727,11010,234359 VERDE
+%19918,40505, AZUL
+\end{enumerate}
+\hspace{0.5cm}Una vez determinado el \textit{threshold} aplicable a todas las imágenes de todas las bandas, se desarrolló el algoritmo de detección y cuantificación de los defectos del filtro que se explica en la siguiente sección.
+
+\singlespacing
+\section{Algoritmo de detección y cuantificación de los defectos \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/defects_thresholding.py}{\faGithub}}
+\spacing{1.5}
+
+\hspace{0.5cm}En esta sección se explica el algoritmo utilizado para la detección y cuantificación de los defectos del filtro. El diagrama de flujo del algoritmo aplicado se muestra en la Figura \ref{fig:diagflujoalgor}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/diag_flujoalgor.png}
+\caption{Diagrama de flujo del algoritmo de detección y cuantificación de los defectos del filtro.}
+\label{fig:diagflujoalgor}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.5]{Figs/defectosZEISS/algor_defecs.png}
+\caption{\texttt{a)} Región de una imagen normalizada de la banda celeste que contiene un agujero. \texttt{b)} Histograma de intensidad de los píxeles de la imagen \texttt{a)}. La línea roja vertical indica el valor del \textit{threshold} de \textit{Yen} para dicha imagen. \texttt{c)} Imagen binaria generada a partir del \textit{threshold} de \textit{Yen}. \texttt{d)} Agujeros tapados con el método \textit{binary\_fill\_holes} de la librería \textit{ndimage} del lenguaje \textit{python}.}
+\label{fig:flujoalgo}
+\end{figure} 
+
+Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figura \ref{fig:flujoalgo} como guías didácticas, a continuación se explican los pasos del algoritmo aplicado para cada imagen individual de cada banda:
+\begin{enumerate}
+\justifying
+\item Se lee la imagen normalizada. En la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo} se muestra una región de una imagen que contiene el agujero más grande encontrado en el filtro (caracterizado espectralmente en el capítulo \ref{}) y otros defectos de transmisión (manchas) más pequeños. En consecuencia, la imagen es representativa de lo que sería el caso más general de una imagen individual de cualquier banda.
+\item Se calcula el \textit{threshold} de \textit{Yen} con el método \textit{threshold\_yen} de la librería \textit{scikit-image}. En la Figura \ref{fig:flujoalgo} se muestra el histograma de intensidad de píxeles de la imagen, con el eje vertical en escala logarítmica. La línea vertical roja indica el valor calculado del \textit{threshold} de \textit{Yen}.
+\item Se genera una imagen binaria de la imagen normalizada como se muestra en la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo}. Para cada píxel de la imagen original se compara su valor de intensidad con el valor del \textit{threshold} y se asigna un 1 si el valor de intensidad del píxel es menor que el \textit{threshold} y un 0 si ocurre lo contrario.
+\item Se tapan los agujeros como se muestra en la imagen \texttt{d)} de la Figura \ref{fig:flujoalgo} con el método \textit{binary\_fill\_holes} de la librería \textit{ndimage} del lenguaje \textit{python}. 
 \end{enumerate}
 
+agujero 112 TAPADO: 110.702257
+sin tapar: 110.658804
+
+tapados: 19918 defectos
+sin tapar: 19930
+
+para poner el error del metodo en decir un defecto es de 15 mics $\pm$ poner el error del m[etodo triangle que le emboca a todos los defectos pero SOBREESTIMA el tamaño, los hace mucho más grandes..
+
+\vspace{1cm}
+\todo[inline]{en la definición de los dos tipos de defectos, se lospodría definir de acuerdo a las matrices 1s bordeando a un 0, etc}
+\vspace{1cm}
 
 \singlespacing
 \section{Resultados del algoritmo de detección de los defectos}
@@ -429,6 +483,8 @@ De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa
 
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos son guardados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que puede ser abierto y manipulados sus datos con la librería \textit{pandas} de python en el marco de lo que se conoce como un \textit{pandas dataframe} que no es más que un objeto de python que permite una manipulación de los datos muy eficiente. A continuación se muestra un resumen de los resultados para cada banda espectral del filtro.
 
+
+deteccion de agujeros no funciona para defectos muy chicos xq tiene muchos falsos positivos (defectos que en realidad no son)
 \singlespacing
 \subsection{Defectos de la banda NIR}
 \spacing{1.5}
