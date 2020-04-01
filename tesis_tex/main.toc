@@ -2,39 +2,42 @@
 \babel@toc {czech}{}
 \babel@toc {czech}{}
 \babel@toc {czech}{}
-\contentsline {chapter}{}{iii}{chapter*.1}% 
+\contentsline {chapter}{}{iii}{chapter*.1}%
 \babel@toc {czech}{}
-\contentsline {chapter}{Resumen}{v}{chapter*.2}% 
+\contentsline {chapter}{Resumen}{v}{chapter*.2}%
 \babel@toc {czech}{}
-\contentsline {chapter}{\IeC {\'I}ndice\ttl@gmk {\@mkboth {\MakeUppercase {\IeC {\'I}ndice}}{\MakeUppercase {\IeC {\'I}ndice}}}}{vii}{chapter*.3}% 
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
-\contentsline {section}{Objetivo general}{1}{section*.4}% 
-\contentsline {subsection}{Objetivos espec\IeC {\'\i }ficos del proyecto}{2}{section*.4}% 
-\contentsline {section}{Introducci\IeC {\'o}n}{2}{section*.4}% 
-\contentsline {section}{Actividades y Metodolog\IeC {\'\i }a}{8}{figure.caption.10}% 
-\contentsline {section}{Factibilidad}{9}{figure.caption.10}% 
-\contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterizaci\IeC {\'o}n de los espectros de transmisi\IeC {\'o}n}{11}{chapter.2}% 
-\contentsline {chapter}{\numberline {3}Cuantificaci\IeC {\'o}n de los defectos}{13}{chapter.3}% 
-\contentsline {section}{Defectos de superficie de un componente \IeC {\'o}ptico}{13}{section*.11}% 
-\contentsline {subsection}{MIL-PRF-13830B: especificaciones de \textit {scratch \& dig}}{14}{figure.caption.13}% 
-\contentsline {subsection}{ISO 10110: defectos de superficie}{18}{figure.caption.15}% 
-\contentsline {section}{Caracter\IeC {\'\i }sticas del filtro utilizado}{18}{equation.3.0.4}% 
-\contentsline {section}{Adquisici\IeC {\'o}n de las im\IeC {\'a}genes del filtro}{19}{equation.3.0.4}% 
-\contentsline {subsection}{\textit {Tile scan}}{20}{section*.18}% 
-\contentsline {subsection}{Superficies y mapa de los defectos del filtro}{22}{section*.21}% 
-\contentsline {subsection}{Adquisici\IeC {\'o}n de im\IeC {\'a}genes individuales de cada banda espectral}{25}{section*.32}% 
-\contentsline {section}{Pre-pocesamiento de las im\IeC {\'a}genes de cada banda espectral }{26}{figure.caption.33}% 
-\contentsline {section}{Algoritmo de detecci\IeC {\'o}n de los defectos}{29}{section*.40}% 
-\contentsline {section}{Resultados del algoritmo de detecci\IeC {\'o}n de los defectos}{29}{Item.3}% 
-\contentsline {subsection}{Defectos de la banda NIR}{29}{section*.41}% 
-\contentsline {subsection}{Defectos de la banda Roja}{30}{figure.caption.43}% 
-\contentsline {chapter}{\numberline {4}Desarrollo XZStage y calibraci\IeC {\'o}n - Desarrollo del software integrando el arduino con algoritmos asincr\IeC {\'o}nicos}{33}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Microespectr\IeC {\'o}metro}{35}{chapter.5}% 
-\contentsline {section}{Dise\IeC {\~n}o \IeC {\'o}ptico del microespectr\IeC {\'o}metro}{35}{section*.50}% 
-\contentsline {section}{Montaje y alineaci\IeC {\'o}n preliminar del microespectr\IeC {\'o}metro}{35}{section*.50}% 
-\contentsline {section}{Foco y resoluci\IeC {\'o}n espacial del microespectr\IeC {\'o}metro}{35}{section*.50}% 
-\contentsline {section}{Integraci\IeC {\'o}n de una c\IeC {\'a}mara web}{42}{figure.caption.59}% 
-\contentsline {subsection}{Mapeando el espectr\IeC {\'o}metro con la c\IeC {\'a}mara}{42}{section*.60}% 
-\contentsline {chapter}{\numberline {6}Conclusiones}{43}{chapter.6}% 
-\contentsline {chapter}{\numberline {7}Trabajo a futuro}{45}{chapter.7}% 
-\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{47}{chapter*.61}% 
+\contentsline {chapter}{Índice\ttl@gmk {\@mkboth {\MakeUppercase {Índice}}{\MakeUppercase {Índice}}}}{vii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivo general}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivos específicos del proyecto}{2}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Introducción}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Actividades y Metodología}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Factibilidad}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Primer prototipo del equipo y caracterización de los espectros de transmisión}{11}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Cuantificación de los defectos}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Defectos de superficie de un componente óptico}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}MIL-PRF-13830B: especificaciones de \textit {scratch \& dig}}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}ISO 10110: defectos de superficie}{17}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Características del filtro}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Adquisición de las imágenes del filtro}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\textit {Tile scan}}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Superficies y mapa de los defectos del filtro}{25}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Adquisición de imágenes individuales de cada banda espectral}{29}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Iluminación no uniforme del microscopio}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pre-pocesamiento de las imágenes de cada banda espectral }{33}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Generación de la imagen de fondo: \href {https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg.py}{\faGithub }}{34}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo \href {https://github.com/jrr1984/defects_analysis/blob/master/MAIN/bg_normalization.py}{\faGithub }}{37}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Algoritmo de detección de los defectos \href {https://github.com/jrr1984/defects_analysis/blob/master/MAIN/defects_thresholding.py}{\faGithub }}{41}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Resultados del algoritmo de detección de los defectos}{41}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Defectos de la banda NIR}{41}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Defectos de la banda Roja}{42}{subsection.3.7.2}%
+\contentsline {chapter}{\numberline {4}Desarrollo XZStage y calibración - Desarrollo del software integrando el arduino con algoritmos asincrónicos}{45}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Microespectrómetro}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diseño óptico del microespectrómetro}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Montaje y alineación preliminar del microespectrómetro}{47}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Foco y resolución espacial del microespectrómetro}{47}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Integración de una cámara web}{54}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Mapeando el espectrómetro con la cámara}{54}{subsection.5.4.1}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{55}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Trabajo a futuro}{57}{chapter.7}%
+\contentsline {chapter}{Referencias Bibliográficas}{59}{chapter*.56}%
