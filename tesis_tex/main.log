@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.21)  29 MAR 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.1)  2 APR 2020 16:02
 entering extended mode
-**./main.tex
-(main.tex
+**C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06> (ctuthesis.cls
+L3 programming layer <2020-03-06>
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuthesis.cls
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
 "
 Package: expl3 2020-03-06 L3 programming layer (loader) 
@@ -43,12 +44,13 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 )
 Document Class: ctuthesis 2016/06/15 v0.1 t1606152353 Class for typesetting CTU
  theses and alike
-(ctuth-core.tex
+
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-core.te
+x
 File: ctuth-core.tex 2016/06/15 v0.1t1606152353 "Core" part of the class ctuthe
 sis
 \g_ctuthesis_tempa_skip=\skip47
-)
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
+) ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk11.clo"
 File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -66,7 +68,8 @@ File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen134
 )
-(ctuth-names.tex
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-names.t
+ex
 File: ctuthesis-names.def 2014/01/18 v0.1 "Names"partoftheclassctuthesis
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
@@ -157,7 +160,8 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTleft=\skip62
 \LTright=\skip63
 \flrow@types=\toks21
-) (xargs.sty
+)
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.st
@@ -205,10 +209,10 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\dvipsnam.
 def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (todonotes.sty
+))
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
-
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -693,12 +697,12 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5.sty"
-Package: fontawesome5 2020/01/17 v5.12.0.1 Font Awesome 5
+Package: fontawesome5 2020/03/24 v5.13.0 Font Awesome 5
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5-generic-helper.sty"
-Package: fontawesome5-generic-helper 2020/01/17 v5.12.0.1 non-uTeX helper for f
-ontawesome5
+Package: fontawesome5-generic-helper 2020/03/24 v5.13.0 non-uTeX helper for fon
+tawesome5
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5-mapping.def")))
@@ -716,10 +720,10 @@ Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbskins
 jigsaw.code.tex"
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
-)) (ctuth-pkg.tex
+))
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-pkg.tex
 File: ctuth-pkg.tex 2016/06/15 v0.1t1606152353 "Packages" part of the class ctu
 thesis
-
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -825,10 +829,10 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \AM@templatesizebox=\box118
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2020/02/28 3.41 The Babel package
+Package: babel 2020/03/22 3.42 The Babel package
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
 "
-File: switch.def 2020/02/28 3.41 Babel switching mechanism
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
@@ -842,7 +846,7 @@ ldf"
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2020/02/28 3.41 Babel common definitions
+File: babel.def 2020/03/22 3.42 Babel common definitions
 \babel@savecnt=\count310
 \U@D=\dimen277
 
@@ -1232,40 +1236,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\ctuthesis_field_use:n' on input line 957.
 
-) (ctuth-templates.tex
+)
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-templat
+es.tex
 File: ctuth-templates.tex 2016/06/15 v0.1t1606152353 "Templates" part of the cl
 ass ctuthesis
-) (main.aux
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
+)
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.aux
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/introd.a
+ux)
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/cap3.aux
 
 LaTeX Warning: Label `fig:bgcel' multiply defined.
 
@@ -1276,6 +1256,36 @@ LaTeX Warning: Label `fig:bgcel' multiply defined.
 LaTeX Warning: Label `fig:bgcel' multiply defined.
 
 )
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/microesp
+.aux
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+
+LaTeX Warning: Label `fig:bgcel' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
@@ -1410,7 +1420,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 192.
 LaTeX Info: Redefining \pageref on input line 192.
 LaTeX Info: Redefining \nameref on input line 192.
- (main.out) (main.out)
+
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -1468,7 +1480,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=136, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=154, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 <use Figs/Caratula/logo_uba.png>
 Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 194.
@@ -1495,20 +1507,19 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 194--194
 
 
 
-{C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figs/Cara
-tula/logo_uba.png>]
+{C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ju
+anr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/Caratula/logo_uba.pn
+g>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 94.
-
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+ ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-[2
+ [2
 
 ]
 Package microtype Info: Character `029' is missing
@@ -1520,14 +1531,27 @@ Package microtype Info: Character `029' is missing
 
 ] [5] [6
 
-] (main.toc [7])
+]
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.toc
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
+ input line 28.
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\ufont
+awesomebrands0.fd")
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
+ot available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
+n input line 28.
+ [7])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
  [8]
 \openout2 = `caps/introd.aux'.
 
- (caps/introd.tex
+
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/introd.t
+ex
 Capítulo 1.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 5.
@@ -1540,7 +1564,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<Figs/plan_de_tesis/multivshyper.png, id=226, 1820.8025pt x 592.2125pt>
+<Figs/plan_de_tesis/multivshyper.png, id=251, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 <use Figs/plan_de_tesis/multivshyper.png>
 Package pdftex.def Info: Figs/plan_de_tesis/multivshyper.png  used on input lin
@@ -1549,7 +1573,7 @@ e 99.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 107.
  [2]
-<Figs/plan_de_tesis/cam_sens.png, id=245, 380.34404pt x 245.5327pt>
+<Figs/plan_de_tesis/cam_sens.png, id=268, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 <use Figs/plan_de_tesis/cam_sens.png>
 Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 14
@@ -1558,8 +1582,9 @@ Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 14
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./Figs/plan_de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=259, 414.04688pt x 33
+ [3 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/multivshyper.png>]
+<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=282, 414.04688pt x 33
 8.76563pt>
 File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
 pg)
@@ -1570,8 +1595,9 @@ used on input line 191.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./Figs/plan_de_tesis/cam_sens.png>]
-<Figs/plan_de_tesis/dists_meds.png, id=278, 479.02039pt x 382.66039pt>
+ [4 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/cam_sens.png>]
+<Figs/plan_de_tesis/dists_meds.png, id=301, 479.02039pt x 382.66039pt>
 File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
 <use Figs/plan_de_tesis/dists_meds.png>
 Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png  used on input line 
@@ -1580,11 +1606,13 @@ Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./Figs/plan_de_tesis/measurement_of_optical_filter.jpg>]
+ [5 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/measurement_of_optical_filter.jpg>]
 Underfull \vbox (badness 4673) has occurred while \output is active []
 
- [6 <./Figs/plan_de_tesis/dists_meds.png>]
-<Figs/plan_de_tesis/med_mets_prevs.png, id=297, 340.96616pt x 216.81pt>
+ [6 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/dists_meds.png>]
+<Figs/plan_de_tesis/med_mets_prevs.png, id=320, 340.96616pt x 216.81pt>
 File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
 <use Figs/plan_de_tesis/med_mets_prevs.png>
 Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png  used on input l
@@ -1593,24 +1621,16 @@ ine 273.
 
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
- [7 <./Figs/plan_de_tesis/med_mets_prevs.png>]
-<Figs/plan_de_tesis/setup_u.jpeg, id=309, 308.53731pt x 108.405pt>
+ [7 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/med_mets_prevs.png>]
+<Figs/plan_de_tesis/setup_u.jpeg, id=332, 308.53731pt x 108.405pt>
 File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
 <use Figs/plan_de_tesis/setup_u.jpeg>
 Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg  used on input line 32
 4.
 (pdftex.def)             Requested size: 308.53654pt x 108.40472pt.
- [8 <./Figs/plan_de_tesis/setup_u.jpeg>]
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 424.
-
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\ufont
-awesomebrands0.fd")
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
-ot available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 424.
-
+ [8 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
+_de_tesis/setup_u.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9])
@@ -1622,7 +1642,9 @@ Capítulo 2.
 ]
 \openout2 = `caps/cap3.aux'.
 
- (caps/cap3.tex [12
+
+(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/cap3.tex
+[12
 
 
 ]
@@ -1642,7 +1664,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
 
 LaTeX Warning: Citation `Gomez_1998' on page 13 undefined on input line 20.
 
-<Figs/cuantificaciondefectos/hueco_cel_112.png, id=341, 170.6375pt x 136.51pt>
+<Figs/cuantificaciondefectos/hueco_cel_112.png, id=362, 170.6375pt x 136.51pt>
 File: Figs/cuantificaciondefectos/hueco_cel_112.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/hueco_cel_112.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/hueco_cel_112.png  used on
@@ -1653,7 +1675,7 @@ File: Figs/cuantificaciondefectos/hueco_cel_112.png Graphic file (type png)
 Package pdftex.def Info: Figs/cuantificaciondefectos/hueco_cel_112.png  used on
  input line 24.
 (pdftex.def)             Requested size: 113.81358pt x 113.81151pt.
-<Figs/cuantificaciondefectos/mancha_cel_112.png, id=342, 98.3675pt x 93.34875pt
+<Figs/cuantificaciondefectos/mancha_cel_112.png, id=363, 98.3675pt x 93.34875pt
 >
 File: Figs/cuantificaciondefectos/mancha_cel_112.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/mancha_cel_112.png>
@@ -1677,215 +1699,191 @@ LaTeX Warning: Citation `iso10110' on page 14 undefined on input line 29.
 
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 32.
-<Figs/cuantificaciondefectos/scratchanddig.png, id=351, 311.66437pt x 218.8175p
+<Figs/cuantificaciondefectos/scratchanddig.png, id=372, 311.66437pt x 218.8175p
 t>
 File: Figs/cuantificaciondefectos/scratchanddig.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/scratchanddig.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/scratchanddig.png  used on
- input line 40.
-(pdftex.def)             Requested size: 311.6636pt x 218.81696pt.
-[14 <./Figs/cuantificaciondefectos/hueco_cel_112.png (PNG copy)> <./Figs/cuanti
-ficaciondefectos/mancha_cel_112.png (PNG copy)>]
-Underfull \vbox (badness 6461) has occurred while \output is active []
+ input line 41.
+(pdftex.def)             Requested size: 342.83186pt x 240.69998pt.
+[14 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
+tificaciondefectos/hueco_cel_112.png (PNG copy)> <C:/Users/juanr/Documents/mast
+er_thesis_scratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/mancha_cel_112.
+png (PNG copy)>] [15 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/te
+sis_tex/Figs/cuantificaciondefectos/scratchanddig.png>]
 
- [15 <./Figs/cuantificaciondefectos/scratchanddig.png>]
+LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 67.
 
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 66.
-
-<Figs/cuantificaciondefectos/samplesscratch.png, id=376, 552.56438pt x 313.6718
+<Figs/cuantificaciondefectos/samplesscratch.png, id=394, 552.56438pt x 313.6718
 8pt>
 File: Figs/cuantificaciondefectos/samplesscratch.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/samplesscratch.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/samplesscratch.png  used o
-n input line 69.
+n input line 70.
 (pdftex.def)             Requested size: 414.42226pt x 235.25331pt.
 
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 70.
+LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 71.
 
 
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 70.
+LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 71.
 
-[16 <./Figs/cuantificaciondefectos/samplesscratch.png>] [17]
-
-LaTeX Warning: Reference `fig:filtroposta' on page 18 undefined on input line 1
-06.
-
-
-LaTeX Warning: Reference `fig:dimsfiltr' on page 18 undefined on input line 106
-.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-<Figs/cuantificaciondefectos/dimsfiltro.png, id=400, 291.58937pt x 270.51062pt>
+[16 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
+tificaciondefectos/samplesscratch.png>] [17]
+<Figs/cuantificaciondefectos/dimsfiltro.png, id=410, 291.58937pt x 270.51062pt>
 
 File: Figs/cuantificaciondefectos/dimsfiltro.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/dimsfiltro.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/dimsfiltro.png  used on in
-put line 122.
+put line 111.
 (pdftex.def)             Requested size: 233.2718pt x 216.40878pt.
 
-Overfull \hbox (18.2718pt too wide) in paragraph at lines 122--122
+Overfull \hbox (18.2718pt too wide) in paragraph at lines 111--111
  [][] 
  []
 
 File: Figs/cuantificaciondefectos/dimsfiltro.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/dimsfiltro.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/dimsfiltro.png  used on in
-put line 122.
+put line 111.
 (pdftex.def)             Requested size: 233.2718pt x 216.40878pt.
 
-Overfull \hbox (18.2718pt too wide) in paragraph at lines 122--122
+Overfull \hbox (18.2718pt too wide) in paragraph at lines 111--111
  [][] 
  []
 
-<Figs/cuantificaciondefectos/filtro_real.jpg, id=401, 1223.57124pt x 1444.39626
+<Figs/cuantificaciondefectos/filtro_real.jpg, id=411, 1223.57124pt x 1444.39626
 pt>
 File: Figs/cuantificaciondefectos/filtro_real.jpg Graphic file (type jpg)
 <use Figs/cuantificaciondefectos/filtro_real.jpg>
 Package pdftex.def Info: Figs/cuantificaciondefectos/filtro_real.jpg  used on i
-nput line 123.
+nput line 112.
 (pdftex.def)             Requested size: 183.52777pt x 216.65009pt.
 File: Figs/cuantificaciondefectos/filtro_real.jpg Graphic file (type jpg)
 <use Figs/cuantificaciondefectos/filtro_real.jpg>
 Package pdftex.def Info: Figs/cuantificaciondefectos/filtro_real.jpg  used on i
-nput line 123.
+nput line 112.
 (pdftex.def)             Requested size: 183.52777pt x 216.65009pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-
-LaTeX Warning: Reference `fig:dimsfiltr' on page 20 undefined on input line 134
-.
-
-[20 <./Figs/cuantificaciondefectos/dimsfiltro.png> <./Figs/cuantificaciondefect
-os/filtro_real.jpg>]
-<Figs/defectosZEISS/b.jpg, id=420, 4143.48pt x 2330.7075pt>
+ [18]
+[19 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
+tificaciondefectos/dimsfiltro.png> <C:/Users/juanr/Documents/master_thesis_scra
+tch_and_dig/tesis_tex/Figs/cuantificaciondefectos/filtro_real.jpg>]
+<Figs/defectosZEISS/b.jpg, id=432, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/b.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/b.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 149.
+Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 150.
 (pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
-<Figs/defectosZEISS/a.jpg, id=423, 4143.48pt x 2330.7075pt>
+ [20]
+<Figs/defectosZEISS/a.jpg, id=442, 4143.48pt x 2330.7075pt>
 File: Figs/defectosZEISS/a.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/a.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 157.
+Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 158.
 (pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
 
-Underfull \vbox (badness 3579) has occurred while \output is active []
-
- [21 <./Figs/defectosZEISS/b.jpg>]
-
-LaTeX Warning: Hyper reference `sec:conf' on page 22 undefined on input line 16
-1.
-
-
-Underfull \vbox (badness 4013) has occurred while \output is active []
-
- [22 <./Figs/defectosZEISS/a.jpg>]
-<Figs/cuantificaciondefectos/tilescan.png, id=441, 1039.885pt x 193.72375pt>
+[21 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
+ctosZEISS/b.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_
+tex/Figs/defectosZEISS/a.jpg>] [22]
+<Figs/cuantificaciondefectos/tilescan.png, id=460, 1039.885pt x 193.72375pt>
 File: Figs/cuantificaciondefectos/tilescan.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/tilescan.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/tilescan.png  used on inpu
-t line 180.
+t line 181.
 (pdftex.def)             Requested size: 440.0pt x 81.96939pt.
 
 
-LaTeX Warning: Citation `Lowe' on page 23 undefined on input line 186.
+LaTeX Warning: Citation `Lowe' on page 23 undefined on input line 187.
 
-[23 <./Figs/cuantificaciondefectos/tilescan.png>]
+[23 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
+tificaciondefectos/tilescan.png>]
 
-LaTeX Warning: Citation `tilezeiss' on page 24 undefined on input line 192.
-
-
-LaTeX Warning: Citation `van2014scikit' on page 24 undefined on input line 194.
+LaTeX Warning: Citation `tilezeiss' on page 24 undefined on input line 193.
 
 
-[24]
+LaTeX Warning: Citation `van2014scikit' on page 24 undefined on input line 195.
 
-LaTeX Warning: Reference `fig:espfil' on page 25 undefined on input line 202.
 
-<Figs/cuantificaciondefectos/supextex2216.png, id=461, 486.31688pt x 455.20062p
+<Figs/cuantificaciondefectos/supextex2216.png, id=475, 486.31688pt x 455.20062p
 t>
 File: Figs/cuantificaciondefectos/supextex2216.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/supextex2216.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supextex2216.png  used on 
-input line 206.
+input line 207.
 (pdftex.def)             Requested size: 213.39386pt x 312.98438pt.
 File: Figs/cuantificaciondefectos/supextex2216.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/supextex2216.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supextex2216.png  used on 
-input line 206.
+input line 207.
 (pdftex.def)             Requested size: 213.39386pt x 312.98438pt.
-<Figs/cuantificaciondefectos/supextex1515.png, id=462, 415.5525pt x 413.545pt>
+<Figs/cuantificaciondefectos/supextex1515.png, id=476, 415.5525pt x 413.545pt>
 File: Figs/cuantificaciondefectos/supextex1515.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/supextex1515.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supextex1515.png  used on 
-input line 207.
+input line 208.
 (pdftex.def)             Requested size: 213.39369pt x 312.98494pt.
 File: Figs/cuantificaciondefectos/supextex1515.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/supextex1515.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/supextex1515.png  used on 
-input line 207.
+input line 208.
 (pdftex.def)             Requested size: 213.39369pt x 312.98494pt.
-<Figs/cuantificaciondefectos/espesorfiltro.png, id=463, 45.67062pt x 276.03125p
+[24]
+<Figs/cuantificaciondefectos/espesorfiltro.png, id=483, 45.67062pt x 276.03125p
 t>
 File: Figs/cuantificaciondefectos/espesorfiltro.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/espesorfiltro.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/espesorfiltro.png  used on
- input line 213.
-(pdftex.def)             Requested size: 27.40257pt x 165.62001pt.
-[25 <./Figs/cuantificaciondefectos/supextex2216.png> <./Figs/cuantificaciondefe
-ctos/supextex1515.png>]
-<Figs/defectosZEISS/histograma15x15.png, id=475, 207.77625pt x 60.72687pt>
+ input line 214.
+(pdftex.def)             Requested size: 31.96921pt x 193.22055pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cua
+ntificaciondefectos/supextex2216.png> <C:/Users/juanr/Documents/master_thesis_s
+cratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/supextex1515.png> <C:/User
+s/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuantificacionde
+fectos/espesorfiltro.png>]
+<Figs/defectosZEISS/histograma15x15.png, id=493, 207.77625pt x 60.72687pt>
 File: Figs/defectosZEISS/histograma15x15.png Graphic file (type png)
 <use Figs/defectosZEISS/histograma15x15.png>
 Package pdftex.def Info: Figs/defectosZEISS/histograma15x15.png  used on input 
-line 223.
+line 224.
 (pdftex.def)             Requested size: 440.0pt x 128.61427pt.
 
 
-LaTeX Warning: Citation `Zeiss' on page 26 undefined on input line 227.
+LaTeX Warning: Citation `Zeiss' on page 26 undefined on input line 228.
 
-[26 <./Figs/cuantificaciondefectos/espesorfiltro.png> <./Figs/defectosZEISS/his
-tograma15x15.png>]
-<Figs/defectosZEISS/eficienciacuanticacamarazeiss.png, id=487, 399.4925pt x 240
+[26 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
+ctosZEISS/histograma15x15.png>]
+<Figs/defectosZEISS/eficienciacuanticacamarazeiss.png, id=505, 399.4925pt x 240
 .39813pt>
 File: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png Graphic file (type p
 ng)
 <use Figs/defectosZEISS/eficienciacuanticacamarazeiss.png>
 Package pdftex.def Info: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png  
-used on input line 232.
+used on input line 233.
 (pdftex.def)             Requested size: 440.0pt x 264.78723pt.
-<Figs/defectosZEISS/espectrolampZEISSacolor.png, id=488, 545.53813pt x 278.5406
+<Figs/defectosZEISS/espectrolampZEISSacolor.png, id=506, 545.53813pt x 278.5406
 2pt>
 File: Figs/defectosZEISS/espectrolampZEISSacolor.png Graphic file (type png)
 <use Figs/defectosZEISS/espectrolampZEISSacolor.png>
 Package pdftex.def Info: Figs/defectosZEISS/espectrolampZEISSacolor.png  used o
-n input line 241.
+n input line 242.
 (pdftex.def)             Requested size: 440.0pt x 224.65611pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2197) has occurred while \output is active []
 
- [27 <./Figs/defectosZEISS/eficienciacuanticacamarazeiss.png>] [28 <./Figs/defe
-ctosZEISS/espectrolampZEISSacolor.png>]
-<Figs/defectosZEISS/tilebandaroja.png, id=505, 942.01938pt x 115.43124pt>
+ [27 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/eficienciacuanticacamarazeiss.png> <C:/Users/juanr/Documents/master_
+thesis_scratch_and_dig/tesis_tex/Figs/defectosZEISS/espectrolampZEISSacolor.png
+>] [28]
+<Figs/defectosZEISS/tilebandaroja.png, id=520, 942.01938pt x 115.43124pt>
 File: Figs/defectosZEISS/tilebandaroja.png Graphic file (type png)
 <use Figs/defectosZEISS/tilebandaroja.png>
 Package pdftex.def Info: Figs/defectosZEISS/tilebandaroja.png  used on input li
-ne 266.
+ne 267.
 (pdftex.def)             Requested size: 440.0pt x 53.91626pt.
- [29 <./Figs/defectosZEISS/tilebandaroja.png>]
-
-LaTeX Warning: Reference `fig:micczeiss' on page 30 undefined on input line 283
-.
-
-
-LaTeX Warning: Reference `fig:ejnounif' on page 30 undefined on input line 283.
-
-
-<Figs/defectosZEISS/opticalpaths.jpg, id=516, 412.54124pt x 396.48125pt>
+<Figs/defectosZEISS/opticalpaths.jpg, id=526, 412.54124pt x 396.48125pt>
 File: Figs/defectosZEISS/opticalpaths.jpg Graphic file (type jpg)
 <use Figs/defectosZEISS/opticalpaths.jpg>
 Package pdftex.def Info: Figs/defectosZEISS/opticalpaths.jpg  used on input lin
@@ -1896,7 +1894,7 @@ File: Figs/defectosZEISS/opticalpaths.jpg Graphic file (type jpg)
 Package pdftex.def Info: Figs/defectosZEISS/opticalpaths.jpg  used on input lin
 e 286.
 (pdftex.def)             Requested size: 206.27011pt x 198.24013pt.
-<Figs/cuantificaciondefectos/ilumnoun.png, id=521, 371.3875pt x 283.0575pt>
+<Figs/cuantificaciondefectos/ilumnoun.png, id=531, 371.3875pt x 283.0575pt>
 File: Figs/cuantificaciondefectos/ilumnoun.png Graphic file (type png)
 <use Figs/cuantificaciondefectos/ilumnoun.png>
 Package pdftex.def Info: Figs/cuantificaciondefectos/ilumnoun.png  used on inpu
@@ -1908,489 +1906,359 @@ Package pdftex.def Info: Figs/cuantificaciondefectos/ilumnoun.png  used on inpu
 t line 287.
 (pdftex.def)             Requested size: 185.69328pt x 141.5284pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[29 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
+ctosZEISS/tilebandaroja.png>]
+Underfull \vbox (badness 3965) has occurred while \output is active []
 
- [30]
-
-LaTeX Warning: Reference `fig:fondideal' on page 31 undefined on input line 291
-.
-
-
-LaTeX Warning: Reference `fig:fondideal' on page 31 undefined on input line 295
-.
-
-
-LaTeX Warning: Reference `fig:histbgteo' on page 31 undefined on input line 295
-.
-
-
-Underfull \vbox (badness 3108) has occurred while \output is active []
-
- [31 <./Figs/defectosZEISS/opticalpaths.jpg> <./Figs/cuantificaciondefectos/ilu
-mnoun.png (PNG copy)>]
-<Figs/defectosZEISS/bg_teorico.png, id=533, 50.1875pt x 62.73438pt>
+ [30 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/opticalpaths.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_an
+d_dig/tesis_tex/Figs/cuantificaciondefectos/ilumnoun.png (PNG copy)>]
+<Figs/defectosZEISS/bg_teorico.png, id=549, 50.1875pt x 62.73438pt>
 File: Figs/defectosZEISS/bg_teorico.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/bg_teorico.png  used on input line 
-299.
+298.
 (pdftex.def)             Requested size: 142.30754pt x 170.75772pt.
 File: Figs/defectosZEISS/bg_teorico.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/bg_teorico.png  used on input line 
-299.
+298.
 (pdftex.def)             Requested size: 142.30754pt x 170.75772pt.
-<Figs/defectosZEISS/hist_bg_teorico.png, id=534, 128.98187pt x 130.4875pt>
+<Figs/defectosZEISS/hist_bg_teorico.png, id=550, 128.98187pt x 130.4875pt>
 File: Figs/defectosZEISS/hist_bg_teorico.png Graphic file (type png)
 <use Figs/defectosZEISS/hist_bg_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/hist_bg_teorico.png  used on input 
-line 300.
+line 299.
 (pdftex.def)             Requested size: 180.57338pt x 182.68123pt.
 File: Figs/defectosZEISS/hist_bg_teorico.png Graphic file (type png)
 <use Figs/defectosZEISS/hist_bg_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/hist_bg_teorico.png  used on input 
-line 300.
+line 299.
 (pdftex.def)             Requested size: 180.57338pt x 182.68123pt.
-<Figs/defectosZEISS/img_ideal_2defectos.png, id=535, 50.1875pt x 62.73438pt>
+<Figs/defectosZEISS/img_ideal_2defectos.png, id=551, 50.1875pt x 62.73438pt>
 File: Figs/defectosZEISS/img_ideal_2defectos.png Graphic file (type png)
 <use Figs/defectosZEISS/img_ideal_2defectos.png>
 Package pdftex.def Info: Figs/defectosZEISS/img_ideal_2defectos.png  used on in
-put line 308.
+put line 305.
 (pdftex.def)             Requested size: 142.30754pt x 199.21767pt.
 File: Figs/defectosZEISS/img_ideal_2defectos.png Graphic file (type png)
 <use Figs/defectosZEISS/img_ideal_2defectos.png>
 Package pdftex.def Info: Figs/defectosZEISS/img_ideal_2defectos.png  used on in
-put line 308.
+put line 305.
 (pdftex.def)             Requested size: 142.30754pt x 199.21767pt.
-<Figs/defectosZEISS/hist_bg_condefectos_teorico.png, id=536, 137.51375pt x 175.
+<Figs/defectosZEISS/hist_bg_condefectos_teorico.png, id=552, 137.51375pt x 175.
 15437pt>
 File: Figs/defectosZEISS/hist_bg_condefectos_teorico.png Graphic file (type png
 )
 <use Figs/defectosZEISS/hist_bg_condefectos_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/hist_bg_condefectos_teorico.png  us
-ed on input line 309.
+ed on input line 306.
 (pdftex.def)             Requested size: 165.01567pt x 210.18419pt.
 File: Figs/defectosZEISS/hist_bg_condefectos_teorico.png Graphic file (type png
 )
 <use Figs/defectosZEISS/hist_bg_condefectos_teorico.png>
 Package pdftex.def Info: Figs/defectosZEISS/hist_bg_condefectos_teorico.png  us
-ed on input line 309.
+ed on input line 306.
 (pdftex.def)             Requested size: 165.01567pt x 210.18419pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32 <./Figs/defectosZEISS/bg_teorico.png> <./Figs/defectosZEISS/hist_bg_teoric
-o.png>]
-
-LaTeX Warning: Reference `fig:histideal2def' on page 33 undefined on input line
- 313.
-
-
+ [31 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/bg_teorico.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_
+dig/tesis_tex/Figs/defectosZEISS/hist_bg_teorico.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./Figs/defectosZEISS/img_ideal_2defectos.png> <./Figs/defectosZEISS/hist_
-bg_condefectos_teorico.png>]
+ [32 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/img_ideal_2defectos.png> <C:/Users/juanr/Documents/master_thesis_scr
+atch_and_dig/tesis_tex/Figs/defectosZEISS/hist_bg_condefectos_teorico.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 331.
+(hyperref)                removing `\faGithub' on input line 327.
 
-<Figs/defectosZEISS/bg_azul.png, id=552, 234.37563pt x 272.01625pt>
+<Figs/defectosZEISS/bg_azul.png, id=569, 234.37563pt x 272.01625pt>
 File: Figs/defectosZEISS/bg_azul.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_azul.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 337
+Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 335
 .
 (pdftex.def)             Requested size: 210.9361pt x 244.81235pt.
 File: Figs/defectosZEISS/bg_azul.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_azul.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 337
+Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 335
 .
 (pdftex.def)             Requested size: 210.9361pt x 244.81235pt.
-<Figs/defectosZEISS/bg_azul_mean.png, id=553, 232.87pt x 273.52188pt>
+<Figs/defectosZEISS/bg_azul_mean.png, id=570, 232.87pt x 273.52188pt>
 File: Figs/defectosZEISS/bg_azul_mean.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_azul_mean.png>
 Package pdftex.def Info: Figs/defectosZEISS/bg_azul_mean.png  used on input lin
-e 338.
+e 336.
 (pdftex.def)             Requested size: 209.58104pt x 246.1674pt.
 File: Figs/defectosZEISS/bg_azul_mean.png Graphic file (type png)
 <use Figs/defectosZEISS/bg_azul_mean.png>
 Package pdftex.def Info: Figs/defectosZEISS/bg_azul_mean.png  used on input lin
-e 338.
+e 336.
 (pdftex.def)             Requested size: 209.58104pt x 246.1674pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3547) has occurred while \output is active []
 
- [34]
-
-LaTeX Warning: Reference `fig:bgazul' on page 35 undefined on input line 341.
-
-
-LaTeX Warning: Reference `fig:bgazul' on page 35 undefined on input line 343.
-
-
-LaTeX Warning: Reference `fig:comparhists' on page 35 undefined on input line 3
-45.
-
-
-LaTeX Warning: Reference `fig:bgazulmean' on page 35 undefined on input line 34
-5.
-
-<Figs/defectosZEISS/comparhistsmedi.png, id=563, 375.90437pt x 274.52562pt>
+ [33]
+<Figs/defectosZEISS/comparhistsmedi.png, id=583, 375.90437pt x 274.52562pt>
 File: Figs/defectosZEISS/comparhistsmedi.png Graphic file (type png)
 <use Figs/defectosZEISS/comparhistsmedi.png>
 Package pdftex.def Info: Figs/defectosZEISS/comparhistsmedi.png  used on input 
-line 348.
-(pdftex.def)             Requested size: 375.90344pt x 274.52495pt.
-[35 <./Figs/defectosZEISS/bg_azul.png> <./Figs/defectosZEISS/bg_azul_mean.png>]
-
-Underfull \vbox (badness 6125) has occurred while \output is active []
-
- [36 <./Figs/defectosZEISS/comparhistsmedi.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 359.
-
-
-LaTeX Warning: Reference `fig:bgazul' on page 37 undefined on input line 362.
-
-
-LaTeX Warning: Reference `fig:correcilumims' on page 37 undefined on input line
- 364.
-
-
-LaTeX Warning: Reference `fig:correcilumims' on page 37 undefined on input line
- 364.
-
-<Figs/defectosZEISS/correccionilum/NIR/1.png, id=581, 387.94937pt x 277.035pt>
-File: Figs/defectosZEISS/correccionilum/NIR/1.png Graphic file (type png)
-<use Figs/defectosZEISS/correccionilum/NIR/1.png>
-Package pdftex.def Info: Figs/defectosZEISS/correccionilum/NIR/1.png  used on i
-nput line 367.
-(pdftex.def)             Requested size: 426.74562pt x 304.73943pt.
+line 344.
+(pdftex.def)             Requested size: 263.13126pt x 192.16661pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [34 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/bg_azul.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig
+/tesis_tex/Figs/defectosZEISS/bg_azul_mean.png>]
+Underfull \vbox (badness 7064) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:correcilumims' on page 38 undefined on input line
- 372.
+ [35 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/comparhistsmedi.png>]
 
-[38 <./Figs/defectosZEISS/correccionilum/NIR/1.png>]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\faGithub' on input line 353.
 
-LaTeX Warning: Citation `anilfund' on page 39 undefined on input line 388.
+<Figs/defectosZEISS/correccionilum/NIR/1.png, id=602, 387.94937pt x 277.035pt>
+File: Figs/defectosZEISS/correccionilum/NIR/1.png Graphic file (type png)
+<use Figs/defectosZEISS/correccionilum/NIR/1.png>
+Package pdftex.def Info: Figs/defectosZEISS/correccionilum/NIR/1.png  used on i
+nput line 359.
+(pdftex.def)             Requested size: 426.74562pt x 304.73943pt.
+[36 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
+ctosZEISS/correccionilum/NIR/1.png>]
 
+LaTeX Warning: Citation `anilfund' on page 37 undefined on input line 380.
 
-LaTeX Warning: Reference `eq:histexpp' on page 39 undefined on input line 388.
-
-
-LaTeX Warning: Reference `sec:ilumnou' on page 39 undefined on input line 400.
-
-
-LaTeX Warning: Reference `eq:histexpp' on page 39 undefined on input line 400.
-
-
-LaTeX Warning: Reference `fig:defecthi' on page 39 undefined on input line 400.
-
-
-<Figs/defectosZEISS/correccionilum/defectoehist.png, id=593, 352.31625pt x 276.
+[37]
+<Figs/defectosZEISS/correccionilum/defectoehist.png, id=623, 352.31625pt x 276.
 53313pt>
 File: Figs/defectosZEISS/correccionilum/defectoehist.png Graphic file (type png
 )
 <use Figs/defectosZEISS/correccionilum/defectoehist.png>
 Package pdftex.def Info: Figs/defectosZEISS/correccionilum/defectoehist.png  us
-ed on input line 405.
+ed on input line 397.
 (pdftex.def)             Requested size: 352.31538pt x 276.53244pt.
-[39]
-
-LaTeX Warning: Reference `eq:histexpp' on page 40 undefined on input line 410.
+ [38 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/correccionilum/defectoehist.png>]
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 405.
 
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <14.4> no
 t available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 415.
+n input line 405.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 415.
+(hyperref)                removing `\faGithub' on input line 405.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40 <./Figs/defectosZEISS/correccionilum/defectoehist.png>]
-<Figs/resultados_defectos/banda_nir.png, id=612, 711.65875pt x 118.4425pt>
-File: Figs/resultados_defectos/banda_nir.png Graphic file (type png)
-<use Figs/resultados_defectos/banda_nir.png>
-Package pdftex.def Info: Figs/resultados_defectos/banda_nir.png  used on input 
-line 438.
-(pdftex.def)             Requested size: 439.9968pt x 142.26762pt.
-<Figs/resultados_defectos/tabla_nir.png, id=613, 688.5725pt x 180.17313pt>
-File: Figs/resultados_defectos/tabla_nir.png Graphic file (type png)
-<use Figs/resultados_defectos/tabla_nir.png>
-Package pdftex.def Info: Figs/resultados_defectos/tabla_nir.png  used on input 
-line 446.
-(pdftex.def)             Requested size: 440.00194pt x 142.26372pt.
- [41 <./Figs/resultados_defectos/banda_nir.png>]
-<Figs/resultados_defectos/banda_roja.png, id=625, 710.655pt x 90.3375pt>
-File: Figs/resultados_defectos/banda_roja.png Graphic file (type png)
-<use Figs/resultados_defectos/banda_roja.png>
-Package pdftex.def Info: Figs/resultados_defectos/banda_roja.png  used on input
- line 458.
-(pdftex.def)             Requested size: 440.01598pt x 142.27815pt.
-<Figs/resultados_defectos/tabla_roja.png, id=626, 694.09312pt x 181.67876pt>
-File: Figs/resultados_defectos/tabla_roja.png Graphic file (type png)
-<use Figs/resultados_defectos/tabla_roja.png>
-Package pdftex.def Info: Figs/resultados_defectos/tabla_roja.png  used on input
- line 466.
-(pdftex.def)             Requested size: 440.01346pt x 142.26605pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./Figs/resultados_defectos/tabla_nir.png> <./Figs/resultados_defectos/ban
-da_roja.png> <./Figs/resultados_defectos/tabla_roja.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43])
-[44]
-Capítulo 4.
-[45
+LaTeX Warning: Citation `shapi' on page 39 undefined on input line 408.
 
 
-]
-\openout2 = `caps/microesp.aux'.
-
- (caps/microesp.tex [46
+LaTeX Warning: Citation `van2014scikit' on page 39 undefined on input line 410.
 
 
-]
-Capítulo 5.
-[47]
-<Figs/microespectrometro/mapespeccam.jpg, id=671, 4143.48pt x 2330.7075pt>
-File: Figs/microespectrometro/mapespeccam.jpg Graphic file (type jpg)
-<use Figs/microespectrometro/mapespeccam.jpg>
-Package pdftex.def Info: Figs/microespectrometro/mapespeccam.jpg  used on input
- line 32.
-(pdftex.def)             Requested size: 414.37227pt x 233.0844pt.
-<Figs/microespectrometro/b4c.png, id=672, 149.05687pt x 112.42pt>
-File: Figs/microespectrometro/b4c.png Graphic file (type png)
-<use Figs/microespectrometro/b4c.png>
-Package pdftex.def Info: Figs/microespectrometro/b4c.png  used on input line 41
+
+LaTeX Warning: Citation `Lie' on page 39 undefined on input line 415.
+
+
+LaTeX Warning: Citation `Glasmean' on page 39 undefined on input line 415.
+
+
+LaTeX Warning: Citation `otsuu' on page 39 undefined on input line 415.
+
+
+LaTeX Warning: Reference `fig:threshcom' on page 39 undefined on input line 415
 .
-(pdftex.def)             Requested size: 74.52824pt x 56.20985pt.
-<Figs/microespectrometro/mapspectrometrocamera.png, id=673, 827.09pt x 479.2906
-2pt>
-File: Figs/microespectrometro/mapspectrometrocamera.png Graphic file (type png)
-
-<use Figs/microespectrometro/mapspectrometrocamera.png>
-Package pdftex.def Info: Figs/microespectrometro/mapspectrometrocamera.png  use
-d on input line 49.
-(pdftex.def)             Requested size: 413.54398pt x 239.64471pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48 <./Figs/microespectrometro/mapespeccam.jpg> <./Figs/microespectrometro/b4c
-.png>]
-<Figs/microespectrometro/medtransicion.png, id=680, 865.73438pt x 490.83376pt>
-File: Figs/microespectrometro/medtransicion.png Graphic file (type png)
-<use Figs/microespectrometro/medtransicion.png>
-Package pdftex.def Info: Figs/microespectrometro/medtransicion.png  used on inp
-ut line 62.
-(pdftex.def)             Requested size: 432.86613pt x 245.41628pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./Figs/microespectrometro/mapspectrometrocamera.png>]
-<Figs/microespectrometro/cutelog.png, id=686, 963.6pt x 504.38437pt>
-File: Figs/microespectrometro/cutelog.png Graphic file (type png)
-<use Figs/microespectrometro/cutelog.png>
-Package pdftex.def Info: Figs/microespectrometro/cutelog.png  used on input lin
-e 72.
-(pdftex.def)             Requested size: 481.79883pt x 252.19156pt.
-
-Overfull \hbox (41.79883pt too wide) in paragraph at lines 72--73
- [][] 
- []
-
-<Figs/microespectrometro/fincutelog.png, id=687, 963.6pt x 500.36937pt>
-File: Figs/microespectrometro/fincutelog.png Graphic file (type png)
-<use Figs/microespectrometro/fincutelog.png>
-Package pdftex.def Info: Figs/microespectrometro/fincutelog.png  used on input 
-line 80.
-(pdftex.def)             Requested size: 481.79883pt x 250.18407pt.
-
-Overfull \hbox (41.79883pt too wide) in paragraph at lines 80--81
- [][] 
- []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `pericles' on page 39 undefined on input line 415.
 
- [50 <./Figs/microespectrometro/medtransicion.png> <./Figs/microespectrometro/c
-utelog.png>]
-<Figs/microespectrometro/fit0.png, id=694, 1445.4pt x 612.03656pt>
-File: Figs/microespectrometro/fit0.png Graphic file (type png)
-<use Figs/microespectrometro/fit0.png>
-Package pdftex.def Info: Figs/microespectrometro/fit0.png  used on input line 9
+<Figs/defectosZEISS/thresh_comparison.png, id=633, 188.705pt x 155.58125pt>
+File: Figs/defectosZEISS/thresh_comparison.png Graphic file (type png)
+<use Figs/defectosZEISS/thresh_comparison.png>
+Package pdftex.def Info: Figs/defectosZEISS/thresh_comparison.png  used on inpu
+t line 418.
+(pdftex.def)             Requested size: 434.02098pt x 357.83644pt.
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
+available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
+n input line 419.
+[39]
+
+LaTeX Warning: Citation `ridler' on page 40 undefined on input line 423.
+
+
+LaTeX Warning: Citation `triang' on page 40 undefined on input line 423.
+
+
+LaTeX Warning: Citation `yen' on page 40 undefined on input line 423.
+
+
+LaTeX Warning: Reference `fig:threshcom2' on page 40 undefined on input line 42
 3.
-(pdftex.def)             Requested size: 433.62335pt x 183.61238pt.
- [51 <./Figs/microespectrometro/fincutelog.png> <./Figs/microespectrometro/fit0
-.png (PNG copy)>]
-<Figs/microespectrometro/refinacionparam.png, id=702, 286.57062pt x 329.23pt>
-File: Figs/microespectrometro/refinacionparam.png Graphic file (type png)
-<use Figs/microespectrometro/refinacionparam.png>
-Package pdftex.def Info: Figs/microespectrometro/refinacionparam.png  used on i
-nput line 119.
-(pdftex.def)             Requested size: 114.6262pt x 131.68965pt.
-<Figs/microespectrometro/sm1zcambio.jpg, id=703, 4143.48pt x 2330.7075pt>
-File: Figs/microespectrometro/sm1zcambio.jpg Graphic file (type jpg)
-<use Figs/microespectrometro/sm1zcambio.jpg>
-Package pdftex.def Info: Figs/microespectrometro/sm1zcambio.jpg  used on input 
-line 129.
-(pdftex.def)             Requested size: 414.37227pt x 233.0844pt.
 
-Underfull \vbox (badness 4291) has occurred while \output is active []
+<Figs/defectosZEISS/thresh_vivos_compar3.png, id=643, 332.24126pt x 157.08687pt
+>
+File: Figs/defectosZEISS/thresh_vivos_compar3.png Graphic file (type png)
+<use Figs/defectosZEISS/thresh_vivos_compar3.png>
+Package pdftex.def Info: Figs/defectosZEISS/thresh_vivos_compar3.png  used on i
+nput line 427.
+(pdftex.def)             Requested size: 398.6875pt x 188.50328pt.
 
- [52 <./Figs/microespectrometro/refinacionparam.png>] [53 <./Figs/microespectro
-metro/sm1zcambio.jpg>]) [54]
-Capítulo 6.
-[55
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/thresh_comparison.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\faGithub' on input line 440.
 
 
-] [56
+LaTeX Warning: Reference `fig:diagflujoalgor' on page 41 undefined on input lin
+e 443.
 
-]
-Capítulo 7.
-(main.bbl [57] [58
+<Figs/cuantificaciondefectos/diag_flujoalgor.png, id=654, 588.69937pt x 152.068
+13pt>
+File: Figs/cuantificaciondefectos/diag_flujoalgor.png Graphic file (type png)
+<use Figs/cuantificaciondefectos/diag_flujoalgor.png>
+Package pdftex.def Info: Figs/cuantificaciondefectos/diag_flujoalgor.png  used 
+on input line 447.
+(pdftex.def)             Requested size: 470.96013pt x 121.65466pt.
 
-] [59]) [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
- (main.aux (caps/introd.aux) (caps/cap3.aux)
-(caps/microesp.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Overfull \hbox (30.96013pt too wide) in paragraph at lines 447--448
+ [][] 
+ []
+
+<Figs/defectosZEISS/algor_defecs.png, id=655, 275.0275pt x 278.54062pt>
+File: Figs/defectosZEISS/algor_defecs.png Graphic file (type png)
+<use Figs/defectosZEISS/algor_defecs.png>
+Package pdftex.def Info: Figs/defectosZEISS/algor_defecs.png  used on input lin
+e 455.
+(pdftex.def)             Requested size: 412.54024pt x 417.80989pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/thresh_vivos_compar3.png> <C:/Users/juanr/Documents/master_thesis_sc
+ratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/diag_flujoalgor.png>]
+
+LaTeX Warning: Reference `fig:diagflujoalgor' on page 42 undefined on input lin
+e 460.
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 662EC7442BBD10407245F8F5E2CB5B79;2794
-(rerunfilecheck)             After:  4B9EBB02F2F489CE3F766B8074AD6860;3088.
-
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Reference `fig:flujoalgo' on page 42 undefined on input line 460
+.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Reference `fig:flujoalgo' on page 42 undefined on input line 463
+.
 
- )
-(\end occurred inside a group at level 23)
 
-### semi simple group (level 23) entered at line 168 (\begingroup)
-### semi simple group (level 22) entered at line 164 (\begingroup)
-### semi simple group (level 21) entered at line 19 (\begingroup)
-### semi simple group (level 20) entered at line 15 (\begingroup)
-### semi simple group (level 19) entered at line 11 (\begingroup)
-### semi simple group (level 18) entered at line 3 (\begingroup)
-### semi simple group (level 17) entered at line 453 (\begingroup)
-### semi simple group (level 16) entered at line 433 (\begingroup)
-### semi simple group (level 15) entered at line 426 (\begingroup)
-### semi simple group (level 14) entered at line 416 (\begingroup)
-### semi simple group (level 13) entered at line 360 (\begingroup)
-### semi simple group (level 12) entered at line 332 (\begingroup)
-### semi simple group (level 11) entered at line 319 (\begingroup)
-### semi simple group (level 10) entered at line 279 (\begingroup)
-### semi simple group (level 9) entered at line 260 (\begingroup)
-### semi simple group (level 8) entered at line 200 (\begingroup)
-### semi simple group (level 7) entered at line 168 (\begingroup)
-### semi simple group (level 6) entered at line 143 (\begingroup)
-### semi simple group (level 5) entered at line 104 (\begingroup)
-### semi simple group (level 4) entered at line 82 (\begingroup)
-### semi simple group (level 3) entered at line 33 (\begingroup)
-### semi simple group (level 2) entered at line 16 (\begingroup)
-### semi simple group (level 1) entered at line 7 (\begingroup)
-### bottom level 
+LaTeX Warning: Reference `chap:microsp' on page 42 undefined on input line 463.
+
+
+
+Underfull \vbox (badness 1783) has occurred while \output is active []
+
+ [42 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
+ectosZEISS/algor_defecs.png>]
+
+LaTeX Warning: Reference `fig:histalgor' on page 43 undefined on input line 464
+.
+
+<Figs/defectosZEISS/hist_algor_agujero.png, id=673, 259.97125pt x 136.00812pt>
+File: Figs/defectosZEISS/hist_algor_agujero.png Graphic file (type png)
+<use Figs/defectosZEISS/hist_algor_agujero.png>
+Package pdftex.def Info: Figs/defectosZEISS/hist_algor_agujero.png  used on inp
+ut line 468.
+(pdftex.def)             Requested size: 428.94992pt x 224.412pt.
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 469
+.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 469
+.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 473
+.
+
+
+LaTeX Warning: Reference `fig:histalgor' on page 43 undefined on input line 473
+.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 474
+.
+
+
+LaTeX Warning: Citation `scipy' on page 43 undefined on input line 474.
+
+[43 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
+ctosZEISS/hist_algor_agujero.png>]
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 44 undefined on input line 480
+.
+
+
+LaTeX Warning: Reference `sec:iso10110' on page 44 undefined on input line 480.
+
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 44 undefined on input line 480
+.
+
+[44]
+
+LaTeX Warning: Citation `pandas' on page 45 undefined on input line 482.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 485
+.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 489
+.
+
+
+LaTeX Warning: Reference `fig:histalgor' on page 45 undefined on input line 491
+.
+
+
+LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 491
+.
+
+[45]
+
+LaTeX Warning: Reference `chap:microsp' on page 46 undefined on input line 493.
+
+
+
+LaTeX Warning: Reference `sec:scanddig' on page 46 undefined on input line 493.
+
+
+[46]
+! TeX capacity exceeded, sorry [input stack size=5000].
+\Hy@href {->\hyper@normalise 
+                             \href@ {
+l.499 ...es técnicas de \href{\ref{sec:scanddig}}
+                                                  {\textit{scratch \& dig}} ...
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
 Here is how much of TeX's memory you used:
- 31742 strings out of 480900
- 631967 string characters out of 2898321
- 1028931 words of memory out of 3000000
- 46475 multiletter control sequences out of 15000+200000
- 686208 words of font info for 249 fonts, out of 3000000 for 9000
+ 31773 strings out of 480897
+ 633120 string characters out of 2898200
+ 1215101 words of memory out of 3000000
+ 46545 multiletter control sequences out of 15000+200000
+ 690519 words of font info for 259 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,19n,91p,1495b,2831s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{equation.3.0.3} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.3.0.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.3.0.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.61} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.60} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.59} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.50} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.43} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.32} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.21} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.18} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.3.0.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.11} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.
-enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hsy.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
--ec.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
--mathex.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/f
-ontawesome5/fa5brands0.enc}{C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/enc/dvips/lm/lm-rm.enc}<C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/juanr/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/juan
-r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Users/j
-uanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Us
-ers/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C
-:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pf
-b><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6
-.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-mi8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmmi9.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmr10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmr12.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmr6.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmr8.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr9.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmri10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmri9.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmro10.pfb><C:/Users/juanr/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/juanr/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/juanr/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Users/juanr/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/juanr/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/juanr/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/juanr/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/juanr
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/j
-uanr/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (68 pages, 18606812 bytes).
-PDF statistics:
- 883 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 48136 words of extra memory for PDF output out of 51595 (max. 10000000)
-
+ 5000i,19n,8326p,1544b,2393s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
