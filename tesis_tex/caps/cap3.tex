@@ -40,9 +40,9 @@ Los defectos de superficie de un componente óptico pueden estar originados en e
 	\caption{Muestra calibrada de \textit{scratch \& dig} comercializada por la empresa Thorlabs. Adaptado de \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=1427&pn=MOTP-MIL}{\texttt{https://bit.ly/3bPSMYS}}.}
 	\label{fig:scratchanddig}
 \end{figure}
-El \textit{dig number} es el diámetro del defecto más grande permitido en el componente, dado en $1/100$ de milímetros. Por ejemplo, un componente con un \textit{dig number} de 40 implica que los defectos más grandes de la óptica pueden ser de un diámetro de hasta 0.4 mm. Si bien el \textit{dig number} es una cantidad medible experimentalmente con por ejemplo un microscopio, también se utilizan muestras calibradas para determinar el tamaño y cantidad de los defectos (Ver Figura \ref{fig:scratchanddig}). Luego de que un inspector entrenado cuantifica todas las rayaduras y defectos de la óptica con las muestras calibradas, se verifica la calidad óptica del componente de acuerdo a los siguientes criterios:
+El \textit{dig number} es el diámetro del defecto más grande permitido en el componente, dado en $1/100$ de milímetros. Por ejemplo, un componente con un \textit{dig number} de 40 implica que los defectos más grandes de la óptica pueden ser de un diámetro de hasta 0.2 mm. Si bien el \textit{dig number} es una cantidad medible experimentalmente con por ejemplo un microscopio, también se utilizan muestras calibradas para determinar el tamaño y cantidad de los defectos (Ver Figura \ref{fig:scratchanddig}). Luego de que un inspector entrenado cuantifica todas las rayaduras y defectos de la óptica con las muestras calibradas, se verifica la calidad óptica del componente de acuerdo a los siguientes criterios:
 \begin{itemize}
-\item La suma de todas las longitudes de las rayaduras con el \textit{scratch number} (L$_{S_{\#}}$) asociado (máximo valor de brillo permitido) no podrá superar el valor de un cuarto del diámetro ($\Phi$) de la óptica. Si el componente no tuviera una geometría circular, se considera el diámetro de un círculo con un área igual al de la óptica bajo análisis.
+\item La suma de todas las longitudes\footnote{La longitud es medida con una regla metálica (\textit{NIST traceable steel ruler}). En el caso de que la rayadura sea curva, su longitud es estimada por el inspector \cite{Aikens}.} de las rayaduras con el \textit{scratch number} (L$_{S_{\#}}$) asociado (máximo valor de brillo permitido) no podrá superar el valor de un cuarto del diámetro ($\Phi$) de la óptica. Si el componente no tuviera una geometría circular, se considera el diámetro de un círculo con un área igual al de la óptica bajo análisis.
 \begin{equation}
 \sum L_{S_{\#}} < \frac{\Phi}{4}
 \label{eq:snumb}
@@ -128,7 +128,7 @@ Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espect
 \end{center}
 \hspace{0.5cm}Estas especificaciones implican para el caso de la ISO 10110, 5/2x0.063, que en la superficie óptica de \underline{cada banda} puede haber un máximo de 2 defectos de \textit{grade number} igual a 0.063 (63 $\mu m$ de diámetro), que no puede haber defectos con un \textit{grade number} mayor a 0.063 y que el área total máxima cubierta por defectos de \textit{grade number} mayor a 0.04 (diámetro de 40 $\mu m$) puede ser de 7938 $\mu m^{2}$, de acuerdo a \ref{eq:isoarea}. Y, las especificaciones de \textit{scratch \& dig}, S/D 20-10, indican que en cada banda puede haber rayaduras con un brillo calibrado de \textit{scratch number} igual 20 y que la suma de todas las longitudes de las rayaduras del mismo valor de \textit{scratch number} no podrá ser superior al diámetro equivalente de cada banda, de acuerdo a \ref{eq:snumb}. Por último, cada banda del filtro no deberá tener más de 1 defecto de \textit{dig number} igual a 10 (diámetro de 100 $\mu m$)  de acuerdo a \ref{eq:nphi20}\footnote{Las dimensiones de la banda más chica son de 4.2 mm x 27.0 mm con lo cual el diámetro equivalente es de 12.0 mm. El cociente de la Ecuación \ref{eq:nphi20} es igual a 0.6, resultado que se trunca a 1. El resultado final es el mismo para todas las bandas.}  y la suma de los diámetros de todos los defectos no podrá ser superior a los 0.2 mm, de acuerdo a \ref{eq:dmenorig}. 
 
-El proveedor indicó en la hoja de datos que utilizó una \textit{target value} con especificaciones ISO 10110, 5/1x0.04 y de S/D 10-5. El fabricante no aclaró el método de inspección utilizado para garantizar la calidad óptica especificada del filtro de la \underline{normativa ISO 10110}. Ahora bien, el fabricante indica en su página \textit{web} que realiza una inspección visual con muestras calibradas para garantizar la calidad óptica de sus componentes con lo cual en la presente tesis se va a suponer que dicha especificación fue realizada a través de ese método únicamente.
+El fabricante no aclaró el método de inspección utilizado para garantizar la calidad óptica especificada del filtro de la \underline{normativa ISO 10110}. Ahora bien, el fabricante indica en su página \textit{web} que realiza una inspección visual con muestras calibradas para garantizar la calidad óptica de sus componentes con lo cual en la presente tesis se va a suponer que dicha especificación fue realizada a través de ese método únicamente.
 
 Se hace notar que entre las bandas se encuentran unas regiones rectangulares de cromo, de $(0.5 \pm 0.1)mm $ de largo como se muestra en la Figura \ref{fig:dimsfiltr}. El mismo material cubre toda la región del filtro no contenida por las cinco bandas.
 
@@ -154,7 +154,7 @@ Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuent
 	\caption{Montaje del filtro sobre el portamuestras de la platina del microscopio.}
 	\label{fig:filtroenZEISS}
 \end{figure}
-La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y una resolución de 2.3 megapíxeles (1216x1920 píxeles), fue controlada a través del software ZEN 2.5 (\textit{Blue edition}, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio para la configuración utilizada, donde las medidas de 1 píxel equivalen a 0.586 $\mu m$ x 0.586 $\mu m$.  Cada \textit{tile} individual tiene las dimensiones del \textit{field of view} (FOV\footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.}) de la cámara, que son de 713 $\mu m$ x 1125 $\mu m$. 
+La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y una resolución de 2.3 megapíxeles (1216x1920 píxeles), fue controlada a través del software ZEN 2.5 (\textit{Blue edition}, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio para la configuración utilizada, donde 1 píxel equivale a 0.586 $\mu m$.  Cada \textit{tile} individual tiene las dimensiones del \textit{field of view} (FOV\footnote{En castellano es el campo de visión y representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.}) de la cámara, que son de 713 $\mu m$ x 1125 $\mu m$. 
 
 Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Como la cámara tiene otro arreglo óptico que el ocular, el plano focal de la superficie del filtro elegida para medir se encuentra a una distancia distinta entre el objetivo y la muestra. En consecuencia, con las perillas manuales del microscopio se pone en foco la imagen observando la adquisición en vivo en la computadora. 
 
@@ -445,6 +445,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 
 \singlespacing
 \section{Algoritmo de detección y cuantificación de los defectos \href{https://github.com/jrr1984/defects_analysis/blob/master/MAIN/defects_thresholding.py}{\faGithub}}
+\label{sec:secalg}
 \spacing{1.5}
 
 \hspace{0.5cm}En esta sección se explica el algoritmo utilizado para la detección y cuantificación de los defectos del filtro. El diagrama de flujo del algoritmo aplicado se muestra en la Figura \ref{fig:diagflujoalgor}. 
@@ -489,7 +490,7 @@ Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figur
 \hspace{0.5cm}En la imagen binaria con los agujeros tapados, los defectos ya se encontraban segmentados, es decir que los defectos eran regiones aisladas de píxeles blancos conectados entre sí. El método \href{https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label}{\textit{measure.label}} etiqueta a cada uno de los defectos cuyas propiedades son calculadas con el método \href{https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops_table}{\textit{measure.regionprops\_table}} y luego guardadas en un \href{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html}{\textit{DataFrame}} de la librería \textit{pandas}\cite{pandas}\footnote{Un \textit{DataFrame} de \textit{pandas} es una estructura de datos que permite una rápida visualización de los datos como en una planilla de excel y que tiene una gran familia de métodos a su disposición para realizar un análisis cuantitativa de los datos.}. Las propiedades de los defectos calculadas fueron el área y el diámetro equivalente\footnote{Muchas otras propiedades podrían haber sido también calculadas automáticamente pero no fueron necesarias en el presente trabajo (Ver \href{https://github.com/scikit-image/scikit-image/blob/master/skimage/measure/\_regionprops.py\#L643}{\textit{measure.regionprops}}).}:
 \begin{itemize}
 \justifying
-\item El área fue calculada a partir del número de píxeles totales que conforman al defecto, siendo un píxel la menor unidad homogénea en color que forma parte de una imagen digital. Así por ejemplo el defecto más grande de la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo} estaba formado por 15068 píxeles. De acuerdo a la calibración del microscopio 1 píxel cuadrado equivale a 0.586 $\mu m$ x 0.586 $\mu m$, con lo cual 15068 píxeles = 15068 . $(0.568 \mu m)^{2}$ = 5174.29 $\mu m^{2}$.
+\item El área fue calculada a partir del número de píxeles totales que conforman al defecto, siendo un píxel la menor unidad homogénea en color que forma parte de una imagen digital. Así por ejemplo el defecto más grande de la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo} estaba formado por 15068 píxeles. De acuerdo a la calibración del microscopio el área de 1 píxel equivale a 0.586 $\mu m$ x 0.586 $\mu m$, con lo cual 15068 píxeles = 15068 . $(0.568 \mu m)^{2}$ = 5174.29 $\mu m^{2}$.
 \item El diámetro equivalente consiste en el diámetro de un círculo con la misma área calculada en el paso anterior. Igualando dicha área con el área de un círculo, $\pi . (\frac{diametro}{2})^{2}$, se obtiene el diámetro equivalente.
 \end{itemize} 
 
@@ -500,7 +501,7 @@ Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figur
 \hspace{0.5cm}Ahora bien, se detectaron los agujeros para poder ubicarlos espacialmente en el filtro de forma tal de poder caracterizar a los agujeros espectralmente como se explica en el Capítulo \ref{chap:microsp}. Esto es, para cada agujero detectado se conocen sus coordenadas en la imagen que fue hallado y como al mismo tiempo se conoce la posición de cada imagen individual en el barrido completo de una banda, se determinan las coordenadas del agujero en el filtro. Este \textit{feature} del algoritmo permite rápidamente descartar un filtro si no cumple con las especificaciones técnicas requeridas por la aplicación del usuario final y resulta independiente del inspector de turno del filtro como en el caso de la aplicación de la métrica de \textit{scratc \& dig} (Ver Sección \ref{sec:scanddig}).
 
 \item \texttt{\textit{measure\_holes}} A partir de la imagen segmentada de los agujeros se repite el proceso implementado en el paso del algoritmo \texttt{\textit{measure\_defects}}: se etiquetan a los agujeros y se mide su área y su diámetro equivalente. Dichos resultados son concatenados al \textit{DataFrame} de pandas.
-\item \texttt{\textit{pd.DataFrame}.} Los resultados de los defectos en general y de los agujeros contenidos en un \textit{DataFrame} son exportados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que fue manipulado utilizando el entorno interactivo de \href{https://ipython.org/notebook.html}{\textit{IPython Notebook}}. Por último, con el método \textit{morphology.remove\_small\_objects} se puede elegir el tamaño de los defectos a incluir en el análisis definitivo dependiendo de la aplicación del usuario final y de la especificación técnica a ser verificada.
+\item \texttt{\textit{pd.DataFrame}.} Los resultados con las incertezas asociadas(Ver Sección \ref{sec:incertt}) de los defectos en general y de los agujeros contenidos en un \textit{DataFrame} son exportados en un archivo \textit{pickle}\footnote{Con el módulo \textit{pickle} de python se puede serializar cualquier tipo de objeo de python y guardarse en un archivo \textit{pickle}, de extensión .pkl, que resulta muy eficiente tanto en su escritura como en su lectura.} que fue manipulado utilizando el entorno interactivo de \href{https://ipython.org/notebook.html}{\textit{IPython Notebook}}. Por último, con el método \textit{morphology.remove\_small\_objects} se puede elegir el tamaño de los defectos a incluir en el análisis definitivo dependiendo de la aplicación del usuario final y de la especificación técnica a ser verificada.
 \end{enumerate}
 
 A continuación se muestran los resultados del algoritmo de detección de los defectos de superficie en general y su discusión considerando las especificaciones técnicas de \textit{scratch \& dig} y de la ISO 10110 (Secciones \ref{sec:scanddig} y \ref{sec:iso10110} respectivamente). Luego se muestran los resultados de la detección de los agujeros y posteriormente se hace un análisis de los errores asociados a las dimensiones de los defectos detectados a partir del algoritmo.
@@ -512,9 +513,6 @@ A continuación se muestran los resultados del algoritmo de detección de los de
 
 \hspace{0.5cm}En esta sección se describen los resultados del algoritmo de detección de los defectos de superficie en general sin discriminar su tipo. Se muestran los resultados cuantitativos de los defectos de cada banda y el análisis de las dos especificaciones técnicas consideradas.
 
-Tomar defectos de un tamaño mínimo de 5 píxeles
-
-ni tampoco conocer las condiciones experimentales utilizadas por el fabricante en el control de calidad de forma tal de realizar el análisis en las mismas condiciones y que en consecuencia dicho análisis pueda considerarse válido.
 
 A continuación se muestran los resultados de la aplicación de las normativas de \textit{scratch \& dig} y de la ISO 10110, bajo ciertas condiciones. Como se explicó en la Sección \ref{sec:carfilt} el fabricante no especificó el método de inspección utilizado para garantizar las especificaciones ópticas de calidad de la normativa ISO 10110 indicadas en la hoja de datos. Se va a \underline{suponer} que el fabricante realizó únicamente una inspección visual del filtro\footnote{El método de inspección visual es el único método de control de calidad reportado en la página web del fabricante.} para asegurar la calidad óptica especificada y que utilizó muestras calibradas de comparación para cada normativa.
 
@@ -522,29 +520,28 @@ A continuación se muestran los resultados de la aplicación de las normativas d
 \subsection{Aplicación de la métrica \textit{scratch \& dig}}
 \spacing{1.5}
 
-\hspace{0.5cm}El fabricante del filtro indicó en la hoja de datos que los números de \textit{scratch \& dig} \underline{para cada banda} del filtro son: S/D 20-10. La especificación del \textit{scratch number} lamentablemente no pudo ser verificada en la presente tesis por no contar con muestras calibradas de \textit{scratchs} y por no haberse desarrollado un algoritmo que permita distinguir las rayaduras del resto de los defectos en las imágenes microscópicas. Este algoritmo hubiese permitido medir tan sólo el largo de las rayaduras pero no así el nivel de brillo asociado a un cierto \textit{scratch number} que se obtiene bajos ciertas condiciones experimentales especificadas en la normativa. Existen equipos comerciales que pueden reproducir estas condiciones experimentales en las que los inspectores realizan el control de calidad de los \textit{scratchs} como por ejemplo el \textit{SavvyInspectorTM SIF-4} de la empresa \textit{Savvy Optics Corp.} y el \textit{ARGOS2} de la empresa \textit{Dioptic}. Ahora bien, como la determinación del \textit{scratch number} suele ser ambigua (Ver \ref{fig:samplescratchs}) dicho valor no fue caracterizado en la presente tesis. Además, con el equipo desarrollado que se explica en el Capítulo \ref{chap:microsp} se podrían analizar los efectos de la presencia de rayaduras en el proceso de formación de imágenes de las cámaras hiperespectrales que utilizan fiiltros como el analizado en este trabajo.
+\hspace{0.5cm}El fabricante del filtro indicó en la hoja de datos que los números de \textit{scratch \& dig} \underline{para cada banda} del filtro son: S/D 20-10. La especificación del \textit{scratch number} lamentablemente no pudo ser verificada en la presente tesis por no contar con muestras calibradas de \textit{scratchs} y por no haberse desarrollado un algoritmo que permita distinguir las rayaduras del resto de los defectos en las imágenes microscópicas. Este algoritmo hubiese permitido medir tan sólo el largo de las rayaduras pero no así el nivel de brillo asociado a un cierto \textit{scratch number} que se obtiene bajos ciertas condiciones experimentales especificadas en la normativa. Existen equipos comerciales que pueden reproducir estas condiciones experimentales en las que los inspectores realizan el control de calidad de los \textit{scratchs} como por ejemplo el \textit{SavvyInspectorTM SIF-4} de la empresa \textit{Savvy Optics Corp.} y el \textit{ARGOS2} de la empresa \textit{Dioptic}. Ahora bien, como la determinación del \textit{scratch number} suele ser ambigua (Ver \ref{fig:samplescratchs}) dicho valor no fue caracterizado en la presente tesis. Además, con el equipo desarrollado que se explica en el Capítulo \ref{chap:microsp} se podrían analizar los efectos de la presencia de rayaduras en el proceso de formación de imágenes de las cámaras hiperespectrales que utilizan fiiltros como el analizado en este trabajo, lo que constituiría una caracterización del defecto y establecer en consecuencia una métrica específica de este tipo de aplicaciones.
 
 
-De acuerdo al \textit{dig number} igual a 10, \underline{cada banda} del filtro no debería tener más de 1 defecto de \textit{dig number} igual a 10, es decir de diámetro máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20}) y la suma de los diámetros de todos los defectos no debería ser superior a 0.4 mm (de acuerdo a \ref{eq:dmenorig}). La primera condición se cumple como se desprende de los diámetros máximos ($d_{máx}$) de los defectos encontrados en cada banda: ninguno supera los $100 \mu m$ de diámetro (Ver Tabla \ref{tabress}). Ahora bien, la segunda condición no se cumple pues cada uno de los valores de la columna de la Tabla \ref{tabress}, $|\sum d |$, superan los $0.2 mm$ y por ende la suma también. Se hace notar que el control de calidad de la métrica de \textit{scratch \& dig} suele ser realizada por un inspector entrenado que utiliza muestras calibradas (Ver Figura \ref{fig:scratchanddig}) para la determinación y conteo de los \textit{digs} por lo que las condiciones experimentales no son las mismas (Ver \href{https://bit.ly/34cLMTk}{\faYoutubeSquare}).
+De acuerdo al \textit{dig number} igual a 10, \underline{cada banda} del filtro no debería tener más de 1 defecto de \textit{dig number} igual a 10, es decir de diámetro máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20}) y la suma de los diámetros de todos los defectos no debería ser superior a 0.2 mm (de acuerdo a \ref{eq:dmenorig}). La primera condición se cumple como se desprende de los diámetros máximos ($d_{máx}$) de los defectos encontrados en cada banda: ninguno supera los $100 \mu m$ de diámetro (Ver Tabla \ref{tabress}). Ahora bien, la segunda condición no se cumple pues  el valor de la columna $|\sum d |$ de la Tabla \ref{tabress} supera los $0.2 mm$. No obstante, no se podría aseverar que el filtro no debería (de acuerdo a \ref{})y por ende la suma también. Se hace notar que el control de calidad de la métrica de \textit{scratch \& dig} suele ser realizada por un inspector entrenado que utiliza muestras calibradas (Ver Figura \ref{fig:scratchanddig}) para la determinación y conteo de los \textit{digs} por lo que las condiciones experimentales no son las mismas (Ver \href{https://bit.ly/34cLMTk}{\faYoutubeSquare}).
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ |c|c|c|c| }    \toprule
 \texttt{Banda} & \texttt{\# de defectos} & \texttt{$d_{máx}$} & \texttt{$\sum d$}\\\midrule
-\rowcolor{blue!15} Azul    & 8723  & 81.17 $\mu m$ & 32.18 mm   \\ 
+\rowcolor{blue!15} Azul    & 4 & $(81 \pm 6)\mu m$ & $(232 \pm 7)\mu m$   \\ 
 \rowcolor{green!50} Verde  & 0 & - & - \\ 
-Pancromática& 1 & 51.43$\mu m$ & 51.43$\mu m$  \\
-\rowcolor{red!50} Rojo & 0 & -  & -  \\
+Pancromática& 1 & $(51 \pm 2)\mu m$ & $(51 \pm 2)\mu m$  \\
+\rowcolor{red!50} Roja & 0 & -  & -  \\
 \rowcolor{maroon!20} NIR & 0 & -  & - \\
 \bottomrule
  \hline
 \end{tabular}
 \end{center}
- \captionof{table}{Tabla de los resultados del algoritmo relevantes para la aplicación de la métrica de \textit{scratch \& dig}. La columna $|\texttt{ \# de defectos}|$ contiene el número de defectos de diámetro mayor al mínimo \textit{dig number} de la normativa que es igual a 5 (50 $\mu m$ de diámetro máximo).  La columna  $|d_{máx}|$ indica el valor del diámetro máximo de los defectos detectado. Por último, la columna $|\sum d|$ indica la suma de los diámetros de los defectos con \textit{dig number} mayor a 5 encontrados.}
+ \captionof{table}{Tabla de los resultados del algoritmo relevantes para la aplicación de la métrica de \textit{scratch \& dig}. La columna $|\texttt{ \# de defectos}|$ contiene el número de defectos de diámetro mayor al mínimo \textit{dig number} de la normativa que es igual a 5 (50 $\mu m$ de diámetro máximo), considerando las incertezas. La columna  $|d_{máx}|$ indica el valor del diámetro máximo de los defectos detectado. Por último, la columna $|\sum d|$ indica la suma de los diámetros de los defectos con \textit{dig number} mayor a 5 encontrados, considerando las incertezas.}
  \label{tabress}
  \end{table}
- 
- 
+
 \singlespacing
 \subsection{Aplicación de la normativa ISO 10110}
 \spacing{1.5}
@@ -583,7 +580,39 @@ Pancromática & 0 & - \\
 \end{center}
 \end{table}
 
+
+\singlespacing
+\section{Resultados del algoritmo de detección de los agujeros}
+\spacing{1.5}
+
+\hspace{0.5cm} En la s
+
+
+\singlespacing
+\section{Asociación de incertezas a los resultados del algoritmo}
+\spacing{1.5}
+
+\hspace{0.5cm} El diámetro \underline{mínimo} de un defecto detectable debe ser, de acuerdo al Teorema de Nyquist-Shannon, mayor ó igual que el doble del poder de resolución(R) del microscopio que viene dado por el Criterio de Rayleigh (fuente de luz incoherente) y que es igual a:
+\begin{equation}
+R = \frac{0.61 \hspace{2pt} \lambda}{2 . N.A.}
+\end{equation},
+donde $\lambda$ es la longitud de onda de la fuente de luz utilizada, que en este caso fue una fuente de luz blanca por lo que $\lambda = 0.55 \mu m$. y, N.A. es la apertura numérica del objetivo que fue de 0.25. En consecuencia, la resolución óptica del microscopio estimada teóricamente fue de 1.34$\mu m$. De esta manera el diámetro del mínimo defecto detectable fue igual a 2 x 1.34$\mu m = 2.68 \mu m \sim \underline{3 \mu m}$, donde se aproximó el resultado puesto que se trata de un límite teórico y para establecer la precisión de todos los resultados adquiridos con el algoritmo. De acuerdo a la calibración del microscopio cada píxel equivale a 0.586$\mu m$, con lo cual el diámetro del defecto más chico detectable medido en cantidad de píxeles fue de 5 píxeles (5 x 0.586$\mu m$ = 2.94$\mu m \sim$ 3$\mu m$). Este criterio resultó muy fácil de implementar en el algoritmo por medio del método \textit{morphology.remove\_small\_objects} eligiendo el tamaño del mínimo defecto a detectar en el argumento \textit{min\_size} de la función.
+
+El error principal del algoritmo en la detección de los defectos y en consecuencia en la determinación del diámetro equivalente  y área de los mismos consistió en la precisión con la que se determinó el borde de cada defecto. Esto último depende fuertemente del grado de contraste de la transición de los valores de intensidad en la imagen desde el borde del defecto hasta el fondo de la imagen que lo rodea \cite{quentin}. Para cuantificar este error se realizó una variación del umbral de intensidad que distinguía a los defectos del fondo de la imagen. La variación del valor del \textit{threshold} fue del 10\% para todas las imágenes de cada banda. A partir del valor de umbral modificado, el proceso de segmentación y determinación de las propiedades de los defectos resultó el mismo que con el valor de umbral original. El criterio de elección del porcentaje de variación del umbral consistió en que se tenía que obtener la misma cantidad de defectos que con el umbral original de forma tal de poder calcular el error de forma automatizada. Esto al mismo tiempo aseguraba que dicha variación no fuera tan grande como para que el algoritmo no pudiera segmentar dos defectos muy cercanos ó por otro lado dejar de detectar ciertos
+defectos. En la Figura \ref{fig:bordedefe} se muestra una región con un defecto (Imagen \texttt{a)}) y las imágenes binarias del \textit{threshold} original y de su variación superpuestas (Imagen \texttt{b)}). En la Imagen \texttt{c)} de la misma figura se muestra un \textit{zoom} sobre uno de los bordes del defecto donde los píxeles de color rosa están asociado a la imagen binaria generada con el \textit{theshold} original y los píxeles de color violeta están asociados a la variación de dicha umbral.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.2]{Figs/cuantificaciondefectos/erroresborde.png}
+\caption{\texttt{a)} Región de una imagen normalizada con un defecto.\texttt{b)} Imágenes binarias superpuestas del umbral original y de su variación para cuantificar el error cometido. \texttt{c)} Zoom sobre uno de los bordes del defecto.}
+\label{fig:bordedefe}
+\end{figure}
+
+En el ejemplo de la Figura \ref{fig:bordedefe} se obtuvo un defecto con un área que para el umbral original estuvo compuesta por 2793 píxeles (959$\mu m^{2}$) y para su variación el área fue de 2640 píxeles (906$\mu m^{2}$). El diámetro equivalente fue de 35$\mu m$ y 34$\mu m$ respectivamente. En todos los resultados de diámetros y áreas de defectos detectados con el algoritmo explicado en la sección \ref{sec:secalg}, se reportó el resultado obtenido con el umbral original y se asoció como incerteza la diferencia entre el valor obtenido con el umbral y su variación. Así por ejemplo, el defecto de la Figura \ref{fig:bordedefe} tuvo un diámetro de $(35 \pm 1) \mu m$.
+
+A continuación se describe la construcción y montaje del equipo desarrollado en la presente tesis para caracterizar espectralmente a los defectos definidos en este capítulo como agujeros ó huecos (Ver Figura  \ref{fig:huecoazul}) y manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}).
+
 En el Capítulo 3 se realizó una descripción cuantitativa de los defectos: se determinó su tamaño, área, la cantidad de defectos presentes en cada banda. Este tipo de análisis de los defectos sigue la línea de las especificaciones técnicas de \textit{scratch \& dig} y la ISO 10110 en cuanto a que no realizan un análisis cualitativo de los defectos. En el presente trabajo se montó un microespectrómetro para caracterizar espectralmente los defectos. Esto es,
+
 
 \vspace{1cm}
 \todo[inline]{Eventualmente la seccion caracteristicas del filtro va en la introd?}
@@ -645,16 +674,13 @@ En el Capítulo 3 se realizó una descripción cuantitativa de los defectos: se 
 \todo[inline]{Falta: poner siempre la barrita de la escala en las imágenes}
 \vspace{1cm}
 
-\singlespacing
-\section{Asociación de incertezas y conteo de falsos negativos}
-\spacing{1.5}
 
-\hspace{0.5cm} El diámetro \underline{mínimo} de un defecto detectable debe ser mayor que el poder de resolución(R) del microscopio que viene dado por la fórmula teórica de Ernst Abbe y que es igual a:
 
-\begin{equation}
-R = \frac{\lambda}{2 . N.A.}
-\end{equation},
-donde $\lambda$ es la longitud de onda de la fuente de luz utilizada, que en este caso fue una fuente de luz blanca por lo que $\lambda = 0.55 \mu m$. y, N.A. es la apertura numérica del objetivo que fue de 0.25. En consecuencia, la resolución fue de 1.10$\mu m$. Además, considerando que el defecto mínimo detectable por el algoritmo debe ocupar por lo menos una longitud de 5 píxeles \cite{quentin} y que cada píxel de acuerdo a la calibración del microscopio es igual a 0.586 $\mu m$, se tiene que dicho diámetro es igual a \underline{3 $\mu m$}.
+
+
+
+
+
 
 
 
