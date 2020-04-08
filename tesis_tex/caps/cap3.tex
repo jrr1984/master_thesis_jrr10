@@ -207,7 +207,7 @@ Para realizar el barrido completo de cada superficie se verificó en las cuatro 
 	\caption{Histograma de la intensidad de los píxeles de la cámara del barrido de la superficie exterior A del filtro que se observa en el software ZEN del microscopio.}
 	\label{fig:histograma15x15}
 \end{figure}
-Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature, no era posible obtener una imagen de esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{axiozeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión centrada en el ultravioleta y con una fuerte componente del espectro visible pero de relativa poca intensidad en la región del NIR, como se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs. 
+Se hace notar que la banda del NIR no pudo ser adquirida en el barrido completo de las superficies exteriores del filtro pues con los valores de intensidad de la lámpara y del tiempo de adquisición de la cámara fijados para que ninguna de las bandas del filtro sature, no era posible obtener una imagen de esa banda. Si bien la cámara tiene un rango de sensibilidad espectral comprendido entre los 350 nm y los 1000 nm de acuerdo a su hoja de datos \cite{axiozeiss}, del gráfico de la eficiencia cuántica\footnote{La eficiencia cuántica, en inglés \textit{Quantum efficiency} (QE), es una medida precisa de la sensibilidad de un dispositivo fotosensible que permite determinar como es la respuesta del dispositivo para cada longitud de onda.} se desprende que para la región espectral del NIR tiene una eficiencia cuántica menor al 30\% (Ver Figura \ref{fig:eficienciacuanticamara}). A esto se le suma el hecho de que la fuente de luz tiene un espectro de emisión centrada en el ultravioleta y con una fuerte componente del espectro visible pero de relativa poca intensidad en la región del NIR, como se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espectrolamparazeiss}. Dicho espectro fue medido con el espectrómetro CCS200 de Thorlabs y se hace notar que dicha fuente de luz es utilizada con muestras biológicas. Como criterio de diseño y construcción de un equipo de microscopía para inspeccionar los filtros como el analizado en el presente trabajo, se debería considerar idealmente una fuente de luz infrarroja y una cámara con una respuesta espectral específica de dicha región del espectro. Y, para el resto de las bandas se podría utilizar una fuente de luz de banda ancha en la región del espectro visible como la que se utilizó en el montaje del equipo desarrollado que se explica en el Capítulo \ref{chap:microsp}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/eficienciacuanticacamarazeiss.png}
@@ -490,8 +490,8 @@ Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figur
 \hspace{0.5cm}En la imagen binaria con los agujeros tapados, los defectos ya se encontraban segmentados, es decir que los defectos eran regiones aisladas de píxeles blancos conectados entre sí. El método \href{https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label}{\textit{measure.label}} etiqueta a cada uno de los defectos cuyas propiedades son calculadas con el método \href{https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops_table}{\textit{measure.regionprops\_table}} y luego guardadas en un \href{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html}{\textit{DataFrame}} de la librería \textit{pandas}\cite{pandas}\footnote{Un \textit{DataFrame} de \textit{pandas} es una estructura de datos que permite una rápida visualización de los datos como en una planilla de excel y que tiene una gran familia de métodos a su disposición para realizar un análisis cuantitativa de los datos.}. Las propiedades de los defectos calculadas fueron el área y el diámetro equivalente\footnote{Muchas otras propiedades podrían haber sido también calculadas automáticamente pero no fueron necesarias en el presente trabajo (Ver \href{https://github.com/scikit-image/scikit-image/blob/master/skimage/measure/\_regionprops.py\#L643}{\textit{measure.regionprops}}).}:
 \begin{itemize}
 \justifying
-\item El área fue calculada a partir del número de píxeles totales que conforman al defecto, siendo un píxel la menor unidad homogénea en color que forma parte de una imagen digital. Así por ejemplo el defecto más grande de la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo} estaba formado por 15068 píxeles. De acuerdo a la calibración del microscopio el área de 1 píxel equivale a 0.586 $\mu m$ x 0.586 $\mu m$, con lo cual 15068 píxeles = 15068 . $(0.568 \mu m)^{2}$ = 5174.29 $\mu m^{2}$.
-\item El diámetro equivalente consiste en el diámetro de un círculo con la misma área calculada en el paso anterior. Igualando dicha área con el área de un círculo, $\pi . (\frac{diametro}{2})^{2}$, se obtiene el diámetro equivalente.
+\item El área fue calculada a partir del número de píxeles totales que conforman al defecto, siendo un píxel la menor unidad homogénea en color que forma parte de una imagen digital. Así por ejemplo el defecto más grande de la imagen \texttt{c)} de la Figura \ref{fig:flujoalgo} estaba formado por 15068 píxeles. De acuerdo a la calibración del microscopio el área de 1 píxel equivale a 0.586 $\mu m$ x 0.586 $\mu m$, con lo cual 15068 píxeles = 15068 . $(0.586 \mu m)^{2} \sim 5174 \mu m^{2}$, con una incerteza asociada de 160 $\mu m^{2}$ (Ver Sección \ref{sec:incert}).
+\item El diámetro equivalente consiste en el diámetro de un círculo con la misma área calculada en el paso anterior. Igualando dicha área con el área de un círculo, $\pi . (\frac{diametro}{2})^{2}$, se obtiene el diámetro equivalente. Por ejemplo el defecto de la Figura \ref{fig:flujoalgo} tuvo un diámetro de $(81 \pm 6) \mu m$.
 \end{itemize} 
 
 \item \texttt{Holes Binary Image}. La imagen binaria de los agujeros segmentados (Ver Imagen \texttt{d)} de la Figura \ref{fig:flujoalgo}) fue generada a partir de tomar la diferencia entre la imagen binaria de los agujeros tapados y la imagen binaria de los defectos. Dicha forma de segmentar los agujeros como objetos matriciales cuyo borde son unos y el interior son ceros resultó ser la forma más eficiente para no obtener una gran cantidad de falsos positivos (detección de agujeros que en realidad no lo son). Con este método el máximo número de agujeros encontrado en una banda fue de 12 con lo cual la verificación de los falsos positivos del método se realiza rápidamente observando visualmente las imágenes en las que fueron detectados. 
@@ -576,27 +576,26 @@ Pancromática& 65 & $(51 \pm 1)\mu m$ & $(28786 \pm 61)\mu m^{2}$  \\
 
 De acuerdo a las especificaciones técnicas de la ISO 10110 (Ver Sección \ref{sec:iso10110}), 5/2x0.063,  en la superficie óptica de \underline{cada banda} del filtro puede haber un máximo de 2 defectos de \textit{grade number} igual a 0.063 (63 $\mu m$ de diámetro)\texttt{(i)}, no puede haber defectos con un \textit{grade number} mayor a 0.063\texttt{(ii)} y, el área total máxima cubierta por defectos de \textit{grade number} mayor ó igual al mínimo valor especificado por el fabricante puede ser de 7938 $\mu m^{2}$, de acuerdo a \ref{eq:isoarea} \texttt{(iii)}. La condición \texttt{(i)} es superada por todas las bandas si se considera al defecto de diámetro máximo de la banda azul como un agujero como se discutió anteriormente y como se puede observar en los valores de la columna $|\texttt{d$_{máx}$}|$ de la Tabla \ref{tabISO} que muestran el diámetro máximo de los defectos detectados de cada banda con \textit{grade number} mayor a 0.016 ($16 \mu m$ de diámetro).La condición \texttt{(ii)} sería igualmente superada pero la condición \texttt{(iii)} no es superada en ninguna de las bandas como se desprende de los valores de la columna $| Área_{defectos}|$  que muestra el área cubierta por los defectos relevantes.
 
-
 El método de control de calidad del filtro presentado en este capítulo podría ser compatible con el control de calidad del fabricante bajo la normativa ISO 10110. Para ello, debería establecerse un acuerdo en las condiciones experimentales bajo las que se indican las especificaciones de calidad de la superficie óptica entre las partes. Más aún, parte del presente trabajo consistió en el desarrollo de una nueva métrica para establecer qué defectos son permitidos, su tamaño máximo,etc., en función de las consecuencias que tienen los defectos en el proceso de formación de imágenes.
 
 A continuación se muestran los resultados de la segmentación de los agujeros del filtro que permitió ubicarlos espacialmente para poder caracterizarlos espectralmente con el equipo desarrollado que se explica en el Capítulo \ref{chap:microsp}. Luego se muestran todos los defectos en general del filtro considerados detectables, de acuerdo a la resolución del microscopio y al Teorema de muestreo de Nyquist-Shannon, de un diámetro mínimo de $3 \mu m$. Estos resultados permitirían a futuro elegir con cierto criterio la magnificación de un microscopio a desarrollar y el tamaño del sensor de la cámara ó del diámetro de la fibra óptica de un espectrómetro del mismo equipo para determinar el área de adquisición (FOV en el caso de la cámara) y el diámetro del defecto mínimo detectable.
 
 \singlespacing
-\section{Resultados del algoritmo de detección de los agujeros}
+\subsection{Resultados del algoritmo de detección de los agujeros}
 \label{sec:aguj}
 \spacing{1.5}
 
-\hspace{0.5cm} En la Tabla \ref{tabaguj} se muestran los resultados principales del algoritmo de detección de los agujeros del filtro.
+\hspace{0.5cm} En la Tabla \ref{tabaguj} se muestran los resultados principales del algoritmo de detección de los agujeros del filtro. Como se explicó anteriormente la detección de los agujeros permitió ubicarlos espacialmente para poder caracterizarlos espectralmente individualmente a cada uno (Ver Capítulo \ref{chap:microsp}).
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ |c|c|c|}    \toprule
 \texttt{Banda} & \texttt{\# de agujeros} & \texttt{$d_{máx}$ agujeros} \\\midrule
-\rowcolor{blue!15} Azul   & 12  & 36.82 $\mu m$  \\ 
-\rowcolor{green!50} Verde  & 3 & 11.24 $\mu m$ \\ 
+\rowcolor{blue!15} Azul   & 12  & $(37 \pm 1) \mu m$  \\ 
+\rowcolor{green!50} Verde  & 3 & $(11 \pm 1) \mu m$ \\ 
 Pancromática & 0 & - \\
-\rowcolor{red!50} Rojo  & 3 & 9.16 $\mu m$ \\
-\rowcolor{maroon!20} NIR   & 2 & 6.84 $\mu m$ \\
+\rowcolor{red!50} Rojo  & 3 & $(9 \pm 1) \mu m$ \\
+\rowcolor{maroon!20} NIR   & 1 & $(6 \pm 1) \mu m$ \\
 \bottomrule
  \hline
 \end{tabular}
@@ -604,6 +603,45 @@ Pancromática & 0 & - \\
  \captionof{table}{Tabla de los resultados del algoritmo de detección de los agujeros.}
  \label{tabaguj}
 \end{table}
+
+En la Figura \ref{fig:aggjj} se muestran las imágenes normalizadas originales que contienen a los agujeros más grandes de la banda NIR (\texttt{i)}) y de la banda verde (\texttt{iii}). En las imágenes \texttt{ii)} y \texttt{iv)} se muestran los resultados del algoritmo de detección de los agujeros respectivamente y se observa que el algoritmo es capaz de diferenciar a los agujeros en color verde del resto de los defectos tipo manchas en color violeta.
+ \begin{figure}[H]
+\centering
+\includegraphics[scale=1.1]{Figs/cuantificaciondefectos/agujerross.png}
+\caption{\texttt{i)} Imagen normalizada de la banda NIR con el agujero de diámetro máximo detectado igual a$(6 \pm 1) \mu m$. \texttt{ii)} Imagen binaria de la banda NIR generada a partir del algoritmo de la imagen \texttt{i)}. \texttt{iii)} Imagen normalizada de la banda verde con el agujero de diámetro máximo detectado igual a$(11 \pm 1) \mu m$. \texttt{iv)} Imagen binaria de la banda verde generada a partir del algoritmo de la imagen \texttt{iii)}}
+\label{fig:aggjj}
+\end{figure}
+
+A continuación se muestra la población de defectos en general detectada en el filtro y luego para finalizar el capítulo se detalla la asociación de incertezas a los resultados reportados.
+
+\singlespacing
+\subsection{Población de defectos detectados en general}
+\label{sec:incert}
+\spacing{1.5}
+
+\hspace{0.5cm}Los resultados de esta sección así como la determinación del diámetro de los agujeros fueron fundamentales para elegir los componentes del equipo de inspección desarrollado que se explica en el Capítulo \ref{chap:microsp} y para el desarrollo de cualquier otro equipo alternativo.
+
+En la Tabla \ref{} se muestran algunos resultados representativos y cuantitativos de la población de defectos en general incluyendo a los agujeros.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ |c|c|c|}    \toprule
+\texttt{Banda} & \texttt{\# de agujeros} & \texttt{$d_{máx}$ agujeros} \\\midrule
+\rowcolor{blue!15} Azul   & 12  & $(37 \pm 1) \mu m$  \\ 
+\rowcolor{green!50} Verde  & 3 & $(11 \pm 1) \mu m$ \\ 
+Pancromática & 0 & - \\
+\rowcolor{red!50} Rojo  & 3 & $(9 \pm 1) \mu m$ \\
+\rowcolor{maroon!20} NIR   & 1 & $(6 \pm 1) \mu m$ \\
+\bottomrule
+ \hline
+\end{tabular}
+\end{center}
+ \captionof{table}{Tabla de los resultados del algoritmo de detección de los agujeros.}
+ \label{tabpobb}
+\end{table}
+
+La Tabla \ref{tabpobb} podría ser incluida en una hoja de datos del componente generada por parte del usuario del filtro y que podría determinar bajo algún criterio a desarrollar si el filtro supera las especificaciones de calidad propias de la aplicación
+
 
 
 \singlespacing
