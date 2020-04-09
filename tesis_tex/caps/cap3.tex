@@ -523,29 +523,31 @@ A continuación se muestran los resultados de la aplicación de las normativas d
 \hspace{0.5cm}El fabricante del filtro indicó en la hoja de datos que los números de \textit{scratch \& dig} \underline{para cada banda} del filtro son: S/D 20-10. La especificación del \textit{scratch number} lamentablemente no pudo ser verificada en la presente tesis por no contar con muestras calibradas de \textit{scratchs} y por no haberse desarrollado un algoritmo que permita distinguir las rayaduras del resto de los defectos en las imágenes microscópicas. Este algoritmo hubiese permitido medir tan sólo el largo de las rayaduras pero no así el nivel de brillo asociado a un cierto \textit{scratch number} que se obtiene bajos ciertas condiciones experimentales especificadas en la normativa. Existen equipos comerciales que pueden reproducir estas condiciones experimentales en las que los inspectores realizan el control de calidad de los \textit{scratchs} como por ejemplo el \textit{SavvyInspectorTM SIF-4} de la empresa \textit{Savvy Optics Corp.} y el \textit{ARGOS2} de la empresa \textit{Dioptic}. Ahora bien, como la determinación del \textit{scratch number} suele ser ambigua (Ver \ref{fig:samplescratchs}) dicho valor no fue caracterizado en la presente tesis. Además, con el equipo desarrollado que se explica en el Capítulo \ref{chap:microsp} se podrían analizar los efectos de la presencia de rayaduras en el proceso de formación de imágenes de las cámaras hiperespectrales que utilizan fiiltros como el analizado en este trabajo, lo que constituiría una caracterización del defecto y establecer en consecuencia una métrica específica de este tipo de aplicaciones.
 
 
-De acuerdo al \textit{dig number} igual a 10, \underline{cada banda} del filtro no debería tener más de 1 defecto de \textit{dig number} igual a 10, es decir de diámetro máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20})(\texttt{(i)}) y la suma de los diámetros de todos los defectos de cada banda no debería ser superior a 0.2 mm (de acuerdo a \ref{eq:dmenorig})(\texttt{(ii)}). La primera(\texttt{(i)}) condición se cumple como se desprende de los diámetros máximos ($d_{máx}$) de los defectos encontrados en cada banda: ninguno supera los $100 \mu m$ de diámetro (Ver Tabla \ref{tabress}). La segunda \texttt{(ii)} condición se cumple para todas las bandas a excepción de la banda azul pues su valor de la columna $|\sum d |$ de la Tabla \ref{tabress} supera los $0.2 mm$. Sería un poco arriesgado decir que el filtro no cumple en consecuencia las especificaciones del \textit{dig number}  indicadas por el fabricante ya que el control de calidad no fue realizado en las mismas condiciones experimentales\footnote{Se hace notar que el control de calidad de la métrica de \textit{scratch \& dig} debe ser realizado vía inspección visual utilizando muestras calibradas (Ver Figura \ref{fig:scratchanddig}) (Ver \href{https://bit.ly/34cLMTk}{\faYoutubeSquare}).} y fue analizado un tiempo considerable después de que el cliente recibió el filtro originalmente.
-\begin{table}[H]
+De acuerdo al \textit{dig number} igual a 10, \underline{cada banda} del filtro no debería tener más de 1 defecto de \textit{dig number} igual a 10, es decir de diámetro máximo de 100 $\mu m$  (de acuerdo a \ref{eq:nphi20})(\texttt{(i)}) y la suma de los diámetros de todos los defectos de cada banda no debería ser superior a 0.2 mm (de acuerdo a \ref{eq:dmenorig})(\texttt{(ii)}). La primera(\texttt{(i)}) condición se cumple como se desprende de los diámetros máximos ($d_{máx}$) de los defectos encontrados en cada banda: ninguno supera los $100 \mu m$ de diámetro (Ver Tabla \ref{tabress}). La segunda \texttt{(ii)} condición se cumple para todas las bandas a excepción de la banda azul pues su valor de la columna $|\sum d |$ de la Tabla \ref{tabress} supera los $0.2 mm$. Sería un poco arriesgado decir que el filtro no cumple en consecuencia las especificaciones del \textit{dig number}  indicadas por el fabricante ya que el control de calidad no fue realizado en las mismas condiciones experimentales\footnote{Se hace notar que el control de calidad de la métrica de \textit{scratch \& dig} debe ser realizado vía inspección visual utilizando muestras calibradas (Ver Figura \ref{fig:scratchanddig}) (Ver \href{https://bit.ly/34cLMTk}{\faYoutubeSquare}).}.
+
+Más aún, en la Figura \ref{fig:deffd} se muestra el defecto de diámetro máximo detectado en la banda azul igual a $(81 \pm 6) \mu m$, en color violeta. En la imagen normalizada \texttt{a)} se muestra dicho defecto y en la imagen binaria \texttt{b)} se muestra al defecto segmentado con el umbral original y con el umbral original modificado utilizado para cuantificar las incertezas (Ver Sección \ref{sec:incert}) para este defecto detectado como defecto en general (color violeta) y como agujero (color verde). Como en esta clase de defectos denominados agujeros el error cometido por el algoritmo en la determinación del área y diámetro era mucho mayor a las incertezas consideradas, se los segmentó especialmente como se explicó en el proceso 6. \texttt{Holes Binary Image} de la Sección \ref{sec:secalg} y como se muestra en la Sección \ref{sec:aguj}. Este defecto considerado como agujero fue detectado con un diámetro de $(37 \pm 1)\mu m$, es decir con una diferencia del 46\%. Y, en consecuencia si se hubiese considerado el diámetro de este defecto igual al diámetro detectado como agujero sí cumpliría la condición \texttt{(ii)} ya que la suma de los diámetros de los defectos en ese caso sería igual a $(188 \pm 8) \mu m$, con lo cual eventualmente superaría el control de calidad de la métrica. En cualquier caso, este no es el centro de la discusión de los resultados sino más bien la cuantificación y caracterización de los defectos para comenzar a desarrollar una nueva métrica de la calidad de una superficie óptica específica del sector industrial de cámaras hiper y multiespectrales utilizadas en satélites. Lo que permite la aplicación de esta métrica y de la ISO 10110, es establecer puntos en común con el proveedor, conocer sus especificaciones para poder estar en condiciones de discutir la nueva métrica a desarrollar.
+ 
+ \begin{table}[H]
 \begin{center}
 \begin{tabular}{ |c|c|c|c| }    \toprule
-\texttt{Banda} & \texttt{\# de defectos} & \texttt{$d_{máx}$} & \texttt{$\sum d$}\\\midrule
+\texttt{Banda} & \texttt{\# de defectos} & \texttt{d$_{máx}$} & $\sum$ \texttt{d}\\\midrule
 \rowcolor{blue!15} Azul    & 4 & $(81 \pm 6)\mu m$ & $(232 \pm 7)\mu m$   \\ 
 \rowcolor{green!50} Verde  & 0 & - & - \\ 
-Pancromática& 1 & $(51 \pm 1)\mu m$ & $(51 \pm 1)\mu m$  \\
+Pancromática& 1 & $(51 \pm 2)\mu m$ & $(51 \pm 2)\mu m$  \\
 \rowcolor{red!50} Roja & 0 & -  & -  \\
 \rowcolor{maroon!20} NIR & 0 & -  & - \\
 \bottomrule
  \hline
 \end{tabular}
 \end{center}
- \captionof{table}{Tabla de los resultados del algoritmo relevantes para la aplicación de la métrica de \textit{scratch \& dig}. La columna $|\texttt{ \# de defectos}|$ contiene el número de defectos de diámetro mayor al mínimo \textit{dig number} de la normativa que es igual a 5 (50 $\mu m$ de diámetro máximo), considerando las incertezas. La columna  $|d_{máx}|$ indica el valor del diámetro máximo de los defectos detectado. Por último, la columna $|\sum d|$ indica la suma de los diámetros de los defectos con \textit{dig number} mayor a 5 encontrados, considerando las incertezas.}
+ \captionof{table}{Tabla de los resultados del algoritmo relevantes para la aplicación de la métrica de \textit{scratch \& dig}. La columna $|\texttt{ \# de defectos}|$ contiene el número de defectos de diámetro mayor al mínimo \textit{dig number} de la normativa que es igual a 5 (50 $\mu m$ de diámetro máximo), considerando las incertezas. La columna  $|d_{máx}|$ indica el valor del diámetro máximo de los defectos detectado. Por último, la columna $|\sum \texttt{d}|$ indica la suma de los diámetros de los defectos con \textit{dig number} mayor a 5 encontrados, considerando las incertezas.}
  \label{tabress}
  \end{table}
  
- Más aún, en la Figura \ref{fig:deffd} se muestra el defecto de diámetro máximo detectado en la banda azul igual a $(81 \pm 6) \mu m$, en color violeta. En la imagen normalizada \texttt{a)} se muestra dicho defecto y en la imagen binaria \texttt{b)} se muestra al defecto segmentado con el umbral original y con el umbral original modificado utilizado para cuantificar las incertezas (Ver Sección \ref{sec:incert}) para este defecto detectado como defecto en general (color violeta) y como agujero (color verde). Como en esta clase de defectos denominados agujeros el error cometido por el algoritmo en la determinación del área y diámetro era mucho mayor a las incertezas consideradas, se los segmentó especialmente como se explicó en el proceso 6. \texttt{Holes Binary Image} de la Sección \ref{sec:secalg} y como se muestra en la Sección \ref{sec:aguj}. Este defecto considerado como agujero fue detectado con un diámetro de $(37 \pm 1)\mu m$, es decir con una diferencia del 46\%. Y, en consecuencia si se hubiese considerado el diámetro de este defecto igual al diámetro detectado como agujero sí cumpliría la condición \texttt{(ii)} con lo cual superaría el control de calidad de la métrica. En cualquier caso, este no es el centro de la discusión de los resultados sino más bien la cuantificación y caracterización de los defectos para comenzar a desarrollar una nueva métrica de la calidad de una superficie óptica específica del sector industrial de cámaras hiper y multiespectrales utilizadas en satélites.
  \begin{figure}[H]
 \centering
 \includegraphics[scale=1.1]{Figs/cuantificaciondefectos/agujdefectocompar.png}
-\caption{Defecto de diámetro máximo detectado en la banda azul igual a $(81 \pm 6) \mu m$.\texttt{a)} Región de una imagen normalizada del defecto más grande de la banda azul. \texttt{b)} Imagen binaria del defecto segmentado con el umbral original y con el umbral original modificado utilizado para cuantificar las incertezas (Ver Sección \ref{sec:incert}). }
+	\caption{Defecto de diámetro máximo detectado en la banda azul igual a $(81 \pm 6) \mu m$.\texttt{a)} Región de una imagen normalizada del defecto más grande de la banda azul. \texttt{b)} Imagen binaria del defecto segmentado con el umbral original y con el umbral original modificado utilizado para cuantificar las incertezas (Ver Sección \ref{sec:incert}). }
 \label{fig:deffd}
 \end{figure}
  
@@ -560,10 +562,10 @@ Pancromática& 1 & $(51 \pm 1)\mu m$ & $(51 \pm 1)\mu m$  \\
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ |c|c|c|c| }    \toprule
-\texttt{Banda} & \texttt{\# de defectos} & \texttt{$d_{máx}$} & \texttt{$Área_{defectos}$}\\\midrule
+\texttt{Banda} & \texttt{\# de defectos} & \texttt{d$_{máx}$} & \texttt{Área$_{defectos}$}\\\midrule
 \rowcolor{blue!15} Azul    & 115 & $(81 \pm 6)\mu m$ & $(71488 \pm 583)\mu m^{2}$   \\ 
 \rowcolor{green!50} Verde  & 42 &  $(35 \pm 2)\mu m$ &  $(18117 \pm 248) \mu m^{2}$\\ 
-Pancromática& 65 & $(51 \pm 1)\mu m$ & $(28786 \pm 61)\mu m^{2}$  \\
+Pancromática& 65 & $(51 \pm 2)\mu m$ & $(28786 \pm 61)\mu m^{2}$  \\
 \rowcolor{red!50} Roja & 47 &  $(44 \pm 2)\mu m$ &   $(19798 \pm 210 )\mu m^{2}$ \\
 \rowcolor{maroon!20} NIR & 44 & $(25 \pm 1) \mu m$  & $(11891 \pm 35 )\mu m^{2}$ \\
 \bottomrule
@@ -574,7 +576,7 @@ Pancromática& 65 & $(51 \pm 1)\mu m$ & $(28786 \pm 61)\mu m^{2}$  \\
  \label{tabISO}
 \end{table}
 
-De acuerdo a las especificaciones técnicas de la ISO 10110 (Ver Sección \ref{sec:iso10110}), 5/2x0.063,  en la superficie óptica de \underline{cada banda} del filtro puede haber un máximo de 2 defectos de \textit{grade number} igual a 0.063 (63 $\mu m$ de diámetro)\texttt{(i)}, no puede haber defectos con un \textit{grade number} mayor a 0.063\texttt{(ii)} y, el área total máxima cubierta por defectos de \textit{grade number} mayor ó igual al mínimo valor especificado por el fabricante puede ser de 7938 $\mu m^{2}$, de acuerdo a \ref{eq:isoarea} \texttt{(iii)}. La condición \texttt{(i)} es superada por todas las bandas si se considera al defecto de diámetro máximo de la banda azul como un agujero como se discutió anteriormente y como se puede observar en los valores de la columna $|\texttt{d$_{máx}$}|$ de la Tabla \ref{tabISO} que muestran el diámetro máximo de los defectos detectados de cada banda con \textit{grade number} mayor a 0.016 ($16 \mu m$ de diámetro).La condición \texttt{(ii)} sería igualmente superada pero la condición \texttt{(iii)} no es superada en ninguna de las bandas como se desprende de los valores de la columna $| Área_{defectos}|$  que muestra el área cubierta por los defectos relevantes.
+De acuerdo a las especificaciones técnicas de la ISO 10110 (Ver Sección \ref{sec:iso10110}), 5/2x0.063,  en la superficie óptica de \underline{cada banda} del filtro puede haber un máximo de 2 defectos de \textit{grade number} igual a 0.063 (63 $\mu m$ de diámetro)\texttt{(i)}, no puede haber defectos con un \textit{grade number} mayor a 0.063\texttt{(ii)} y, el área total máxima cubierta por defectos de \textit{grade number} mayor ó igual al mínimo valor especificado por el fabricante puede ser de 7938 $\mu m^{2}$, de acuerdo a \ref{eq:isoarea} \texttt{(iii)}. La condición \texttt{(i)} es superada por todas las bandas si se considera al defecto de diámetro máximo de la banda azul como un agujero como se discutió anteriormente y como se puede observar en los valores de la columna $|\texttt{d$_{máx}$}|$ de la Tabla \ref{tabISO} que muestran el diámetro máximo de los defectos detectados de cada banda con \textit{grade number} mayor a 0.016 ($16 \mu m$ de diámetro). Esto es así puesto que el defecto de segundo diámetro máximo detectado fue de $(52 \pm 2) \mu m$. La condición \texttt{(ii)} sería igualmente superada pero la condición \texttt{(iii)} no es superada en ninguna de las bandas como se desprende de los valores de la columna $| Área_{defectos}|$  que muestra el área cubierta por los defectos relevantes.
 
 El método de control de calidad del filtro presentado en este capítulo podría ser compatible con el control de calidad del fabricante bajo la normativa ISO 10110. Para ello, debería establecerse un acuerdo en las condiciones experimentales bajo las que se indican las especificaciones de calidad de la superficie óptica entre las partes. Más aún, parte del presente trabajo consistió en el desarrollo de una nueva métrica para establecer qué defectos son permitidos, su tamaño máximo,etc., en función de las consecuencias que tienen los defectos en el proceso de formación de imágenes.
 
@@ -590,7 +592,7 @@ A continuación se muestran los resultados de la segmentación de los agujeros d
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ |c|c|c|}    \toprule
-\texttt{Banda} & \texttt{\# de agujeros} & \texttt{$d_{máx}$ agujeros} \\\midrule
+\texttt{Banda} & \texttt{\# de agujeros} & \texttt{d$_{máx}$ agujeros} \\\midrule
 \rowcolor{blue!15} Azul   & 12  & $(37 \pm 1) \mu m$  \\ 
 \rowcolor{green!50} Verde  & 3 & $(11 \pm 1) \mu m$ \\ 
 Pancromática & 0 & - \\
@@ -621,28 +623,40 @@ A continuación se muestra la población de defectos en general detectada en el 
 
 \hspace{0.5cm}Los resultados de esta sección así como la determinación del diámetro de los agujeros fueron fundamentales para elegir los componentes del equipo de inspección desarrollado que se explica en el Capítulo \ref{chap:microsp} y para el desarrollo de cualquier otro equipo alternativo.
 
-En la Tabla \ref{} se muestran algunos resultados representativos y cuantitativos de la población de defectos en general incluyendo a los agujeros.
+En la Tabla \ref{tabpobb} se muestran los resultados representativos y cuantitativos de la población de defectos en general detectados de diámetro mayor a los $3\mu m$ incluyendo a los agujeros.
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{ |c|c|c|}    \toprule
-\texttt{Banda} & \texttt{\# de agujeros} & \texttt{$d_{máx}$ agujeros} \\\midrule
-\rowcolor{blue!15} Azul   & 12  & $(37 \pm 1) \mu m$  \\ 
-\rowcolor{green!50} Verde  & 3 & $(11 \pm 1) \mu m$ \\ 
-Pancromática & 0 & - \\
-\rowcolor{red!50} Rojo  & 3 & $(9 \pm 1) \mu m$ \\
-\rowcolor{maroon!20} NIR   & 1 & $(6 \pm 1) \mu m$ \\
+\begin{tabular}{ |c|c|c|c|c|c|}    \toprule
+\texttt{Banda} &  \texttt{\# defectos} & \texttt{d$_{máx}$ defectos} & \texttt{\% Área$_{defectos}$} & \texttt{\# agujeros} & \texttt{d$_{máx}$ agujeros} \\\midrule
+\rowcolor{blue!15} Azul   & 5443 & $(81 \pm 6) \mu m$ & 0.14 \% &12  & $(37 \pm 1) \mu m$  \\ 
+\rowcolor{green!50} Verde  & 2209 & $(35 \pm 2) \mu m$ & 0.07 \% &3 & $(11 \pm 1) \mu m$\\ 
+Panc. & 2065 & $(51 \pm 2) \mu m$ & 0.09 \% &0 & -\\
+\rowcolor{red!50} Rojo  & 1405  &$(44 \pm 2) \mu m$& 0.06 \% &3 & $(9 \pm 1) \mu m$\\
+\rowcolor{maroon!20} NIR   & 1552 & $(25 \pm 1) \mu m$ & 0.04 \% &1 & $(6 \pm 1) \mu m$ \\ \midrule
+Total   & 12674 & $(81 \pm 6) \mu m$ & 0.08 \% & 19 & $(37 \pm 1) \mu m$ \\
 \bottomrule
  \hline
 \end{tabular}
 \end{center}
- \captionof{table}{Tabla de los resultados del algoritmo de detección de los agujeros.}
+ \captionof{table}{Tabla de los resultados representativos del algoritmo de detección de los defectos. La columna $| \texttt{\# de defectos}|$ muestra el número de defectos de diámetro mayor a $3 \mu m$. Este diámetro mínimo fue elegido considerando la resolución del microscopio y el Teorema de muestreo de Nyquist-Shannon (Ver Sección \ref{sec:incert}). La columna $|\texttt{d$_{máx}$ defectos}|$ indica el diámetro máximo de los defectos detectados. La columna $|\texttt{\% Área$_{defectos}$}|$ indica el porcentaje aproximado del área total de cada banda cubierta por defectos. El área total de cada banda considerada fue igual al área adquirida en el \textit{tile scan}. La fila $|Total|$ resume los resultados de las cinco bandas: número total de defecto, diámetro máximo de los defectos detectados, porcentaje de área total (de la suma de las áreas de las 5 bandas) cubierta por los defectos, número de agujeros y diámetro máximo de los agujeros detectados.}
  \label{tabpobb}
 \end{table}
 
-La Tabla \ref{tabpobb} podría ser incluida en una hoja de datos del componente generada por parte del usuario del filtro y que podría determinar bajo algún criterio a desarrollar si el filtro supera las especificaciones de calidad propias de la aplicación
+Determinar la causa de la presencia de los defectos y de los agujeros en el filtro, que podría deberse por ejemplo a alguna etapa del proceso de construcción, no fue uno de los objetivos de la presente tesis sino más bien la cuantificación de los mismos y, como se explica en el Capítulo \ref{chap:microsp}, su caracterización de acuerdo a su espectro de transmisión. Al mismo tiempo, resulta inevitable que entre los defectos detectados haya partículas de polvo y otras suciedades en general dado que esta inspección no fue realizada en una sala limpia.  Ahora bien, si el método propuesto en este capítulo se desarrollara industrialmente, la Tabla \ref{tabpobb} podría ser incluida en una hoja de datos del filtro y a partir de su análisis se podría determinar bajo algún criterio a desarrollar en conjunto con el proveedor, si el filtro supera las especificaciones de calidad propias de la aplicación en cámaras hiper y multiespectrales utilizadas en satélites. 
 
+En la Figura \ref{fig:boxpl} se muestra el \textit{boxplot}(también llamado \textit{box-and-whisker plot}) de la distribución de los valores del diámetro de los defectos. La mediana de dicha distribución, es decir el valor del percentil 50, fue igual a $4\mu m$, lo que indica que el 50\% de los defectos tuvieron un diámetro de $3 \mu m$. El percentil 75 fue igual a $5 \mu m$, es decir que el 75\% de los defectos detectados fueron de un diámetro de 3 y 4 micrones.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{Figs/cuantificaciondefectos/boxplotdefectos.png}
+\caption{Boxplot del diámetro de los defectos de diámetro mayor ó igual a 3 $\mu m$.}
+\label{fig:boxpl}
+\end{figure}
+
+A partir de los resultados de la distribución del diámetro de los defectos, se decidió diseñar el microespectrómetro que se explica en el Capítulo \ref{chap:microsp} con una resolución óptica lateral capaz de detectar defectos de diámetro mínimo igual a 20$\mu m$, es decir que se decidió caracterizar a la gran mayoría de los defectos que aparecen como \textit{outliers} en el boxplot de la Figura \ref{fig:boxpl}. Los \textitt{outliers} son todos los defectos de diámetro mayor al valor del cuarto percentil de la muestra de los datos y que en el gráfico está indicado por la barra vertical a la derecha del \textit{box}.
+
+En la última sección de este capítulo se explica como se asociaron las incertezas a los diámetros y áreas de los defectos y agujeros detectados.
 
 \singlespacing
 \section{Asociación de incertezas a los resultados del algoritmo}
@@ -666,8 +680,6 @@ El error principal del algoritmo en la detección de los defectos y en consecuen
 En el ejemplo de la Figura \ref{fig:bordedefe} se obtuvo un defecto con un área que para el umbral original estuvo compuesta por 2793 píxeles (959$\mu m^{2}$) y para su variación el área fue de 2640 píxeles (906$\mu m^{2}$). El diámetro equivalente fue de 35$\mu m$ y 34$\mu m$ respectivamente. En todos los resultados de diámetros y áreas de defectos detectados con el algoritmo explicado en la sección \ref{sec:secalg}, se reportó el resultado obtenido con el umbral original y se asoció como incerteza la diferencia entre el valor obtenido con el umbral y su variación. Así por ejemplo, el defecto de la Figura \ref{fig:bordedefe} tuvo un diámetro de $(35 \pm 1) \mu m$.
 
 A continuación se describe la construcción y montaje del equipo desarrollado en la presente tesis para caracterizar espectralmente a los defectos definidos en este capítulo como agujeros ó huecos (Ver Figura  \ref{fig:huecoazul}) y manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}).
-
-
 
 
 \vspace{1cm}
