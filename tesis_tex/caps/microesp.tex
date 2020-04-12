@@ -3,37 +3,88 @@
 \label{chap:microsp}
 \spacing{1.5}
 
-\hspace{0.5cm}En este capítulo se describe el montaje y la caracterización de un microespectrómetro utilizado para caracterizar espectralmente los defectos del filtro.
+\hspace{0.5cm}En el Capítulo \ref{chap:zeiss} se realizó una descripción cuantitativa de los defectos: se determinó su área, su diámetro equivalente, la cantidad de defectos presentes en cada banda, etc. Dicho análisis permitió entender las especificaciones técnicas de \textit{scratch \& dig} y de la ISO 10110, lo que resulta fundamental para establecer las bases de futuros acuerdos con los fabricantes de los componentes ópticos. Al mismo tiempo, los resultados de la población de defectos en general [\ref{sec:defpob}] detectados con el algoritmo permitieron establecer los criterios de diseño óptico del microespectrómetro que se explica en el presente capítulo.
 
-The MSP is a hyphenated instrument that integrates a light microscope
-with a UV–vis–NIR spectrophotometer. The spectrophotometer
-measures the intensity of various wavelengths of light from the ultraviolet
-through the visible and NIR regions. The microscope is an imaging tool
-designed to enlarge an image of microscopic objects so that they may be studied
-easily. Integrated as the UV–vis–NIR MSP, such a device can acquire
-absorbance, reflectance, and emission spectra with sampling areas on the
-micron scale.
+Como se explicó en el Capítulo \ref{chap:introd}, un microespectrómetro es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro. En este capítulo se describe la construcción y montaje de un microespectrómetro que permitió realizar una caracterización de las propiedades ópticas del filtro y de sus defectos a través de los espectros de transmisión [\ref{sec:montcontmsp}]. En la Sección \ref{sec:prot0} muestran las características del primer prototipo desarrollado con equipamiento disponible en el laboratorio. Dicho prototipo en conjunto con los resultados y análisis del Capítulo \ref{chap:zeiss} permitieron establecer los criterios de elección de la fuente de luz y del espectrómetro [\ref{sec:fteluzyesp}], determinar la longitud del recorrido y la precisión mínima necesaria de la platina que se desarrolló [\ref{sec:platina}] y la resolución óptica necesaria del microscopio desarrollado para caracterizar los defectos de diámetro mayores a 20$\mu m$ de diámetro [\ref{sec:disop}]. Luego se explica el proceso de montaje y alineación preliminar del microespectrómetro [\ref{sec:montalin}] así como su puesta en foco y la determinación de la resolución espacial [\ref{sec:focoresol}]. Posteriormente se explica la integración de una cámara web al microespectrómetro lo que permitió la adquisición simultánea de imágenes digitales y de espectros de transmisión y cuya área de adquisición fue elegida con un \textit{joystick} y visualizada en vivo a través de una interfaz gráfica [\ref{sec:camwebgui}].
 
-The user also needs to visualize the sample measurement area as part of a
-larger field of view. This is done by having the entrance aperture of the spectrophotometer
-in the same focal plane as the sample image.
-
-By combining the magnification capabilities of a microscope with the spectral analysis capabilities of a spectrophotometer, microspectrophotometers acquire transmission and reflectance spectra in the UV through near-IR region of samples on the micron scale or smaller, and can even be configured to measure fluorescence and luminescence spectra.
-
-The microspectrophotometer is a hybrid instrument that integrates the magnifying power of a microscope with a spectrophotometer. These microspectroscopy instruments are used to measure molecular spectra of microscopic samples, or microscopic features of large-scale samples, from the deep ultraviolet (UV) to the near infrared (NIR). Depending upon the configuration, the microspectrophotometer can measure absorbance, reflectance, and the emission spectra—such as fluorescence—of sub-micron-sized sample areas. With the addition of specialized algorithms, the microspectrophotometer can also measure the thickness of thin films or act as a colorimeter for microscopic samples.
-
-En el Capítulo 3 se realizó una descripción cuantitativa de los defectos: se determinó su tamaño, área, la cantidad de defectos presentes en cada banda. Este tipo de análisis de los defectos sigue la línea de las especificaciones técnicas de \textit{scratch \& dig} y la ISO 10110 en cuanto a que no realizan un análisis cualitativo de los defectos. En el presente trabajo se montó un microespectrómetro para caracterizar espectralmente los defectos. Esto es,
+Asimismo, se muestran los resultados de los espectros de transmisión de cada banda del filtro y su comparación con la hoja de datos reportada por el fabricante [\ref{sec:espectransm}]. Finalmente, se muestran los resultados de la caracterización espectral de los defectos denominados manchas ó defectos de transmisión [\ref{sec:defctma}] y de los agujeros ó huecos [\ref{sec:defctag}].
 
 \singlespacing
-\section{Diseño óptico del microespectrómetro}
+\section{Prototipo 0 \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/tree/master/barrido/std}{\faGithub}}
+\label{sec:prot0}
+\spacing{1.5}
+
+\hspace{0.5cm}El desarrollo del prototipo 0 que se muestra en esta sección permitió por un lado establecer los criterios de elección de la fuente de luz y del recorrido y la precisión necesarias de la platina desarrollada para poder adquirir el espectro e imágenes del filtro completo. Como buena práctica de prototipado de instrumentos de medición se utilizaron componentes y equipamiento disponibles en el laboratorio, es decir que no se incurrió en gastos adicionales de dinero a excepción del costo del material de las impresiones 3D del soporte del filtro. Por otro lado, a partir del desarrollo del software automatizado de adquisición y de visualización de los resultados de este prototipo se establecieron las características deseadas y esperadas del prototipo final desarrollado. De esta manera, el prototipo permitió establecer la factibilidad del desarrollo del equipo.
+
+Como objetivo general se propuso desarrollar un sistema integral de caracterización de filtros ópticos de interferencia utilizados en cámaras hiper y multiespectrales. Inicialmente se propusieron tres objetivos específicos:
+\begin{enumerate}
+\item Desarrollar un sistema automatizado de adquisición del espectro de transmisión de cada una de las bandas del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/thorlabs\_step\_motors\_ZST213B/tree/master/barrido/std}{\faGithub}
+
+\item Determinar un mapa hiperespectral ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/spectral_gui/main.py}{\faGithub}
+
+\item Integrar un sistema de detección y caracterización de los defectos del filtro.
+\end{enumerate}
+
+A continuación se describen de forma resumida los primeros dos objetivos que fueron abarcados por el prototipo 0 descripto en esta sección. Respecto del primer objetivo, se montó el arreglo experimental que se muestra en las Figuras \ref{fig:setup0}, \ref{fig:setup01} y \ref{fig:setup02}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\caption{Arreglo experimental del prototipo 0.}
+	\label{fig:setup0}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.073]{Figs/microespectrometro/montajesetup0.jpg}}{\caption{Vista lateral del montaje del filtro sobre el soporte que se encuentra atornillado con unos tornillos M6 a la plataforma motorizada de Thorlabs.}\label{fig:setup01}}
+		\ffigbox{\includegraphics[scale=0.073]{Figs/microespectrometro/5.jpg}}{\caption{El filtro se mueve en los ejes $\textit{x}$ e $\textit{y}$. La fuente de luz y la fibra del espectrómetro se encuentran inmóviles. }\label{fig:setup02}}
+	\end{floatrow}
+\end{figure}
+
+Con una fuente de luz halógena, modelo \href{https://dolan-jenner.com/products/fiber-lite-190}{\textit{Fiber-lite 190 Illuminator}}, se incidió perpendicularmente sobre el filtro y su transmisión fue detectada por la fibra óptica de un espectrómetro modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS 200/M} de la empresa Thorlabs (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/syst/CCS200.py}{\faGithub}). De la misma manera en que se realizó el \textit{Tile Scan} del filtro completo con el microscopio Zeiss explicado en la sección \ref{subs:tilsc} (Ver Figura \ref{fig:tilescan}), se desplazó el filtro a lo largo del eje x, barriendo en `filas' y realizando el desplazamiento vertical en los extremos del máximo recorrido de los tornillos accionados por los motores paso a paso que fue de 13 mm. Dicho desplazamiento fue realizado con una plataforma de tres grados de libertad, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=MT3/M}{MT3/M} de la empresa Thorlabs, cuyos tornillos micrométricos fueron intercambiados por unos motores paso a paso modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=ZST213B}{ZST213B} cuyos controladores fueron también de la empresa Thorlabs, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=KST101}{KST101} (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/barrido/std/thor_stepm.py}{\faGithub}). Como las dimensiones de la región comprendida por las cinco bandas del filtro es de 27 mm x 25 mm, con esta plataforma no se pudo realizar una adquisición del filtro completa en una sola configuración como la propuesta. El \textit{software} automatizado de adquisición del espectro de transmisión del filtro desarrollado para este prototipo [\href{https://github.com/jrr1984/thorlabs\_step\_motors\_ZST213B/tree/master/barrido/std}{\faGithub}] fue expandido en el prototipo final y se lo explica en la Sección \ref{sec:softadq}.
+
+
+No se utilizó ningún arreglo óptico ni para enfocar la fuente de luz en el filtro ni para enfocar su transmisión divergente sobre la fibra óptica del espectrómetro. No se caracterizó la resolución óptica con la que se realizaron las mediciones con el espectrómetro en este prototipo ni el tamaño del objeto medido sobre la superficie del filtro. La resolución óptica y magnificación necesarias para medir los defectos del filtro fueron establecidas a partir de los resultados del Capítulo \ref{chap:zeiss} y fueron consideradas en el diseño óptico del microespectrómetro desarrollado que se explica en la Sección \ref{sec:disop}.
+
+
+Respecto del segundo objetivo específico propuesto relacionado con la determinación de un mapa de colores ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro, se adquirió el espectro de transmisión del filtro en dos barridos cuyas dimensiones fueron de 13 mm a lo largo del eje $\textit{x}$ y de 12.2 mm a lo largo del eje $\textit{y}$, definidos de acuerdo a la Figura \ref{fig:setup02}. La adquisición fue realizada en dos etapas debido a la limitación del recorrido de los tornillos desplazados por los motores paso a paso como se explicó anteriormente. De esta manera se adquirió en primer lugar la región superior del filtro que contiene a las bandas azul, verde y parte de la pancromática con una cierta altura de la fuente de luz y de la fibra del espectrómetro. La fuente y la fibra se encontraban montadas sobre unos posicionadores micrométricos con los cuales se varió su altura respecto del filtro para poder medir la región inferior del filtro que contenía la región faltante de la banda pancromática, la banda roja y la banda del NIR. En la F
+
+
+
+
+
+
+
+
+
+\singlespacing
+\section{Montaje y construcción de un microespectrómetro}
+\label{sec:montcontmsp}
 \spacing{1.5}
 
 \singlespacing
-\section{Montaje y alineación preliminar del microespectrómetro}
+\subsection{Fuente de luz y espectrómetro}
+\label{sec:fteluzyesp}
 \spacing{1.5}
 
 \singlespacing
-\section{Foco y resolución espacial del microespectrómetro}
+\subsection{Platina}
+\label{sec:platina}
+\spacing{1.5}
+
+\singlespacing
+\subsection{Diseño óptico del microespectrómetro}
+\label{sec:disop}
+\spacing{1.5}
+
+\singlespacing
+\subsection{Montaje y alineación preliminar del microespectrómetro}
+\label{sec:montalin}
+\spacing{1.5}
+
+\singlespacing
+\subsection{Foco y resolución espacial del microespectrómetro}
+\label{sec:focoresol}
 \spacing{1.5}
 
 \hspace{0.5cm}Para poner en foco el microespectrómetro sobre la cara externa del filtro más cerca al objetivo, se buscó el mínimo de la resolución espacial.
@@ -175,12 +226,37 @@ Z                  RESOLUCIÓN
 
 -200              11.29
 
+\singlespacing
+\subsection{\textit{Software} automatizado de adquisición}
+\label{sec:softadq}
+\spacing{1.5}
 
 
 \singlespacing
-\section{Integración de una cámara web}
+\subsection{Integración de una cámara web: adquisición simultánea de imágenes y de espectros de transmisión}
+\label{sec:camwebgui}
+\spacing{1.5}
+
+
+
+\singlespacing
+\section{Resultados}
+\label{sec:resgrales}
 \spacing{1.5}
 
 \singlespacing
-\subsection{Mapeando el espectrómetro con la cámara}
+\subsection{Espectro de transmisión de cada banda del filtro}
+\label{sec:espectransm}
+\spacing{1.5}
+
+
+\singlespacing
+\subsection{Caracterización espectral de las manchas ó defectos de transmisión}
+\label{sec:defctma}
+\spacing{1.5}
+
+
+\singlespacing
+\subsection{Caracterización espectral de los agujeros ó huecos}
+\label{sec:defctag}
 \spacing{1.5}
