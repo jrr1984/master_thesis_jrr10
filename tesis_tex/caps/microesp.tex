@@ -12,7 +12,7 @@ Asimismo, se muestran los resultados de los espectros de transmisión de cada ba
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\section{Prototipo 0 \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/tree/master/barrido/std}{\faGithub}}
+\section{Prototipo 0 \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/barrido/std/main.py}{\faGithub}}
 \label{sec:prot0}
 \spacing{1.5}
 
@@ -20,14 +20,14 @@ Asimismo, se muestran los resultados de los espectros de transmisión de cada ba
 
 Como objetivo general se propuso desarrollar un sistema integral de caracterización de filtros ópticos de interferencia utilizados en cámaras hiper y multiespectrales. Inicialmente se propusieron tres objetivos específicos:
 \begin{enumerate}
-\item Desarrollar un sistema automatizado de adquisición del espectro de transmisión de cada una de las bandas del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/thorlabs\_step\_motors\_ZST213B/tree/master/barrido/std}{\faGithub}
+\item Desarrollar un sistema automatizado de adquisición del espectro de transmisión de cada una de las bandas del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/barrido/std}{\faGithub}
 
-\item Determinar un mapa hiperespectral ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/spectral_gui/main.py}{\faGithub}
+\item Determinar un mapa hiperespectral ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro.$\xrightarrow{}$ \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/spectral\_gui/main.py}{\faGithub}
 
 \item Integrar un sistema de detección y caracterización de los defectos del filtro.
 \end{enumerate}
 
-A continuación se describen de forma resumida los primeros dos objetivos que fueron abarcados por el prototipo 0 descripto en esta sección. Respecto del primer objetivo, se montó el arreglo experimental que se muestra en las Figuras \ref{fig:setup0}, \ref{fig:setup01} y \ref{fig:setup02}. 
+A continuación se describen los primeros dos objetivos que fueron abarcados por el prototipo 0 descripto en esta sección. Respecto del primer objetivo, se montó el arreglo experimental que se muestra en las Figuras \ref{fig:setup0}, \ref{fig:setup01} y \ref{fig:setup02}. 
 
 \begin{figure}[H]
 	\centering
@@ -43,7 +43,7 @@ A continuación se describen de forma resumida los primeros dos objetivos que fu
 	\end{floatrow}
 \end{figure}
 
-Con una fuente de luz halógena, modelo \href{https://dolan-jenner.com/products/fiber-lite-190}{\textit{Fiber-lite 190 Illuminator}}, se incidió perpendicularmente sobre el filtro y su transmisión fue detectada por la fibra óptica de un espectrómetro modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS 200/M} de la empresa Thorlabs (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/syst/CCS200.py}{\faGithub}). De la misma manera en que se realizó el \textit{Tile Scan} del filtro completo con el microscopio Zeiss explicado en la sección \ref{subs:tilsc} (Ver Figura \ref{fig:tilescan}), se desplazó el filtro a lo largo del eje x, barriendo en `filas' y realizando el desplazamiento vertical en los extremos del máximo recorrido de los tornillos accionados por los motores paso a paso que fue de 13 mm. Dicho desplazamiento fue realizado con una plataforma de tres grados de libertad, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=MT3/M}{MT3/M} de la empresa Thorlabs, cuyos tornillos micrométricos fueron intercambiados por unos motores paso a paso modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=ZST213B}{ZST213B} cuyos controladores fueron también de la empresa Thorlabs, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=KST101}{KST101} (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/thorlabs_step_motors_ZST213B/blob/master/barrido/std/thor_stepm.py}{\faGithub}). Como las dimensiones de la región comprendida por las cinco bandas del filtro es de 27 mm x 25 mm, con esta plataforma no se pudo realizar una adquisición del filtro completa en una sola configuración como la propuesta. El \textit{software} automatizado de adquisición del espectro de transmisión del filtro desarrollado para este prototipo [\href{https://github.com/jrr1984/thorlabs\_step\_motors\_ZST213B/tree/master/barrido/std}{\faGithub}] fue expandido en el prototipo final y se lo explica en la Sección \ref{sec:softadq}.
+Con una fuente de luz halógena, modelo \href{https://dolan-jenner.com/products/fiber-lite-190}{\textit{Fiber-lite 190 Illuminator}}, se incidió perpendicularmente sobre el filtro y su transmisión fue detectada por la fibra óptica de un espectrómetro modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS 200/M} de la empresa Thorlabs (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/syst/CCS200.py}{\faGithub}). De la misma manera en que se realizó el \textit{Tile Scan} del filtro completo con el microscopio Zeiss explicado en la sección \ref{subs:tilsc} (Ver Figura \ref{fig:tilescan}), se desplazó el filtro a lo largo del eje x, barriendo en `filas' y realizando el desplazamiento vertical en los extremos del máximo recorrido de los tornillos accionados por los motores paso a paso que fue de 13 mm. Dicho desplazamiento fue realizado con una plataforma de tres grados de libertad, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=MT3/M}{MT3/M} de la empresa Thorlabs, cuyos tornillos micrométricos fueron intercambiados por unos motores paso a paso modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=ZST213B}{ZST213B} cuyos controladores fueron también de la empresa Thorlabs, modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=KST101}{KST101} (\textit{Driver} de \textit{python}: \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/barrido/std/thor\_stepm.py}{\faGithub}). Como las dimensiones de la región comprendida por las cinco bandas del filtro es de 27 mm x 25 mm, con esta plataforma no se pudo realizar una adquisición del filtro completa en una sola configuración como la propuesta. El \textit{software} automatizado de adquisición del espectro de transmisión del filtro desarrollado para este prototipo [\href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/tree/master/barrido/std}{\faGithub}] fue expandido en el prototipo final y se lo explica en la Sección \ref{sec:softadq}.
 
 
 No se utilizó ningún arreglo óptico ni para enfocar la fuente de luz en el filtro ni para enfocar su transmisión divergente sobre la fibra óptica del espectrómetro. No se caracterizó la resolución óptica con la que se realizaron las mediciones con el espectrómetro en este prototipo ni el tamaño del objeto medido sobre la superficie del filtro. La resolución óptica y magnificación necesarias para medir los defectos del filtro fueron establecidas a partir de los resultados del Capítulo \ref{chap:zeiss} y fueron consideradas en el diseño óptico del microespectrómetro desarrollado que se explica en la Sección \ref{sec:disop}.
@@ -61,17 +61,17 @@ Con el objetivo de visualizar una imagen completa del filtro como la que se obtu
 \end{figure}
 
 
-La interfaz gráfica fue realizada [\href{https://github.com/jrr1984/thorlabs\_step\_motors\_ZST213B/blob/master/spectral\_gui/main.py}{\faGithub}] con la librería	 \href{https://wiki.python.org/moin/TkInter}{\textit{Tkinter}}. El barrido completo que se muestra en la imagen del mapa de colores de la Figura \ref{fig:GUI00} estuvo compuesto por 127920 mediciones de espectros de transmisión, que tomaron aproximadamente 18 horas de medición en total (Control remoto de la computadora con \href{https://anydesk.com/es}{AnyDesk} y control del experimento vía \href{https://pypi.org/project/cutelog/}{cutelog}, ver Sección \ref{sec:softadq}). Con la librería \href{https://pypi.org/project/colorpy/}{ColorPy} se obtuvo una tupla RGB a partir del espectro medido y cada tupla fue asignada a una cierta posición del filtro. El conjunto total de todas las posiciones del filtro medidas estuvo formado por una matriz de 492 filas y 260 columnas. Dicha matriz fue mostrada como una imagen RGB con el método \textit{imshow} de la librería \textit{Matplotlib}. El gráfico debajo del \textit{imshow} muestra el espectro medido (gráfico de Intensidad en función de la longitud de onda) para el punto de la imagen sobre el cual se posicione el \textit{mouse} de forma actualizada y no muestra nada si se posiciona el mouse fuera de la imagen. 
+La interfaz gráfica fue realizada [\href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/spectral\_gui/main.py}{\faGithub}] con la librería	 \href{https://wiki.python.org/moin/TkInter}{\textit{Tkinter}}. El barrido completo que se muestra en la imagen del mapa de colores de la Figura \ref{fig:GUI00} estuvo compuesto por 127920 mediciones de espectros de transmisión, que tomaron aproximadamente 18 horas de medición en total (Control remoto de la computadora con \href{https://anydesk.com/es}{AnyDesk} y control del experimento vía \href{https://pypi.org/project/cutelog/}{cutelog}, ver Sección \ref{sec:softadq}). Con la librería \href{https://pypi.org/project/colorpy/}{ColorPy} se obtuvo una tupla RGB a partir del espectro medido y cada tupla fue asignada a una cierta posición del filtro. El conjunto total de todas las posiciones del filtro medidas estuvo formado por una matriz de 492 filas y 260 columnas. Dicha matriz fue mostrada como una imagen RGB con el método \textit{imshow} de la librería \textit{Matplotlib}. El gráfico debajo del \textit{imshow} muestra el espectro medido (gráfico de Intensidad en función de la longitud de onda) para el punto de la imagen sobre el cual se posicione el \textit{mouse} de forma actualizada y no muestra nada si se posiciona el mouse fuera de la imagen. 
 
 En lugar de la imagen RGB de las mediciones también se puede mostrar el $\chi^{2}$ del espectro de transmisión de cada banda lo que permitiría ver la homogeneidad del espectro de transmisión de cada banda, que fue definido para la i-ésima medición de cada banda de la siguiente manera:
 \begin{equation}
 \chi^{2}_{banda}(i) = \sum \frac{(medici\acute{o}n_{i} - espectro\_medio_{banda})^{2}}{medici\acute{o}n^{2}_{i}}
 \end{equation}
-donde $espectro\_medio_{banda}$ es el resultado de tomar el valor medio de todas las mediciones de una banda. En la Figura \ref{fig:GUI01} se muestra una región del filtro que contiene al cromo (en color amarillo) que separa las bandas pancromática de la banda verde.
+donde $espectro\_medio_{banda}$ es el resultado de tomar el valor medio de todas las mediciones de una banda. En la Figura \ref{fig:GUI01} se muestra una región del filtro que contiene al cromo (en color amarillo) que separa la banda pancromática de la banda verde.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/chidisp.png}
-	\caption{Interfaz gráfica con el \textit{imshow} del $\chi^{2}$ de cada banda. \textit{Zoom} sobre el cromo que separa las bandas pancromática de la banda verde.}
+	\caption{Interfaz gráfica con el \textit{imshow} del $\chi^{2}$ de cada banda. \textit{Zoom} sobre el cromo que separa la banda pancromática de la banda verde.}
 	\label{fig:GUI01}
 \end{figure}
 
@@ -88,7 +88,6 @@ El prototipo 0 permitió establecer las características deseadas del equipo fin
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \singlespacing
 \section{Montaje y construcción del microespectrómetro}
 \label{sec:montcontmsp}
@@ -98,18 +97,58 @@ El prototipo 0 permitió establecer las características deseadas del equipo fin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Fuente de luz y espectrómetro}
+\subsection{Fuente de luz y espectrómetro \href{https://github.com/jrr1984/defects_analysis/blob/master/light_sources_spectrum.py}{\faGithub}}
 \label{sec:fteluzyesp}
 \spacing{1.5}
 
-\hspace{0.5cm}El criterio de elección de la fuente de luz depende fundamentalmente del rango de longitudes de onda que se quiera medir, que para el caso del filtro aquí analizado dicho rango se encuentra entre los 450 nm y los 900 nm.
-Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs
+\hspace{0.5cm}El criterio de elección de la fuente de luz dependió fundamentalmente del rango de longitudes de onda que se quiso medir, que para el caso del filtro aquí analizado dicho rango se encontró entre los 450 nm y los 900 nm.
+Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs. El espectro de emisión de dicha fuente de luz medido con el espectrómetro modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS200/M} del fabricante Thorlabs se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espfth}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espfuentethorl.png}
+	\caption{Espectro de emisión de la fuente de luz \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs [\href{https://github.com/jrr1984/defects_analysis/blob/master/light_sources_spectrum.py}{\faGithub}].}
+	\label{fig:espfth}
+\end{figure}
+
+El espectro de emisión de la fuente de luz reportado por el fabricante indica que debería ser en el rango de longitudes de onda de 360 - 2600 nm, lo cual se pudo verificar por lo menos en el rango comprendido entre los 200 nm y los 1000 nm que es el rango de detección del espectrómetro. El fabricante reportó una precisión del espectrómetro menor a los 2 nm y el tiempo de integración del detector puede ser entre los 10 $\mu s$ y los 60 s.
+
+Además de considerar el espectro de emisión de la fuente de luz otro parámetro importante resultó la potencia de radiación de la misma ya que en función de ésta se eligen los tiempos de integración del espectrómetro para tener una buena relación señal-ruido. En consecuencia, una lámpara de mayor potencia reduce los tiempos de medición, lo que haría al método de inspección con el microespectrómetro más compatible con los tiempos de duración de los procesos industriales. La potencia de radiación de la lámpara reportada por el fabricante fue de 10mW. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Platina}
+\subsection{Platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub}}
 \label{sec:platina}
 \spacing{1.5}
+
+\hspace{0.5cm}Se desarrolló una platina de microscopía con dos grados de libertad para poder desplazar el filtro lateral y verticalmente respecto de la fuente de luz y del microespectrómetro para poder medir el espectro de transmisión del filtro en distintas regiones del mismo. Una imagen representativa de una de las primeras versiones de la platina con dos grados de libertad se muestra en la Figura \ref{fig:plato0}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{Figs/microespectrometro/stageearly.jpg}
+	\caption{Imagen de una de las primeras versiones de la platina motorizada con dos grados de libertad.}
+	\label{fig:plato0}
+\end{figure}
+
+
+La construcción y desarrollo de la platina motorizada del microespectrómetro consistió de las siguientes etapas de prototipado:
+
+\begin{enumerate}
+\item Investigación previa de la literatura sobre platinas de microscopía de bajo costo y factibles para integrar al prototipo.
+\item Elección de los componentes y materiales en función de la oferta local en Argentina.
+\item De acuerdo a lo anterior se realizó un dimensionamiento de la platina y se determinó el recorrido total de cada uno de los grados de libertad. Esto permitió evaluar la factibilidad y aplicabilidad de la plataforma a desarrollar.
+\item En conjunto con el diseñador industrial Federico Armesto se diseñaron las piezas de impresión 3D y se montó el primer eje de la platina. Se desarrolló la electrónica y el \textit{software} necesarios.
+\item Una vez optimizado el diseño del primer eje, se montó el segundo eje de la platina. Se extendió el software y se integraron finales de carrera.
+\item El prototipo de la platina seguía siendo actualizada al momento de escribir esta tesis.
+\end{enumerate}
+
+A continuación se describen algunas consideraciones técnicas y de diseño que se tuvieron en cuenta para el desarrollo de la platina motorizada y que podrían ser de utilidad para otros laboratorios que quisieran replicar la plataforma que aquí se presenta, realizar una adaptación ó simplemente como fuente de consulta.
+
+Respecto de la revisión de la literatura sobre platinas de microscopía de bajo costo y factibles para el prototipo, se consultaron  los prototipos cuyos proyectos hayan sido desarrollados bajo la modalidad \textit{open source} tanto para la distribución del diseño de las piezas 3D como del \textit{software}, dentro de las cuales se destacan \cite{schaa}(EUR 250) y \cite{campbells}(USD 471). Dichas propuestas son también denominadas en cierto contexto DIY (\textit{Do it yourself}) ya que contienen toda la documentación y herramientas necesarias para que cualquier usuario con presupuesto y acceso a los mismos componentes pueda reproducir el proyecto. Además de estos proyectos se consultaron múltiples platinas de microscopía comerciales, donde en sus páginas \textit{web} la mayoría de los fabricantes distribuyen los planos de diseño, las piezas 3D libres para modificar, etc (\href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=2132}{NRT150 Thorlabs} USD 2456 x 2, \href{https://www.edmundoptics.com/p/150mm-motorized-stage/16419/}{\#59-747 EO} USD 2095 x 2). Ahora bien, hasta la fecha de escritura de este trabajo no se registraban prototipos de platinas motorizadas de microscopía desarrolladas en laboratorios del país como la que aquí se presenta por lo cual por medio de la presente se comparten las piezas de diseño 3D y el \textit{software} necesarios para poder replicarla y extender sus prestaciones. El costo total aproximado de la platina aquí desarrollada fue de USD 200.
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
