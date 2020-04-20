@@ -1,22 +1,22 @@
 \singlespacing
-\chapter{Microespectrómetro}
+\chapter{Diseño, construcción y aplicación de un microespectrómetro}
 \label{chap:microsp}
 \spacing{1.5}
 
 \hspace{0.5cm}En el Capítulo \ref{chap:zeiss} se realizó una descripción cuantitativa de los defectos: se determinó su área, su diámetro equivalente, la cantidad de defectos presentes en cada banda, etc. Dicho análisis permitió entender las especificaciones técnicas de \textit{scratch \& dig} y de la ISO 10110, lo que resulta fundamental para establecer las bases de futuros acuerdos con los fabricantes de los componentes ópticos. Al mismo tiempo, los resultados de la población de defectos en general [\ref{sec:defpob}] detectados con el algoritmo permitieron establecer los criterios de diseño óptico del microespectrómetro que se explica en el presente capítulo.
 
-Como se explicó en el Capítulo \ref{chap:introd}, un microespectrómetro es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro. En este capítulo se describe la construcción y montaje de un microespectrómetro que permitió realizar una caracterización de las propiedades ópticas del filtro y de sus defectos a través de los espectros de transmisión [\ref{sec:montcontmsp}]. En la Sección \ref{sec:prot0} muestran las características del primer prototipo desarrollado con equipamiento disponible en el laboratorio. Dicho prototipo en conjunto con los resultados y análisis del Capítulo \ref{chap:zeiss} permitieron establecer los criterios de elección de la fuente de luz y del espectrómetro [\ref{sec:fteluzyesp}], determinar la longitud del recorrido y la precisión mínima necesaria de la platina que se desarrolló [\ref{sec:platina}] y la resolución óptica necesaria del microscopio desarrollado para caracterizar los defectos de diámetro mayores a 20$\mu m$ de diámetro [\ref{sec:disop}]. Luego se explica el proceso de montaje y alineación preliminar del microespectrómetro [\ref{sec:montalin}] así como su puesta en foco y la determinación de la resolución espacial [\ref{sec:focoresol}]. Posteriormente se explica la integración de una cámara web al microespectrómetro lo que permitió la adquisición simultánea de imágenes digitales y de espectros de transmisión y cuya área de adquisición fue elegida con un \textit{joystick} y visualizada en vivo a través de una interfaz gráfica [\ref{sec:camwebgui}].
+Como se explicó en el Capítulo \ref{chap:introd}, un microespectrómetro es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro. En este capítulo se describe el diseño y la construcción de un microespectrómetro que permitió realizar una caracterización de las propiedades ópticas del filtro y de sus defectos a través de los espectros de transmisión [\ref{sec:montcontmsp}]. En la Sección \ref{sec:prot0} muestran las características del primer prototipo desarrollado con equipamiento disponible en el laboratorio. Dicho prototipo en conjunto con los resultados y análisis del Capítulo \ref{chap:zeiss} permitieron establecer los criterios de elección de la fuente de luz y del espectrómetro [\ref{sec:fteluzyesp}], determinar la longitud del recorrido y la precisión mínima necesaria de la platina que se desarrolló [\ref{sec:platina}] y la resolución óptica necesaria del microscopio desarrollado para caracterizar los defectos de diámetro mayores a 20$\mu m$ de diámetro [\ref{sec:disop}]. Luego se explica el proceso de montaje y alineación preliminar del microespectrómetro [\ref{sec:montalin}] así como su puesta en foco y la determinación de la resolución espacial [\ref{sec:focoresol}]. Posteriormente se explica la integración de una cámara web al microespectrómetro lo que permitió la adquisición simultánea de imágenes digitales y de espectros de transmisión y cuya área de adquisición fue elegida con un \textit{joystick} y visualizada en vivo a través de una interfaz gráfica [\ref{sec:camwebgui}].
 
 Asimismo, se muestran los resultados de los espectros de transmisión de cada banda del filtro y su comparación con la hoja de datos reportada por el fabricante [\ref{sec:espectransm}]. Finalmente, se muestran los resultados de la caracterización espectral de los defectos denominados manchas ó defectos de transmisión [\ref{sec:defctma}] y de los agujeros ó huecos [\ref{sec:defctag}].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\section{Prototipo 0 \href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/barrido/std/main.py}{\faGithub}}
+\section{Prototipo preliminar\href{https://github.com/jrr1984/Prototipo0\_S-D\_SpectralGUI/blob/master/barrido/std/main.py}{\faGithub}}
 \label{sec:prot0}
 \spacing{1.5}
 
-\hspace{0.5cm}El desarrollo del prototipo 0 que se muestra en esta sección permitió por un lado establecer los criterios de elección de la fuente de luz y del recorrido y la precisión necesarias de la platina desarrollada para poder adquirir el espectro e imágenes del filtro completo. Como buena práctica de prototipado de instrumentos de medición se utilizaron componentes y equipamiento disponibles en el laboratorio, es decir que no se incurrió en gastos adicionales de dinero a excepción del costo del material de las impresiones 3D del soporte del filtro. Por otro lado, a partir del desarrollo del software automatizado de adquisición y de visualización de los resultados de este prototipo se establecieron las características deseadas y esperadas del prototipo final desarrollado. De esta manera, el prototipo permitió establecer la factibilidad del desarrollo del equipo.
+\hspace{0.5cm}El desarrollo del prototipo preliminar que se muestra en esta sección permitió por un lado establecer los criterios de elección de la fuente de luz y del recorrido y la precisión necesarias de la platina desarrollada para poder adquirir el espectro e imágenes del filtro completo. Como buena práctica de prototipado de instrumentos de medición se utilizaron componentes y equipamiento disponibles en el laboratorio, es decir que no se incurrió en gastos adicionales de dinero a excepción del costo del material de las impresiones 3D del soporte del filtro. Por otro lado, a partir del desarrollo del software automatizado de adquisición y de visualización de los resultados de este prototipo se establecieron las características deseadas y esperadas del prototipo final desarrollado. De esta manera, el prototipo permitió establecer la factibilidad del desarrollo del equipo.
 
 Como objetivo general se propuso desarrollar un sistema integral de caracterización de filtros ópticos de interferencia utilizados en cámaras hiper y multiespectrales. Inicialmente se propusieron tres objetivos específicos:
 \begin{enumerate}
@@ -27,12 +27,12 @@ Como objetivo general se propuso desarrollar un sistema integral de caracterizac
 \item Integrar un sistema de detección y caracterización de los defectos del filtro.
 \end{enumerate}
 
-A continuación se describen los primeros dos objetivos que fueron abarcados por el prototipo 0 descripto en esta sección. Respecto del primer objetivo, se montó el arreglo experimental que se muestra en las Figuras \ref{fig:setup0}, \ref{fig:setup01} y \ref{fig:setup02}. 
+A continuación se describen los primeros dos objetivos que fueron abarcados por el prototipo preliminar descripto en esta sección. Respecto del primer objetivo, se montó el arreglo experimental que se muestra en las Figuras \ref{fig:setup0}, \ref{fig:setup01} y \ref{fig:setup02}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
-	\caption{Arreglo experimental del prototipo 0.}
+	\caption{Arreglo experimental del prototipo preliminar.}
 	\label{fig:setup0}
 \end{figure}
 
@@ -77,19 +77,19 @@ donde $espectro\_medio_{banda}$ es el resultado de tomar el valor medio de todas
 
 La interfaz gráfica permite además graficar el espectro de un cierto píxel de la imagen generada a partir de la selección con el mouse, guardar imágenes de la región de interés, mostrar el espectro de la fuente de luz utilizada, etc, todas opciones que se consideraron útiles para la caracterización de las propiedades ópticas del filtro y deseadas para el prototipo final del equipo.
 
-El prototipo 0 permitió establecer las características deseadas del equipo final y evaluar su factibilidad sin incurrir en gastos importantes de prototipado. Ahora bien, debido a la falta de resolución óptica no se obtuvo ningún resultado concluyente ya que este prototipo resultó una prueba de concepto. A este prototipo se le propusieron las siguientes mejoras que fueron incluidas en el montaje y construcción del microespectrómetro [\ref{sec:montcontmsp}]:
+El prototipo preliminar permitió establecer las características deseadas del equipo final y evaluar su factibilidad sin incurrir en gastos importantes de prototipado. Ahora bien, debido a la falta de resolución óptica no se obtuvo ningún resultado concluyente ya que este prototipo resultó una prueba de concepto. A este prototipo se le propusieron las siguientes mejoras que fueron incluidas en el montaje y construcción del microespectrómetro [\ref{sec:montcontmsp}]:
 
 \begin{enumerate}
 \justifying
 \item \texttt{Fuente de luz [\ref{sec:fteluzyesp}]}: Se modificó la fuente de luz de \textit{Fiber-Lite} que consiste de un \textit{fiber bundle} (arreglo de fibras ópticas) de un diámetro de 4.8 mm por una fuente de luz acoplada con una fibra óptica multimodo cuya apertura numérica fue de 0.22 y cuyo diámetro del \textit{core} fue de 200 $\mu m$. Como no se contó con un objetivo adicional para enfocar la fuente de luz sobre el filtro y mediante un arreglo óptico elegir el tamaño del \textit{spot} incidente sobre el filtro , se decidió optar por la fuente de luz cuya salida divergente tuviera el menor ángulo del cono de luz de salida. Este criterio de diseño tenía como objetivo disminuir la región iluminada del filtro por la fuente de luz, lo que reduciría ciertas reflexiones espurias en los componentes ópticos del microespectrómetro provenientes de la luz de regiones no alcanzadas por el área de adquisición del microespectrómetro. Este efecto que aumenta proporcionalmente a la relación entre el área iluminada y el área adquirida del filtro se denomina efecto de Schwarzchild-Villiger \cite{Naora279} debería ser considerado en las futuras mejoras del equipo aquí propuesto ya que distorsiona el espectro de la región original que se quiere medir. Además la nueva fuente de luz utilizada tenía la misma fibra óptica que el espectrómetro, hecho que permitió realizar fácilmente la identificación de la región medida con el espectrómetro respecto de la imagen adquirida con la cámara web (Ver Sección \ref{sec:camwebgui}).
-\item \texttt{Platina [\ref{sec:platina}]}: Como la plataforma motorizada de Thorlabs utilizada en el prototipo 0 tenía un límite de recorrido de 13 mm x 13 mm, no se podía adquirir el espectro de transmisión del filtro completo cuya región que contiene a las cinco bandas tiene unas dimensiones de 27 mm x 25 mm. En consecuencia se desarrolló una platina motorizada con el suficiente recorrido para poder realizar el barrido completo del filtro y también se consideró el paso y precisión mecánicas mínimas como para poder adquirir áreas de defectos de diámetro mayor a 20$\mu m$ con la mayor cantidad de puntos posible.
+\item \texttt{Platina [\ref{sec:platina}]}: Como la plataforma motorizada de Thorlabs utilizada en el prototipo preliminar tenía un límite de recorrido de 13 mm x 13 mm, no se podía adquirir el espectro de transmisión del filtro completo cuya región que contiene a las cinco bandas tiene unas dimensiones de 27 mm x 25 mm. En consecuencia se desarrolló una platina motorizada con el suficiente recorrido para poder realizar el barrido completo del filtro y también se consideró el paso y precisión mecánicas mínimas como para poder adquirir áreas de defectos de diámetro mayor a 20$\mu m$ con la mayor cantidad de puntos posible.
 \item \texttt{Microespectrómetro [\ref{sec:disop}-\ref{sec:softadq}]}: Se montó e incorporó al prototipo un microespectrómetro con una resolución óptica lateral diseñado para caracterizar defectos de diámetro mayor a 20 $\mu m$.
 \item \texttt{Integración de una cámara web [\ref{sec:camwebgui}]}: Se incorporó una cámara \textit{web} y un  \textit{joystick} al equipo para poder seleccionar la región del filtro a medir y se desarrolló una interfaz gráfica para poder visualizar en simultáneo la imagen digital de dicha región y el espectro de transmisión. 
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\section{Montaje y construcción del microespectrómetro}
+\section{Diseño y construcción del microespectrómetro}
 \label{sec:montcontmsp}
 \spacing{1.5}
 
@@ -391,14 +391,14 @@ Z                  RESOLUCIÓN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Integración de una cámara web: adquisición simultánea de imágenes y de espectros de transmisión}
+\subsection{Integración de una cámara web. Adquisición simultánea de imágenes y de espectros de transmisión mediante una interfaz gráfica \href{https://github.com/jrr1984/defectsGUI}{\faGithub}}
 \label{sec:camwebgui}
 \spacing{1.5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\section{Resultados}
+\section{Aplicación del microespectrómetro a la caracterización de filtros multiespectrales}
 \label{sec:resgrales}
 \spacing{1.5}
 
@@ -409,39 +409,45 @@ Z                  RESOLUCIÓN
 \label{sec:espectransm}
 \spacing{1.5}
 
-\hspace{0.5cm}
+\hspace{0.5cm}Se midió el espectro de transmisión 
 
+
+azul 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_nir.png}
 	\caption{Arreglo experimental del prototipo 0.}
 	\label{fig:setup0}
 \end{figure}
 
+verde
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_roja.png}
 	\caption{Arreglo experimental del prototipo 0.}
 	\label{fig:setup0}
 \end{figure}
 
+pancromática
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_pancromatica.png}
 	\caption{Arreglo experimental del prototipo 0.}
 	\label{fig:setup0}
 \end{figure}
 
+roja
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_verde.png}
 	\caption{Arreglo experimental del prototipo 0.}
 	\label{fig:setup0}
 \end{figure}
 
+NIR
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupbarridooriginal.jpg}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_azul.png}
 	\caption{Arreglo experimental del prototipo 0.}
 	\label{fig:setup0}
 \end{figure}
