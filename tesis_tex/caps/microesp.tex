@@ -94,6 +94,17 @@ El prototipo preliminar permitió establecer las características deseadas del e
 \spacing{1.5}
 
 \hspace{0.5cm}En esta sección se describen los criterios de diseño y todas las consideraciones técnicas del microespectrómetro, de la platina motorizada desarrollada que fue controlada con un \textit{joystick} y de la cámara \textit{web} integrada. El equipo final desarrollado puede ser fácilmente adaptable a requerimientos ópticos y mecánicos específicos distintos a los presentados en esta tesis.
+
+En la Figura \ref{fig:presequipo} se muestra la última versión del equipo desarrollado. En las siguientes secciones se describen cada una de las partes del equipo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.95]{Figs/microespectrometro/presentacion_equipo.png}
+	\caption{Imagen de la última versión del equipo desarrollado.}
+	\label{fig:presequipo}
+\end{figure}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
@@ -102,12 +113,12 @@ El prototipo preliminar permitió establecer las características deseadas del e
 \spacing{1.5}
 
 \hspace{0.5cm}El criterio de elección de la fuente de luz dependió fundamentalmente del rango de longitudes de onda que se quiso medir, que para el caso del filtro aquí analizado dicho rango se encontró entre los 450 nm y los 900 nm.
-Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs. El espectro de emisión de dicha fuente de luz medido con el espectrómetro modelo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS200/M} del fabricante Thorlabs se muestra en el gráfico de la intensidad en función de la longitud de onda de la Figura \ref{fig:espfth}.
+Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs. En la Figura \ref{fig:espfth} se muestra el espectro de emisión de la fuente de luz utilizada.  El espectrómetro utilizado para realizar las mediciones fue el \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS200/M} del fabricante Thorlabs.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espfuentethorl.png}
-	\caption{Espectro de emisión de la fuente de luz \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs [\href{https://github.com/jrr1984/defects_analysis/blob/master/light_sources_spectrum.py}{\faGithub}].}
+	\caption{Espectro de emisión de la fuente de luz \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs [\href{https://github.com/jrr1984/defects\_analysis/blob/master/light\_sources\_spectrum.py}{\faGithub}].}
 	\label{fig:espfth}
 \end{figure}
 
@@ -224,16 +235,27 @@ El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Diseño óptico del microespectrómetro}
-\label{sec:disop}
-\spacing{1.5}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\singlespacing
-\subsection{Montaje y alineación preliminar del microespectrómetro}
+\subsection{Diseño óptico, montaje y alineación preliminar del microespectrómetro}
 \label{sec:montalin}
 \spacing{1.5}
+
+\hspace{0.5cm}En la Sección \ref{sec:defpob} se determinaron los tamaños de los diámetros de la población de defectos detectados en el filtro. De acuerdo a los componentes ópticos disponibles en el laboratorio se montó el microespectrómetro cuyos componentes se muestran en la Figura \ref{fig:micromfinal}. El diagrama del camino óptico del microespectrómetro se muestra en la Figura \ref{fig:diagcaminoopt}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/microespectrometroo_actual.png}
+	\caption{Componentes ópticos del microespectrómetro.}
+	\label{fig:micromfinal}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagopticosetup.png}
+	\caption{Diagrama del camino óptico del microespectrómetro.}
+	\label{fig:diagcaminoopt}
+\end{figure}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -405,52 +427,76 @@ Z                  RESOLUCIÓN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Espectro de transmisión de cada banda del filtro}
+\subsection{Espectro de transmisión de cada banda del filtro \href{https://github.com/jrr1984/open_frame_XYStage/blob/master/plot_spectrum_bands/plot_spectrum_bands.py}{\faGithub}}
 \label{sec:espectransm}
 \spacing{1.5}
 
-\hspace{0.5cm}Se midió el espectro de transmisión 
+\hspace{0.5cm}En esta sección se explica el procedimiento general para medir el espectro de transmisión de cada una de las bandas espectrales del filtro. Luego de poner en foco el microespectrómetro, con el \textit{joystick} de la platina se desplaza al filtro para adquirir el espectro de cada una de sus bandas. Para eliminar el ruido de fotones propio del sensor del CCD del espectrómetro y otras fuentes de luz del laboratorio, se debe adquirir una medición con la fuente de luz que incide sobre el filtro apagada y con todas las luces del laboratorio apagadas además de recubir el equipo con la cartulina \textit{foam} negra. Dicho ruido de fondo puede ser luego eliminado de las mediciones del espectro de las bandas del filtro, o bien incluyéndolo como argumento del método \textit{take\_data}, \textit{use\_background}, del \textit{driver} de control del espectrómetro (\href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/XYStageAndSpec.py}{\faGithub}) ó bien tomando la diferencia entre el espectro de la banda medido y el ruido de fondo adquirido.
 
+Para obtener el espectro de transmisión de cada banda se debe normalizar cada medición con el espectro de la fuente de luz utilizada, habiendo empleado los mismos tiempos de integración. La normalización es implementada realizando el cociente entre la medición del espectro de una banda y el espectro de la fuente de luz. Al mismo tiempo, las mediciones del espectro de cada banda deben ser realizadas con una buena relación señal-ruido.
 
-azul 
+En las Figuras \ref{fig:bnir}, \ref{fig:broja}, \ref{fig:bpanc}, \ref{fig:bverde} y \ref{fig:bazul} se muestran los espectros de transmisión de las bandas NIR, roja, pancromática, verde y azul del filtro respectivamente. Al mismo tiempo en la Figura \ref{fig:batod} se muestran los espectros de todas las bandas superpuestos a excepción de la banda pancromática.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_nir.png}
-	\caption{Arreglo experimental del prototipo 0.}
-	\label{fig:setup0}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_nirt.png}
+	\caption{Espectro de transmisión de la banda NIR.}
+	\label{fig:bnir}
 \end{figure}
-
-verde
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_roja.png}
-	\caption{Arreglo experimental del prototipo 0.}
-	\label{fig:setup0}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_rojat.png}
+	\caption{Espectro de transmisión de la banda roja.}
+	\label{fig:broja}
 \end{figure}
-
-pancromática
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_pancromatica.png}
-	\caption{Arreglo experimental del prototipo 0.}
-	\label{fig:setup0}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_pancromaticat.png}
+	\caption{Espectro de transmisión de la banda pancromática.}
+	\label{fig:bpanc}
 \end{figure}
-
-roja
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_verde.png}
-	\caption{Arreglo experimental del prototipo 0.}
-	\label{fig:setup0}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_verdet.png}
+	\caption{Espectro de transmisión de la banda verde.}
+	\label{fig:bverde}
 \end{figure}
-
-NIR
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_azul.png}
-	\caption{Arreglo experimental del prototipo 0.}
-	\label{fig:setup0}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_azult.png}
+	\caption{Espectro de transmisión de la banda azul.}
+	\label{fig:bazul}
 \end{figure}
+
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/4bandas_conimshowT.png}
+	\caption{Espectro de transmisión de todas las bandas a excepción de la banda pancromática.}
+	\label{fig:batod}
+\end{figure}
+
+En la Tabla \ref{tabespc} se resumen los resultados de las características espectrales de cada banda. La columna  $|\texttt{FWHM}|$ indica el \textit{Full Width Half Maximum} (ancho de banda, ancho del rango de longitudes de onda comprendidas entre el valor de la mitad del máximo de transmisión). La columna $|\texttt{CWL}|$ indica la longitud de onda central de cada banda, asociada al punto medio del \textit{FWHM}. Las columnas $|\texttt{$\lambda_{i}$}|$, $|\texttt{$\lambda_{s}$}|$ indican el valor de la longitud de onda de corte inferior y superior, asociadas a los valores de longitud de onda de los extremos inferior y superior del rango del FWHM, respectivamente. Las incertezas de los valores reportados fueron de 2 nm en todos los casos.
+
+ \begin{table}[H]
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c| }    \toprule
+\texttt{Banda} & \texttt{CWL} & \texttt{FWHM} & \texttt{$\lambda_{i}$} & \texttt{$\lambda_{s}$}\\\midrule
+\rowcolor{blue!15} Azul    & 479 nm & 57 nm & 450 nm & 507 nm  \\ 
+\rowcolor{green!50} Verde  & 545 nm & 68 nm & 511 nm & 579 nm\\ 
+Pancromática& 614 nm & 283 nm & 459 nm & 741 nm\\
+\rowcolor{red!50} Roja & 640 nm & 100 nm  & 590 nm  & 690 nm\\
+\rowcolor{maroon!20} NIR & 826 nm & 148 nm  &  752 nm & 900 nm\\
+\bottomrule
+ \hline
+\end{tabular}
+\end{center}
+ \captionof{table}{Tabla de las especificaciones espectrales de cada banda del filtro. La columna $|\texttt{CWL}|$ indica la longitud de onda central de la banda.}
+ \label{tabespc}
+ \end{table}
+De la comparación entre los valores de $\lambda_{i}$ y de $\lambda_{s}$ medidos y los reportados por el fabricante que indicó una incerteza del $1\%$, se hace notar que hay un solapamiento de los resultados de todas las bandas considerando las incertezas, a excepción de la banda pancromática donde la diferencia entre el valor medido y el reportado fue del $2\%$.
+\todo{falta algún chamullo que puede salir del desarollo de la introd}
+La medición de los espectros de transmisión de cada banda resultó fundamental para corroborar la capacidad de bloqueo de cada filtro de las longitudes de onda fuera del rango de valores comprendido por el \textit{FWHM}. Esto se vuelve más importante para el caso de filtros hiperespectrales que tienen cientos de bandas, cada una con un ancho espectral pasa banda de un cierto ancho, que permite extraer información específica y diferenciada. A continuación se muestran los resultados de la caracterización de los defectos del tipo manchas ó defectos de transmisión [\ref{sec:defctma}] y del tipo agujeros ó huecos [\ref{sec:defctag}].
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -458,6 +504,12 @@ NIR
 \subsection{Caracterización espectral de las manchas ó defectos de transmisión}
 \label{sec:defctma}
 \spacing{1.5}
+
+\hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etc pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para longitud de onda, se puede obtener el espectro de transmisión.
+
+Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}). Previo a la integración de la cámara web, la única información que se tenía de la región a medir del filtro
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
