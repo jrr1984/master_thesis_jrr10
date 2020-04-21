@@ -113,7 +113,16 @@ En la Figura \ref{fig:presequipo} se muestra la última versión del equipo desa
 \spacing{1.5}
 
 \hspace{0.5cm}El criterio de elección de la fuente de luz dependió fundamentalmente del rango de longitudes de onda que se quiso medir, que para el caso del filtro aquí analizado dicho rango se encontró entre los 450 nm y los 900 nm.
-Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs. En la Figura \ref{fig:espfth} se muestra el espectro de emisión de la fuente de luz utilizada.  El espectrómetro utilizado para realizar las mediciones fue el \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS200/M} del fabricante Thorlabs.
+Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs (Ver Figura \ref{fig:fuentl}). 
+
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.5]{Figs/microespectrometro/sls201l.jpg}}{\caption{Imagen de la fuente de luz \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=7269\&pn=SLS201L/M}{SLS201L} del fabricante Thorlabs.}\label{fig:fuentl}}
+		\ffigbox{\includegraphics[scale=0.5]{Figs/microespectrometro/ccs200.jpg}}{\caption{Imagen del espectrómetro \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M\#ad-image-0}{CCS200/M} del fabricante Thorlabs}\label{fig:ccs}}
+	\end{floatrow}
+\end{figure}
+
+En la Figura \ref{fig:espfth} se muestra el espectro de emisión de la fuente de luz utilizada.  El espectrómetro utilizado para realizar las mediciones fue el \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CCS200/M#ad-image-0}{CCS200/M} del fabricante Thorlabs (Ver Figura \ref{fig:ccs}).
 
 \begin{figure}[H]
 	\centering
@@ -124,11 +133,20 @@ Se utilizó una fuente de luz halógena y de tungsteno modelo \href{https://www.
 
 El espectro de emisión de la fuente de luz reportado por el fabricante indica que debería ser en el rango de longitudes de onda de 360 - 2600 nm, lo cual se pudo verificar por lo menos en el rango comprendido entre los 200 nm y los 1000 nm que es el rango de detección del espectrómetro. El fabricante reportó una precisión del espectrómetro menor a los 2 nm y el tiempo de integración del detector puede ser entre los 10 $\mu s$ y los 60 s.
 
-Además de considerar el espectro de emisión de la fuente de luz otro parámetro importante resultó la potencia de radiación de la misma ya que en función de ésta se eligen los tiempos de integración del espectrómetro para tener una buena relación señal-ruido. En consecuencia, una lámpara de mayor potencia reduce los tiempos de medición, lo que haría al método de inspección con el microespectrómetro más compatible con los tiempos de duración de los procesos industriales. La potencia de radiación de la lámpara reportada por el fabricante fue de 10mW. 
+Además de considerar el espectro de emisión de la fuente de luz otro parámetro importante resultó la potencia de radiación de la misma ya que en función de ésta se eligen los tiempos de integración del espectrómetro para tener una buena relación señal-ruido. En consecuencia, una lámpara de mayor potencia reduce los tiempos de medición, lo que haría al método de inspección con el microespectrómetro más compatible con los tiempos de duración de los procesos industriales. La potencia de radiación de la lámpara reportada por el fabricante fue de 10mW.
+
+ La fuente de luz \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7269&pn=SLS201L/M}{SLS201L} (Ver Figura \ref{fig:fuentl}) del fabricante Thorlabs tiene una salida acoplada con una fibra óptica multimodo \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=6839&pn=FG200UCC}{FG200UCC} de una apertura numérica igual a 0.22 y cuyo \textit{core} tiene un diámetro de 200 $\mu m$. Esta fibra óptica es la misma que se utilizó con el espectrómetro. El conector SMA de la fibra óptica que se muestra en color naranja en la Figura \ref{fig:montttluz} fue conectado al adaptador \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1SMA\#ad-image-0}{SM1SMA} y éste a su vez fue montado sobre un \textit{cage} \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33}{CP33}. Al mismo tiempo dicho \textit{cage} fue montado con un vástago y una torreta a un posicionador micrométrico que permitió disminuir la distancia entre la fuente de luz y el filtro, de manera tal de poder reducir los tiempos de integración de la luz y en consecuencia reducir los tiempos de cada barrido de una cierta región del filtro.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/setupactualdecote_retoc_condetalles.jpg}
+	\caption{Montaje de la fuente de luz.}
+	\label{fig:montttluz}
+\end{figure}
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub} \href{https://github.com/jrr1984/open_frame_XYStage/tree/master/3dprintedparts}{\faCubes}}
+\subsection{Platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub} \href{https://github.com/jrr1984/open_frame_XYStage/tree/master/3dprintedparts/STLs}{\faCubes}}
 \label{sec:platina}
 \spacing{1.5}
 
@@ -177,7 +195,7 @@ Los componentes principales de la platina son el motor paso a paso y el sistema 
 
 De la familia de motores paso a paso NEMA 17 (Ver Figura \ref{fig:nema17}) existen distintos modelos dependiendo los requerimientos de torque y de resolución fundamentalmente. El torque no fue una limitante para la elección del modelo con lo cual en función del mismo se priorizó el de menor precio. Ahora bien, respecto de la precisión existen dos modelos con pasos mínimos de rotación de 1.8 grados y de 0.9 grados, con lo cual se tienen 200 y 400 pasos por revolución respectivamente. Se evaluó la oferta disponible en el mercado y se eligió un NEMA 17 con un paso mínimo de 0.9 grados con el fin de obtener la mayor resolución en el desplazamiento lineal, a pesar de que costo era mayor.
 
-A la elección del motor, le sigue la elección del sistema de transmisión donde existen múltiples opciones dependiendo de la precisión, entre ellas las correa dentadas con poleas, las varillas roscadas, los husillos de bolas, etc. De acuerdo a \cite{schaa} se optó por una varilla roscada masiva en el mercado del tipo \href{https://www.mcmaster.com/acme-screws/acme-lead-screws-and-nuts/}{ACME} (Ver Figura \ref{fig:acmea}) con un paso (\textit{pitch}) de 2 mm, es decir que por cada revolución completa del motor se completa un desplazamiento lineal de 2 mm y un diámetro de 8 mm. La rotación del motor paso a paso es transferida a la varilla roscada ACME por medio de un acople sólido con agujeros para prisioneros M3 equidistanciados a 180° para que la varilla roscada quede centrada, que fue diseñado (Ver \href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/acopleRIGIDO.STL}{\faCubes}). Además del sistema de transmisión se tuvo que elegir un sistema de desplazamiento que es el que permite el movimiento de los ejes de la platina. Se eligió la opción más utilizada en impresoras 3D en el que se utilizan sistemas lineales con barras rectificadas de acero de 6mm de diámetro y rodamientos lineales \href{https://uk.misumi-ec.com/vona2/detail/221000091678/?HissuCode=LM6LUU}{LM6LUU}.
+A la elección del motor, le sigue la elección del sistema de transmisión donde existen múltiples opciones dependiendo de la precisión, entre ellas las correa dentadas con poleas, las varillas roscadas, los husillos de bolas, etc. De acuerdo a \cite{schaa} se optó por una varilla roscada masiva en el mercado del tipo \href{https://www.mcmaster.com/acme-screws/acme-lead-screws-and-nuts/}{ACME} (Ver Figura \ref{fig:acmea}) con un paso (\textit{pitch}) de 2 mm, es decir que por cada revolución completa del motor se completa un desplazamiento lineal de 2 mm y un diámetro de 8 mm. La rotación del motor paso a paso es transferida a la varilla roscada ACME por medio de un acople sólido con agujeros para prisioneros M3 equidistanciados a 180° para que la varilla roscada quede centrada, que fue diseñado (Ver \href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/acopleRIGIDO.STL}{\faCubes}). Además del sistema de transmisión se tuvo que elegir un sistema de desplazamiento que es el que permite el movimiento de los ejes de la platina. Se eligió la opción más utilizada en impresoras 3D en el que se utilizan sistemas lineales con barras rectificadas de acero de 6mm de diámetro y rodamientos lineales \href{https://uk.misumi-ec.com/vona2/detail/221000091678/?HissuCode=LM6LUU}{LM6LUU}.
 
 \begin{figure}[H]
 	\begin{floatrow}
@@ -235,18 +253,18 @@ El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Diseño óptico, montaje y alineación preliminar del microespectrómetro}
+\subsection{Diseño óptico, montaje y alineación del microespectrómetro}
 \label{sec:montalin}
 \spacing{1.5}
 
-\hspace{0.5cm}En la Sección \ref{sec:defpob} se determinaron los tamaños de los diámetros de la población de defectos detectados en el filtro. De acuerdo a los componentes ópticos disponibles en el laboratorio se montó el microespectrómetro cuyos componentes se muestran en la Figura \ref{fig:micromfinal}. El diagrama del camino óptico del microespectrómetro se muestra en la Figura \ref{fig:diagcaminoopt}.
+\hspace{0.5cm}En la Figura \ref{fig:micromfinal} se muestra el montaje y los componentes del microespectrómetro. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/microespectrometroo_actual.png}
-	\caption{Componentes ópticos del microespectrómetro.}
+	\caption{Componentes ópticos y montaje del microespectrómetro.}
 	\label{fig:micromfinal}
 \end{figure}
-
+El diagrama del camino óptico del microespectrómetro se muestra en la Figura \ref{fig:diagcaminoopt}\footnote{Los diagramas ópticos fueron realizados con el \textit{software} libre \href{https://inkscape.org/es/}{Inkscape}, utilizando una librería de componentes [\href{http://www.gwoptics.org/ComponentLibrary/}{Alexander Franzen lib.]}}. La luz que sale divergente de la fibra óptica (Ver Figura \ref{fig:montttluz}) incide perpendicularmente sobre el filtro. La luz transmitida por el filtro es recolectada por un objetivo de microscopio \href{https://www.edmundoptics.com/p/10x-mitutoyo-plan-apo-infinity-corrected-long-wd-objective/6623/}{Mitutoyo} corregido al infinito, de distancia de trabajo larga (34 mm), magnificación 10X y una apertura numérica igual a 0.28. La luz que sale colimada del objetivo es enfocada con una lente biconvexa de distancia focal igual a 200 mm de forma simultánea a la fibra del espectrómetro y a un sensor CMOS de una cámara web \href{https://www.microsoft.com/accessories/es-xl/d/lifecam-hd-3000}{Lifecam HD 3000}, por medio de un \textit{beamsplitter} 10:90 (R:T) \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=BSN10R}{BSN10R}. El \textit{beamsplitter} refleja un 10\% de la luz a la cámara y transmite el 90\% a la fibra óptica acoplada al espectrómetro. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagopticosetup.png}
@@ -254,8 +272,23 @@ El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabil
 	\label{fig:diagcaminoopt}
 \end{figure}
 
+El objetivo fue montado sobre un \href{https://www.thorlabs.com/thorProduct.cfm?partNumber=SM1Z\#ad-image-0}{SM1Z} que permitió modificar la distancia entre el objetivo y el filtro para poner en foco al microespectrómetro (Ver Sección \ref{sec:focoresol}). El SM1Z tiene una longitud de recorrido de 2mm, paso de 1 $\mu m$ y por cada revolución se tiene un desplazamiento de 50 $\mu m$.  La lente de tubo (en inglés, \textit{tube lens}) fue montada sobre un \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1V15}{SM1V15} que permitió modificar la distancia entre la lente de tubo y la fibra del espectrómetro para su alineación. El SM1V15 fue montado sobre un \textit{cage} CP33. El beamsplitter de forma rectangular fue sujetado por un adaptador \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=FFM1\#ad-image-0}{FFM1} y éste fue asegurado con dos tornillos sobre la tapa del cubo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=C6W}{C6W}. La fibra óptica del espectrómetro se conectó al \textit{cage} \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1\#ad-image-0}{CXY1} con una longitud de recorrido en \textit{x} e \textit{y} de 1mm para ajustar su posición. La cámara web fue colocada sobre un \textit{cage} impreso en una impresora 3D [\href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/CAGE\_1pulgada.STL}{\faCubes}]. Todo el sistema fue montado con barras de 6 mm de diámetro de Thorlabs.
 
+Otros montajes de microespectrómetros consultados en la literatura pero distintos al presentado aquí se pueden ver en \cite{frosch}, \cite{wong}, \cite{mour}(por reflexión) y \cite{frise} (adaptación de bajo costo de un microscopio comercial). Además, se consultaron soluciones comerciales como las de los fabricantes \href{https://andor.oxinst.com/learning/view/article/modular-solutions-for-microspectroscopy}{Andor} y \href{http://www.microspectra.com/}{CRAIC}.
 
+Para alinear el camino óptico desde la fuente de luz hasta el objetivo, se retiró el filtro del medio del sistema de excitación y de detección con la platina (subiéndolo hacia arriba, no hizo falta desmontarlo) y con las barras de 6mm se alineó el \textit{cage} de la fibra óptica de la fuente de luz con el SM1Z del objetivo. De esta manera se alineó el plano perpendicular al eje óptico (eje $\textit{z}$) contenido por los ejes $\textit{x} y \textit{y}$ (ver Figura \ref{fig:plato0}) entre la fuente de luz y el microespectrómetro. Esta alineación lo que hizo fue maximizar la intensidad de la luz detectada.
+
+La alineación de la lente de tubo y del objetivo fueron realizadas de forma previa al montaje final del equipo. Para alinear la lente de tubo, en primer lugar se colimó la fuente de luz con una lente plano convexa \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=LA1951}{LA1951} de distancia focal igual a 1 pulgada y diámetro de 1 pulgada (\textit{f-number} igual a 1). La luz colimada fue enfocada por la lente de tubo a la fibra del espectrómetro. Se refinó la distancia entre la lente de tubo y la fibra del espectrómetro a partir del ajuste manual del SM1V15 observando la intensidad total detectada con el espectrómetro. Se fijó dicha distancia en el máximo de intensidad detectado, asegurando el anillo del SM1V15 al \textit{cage} sobre el que estaba montado.
+
+Respecto de la alineación del objetivo, se hizo foco en la superficie exterior del filtro más cercana al mismo. Para ello se utilizó la fuente de luz colimada y un beamsplitter 50:50 para redirigir la luz hacia el objetivo que a su vez enfocó la luz en la superficie exterior del filtro. A partir de la reflexión en el filtro que se transmite por el objetivo y luego por el beamsplitter, se observó la luz colimada con una pantalla situada en `el infinito'.  Se refinó el grado de colimación de la luz, variando la distancia entre el objetivo y el filtro con la perilla manual de paso micrométrico del SM1Z. De esta forma, se asegura que el objetivo está recolectando luz del plano focal asociado a la superficie exterior del filtro más cercana al microespectrómetro que es la que se quiere observar. 
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.25]{Figs/microespectrometro/diagoptico_alinetubel.png}}{\caption{Diagrama óptico de la alineación de la lente de tubo del microespectrómetro.}\label{fig:alineacionlentet}}
+		\ffigbox{\includegraphics[width=1.0\columnwidth]{Figs/microespectrometro/diagoptico_alineobjet.png}}{ \caption{Diagrama óptico de la alineación del objetivo del microespectrómetro.}\label{fig:alineacionobjett}}
+	\end{floatrow}
+\end{figure}
+
+Luego de enfocar el objetivo, se incorporó la lente de tubo alineada, uniendo ambas partes con las barras de 6mm en el sistema de \textit{cages}. Ahora bien, como el filtro al desplazarse con la platina puede salirse de foco dado que el desplazamiento no es perfectamente perpendicular al eje óptico, se determinó un método para poner en foco el microespectrómetro con el equipo montado completamente a partir de la medición de la resolución espacial como se explica a continuación.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -264,7 +297,9 @@ El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabil
 \label{sec:focoresol}
 \spacing{1.5}
 
-\hspace{0.5cm}Para poner en foco el microespectrómetro sobre la cara externa del filtro más cerca al objetivo, se buscó el mínimo de la resolución espacial.
+\hspace{0.5cm}
+
+Para poner en foco el microespectrómetro sobre la cara externa del filtro más cerca al objetivo, se buscó el mínimo de la resolución espacial.
 
 La resolución espacial se obtiene a partir del ajuste de las mediciones de una transición banda-cromo.
 
