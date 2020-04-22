@@ -169,23 +169,13 @@ La construcción y desarrollo de la platina motorizada del microespectrómetro c
 \item De acuerdo a lo anterior se realizó un dimensionamiento de la platina y se determinó el recorrido total de cada uno de los grados de libertad. Esto permitió evaluar la factibilidad y aplicabilidad de la plataforma a desarrollar.
 \item En conjunto con el diseñador industrial Federico Armesto se diseñaron las piezas de impresión 3D y se montó el primer eje de la platina. Se desarrolló la electrónica y el \textit{software} necesarios.
 \item Una vez optimizado el diseño del primer eje, se montó el segundo eje de la platina. Se extendió el software y se integraron finales de carrera.
+\item Desarrollo del \textit{software} de control de la platina. Calibración preliminar.
 \item El prototipo de la platina seguía siendo actualizada al momento de escribir esta tesis.
 \end{enumerate}
 
 A continuación se describen algunas consideraciones técnicas y de diseño que se tuvieron en cuenta para el desarrollo de la platina motorizada y que podrían ser de utilidad para otros laboratorios que quisieran replicar la plataforma que aquí se presenta, realizar una adaptación ó simplemente como fuente de consulta.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{enumerate}
-\item \texttt{Investigación previa de la literatura sobre platinas de microscopía de bajo costo y factibles para integrar al prototipo:}
-\end{enumerate}
-
-Respecto de la revisión de la literatura sobre platinas de microscopía de bajo costo y factibles para el prototipo, se consultaron  los prototipos cuyos proyectos hayan sido desarrollados bajo la modalidad \textit{open source} tanto para la distribución del diseño de las piezas 3D como del \textit{software}, dentro de las cuales se destacan \cite{schaa}(\textit{LabView}, EUR 250) y \cite{campbells}(Instrucciones vía puerto serie en \textit{Matlab} y \textit{python}, USD 1000). Dichas propuestas son también denominadas en cierto contexto DIY (\textit{Do it yourself}) ya que contienen toda la documentación y herramientas necesarias para que cualquier usuario con presupuesto y acceso a los mismos componentes pueda reproducir el proyecto. Además de estos proyectos se consultaron múltiples platinas de microscopía comerciales, donde en sus páginas \textit{web} la mayoría de los fabricantes distribuyen los planos de diseño, las piezas 3D libres para modificar, etc (\href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=2132}{NRT150 Thorlabs} USD 2456 x 2, \href{https://www.edmundoptics.com/p/150mm-motorized-stage/16419/}{\#59-747 EO} USD 2095 x 2). Ahora bien, hasta la fecha de escritura de este trabajo no se registraban prototipos de platinas motorizadas de microscopía desarrolladas en laboratorios del país como la que aquí se presenta por lo cual por medio de la presente se comparten las piezas de diseño 3D y el \textit{software} necesarios para poder replicarla y extender sus prestaciones. El costo total aproximado de la platina aquí desarrollada fue de USD 200.
-
-\begin{enumerate}
-  \setcounter{enumi}{1}
-  \item \texttt{Elección de los componentes y materiales en función de la oferta local en Argentina.}
-\end{enumerate}
+Respecto de la revisión de la literatura sobre platinas de microscopía de bajo costo y factibles para el prototipo, se consultaron  los prototipos cuyos proyectos hayan sido desarrollados bajo la modalidad \textit{open source} tanto para la distribución del diseño de las piezas 3D como del \textit{software}, dentro de las cuales se destacan \cite{schaa}(\textit{LabView}, EUR 250) y \cite{campbells}(Instrucciones vía puerto serie en \textit{Matlab}, \textit{LabView} y \textit{python}, USD 1000). Dichas propuestas son también denominadas en cierto contexto DIY (\textit{Do it yourself}) ya que contienen toda la documentación y herramientas necesarias para que cualquier usuario con presupuesto y acceso a los mismos componentes pueda reproducir el proyecto. Además de estos proyectos se consultaron múltiples platinas de microscopía comerciales, donde en sus páginas \textit{web} la mayoría de los fabricantes distribuyen los planos de diseño, las piezas 3D libres para modificar, etc (\href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=2132}{NRT150 Thorlabs} USD 2456 x 2, \href{https://www.edmundoptics.com/p/150mm-motorized-stage/16419/}{\#59-747 EO} USD 2095 x 2). Ahora bien, hasta la fecha de escritura de este trabajo no se registraban prototipos de platinas motorizadas de microscopía desarrolladas en laboratorios del país como la que aquí se presenta por lo cual por medio de la presente se comparten las piezas de diseño 3D y el \textit{software} necesarios para poder replicarla y extender sus prestaciones. El costo total aproximado de la platina aquí desarrollada fue de USD 200.
 
 El tipo de platina motorizada a desarrollar depende del presupuesto, de la oferta local de los componentes y de los requerimientos mecánicos de precisión, longitud de recorrido y repetibilidad que se tengan. Estos tres conceptos se encontraban relacionados fuertemente entre sí. Si bien se podrian haber comprado los componentes de la platina en el exterior del país, la futura necesidad de comprar nuevamente alguno de los componentes debido al desgaste ó rotura de los mismos, hacen de esta implementación de la compra una mala práctica del prototipado. En este sentido se eligieron componentes masivos en el país, los cuales se puedan conseguir fácilmente sus repuestos en caso de necesidad. Al mismo tiempo, los componentes masivos son los que tienen un menor costo debido a su mayor demanda.
 
@@ -222,13 +212,6 @@ Se eligió un \href{https://store.arduino.cc/usa/mega-2560-r3}{\textit{Arduino M
     \end{floatrow}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{enumerate}
-  \setcounter{enumi}{2}
-  \item \texttt{De acuerdo a lo anterior se realizó un dimensionamiento de la platina y se determinó el recorrido total de cada uno de los grados de libertad. Esto permitió evaluar la factibilidad y aplicabilidad de la plataforma a desarrollar.}
-\end{enumerate}
-
 Antes de realizar la compra de los componentes necesarios para montar el primer eje se determinó el recorrido total de cada uno de los grados de libertad de la platina de acuerdo a la oferta de los proveedores. Por ejemplo, existen comercialmente distintas longitudes de varillas roscadas ACME y se eligió una longitud de la misma de 500 mm, de forma tal que al cortar dicha varilla se pueda obtener las dos varillas necesarias para cada eje de la platina, cada una de 250 mm de largo. El mismo razonamiento fue aplicado a las varillas de acero de 6mm de diámetro, para las cuales se compraron dos varillas de 1 metro que cada una fue cortada en cuatro partes de 250 mm cada una. De esta manera, se realizó un diagrama tentativo con el software \textit{Solidworks} de uno de los ejes de la platina como se muestra en la Figura \ref{fig:dimejee}, que fue siendo actualizando dependiendo las dimensiones de los componentes encontrados comercialmente.
 
 \begin{figure}[H]
@@ -240,15 +223,69 @@ Antes de realizar la compra de los componentes necesarios para montar el primer 
 
 El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabilidad de la platina para poder desplazar al filtro respecto de la fuente de luz y del espectrómetro de manera tal de poder obtener una medición del espectro en cualquier región del filtro deseada. 
 
+Luego de realizar el dimensionamiento y la evaluación de los costos dependiendo de la oferta local, se decidió montar el eje $\textit{x}$ de la platina únicamente. En la Figura \ref{fig:dise1eje} se muestra el diseño del eje $\textit{x}$ realizado con el software libre \textit{Fusion 360} y en la Figura \ref{fig:1ejmontado} se muestra un montaje preliminar de dicho eje. 
+
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.83]{Figs/microespectrometro/diseo1eje.png}}{\caption{Diseño de las piezas 3D del eje $\textit{x}$ de la platina [\href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/Ejexpreliminar.stl}{\faCubes}].}\label{fig:dise1eje}}
+		\ffigbox{\includegraphics[scale=0.073]{Figs/microespectrometro/1ejemontado.jpg}}{\caption{Montaje preliminar del eje $\textit{x}$ de la platina.}\label{fig:1ejmontado}}
+	\end{floatrow}
+\end{figure}
+
+
+Luego de optimizar el diseño y montaje del primer eje, se montó el eje $\textit{y}$ compuesto por las mismas piezas 3D que el eje $\textit{x}$. En este sentido se hace notar que el diseño propuesto resultó una solución completamente modular y que la configuración de los ejes aquí adoptada puede ser modificada a otras de acuerdo a las necesidades del usuario final.
+ 
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.83]{Figs/microespectrometro/scanningstage.jpg}}{\caption{Diseño preliminar de los dos ejes de la platina.}\label{fig:dise1eje}}
+		\ffigbox{\includegraphics[scale=0.13]{Figs/microespectrometro/2ejesmontaje.jpeg}}{\caption{Montaje final de la de la platina.}\label{fig:1ejmontado}}
+	\end{floatrow}
+\end{figure}
+
+El último diseño del cubo de desplazamiento [\href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/cuboconLM6UU_2demarzo.STL}{\faCubes}] consideró la inclusión de rodamientos lineales LM6UU. Dicho fue implementado en el eje $\textit{x}$ pero quedó pendiente su implementación en el eje $\textit{y}$, el cual quedó con un cubo de una versión de diseño anterior.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{enumerate}
-  \setcounter{enumi}{2}
-  \item \texttt{En conjunto con el diseñador industrial Federico Armesto se diseñaron las piezas de impresión 3D y se montó el primer eje de la platina. Se desarrolló la electrónica y el \textit{software} necesarios.}
-\end{enumerate}
+
+\singlespacing
+\subsubsection{\textit{Software} de la platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub}  y calibración preliminar}
+\label{sec:softcalib}
+\spacing{1.5}
+
+\hspace{0.5cm}Se desarrolló un \textit{software} de control de la platina que fue integrado al control del espectrómetro y de la cámara web. En [\cite{campbells},\href{https://github.com/raacampbell/openstage/tree/master/serialInterfaceScripts}{\faGithub}] se desarrollaron instrucciones específicas de comandos a ejecutar vía el puerto serie al que se conectó el arduino que controla la lógica de la platina, por medio de los lenguajes de programación \textit{Matlab}, \textit{LabView} y \textit{python}. En \href{https://forum.arduino.cc/index.php?topic=469343}{\faCode} se desarrolló un \textit{software} de comandos muy exhaustivo a ejecutar únicamente por el puerto serie de arduino. Estas dos referencias y múltiples otras fuentes de proyectos DIY, ideas de repositorios de \textit{github} fueron utilizadas para el desarrollo del \textit{software} de la platina.
+
+SOFTWARE, DIAG DE FLUJO FACHA y nada más.
 
 
+Se realizó una calibración preliminar de la platina para determinar las incertezas de su resolución (mínimo paso de desplazamiento) que fueron luego utilizadas en la medición de la resolución espacial del microespectrómetro (Ver Sección \ref{sec:focoresol}). En el trabajo de \cite{schaa} se realizó una calibración de la platina adquiriendo sucesivas imágenes de una muestra calibrada de distancias (1951 USAF \textit{test target}), midiendo el desplazamiento relativo respecto de un punto de referencia situado en la imagen inicial adquirida. Al momento de escribir esta tesis se iba a realizar la calibración con el mismo método. El \textit{software} de adquisición ya se había desarrollado [\href{https://github.com/jrr1984/defectsGUI/blob/master/views.py}{\faGithub}] y ya se contaba con una pieza 3D impresa que hacía de soporte de una regla calibrada de microscopía colocada sobre un portamuestra, para realizar la calibración de la platina.
 
+Ahora bien, en primer lugar se midió la precisión y exactitud de los desplazamientos de la platina en el orden de los milímetros. Para ello, por medio del \textit{software} desarrollado se asignaron posiciones a cada uno de los ejes de la platina y se comparó el valor medido con una regla metálica calibrada en milímetros con los valores asignados por \textit{software}. Se observó que la platina tenía exactitud en milímetros, ya que no se encontraron diferencias entre los valores de las posiciones asignadas y las posiciones medidas. Y, de la repetición de las mediciones se verificó su precisión en milímetros ya que las mediciones no presentaron dispersiones en los valores obtenidos.
 
+Para medir la precisión y exactitud en el orden de los micrones, se utilizaron las mediciones del microespectrómetro como calibración preliminar. Se eligió la resolución teórica de 1$\mu m$ del desplazamiento de cada eje de la platina en la adquisición de barridos de ciertas regiones del filtro con el microespectrómero. Dicha resolución representa el desplazamiento mínimo que cada eje de la platina podría realizar y su valor fue elegido considerando un compromiso entre el tiempo de duración de un barrido y la resolución del mismo ya que en cada paso de la platina se realiza una medición individual.
+En primer lugar se utilizó como patrón de calibración la longitud del cromo que separa dos bandas del filtro medida con el microscopio Zeiss (Ver Sección \ref{subs:compl}). En la Figura \ref{fig:barrcromoo} se muestra el barrido del cromo entre las bandas roja y pancromática realizado con un paso de 1$\mu m$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{Figs/microespectrometro/barridocromocalib.png}
+	\caption{Gráfico de la intensidad total detectada en función de la posición medida del filtro en un barrido lineal del cromo que separa las bandas roja de la pancromática.}
+	\label{fig:barrcromoo}
+\end{figure}
+
+En el gráfico de la Figura \ref{fig:barrcromoo} se muestra la intensidad total detectada, esto es la suma de la intensidad detectada para cada longitud de onda del espectro medido, en función de la posición del filtro. El barrido fue lineal, es decir en una dimensión. Se asignó por \textit{software} a la platina un desplazamiento de 1000 $\mu m$, con un paso de 1$\mu m$. En cada paso de la platina el microespectrómetro obtuvo una medición del espectro. Los espectros no fueron normalizados con la fuente de luz y es por eso que se puede observar un mayor valor de intensidad para la banda pancromática que para la banda roja. El valor del cromo que separa la banda roja de la pancromática medido con el \textit{software} Fiji de una imagen completa del filtro adquirida con el microscopio Zeiss fue de $( 516 \pm 10) \mu m$.
+Para determinar el valor medido de la longitud del cromo con el microespectrómetro se ajustó cada transición de una banda al cromo con la función error, \textit{erf(x)}, que es la integral del perfil gaussiano del haz de luz. La función utilizada para el ajuste fue $(a/2)*erfc(\sqrt(2)*(x-b)/c)$ y $(a/2)*(1+erf(\sqrt(2)*(x-b)/c))$, para la transición izquierda y derecha respectivamente. Así por ejemplo para el barrido de la Figura \ref{fig:barrcromoo} se ajustaron ambas transiciones como se muestra en las Figuras \ref{fig:ajusteladoizq} y \ref{fig:ajusteladoder}. En azul se muestra el resultado del ajuste y los puntos rojos fueron datos eliminados de cada ajuste.
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.17]{Figs/microespectrometro/ajustebarrladoizq.png}}{\caption{Ajuste de los datos de la transición de la banda roja al cromo por una función \textit{erf(x)}.}\label{fig:ajusteladoizq}}
+		\ffigbox{\includegraphics[scale=0.17]{Figs/microespectrometro/ajustebarrladoder.png}}{\caption{Ajuste de los datos de la transición del cromo a la banda pancromática por una función \textit{erf(x)}.}\label{fig:ajusteladoder}}
+	\end{floatrow}
+\end{figure}
+
+A partir de los parámetros del ajuste se determinó la longitud medida del cromo, $l_{cromo}$ de la siguiente manera:
+\begin{equation}
+l_{cromo} = (b_{der} - c_{der}) - (b_{izq} + c_{izq}),
+\end{equation}
+donde $b_{izq}, c_{izq}, b_{der} yc_{der}$ son los parámetros del ajuste de la transición entre la banda roja y el cromo (izq) y entre el cromo y la banda pancromática (der). Así, para el barrido que se muestra en la Figura \ref{fig:barrcromoo} se obtuvo una longitud del cromo igual a 540 micrones, con lo cual para esta medición la diferencia entre el valor medido con el microespectrómetro y el valor tomado como referencia medido con el Zeiss, fue del 5\%. Como se aclaró anteriormente, una calibración de mayor precisión de la platina quedó pendiente en este trabajo de tesis. Para las mediciones de la resolución espacial del microespectrómetro de la Sección \ref{sec:focoresol}, se consideró una incerteza del 5\% en cada desplazamiento.
+
+En esta sección se describió la platina desarrollada para poder caracterizar al filtro en cualquier punto del mismo y con la suficiente resolución como se muestra a continuación como para poder 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -264,7 +301,7 @@ El objetivo de esta etapa del prototipado es evaluar la factibilidad y aplicabil
 	\caption{Componentes ópticos y montaje del microespectrómetro.}
 	\label{fig:micromfinal}
 \end{figure}
-El diagrama del camino óptico del microespectrómetro se muestra en la Figura \ref{fig:diagcaminoopt}\footnote{Los diagramas ópticos fueron realizados con el \textit{software} libre \href{https://inkscape.org/es/}{Inkscape}, utilizando una librería de componentes [\href{http://www.gwoptics.org/ComponentLibrary/}{Alexander Franzen lib.]}}. La luz que sale divergente de la fibra óptica (Ver Figura \ref{fig:montttluz}) incide perpendicularmente sobre el filtro. La luz transmitida por el filtro es recolectada por un objetivo de microscopio \href{https://www.edmundoptics.com/p/10x-mitutoyo-plan-apo-infinity-corrected-long-wd-objective/6623/}{Mitutoyo} corregido al infinito, de distancia de trabajo larga (34 mm), magnificación 10X y una apertura numérica igual a 0.28. La luz que sale colimada del objetivo es enfocada con una lente biconvexa de distancia focal igual a 200 mm de forma simultánea a la fibra del espectrómetro y a un sensor CMOS de una cámara web \href{https://www.microsoft.com/accessories/es-xl/d/lifecam-hd-3000}{Lifecam HD 3000}, por medio de un \textit{beamsplitter} 10:90 (R:T) \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=BSN10R}{BSN10R}. El \textit{beamsplitter} refleja un 10\% de la luz a la cámara y transmite el 90\% a la fibra óptica acoplada al espectrómetro. 
+El diagrama del camino óptico del microespectrómetro se muestra en la Figura \ref{fig:diagcaminoopt}\footnote{Los diagramas ópticos fueron realizados con el \textit{software} libre \href{https://inkscape.org/es/}{Inkscape}, utilizando una librería de componentes [\href{http://www.gwoptics.org/ComponentLibrary/}{Alexander Franzen lib.]}}. La luz que sale divergente de la fibra óptica (Ver Figura \ref{fig:montttluz}) incide perpendicularmente sobre el filtro. La luz transmitida por el filtro es recolectada por un objetivo de microscopio \href{https://www.edmundoptics.com/p/10x-mitutoyo-plan-apo-infinity-corrected-long-wd-objective/6623/}{Mitutoyo} corregido al infinito, de distancia de trabajo larga (34 mm), magnificación 10X y una apertura numérica igual a 0.28. La luz que sale corregida al infinito del objetivo es enfocada con una lente biconvexa de distancia focal igual a 200 mm de forma simultánea a la fibra del espectrómetro y a un sensor CMOS de una cámara web \href{https://www.microsoft.com/accessories/es-xl/d/lifecam-hd-3000}{Lifecam HD 3000}, por medio de un \textit{beamsplitter} 10:90 (R:T) \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=BSN10R}{BSN10R}. El \textit{beamsplitter} refleja un 10\% de la luz a la cámara y transmite el 90\% a la fibra óptica acoplada al espectrómetro. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagopticosetup.png}
