@@ -245,6 +245,7 @@ Luego de optimizar el diseño y montaje del primer eje, se montó el eje $\texti
 El último diseño del cubo de desplazamiento [\href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/cuboconLM6UU_2demarzo.STL}{\faCubes}] consideró la inclusión de rodamientos lineales LM6UU. Dicho fue implementado en el eje $\textit{x}$ pero quedó pendiente su implementación en el eje $\textit{y}$, el cual quedó con un cubo de una versión de diseño anterior.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
 \subsubsection{\textit{Software} de la platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub}  y calibración preliminar}
@@ -271,7 +272,7 @@ En primer lugar se utilizó como patrón de calibración la longitud del cromo q
 \end{figure}
 
 En el gráfico de la Figura \ref{fig:barrcromoo} se muestra la intensidad total detectada, esto es la suma de la intensidad detectada para cada longitud de onda del espectro medido, en función de la posición del filtro. El barrido fue lineal, es decir en una dimensión. Se asignó por \textit{software} a la platina un desplazamiento de 1000 $\mu m$, con un paso de 1$\mu m$. En cada paso de la platina el microespectrómetro obtuvo una medición del espectro. Los espectros no fueron normalizados con la fuente de luz y es por eso que se puede observar un mayor valor de intensidad para la banda pancromática que para la banda roja. El valor del cromo que separa la banda roja de la pancromática medido con el \textit{software} Fiji de una imagen completa del filtro adquirida con el microscopio Zeiss fue de $( 516 \pm 10) \mu m$.
-Para determinar el valor medido de la longitud del cromo con el microespectrómetro se ajustó cada transición de una banda al cromo con la función error, \textit{erf(x)}, que es la integral del perfil gaussiano del haz de luz. La función utilizada para el ajuste fue $(a/2)*erfc(\sqrt(2)*(x-b)/c)$ y $(a/2)*(1+erf(\sqrt(2)*(x-b)/c))$, para la transición izquierda y derecha respectivamente. Así por ejemplo para el barrido de la Figura \ref{fig:barrcromoo} se ajustaron ambas transiciones como se muestra en las Figuras \ref{fig:ajusteladoizq} y \ref{fig:ajusteladoder}. En azul se muestra el resultado del ajuste y los puntos rojos fueron datos eliminados de cada ajuste.
+Para determinar el valor medido de la longitud del cromo con el microespectrómetro se ajustó cada transición de una banda al cromo con la función error, \textit{erf(x)}, que es la integral del perfil gaussiano del haz de luz en una dimensión. La función utilizada para el ajuste fue $(a/2)*erfc(\sqrt(2)*(x-b)/c)$ y $(a/2)*(1+erf(\sqrt(2)*(x-b)/c))$, para la transición izquierda y derecha respectivamente. Así por ejemplo para el barrido de la Figura \ref{fig:barrcromoo} se ajustaron ambas transiciones como se muestra en las Figuras \ref{fig:ajusteladoizq} y \ref{fig:ajusteladoder}. En azul se muestra el resultado del ajuste y los puntos rojos fueron datos eliminados de cada ajuste.
 \begin{figure}[H]
 	\begin{floatrow}
 		\ffigbox{\includegraphics[scale=0.17]{Figs/microespectrometro/ajustebarrladoizq.png}}{\caption{Ajuste de los datos de la transición de la banda roja al cromo por una función \textit{erf(x)}.}\label{fig:ajusteladoizq}}
@@ -283,7 +284,7 @@ A partir de los parámetros del ajuste se determinó la longitud medida del crom
 \begin{equation}
 l_{cromo} = (b_{der} - c_{der}) - (b_{izq} + c_{izq}),
 \end{equation}
-donde $b_{izq}, c_{izq}, b_{der} yc_{der}$ son los parámetros del ajuste de la transición entre la banda roja y el cromo (izq) y entre el cromo y la banda pancromática (der). Así, para el barrido que se muestra en la Figura \ref{fig:barrcromoo} se obtuvo una longitud del cromo igual a 540 micrones, con lo cual para esta medición la diferencia entre el valor medido con el microespectrómetro y el valor tomado como referencia medido con el Zeiss, fue del 5\%. Como se aclaró anteriormente, una calibración de mayor precisión de la platina quedó pendiente en este trabajo de tesis. Para las mediciones de la resolución espacial del microespectrómetro de la Sección \ref{sec:focoresol}, se consideró una incerteza del 5\% en cada desplazamiento.
+donde $b_{izq}, c_{izq}, b_{der} yc_{der}$ son los parámetros del ajuste de la transición entre la banda roja y el cromo (izq) y entre el cromo y la banda pancromática (der). Así, para el barrido que se muestra en la Figura \ref{fig:barrcromoo} se obtuvo una longitud del cromo igual a 540 micrones, con lo cual para esta medición la diferencia entre el valor medido con el microespectrómetro y el valor tomado como referencia medido con el Zeiss, fue del 5\%. Como se aclaró anteriormente, una calibración de mayor precisión de la platina quedó pendiente en este trabajo de tesis. Para las mediciones de la resolución espacial del microespectrómetro de la Sección \ref{sec:focoresol}, se consideró una incerteza del 5\%.% en cada desplazamiento.
 
 En esta sección se describió la platina desarrollada para poder caracterizar al filtro en cualquier punto del mismo y con la suficiente resolución como se muestra a continuación como para poder 
 
@@ -294,7 +295,7 @@ En esta sección se describió la platina desarrollada para poder caracterizar a
 \label{sec:montalin}
 \spacing{1.5}
 
-\hspace{0.5cm}En la Figura \ref{fig:micromfinal} se muestra el montaje y los componentes del microespectrómetro. 
+\hspace{0.5cm}En la Figura \ref{fig:micromfinal} se muestra el montaje y los componentes de la versión actual del microespectrómetro. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/microespectrometroo_actual.png}
@@ -327,22 +328,103 @@ Respecto de la alineación del objetivo, se hizo foco en la superficie exterior 
 
 Luego de enfocar el objetivo, se incorporó la lente de tubo alineada, uniendo ambas partes con las barras de 6mm en el sistema de \textit{cages}. Ahora bien, como el filtro al desplazarse con la platina puede salirse de foco dado que el desplazamiento no es perfectamente perpendicular al eje óptico, se determinó un método para poner en foco el microespectrómetro con el equipo montado completamente a partir de la medición de la resolución espacial como se explica a continuación.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \singlespacing
-\subsection{Foco y resolución espacial del microespectrómetro}
+\subsection{Integración de una cámara web. Adquisición simultánea de imágenes y de espectros de transmisión mediante una interfaz gráfica \href{https://github.com/jrr1984/defectsGUI}{\faGithub}}
+\label{sec:camwebgui}
+\spacing{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\singlespacing
+\subsection{\textit{Software} automatizado de adquisición}
+\label{sec:softadq}
+\spacing{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
+\section{Caracterización del microespectrómetro}
+\label{sec:caractequipo}
+\spacing{1.5}
+
+\hspace{0.5cm}La puesta en foco de la cámara de un microscopio digital comercial suele ser inmediata a partir de la visualización de la imagen a adquirir en vivo con un \textit{software} dedicado, buscando el máximo del contraste visual y la nitidez de la imagen. Ahora bien con un equipo como el desarrollado aquí que contempla la adquisición simultánea de un espectro de transmisión y de una imagen digital, el proceso de la puesta en foco tuvo que ser desarrollado. En la Sección \ref{sec:montalin} se describió la puesta en foco preliminar del objetivo. Al montar el microespectrómetro completo, es decir al unir el montaje de la lente de tubo con el objetivo, se tuvo que refinar el foco del objetivo. En la Figura \ref{fig:diagpuestfoc} se muestra el diagrama de flujo del proceso de la puesta en foco de la región del filtro a medir con el equipo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagramfoco.png}
+	\caption{Diagrama de flujo del proceso de la puesta en foco de la región del filtro a medir con el equipo.}
+	\label{fig:diagpuestfoc}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\singlespacing
+\subsection{Resolución espacial y foco del microespectrómetro}
 \label{sec:focoresol}
 \spacing{1.5}
 
-\hspace{0.5cm}
+\hspace{0.5cm}En primer lugar se puso en foco el microespectrómetro sobre alguna región de la superficie externa del filtro más cercana al objetivo. Para poner en foco el microespectrómetro se determinó el mínimo de la resolución espacial. En particular, en este trabajo se hace referencia a la resolución espacial lateral, en el plano $\textit{x},\textit{y}$, perpendicular al eje óptico (axial, $\textit{z}$). A continuación se define qué es la resolución espacial, qué criterios se adoptaron, cómo se realizó la medición de la misma y como se determinó el foco del microespectrómetro.
 
-Para poner en foco el microespectrómetro sobre la cara externa del filtro más cerca al objetivo, se buscó el mínimo de la resolución espacial.
+En la Ecuación \ref{eq:rayleighcrit} de la Sección \ref{sec:incert}, se definió la resolución espacial de acuerdo al criterio de Rayleigh, $R = \frac{0.61 \hspace{2pt} \lambda}{ N.A.}$. Dicho criterio establece que las imágenes de dos fuentes puntuales, incoherentes, de igual intensidad pueden ser, en el límite, distinguidas por un sistema de lentes formador de imágenes, si el centro de uno de los discos de Airy coincide con el primer mínimo del patrón de Airy de la segunda fuente puntual (Ver Figura \ref{fig:critrayspa}, (a)). Otro criterio es el de Sparrow \cite{sparrow} (Ver Figura \ref{fig:critrayspa}, (b)) que define la resolución de un sistema óptico considerando la superposición de los patrones de Airy de las dos fuentes puntuales, de forma tal que la primera y segunda derivada de la suma de las intensidades de los patrones sea igual a cero en el centro del máximo \cite{raylsp}. La resolución espacial de acuerdo al criterio de Sparrow es igual a  $R = \frac{0.47 \hspace{2pt} \lambda}{ N.A.}$, que es igual al rango en que la pendiente de la suma de las intensidades de los patrones se mantiene igual a cero.
 
-La resolución espacial se obtiene a partir del ajuste de las mediciones de una transición banda-cromo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/raylspa.png}
+	\caption{(a) Criterio de Rayleigh para la determinación del límite de resolución. (b) Límite de resolución en el criterio de Sparrow. Las curvas rojas representan los patrones de Airy individuales de las dos fuentes puntuales, mientras que la curva verde representa la imagen de las dos fuentes. Las líneas punteadas verticales indican la posición del máximo de cada patrón individual de Airy. Adaptado de \cite{raylsp}.}
+	\label{fig:critrayspa}
+\end{figure}
 
-Para no alargar el tiempo de duración de las mediciones se mapeó el espectrómetro con la cámara. De lo contrario el único feedback que se tiene para saber si se está en una banda o en el cromo es la medición del espectro.
+Si bien la resolución espacial medida depende de la banda en la cual se realicen las mediciones, debido a la variación de la longitud de onda, el proceso general de la puesta en foco del equipo es independiente de la misma como se explica a continuación. Para medir la resolución espacial se realizó un barrido de la transición entre el cromo y una banda, en una cierta región del filtro. Esto es, se adquirió el espectro de transmisión para cada desplazamiento del filtro realizado con la platina, de un paso igual a $1\mu m$ y con un recorrido tal que la transición entre la banda y el cromo sea realizado de forma completa, ambos elegidos con el \textit{software} de adquisición. Para cada medición del espectro se sumó la intensidad detectada para cada longitud de onda y se normalizó a su vez cada valor por el máximo valor de la intensidad de la suma, en adelante la intensidad total. De esta manera la intensidad total normalizada expresa qué fracción de la luz se transmite, siendo igual a 1 para el caso en que se mida el espectro sobre la banda e igual a aproximadamente 0 para cuando se mida el espectro sobre el cromo. En la transición de los valores de intensidad desde la banda hasta el cromo, se pudo determinar la resolución espacial del microespectrómetro a partir del ajuste con la función $\textit{erf(x)}$, que es la integral del perfil gaussiano del haz de luz en una dimensión \cite{LASCH}. Se graficó la intensidad total normalizada en función de la posición del filtro. En las Figuras \ref{fig:badresol} y \ref{fig:goodresol} se muestran dos barridos distintos entre la banda pancromática y el cromo con una resolución espacial de $(292 \pm 12)~ \mu m$\footnote{Dicha resolución fue la peor medida, de un valor más de 29 veces más grande al valor esperado teóricamente.} y con una resolución espacial de $(11 \pm 1)~ \mu m$ respectivamente, donde este último valor se solapa con el valor esperado teóricamente de 10 $\mu m$ como se explica más adelante.
 
-En consecuencia se conectó la fibra óptica montada sobre el cage destinado a medir con el espectrómetro, a la fuente de luz y por reflexión se observó en la adquisición en vivo de la cámara en qué posición de la imagen se observaba el haz de luz reflejado. Se centró dicho haz al centro de la cámara y de esa forma se determinó que el centro de la cámara está asociado con la medición efectiva del microespectrómetro. Se hace notar que la cámara no se encuentra en foco todavía, solo fue puesta aproximadamente a la misma distancia focal que la lente de tubo.
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[scale=0.18]{Figs/microespectrometro/badresol.png}}{\caption{Barrido de 1000 $\mu m$ con paso de 1 micrón entre la banda pancromática y el cromo. La resolución espacial obtenida del ajuste fue igual a $(292 \pm 12)~ \mu m$. El $R^{2}$ del ajuste fue igual a 0.98.}\label{fig:badresol}}
+		\ffigbox{\includegraphics[scale=0.18]{Figs/microespectrometro/goodresol.png}}{\caption{Barrido de 500 $\mu m$ con paso de 1 micrón entre la banda pancromática y el cromo. La resolución espacial obtenida del ajuste fue igual a $(11 \pm 1)~ \mu m$. El $R^{2}$ del ajuste fue igual a 0.99.}\label{fig:goodresol}}
+	\end{floatrow}
+\end{figure}
+
+Se obtuvo la resolución espacial del microespectrómetro para distintas distancias entre el objetivo y el filtro que fueron variadas girando manualmente la rosca del \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1V15}{SM1V15} sobre el que se encontraba montado el objetivo a la hora de realizar esta mediciones que se muestran aquí, montaje que se muestra en la Figura \ref{fig:montajecirc}. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/ajustefocoz.jpg}
+	\caption{Girando manualmente la rosca del \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1V15}{SM1V15} se varió la distancia entre el objetivo y el filtro, para modificar el foco. El $\textit{pitch}$ del SM1V15 es igual a 0.635 mm y es igual a la distancia que avanza el objetivo por cada revolución completa del componente.}
+	\label{fig:montajecirc}
+\end{figure}
+
+Para cada distancia entre el objetivo y el filtro se obtuvo la resolución espacial a partir del ajuste de las mediciones y se graficó dicha resolución en función de la distancia variada con el SM1V15, como se muestra en la Figura \ref{fig:resolespz}. Se colocó el origen de coordenadas del eje $\textit{z}$, del eje óptico, en el mínimo de la resolución espacial obtenida. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/focoz.png}
+	\caption{Gráfico de la resolución espacial en función de la distancia entre el filtro y el objetivo variada con el SM1V15.}
+	\label{fig:resolespz}
+\end{figure}
+
+A partir de la determinación experimental del gráfico de la Figura \ref{fig:resolespz}, se decidió modificar el SM1V15 sobre el que se encontraba montado el objetivo por el componente \href{https://www.thorlabs.com/thorProduct.cfm?partNumber=SM1Z#ad-image-0}{SM1Z} (Ver Figura \ref{fig:micromfinal}). Se le encontraron dos desventajas al SM1V15 que afectaron la calidad de las mediciones como se explica a continuación. En primer lugar, el montaje del SM1V15 sobre el cage del microespectrómetro hace que el objetivo no mantenga una estabilidad en la altura respecto de la mesa óptica, ya que luego de cada variación de la distancia entre el objetivo y el filtro, se debe asegurar el SM1V15 con un anillo y eso repercute en la alineación del sistema. Esta desventaja es superada por el montaje con el SM1Z ya que la distancia entre el objetivo y el filtro se realiza con una perilla micrométrica, por lo que la altura del objetivo permanece estable y alineada. En segundo lugar, el SM1V15 tiene un \textit{pitch} de 0.635 mm, es decir por cada revolución completa realiza un desplazamiento de 0.635 mm y por cada vuelta completa se puede subdividir ese desplazamiento en fracciones de vuelta de forma arbitraria manualmente y en consecuencia de forma imprecisa. Un método de medición del ángulo rotado debería ser implementado, con su propia incertidumbre. Esta desventaja también fue superada por el montaje con el SM1Z que tiene un \textit{pitch} de 50 $\mu m$, con un paso mínimo de 1 $\mu m$ que se puede apreciar en la escala del tornillo micrométrico con el que se realiza la variación de la distancia (Ver \href{https://www.thorlabs.com/images/ProductGallery/SM1Z/Z-Axis_Translation_Mount_30mm-AV3.jpg}{\faImage}). 
+
+Los resultados del gráfico de la Figura \ref{fig:resolespz} permitieron corroborar experimentalmente la estimación teórica de la resolución espacial y representó el punto de partida para la integración de la cámara \textit{web} al equipo para facilitar la puesta en foco del equipo y para tener un \textit{feedback} visual de la región que se estaba midiendo en tiempo real. Se hace notar que sin la integración de una cámara al equipo, la única respuesta que se tiene del microespectrómetro es la medición del espectro de transmisión que se materializa en un gráfico de intensidad en función de la longitud de onda. Y, en particular al realizar las mediciones por transmisión la puesta en foco no resultó tan inmediata como sí lo es el caso de las mediciones por reflexión donde la curva de discriminación del foco le asigna una posición unívoca al objetivo sobre la superficie que se quiere adquirir a partir de la determinación del máximo de la intensidad reflejada (Ver \cite{mour}, Fig. 4). 
+
+
+La resolución espacial del microespectrómetro estimada teóricamente no está limitada por la difracción, de acuerdo al criterio de Rayleigh sino que está limitada por una cota superior que es el tamaño del diámetro del \textit{core} de la fibra óptica multimodo acoplada al espectrómetro \cite{turrell}. Esta sentencia tan importante se puede justificar por el hecho de que se puede pensar el \textit{core} de la fibra como un \textit{pinhole} de un microscopio `pseudo-confocal', pues el detector tiene un área sensible mayor a la requerida para poder obtener la resolución óptica de dicho tipo de microscopio. Más aún, esto fue corroborado experimentalmente lo que demuestra la validez de dicha hipótesis teórica.
+
+De acuerdo al criterio de Rayleigh, la resolución estimada teóricamente del microespectrómetro, limitada por difracción, varía entre los 0.98 $\mu m$ (si $\lambda = 450 ~nm$) y los 1.96 $\mu m$ (si $\lambda = 900 ~nm$), de acuerdo a las longitudes de onda empleadas con este equipo. Con la magnificación del microespectrómetro igual a 10X, la dimensión de las imágenes de los objetos de dicha resolución varían entre los 9.8 $\mu m$ y los 19.6 $\mu m$. Para poder muestrear correctamente dichas imágenes, de acuerdo al Teorema de Nyquist-Shannon, se debería utilizar un detector con un área sensible de diámetro igual a la mitad del valor de dichas imágenes, es decir debería tener un diámetro de entre 4.8 $\mu m$ y 9.8 $\mu m$. Estos diámetros aplican para cualquier tipo de detector, ya sea para el sensor CMOS de la cámara \textit{web} ó para el diámetro de la apertura del espectrómetro que viene dada por el diámetro del \textit{core} de la fibra óptica multimodo. En consecuencia, en lo que respecta a la resolución óptica limitada por difracción de acuerdo al criterio de Rayleigh, se hace notar que no aplica al caso del equipo aquí presentado, ya que se midió una resolución óptica del orden de los 10 $\mu m$ con el equipo puesto en foco para la banda pancromática que no se corresponde con la estimación de Rayleigh que es del orden de los 1.3 $\mu m$. Esto era esperable ya que el diámetro del \textit{core} de la fibra óptica multimodo es de 200 $\mu m$, unas 20 veces más grande del diámetro requerido por Nyquist. Más aún, la resolución obtenida no es la predicha por la resolución de un microscopio confocal que debería incluso mejorar la resolución de la estimación de Rayleigh. Esto era esperable también pues el diámetro del \textit{core} de la fibra que actúa como \textit{pinhole} no cumple específicamente la condición de ser del tamaño del orden del límite del diámetro del disco de Airy de difracción \cite{wilson}. De esta manera, se hace notar que con el diámetro del \textit{core} de la fibra óptica multimodo del espectrómetro no se aprovecha el poder de resolución del objetivo ni la confocalidad por el sólo hecho de que el \textit{core} de la fibra actúa como \textit{pinhole}. La solución a este problema sería utilizar una fibra monomodo con el diámetro correcto estimado con el costo de aumentar los tiempos de integración de las mediciones y de disminuir la relación señal-ruido de las mismas.
+
+Ahora bien, se consideró el \textit{core} de la fibra óptica como si fuera un sensor compuesto por un solo elemento fotosensible (`1 solo píxel´) cuyo diámetro igual a 200 $\mu m$ estableció el tamaño de la imagen y que a partir de considerar la magnificación del microespectrómetro de 10X, se estimó por óptica geométrica que el diámetro del objeto detectado sobre el filtro tenía que ser del orden de los 20 $\mu m$, resultado del cociente entre el tamaño de la imagen y de la magnificación. Esta estimación sí se cumple experimentalmente de acuerdo a los resultados obtenidos ya que el radio de dicho objeto estimado de 10 $\mu m$ coincide con la resolución espacial obtenida en los barridos con el microespectrómetro puesto en foco. 
+
+%Siendo el espesor del filtro igual a $(1.0 \pm 0.1) ~ mm$, de acuerdo a lo indicado por el fabricante, se podría tomar como hipótesis que la resolución espacial del microespectrómetro medida debería alcanzar su mínimo en las dos superficies exteriores del filtro, sobre las que se podría hacer foco \cite{LASCH}. Esto quedó pendiente de ser corroborado a partir de la comparación entre la visualización de la cámara web y la resolución espacial medida con el microespectrómetro. Esto podría haber sido determinado ya que la cámara y el microespectrómetro fueron montados en el equipo de forma tal de que adquieran simultáneamente el mismo plano focal del filtro.
+
+\singlespacing
+\subsection{Puesta en foco de la cámara}
+\label{sec:fococam}
+\spacing{1.5}
+
+\hspace{0.5cm}Luego de poner en foco el microespectrómetro, es decir luego de determinar el mínimo de la resolución espacial medida, se puso en foco la cámara, como se indicó en el diagrama de flujo de la Figura \ref{fig:diagpuestfoc}. Para ello, en primer lugar se realizó la identificación de la región medida con el espectrómetro que se podía visualizar con la adquisición en vivo de la cámara \textit{web}. En consecuencia se conectó la fibra óptica montada sobre el cage destinado a medir con el espectrómetro, a la fuente de luz y por reflexión se observó en la adquisición en vivo de la cámara en qué posición de la imagen se observaba el haz de luz reflejado. Se centró dicho haz al centro de la cámara y de esa forma se determinó que el centro de la cámara está asociado con la medición efectiva del microespectrómetro. Se hace notar que la cámara no se encuentra en foco todavía, solo fue puesta aproximadamente a la misma distancia focal que la lente de tubo.
 
 El setup para realizar este mapeo es el siguiente:
 \begin{figure}[H]
@@ -475,19 +557,6 @@ Z                  RESOLUCIÓN
 
 -200              11.29
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\singlespacing
-\subsection{\textit{Software} automatizado de adquisición}
-\label{sec:softadq}
-\spacing{1.5}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\singlespacing
-\subsection{Integración de una cámara web. Adquisición simultánea de imágenes y de espectros de transmisión mediante una interfaz gráfica \href{https://github.com/jrr1984/defectsGUI}{\faGithub}}
-\label{sec:camwebgui}
-\spacing{1.5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
