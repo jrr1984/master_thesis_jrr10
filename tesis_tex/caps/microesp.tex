@@ -288,6 +288,42 @@ donde $b_{izq}, c_{izq}, b_{der} yc_{der}$ son los parámetros del ajuste de la 
 
 En esta sección se describió la platina desarrollada para poder caracterizar al filtro en cualquier punto del mismo y con la suficiente resolución como se muestra a continuación como para poder 
 
+\newpage
+\begin{figure}[H]
+\begin{minipage}{0.47\textwidth}
+\centering
+\includegraphics[width=.7\textwidth,left]{Figs/microespectrometro/descarga.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\raggedleft
+\Huge \textbf{XY(Z) Open Frame Stage}
+\end{minipage}
+\end{figure}
+
+\texttt{Características principales y futuras mejoras:}
+
+    \begin{itemize}
+        \item Grados de libertad: 2. Ejes $\textit{x}$ e $\textit{y}$  
+        \item Longitud de recorrido de cada grado de libertad $>$ 240 mm
+        \item Motores paso a paso NEMA 17, 0.9° de paso mínimo, 400 pasos por revolución, $I_{máx} = 1.67 A$, $V = 4V$.
+        \item Transmisión vía varilla ACME, paso 2 mm, diámetro 8 mm.
+        \item \textit{Drivers} de corriente disponibles y microstepping:
+\begin{itemize}
+\item A4988, hasta 2 A $\xrightarrow{}$ 1,2,4,8 y 16  \textit{microsteps}
+\item DRV8825, hasta 2.5 A $\xrightarrow{}$ 1,2,4,8,16 y 32 \textit{microsteps}
+\end{itemize}
+    \item Mejoras (actualidad):
+    \begin{itemize}
+ 	\item Calibración de la platina con la cámara integrada al microespectrómetro.
+ 	\item Caracterización de la precisión y de la repetibilidad de la platina.
+        \item Implementación de rodamientos lineales LM6UU en el eje $\textit{y}$
+        \item Integración y desarrollo de un tercer grado de libertad, del eje $\textit{z}$, que permita variar la distancia entre el objetivo y el filtro de forma automatizada.
+        \end{itemize}
+\end{itemize}
+\newpage
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
@@ -410,7 +446,6 @@ A partir de la determinación experimental del gráfico de la Figura \ref{fig:re
 
 Los resultados del gráfico de la Figura \ref{fig:resolespz} permitieron corroborar experimentalmente la estimación teórica de la resolución espacial y representó el punto de partida para la integración de la cámara \textit{web} al equipo para facilitar la puesta en foco del equipo y para tener un \textit{feedback} visual de la región que se estaba midiendo en tiempo real. Se hace notar que sin la integración de una cámara al equipo, la única respuesta que se tiene del microespectrómetro es la medición del espectro de transmisión que se materializa en un gráfico de intensidad en función de la longitud de onda. Y, en particular al realizar las mediciones por transmisión la puesta en foco no resultó tan inmediata como sí lo es el caso de las mediciones por reflexión donde la curva de discriminación del foco le asigna una posición unívoca al objetivo sobre la superficie que se quiere adquirir a partir de la determinación del máximo de la intensidad reflejada (Ver \cite{mour}, Fig. 4). 
 
-
 La resolución espacial del microespectrómetro estimada teóricamente no está limitada por la difracción, de acuerdo al criterio de Rayleigh sino que está limitada por una cota superior que es el tamaño del diámetro del \textit{core} de la fibra óptica multimodo acoplada al espectrómetro \cite{turrell}. Esta sentencia tan importante se puede justificar por el hecho de que se puede pensar el \textit{core} de la fibra como un \textit{pinhole} de un microscopio `pseudo-confocal', pues el detector tiene un área sensible mayor a la requerida para poder obtener la resolución óptica de dicho tipo de microscopio. Más aún, esto fue corroborado experimentalmente lo que demuestra la validez de dicha hipótesis teórica.
 
 De acuerdo al criterio de Rayleigh, la resolución estimada teóricamente del microespectrómetro, limitada por difracción, varía entre los 0.98 $\mu m$ (si $\lambda = 450 ~nm$) y los 1.96 $\mu m$ (si $\lambda = 900 ~nm$), de acuerdo a las longitudes de onda empleadas con este equipo. Con la magnificación del microespectrómetro igual a 10X, la dimensión de las imágenes de los objetos de dicha resolución varían entre los 9.8 $\mu m$ y los 19.6 $\mu m$. Para poder muestrear correctamente dichas imágenes, de acuerdo al Teorema de Nyquist-Shannon, se debería utilizar un detector con un área sensible de diámetro igual a la mitad del valor de dichas imágenes, es decir debería tener un diámetro de entre 4.8 $\mu m$ y 9.8 $\mu m$. Estos diámetros aplican para cualquier tipo de detector, ya sea para el sensor CMOS de la cámara \textit{web} ó para el diámetro de la apertura del espectrómetro que viene dada por el diámetro del \textit{core} de la fibra óptica multimodo. En consecuencia, en lo que respecta a la resolución óptica limitada por difracción de acuerdo al criterio de Rayleigh, se hace notar que no aplica al caso del equipo aquí presentado, ya que se midió una resolución óptica del orden de los 10 $\mu m$ con el equipo puesto en foco para la banda pancromática que no se corresponde con la estimación de Rayleigh que es del orden de los 1.3 $\mu m$. Esto era esperable ya que el diámetro del \textit{core} de la fibra óptica multimodo es de 200 $\mu m$, unas 20 veces más grande del diámetro requerido por Nyquist. Más aún, la resolución obtenida no es la predicha por la resolución de un microscopio confocal que debería incluso mejorar la resolución de la estimación de Rayleigh. Esto era esperable también pues el diámetro del \textit{core} de la fibra que actúa como \textit{pinhole} no cumple específicamente la condición de ser del tamaño del orden del límite del diámetro del disco de Airy de difracción \cite{wilson}. De esta manera, se hace notar que con el diámetro del \textit{core} de la fibra óptica multimodo del espectrómetro no se aprovecha el poder de resolución del objetivo ni la confocalidad por el sólo hecho de que el \textit{core} de la fibra actúa como \textit{pinhole}. La solución a este problema sería utilizar una fibra monomodo con el diámetro correcto estimado con el costo de aumentar los tiempos de integración de las mediciones y de disminuir la relación señal-ruido de las mismas.
@@ -420,142 +455,38 @@ Ahora bien, se consideró el \textit{core} de la fibra óptica como si fuera un 
 %Siendo el espesor del filtro igual a $(1.0 \pm 0.1) ~ mm$, de acuerdo a lo indicado por el fabricante, se podría tomar como hipótesis que la resolución espacial del microespectrómetro medida debería alcanzar su mínimo en las dos superficies exteriores del filtro, sobre las que se podría hacer foco \cite{LASCH}. Esto quedó pendiente de ser corroborado a partir de la comparación entre la visualización de la cámara web y la resolución espacial medida con el microespectrómetro. Esto podría haber sido determinado ya que la cámara y el microespectrómetro fueron montados en el equipo de forma tal de que adquieran simultáneamente el mismo plano focal del filtro.
 
 \singlespacing
-\subsection{Puesta en foco de la cámara}
+\subsection{Puesta en foco de la cámara y \textit{mapeo} del espectrómetro con la cámara}
 \label{sec:fococam}
 \spacing{1.5}
 
-\hspace{0.5cm}Luego de poner en foco el microespectrómetro, es decir luego de determinar el mínimo de la resolución espacial medida, se puso en foco la cámara, como se indicó en el diagrama de flujo de la Figura \ref{fig:diagpuestfoc}. Para ello, en primer lugar se realizó la identificación de la región medida con el espectrómetro que se podía visualizar con la adquisición en vivo de la cámara \textit{web}. En consecuencia se conectó la fibra óptica montada sobre el cage destinado a medir con el espectrómetro, a la fuente de luz y por reflexión se observó en la adquisición en vivo de la cámara en qué posición de la imagen se observaba el haz de luz reflejado. Se centró dicho haz al centro de la cámara y de esa forma se determinó que el centro de la cámara está asociado con la medición efectiva del microespectrómetro. Se hace notar que la cámara no se encuentra en foco todavía, solo fue puesta aproximadamente a la misma distancia focal que la lente de tubo.
+\hspace{0.5cm}Luego de poner en foco el microespectrómetro, es decir luego de determinar el mínimo de la resolución espacial medida, se puso en foco la cámara, como se indicó en el diagrama de flujo de la Figura \ref{fig:diagpuestfoc}. Para ello, utilizando la interfaz gráfica desarrollada para adquirir simultáneamente en vivo la imagen de la cámara web y la medición del espectrómetro, se visualizó la imagen de la cámara y modificando manualmente la posición de la cámara en el eje óptico a partir del deslizamiento del \textit{cage} sobre las barras de acero (Ver Figura \ref{fig:modmanualcam}), se fijó dicha distancia al observar una imagen nítida. Dicha distancia es la distancia que se denota con la letra B en la imagen de  la Figura \ref{fig:modmanualcam} y es la distancia en el eje óptico entre la cámara y el centro del beamsplitter que se encontraba montado sobre el cubo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=C6W}{C6W}. Al mismo tiempo la distancia B debería coincidir con la distancia de la fibra óptica respecto del beamsplitter, denominada A, de forma tal de que ambos detectores tengan la misma magnificación, ya que fueron colocados a la distancia focal de la lente de tubo \footnote{Se hace notar que este montaje va a ser modificado en las futuras versiones del equipo y que este prototipo de \textit{setup} consistió una prueba de concepto. Más aún, una caracterización completa de la cámara web quedó pendiente de ser realizada.}.  
 
-El setup para realizar este mapeo es el siguiente:
+Luego de poner en foco la cámara se realizó el \textit{mapeo} de la región de medición del espectrómetro sobre la imagen de la adquisición de la cámara \cite{frise}. Esto es, se identificó la región medida con el espectrómetro en la imagen de la cámara. El arreglo experimental para realizar el \textit{mapeo} y el diagrama del camino óptico del mismo se muestran en las Figuras \ref{fig:modmanualcam} y \ref{fig:caminmapp}. Como se indicó anteriormente la fibra óptica de la fuente de luz es la misma que la fibra óptica acoplada al espectrómetro. Para realizar el \textit{mapeo} se conectó la fibra óptica montada sobre el \textit{cage} destinado a medir con el espectrómetro, a la fuente de luz. La fuente de luz divergente fue colimada por la lente de tubo y enfocada por el objetivo en la superficie exterior del filtro. La reflexión del haz de luz enfocado sobre el filtro atravesó el objetivo que colimó dicho haz y por medio de la lente de tubo fue enfocado en la cámara.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Figs/microespectrometro/mapespeccam.jpg}
-	\caption{Setup para mapear el espectrómetro con la cámara.}
-	\label{fig:bgcel}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/mapespeccam.jpg}
+	\caption{\textit{Setup} para \textit{mapear} el espectrómetro con la cámara.}
+	\label{fig:modmanualcam}
 \end{figure}
 
-
-Con los tornillos de la tapa de arriba del beamsplitter se puede ajustar en altura el beamsplitter para poder observar en el centro de la cámara la medición del espectrómetro.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/b4c.png}
-	\caption{Tapa de arriba del beamsplitter.}
-	\label{fig:bgcel}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagopticomapcamspec.png}
+	\caption{Diagrama óptico del \textit{mapeo} del espectrómetro con la cámara.}
+	\label{fig:caminmapp}
 \end{figure}
 
+ En la imagen de la Figura \ref{fig:refhazz} se muestra la visualización en la cámara de la posición en la imagen de la reflexión del haz de luz enfocado sobre el filtro. Con los tornillos de la tapa de arriba del beamsplitter (Ver \href{https://www.thorlabs.com/images/TabImages/Kinematic\_Cube\_Platform\_A1-780.jpg}{\faImage}) se ajustó la posición del beamsplitter para poder observar en el centro de la cámara la medición del espectrómetro, esto es para poder visualizar el haz reflejado en el centro de la imagen. De esta manera se determinó que el centro de la imagen adquirida con la cámara estaba asociado con la medición efectiva del microespectrómetro.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Figs/microespectrometro/mapspectrometrocamera.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
+	\caption{Visualización en la cámara de la reflexión del haz de luz enfocado sobre el filtro.}
+	\label{fig:refhazz}
 \end{figure}
 
-
-No se tocó ni la cámara ni ninguna parte del setup a partir de ese momento para no perder este mapeo, a pesar de que la cámara no se encuentre perfectamente en foco (no hace falta probablemente poner una imagen de la cámara mostrando que no está en foco..), es decir que la imagen no se vea del todo nítida.
-Luego se puso en foco el microespectrómetro.
-
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/medtransicion.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-
-durante el experimento se tiene el feedback de cutelog:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/cutelog.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/fincutelog.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-
-Las mediciones son ajustadas en matlab con una función error:
-\begin{equation}
-	(a/2)*erfc(sqrt(2)*(x-b)/c)
-\end{equation}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{Figs/microespectrometro/fit0.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-Resultados del ajuste:
-
-General model:\par
-$f(x) = (a/2)*erfc(sqrt(2)*(x-b)/c)$ \par
-Coefficients (with 95$\%$ confidence bounds): \par
-$a =       42.43  (42.2, 42.66)$\par
-$b =       108.2  (107.8, 108.7)$\par
-$c =       50.46  (49.25, 51.68)$\par
-
-Goodness of fit:\par
-SSE: 151.1\par
-R-square: 0.9976\par
-Adjusted R-square: 0.9976\par
-RMSE: 0.8758\par
-
-Luego moviendo la perilla del SM1Z para cambiar la distancia entre el objetivo y el filtro se repite la medición.
-
-
-Comentar bien la siguiente foto, poner en la imagen que distancia se está variando, ettc
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{Figs/microespectrometro/refinacionparam.png}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-
-Para hacer el ajuste se refinan los parámetros del modelo:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.1]{Figs/microespectrometro/sm1zcambio.jpg}
-	\caption{Visualización en la cámara de la reflexión del filtro de la iluminación.}
-	\label{fig:bgcel}
-\end{figure}
-
-
-La idea es poner en foco el espectrómetro en alguna región del filtro, enfocar luego la cámara y después al mover el filtro a alguna otra región, tan solo hay que poner en foco el 'sistema' mirando la cámara. Al mismo tiempo si se quiere se puede volver a repetir el procedimiento de buscar el mínimo.
-
-
-Gráfico de poner en foco el microespectrómetro: (19 de marzo)
-
-mediciones guardadas en: data mediciones, simultaneidad, foco.
-
-vamos recorriendo horario en pasos de 50 micrones en el SM1Z.
-mediciones que consisten en un barrido de 80 micrones de largo, con pasos de 1 micron.. esto en la stage
-
-
-RESULTADOS:
-
-Z                  RESOLUCIÓN
-
-0                  12.46 dudoso?
-
--50               13.5
-
--100             13.12
-
--150              12.87
-
--200              11.29
+Luego de realizar el \textit{mapeo}, el equipo quedó configurado de forma tal de tener un \textit{feedback} visual de la región de la medición realizada con el espectrómetro. Y, en adelante la región del filtro a medir a elección con el \textit{joystick} de la platina fue puesta en foco a partir de la visualización nítida de la imagen y de forma simultánea para la cámara y para el microespectrómetro, variando la distancia entre el objetivo y el filtro con la perilla micrométrica del SM1Z.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
