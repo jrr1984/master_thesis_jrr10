@@ -472,7 +472,7 @@ En la Ecuación \ref{eq:rayleighcrit} de la Sección \ref{sec:incert}, se defini
 	\label{fig:critrayspa}
 \end{figure}
 
-Si bien la resolución espacial medida podría depender de la banda en la cual se realicen las mediciones, debido a la variación de la longitud de onda, el proceso general de la puesta en foco del equipo es independiente de la misma como se explica a continuación. Para medir la resolución espacial se realizó un barrido de la transición entre el cromo y una banda, en una cierta región del filtro. Esto es, se adquirió el espectro de transmisión para cada desplazamiento del filtro realizado con la platina, de un paso igual a 1 $\mu m$ y con un recorrido tal que la transición entre la banda y el cromo sea realizado de forma completa, ambos elegidos con el \textit{software} de adquisición. Para cada medición del espectro se sumó la intensidad detectada para cada longitud de onda y se normalizó a su vez cada valor por el máximo valor de la intensidad de la suma, en adelante la intensidad total. De esta manera la intensidad total normalizada expresa qué fracción de la luz se transmite, siendo igual a 1 para el caso en que se mida el espectro sobre la banda e igual a aproximadamente 0 para el caso en que se mida el espectro sobre el cromo. En la transición de los valores de intensidad desde la banda hasta el cromo, se pudo determinar la resolución espacial del microespectrómetro a partir del ajuste con la función $\textit{erf(x)}$, que es la integral del perfil gaussiano del haz de luz en una dimensión \cite{LASCH}. Se graficó la intensidad total normalizada en función de la posición del filtro. En las Figuras \ref{fig:badresol} y \ref{fig:goodresol} se muestran dos barridos distintos entre la banda pancromática y el cromo con una resolución espacial de $(292 \pm 12)~ \mu m$\footnote{Dicha resolución fue la peor medida, de un valor más de 29 veces más grande al valor esperado teóricamente.} y con una resolución espacial de $(11 \pm 1)~ \mu m$ respectivamente, donde este último valor se solapa con el valor esperado teóricamente de 10 $\mu m$ como se explica más adelante.
+Si bien la resolución espacial medida podría depender de la banda en la cual se realicen las mediciones, debido a la variación de la longitud de onda, el proceso general de la puesta en foco del equipo es independiente de la misma como se explica a continuación. Para medir la resolución espacial se realizó un barrido de la transición entre el cromo y una banda, en una cierta región del filtro. Esto es, se adquirió el espectro de transmisión para cada desplazamiento del filtro realizado con la platina, de un paso igual a 1 $\mu m$ y con un recorrido tal que la transición entre la banda y el cromo sea realizado de forma completa, ambos elegidos con el \textit{software} de adquisición. Para cada medición del espectro se sumó la intensidad detectada para cada longitud de onda y se normalizó a su vez cada valor por el máximo valor de la intensidad de la suma, en adelante la intensidad total. De esta manera la intensidad total normalizada expresa qué fracción de la luz se transmite, siendo igual a 1 para el caso en que se mida el espectro sobre la banda e igual a aproximadamente 0 para el caso en que se mida el espectro sobre el cromo. En la transición de los valores de intensidad desde la banda hasta el cromo, se pudo determinar la resolución espacial del microespectrómetro a partir del ajuste con la función $\textit{erf(x)}$, que es la integral del perfil gaussiano del haz de luz en una dimensión \cite{LASCH}. Se graficó la intensidad total normalizada en función de la posición del filtro. En las Figuras \ref{fig:badresol} y \ref{fig:goodresol} se muestran dos barridos distintos entre la banda pancromática y el cromo con una resolución espacial de $(292 \pm 12)~ \mu m$\footnote{Dicha resolución fue la peor medida, de un valor más de 29 veces más grande al valor esperado teóricamente.} y con una resolución espacial de $(11 \pm 1)~ \mu m$ respectivamente, donde este último valor se solapa con el valor esperado teóricamente de 10 $\mu m$ como se explica a continuación.
 
 \begin{figure}[H]
 	\begin{floatrow}
@@ -485,7 +485,7 @@ Se obtuvo la resolución espacial del microespectrómetro para distintas distanc
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/ajustefocoz.jpg}
-	\caption{Girando manualmente la rosca del \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1V15}{SM1V15} se varió la distancia entre el objetivo y el filtro, para modificar el foco. El $\textit{pitch}$ del SM1V15 es igual a 0.635 mm y es igual a la distancia que avanza el objetivo por cada revolución completa del componente.}
+	\caption{Girando manualmente la rosca del \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1V15}{SM1V15} se varió la distancia entre el objetivo y el filtro, para modificar el foco. El $\textit{pitch}$ del SM1V15 es igual a 0.635 mm y es igual a la distancia lineal que avanza el objetivo por cada revolución completa del componente.}
 	\label{fig:montajecirc}
 \end{figure}
 
@@ -498,15 +498,15 @@ Para cada distancia entre el objetivo y el filtro se obtuvo la resolución espac
 	\label{fig:resolespz}
 \end{figure}
 
-A partir de la determinación experimental del gráfico de la Figura \ref{fig:resolespz}, se decidió modificar el SM1V15 sobre el que se encontraba montado el objetivo por el componente \href{https://www.thorlabs.com/thorProduct.cfm?partNumber=SM1Z#ad-image-0}{SM1Z} (Ver Figura \ref{fig:micromfinal}). Se le encontraron dos desventajas al SM1V15 que afectaron la calidad de las mediciones como se explica a continuación. En primer lugar, el montaje del SM1V15 sobre el cage del microespectrómetro hace que el objetivo no mantenga una estabilidad en la altura respecto de la mesa óptica, ya que luego de cada variación de la distancia entre el objetivo y el filtro, se debe asegurar el SM1V15 con un anillo y eso repercute en la alineación del sistema. Esta desventaja es superada por el montaje con el SM1Z ya que la distancia entre el objetivo y el filtro se realiza con una perilla micrométrica, por lo que la altura del objetivo permanece estable y alineada. En segundo lugar, el SM1V15 tiene un \textit{pitch} de 0.635 mm, es decir por cada revolución completa realiza un desplazamiento de 0.635 mm y por cada vuelta completa se puede subdividir ese desplazamiento en fracciones de vuelta de forma arbitraria manualmente y en consecuencia de forma imprecisa. Un método de medición del ángulo rotado debería ser implementado, con su propia incertidumbre. Esta desventaja también fue superada por el montaje con el SM1Z que tiene un \textit{pitch} de 50 $\mu m$, con un paso mínimo de 1 $\mu m$ que se puede apreciar en la escala del tornillo micrométrico con el que se realiza la variación de la distancia (Ver \href{https://www.thorlabs.com/images/ProductGallery/SM1Z/Z-Axis_Translation_Mount_30mm-AV3.jpg}{\faImage}). 
-
-Los resultados del gráfico de la Figura \ref{fig:resolespz} permitieron corroborar experimentalmente la estimación teórica de la resolución espacial y representó el punto de partida para la integración de la cámara \textit{web} al equipo para facilitar la puesta en foco del equipo y para tener un \textit{feedback} visual de la región que se estaba midiendo en tiempo real. Se hace notar que sin la integración de una cámara al equipo, la única respuesta que se tiene del microespectrómetro es la medición del espectro de transmisión que se materializa en un gráfico de intensidad en función de la longitud de onda. Y, en particular al realizar las mediciones por transmisión la puesta en foco no resultó tan inmediata como sí lo es el caso de las mediciones por reflexión donde la curva de discriminación del foco le asigna una posición unívoca al objetivo sobre la superficie que se quiere adquirir a partir de la determinación del máximo de la intensidad reflejada (Ver \cite{mour}, Fig. 4). 
+A partir de la determinación experimental del gráfico de la Figura \ref{fig:resolespz}, se decidió modificar el SM1V15 sobre el que se encontraba montado el objetivo por el componente \href{https://www.thorlabs.com/thorProduct.cfm?partNumber=SM1Z#ad-image-0}{SM1Z} (Ver Figura \ref{fig:micromfinal}). Se le encontraron dos desventajas al SM1V15 que afectaron la calidad de las mediciones como se explica a continuación. En primer lugar, el montaje del SM1V15 sobre el \textit{cage} del microespectrómetro hace que el objetivo no mantenga una estabilidad en la altura respecto del eje óptico, ya que luego de cada variación de la distancia entre el objetivo y el filtro, se debe asegurar el SM1V15 con un anillo y eso repercute en la alineación del sistema. Esta desventaja es superada por el montaje con el SM1Z ya que la distancia entre el objetivo y el filtro se realiza con una perilla micrométrica, por lo que la altura del objetivo permanece estable y alineada. En segundo lugar, el SM1V15 tiene un \textit{pitch} de 0.635 mm, es decir por cada revolución completa realiza un desplazamiento de 0.635 mm y se puede subdividir ese desplazamiento en fracciones de vuelta de forma arbitraria manualmente y en consecuencia de forma imprecisa. Un método de medición del ángulo rotado debería ser implementado, con su propia incertidumbre. Esta desventaja también fue superada por el montaje con el SM1Z que tiene un \textit{pitch} de 50 $\mu m$, con un paso mínimo de 1 $\mu m$ que se puede apreciar en la escala del tornillo micrométrico con el que se realiza la variación de la distancia (Ver \href{https://www.thorlabs.com/images/ProductGallery/SM1Z/Z-Axis_Translation_Mount_30mm-AV3.jpg}{\faImage}). 
 
 La resolución espacial del microespectrómetro estimada teóricamente no está limitada por la difracción, de acuerdo al criterio de Rayleigh sino que está limitada por una cota superior que es el tamaño del diámetro del \textit{core} de la fibra óptica multimodo acoplada al espectrómetro \cite{turrell}. Esta sentencia tan importante se puede justificar por el hecho de que se puede pensar el \textit{core} de la fibra como un \textit{pinhole} de un microscopio `pseudo-confocal', pues el detector tiene un área sensible mayor a la requerida para poder obtener la resolución óptica de dicho tipo de microscopio. Más aún, esto fue corroborado experimentalmente lo que demuestra la validez de dicha hipótesis teórica.
 
-De acuerdo al criterio de Rayleigh, la resolución estimada teóricamente del microespectrómetro, limitada por difracción, varía entre los 0.98 $\mu m$ (si $\lambda = 450 ~nm$) y los 1.96 $\mu m$ (si $\lambda = 900 ~nm$), de acuerdo a las longitudes de onda empleadas con este equipo. Con la magnificación del microespectrómetro igual a 10X, la dimensión de las imágenes de los objetos de dicha resolución varían entre los 9.8 $\mu m$ y los 19.6 $\mu m$. Para poder muestrear correctamente dichas imágenes, de acuerdo al Teorema de Nyquist-Shannon, se debería utilizar un detector con un área sensible de diámetro igual a la mitad del valor de dichas imágenes, es decir debería tener un diámetro de entre 4.8 $\mu m$ y 9.8 $\mu m$. Estos diámetros aplican para cualquier tipo de detector, ya sea para el sensor CMOS de la cámara \textit{web} ó para el diámetro de la apertura del espectrómetro que viene dada por el diámetro del \textit{core} de la fibra óptica multimodo. En consecuencia, en lo que respecta a la resolución óptica limitada por difracción de acuerdo al criterio de Rayleigh, se hace notar que no aplica al caso del equipo aquí presentado, ya que se midió una resolución óptica del orden de los 10 $\mu m$ con el equipo puesto en foco para la banda pancromática que no se corresponde con la estimación de Rayleigh que es del orden de los 1.3 $\mu m$. Esto era esperable ya que el diámetro del \textit{core} de la fibra óptica multimodo es de 200 $\mu m$, unas 20 veces más grande del diámetro requerido por Nyquist. Más aún, la resolución obtenida no es la predicha por la resolución de un microscopio confocal que debería incluso mejorar la resolución de la estimación de Rayleigh. Esto era esperable también pues el diámetro del \textit{core} de la fibra que actúa como \textit{pinhole} no cumple específicamente la condición de ser del tamaño del orden del límite del diámetro del disco de Airy de difracción \cite{wilson}. De esta manera, se hace notar que con el diámetro del \textit{core} de la fibra óptica multimodo del espectrómetro no se aprovecha el poder de resolución del objetivo ni la confocalidad por el sólo hecho de que el \textit{core} de la fibra actúa como \textit{pinhole}. La solución a este problema sería utilizar una fibra monomodo con el diámetro correcto estimado con el costo de aumentar los tiempos de integración de las mediciones y de disminuir la relación señal-ruido de las mismas.
+De acuerdo al criterio de Rayleigh, la resolución estimada teóricamente del microespectrómetro, limitada por difracción, debería variar entre los 0.98 $\mu m$ (si $\lambda = 450 ~nm$) y los 1.96 $\mu m$ (si $\lambda = 900 ~nm$), de acuerdo a las longitudes de onda empleadas con este equipo. Con la magnificación del microespectrómetro igual a 10X, la dimensión de las imágenes de los objetos de dicha resolución deberían ser de entre los 9.8 $\mu m$ y los 19.6 $\mu m$. Para poder muestrear correctamente dichas imágenes, de acuerdo al Teorema de Nyquist-Shannon, se debería utilizar un detector con un área sensible de diámetro igual a la mitad del valor de dichas imágenes, es decir debería tener un diámetro de entre 4.8 $\mu m$ y 9.8 $\mu m$. Estos diámetros aplican para cualquier tipo de detector, ya sea para el sensor CMOS de la cámara \textit{web} ó para el diámetro de la apertura del espectrómetro que viene dada por el diámetro del \textit{core} de la fibra óptica multimodo. En consecuencia, en lo que respecta a la resolución óptica limitada por difracción de acuerdo al criterio de Rayleigh, se hace notar que no aplica al caso del equipo aquí presentado, ya que se midió una resolución óptica del orden de los 10 $\mu m$ con el equipo puesto en foco para la banda pancromática que no se corresponde con la estimación de Rayleigh que es del orden de los 1.3 $\mu m$. Esto era esperable ya que el diámetro del \textit{core} de la fibra óptica multimodo es de 200 $\mu m$, unas 20 veces más grande del diámetro requerido por Nyquist. Más aún, la resolución obtenida no es la predicha por la resolución de un microscopio confocal que debería incluso mejorar la resolución de la estimación de Rayleigh. Esto era esperable también pues el diámetro del \textit{core} de la fibra que actúa como \textit{pinhole} no cumple específicamente la condición de ser del tamaño del orden del límite del diámetro del disco de Airy de difracción \cite{wilson}. De esta manera, se hace notar que con el diámetro del \textit{core} de la fibra óptica multimodo del espectrómetro no se aprovecha el poder de resolución del objetivo ni la confocalidad por el sólo hecho de que el \textit{core} de la fibra actúe como \textit{pinhole}. La solución a este problema sería utilizar una fibra monomodo con el diámetro correcto estimado con el costo de aumentar los tiempos de integración de las mediciones y de disminuir la relación señal-ruido de las mismas.
 
 Ahora bien, se consideró el \textit{core} de la fibra óptica como si fuera un sensor compuesto por un solo elemento fotosensible (`1 solo píxel´) cuyo diámetro igual a 200 $\mu m$ estableció el tamaño de la imagen y que a partir de considerar la magnificación del microespectrómetro de 10X, se estimó por óptica geométrica que el diámetro del objeto detectado sobre el filtro tenía que ser del orden de los 20 $\mu m$, resultado del cociente entre el tamaño de la imagen y de la magnificación. Esta estimación sí se cumple experimentalmente de acuerdo a los resultados obtenidos ya que el radio de dicho objeto estimado de 10 $\mu m$ se solapa con la resolución espacial obtenida en los barridos con el microespectrómetro puesto en foco.
+
+Los resultados del gráfico de la Figura \ref{fig:resolespz} permitieron corroborar experimentalmente la estimación teórica de la resolución espacial y representó el punto de partida para la integración de la cámara \textit{web} al equipo para facilitar la puesta en foco del equipo y para tener un \textit{feedback} visual de la región que se estaba midiendo en tiempo real. Se hace notar que sin la integración de una cámara al equipo, la única respuesta que se tenía del microespectrómetro era la medición del espectro de transmisión que se materializaba en un gráfico de intensidad en función de la longitud de onda. Y, en particular al realizar las mediciones por transmisión la puesta en foco no resultó tan inmediata como sí lo es el caso de las mediciones por reflexión donde la curva de discriminación del foco le asigna una posición unívoca al objetivo respecto de la superficie que se quiere adquirir a partir de la determinación del máximo de la intensidad reflejada (Ver \cite{mour}, Fig. 4). 
 
 %Siendo el espesor del filtro igual a $(1.0 \pm 0.1) ~ mm$, de acuerdo a lo indicado por el fabricante, se podría tomar como hipótesis que la resolución espacial del microespectrómetro medida debería alcanzar su mínimo en las dos superficies exteriores del filtro, sobre las que se podría hacer foco \cite{LASCH}. Esto quedó pendiente de ser corroborado a partir de la comparación entre la visualización de la cámara web y la resolución espacial medida con el microespectrómetro. Esto podría haber sido determinado ya que la cámara y el microespectrómetro fueron montados en el equipo de forma tal de que adquieran simultáneamente el mismo plano focal del filtro.
 
@@ -517,14 +517,14 @@ Ahora bien, se consideró el \textit{core} de la fibra óptica como si fuera un 
 
 \hspace{0.5cm}Luego de poner en foco el microespectrómetro, es decir luego de determinar el mínimo de la resolución espacial medida, se puso en foco la cámara, como se indicó en el diagrama de flujo de la Figura \ref{fig:diagpuestfoc}. Para ello, utilizando la interfaz gráfica desarrollada para adquirir simultáneamente en vivo la imagen de la cámara \textit{web} y la medición del espectrómetro, se visualizó la imagen de la cámara y modificando manualmente la posición de la cámara en el eje óptico a partir del deslizamiento del \textit{cage} sobre las barras de acero (Ver Figura \ref{fig:modmanualcam}), se fijó dicha distancia al observar una imagen nítida. Dicha distancia es la distancia que se denota con la letra B en la imagen de  la Figura \ref{fig:modmanualcam} y es la distancia en el eje óptico entre la cámara y el centro del beamsplitter que se encontraba montado sobre el cubo \href{https://www.thorlabs.com/thorproduct.cfm?partnumber=C6W}{C6W}. Al mismo tiempo la distancia B debería coincidir con la distancia de la fibra óptica respecto del beamsplitter, denominada A, de forma tal de que ambos detectores tengan la misma magnificación, ya que fueron colocados a la distancia focal de la lente de tubo \footnote{Se hace notar que este montaje va a ser modificado en las futuras versiones del equipo y que este prototipo de \textit{setup} consistió una prueba de concepto. Más aún, una caracterización completa de la cámara \textit{web} quedó pendiente de ser realizada.}.  
 
-Luego de poner en foco la cámara se realizó el \textit{mapeo} de la región de medición del espectrómetro sobre la imagen de la adquisición de la cámara \cite{frise}. Esto es, se identificó la región medida con el espectrómetro en la imagen de la cámara. El arreglo experimental para realizar el \textit{mapeo} y el diagrama del camino óptico del mismo se muestran en las Figuras \ref{fig:modmanualcam} y \ref{fig:caminmapp}. Como se indicó anteriormente la fibra óptica de la fuente de luz es la misma que la fibra óptica acoplada al espectrómetro. Para realizar el \textit{mapeo} se conectó la fibra óptica montada sobre el \textit{cage} destinado a medir con el espectrómetro, a la fuente de luz. La fuente de luz divergente fue colimada por la lente de tubo y enfocada por el objetivo en la superficie exterior del filtro. La reflexión del haz de luz enfocado sobre el filtro atravesó el objetivo que colimó dicho haz y por medio de la lente de tubo fue enfocado en la cámara.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/mapespeccam.jpg}
 	\caption{\textit{Setup} para \textit{mapear} el espectrómetro con la cámara.}
 	\label{fig:modmanualcam}
 \end{figure}
+
+Luego de poner en foco la cámara se realizó el \textit{mapeo} de la región de medición del espectrómetro sobre la imagen de la adquisición de la cámara \cite{frise}. Esto es, se identificó la región medida con el espectrómetro en la imagen de la cámara. El arreglo experimental para realizar el \textit{mapeo} y el diagrama del camino óptico del mismo se muestran en las Figuras \ref{fig:modmanualcam} y \ref{fig:caminmapp}. Como se indicó anteriormente la fibra óptica de la fuente de luz era la misma que la fibra óptica acoplada al espectrómetro. Para realizar el \textit{mapeo} se conectó la fibra óptica montada sobre el \textit{cage} destinado a medir con el espectrómetro, a la fuente de luz. La fuente de luz divergente fue colimada por la lente de tubo y enfocada por el objetivo en la superficie exterior del filtro. La reflexión del haz de luz enfocado sobre el filtro atravesó el objetivo que colimó dicho haz y por medio de la lente de tubo y la reflexión en el \textit{beamsplitter} fue enfocado en la cámara.
 
 \begin{figure}[H]
 	\centering
@@ -533,7 +533,7 @@ Luego de poner en foco la cámara se realizó el \textit{mapeo} de la región de
 	\label{fig:caminmapp}
 \end{figure}
 
- En la imagen de la Figura \ref{fig:refhazz} se muestra la visualización en la cámara de la posición en la imagen de la reflexión del haz de luz enfocado sobre el filtro. Con los tornillos de la tapa de arriba del beamsplitter (Ver \href{https://www.thorlabs.com/images/TabImages/Kinematic\_Cube\_Platform\_A1-780.jpg}{\faImage}) se ajustó la posición del beamsplitter para poder observar en el centro de la cámara la medición del espectrómetro, esto es para poder visualizar el haz reflejado en el centro de la imagen. De esta manera se determinó que el centro de la imagen adquirida con la cámara estaba asociado con la medición efectiva del microespectrómetro.
+ En la imagen de la Figura \ref{fig:refhazz} se muestra la visualización en la cámara de la posición en la imagen asociada a la reflexión del haz de luz enfocado sobre el filtro. Con los tornillos de la tapa de arriba del beamsplitter (Ver \href{https://www.thorlabs.com/images/TabImages/Kinematic\_Cube\_Platform\_A1-780.jpg}{\faImage}) se ajustó la posición del beamsplitter para poder observar en el centro de la cámara la medición del espectrómetro, esto es para poder visualizar el haz reflejado en el centro de la imagen adquirida con la cámara. De esta manera se determinó que el centro de la imagen adquirida con la cámara estaba asociado con la medición efectiva del microespectrómetro.
 
 \begin{figure}[H]
 	\centering
@@ -561,45 +561,45 @@ A continuación se muestran los resultados de la aplicación del microespectróm
 \label{sec:espectransm}
 \spacing{1.5}
 
-\hspace{0.5cm}En esta sección se explica el procedimiento general para medir el espectro de transmisión de cada una de las bandas espectrales del filtro. Luego de poner en foco el microespectrómetro, con el \textit{joystick} de la platina se desplaza al filtro para adquirir el espectro de cada una de sus bandas. Para eliminar el ruido de fotones propio del sensor del CCD del espectrómetro y otras fuentes de luz del laboratorio, se debe adquirir una medición con la fuente de luz que incide sobre el filtro apagada y con todas las luces del laboratorio apagadas además de recubir el equipo con la cartulina \textit{foam} negra. Dicho ruido de fondo puede ser luego eliminado de las mediciones del espectro de las bandas del filtro, o bien incluyéndolo como argumento del método \textit{take\_data}, \textit{use\_background}, del \textit{driver} de control del espectrómetro (\href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/XYStageAndSpec.py}{\faGithub}) ó bien tomando la diferencia entre el espectro de la banda medido y el ruido de fondo adquirido.
+\hspace{0.5cm}En esta sección se explica el procedimiento general realizado para medir el espectro de transmisión de cada una de las bandas espectrales del filtro. Luego de poner en foco el microespectrómetro, con el \textit{joystick} de la platina se desplazó al filtro para adquirir el espectro de cada una de sus bandas. Para eliminar el ruido de fotones propio del sensor del CCD del espectrómetro y otras fuentes de luz del laboratorio, se debe adquirir una medición con la fuente de luz que incide sobre el filtro apagada y con todas las luces del laboratorio apagadas además de recubir el equipo con la cartulina \textit{foam} negra. Dicho ruido de fondo puede ser luego eliminado de las mediciones del espectro de las bandas del filtro, o bien incluyéndolo como argumento del método \textit{take\_data}, \textit{use\_background}, del \textit{driver} de control del espectrómetro (\href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/XYStageAndSpec.py}{\faGithub}) ó bien tomando la diferencia entre el espectro de la banda medido y el ruido de fondo adquirido.
 
 Para obtener el espectro de transmisión de cada banda se debe normalizar cada medición con el espectro de la fuente de luz utilizada, habiendo empleado los mismos tiempos de integración. La normalización es implementada realizando el cociente entre la medición del espectro de una banda y el espectro de la fuente de luz. Al mismo tiempo, las mediciones del espectro de cada banda deben ser realizadas con una buena relación señal-ruido.
 
 En las Figuras \ref{fig:bnir}, \ref{fig:broja}, \ref{fig:bpanc}, \ref{fig:bverde} y \ref{fig:bazul} se muestran los espectros de transmisión de las bandas NIR, roja, pancromática, verde y azul del filtro respectivamente. Al mismo tiempo en la Figura \ref{fig:batod} se muestran los espectros de todas las bandas superpuestos a excepción de la banda pancromática.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_nirt.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_nirt.png}
 	\caption{Espectro de transmisión de la banda NIR. Tiempo de integración de la luz: 10 ms.}
 	\label{fig:bnir}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_rojat.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_rojat.png}
 	\caption{Espectro de transmisión de la banda roja. Tiempo de integración de la luz: 5 ms.}
 	\label{fig:broja}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_pancromaticat.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_pancromaticat.png}
 	\caption{Espectro de transmisión de la banda pancromática. Tiempo de integración de la luz: 2 ms.}
 	\label{fig:bpanc}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_verdet.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_verdet.png}
 	\caption{Espectro de transmisión de la banda verde.Tiempo de integración de la luz: 5 ms.}
 	\label{fig:bverde}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectro_azult.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_azult.png}
 	\caption{Espectro de transmisión de la banda azul. Tiempo de integración de la luz: 20 ms.}
 	\label{fig:bazul}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/4bandas_conimshowT.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/4bandas_conimshowT.png}
 	\caption{Espectro de transmisión de todas las bandas a excepción de la banda pancromática.}
 	\label{fig:batod}
 \end{figure}
@@ -619,7 +619,7 @@ Pancromática& 614 nm & 283 nm & 459 nm & 741 nm\\
  \hline
 \end{tabular}
 \end{center}
- \captionof{table}{Tabla de las especificaciones espectrales de cada banda del filtro. La columna $|\texttt{CWL}|$ indica la longitud de onda central de la banda.}
+ \captionof{table}{Tabla de las especificaciones espectrales de cada banda del filtro.}
  \label{tabespc}
  \end{table}
 De la comparación entre los valores de $\lambda_{i}$ y de $\lambda_{s}$ medidos y los reportados por el fabricante que indicó una incerteza del $1\%$, se hace notar que hay un solapamiento de los resultados de todas las bandas considerando las incertezas, a excepción de la banda pancromática donde la diferencia entre el valor medido y el reportado fue del $2\%$.
@@ -634,9 +634,9 @@ La medición de los espectros de transmisión de cada banda resultó fundamental
 \label{sec:defctma}
 \spacing{1.5}
 
-\hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etc pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para longitud de onda, se puede obtener el espectro de transmisión.
+\hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etc., pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para longitud de onda, se puede obtener el espectro de transmisión.
 
-Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}). Previo a la integración de la cámara \textit{web}, la única información que se tenía de la región a medir del filtro consistía de los espectros de transmisión medidos, es decir se tenían los gráficos de la intensidad detectada en función de la longitud de onda de cada medición. Así por ejemplo, en la Figura \ref{fig:muchossi} se muestra un barrido lineal de  800 $\mu m$, con un paso de 1 $\mu m$, elegidos en el \textit{software} de adquisición, desde la banda pancromática hasta el cromo. El gráfico de la Figura \ref{fig:muchossi} consiste de la suma de las intensidades detectadas para cada longitud de cada medición normalizadas con su máximo valor, en función de la posición del filtro. En la región medida del filtro comprendida por la banda pancromática que se extiende desde la posición inicial hasta aproximadamente los 645 $\mu m$, se puede observar que la intensidad transmitida por dicha banda no es uniforme como debería ser. Es decir, se podría tomar como hipótesis que cada uno de los `valles' detectados se corresponde con un defecto pero al no tener un \textit{feedback} visual, resulta imposible de corroborar siendo que no se conoce de antemano la firma espectral de los distintos defectos. Más aún, esto último era lo que se quería determinar con el equipo desarrollado.  
+Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}). Previo a la integración de la cámara \textit{web}, la única información que se tenía de la región a medir del filtro consistía de los espectros de transmisión medidos, es decir se tenían los gráficos de la intensidad detectada en función de la longitud de onda de cada medición. Así por ejemplo, en la Figura \ref{fig:muchossi} se muestra un barrido lineal de  800 $\mu m$, con un paso de 1 $\mu m$, elegidos en el \textit{software} de adquisición, desde la banda pancromática hasta el cromo. 
 
  \begin{figure}[H]
 	\centering
@@ -645,6 +645,7 @@ Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron
 	\label{fig:muchossi}
 \end{figure}
 
+El gráfico de la Figura \ref{fig:muchossi} consiste de la suma de las intensidades detectadas para cada longitud de cada medición normalizadas con su máximo valor, en función de la posición del filtro. En la región medida del filtro comprendida por la banda pancromática que se extiende desde la posición inicial hasta aproximadamente los 645 $\mu m$, se puede observar que la intensidad transmitida por dicha banda no es uniforme como debería ser. Es decir, se podría tomar como hipótesis que cada uno de los `valles' detectados se corresponde con un defecto pero al no tener un \textit{feedback} visual, resulta imposible de corroborar siendo que no se conoce de antemano la firma espectral de los distintos defectos. Más aún, esto último era lo que se quería determinar con el equipo desarrollado.  
 
 Esto motivó la integración de la cámara en el equipo. En la Figura \ref{fig:barinted} se muestra el barrido lineal realizado de 150 $\mu m$, con un paso de 1$\mu m$, desde la banda azul hasta el cromo atravesando un defecto de transmisión o mancha. En este caso, sí se puede indicar que se trata de ese tipo de defecto pues en la imagen de la Figura \ref{fig:batod} se lo señala con un círculo blanco. Del ajuste de la transición entre la banda azul y el cromo se determinó que dicho barrido fue realizado con una resolución espacial de $(14 \pm 2)~\mu m$, resultado que no se solapa con el esperado teóricamente de 10 $\mu m$.
 
@@ -657,7 +658,7 @@ Esto motivó la integración de la cámara en el equipo. En la Figura \ref{fig:b
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/barridoenzdefecto.png}
+	\includegraphics[scale=0.3]{Figs/microespectrometro/barridoenzdefecto.png}
 	\caption{Imagen adquirida con la cámara \textit{web} asociada al barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando un defecto de transmisión ó mancha que se señala en la imagen.}
 	\label{fig:batod}
 \end{figure}
@@ -666,7 +667,7 @@ En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en sim
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/variacionintensidaddefecto.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/variacionintensidaddefecto.png}
 	\caption{Gráficos de los espectros de transmisión superpuestos del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda, del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. }
 	\label{fig:merrmmin}
 \end{figure}
@@ -685,8 +686,6 @@ Se podría tomar como hipótesis para un futuro trabajo que este tipo de defecto
 
 En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara \textit{web} en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un agujero.
 
-El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al agujero (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al agujero. 
-
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/imshow_rgbagujero.png}
@@ -694,6 +693,7 @@ El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de l
 	\label{fig:mapargbag}
 \end{figure}
 
+El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al agujero (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al agujero. 
 
 En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al agujero que se observa en la imagen de la Figura \ref{fig:agujeroimg}.
  \begin{figure}[H]
@@ -705,15 +705,13 @@ En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la reg
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/imagenagj.jpg}
+	\includegraphics[scale=0.4]{Figs/microespectrometro/imagenagj.jpg}
 	\caption{Imagen de la banda azul que contiene al agujero caracterizado, adquirida con la cámara del equipo.}
 	\label{fig:agujeroimg}
 \end{figure}
 
 
 En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. El punto de dicho gráfico señalado con un círculo rojo está asociado unívocamente al píxel blanco recuadrado en rojo de la Figuras \ref{fig:mapargbag} y al píxel negro recuadrado en rojo de la Figura \ref{fig:mapatransmag}. Dicho punto asociado físicamente al agujero presenta una disminución de la intensidad transmitida del 64\%. El espectro de transmisión de este punto rojo se lo muestra en la Figura \ref{fig:espectbag} y se puede observar que además del espectro de transmisión esperado de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz (Ver Figura \ref{fig:espfth}). 
-
-En particular, para el caso de la Figura \ref{}
 
  \begin{figure}[H]
 	\centering
@@ -724,12 +722,12 @@ En particular, para el caso de la Figura \ref{}
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectroagback.png}
+	\includegraphics[scale=0.8]{Figs/microespectrometro/espectroagback.png}
 	\caption{Espectro de transmisión del centro del agujero, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}.}
 	\label{fig:espectbag}
 \end{figure}
 
-Se hace notar que para los agujeros la forma funcional del espectro de transmisión de la banda indicado por el fabricante sufre una distorsión que podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los agujeros del filtro pueden brindar información espectral errónea ya que siempre van a tener una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión. Como continuación del trabajo aquí presentado está previsto armar un arreglo experimental para poder caracterizar el filtro en su posición final en las cámaras de vuelo del satélite y de esa forma poder caracterizar los efectos de los distintos tipos de defectos aquí caracterizados en el proceso de formación de imágenes.
+Se hace notar que para los agujeros la forma funcional del espectro de transmisión de la banda indicado por el fabricante sufre una distorsión que podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los agujeros del filtro podrían brindar información espectral errónea ya que siempre tendrían una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión. Como continuación del trabajo aquí presentado está previsto armar un arreglo experimental para poder caracterizar el filtro en su posición final en las cámaras de vuelo del satélite y de esa forma poder caracterizar los efectos de los distintos tipos de defectos aquí caracterizados en el proceso de formación de imágenes.
 
 
 
