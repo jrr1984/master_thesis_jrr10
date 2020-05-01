@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.1)  2 APR 2020 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  1 MAY 2020 10:29
 entering extended mode
 **C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
+L3 programming layer <2020-04-06>
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuthesis.cls
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
 "
-Package: expl3 2020-03-06 L3 programming layer (loader) 
+Package: expl3 2020-04-06 L3 programming layer (loader) 
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
 d-pdfmode.def"
@@ -101,6 +101,15 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.st
+y"
+\wrapoverhang=\dimen137
+\WF@size=\dimen138
+\c@WF@wrappedlines=\count181
+\WF@box=\box46
+\WF@everypar=\toks19
+Package: wrapfig 2003/01/31  v 3.6
+)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -116,50 +125,50 @@ Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 ty"
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen137
-\captionmargin@=\dimen138
-\captionwidth=\dimen139
-\caption@tempdima=\dimen140
-\caption@indent=\dimen141
-\caption@parindent=\dimen142
-\caption@hangindent=\dimen143
+\captionmargin=\dimen139
+\captionmargin@=\dimen140
+\captionwidth=\dimen141
+\caption@tempdima=\dimen142
+\caption@indent=\dimen143
+\caption@parindent=\dimen144
+\caption@hangindent=\dimen145
 Package caption Info: Standard document class detected.
 )
-\c@float@type=\count181
-\float@exts=\toks19
-\float@box=\box46
-\@floatcapt=\box47
+\c@float@type=\count182
+\float@exts=\toks20
+\float@box=\box47
+\@floatcapt=\box48
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks20
+\FR@everyfloat=\toks21
 \flrow@foot=\insert199
-\FB@wd=\dimen144
-\FBo@wd=\dimen145
-\FBc@wd=\dimen146
+\FB@wd=\dimen146
+\FBo@wd=\dimen147
+\FBc@wd=\dimen148
 \FBo@ht=\skip50
 \FBc@ht=\skip51
 \FBf@ht=\skip52
 \FBo@max=\skip53
 \FBc@max=\skip54
 \FBf@max=\skip55
-\c@FBl@b=\count182
-\floatbox@depth=\count183
-\c@FRobj=\count184
-\c@FRsobj=\count185
+\c@FBl@b=\count183
+\floatbox@depth=\count184
+\c@FRobj=\count185
+\c@FRsobj=\count186
 \Xhsize=\skip56
 \sXhsize=\skip57
 \Zhsize=\skip58
 \sZhsize=\skip59
-\flrow@rowbox=\box48
-\FR@Zunitlength=\dimen147
-\c@FBcnt=\count186
-\FPOScnt=\count187
+\flrow@rowbox=\box49
+\FR@Zunitlength=\dimen149
+\c@FBcnt=\count187
+\FPOScnt=\count188
 \LTleft=\skip60
 \LTright=\skip61
 \LTleft=\skip62
 \LTright=\skip63
-\flrow@types=\toks21
+\flrow@types=\toks22
 )
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
@@ -172,15 +181,15 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 tex"
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils
 .tex"
-\XKV@toks=\toks22
-\XKV@tempa@toks=\toks23
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
 )
-\XKV@depth=\count188
+\XKV@depth=\count189
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count189
-\xargs@toksa=\toks24
-\xargs@toksb=\toks25
+\xargs@max=\count190
+\xargs@toksa=\toks25
+\xargs@toksb=\toks26
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace.
 sty"
@@ -196,6 +205,25 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Package option `usenames' ignored on input line 216.
 Package xcolor Info: Package option `nonamebreak' ignored on input line 216.
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
+sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen150
+\ar@mcellbox=\box50
+\extrarowheight=\dimen151
+\NC@list=\toks27
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box51
+)
+\everycr=\toks28
+\minrowclearance=\skip66
+)
+\rownum=\count191
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -210,6 +238,27 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
+sty"
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen152
+\lightrulewidth=\dimen153
+\cmidrulewidth=\dimen154
+\belowrulesep=\dimen155
+\belowbottomsep=\dimen156
+\aboverulesep=\dimen157
+\abovetopsep=\dimen158
+\cmidrulesep=\dimen159
+\cmidrulekern=\dimen160
+\defaultaddspace=\dimen161
+\@cmidla=\count192
+\@cmidlb=\count193
+\@aboverulesep=\dimen162
+\@belowrulesep=\dimen163
+\@thisruleclass=\count194
+\@lastruleclass=\count195
+\@thisrulewidth=\dimen164
+)
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
@@ -224,15 +273,15 @@ tikz.sty"
 cs.sty"
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-common.tex"
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen148
-\pgfutil@tempdimb=\dimen149
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen165
+\pgfutil@tempdimb=\dimen166
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-common-lists.tex"))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-latex.def"
-\pgfutil@abb=\box49
+\pgfutil@abb=\box52
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -255,33 +304,33 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 fkeys.code.tex"
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 fkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen150
-\pgf@y=\dimen151
-\pgf@xa=\dimen152
-\pgf@ya=\dimen153
-\pgf@xb=\dimen154
-\pgf@yb=\dimen155
-\pgf@xc=\dimen156
-\pgf@yc=\dimen157
-\pgf@xd=\dimen158
-\pgf@yd=\dimen159
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
+\pgf@xd=\dimen175
+\pgf@yd=\dimen176
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count190
-\c@pgf@countb=\count191
-\c@pgf@countc=\count192
-\c@pgf@countd=\count193
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count194
+\c@pgf@counta=\count196
+\c@pgf@countb=\count197
+\c@pgf@countc=\count198
+\c@pgf@countd=\count266
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count267
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
 pgf.cfg"
@@ -300,8 +349,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
 pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count195
-\pgfsyssoftpath@bigbuffer@items=\count196
+\pgfsyssoftpath@smallbuffer@items=\count268
+\pgfsyssoftpath@bigbuffer@items=\count269
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
 pgfsysprotocol.code.tex"
@@ -319,12 +368,12 @@ calc.code.tex"
 util.code.tex")
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 parser.code.tex"
-\pgfmath@dimen=\dimen160
-\pgfmath@count=\count197
-\pgfmath@box=\box50
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@dimen=\dimen177
+\pgfmath@count=\count270
+\pgfmath@box=\box53
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 functions.code.tex"
@@ -346,59 +395,59 @@ functions.misc.code.tex")
 functions.integerarithmetics.code.tex")))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 float.code.tex"
-\c@pgfmathroundto@lastzeros=\count198
+\c@pgfmathroundto@lastzeros=\count271
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.
 code.tex")
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen161
-\pgf@picmaxx=\dimen162
-\pgf@picminy=\dimen163
-\pgf@picmaxy=\dimen164
-\pgf@pathminx=\dimen165
-\pgf@pathmaxx=\dimen166
-\pgf@pathminy=\dimen167
-\pgf@pathmaxy=\dimen168
-\pgf@xx=\dimen169
-\pgf@xy=\dimen170
-\pgf@yx=\dimen171
-\pgf@yy=\dimen172
-\pgf@zx=\dimen173
-\pgf@zy=\dimen174
+\pgf@picminx=\dimen178
+\pgf@picmaxx=\dimen179
+\pgf@picminy=\dimen180
+\pgf@picmaxy=\dimen181
+\pgf@pathminx=\dimen182
+\pgf@pathmaxx=\dimen183
+\pgf@pathminy=\dimen184
+\pgf@pathmaxy=\dimen185
+\pgf@xx=\dimen186
+\pgf@xy=\dimen187
+\pgf@yx=\dimen188
+\pgf@yy=\dimen189
+\pgf@zx=\dimen190
+\pgf@zy=\dimen191
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen175
-\pgf@path@lasty=\dimen176
+\pgf@path@lastx=\dimen192
+\pgf@path@lasty=\dimen193
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen177
-\pgf@shorten@start@additional=\dimen178
+\pgf@shorten@end@additional=\dimen194
+\pgf@shorten@start@additional=\dimen195
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box51
-\pgf@hbox=\box52
-\pgf@layerbox@main=\box53
-\pgf@picture@serial@count=\count266
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count272
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen179
+\pgflinewidth=\dimen196
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen180
-\pgf@pt@y=\dimen181
-\pgf@pt@temp=\dimen182
+\pgf@pt@x=\dimen197
+\pgf@pt@y=\dimen198
+\pgf@pt@temp=\dimen256
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorequick.code.tex"
@@ -415,14 +464,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen183
+\pgfarrowsep=\dimen257
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen184
-\pgf@sys@shading@range@num=\count267
-\pgf@shadingcount=\count268
+\pgf@max=\dimen258
+\pgf@sys@shading@range@num=\count273
+\pgf@shadingcount=\count274
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoreimage.code.tex"
@@ -431,7 +480,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box54
+\pgfexternal@startupbox=\box57
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorelayers.code.tex"
@@ -452,7 +501,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
 oduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box55
+\pgfnodeparttextbox=\box58
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
 oduleplot.code.tex"
@@ -461,8 +510,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
 pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen185
-\pgf@nodesepend=\dimen186
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
 pgfcomp-version-1-18.sty"
@@ -484,10 +533,10 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 .code.tex")
-\pgffor@iter=\dimen187
-\pgffor@skip=\dimen188
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
 r/tikz\tikz.code.tex"
@@ -496,34 +545,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pg
 flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count269
-\pgfplotmarksize=\dimen189
+\pgf@plot@mark@count=\count275
+\pgfplotmarksize=\dimen263
 )
-\tikz@lastx=\dimen190
-\tikz@lasty=\dimen191
-\tikz@lastxsaved=\dimen192
-\tikz@lastysaved=\dimen193
-\tikz@lastmovetox=\dimen194
-\tikz@lastmovetoy=\dimen195
-\tikzleveldistance=\dimen196
-\tikzsiblingdistance=\dimen197
-\tikz@figbox=\box56
-\tikz@figbox@bg=\box57
-\tikz@tempbox=\box58
-\tikz@tempbox@bg=\box59
-\tikztreelevel=\count270
-\tikznumberofchildren=\count271
-\tikznumberofcurrentchild=\count272
-\tikz@fig@count=\count273
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikz@lastmovetox=\dimen268
+\tikz@lastmovetoy=\dimen269
+\tikzleveldistance=\dimen270
+\tikzsiblingdistance=\dimen271
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count276
+\tikznumberofchildren=\count277
+\tikznumberofcurrentchild=\count278
+\tikz@fig@count=\count279
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
 odulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count274
-\pgfmatrixcurrentcolumn=\count275
-\pgf@matrix@numberofcolumns=\count276
+\pgfmatrixcurrentrow=\count280
+\pgfmatrixcurrentcolumn=\count281
+\pgf@matrix@numberofcolumns=\count282
 )
-\tikz@expandcount=\count277
+\tikz@expandcount=\count283
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
 r/tikz/libraries\tikzlibrarytopaths.code.tex"
@@ -535,18 +584,18 @@ File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count278
-\calc@Bcount=\count279
-\calc@Adimen=\dimen198
-\calc@Bdimen=\dimen256
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen272
+\calc@Bdimen=\dimen273
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count280
-\calc@Cskip=\skip66
+\calc@Ccount=\count286
+\calc@Cskip=\skip69
 )
-\c@@todonotes@numberoftodonotes=\count281
+\c@@todonotes@numberoftodonotes=\count287
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -554,52 +603,50 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
 y"
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-\c@caption@flags=\count282
-\c@continuedfloat=\count283
+\c@caption@flags=\count288
+\c@continuedfloat=\count289
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
+Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count284
-\sf@farskip=\skip67
-\sf@captopadj=\dimen257
-\sf@capskip=\skip68
-\sf@nearskip=\skip69
-\c@subfigure=\count285
-\c@subfigure@save=\count286
-\c@lofdepth=\count287
-\c@subtable=\count288
-\c@subtable@save=\count289
-\c@lotdepth=\count290
-\sf@top=\skip70
-\sf@bottom=\skip71
+\c@KVtest=\count290
+\sf@farskip=\skip70
+\sf@captopadj=\dimen274
+\sf@capskip=\skip71
+\sf@nearskip=\skip72
+\c@subfigure=\count291
+\c@subfigure@save=\count292
+\c@lofdepth=\count293
+\c@subtable=\count294
+\c@subtable@save=\count295
+\c@lotdepth=\count296
+\sf@top=\skip73
+\sf@bottom=\skip74
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.sty
 "
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count291
-\mult@box=\box60
-\multicol@leftmargin=\dimen258
-\c@unbalance=\count292
-\c@collectmore=\count293
-\doublecol@number=\count294
-\multicoltolerance=\count295
-\multicolpretolerance=\count296
-\full@width=\dimen259
-\page@free=\dimen260
-\premulticols=\dimen261
-\postmulticols=\dimen262
-\multicolsep=\skip72
-\multicolbaselineskip=\skip73
-\partial@page=\box61
-\last@line=\box62
-\maxbalancingoverflow=\dimen263
-\mult@rightbox=\box63
-\mult@grightbox=\box64
-\mult@gfirstbox=\box65
-\mult@firstbox=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
+\c@tracingmulticols=\count297
+\mult@box=\box63
+\multicol@leftmargin=\dimen275
+\c@unbalance=\count298
+\c@collectmore=\count299
+\doublecol@number=\count300
+\multicoltolerance=\count301
+\multicolpretolerance=\count302
+\full@width=\dimen276
+\page@free=\dimen277
+\premulticols=\dimen278
+\postmulticols=\dimen279
+\multicolsep=\skip75
+\multicolbaselineskip=\skip76
+\partial@page=\box64
+\last@line=\box65
+\maxbalancingoverflow=\dimen280
+\mult@rightbox=\box66
+\mult@grightbox=\box67
+\mult@gfirstbox=\box68
+\mult@firstbox=\box69
 \@tempa=\box70
 \@tempa=\box71
 \@tempa=\box72
@@ -634,15 +681,18 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box101
 \@tempa=\box102
 \@tempa=\box103
-\c@minrows=\count297
-\c@columnbadness=\count298
-\c@finalcolumnbadness=\count299
-\last@try=\dimen264
-\multicolovershoot=\dimen265
-\multicolundershoot=\dimen266
-\mult@nat@firstbox=\box104
-\colbreak@box=\box105
-\mc@col@check@num=\count300
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\c@minrows=\count303
+\c@columnbadness=\count304
+\c@finalcolumnbadness=\count305
+\last@try=\dimen281
+\multicolovershoot=\dimen282
+\multicolundershoot=\dimen283
+\mult@nat@firstbox=\box107
+\colbreak@box=\box108
+\mc@col@check@num=\count306
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbo
 x.sty"
@@ -651,49 +701,89 @@ Package: tcolorbox 2019/11/15 version 4.22 text color boxes
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
 "
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks38
-\verbatim@line=\toks39
+\every@verbatim=\toks41
+\verbatim@line=\toks42
 \verbatim@in@stream=\read3
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
 sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count301
+\etb@tempcnta=\count307
 )
-\tcb@titlebox=\box106
-\tcb@upperbox=\box107
-\tcb@lowerbox=\box108
-\tcb@phantombox=\box109
-\c@tcbbreakpart=\count302
-\c@tcblayer=\count303
-\tcolorbox@number=\count304
-\tcb@temp=\box110
-\tcb@temp=\box111
-\tcb@temp=\box112
+\tcb@titlebox=\box109
+\tcb@upperbox=\box110
+\tcb@lowerbox=\box111
+\tcb@phantombox=\box112
+\c@tcbbreakpart=\count308
+\c@tcblayer=\count309
+\tcolorbox@number=\count310
 \tcb@temp=\box113
+\tcb@temp=\box114
+\tcb@temp=\box115
+\tcb@temp=\box116
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjustbo
+x.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.
+sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\trimclip
+.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbox\collect
+box.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box117
+)
+\tc@llx=\dimen284
+\tc@lly=\dimen285
+\tc@urx=\dimen286
+\tc@ury=\dimen287
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\tc-pdfte
+x.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen288
+\adjbox@Height=\dimen289
+\adjbox@Depth=\dimen290
+\adjbox@Totalheight=\dimen291
+\adjbox@pwidth=\dimen292
+\adjbox@pheight=\dimen293
+\adjbox@pdepth=\dimen294
+\adjbox@ptotalheight=\dimen295
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpag
+e.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count311
+)
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidth.
+sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box118
+\sift@deathcycles=\count312
+\@vwid@loff=\dimen296
+\@vwid@roff=\dimen297
+))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
 "
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen267
-\ar@mcellbox=\box114
-\extrarowheight=\dimen268
-\NC@list=\toks40
-\extratabsurround=\skip74
-\backup@length=\skip75
-\ar@cellbox=\box115
-)
-\TX@col@width=\dimen269
-\TX@old@table=\dimen270
-\TX@old@col=\dimen271
-\TX@target=\dimen272
-\TX@delta=\dimen273
-\TX@cols=\count305
-\TX@ftn=\toks41
+\TX@col@width=\dimen298
+\TX@old@table=\dimen299
+\TX@old@col=\dimen300
+\TX@target=\dimen301
+\TX@delta=\dimen302
+\TX@cols=\count313
+\TX@ftn=\toks43
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5.sty"
@@ -706,16 +796,10 @@ tawesome5
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5-mapping.def")))
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl.
-sty"
-Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks42
-\minrowclearance=\skip76
-)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbskins
 .code.tex"
 Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
-\tcb@waterbox=\box116
+\tcb@waterbox=\box119
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbskins
 jigsaw.code.tex"
@@ -770,12 +854,12 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtyp
 e.sty"
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks43
-\MT@count=\count306
+\MT@toks=\toks44
+\MT@count=\count314
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen274
+\MT@outer@kern=\dimen303
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count307
+\MT@listname@count=\count315
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtyp
 e-pdftex.def"
@@ -814,19 +898,19 @@ Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )))
-\AM@pagewidth=\dimen275
-\AM@pageheight=\dimen276
+\AM@pagewidth=\dimen304
+\AM@pageheight=\dimen305
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.
 def"
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box117
-\AM@global@opts=\toks44
-\AM@pagecnt=\count308
-\AM@toc@title=\toks45
-\c@AM@survey=\count309
-\AM@templatesizebox=\box118
+\AM@pagebox=\box120
+\AM@global@opts=\toks45
+\AM@pagecnt=\count316
+\AM@toc@title=\toks46
+\c@AM@survey=\count317
+\AM@templatesizebox=\box121
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2020/03/22 3.42 The Babel package
@@ -847,16 +931,16 @@ Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count310
-\U@D=\dimen277
+\babel@savecnt=\count318
+\U@D=\dimen306
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
 ef")
 \bbl@readstream=\read4
-\bbl@dirlevel=\count311
+\bbl@dirlevel=\count319
 )
 Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count312
+\cs@wordlen=\count320
 Package babel Info: Making - an active character on input line 226.
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
@@ -873,8 +957,8 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ldf"
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 ))
-\g_ctuthesis_geometry_textwidth_dim=\dimen278
-\g_ctuthesis_geometry_textheight_dim=\dimen279
+\g_ctuthesis_geometry_textwidth_dim=\dimen307
+\g_ctuthesis_geometry_textheight_dim=\dimen308
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 sty"
@@ -884,22 +968,22 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 "
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count313
-\Gm@cntv=\count314
-\c@Gm@tempcnt=\count315
-\Gm@bindingoffset=\dimen280
-\Gm@wd@mp=\dimen281
-\Gm@odd@mp=\dimen282
-\Gm@even@mp=\dimen283
-\Gm@layoutwidth=\dimen284
-\Gm@layoutheight=\dimen285
-\Gm@layouthoffset=\dimen286
-\Gm@layoutvoffset=\dimen287
-\Gm@dimlist=\toks46
+\Gm@cnth=\count321
+\Gm@cntv=\count322
+\c@Gm@tempcnt=\count323
+\Gm@bindingoffset=\dimen309
+\Gm@wd@mp=\dimen310
+\Gm@odd@mp=\dimen311
+\Gm@even@mp=\dimen312
+\Gm@layoutwidth=\dimen313
+\Gm@layoutheight=\dimen314
+\Gm@layouthoffset=\dimen315
+\Gm@layoutvoffset=\dimen316
+\Gm@dimlist=\toks47
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 cfg"))
-\g_ctuthesis_geometry_innermargin_dim=\dimen288
+\g_ctuthesis_geometry_innermargin_dim=\dimen317
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
 * paper: a4paper
@@ -937,19 +1021,19 @@ cfg"))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.
 sty"
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box119
+\ttl@box=\box122
 \beforetitleunit=\skip78
 \aftertitleunit=\skip79
-\ttl@plus=\dimen289
-\ttl@minus=\dimen290
-\ttl@toksa=\toks47
-\titlewidth=\dimen291
-\titlewidthlast=\dimen292
-\titlewidthfirst=\dimen293
+\ttl@plus=\dimen318
+\ttl@minus=\dimen319
+\ttl@toksa=\toks48
+\titlewidth=\dimen320
+\titlewidthlast=\dimen321
+\titlewidthfirst=\dimen322
 )
 \ctu@title@rulewidth=\skip80
 \ctu@title@rulesep=\skip81
-\ctu@title@box=\box120
+\ctu@title@box=\box123
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.
 sty"
@@ -965,41 +1049,19 @@ s
 \f@nch@O@olf=\skip89
 \f@nch@O@orf=\skip90
 )
-\g_ctuthesis_fancy_bluerule_l_box=\box121
+\g_ctuthesis_fancy_bluerule_l_box=\box124
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
 88.
  ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\g_ctuthesis_fancy_bluerule_r_box=\box122
-\g_ctuthesis_fancy_bluerule_c_box=\box123
-
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
-sty"
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen294
-\lightrulewidth=\dimen295
-\cmidrulewidth=\dimen296
-\belowrulesep=\dimen297
-\belowbottomsep=\dimen298
-\aboverulesep=\dimen299
-\abovetopsep=\dimen300
-\cmidrulesep=\dimen301
-\cmidrulekern=\dimen302
-\defaultaddspace=\dimen303
-\@cmidla=\count316
-\@cmidlb=\count317
-\@aboverulesep=\dimen304
-\@belowrulesep=\dimen305
-\@thisruleclass=\count318
-\@lastruleclass=\count319
-\@thisrulewidth=\dimen306
-)
-\g_ctuthesis_tempa_box=\box124
-\g_ctuthesis_list_label_i_box=\box125
-\g_ctuthesis_list_label_ii_box=\box126
-\g_ctuthesis_list_label_iii_box=\box127
-\g_ctuthesis_list_label_iv_box=\box128
+\g_ctuthesis_fancy_bluerule_r_box=\box125
+\g_ctuthesis_fancy_bluerule_c_box=\box126
+\g_ctuthesis_tempa_box=\box127
+\g_ctuthesis_list_label_i_box=\box128
+\g_ctuthesis_list_label_ii_box=\box129
+\g_ctuthesis_list_label_iii_box=\box130
+\g_ctuthesis_list_label_iv_box=\box131
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
 y"
@@ -1015,53 +1077,53 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
 "
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks48
-\ex@=\dimen307
+\@emptytoks=\toks49
+\ex@=\dimen323
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen308
+\pmbraise@=\dimen324
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
 "
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count320
+\inf@bad=\count324
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count321
-\leftroot@=\count322
+\uproot@=\count325
+\leftroot@=\count326
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count323
-\DOTSCASE@=\count324
+\classnum@=\count327
+\DOTSCASE@=\count328
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box129
-\strutbox@=\box130
-\big@size=\dimen309
+\Mathstrutbox@=\box132
+\strutbox@=\box133
+\big@size=\dimen325
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count325
-\c@MaxMatrixCols=\count326
+\macc@depth=\count329
+\c@MaxMatrixCols=\count330
 \dotsspace@=\muskip16
-\c@parentequation=\count327
-\dspbrk@lvl=\count328
-\tag@help=\toks49
-\row@=\count329
-\column@=\count330
-\maxfields@=\count331
-\andhelp@=\toks50
-\eqnshift@=\dimen310
-\alignsep@=\dimen311
-\tagshift@=\dimen312
-\tagwidth@=\dimen313
-\totwidth@=\dimen314
-\lineht@=\dimen315
-\@envbody=\toks51
+\c@parentequation=\count331
+\dspbrk@lvl=\count332
+\tag@help=\toks50
+\row@=\count333
+\column@=\count334
+\maxfields@=\count335
+\andhelp@=\toks51
+\eqnshift@=\dimen326
+\alignsep@=\dimen327
+\tagshift@=\dimen328
+\tagwidth@=\dimen329
+\totwidth@=\dimen330
+\lineht@=\dimen331
+\@envbody=\toks52
 \multlinegap=\skip92
 \multlinetaggap=\skip93
-\mathdisplay@stack=\toks52
+\mathdisplay@stack=\toks53
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -1080,15 +1142,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks53
-\thm@bodyfont=\toks54
-\thm@headfont=\toks55
-\thm@notefont=\toks56
-\thm@headpunct=\toks57
+\thm@style=\toks54
+\thm@bodyfont=\toks55
+\thm@headfont=\toks56
+\thm@notefont=\toks57
+\thm@headpunct=\toks58
 \thm@preskip=\skip94
 \thm@postskip=\skip95
 \thm@headsep=\skip96
-\dth@everypar=\toks58
+\dth@everypar=\toks59
 ) ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\makeidx.sty
 "
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
@@ -1139,9 +1201,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 s.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen316
-\Hy@linkcounter=\count332
-\Hy@pagecounter=\count333
+\@linkdim=\dimen332
+\Hy@linkcounter=\count336
+\Hy@pagecounter=\count337
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
 f"
@@ -1157,7 +1219,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count334
+\Hy@SavedSpaceFactor=\count338
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1165,13 +1227,13 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count335
+\c@Hy@tempcnt=\count339
  ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen317
+\XeTeXLinkMargin=\dimen333
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
 y"
@@ -1182,9 +1244,9 @@ tcalc.sty"
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count336
-\Field@Width=\dimen318
-\Fld@charsize=\dimen319
+\Fld@menulength=\count340
+\Field@Width=\dimen334
+\Fld@charsize=\dimen335
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1194,9 +1256,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6455.
 Package hyperref Info: PDF/A mode OFF on input line 6460.
 LaTeX Info: Redefining \ref on input line 6500.
 LaTeX Info: Redefining \pageref on input line 6504.
-\Hy@abspage=\count337
-\c@Item=\count338
-\c@Hfootnote=\count339
+\Hy@abspage=\count341
+\c@Item=\count342
+\c@Hfootnote=\count343
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1208,8 +1270,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 d.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count340
-\c@bookmark@seq@number=\count341
+\Fld@listcount=\count344
+\c@bookmark@seq@number=\count345
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
 unfilecheck.sty"
@@ -1288,37 +1350,37 @@ LaTeX Warning: Label `fig:bgcel' multiply defined.
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 192.
-LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 212.
+LaTeX Font Info:    ... okay on input line 212.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count342
-\scratchdimen=\dimen320
-\scratchbox=\box131
-\nofMPsegments=\count343
-\nofMParguments=\count344
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count345
-\MPscratchDim=\dimen321
-\MPnumerator=\count346
-\makeMPintoPDFobject=\count347
-\everyMPtoPDFconversion=\toks60
+\scratchcounter=\count346
+\scratchdimen=\dimen336
+\scratchbox=\box134
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen337
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks61
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
 pdf-base.sty"
@@ -1337,14 +1399,14 @@ Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
 \FBsc@max=\skip98
 \FBso@max=\skip99
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 192.
+LaTeX Info: Redefining \microtypecontext on input line 212.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 192.
+LaTeX Info: Redefining \showhyphens on input line 212.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1354,7 +1416,7 @@ fg"
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box132
+\AtBeginShipoutBox=\box135
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflscap
 e.sty"
@@ -1401,7 +1463,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 192.
+Package hyperref Info: Link coloring OFF on input line 212.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1415,11 +1477,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 192.
-LaTeX Info: Redefining \pageref on input line 192.
-LaTeX Info: Redefining \nameref on input line 192.
+LaTeX Info: Redefining \ref on input line 212.
+LaTeX Info: Redefining \pageref on input line 212.
+LaTeX Info: Redefining \nameref on input line 212.
 
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
@@ -1430,37 +1492,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-94.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+14.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-94.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+14.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-194.
+214.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-194.
+214.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 194.
+(Font)              <10.95> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 194.
+(Font)              <8> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 194.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 194
+(Font)              <6> on input line 214.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 214
 .
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
@@ -1470,7 +1532,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 194
+LaTeX Font Info:    Trying to load font information for U+msb on input line 214
 .
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -1483,23 +1545,23 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <Figs/Caratula/logo_uba.png, id=154, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 <use Figs/Caratula/logo_uba.png>
-Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 194.
+Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 214.
 (pdftex.def)             Requested size: 48.68272pt x 48.90004pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 194.
+(Font)              <14.4> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 194.
+(Font)              <10> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 194.
-LaTeX Font Info:    Calculating math sizes for size <32.7> on input line 194.
+(Font)              <7> on input line 214.
+LaTeX Font Info:    Calculating math sizes for size <32.7> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <32.7> on input line 194.
+(Font)              <32.7> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <22.8899> on input line 194.
+(Font)              <22.8899> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <16.34999> on input line 194.
+(Font)              <16.34999> on input line 214.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 194--194
+Overfull \hbox (5.0pt too wide) in paragraph at lines 214--214
 []|| [][][] 
  []
 
@@ -1510,8 +1572,8 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 194--194
 {C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ju
 anr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/Caratula/logo_uba.pn
 g>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-94.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+14.
  ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1533,6 +1595,7 @@ Package microtype Info: Character `029' is missing
 
 ]
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.toc
+[7]
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
  input line 28.
 
@@ -1542,7 +1605,7 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
 ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
 n input line 28.
- [7])
+)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1553,712 +1616,186 @@ n input line 28.
 (C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/introd.t
 ex
 Capítulo 1.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 29.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 29.
+
+LaTeX Warning: Reference `fig:tiercol' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Reference `fig:sat2' on page 1 undefined on input line 7.
+
+<Figs/sate_icon.png, id=241, 200.75pt x 200.75pt>
+File: Figs/sate_icon.png Graphic file (type png)
+<use Figs/sate_icon.png>
+Package pdftex.def Info: Figs/sate_icon.png  used on input line 7.
+(pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
+<Figs/introduccion/nasaluna7_0.jpg, id=243, 903.375pt x 807.7678pt>
+File: Figs/introduccion/nasaluna7_0.jpg Graphic file (type jpg)
+<use Figs/introduccion/nasaluna7_0.jpg>
+Package pdftex.def Info: Figs/introduccion/nasaluna7_0.jpg  used on input line 
+11.
+(pdftex.def)             Requested size: 220.0pt x 196.71542pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 11--11
+ [][] 
+ []
+
+File: Figs/introduccion/nasaluna7_0.jpg Graphic file (type jpg)
+<use Figs/introduccion/nasaluna7_0.jpg>
+Package pdftex.def Info: Figs/introduccion/nasaluna7_0.jpg  used on input line 
+11.
+(pdftex.def)             Requested size: 220.0pt x 196.71542pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 11--11
+ [][] 
+ []
+
+<Figs/introduccion/arbolsat.png, id=248, 1284.8pt x 722.7pt>
+File: Figs/introduccion/arbolsat.png Graphic file (type png)
+<use Figs/introduccion/arbolsat.png>
+Package pdftex.def Info: Figs/introduccion/arbolsat.png  used on input line 12.
+
+(pdftex.def)             Requested size: 219.98146pt x 196.32257pt.
+
+Overfull \hbox (4.98146pt too wide) in paragraph at lines 12--12
+ [][] 
+ []
+
+File: Figs/introduccion/arbolsat.png Graphic file (type png)
+<use Figs/introduccion/arbolsat.png>
+Package pdftex.def Info: Figs/introduccion/arbolsat.png  used on input line 12.
+
+(pdftex.def)             Requested size: 219.98146pt x 196.32257pt.
+
+Overfull \hbox (4.98146pt too wide) in paragraph at lines 12--12
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `sec:motivacion' on page 1 undefined on input line 16.
+
+
+
+LaTeX Warning: Reference `sec:teoria' on page 1 undefined on input line 16.
+
 [1
 
 
 
-]
-<Figs/plan_de_tesis/multivshyper.png, id=251, 1820.8025pt x 592.2125pt>
+ <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/sate_ic
+on.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/
+introduccion/nasaluna7_0.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_a
+nd_dig/tesis_tex/Figs/introduccion/arbolsat.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 38.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 38.
+
+
+LaTeX Warning: Citation `canc' on page 2 undefined on input line 40.
+
+
+LaTeX Warning: Citation `food' on page 2 undefined on input line 41.
+
+
+LaTeX Warning: Citation `cultiv' on page 2 undefined on input line 41.
+
+
+LaTeX Warning: Citation `fire' on page 2 undefined on input line 41.
+
+
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 49.
+ [2]
+<Figs/plan_de_tesis/multivshyper.png, id=273, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 <use Figs/plan_de_tesis/multivshyper.png>
 Package pdftex.def Info: Figs/plan_de_tesis/multivshyper.png  used on input lin
-e 99.
+e 53.
 (pdftex.def)             Requested size: 364.15405pt x 118.4404pt.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 107.
- [2]
-<Figs/plan_de_tesis/cam_sens.png, id=268, 380.34404pt x 245.5327pt>
+
+
+LaTeX Warning: Citation `5459162' on page 3 undefined on input line 64.
+
+
+LaTeX Warning: Reference `fig:se2' on page 3 undefined on input line 89.
+
+[3 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan_
+de_tesis/multivshyper.png>]
+<Figs/plan_de_tesis/cam_sens.png, id=285, 380.34404pt x 245.5327pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 <use Figs/plan_de_tesis/cam_sens.png>
-Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 14
-8.
-(pdftex.def)             Requested size: 203.48494pt x 131.36057pt.
+Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 97
+.
+(pdftex.def)             Requested size: 220.0pt x 142.0269pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (5.0pt too wide) in paragraph at lines 97--97
+ [][] 
+ []
 
- [3 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/measurement_of_optical_filter.jpg, id=282, 414.04688pt x 33
-8.76563pt>
-File: Figs/plan_de_tesis/measurement_of_optical_filter.jpg Graphic file (type j
-pg)
-<use Figs/plan_de_tesis/measurement_of_optical_filter.jpg>
-Package pdftex.def Info: Figs/plan_de_tesis/measurement_of_optical_filter.jpg  
-used on input line 191.
-(pdftex.def)             Requested size: 331.23795pt x 271.01285pt.
+File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
+<use Figs/plan_de_tesis/cam_sens.png>
+Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 97
+.
+(pdftex.def)             Requested size: 220.0pt x 142.0269pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 97--97
+ [][] 
+ []
+
+<Figs/introduccion/teled.png, id=290, 155.07938pt x 119.94812pt>
+File: Figs/introduccion/teled.png Graphic file (type png)
+<use Figs/introduccion/teled.png>
+Package pdftex.def Info: Figs/introduccion/teled.png  used on input line 98.
+(pdftex.def)             Requested size: 220.0pt x 170.16095pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 98--98
+ [][] 
+ []
+
+File: Figs/introduccion/teled.png Graphic file (type png)
+<use Figs/introduccion/teled.png>
+Package pdftex.def Info: Figs/introduccion/teled.png  used on input line 98.
+(pdftex.def)             Requested size: 220.0pt x 170.16095pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 98--98
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `chap:zeiss' on page 4 undefined on input line 103.
+
+
+LaTeX Warning: Reference `chap:microsp' on page 4 undefined on input line 103.
+
+<Figs/introduccion/0995.png, id=295, 5139.2pt x 5139.2pt>
+File: Figs/introduccion/0995.png Graphic file (type png)
+<use Figs/introduccion/0995.png>
+Package pdftex.def Info: Figs/introduccion/0995.png  used on input line 110.
+(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
+<Figs/introduccion/0021.png, id=296, 2569.6pt x 2569.6pt>
+File: Figs/introduccion/0021.png Graphic file (type png)
+<use Figs/introduccion/0021.png>
+Package pdftex.def Info: Figs/introduccion/0021.png  used on input line 111.
+(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
+<Figs/introduccion/0187.png, id=297, 5139.2pt x 5139.2pt>
+File: Figs/introduccion/0187.png Graphic file (type png)
+<use Figs/introduccion/0187.png>
+Package pdftex.def Info: Figs/introduccion/0187.png  used on input line 113.
+(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
+<Figs/introduccion/0689.png, id=298, 5139.2pt x 5139.2pt>
+File: Figs/introduccion/0689.png Graphic file (type png)
+<use Figs/introduccion/0689.png>
+Package pdftex.def Info: Figs/introduccion/0689.png  used on input line 114.
+(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/cam_sens.png>]
-<Figs/plan_de_tesis/dists_meds.png, id=301, 479.02039pt x 382.66039pt>
-File: Figs/plan_de_tesis/dists_meds.png Graphic file (type png)
-<use Figs/plan_de_tesis/dists_meds.png>
-Package pdftex.def Info: Figs/plan_de_tesis/dists_meds.png  used on input line 
-226.
-(pdftex.def)             Requested size: 383.21683pt x 306.12872pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/measurement_of_optical_filter.jpg>]
-Underfull \vbox (badness 4673) has occurred while \output is active []
-
- [6 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/dists_meds.png>]
-<Figs/plan_de_tesis/med_mets_prevs.png, id=320, 340.96616pt x 216.81pt>
-File: Figs/plan_de_tesis/med_mets_prevs.png Graphic file (type png)
-<use Figs/plan_de_tesis/med_mets_prevs.png>
-Package pdftex.def Info: Figs/plan_de_tesis/med_mets_prevs.png  used on input l
-ine 273.
-(pdftex.def)             Requested size: 272.77328pt x 173.44823pt.
-
-Underfull \vbox (badness 1019) has occurred while \output is active []
-
- [7 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/med_mets_prevs.png>]
-<Figs/plan_de_tesis/setup_u.jpeg, id=332, 308.53731pt x 108.405pt>
-File: Figs/plan_de_tesis/setup_u.jpeg Graphic file (type jpg)
-<use Figs/plan_de_tesis/setup_u.jpeg>
-Package pdftex.def Info: Figs/plan_de_tesis/setup_u.jpeg  used on input line 32
-4.
-(pdftex.def)             Requested size: 308.53654pt x 108.40472pt.
- [8 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/setup_u.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9])
-[10]
-Capítulo 2.
-[11
-
-
-]
-\openout2 = `caps/cap3.aux'.
-
-
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/cap3.tex
-[12
-
-
-]
-Capítulo 3.
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not 
-available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 6.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 6.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
-
-LaTeX Warning: Citation `Gomez_1998' on page 13 undefined on input line 20.
-
-<Figs/cuantificaciondefectos/hueco_cel_112.png, id=362, 170.6375pt x 136.51pt>
-File: Figs/cuantificaciondefectos/hueco_cel_112.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/hueco_cel_112.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/hueco_cel_112.png  used on
- input line 24.
-(pdftex.def)             Requested size: 113.81358pt x 113.81151pt.
-File: Figs/cuantificaciondefectos/hueco_cel_112.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/hueco_cel_112.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/hueco_cel_112.png  used on
- input line 24.
-(pdftex.def)             Requested size: 113.81358pt x 113.81151pt.
-<Figs/cuantificaciondefectos/mancha_cel_112.png, id=363, 98.3675pt x 93.34875pt
->
-File: Figs/cuantificaciondefectos/mancha_cel_112.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/mancha_cel_112.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/mancha_cel_112.png  used o
-n input line 25.
-(pdftex.def)             Requested size: 113.81065pt x 113.81549pt.
-File: Figs/cuantificaciondefectos/mancha_cel_112.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/mancha_cel_112.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/mancha_cel_112.png  used o
-n input line 25.
-(pdftex.def)             Requested size: 113.81065pt x 113.81549pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-
-LaTeX Warning: Citation `milprf' on page 14 undefined on input line 29.
-
-
-LaTeX Warning: Citation `iso10110' on page 14 undefined on input line 29.
-
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 32.
-<Figs/cuantificaciondefectos/scratchanddig.png, id=372, 311.66437pt x 218.8175p
-t>
-File: Figs/cuantificaciondefectos/scratchanddig.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/scratchanddig.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/scratchanddig.png  used on
- input line 41.
-(pdftex.def)             Requested size: 342.83186pt x 240.69998pt.
-[14 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
-tificaciondefectos/hueco_cel_112.png (PNG copy)> <C:/Users/juanr/Documents/mast
-er_thesis_scratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/mancha_cel_112.
-png (PNG copy)>] [15 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/te
-sis_tex/Figs/cuantificaciondefectos/scratchanddig.png>]
-
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 67.
-
-<Figs/cuantificaciondefectos/samplesscratch.png, id=394, 552.56438pt x 313.6718
-8pt>
-File: Figs/cuantificaciondefectos/samplesscratch.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/samplesscratch.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/samplesscratch.png  used o
-n input line 70.
-(pdftex.def)             Requested size: 414.42226pt x 235.25331pt.
-
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 71.
-
-
-LaTeX Warning: Citation `Aikens' on page 16 undefined on input line 71.
-
-[16 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
-tificaciondefectos/samplesscratch.png>] [17]
-<Figs/cuantificaciondefectos/dimsfiltro.png, id=410, 291.58937pt x 270.51062pt>
-
-File: Figs/cuantificaciondefectos/dimsfiltro.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/dimsfiltro.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/dimsfiltro.png  used on in
-put line 111.
-(pdftex.def)             Requested size: 233.2718pt x 216.40878pt.
-
-Overfull \hbox (18.2718pt too wide) in paragraph at lines 111--111
- [][] 
- []
-
-File: Figs/cuantificaciondefectos/dimsfiltro.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/dimsfiltro.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/dimsfiltro.png  used on in
-put line 111.
-(pdftex.def)             Requested size: 233.2718pt x 216.40878pt.
-
-Overfull \hbox (18.2718pt too wide) in paragraph at lines 111--111
- [][] 
- []
-
-<Figs/cuantificaciondefectos/filtro_real.jpg, id=411, 1223.57124pt x 1444.39626
-pt>
-File: Figs/cuantificaciondefectos/filtro_real.jpg Graphic file (type jpg)
-<use Figs/cuantificaciondefectos/filtro_real.jpg>
-Package pdftex.def Info: Figs/cuantificaciondefectos/filtro_real.jpg  used on i
-nput line 112.
-(pdftex.def)             Requested size: 183.52777pt x 216.65009pt.
-File: Figs/cuantificaciondefectos/filtro_real.jpg Graphic file (type jpg)
-<use Figs/cuantificaciondefectos/filtro_real.jpg>
-Package pdftex.def Info: Figs/cuantificaciondefectos/filtro_real.jpg  used on i
-nput line 112.
-(pdftex.def)             Requested size: 183.52777pt x 216.65009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-[19 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
-tificaciondefectos/dimsfiltro.png> <C:/Users/juanr/Documents/master_thesis_scra
-tch_and_dig/tesis_tex/Figs/cuantificaciondefectos/filtro_real.jpg>]
-<Figs/defectosZEISS/b.jpg, id=432, 4143.48pt x 2330.7075pt>
-File: Figs/defectosZEISS/b.jpg Graphic file (type jpg)
-<use Figs/defectosZEISS/b.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/b.jpg  used on input line 150.
-(pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
- [20]
-<Figs/defectosZEISS/a.jpg, id=442, 4143.48pt x 2330.7075pt>
-File: Figs/defectosZEISS/a.jpg Graphic file (type jpg)
-<use Figs/defectosZEISS/a.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/a.jpg  used on input line 158.
-(pdftex.def)             Requested size: 331.48517pt x 186.4604pt.
-
-[21 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
-ctosZEISS/b.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_
-tex/Figs/defectosZEISS/a.jpg>] [22]
-<Figs/cuantificaciondefectos/tilescan.png, id=460, 1039.885pt x 193.72375pt>
-File: Figs/cuantificaciondefectos/tilescan.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/tilescan.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/tilescan.png  used on inpu
-t line 181.
-(pdftex.def)             Requested size: 440.0pt x 81.96939pt.
-
-
-LaTeX Warning: Citation `Lowe' on page 23 undefined on input line 187.
-
-[23 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuan
-tificaciondefectos/tilescan.png>]
-
-LaTeX Warning: Citation `tilezeiss' on page 24 undefined on input line 193.
-
-
-LaTeX Warning: Citation `van2014scikit' on page 24 undefined on input line 195.
-
-
-<Figs/cuantificaciondefectos/supextex2216.png, id=475, 486.31688pt x 455.20062p
-t>
-File: Figs/cuantificaciondefectos/supextex2216.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/supextex2216.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/supextex2216.png  used on 
-input line 207.
-(pdftex.def)             Requested size: 213.39386pt x 312.98438pt.
-File: Figs/cuantificaciondefectos/supextex2216.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/supextex2216.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/supextex2216.png  used on 
-input line 207.
-(pdftex.def)             Requested size: 213.39386pt x 312.98438pt.
-<Figs/cuantificaciondefectos/supextex1515.png, id=476, 415.5525pt x 413.545pt>
-File: Figs/cuantificaciondefectos/supextex1515.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/supextex1515.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/supextex1515.png  used on 
-input line 208.
-(pdftex.def)             Requested size: 213.39369pt x 312.98494pt.
-File: Figs/cuantificaciondefectos/supextex1515.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/supextex1515.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/supextex1515.png  used on 
-input line 208.
-(pdftex.def)             Requested size: 213.39369pt x 312.98494pt.
-[24]
-<Figs/cuantificaciondefectos/espesorfiltro.png, id=483, 45.67062pt x 276.03125p
-t>
-File: Figs/cuantificaciondefectos/espesorfiltro.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/espesorfiltro.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/espesorfiltro.png  used on
- input line 214.
-(pdftex.def)             Requested size: 31.96921pt x 193.22055pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cua
-ntificaciondefectos/supextex2216.png> <C:/Users/juanr/Documents/master_thesis_s
-cratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/supextex1515.png> <C:/User
-s/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/cuantificacionde
-fectos/espesorfiltro.png>]
-<Figs/defectosZEISS/histograma15x15.png, id=493, 207.77625pt x 60.72687pt>
-File: Figs/defectosZEISS/histograma15x15.png Graphic file (type png)
-<use Figs/defectosZEISS/histograma15x15.png>
-Package pdftex.def Info: Figs/defectosZEISS/histograma15x15.png  used on input 
-line 224.
-(pdftex.def)             Requested size: 440.0pt x 128.61427pt.
-
-
-LaTeX Warning: Citation `Zeiss' on page 26 undefined on input line 228.
-
-[26 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
-ctosZEISS/histograma15x15.png>]
-<Figs/defectosZEISS/eficienciacuanticacamarazeiss.png, id=505, 399.4925pt x 240
-.39813pt>
-File: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png Graphic file (type p
-ng)
-<use Figs/defectosZEISS/eficienciacuanticacamarazeiss.png>
-Package pdftex.def Info: Figs/defectosZEISS/eficienciacuanticacamarazeiss.png  
-used on input line 233.
-(pdftex.def)             Requested size: 440.0pt x 264.78723pt.
-<Figs/defectosZEISS/espectrolampZEISSacolor.png, id=506, 545.53813pt x 278.5406
-2pt>
-File: Figs/defectosZEISS/espectrolampZEISSacolor.png Graphic file (type png)
-<use Figs/defectosZEISS/espectrolampZEISSacolor.png>
-Package pdftex.def Info: Figs/defectosZEISS/espectrolampZEISSacolor.png  used o
-n input line 242.
-(pdftex.def)             Requested size: 440.0pt x 224.65611pt.
-
-Underfull \vbox (badness 2197) has occurred while \output is active []
-
- [27 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/eficienciacuanticacamarazeiss.png> <C:/Users/juanr/Documents/master_
-thesis_scratch_and_dig/tesis_tex/Figs/defectosZEISS/espectrolampZEISSacolor.png
->] [28]
-<Figs/defectosZEISS/tilebandaroja.png, id=520, 942.01938pt x 115.43124pt>
-File: Figs/defectosZEISS/tilebandaroja.png Graphic file (type png)
-<use Figs/defectosZEISS/tilebandaroja.png>
-Package pdftex.def Info: Figs/defectosZEISS/tilebandaroja.png  used on input li
-ne 267.
-(pdftex.def)             Requested size: 440.0pt x 53.91626pt.
-<Figs/defectosZEISS/opticalpaths.jpg, id=526, 412.54124pt x 396.48125pt>
-File: Figs/defectosZEISS/opticalpaths.jpg Graphic file (type jpg)
-<use Figs/defectosZEISS/opticalpaths.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/opticalpaths.jpg  used on input lin
-e 286.
-(pdftex.def)             Requested size: 206.27011pt x 198.24013pt.
-File: Figs/defectosZEISS/opticalpaths.jpg Graphic file (type jpg)
-<use Figs/defectosZEISS/opticalpaths.jpg>
-Package pdftex.def Info: Figs/defectosZEISS/opticalpaths.jpg  used on input lin
-e 286.
-(pdftex.def)             Requested size: 206.27011pt x 198.24013pt.
-<Figs/cuantificaciondefectos/ilumnoun.png, id=531, 371.3875pt x 283.0575pt>
-File: Figs/cuantificaciondefectos/ilumnoun.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/ilumnoun.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/ilumnoun.png  used on inpu
-t line 287.
-(pdftex.def)             Requested size: 185.69328pt x 141.5284pt.
-File: Figs/cuantificaciondefectos/ilumnoun.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/ilumnoun.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/ilumnoun.png  used on inpu
-t line 287.
-(pdftex.def)             Requested size: 185.69328pt x 141.5284pt.
-
-[29 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
-ctosZEISS/tilebandaroja.png>]
-Underfull \vbox (badness 3965) has occurred while \output is active []
-
- [30 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/opticalpaths.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_an
-d_dig/tesis_tex/Figs/cuantificaciondefectos/ilumnoun.png (PNG copy)>]
-<Figs/defectosZEISS/bg_teorico.png, id=549, 50.1875pt x 62.73438pt>
-File: Figs/defectosZEISS/bg_teorico.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_teorico.png  used on input line 
-298.
-(pdftex.def)             Requested size: 142.30754pt x 170.75772pt.
-File: Figs/defectosZEISS/bg_teorico.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_teorico.png  used on input line 
-298.
-(pdftex.def)             Requested size: 142.30754pt x 170.75772pt.
-<Figs/defectosZEISS/hist_bg_teorico.png, id=550, 128.98187pt x 130.4875pt>
-File: Figs/defectosZEISS/hist_bg_teorico.png Graphic file (type png)
-<use Figs/defectosZEISS/hist_bg_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/hist_bg_teorico.png  used on input 
-line 299.
-(pdftex.def)             Requested size: 180.57338pt x 182.68123pt.
-File: Figs/defectosZEISS/hist_bg_teorico.png Graphic file (type png)
-<use Figs/defectosZEISS/hist_bg_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/hist_bg_teorico.png  used on input 
-line 299.
-(pdftex.def)             Requested size: 180.57338pt x 182.68123pt.
-<Figs/defectosZEISS/img_ideal_2defectos.png, id=551, 50.1875pt x 62.73438pt>
-File: Figs/defectosZEISS/img_ideal_2defectos.png Graphic file (type png)
-<use Figs/defectosZEISS/img_ideal_2defectos.png>
-Package pdftex.def Info: Figs/defectosZEISS/img_ideal_2defectos.png  used on in
-put line 305.
-(pdftex.def)             Requested size: 142.30754pt x 199.21767pt.
-File: Figs/defectosZEISS/img_ideal_2defectos.png Graphic file (type png)
-<use Figs/defectosZEISS/img_ideal_2defectos.png>
-Package pdftex.def Info: Figs/defectosZEISS/img_ideal_2defectos.png  used on in
-put line 305.
-(pdftex.def)             Requested size: 142.30754pt x 199.21767pt.
-<Figs/defectosZEISS/hist_bg_condefectos_teorico.png, id=552, 137.51375pt x 175.
-15437pt>
-File: Figs/defectosZEISS/hist_bg_condefectos_teorico.png Graphic file (type png
-)
-<use Figs/defectosZEISS/hist_bg_condefectos_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/hist_bg_condefectos_teorico.png  us
-ed on input line 306.
-(pdftex.def)             Requested size: 165.01567pt x 210.18419pt.
-File: Figs/defectosZEISS/hist_bg_condefectos_teorico.png Graphic file (type png
-)
-<use Figs/defectosZEISS/hist_bg_condefectos_teorico.png>
-Package pdftex.def Info: Figs/defectosZEISS/hist_bg_condefectos_teorico.png  us
-ed on input line 306.
-(pdftex.def)             Requested size: 165.01567pt x 210.18419pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/bg_teorico.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_
-dig/tesis_tex/Figs/defectosZEISS/hist_bg_teorico.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/img_ideal_2defectos.png> <C:/Users/juanr/Documents/master_thesis_scr
-atch_and_dig/tesis_tex/Figs/defectosZEISS/hist_bg_condefectos_teorico.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 327.
-
-<Figs/defectosZEISS/bg_azul.png, id=569, 234.37563pt x 272.01625pt>
-File: Figs/defectosZEISS/bg_azul.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_azul.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 335
-.
-(pdftex.def)             Requested size: 210.9361pt x 244.81235pt.
-File: Figs/defectosZEISS/bg_azul.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_azul.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul.png  used on input line 335
-.
-(pdftex.def)             Requested size: 210.9361pt x 244.81235pt.
-<Figs/defectosZEISS/bg_azul_mean.png, id=570, 232.87pt x 273.52188pt>
-File: Figs/defectosZEISS/bg_azul_mean.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_azul_mean.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul_mean.png  used on input lin
-e 336.
-(pdftex.def)             Requested size: 209.58104pt x 246.1674pt.
-File: Figs/defectosZEISS/bg_azul_mean.png Graphic file (type png)
-<use Figs/defectosZEISS/bg_azul_mean.png>
-Package pdftex.def Info: Figs/defectosZEISS/bg_azul_mean.png  used on input lin
-e 336.
-(pdftex.def)             Requested size: 209.58104pt x 246.1674pt.
-
-Underfull \vbox (badness 3547) has occurred while \output is active []
-
- [33]
-<Figs/defectosZEISS/comparhistsmedi.png, id=583, 375.90437pt x 274.52562pt>
-File: Figs/defectosZEISS/comparhistsmedi.png Graphic file (type png)
-<use Figs/defectosZEISS/comparhistsmedi.png>
-Package pdftex.def Info: Figs/defectosZEISS/comparhistsmedi.png  used on input 
-line 344.
-(pdftex.def)             Requested size: 263.13126pt x 192.16661pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/bg_azul.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig
-/tesis_tex/Figs/defectosZEISS/bg_azul_mean.png>]
-Underfull \vbox (badness 7064) has occurred while \output is active []
-
- [35 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/comparhistsmedi.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 353.
-
-<Figs/defectosZEISS/correccionilum/NIR/1.png, id=602, 387.94937pt x 277.035pt>
-File: Figs/defectosZEISS/correccionilum/NIR/1.png Graphic file (type png)
-<use Figs/defectosZEISS/correccionilum/NIR/1.png>
-Package pdftex.def Info: Figs/defectosZEISS/correccionilum/NIR/1.png  used on i
-nput line 359.
-(pdftex.def)             Requested size: 426.74562pt x 304.73943pt.
-[36 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
-ctosZEISS/correccionilum/NIR/1.png>]
-
-LaTeX Warning: Citation `anilfund' on page 37 undefined on input line 380.
-
-[37]
-<Figs/defectosZEISS/correccionilum/defectoehist.png, id=623, 352.31625pt x 276.
-53313pt>
-File: Figs/defectosZEISS/correccionilum/defectoehist.png Graphic file (type png
-)
-<use Figs/defectosZEISS/correccionilum/defectoehist.png>
-Package pdftex.def Info: Figs/defectosZEISS/correccionilum/defectoehist.png  us
-ed on input line 397.
-(pdftex.def)             Requested size: 352.31538pt x 276.53244pt.
- [38 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/correccionilum/defectoehist.png>]
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 405.
-
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <14.4> no
-t available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 405.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 405.
-
-
-LaTeX Warning: Citation `shapi' on page 39 undefined on input line 408.
-
-
-LaTeX Warning: Citation `van2014scikit' on page 39 undefined on input line 410.
-
-
-
-LaTeX Warning: Citation `Lie' on page 39 undefined on input line 415.
-
-
-LaTeX Warning: Citation `Glasmean' on page 39 undefined on input line 415.
-
-
-LaTeX Warning: Citation `otsuu' on page 39 undefined on input line 415.
-
-
-LaTeX Warning: Reference `fig:threshcom' on page 39 undefined on input line 415
-.
-
-
-LaTeX Warning: Citation `pericles' on page 39 undefined on input line 415.
-
-<Figs/defectosZEISS/thresh_comparison.png, id=633, 188.705pt x 155.58125pt>
-File: Figs/defectosZEISS/thresh_comparison.png Graphic file (type png)
-<use Figs/defectosZEISS/thresh_comparison.png>
-Package pdftex.def Info: Figs/defectosZEISS/thresh_comparison.png  used on inpu
-t line 418.
-(pdftex.def)             Requested size: 434.02098pt x 357.83644pt.
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
-available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 419.
-[39]
-
-LaTeX Warning: Citation `ridler' on page 40 undefined on input line 423.
-
-
-LaTeX Warning: Citation `triang' on page 40 undefined on input line 423.
-
-
-LaTeX Warning: Citation `yen' on page 40 undefined on input line 423.
-
-
-LaTeX Warning: Reference `fig:threshcom2' on page 40 undefined on input line 42
-3.
-
-<Figs/defectosZEISS/thresh_vivos_compar3.png, id=643, 332.24126pt x 157.08687pt
->
-File: Figs/defectosZEISS/thresh_vivos_compar3.png Graphic file (type png)
-<use Figs/defectosZEISS/thresh_vivos_compar3.png>
-Package pdftex.def Info: Figs/defectosZEISS/thresh_vivos_compar3.png  used on i
-nput line 427.
-(pdftex.def)             Requested size: 398.6875pt x 188.50328pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/thresh_comparison.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\faGithub' on input line 440.
-
-
-LaTeX Warning: Reference `fig:diagflujoalgor' on page 41 undefined on input lin
-e 443.
-
-<Figs/cuantificaciondefectos/diag_flujoalgor.png, id=654, 588.69937pt x 152.068
-13pt>
-File: Figs/cuantificaciondefectos/diag_flujoalgor.png Graphic file (type png)
-<use Figs/cuantificaciondefectos/diag_flujoalgor.png>
-Package pdftex.def Info: Figs/cuantificaciondefectos/diag_flujoalgor.png  used 
-on input line 447.
-(pdftex.def)             Requested size: 470.96013pt x 121.65466pt.
-
-Overfull \hbox (30.96013pt too wide) in paragraph at lines 447--448
- [][] 
- []
-
-<Figs/defectosZEISS/algor_defecs.png, id=655, 275.0275pt x 278.54062pt>
-File: Figs/defectosZEISS/algor_defecs.png Graphic file (type png)
-<use Figs/defectosZEISS/algor_defecs.png>
-Package pdftex.def Info: Figs/defectosZEISS/algor_defecs.png  used on input lin
-e 455.
-(pdftex.def)             Requested size: 412.54024pt x 417.80989pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/thresh_vivos_compar3.png> <C:/Users/juanr/Documents/master_thesis_sc
-ratch_and_dig/tesis_tex/Figs/cuantificaciondefectos/diag_flujoalgor.png>]
-
-LaTeX Warning: Reference `fig:diagflujoalgor' on page 42 undefined on input lin
-e 460.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 42 undefined on input line 460
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 42 undefined on input line 463
-.
-
-
-LaTeX Warning: Reference `chap:microsp' on page 42 undefined on input line 463.
-
-
-
-Underfull \vbox (badness 1783) has occurred while \output is active []
-
- [42 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/def
-ectosZEISS/algor_defecs.png>]
-
-LaTeX Warning: Reference `fig:histalgor' on page 43 undefined on input line 464
-.
-
-<Figs/defectosZEISS/hist_algor_agujero.png, id=673, 259.97125pt x 136.00812pt>
-File: Figs/defectosZEISS/hist_algor_agujero.png Graphic file (type png)
-<use Figs/defectosZEISS/hist_algor_agujero.png>
-Package pdftex.def Info: Figs/defectosZEISS/hist_algor_agujero.png  used on inp
-ut line 468.
-(pdftex.def)             Requested size: 428.94992pt x 224.412pt.
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 469
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 469
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 473
-.
-
-
-LaTeX Warning: Reference `fig:histalgor' on page 43 undefined on input line 473
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 43 undefined on input line 474
-.
-
-
-LaTeX Warning: Citation `scipy' on page 43 undefined on input line 474.
-
-[43 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/defe
-ctosZEISS/hist_algor_agujero.png>]
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 44 undefined on input line 480
-.
-
-
-LaTeX Warning: Reference `sec:iso10110' on page 44 undefined on input line 480.
-
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 44 undefined on input line 480
-.
-
-[44]
-
-LaTeX Warning: Citation `pandas' on page 45 undefined on input line 482.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 485
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 489
-.
-
-
-LaTeX Warning: Reference `fig:histalgor' on page 45 undefined on input line 491
-.
-
-
-LaTeX Warning: Reference `fig:flujoalgo' on page 45 undefined on input line 491
-.
-
-[45]
-
-LaTeX Warning: Reference `chap:microsp' on page 46 undefined on input line 493.
-
-
-
-LaTeX Warning: Reference `sec:scanddig' on page 46 undefined on input line 493.
-
-
-[46]
-! TeX capacity exceeded, sorry [input stack size=5000].
-\Hy@href {->\hyper@normalise 
-                             \href@ {
-l.499 ...es técnicas de \href{\ref{sec:scanddig}}
-                                                  {\textit{scratch \& dig}} ...
-If you really absolutely need more capacity,
-you can ask a wizard to enlarge me.
-
- 
-Here is how much of TeX's memory you used:
- 31773 strings out of 480897
- 633120 string characters out of 2898200
- 1215101 words of memory out of 3000000
- 46545 multiletter control sequences out of 15000+200000
- 690519 words of font info for 259 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 5000i,19n,8326p,1544b,2393s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+_de_tesis/cam_sens.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig
+/tesis_tex/Figs/introduccion/teled.png>] [5 <C:/Users/juanr/Documents/master_th
+esis_scratch_and_dig/tesis_tex/Figs/introduccion/0995.png (PNG copy)> <C:/Users
+/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/introduccion/0021
+.png>
+!pdfTeX error: pdflatex: fflush() failed (Invalid argument)
+ ==> Fatal error occurred, no output PDF file produced!

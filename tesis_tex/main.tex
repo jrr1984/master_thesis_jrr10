@@ -1,5 +1,6 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{lipsum}    
 \usepackage{floatrow}
 \usepackage{xargs}
@@ -12,6 +13,7 @@
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}	
 \newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
 \newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
 \definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
 \def\justifying{%
 	\rightskip=0pt
@@ -180,12 +182,33 @@
 \justifying
 \end{thanks}
 
+\singlespacing
 \begin{declaration}
+\spacing{1.5}
 
-	Resumen copado al final..
+\hspace{0.5cm}En la tesis de licenciatura de Agustina Pose \cite{Pose2017}, dirigida 
+por Hernán Grecco quien también dirigió esta tesis, ambos desarrollaron un prototipo 
+de cámaras multi e hiperespectrales para uso satelital junto a la empresa Satellogic. Tras 
+la realización de pruebas y mediciones en tierra, se aprobó la 
+prueba de concepto del prototipo y se lo adaptó a un diseño robusto. La 
+cámara hiperespectral diseñada es hoy una de las cargas útiles (ó 
+\textit{payloads}) a bordo de los satélites argentinos NewSat 1 y NewSat 2 
+(alias Fresco y Batata), puestos en órbita el 30 de Mayo de 2016, construidos 
+por la empresa Satellogic.
+
+\hspace{0.5cm}En la presente tesis se propuso una continuación de dicho trabajo, en colaboración con la empresa Satellogic bajo la supervisión del Dr. Martín D. Bordenave, a partir del desarrollo de un 
+sistema integral de caracterización de los filtros de interferencia de banda 
+que son utilizados en las cámaras multiespectrales. Estos filtros permiten el 
+paso de las longitudes de onda que se desean capturar con el sensor 
+de detección principal de la cámara que sólo detecta intensidad lumínica. En consecuencia, la caracterización de los 
+filtros resulta fundamental para garantizar la calidad de las imágenes 
+capturadas. 
+
 \end{declaration}
 
 
+
+%\includeonly{caps/introd}
 \begin{document}	
 
 \maketitle
@@ -202,11 +225,11 @@
 
 \include{caps/introd}
 
-\include{caps/zeiss}
+%\include{caps/zeiss}
 
-\include{caps/microesp}
+%\include{caps/microesp}
 
-\include{caps/concls}
+%\include{caps/concls}
 
 \singlespacing
 \justifying
