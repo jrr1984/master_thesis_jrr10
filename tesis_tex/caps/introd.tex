@@ -4,80 +4,22 @@
 \spacing{1.5}
 
 
-\hspace{0.5cm} QUÉ ES UN DEFECTO Y QUÉ LE ESTÁ HACIENDO A LAS IMÁGENES, MOSTRAR IMAGEN QUE TIENE PUNTOS CON DIFRACCIÓN, LOS TIFFS..
+\hspace{0.5cm}Desde la primera adquisición de una fotografía en color de todo el planeta Tierra por una cámara a bordo del satélite ATS 3 en 1967 (Ver Figura \ref{fig:tiercol}), a la adquisición de una imagen multiespectral de 1 metro de resolución espacial que permite identificar y hacer conteo individual de árboles de una región de la Tierra (Ver Figura \ref{fig:sat2}), la población mundial ha aumentado desde los 3.46 hasta los 7.78 billones de personas (actualidad). ¿Cómo se va a aumentar la producción de alimentos para alimentar una población mundial estimada para 2050 de 9700 millones de personas? ¿Cómo se va a producir la energía necesaria para dicha población sin comprometer los recursos para las futuras generaciones? [\href{https://satellogic.com/}{\includegraphics[scale=0.06]{Figs/sate_icon.png}}]
 
-\vspace{1cm}
-\todo[inline]{explicar microscopio, conceptos como apertura numérica.. espectroscopía un poco etc}
-\vspace{1cm}
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[width=0.5\textwidth]{Figs/introduccion/nasaluna7_0.jpg}}{\caption{La primera fotografía en color de todo el planeta Tierra, satélite ATS 3 (10 de noviembre de 1967). Adaptado de \href{https://www.nationalgeographic.com.es/temas/planeta-tierra/fotos/1/17}{https://bit.ly/35j8Jo5}}\label{fig:tiercol}}
+		\ffigbox{\includegraphics[width=0.5\textwidth,height=6.9cm]{Figs/introduccion/arbolsat.png}}{\caption{Imagen multiespectral de 1 metro de resolución adquirida con una cámara a bordo de uno de los satélites de la compañía Satellogic. Adaptado de \href{https://bit.ly/3f6vhgn}{https://bit.ly/3f6vhgn}}\label{fig:sat2}}
+	\end{floatrow}
+\end{figure}
 
-\textsc{Título:} Construcción e implementación de un sistema integral de 
-caracterización de filtros ópticos utilizados en cámaras hiperespectrales.
+Una posible respuesta a estos interrogantes puede estar en el entendimiento de la información que nos pueden brindar las imágenes multi e hiperespectrales adquiridas por medio de cámaras a bordo de satélites en una constelación de tamaño tal que se pueda obtener una imagen de cada región del planeta con una resolución temporal diaria. En este trabajo de tesis se caracterizaron los filtros multiespectrales de dichas cámaras. En particular en este capítulo se describe la motivación del proyecto por medio de la explicación del proceso de aquisición de imágenes multiespectrales [\ref{sec:motivacion}] y luego se explica la teoría general detrás del sistema de caracterización de filtros multiespectrales desarrollado en esta tesis [\ref{sec:teoria}].
 
+\singlespacing
+\section{Adquisición de imágenes multiespectrales}
+\label{sec:motivacion}
+\spacing{1.5}
 
-\hspace{-0.4cm}\textsc{Alumno:} Juan Reto Reynal L.U. 777/12.
-
-\hspace{-0.4cm}\textsc{Director:} Dr. Hernán E. Grecco, 
-Prof. Adj. UBA, Inv. Indep. CONICET.
-
-\hspace{-0.4cm}\textsc{Lugar de trabajo:} LEC, Departamento de Física, FCEyN, UBA.
-
-
-\section{Objetivo general}
-\hspace{0.5cm}La espectroscopía de imágenes hiperespectrales, en inglés 
-\textit{Hyperspectral 
-Spectroscopy Imaging} (HSI), combina la espectroscopía y la adquisición de 
-imágenes 
-en dos dimensiones. Este método brinda datos espectrales para cada 
-pixel en el campo de 
-visión\footnote{El campo de visión, en inglés \textit{field of view} (FOV), es 
-el ángulo sólido a través del cual un sensor puede detectar la radiación 
-electromagnética que se desee capturar.}. A partir de dichos 
-datos se puede extraer información sobre la emisión, reflexión ó absorción de 
-una muestra, que puede ser utilizada para determinar su 
-composición físico-química con una resolución espacial. De esta forma se pueden 
-identificar tumores de un cáncer, realizar un control de calidad de la comida 
-identificando bacterias en tiempo real, localizar las células de una muestra 
-biológica u optimizar la siembra y la cosecha de ciertos cultivos, entre otras 
-aplicaciones.
-
-
-
-
-En la tesis de licenciatura de Agustina Pose \cite{Pose2017}, dirigida 
-por 
-Hernán Grecco quien también dirige esta tesis, ambos desarrollaron un prototipo 
-de cámara hiperespectral para uso satelital junto a la empresa Satellogic. Tras 
-la realización de pruebas y mediciones en tierra, se aprobó la 
-prueba de concepto de este prototipo y se lo adaptó a un diseño robusto. La 
-cámara hiperespectral diseñada es hoy una de las cargas útiles (ó 
-\textit{payloads}) a bordo de los satélites argentinos NewSat 1 y NewSat 2 
-(alias Fresco y Batata), puestos en órbita el 30 de Mayo de 2016, construidos 
-por la empresa Satellogic.
-
-En la presente tesis se propuso una continuación de dicho trabajo a partir del desarrollo de un 
-sistema integral de caracterización de los filtros de interferencia de banda 
-que son utilizados en las cámaras multiespectrales. Estos filtros permiten el 
-paso de las longitudes de onda (colores) que se desean capturar con el sensor 
-de detección principal de la cámara que sólo detecta intensidad lumínica. En consecuencia, la caracterización de los 
-filtros resulta fundamental para garantizar la calidad de las imágenes 
-capturadas. El primer prototipo de este sistema integral permitirá 
-principalmente caracterizar el espectro de transmisión del filtro en 
-cada punto del mismo, es decir en cada posición $(x,y)$ de su superficie, y 
-encontrar defectos que pudieran modificar su capacidad de bloqueo de ciertas 
-longitudes de onda no deseadas.
-
-\subsection{Objetivos específicos del proyecto}
-\label{sec:introdhiper}
-\begin{itemize}
-	
-	\item \texttt{Objetivo 1:} Caracterización de los espectros de transmisión 
-	de los filtros.
-	\item \texttt{Objetivo 2:} Detección de los defectos de los filtros 
-	(\textit{scratch and dig}).
-	\item \texttt{Objetivo 3:} Caracterización de los filtros en su posición 
-	final en las cámaras de vuelo 
-	del satélite. \end{itemize}
-\section{Introducción}
 
 \hspace{0.5cm}Una imagen a color RGB convencional está compuesta por tres 
 canales de 
@@ -88,8 +30,16 @@ en general no permiten la detección e identificación de distintos objetos
 sólidos y 
 líquidos, menos 
 aún determinar sus propiedades. Para ello 
-es necesario obtener el espectro completo del objeto de estudio que es posible 
-a partir de la captura de imágenes multiespectrales e hiperespectrales.
+es necesario obtener información sobre la interacción entre la radiación electromagnética y dichos objetos, es decir sobre el espectro del objeto que permite identificarlo de manera análoga a la identificación de una persona mediante su huella dactilar. Esto último es posible a partir de la captura de imágenes multi e hiperespectrales.
+
+La espectroscopía de imágenes multi e hiperespectrales, en inglés \textit{Multispectral and Hyperspectral Spectroscopy
+Imaging} (MSI y HSI, respectivamente), combina la espectroscopía y la adquisición de imágenes en dos dimensiones.
+Este método brinda datos espectrales para cada pixel en el campo de visión \footnote{El campo de visión, en inglés \textit{field of view} (FOV), es el ángulo sólido a través del cual un sensor puede
+detectar la radiación electromagnética que se desee capturar.}. A partir de
+dichos datos se puede extraer información sobre la emisión, reflexión ó absorción del objeto de estudio, que puede ser utilizada para determinar su composición físico-química con una cierta
+resolución espacial. De esta forma, dependiendo de la aplicación, se pueden identificar tumores de un cáncer \cite{canc}, realizar un
+control de calidad de la comida identificando bacterias en tiempo real \cite{food}, optimizar la siembra y la cosecha de ciertos cultivos \cite{cultiv}, monitorear focos de incendios \cite{fire}, entre otras
+aplicaciones.
 
 Las imágenes multiespectrales contienen un número acotado de bandas espectrales 
 de hasta un par de decenas, con un gran ancho de banda (varias decenas de nm); 
@@ -110,9 +60,9 @@ unos pocos nm (Ver Figura \ref{fig:spectrus}).
 \end{figure}
 
 
-Las cámaras de adquisición de imágenes hiperespectrales estándard utilizan 
-redes de difracción o prismas como elementos dispersivos de la luz. La 
-distancia requerida entre el sensor de detección y  el componente de difracción 
+Las cámaras de adquisición de imágenes multiespectrales estándard utilizan 
+redes de difracción o prismas como elementos dispersivos de la luz \cite{5459162}. La 
+distancia requerida entre el sensor de detección y el componente de difracción 
 de la luz, hace que este tipo de cámaras sean muy grandes y muy pesadas, dos 
 condiciones que por ejemplo en la industria satelital se quieren optimizar 
 fuertemente ya que el costo de la puesta en órbita de los satélites es 
@@ -121,306 +71,108 @@ sensibles a desalinearse debido a las condiciones mecánicas de su construcción
 Esta última condición se agrava en sistemas de difícil manipulación como lo son 
 los satélites, que una vez que se encuentra en órbita, sus componentes ópticos 
 ya no puede ser modificados como para corregir una desalineación que empeore la 
-calidad de las imágenes capturadas. Además, requieren de una rendija 
-para poder obtener una alta resolución espectral, lo que restringe 
-significativamente la intensidad de la luz a detectar.
+calidad de las imágenes capturadas.
 
 En respuesta a las desventajas de las cámaras estándard de imágenes 
-hiperespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
+multiespectrales, aparecieron otro tipo de cámaras que utilizan filtros de 
 interferencia de banda y que resultaron en un producto final robusto, compacto, 
 de bajo costo y de muy buen rendimiento. Una cámara de vuelo 
 de este tipo fue desarrollada en la tesis de licenciatura de Agustina Pose bajo 
-la dirección de Hernán Grecco \cite{Pose2017} como se mencionó anteriormente. 
+la dirección de Hernán Grecco \cite{Pose2017}. 
 La cámara desarrollada tiene la gran ventaja de no presentar partes móviles, 
 evitando posibles desalineaciones de los componentes ópticos. Las partes 
 móviles de la cámara que serían útiles para realizar un barrido espectral de 
-una cierta escena a capturar, no son necesarias pues el barrido es realiizado 
+una cierta escena a capturar, no son necesarias pues el barrido es realizado 
 por el movimiento propio del satélite respecto de la Tierra. El esquema básico 
 de este tipo de 
-cámaras hiperespectales se muestra 
-en la Figura \ref{fig:camsens}. Los filtros de interferencia de banda 
-utilizados en este tipo de cámaras deben cumplir ciertos requisitos de calidad 
-(no presentar rayones, ni marcas, etc) 
-y ciertas características espectrales y de transmisión antes de ser 
-incorporados a la carga útil de, por ejemplo, un satélite que va a ser puesto 
-en 
-órbita. En consecuencia, resulta fundamental caracterizar completamente dichos 
-filtros antes de construir las cámaras de la aplicación de interés.
+cámaras multiespectales se muestra 
+en la Figura \ref{fig:camsens}, donde una lente enfoca la luz sobre el sensor de imagen que tiene un filtro de múltiples bandas montado arriba de él (Ver Figura \ref{fig:se2}).
+
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.535]{Figs/plan_de_tesis/cam_sens.png}
-	\caption{ Esquema de una cámara hiperespectral. El filtro absorbe el 
+	\begin{floatrow}
+		\ffigbox{\includegraphics[width=0.5\textwidth]{Figs/plan_de_tesis/cam_sens.png}}{\caption{ Esquema de una cámara multiespectral. El filtro absorbe el 
 	espectro completo de la luz incidente salvo la banda espectral que el 
 	usuario determina, por lo que sólo las longitudes de onda elegidas 
-	atraviesan el filtro y son detectadas por el sensor. \cite{Martinez2008}}
-	\label{fig:camsens}
+	atraviesan el filtro y son detectadas por el sensor. Adaptado de \cite{Martinez2008}}	\label{fig:camsens}}
+		\ffigbox{\includegraphics[width=0.5\textwidth]{Figs/introduccion/teled.png}}{\caption{Filtro de cinco bandas montado directamente sobre el sensor CCD, es decir en el plano focal del mismo. Adaptado de \href{https://bit.ly/3aTRGds}{https://bit.ly/3aTRGds} }\label{fig:se2}}
+	\end{floatrow}
 \end{figure}
 
-
-
-Debido a las limitaciones de las técnicas de 
-medición estándard 
-de los espectros de transmisión de los filtros ópticos donde se utilizan 
-espectrómetros comerciales, existen tres discrepancias fundamentales 
-entre el espectro ''real''\footnote{El espectro ''real'' es 
-	el espectro de diseño del filtro para el que fue especialmente construido.} 
-	de 
-un 
-filtro y sus mediciones experimentales realizadas con 
-espectrómetros comerciales (Ver Figura \ref{fig:obj1a})\cite{Semrock}. La 
-primera discrepancia es el "redondeo" de características espectrales nítidas de 
-los filtros. 
-Esto se debe al ancho de banda no nulo del haz de la sonda del 
-espectrómetro. 
-
-
-La segunda discrepancia se debe al rango limitado de 
-medición de la OD\footnote{La densidad óptica, OD (Optical Density), es un 
-	parámetro útil para describir la transmisión de la luz a través de un 
-	filtro 
-	óptico con una transmisión extremedamente baja. Si T es la transmisión del 
-	filtro, que varía entre 0 y 1, se define la densidad óptica como $OD = 
-	-$log$_{10} (T)$.} del filtro, que es 
-producto de la sensibilidad limitada del espectrómetro. Cuando un filtro 
-tiene un valor de OD muy alto, OD $>$ 6, el detector debería medir una 
-intensidad de la luz prácticamente nula pero el ruido óptico y electrónico 
-propio del detector limita el nivel más bajo de intensidad que puede medir 
-con precisión. De esta forma, se puede ver un ruido de piso debido al 
-sensor indicando un cierto valor de OD que no coincide con el valor real 
-del filtro.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{Figs/plan_de_tesis/measurement_of_optical_filter.jpg}
-	\caption{Discrepancias entre las mediciones experimentales con 
-		espectrómetros 
-		comerciales y el espectro ''real'' de un filtro óptico. Adaptado de 
-		\cite{Semrock}.}
-	\label{fig:obj1a}
-\end{figure}
-
-La tercera 
-discrepancia es propia de las mediciones de transiciones muy 
-pronunciadas. Esto surge 
-por el hecho de que el 
-haz de la sonda no es monocromático, sino que también tiene bandas 
-laterales débiles de longitudes de onda fuera de su ancho de banda 
-principal.
-
-Las discrepancias de medición en espectrómetros convencionales 
-causan 
-importantes problemas al intentar evaluar el rendimiento del filtro para la 
-aplicación prevista. 
-
-La elección del instrumento de medición y la técnica 
-empleada determinan la precisión de la medición del espectro de transmisión del 
-filtro. Al mismo tiempo, determinan la duración y por ende también el costo de 
-dichas mediciones, que deben ser compatibles con los tiempos que la industria 
-requiere. Esto se puede ver con un ejemplo tomado de \cite{Semrock}. En la 
-Figura \ref{fig:may_dists} se muestran cinco mediciones distintas de 
-la densidad óptica de un filtro diseñado para bloquear longitudes de onda de 
-532 nm con OD $>$ 6 y tener una transición a un estado de alta transmisión 
-dentro del $0.5\%$ de la longitud de onda del láser utilizado para excitar la 
-muestra, que es de 534.7nm.
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{Figs/plan_de_tesis/dists_meds.png}
-	\caption{Distintas mediciones de la OD de un filtro LP03-532RE-
-		25 RazorEdge de la empresa Semrock. Las mediciones fueron realizadas 
-		utilizando tanto espectrómetros comerciales como \textit{custom-made} 
-		de la emppresa con una variedad de arreglos experimentales que se 
-		explican en el texto. Adaptado de 
-		\cite{Semrock}.}
-	\label{fig:may_dists}
-\end{figure}
-
-Las mediciones del método A fueron realizadas por un espectrómetro de diseño 
-propio (\textit{custom-built}) de la empresa,  que tiene un tiempo de 
-integración muy corto y una baja resolución, lo que resulta en una 
-configuración 
-experimental óptima para obtener mediciones de una gran cantidad de filtros de 
-prueba. Este método es utilizado para determinar con precisión la longitud de 
-onda a partir de la cual el filtro pasa a tener una alta transmisión, es decir, 
-localiza la longitud de onda de la transición entre el estado de bloqueo y de 
-transmisión del filtro, la longitud de onda de corte. De esta forma, se 
-garantiza una cierta uniformidad en un lote de filtros a ser utilizado de una 
-forma rápida y eficiente. Ahora bien, como se observa en el gráfico de la 
-Figura \ref{fig:may_dists}, el método A posee una sensibilidad muy mala y una 
-resolución muy baja, obteniéndose un piso de ruido mayor a OD 2.
-
-El método B utiliza un espectrómetro comercial (Perkin Elmer
-Lambda 900) cuyos inconvenientes fueron explicados a partir de las tres 
-discrepancias en la Figura \ref{fig:obj1a}. Con este método no se puede 
-asegurar que el filtro tenga un 0D $>$ 6 en los 532nm.
-
-
-Los métodos C y D utilizan el mismo espectrómetro \textit{custom-built}	del 
-método A, cuyo principio de funcionamiento básico se muestra en la Figura 
-\ref{fig:med_prev}. La diferencia fundamental con el método B que utiliza un 
-espectrómetro comercial es que las mediciones con el espectrómetro 
-\textit{custom-built} realizan la detección con una cámara CMOS de bajo ruido, 
-que consiste en un arreglo de detectores, por lo que puede medir en un rango 
-muy grande de longitudes de onda simultáneamente. Este método permite en 
-consecuencia obtener mediciones en un rango espectral muy grande, con una 
-cierta resolución en un cierto tiempo de integración, de forma muy rápida.
-El inconveniente fundamental de este método es que al utilizar una fuente de 
-iluminación de banda ancha, si el filtro de prueba tuviera, por ejemplo, una 
-autofluorescencia apreciable \cite{Shah2017}, podría interferir con una 
-medición precisa de la transmisión de la muestra.
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{Figs/plan_de_tesis/med_mets_prevs.png}
-	\caption{Diseño básico de un espectrómetro \textit{custom-built} que 
-	utiliza una fuente de iluminación de banda ancha y permite la recolección 
-	de una 		amplia gama de
-		longitudes de onda simultáneamente con un conjunto de detectores 
-		situados en la cámara. Este 
-		arreglo experimental permite una medición más rápida con un piso de 
-		ruido y una resolución fijas. Adaptado de 
-		\cite{Semrock}.}
-	\label{fig:med_prev}
-\end{figure}
-
-
-
-
-Ahora bien, dependiendo de la aplicación, las limitaciones en las mediciones 
-del espectro de transmisión de los filtros pueden ser determinantes o no. En el 
-presente proyecto se quiere determinar el arreglo experimental óptimo pero que 
-sea compatible con los tiempos y costos de producción de la industria satelital.
-
-En ciertos filtros y aplicaciones, resulta de vital importancia 
-el 
-nivel de bloqueo de ciertos rangos de longitudes de onda pero no así la 
-suavidad de la transición entre el bloqueo y la transmisión. Por ejemplo, en 
-sistemas de 
-imágenes de fluorescencia los espectros de absorción y emisión del fluróforo 
-podrían estar lo suficientemente alejados como para que resulte fundamental que 
-los filtros de banda de la señal de respuesta (de emisión) de la muestra tengan 
-un bloqueo muy alto en la banda de la señal de excitación y así lograr una 
-relación entre la señal y el ruido de adecuada proporción \cite{Grecco2016}. 
-
-Los filtros 
-diseñados para estas aplicaciones podrían tener decenas de OD de bloqueo pero 
+ Los filtros de interferencia de banda 
+utilizados en este tipo de cámaras deben cumplir ciertos requisitos de calidad como un cierto número, diámetro y tipo de defectos (Ver Capítulo \ref{chap:zeiss}) y ciertas características espectrales y de transmisión (Ver Capítulo \ref{chap:microsp}) antes de ser 
+incorporados a la carga útil de, por ejemplo, un satélite que va a ser puesto 
 en 
-la práctica incluso el más pequeño de los defectos físicos en los 
-recubrimientos ópticos (\textit{coatings}) o en el montaje, así como el bajo 
-nivel de control de luz parásita a nivel del sistema, puede limitar el 
-bloqueo alcanzable a valores mucho menores que los del diseño original, en el 
-rango de aproximadamente OD 6 a quizás 10.%(forma indirecta de medir los scrath 
-%and dig!!**))) 
+órbita. Esto es así pues dichos filtros se encuentran sobre el plano focal de la imagen por lo que cualquier imperfección del mismo puede repercutir en la calidad de la imagen adquirida. En la Figura \ref{fig:speus} se muestra una imagen multiespectral de cinco bandas cuyas imperfecciones se señalan con círculos rojos. Algunas de esas imperfecciones se muestran de manera aislada en la Figura \ref{fig:imgdefs}. En consecuencia, resulta fundamental caracterizar completamente dichos filtros antes de montarlos sobre las cámaras de la aplicación de interés.
 
-Dado que los espectrómetros 
-comerciales estándard tienen una medición de OD de rango limitado debido al 
-ruido de fondo del instrumento, se propone un arreglo experimental inicial para 
-poder medir los niveles de bloqueo más altos con precisión como se muestra en 
-la Figura \ref{fig:su} y que resulta compatible con la producción industrial 
-deseada por su simplicidad.
-
-
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.0]{Figs/plan_de_tesis/setup_u.jpeg}
-	\caption{Arreglo experimental compatible con la producción industrial para 
-	medir valores de 
-	OD altos.}
-	\label{fig:su}
+	\includegraphics[width=1.0\textwidth]{Figs/introduccion/0021.png}
+	\caption{Imagen multiespectral de cinco bandas, cuyas imperfecciones se señalan con círculos rojos.}
+	\label{fig:speus}
 \end{figure}
 
-El método experimental de la Figura \ref{fig:su} se denomina 
-\textit{complementary filter method}. Un haz de 
-luz de banda ancha, de una lámpara QTH 
-(\textit{Quartz-Tungsten Halogen}) ó de arco, aproximadamente colimado por una 
-lente  es filtrado utilizando un filtro 
-de referencia ampliamente bloqueador, que es esencialmente un filtro de banda 
-con su banda de paso superpuesta a la región del espectro del filtro de prueba 
-que se quiere analizar donde la medición de valores de OD altos son necesarios. 
-La luz transmitida es enfocada con una lente convergente en un detector de bajo 
-ruido capaz de medir niveles de intensidad de luz muy pequeños, como un 
-fotodiodo de gran área con un circuito amplificador de bajo ruido ó un tubo 
-fotomultiplicador (PMT).
+\begin{figure}[H]
+\includegraphics[width=0.49\textwidth]{Figs/introduccion/agimgg.png}\hfill
+\includegraphics[width=0.49\textwidth]{Figs/introduccion/manc.png}
+\\[\smallskipamount]
+\includegraphics[width=0.49\textwidth]{Figs/introduccion/agjj.png}\hfill
+\includegraphics[width=0.49\textwidth]{Figs/introduccion/def2.png}
+\caption{Zoom sobre las imperfecciones de la imagen multiespectral de la Figura \ref{fig:speus}.}
+\label{fig:imgdefs}
+\end{figure}
+
+En este trabajo de tesis se desarrolló un sistema automatizado de detección y cuantificación de los defectos del filtro [Capítulo \ref{chap:zeiss}]. A partir de los resultados de dicha cuantificación se desarrolló un equipo de caracterización de los defectos y de las características espectrales de las bandas del filtro [Capítulo \ref{chap:microsp}]. A continuación se realiza una introducción a la teoría detrás del equipo desarrollado en el Capítulo \ref{chap:microsp} que consistió de un microespectrómetro que es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro.
+
+\singlespacing
+\section{Microespectroscopía}
+\label{sec:microespp}
+\spacing{1.5}
 
 
-Las mediciones se realizan de la siguiente manera. En primer lugar, se mide la 
-intensidad de la señal en el detector con solo el filtro de referencia y un 
-filtro calibrado de densidad neutra (ND) en la trayectoria de la luz. El filtro 
-ND sirve para reducir el nivel de la intensidad de la luz en el detector en 
-una cantidad calibrada de forma tal que el bias \footnote{El bias del 
-detector es el valor medido por el instrumento cuando no hay ninguna fuente 
-de luz incidiendo sobre él, es el valor de \textit{offset} que se le suma a 
-cualquier 
-medición.} del rango 
-dinámico limitado alcanzable por el detector sea reducido para alcanzar los 
-niveles de la señal que el detector va a ver cuando se coloquen los filtros de 
-prueba. En particular, con un filtro ND 3, el rango dinámico del detector tiene 
-que ser de $10^{6}$ para medir hasta un valor de OD 9 de bloqueo. En segundo 
-lugar, se retira el filtro ND y se lo reemplaza por el filtro de prueba para 
-realizar una nueva medición de la intensidad con el detector. El cociente entre 
-las dos mediciones de intensidad de la luz es igual al valor de OD del filtro 
-de prueba, en el rango espectral del filtro de referencia.
+\hspace{0.5cm}La microespectroscopía combina la espectroscopía con la microscopía. Existen distintas aplicaciones de esta técnica para estudiar los espectros de muestras microscópicas como la microespectroscopía en el IR (infrarrojo)\cite{WALSH20071}, de FT-IR (\textit{Fourier Transform - Infrared}) \cite{kani}, de Raman \cite{defaria}, etc. En particular en este trabajo se realizaron mediciones de microespectroscopía en el espectro visible y en el cercano infrarrojo (en adelante NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}), en un rango de longitudes de onda comprendido entre los 450 y los 900 nm.
 
+La técnica de microespectroscopía implementada en esta tesis contempla un microscopio de campo brillante integrado con un espectrómetro y una cámara digital como detectores. La microscopía de campo brillante consiste en la generación con un arreglo de lentes de la imagen de una muestra que es iluminada por una fuente de luz. En la Figura \ref{fig:mdb} se muestra el proceso de formación de imágenes de dos puntos (P1 y P2) de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Se posiciona el objetivo de forma tal que la muestra se encuentre a la distancia focal del mismo. La luz transmitida ó reflejada de la muestra es recolectada y colimada por el objetivo y luego es enfocada por la lente de tubo (en inglés, \textit{tube lens}) en el plano imagen (PI) donde un detector como el espectrómetro ó una cámara pueden ser colocados.
 
-\section{Actividades y Metodología}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Figs/introduccion/martinbordenave.png}
+	\caption{Proceso de formación de imágenes de dos puntos de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Adaptado de \cite{borden}.}
+	\label{fig:mdb}
+\end{figure}
 
-\hspace{0.5cm}En el presente trabajo de tesis se desarrollarán múltiples 
-arreglos 
-experimentales para caracterizar el espectro de transmisión de distintos 
-filtros de prueba que dispone el LEC, utilizando técnicas de medición en línea 
-con los papers y patentes de la actualidad. Se automatizará la adquisición de 
-las mediciones y se incorporará al arreglo experimental inicial un sistema de 
-detección de defectos de los filtros, utilizando una cámara de bajo costo del 
-laboratorio para realizar las primeras pruebas. 
+Las características más importantes de un microscopio son su magnificación y el poder de resolución. La magnificación M del microscopio que indica la relación entre el tamaño de la imagen y del objeto, viene dada por la siguiente ecuación:
+\begin{equation}
+M = \frac{f_{LT}}{f_{O}},
+\end{equation}	
+donde $f_{LT}$ es la distancia focal de la lente de tubo y $f_{0}$ es la distancia focal del objetivo.
 
-Una vez caracterizado tanto el espectro como los defectos de los filtros, se 
-diseñará y construirá un primer prototipo de un sistema integral de 
-caracterización para ser aplicado con los filtros que utiliza la empresa 
-Satellogic en sus cámaras hiperespectrales. Se estudiará la aplicabilidad de 
-este prototipo en distintos casos.
+El poder óptico de resolución espacial del microscopio estimado teóricamente por el Criterio de Rayleigh viene dado por la siguiente ecuación:
+\begin{equation}
+d = \frac{0.61 \hspace{2pt} \lambda}{ N.A.},
+\end{equation}
+donde d es la distancia de separación entre los dos puntos de la muestra, $\lambda$ es la longitud de onda de la fuente de luz utilizada y $N.A. = n \hspace{2pt} sin(\alpha)$ es la apertura numérica del objetivo, con $n$ el índice de refracción del medio y $\alpha$ la mitad del ángulo de recolección del objetivo (Ver Figura \ref{fig:mdb}). El criterio de Rayleigh establece que las imágenes de dos fuentes puntuales, incoherentes, de igual intensidad pueden ser, en el límite, distinguidas por un sistema de lentes formador de imágenes, si el centro de uno de los discos de Airy\footnote{Debido a la naturaleza ondulatoria de la luz, las ondas
+electromagnéticas interfieren en el plano imagen generando un patrón de intensidad en dos dimensiones con
+un máximo en el punto focal, denominado patrón de difracción de Airy \cite{hecht2012optics}.} coincide con el primer mínimo del patrón de Airy de la segunda fuente puntual (Ver Figura \ref{fig:critrayspa}).
 
-Utilizando el prototipo del sistema integral de caracterización de los filtros 
-se desarrollará un método y criterios para decidir si un filtro puede ser 
-incorporado a la cámara utilizada en los satélites.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{Figs/microespectrometro/raylspa.png}
+	\caption{Criterio de Rayleigh para la determinación del límite de resolución. Las curvas rojas representan los patrones de Airy individuales de las dos fuentes puntuales, mientras que la curva verde representa la imagen de las dos fuentes. Las líneas punteadas verticales indican la posición del máximo de cada patrón individual de Airy. Adaptado de \cite{raylsp}.}
+	\label{fig:critrayspa}
+\end{figure}
 
-Como aplicación de este proyecto de tesis se utilizarán las cámaras 
-hiperespectrales de la empresa Satellogic, cuyos filtros van a ser 
-caracterizados con el sistema integral que se va a desarrollar, y se tomarán 
-imágenes en tierra utilizando algoritmos de HDR y de búsqueda de 
-características.  Y, finalmente se realizará una caracterización de los filtros 
-en su posición final en las cámaras de vuelo del satélite.
+La luz que es enfocada por la lente de tubo en el plano imagen es detectada por un espectrómetro en el caso de un microespectrómetro. Para poder aprovechar el poder de resolución óptico del objetivo del microscopio, de acuerdo al Teorema de Nyquist-Shannon se debería utilizar un detector con un área sensible de detección cuyo diámetro sea igual a la mitad del valor de la resolución estimada por Rayleigh. En el caso de una cámara para poder aprovechar la resolución del objetivo cada píxel de la misma debería tener un diámetro equivalente igual a la mitad del valor de la resolución estimada teóricamente. En el caso del espectrómetro se debe considerar el diámetro del \textit{core} de la fibra óptica que guía la luz vía reflexión interna desde el plano imagen (plano de detección) hacia la apertura del espectrómetro.
 
+La fibra óptica es un medio de transmisión de la luz que opera como una guía de ondas dieléctrica cilíndrica por el cual se propaga un único modo si la fibra es monomodo ó múltiples modos si la fibra es multimodo (Ver Figura \ref{fig:guiasmon}). El \textit{core} de la fibra es la región de la fibra (Ver Figura \ref{fig:guiasmon})
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.0]{Figs/introduccion/guias.jpg}
+	\caption{Fibras ópticas mono y multimodo. Adaptado de \href{https://bit.ly/3favhME}{https://bit.ly/3favhME}.}
+	\label{fig:guiasmon}
+\end{figure}
 
-\section{Factibilidad}
-
-\hspace{0.5cm}El lugar de trabajo donde el tesista va a desarrollar sus 
-actividades es el 
-Laboratorio de Electrónica Cuántica (LEC) del Departamento de Física de la 
-Facultad de Ciencias Exactas y Naturales, UBA. El LEC cuenta con diversos 
-equipos de uso general en óptica y electrónica y algunos de uso específico para 
-aplicaciones en investigación de física básica. Entre los equipos de uso 
-relevante para el presente proyecto se pueden encontrar mesas ópticas de 
-suspensión neumática, un microscopio invertido automático Zeiss Observer Z1, 
-diversas placas de adquisición y procesamiento (NI y Red Pitaya, Raspberry Pi y 
-Arduino), cámaras científicas y de bajo ruido (Apogee U2000, QHY183M), 
-elementos de óptica para la construcción de instrumentos (lentes, filtros, 
-objetivos de microscopio, optomecánica, láseres y leds). Adicionalmente, el 
-laboratorio cuenta con acceso a un microscopio confocal de la firma Olympus, 
-modelo FV1000 equipado con una platina motorizada, cámara ambiental y cámara 
-CCD.
- 
-El director de la presente tesis es director del LEC y es experto en temas de 
-óptica y fotofísica, áreas principales del proyecto. Además, tiene la 
-experiencia de haber dirigido a una estudiante que realizó la tesis en conjunto 
-con el LEC y la empresa Satellogic, resultando en una experiencia exitosa.
-
-El tesista se encuentra cursando actualmente sus últimas dos materias de la 
-carrera: 
-Estructura de la Materia 4 e Instrumentación y Control.
 
 Observaciones generales del contenido de la tesis:
 \begin{itemize}
