@@ -122,7 +122,7 @@ en
 \label{fig:imgdefs}
 \end{figure}
 
-En este trabajo de tesis se desarrolló un sistema automatizado de detección y cuantificación de los defectos del filtro [Capítulo \ref{chap:zeiss}]. A partir de los resultados de dicha cuantificación se desarrolló un equipo de caracterización de los defectos y de las características espectrales de las bandas del filtro [Capítulo \ref{chap:microsp}]. A continuación se realiza una introducción a la teoría detrás del equipo desarrollado en el Capítulo \ref{chap:microsp} que consistió de un microespectrómetro que es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro.
+A continuación se realiza una introducción a la teoría detrás del equipo desarrollado en el Capítulo \ref{chap:microsp} que consistió de un microespectrómetro que es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades ópticas de un material de un espectrómetro.
 
 \singlespacing
 \section{Microespectroscopía}
@@ -157,24 +157,22 @@ un máximo en el punto focal, denominado patrón de difracción de Airy \cite{he
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{Figs/microespectrometro/raylspa.png}
+	\includegraphics[scale=0.5]{Figs/microespectrometro/raylspa.png}
 	\caption{Criterio de Rayleigh para la determinación del límite de resolución. Las curvas rojas representan los patrones de Airy individuales de las dos fuentes puntuales, mientras que la curva verde representa la imagen de las dos fuentes. Las líneas punteadas verticales indican la posición del máximo de cada patrón individual de Airy. Adaptado de \cite{raylsp}.}
 	\label{fig:critrayspa}
 \end{figure}
 
 La luz que es enfocada por la lente de tubo en el plano imagen es detectada por un espectrómetro en el caso de un microespectrómetro. Para poder aprovechar el poder de resolución óptico del objetivo del microscopio, de acuerdo al Teorema de Nyquist-Shannon se debería utilizar un detector con un área sensible de detección cuyo diámetro sea igual a la mitad del valor de la resolución estimada por Rayleigh. En el caso de una cámara para poder aprovechar la resolución del objetivo cada píxel de la misma debería tener un diámetro equivalente igual a la mitad del valor de la resolución estimada teóricamente. En el caso del espectrómetro se debe considerar el diámetro del \textit{core} de la fibra óptica que guía la luz vía reflexión interna desde el plano imagen (plano de detección) hacia la apertura del espectrómetro.
 
-La fibra óptica es un medio de transmisión de la luz que opera como una guía de ondas dieléctrica cilíndrica por el cual se propaga un único modo si la fibra es monomodo ó múltiples modos si la fibra es multimodo (Ver Figura \ref{fig:guiasmon}). El \textit{core} de la fibra es la región de la fibra (Ver Figura \ref{fig:guiasmon})
-
+La fibra óptica es un medio de transmisión de la luz que opera como una guía de ondas dieléctrica cilíndrica por el cual se propaga un único modo si la fibra es monomodo ó múltiples modos si la fibra es multimodo (Ver Figura \ref{fig:guiasmon}). 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.0]{Figs/introduccion/guias.jpg}
 	\caption{Fibras ópticas mono y multimodo. Adaptado de \href{https://bit.ly/3favhME}{https://bit.ly/3favhME}.}
 	\label{fig:guiasmon}
 \end{figure}
+El \textit{core} es la región de la fibra óptica por la cual se realiza la transmisión de la luz y suele estar hecho de vidrio ó de plástico, aunque otros materiales pueden ser utilizados dependiendo del espectro de transmisión deseado. El \textit{cladding} de la fibra que recubre al \textit{core} de la misma, está hecho de un material de las mismas características que el \textit{core} pero con un índice de refracción ligeramente menor (generalmente un 1\% menor)\cite{hecht2012optics}. Esta diferencia en los índices de refracción genera las condiciones para la reflexión total interna dentro de los límites del \textit{core} y a lo largo de la fibra de manera tal que la luz sea transmitida con mínimas pérdidas y no se atenúe a través de las paredes en la frontera con el \textit{cladding}. 
 
+El \textit{core} de la fibra óptica establece una cota para la resolución óptica del microespectrómetro ya que su diámetro establece el valor de la imagen en el plano de la detección y a partir de la magnificación del microespectrómero se puede determinar el tamaño del mínimo objeto detectable. En consecuencia, el diámetro del \textit{core} de la fibra es un parámetro fundamental de diseño del microespectrómetro ya que sólo para determinados diámetros del \textit{core} de la fibra se puede aprovechar el poder de resolución del objetivo con el costo de medir señales de menor intensidad, peor relación señal-ruido y de mayores tiempos de integración de la luz.
 
-Observaciones generales del contenido de la tesis:
-\begin{itemize}
-\item Los programas escritos son referenciados con un link al que se puede acceder haciendo click sobre el ícono de github: \faGithub
-\end{itemize}
+En este trabajo de tesis se desarrolló un sistema automatizado de detección y cuantificación de los defectos del filtro [Capítulo \ref{chap:zeiss}], que se explica a continuación. A partir de los resultados de dicha cuantificación se desarrolló un equipo de caracterización de los defectos y de las características espectrales de las bandas del filtro [Capítulo \ref{chap:microsp}].
