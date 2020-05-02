@@ -665,7 +665,7 @@ En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en sim
  \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{Figs/microespectrometro/variacionintensidaddefecto.png}
-	\caption{Gráficos de los espectros de transmisión superpuestos del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda, del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. }
+	\caption{Gráficos de los espectros de transmisión superpuestos de los puntos del barrido señalados en la Figura \ref{fig:barinted}, asociados al máximo de intensidad del barrido detectado de la banda considerado el 100\% y al 75\% y 60\% de transmisión respecto de dicho máximo, respectivamente.}
 	\label{fig:merrmmin}
 \end{figure}
 
@@ -713,22 +713,24 @@ En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociado
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/perfilbackag.png}
-	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}.}
+	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. Los puntos señalados con círculos están asociados a los espectros graficados en la Figura \ref{fig:espectrosagujbag}. En particular, el punto con un círculo rojo del centro del agujero, está vinculado a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}. }
 	\label{fig:perfilbacka}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/microespectrometro/espectroagback.png}
+\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectroagback.png}
 	\caption{Espectro de transmisión del centro del agujero, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}.}
-	\label{fig:espectbag}
+\label{fig:espectbag}
 \end{figure}
 
-Se hace notar que para los agujeros la forma funcional del espectro de transmisión de la banda indicado por el fabricante sufre una distorsión que podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los agujeros del filtro podrían brindar información espectral errónea ya que siempre tendrían una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión. Como continuación del trabajo aquí presentado está previsto armar un arreglo experimental para poder caracterizar el filtro en su posición final en las cámaras de vuelo del satélite y de esa forma poder caracterizar los efectos de los distintos tipos de defectos aquí caracterizados en el proceso de formación de imágenes.
+\begin{figure}[H]
+	\begin{floatrow}
+		\ffigbox{\includegraphics[width=0.5\textwidth]{Figs/microespectrometro/espectroshueco.png}}{\caption{Espectros de transmisión de los puntos señalados con un círculo de colores rojo, negro y celeste en la Figura \ref{fig:perfilbacka}.}\label{fig:espectrosagujbag}}
+				\ffigbox{\includegraphics[width=0.5\textwidth]{Figs/microespectrometro/zoomdistorsionazul.png}}{\caption{\textit{Zoom} del gráfico de la Figura \ref{fig:espectrosagujbag} en la región de longitudes de onda entre los 520 y los 890 nm.}\label{fig:zoomespagujs}}
+	\end{floatrow}
+\end{figure}
 
+Se hace notar que debido a la presencia de agujeros el espectro de transmisión de la banda sufre una distorsión como se observa en los espectros de transmisión graficados en la Figura \ref{fig:espectrosagujbag}. Esto se puede ver en la Figura \ref{fig:zoomespagujs}, donde se realizó un \textit{zoom} sobre la región de longitudes de onda comprendidas entre los 520 y los 890 nm. Se puede observar que el máximo de intensidad en dicha región espectral medido en el centro del agujero (espectro de color rojo) es aproximadamente 4 veces mayor que el máximo asociado al espectro medido en un punto del filtro que no contiene al agujero (espectro de color celeste). Esto efecto podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los agujeros del filtro podrían brindar información espectral errónea ya que siempre tendrían una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión.
 
-
-
-%En la Figura \ref{} se muestra un barrido lineal realizado que atravesó el agujero (corroborado con la adquisición en vivo con la cámara).
-
-
+A continuación se discuten las conclusiones del presente trabajo y las perspectivas a futuro del equipo de caracterización explicado en ese capítulo.
