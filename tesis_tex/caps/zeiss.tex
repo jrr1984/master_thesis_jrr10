@@ -303,7 +303,7 @@ Una imagen de microscopía adquirida idealmente con una iluminación uniforme pe
 
 Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la matriz representa el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de los valores de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad.
 
-En la Figura \ref{fig:fondideal} se muestra una imagen de fondo ficticia que tendría una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin considerar el ruido de Poisson. Dicha imagen tiene un histograma como el que se muestra en la Figura \ref{fig:histbgteo}, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
+En la Figura \ref{fig:fondideal} se muestra una imagen de fondo ficticia que tendría una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin considerar el ruido de Poisson de fotones. Dicha imagen tiene un histograma como el que se muestra en la Figura \ref{fig:histbgteo}, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
 	\begin{figure}[H]
 		\begin{floatrow}
 			\ffigbox{\includegraphics[width=3.0cm,height=3.0cm]{Figs/defectosZEISS/bg_teorico.png}}{\caption{Imagen de fondo con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. }\label{fig:fondideal}}
@@ -333,7 +333,7 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 \begin{enumerate}
 \justifying
 \item Generación de la imagen de fondo.
-\item Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo.
+\item Corrección de la iluminación no uniforme de las imágenes individuales del barrido de una banda con la imagen de fondo
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,12 +361,14 @@ En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad 
 \label{fig:comparhists}
 \end{figure}	
 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 \singlespacing
-\subsection{Normalización de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/bg_normalization.py}{\faGithub}}
+\subsection{Corrección de la iluminación no uniforme de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/bg_normalization.py}{\faGithub}}
 \label{subs:nm}
 \spacing{1.5}
 
-\hspace{0.5cm} Con la imagen de fondo de cada banda ya generada, se normalizaron las imágenes originales del barrido completo de cada banda\cite{Nordenfelt} con el objetivo de corregir la iluminación no uniforme del microscopio y para eliminar la reflexión no deseada del objetivo del microscopio presente en todas las imágenes (discos concéntricos de la imagen \texttt{b)} de la Figura \ref{fig:bgazul}).
+\hspace{0.5cm} Con la imagen de fondo de cada banda ya generada, se corrigió la iluminación no uniforme del microscopio \cite{Nordenfelt} y se eliminaron los anillos de difracción presentes en todas las imágenes (discos concéntricos de la imagen \texttt{b)} de la Figura \ref{fig:bgazul}).
 \begin{figure}[H]
 	\centering
 \includegraphics[scale=0.98]{Figs/defectosZEISS/correccionilum/NIR/1.png}
@@ -412,6 +414,7 @@ Se hace notar que el proceso de corrección de la iluminación no uniforme y del
 \end{figure}
 
 De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa que el rango de intensidades de los píxeles de la región con un defecto de la imagen original se extiende desde el intervalo [0.19,0.70] al intervalo [0.00,0.98] en la imagen final\footnote{Para la imagen completa, el rango se extiende desde [0.19,0.73] para la imagen original al rango [0.00,1.00] de la imagen final, es decir el rango de intensidades de la imagen original se extiende a todo el rango posible de acuerdo a la ecuación \ref{eq:histexpp} de la expansión del histograma.}. De esta manera, se mejora el contraste de la imagen y la distinción entre el \textit{foreground} (defectos) y el \textit{background} se puede realizar ajustando un umbral de intensidad  (\textit{threshold}). A continuación se explica el criterio de elección del método del \textit{threshold} aplicado y luego se describe el algoritmo de detección de los defectos y su cuantificación.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
 \section{Criterio de elección del \textit{threshold} \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub}}
@@ -420,7 +423,7 @@ De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa
 
 \hspace{0.5cm}Con las imágenes pre-procesadas la detección de los defectos fue realizada utilizando algoritmos de procesamientos de imágenes. En particular se utilizaron algoritmos de \textit{thresholding} que determinan un umbral de intensidad a partir del cual se crea una imagen binaria que distingue el \textit{background} de los defectos \cite{shapi}.
 
-Para determinar el umbral de intensidad óptimo para todas y cada una de las imágenes individuales de una banda se utilizó el método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} \cite{van2014scikit}. Dicho método permite realizar pruebas inmediatas de los umbrales más utilizados en la literatura como se explica a continuación. Se hace notar que si bien se podrían haber utilizado distintos \textit{thresholds} para cada imagen ó para distintos conjuntos de imágenes de una misma banda, se decidió elegir un sólo método de umbral para todas y cada una de las bandas para poder automatizar la aplicación del algoritmo de detección de los defectos y de la posterior asociación de incertezas a los resultados.
+Para determinar el umbral de intensidad óptimo para todas y cada una de las imágenes individuales de una banda se utilizó el método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} \cite{van2014scikit} \footnote{Un resumen explicativo de cada \textit{threshold} se puede ver en el Apéndice \ref{chap:apendthresh}.}. Dicho método permite realizar pruebas inmediatas de los umbrales más utilizados en la literatura como se explica a continuación. Se hace notar que si bien se podrían haber utilizado distintos \textit{thresholds} para cada imagen ó para distintos conjuntos de imágenes de una misma banda, se decidió elegir un sólo método de umbral para todas y cada una de las bandas para poder automatizar la aplicación del algoritmo de detección de los defectos y de la posterior asociación de incertezas a los resultados.
 
 El criterio de elección del método del umbral fue adoptado a partir de la inspección visual. Se observó visualmente el resultado (en adelante \textit{output}) de la aplicación de los distintos \textit{thresholds} para cada imagen de cada banda. A continuación se muestran algunas imágenes representativas en conjunto con el \textit{output} de la aplicación de los distintos \textit{thresholds} para explicar el criterio de elección del umbral aplicado a todas las imágenes de todas las bandas:
 \begin{enumerate}

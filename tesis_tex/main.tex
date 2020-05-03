@@ -29,6 +29,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{tikz}
+\usepackage{tikzpagenodes}
 \usepackage{fontawesome5}
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 \usepackage{colortbl}
@@ -223,13 +224,17 @@ capturadas.
 \setlength{\parindent}{0.5cm}
 \setlength{\parskip}{1em}
 
-\include{caps/introd}
+%\include{caps/introd}
 
 \include{caps/zeiss}
 
-\include{caps/microesp}
+%\include{caps/microesp}
 
-\include{caps/concls}
+%\include{caps/concls}
+
+
+\renewcommand{\chaptername}{Apéndice}
+\include{caps/threshs}
 
 \singlespacing
 \justifying
