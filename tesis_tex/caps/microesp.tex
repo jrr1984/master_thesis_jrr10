@@ -5,10 +5,7 @@
 
 \hspace{0.5cm}En el Capítulo \ref{chap:zeiss} se realizó un análisis cuantitativo de los defectos de filtros multiespectrales de cámaras de satélites: se determinó su área, su diámetro equivalente, etcétera. Dicho análisis permitió aplicar las especificaciones técnicas de \textit{scratch \& dig} y de la ISO 10110, lo que resulta fundamental para establecer las bases de futuros acuerdos con los fabricantes de los componentes ópticos. Al mismo tiempo, los resultados de la población de defectos [\ref{sec:defpob}] detectados con el algoritmo, permitieron establecer los criterios de diseño óptico del microespectrómetro que se explica en el presente capítulo.
 
-Como se explicó en la Sección \ref{sec:microespp}, un microespectrómetro es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades espectrales de un material. En este capítulo se describe el diseño y la construcción de un microespectrómetro que permitió realizar una caracterización del filtro y de sus defectos a través de los espectros de transmisión. En la Sección \ref{sec:prot0} se muestran las características del primer prototipo desarrollado con equipamiento disponible en el laboratorio. Dicho prototipo en conjunto con los resultados y análisis del Capítulo \ref{chap:zeiss}, permitieron establecer los criterios de elección de la fuente de luz y del espectrómetro [\ref{sec:fteluzyesp}], determinar la longitud del recorrido y la precisión mínima necesaria de la platina que se desarrolló [\ref{sec:platina}] y la resolución óptica necesaria del microscopio desarrollado para caracterizar los defectos de diámetro mayores a 20 $\mu m$ de diámetro. Luego se explica el proceso de montaje y alineación preliminar del microespectrómetro [\ref{sec:montalin}]. Posteriormente se explica la integración de una cámara \textit{web} al microespectrómetro lo que permitió la adquisición simultánea de imágenes digitales y de espectros de transmisión y cuya área de adquisición fue elegida con un \textit{joystick} y visualizada en vivo a través de una interfaz gráfica [\ref{sec:camwebgui}]. Luego se detalla la caracterización del microespectrómetro [\ref{sec:caractequipo}], su puesta en foco y la determinación de la resolución espacial [\ref{sec:focoresol}, \ref{sec:fococam}].
-
-Asimismo, se muestra la aplicación del microespectrómetro a la caracterización espectral del filtro y de sus defectos [\ref{sec:resgrales}]. Se describen los resultados de los espectros de transmisión de cada banda del filtro y su comparación con la hoja de datos reportada por el fabricante [\ref{sec:espectransm}]. Finalmente, se muestran los resultados de la caracterización espectral de los defectos denominados manchas ó defectos de transmisión [\ref{sec:defctma}] y de los agujeros ó huecos [\ref{sec:defctag}].
-
+Como se explicó en la Sección \ref{sec:microespp}, un microespectrómetro es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de inferir las propiedades espectrales de un material. En este capítulo se describe el diseño y la construcción de un microespectrómetro que permitió realizar una caracterización del filtro y de sus defectos a través de los espectros de transmisión.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
@@ -417,7 +414,7 @@ En la Figura \ref{fig:inaaa} se muestra la interfaz gráfica desarrollada (\text
  
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.0]{Figs/microespectrometro/flowdiagprot0.png}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/flowdiagprot0.png}
 	\caption{Diagrama de flujo del software automatizado de adquisición de los espectros de transmisión.}
 	\label{fig:ddinaaa}
 \end{figure}
@@ -549,7 +546,7 @@ A continuación se muestran los resultados de la aplicación del microespectróm
 \label{sec:resgrales}
 \spacing{1.5}
 
-\hspace{0.5cm} En esta sección se muestran los resultados de la aplicación del microespectrómetro a la caracterización de filtros multiespectrales. Se describen los espectros de transmisión de cada banda del filtro [\ref{sec:espectransm}] que permitieron corrobar las características espectrales indicadas por el fabricante como la longitud de onda central de la banda (en inglés, \textit{CWL: center wavelength}) y el ancho espectral de la banda (en inglés, \textit{FWHM: Full Width Half Maximum}). Luego se realiza una caracterización de los espectros de transmisión de los defectos de transmisión ó manchas (Ver Figura \ref{fig:manchaazul}) [\ref{sec:defctma}] y de los agujeros ó huecos (Ver Figura \ref{fig:huecoazul}) [\ref{sec:defctag}].
+\hspace{0.5cm} En esta sección se muestran los resultados de la aplicación del microespectrómetro a la caracterización de filtros multiespectrales. Se describen los espectros de transmisión de cada banda del filtro [\ref{sec:espectransm}] que permitieron corrobar las características espectrales indicadas por el fabricante como la longitud de onda central de la banda (en inglés, \textit{CWL: center wavelength}) y el ancho espectral de la banda (en inglés, \textit{FWHM: Full Width Half Maximum}). Luego se realiza una caracterización de los espectros de transmisión de las manchas (Ver Figura \ref{fig:manchaazul}) [\ref{sec:defctma}] y de los huecos (Ver Figura \ref{fig:huecoazul}) [\ref{sec:defctag}].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -620,20 +617,20 @@ Pancromática& 614 nm & 283 nm & 459 nm & 741 nm\\
  \label{tabespc}
  \end{table}
 De la comparación entre los valores de $\lambda_{i}$ y de $\lambda_{s}$ medidos y los reportados por el fabricante que indicó una incerteza del $1\%$, se hace notar que hay un solapamiento de los resultados de todas las bandas considerando las incertezas, a excepción de la banda pancromática donde la diferencia entre el valor medido y el reportado fue del $2\%$.
-La medición de los espectros de transmisión de cada banda resultó fundamental para corroborar la capacidad de bloqueo de cada filtro de las longitudes de onda fuera del rango de valores comprendido por el \textit{FWHM}. Esto se vuelve más importante para el caso de filtros hiperespectrales que tienen cientos de bandas, cada una con un ancho espectral pasa banda de un cierto ancho, que permite extraer información específica y diferenciada. A continuación se muestran los resultados de la caracterización de los defectos del tipo manchas ó defectos de transmisión [\ref{sec:defctma}] y del tipo agujeros ó huecos [\ref{sec:defctag}].
+La medición de los espectros de transmisión de cada banda resultó fundamental para corroborar la capacidad de bloqueo de cada filtro de las longitudes de onda fuera del rango de valores comprendido por el \textit{FWHM}. Esto se vuelve más importante para el caso de filtros hiperespectrales que tienen cientos de bandas, cada una con un ancho espectral pasa banda de un cierto ancho, que permite extraer información específica y diferenciada. A continuación se muestran los resultados de la caracterización de los defectos del tipo manchas [\ref{sec:defctma}] y del tipo huecos [\ref{sec:defctag}].
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Caracterización espectral de las manchas ó defectos de transmisión}
+\subsection{Caracterización espectral de las manchas}
 \label{sec:defctma}
 \spacing{1.5}
 
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etc., pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para cada longitud de onda, se puede obtener el espectro de transmisión.
 
-Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas ó defectos de transmisión (Ver Figura \ref{fig:manchaazul}). Previo a la integración de la cámara \textit{web}, la única información que se tenía de la región a medir del filtro consistía de los espectros de transmisión medidos, es decir se tenían los gráficos de la intensidad detectada en función de la longitud de onda de cada medición. Así por ejemplo, en la Figura \ref{fig:muchossi} se muestra un barrido lineal de  800 $\mu m$, con un paso de 1 $\mu m$, elegidos en el \textit{software} de adquisición, desde la banda pancromática hasta el cromo. 
+Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas  (Ver Figura \ref{fig:manchaazul}). Previo a la integración de la cámara \textit{web}, la única información que se tenía de la región a medir del filtro consistía de los espectros de transmisión medidos, es decir se tenían los gráficos de la intensidad detectada en función de la longitud de onda de cada medición. Así por ejemplo, en la Figura \ref{fig:muchossi} se muestra un barrido lineal de  800 $\mu m$, con un paso de 1 $\mu m$, elegidos en el \textit{software} de adquisición, desde la banda pancromática hasta el cromo. 
 
  \begin{figure}[H]
 	\centering
@@ -669,19 +666,19 @@ En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en sim
 	\label{fig:merrmmin}
 \end{figure}
 
-Se podría tomar como hipótesis para un futuro trabajo que este tipo de defectos de transmisión ó manchas influyen en las imágenes multiespectrales adquiridas con las cámaras satelitales de forma tal que los valores de intensidad de los píxeles de la cámara que estén en la misma posición que este tipo de defectos presentes en el filtro tendrían una merma en su valor original, produciendo una distorsión del espectro adquirido a partir de la escena completa como se explicó en el Capítulo \ref{chap:introd}. A continuación se muestran los resultados de la caracterización espectral de los agujeros ó huecos.
+Se podría tomar como hipótesis para un futuro trabajo que las manchas influyen en las imágenes multiespectrales adquiridas con las cámaras satelitales de forma tal que los valores de intensidad de los píxeles de la cámara que estén en la misma posición que este tipo de defectos presentes en el filtro tendrían una merma en su valor original, produciendo una distorsión del espectro adquirido a partir de la escena completa como se explicó en el Capítulo \ref{chap:introd}. A continuación se muestran los resultados de la caracterización espectral de los huecos.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
-\subsection{Caracterización espectral de los agujeros ó huecos}
+\subsection{Caracterización espectral de los huecos}
 \label{sec:defctag}
 \spacing{1.5}
 
-\hspace{0.5cm}En esta última sección se muestran los resultados respecto de los espectros de transmisión de los agujeros ó huecos (Ver Figura \ref{fig:manchaazul}). En particular, se muestran un barrido en dos dimensiones y un barrido lineal del agujero ó hueco más grande del filtro (Ver \ref{fig:huecoazul}) detectado en el Capítulo \ref{chap:zeiss}. Se ubicó dicho hueco a partir de la localización del mismo en las imágenes del \textit{tile scan} realizado en la banda azul (Ver \ref{fig:tilebandaazul}). Con el \textit{joystick} de la platina desarrollada se posicionó dicho agujero para ser medido con el equipo.
+\hspace{0.5cm}En esta última sección se muestran los resultados respecto de los espectros de transmisión de los huecos (Ver Figura \ref{fig:manchaazul}). En particular, se muestran un barrido en dos dimensiones y un barrido lineal del hueco más grande del filtro (Ver \ref{fig:huecoazul}) detectado en el Capítulo \ref{chap:zeiss}. Se ubicó dicho hueco a partir de la localización del mismo en las imágenes del \textit{tile scan} realizado en la banda azul (Ver \ref{fig:tilebandaazul}). Con el \textit{joystick} de la platina desarrollada se posicionó el filtro con dicho hueco en el centro de la imagen adquirida con la cámara web para medir su espectro de transmisión con el microespectrómetro.
 
-En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara \textit{web} en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un agujero.
+En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara \textit{web} en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un hueco.
 
  \begin{figure}[H]
 	\centering
@@ -690,9 +687,9 @@ En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resu
 	\label{fig:mapargbag}
 \end{figure}
 
-El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al agujero (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al agujero. 
+El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al hueco (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al hueco. 
 
-En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al agujero que se observa en la imagen de la Figura \ref{fig:agujeroimg}.
+En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al hueco que se observa en la imagen de la Figura \ref{fig:agujeroimg}.
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/tranhueco.png}
@@ -703,24 +700,24 @@ En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la reg
  \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.55]{Figs/microespectrometro/imagenagj.jpg}
-	\caption{Imagen de la banda azul que contiene al agujero caracterizado, adquirida con la cámara del equipo.}
+	\caption{Imagen de la banda azul que contiene al hueco caracterizado, adquirida con la cámara del equipo.}
 	\label{fig:agujeroimg}
 \end{figure}
 
 
-En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. El punto de dicho gráfico señalado con un círculo rojo está asociado unívocamente al píxel blanco recuadrado en rojo de la Figuras \ref{fig:mapargbag} y al píxel negro recuadrado en rojo de la Figura \ref{fig:mapatransmag}. Dicho punto asociado físicamente al agujero presenta una disminución de la intensidad transmitida del 64\%. El espectro de transmisión de este punto rojo se lo muestra en la Figura \ref{fig:espectbag} y se puede observar que además del espectro de transmisión esperado de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz (Ver Figura \ref{fig:espfth}). 
+En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. El punto de dicho gráfico señalado con un círculo rojo está asociado unívocamente al píxel blanco recuadrado en rojo de la Figuras \ref{fig:mapargbag} y al píxel negro recuadrado en rojo de la Figura \ref{fig:mapatransmag}. Dicho punto asociado físicamente al hueco presenta una disminución de la intensidad transmitida del 64\%. El espectro de transmisión de este punto rojo se lo muestra en la Figura \ref{fig:espectbag} y se puede observar que además del espectro de transmisión esperado de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz (Ver Figura \ref{fig:espfth}). 
 
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/perfilbackag.png}
-	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. Los puntos señalados con círculos están asociados a los espectros graficados en la Figura \ref{fig:espectrosagujbag}. En particular, el punto con un círculo rojo del centro del agujero, está vinculado a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}. }
+	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. Los puntos señalados con círculos están asociados a los espectros graficados en la Figura \ref{fig:espectrosagujbag}. En particular, el punto con un círculo rojo del centro del hueco, está vinculado a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}. }
 	\label{fig:perfilbacka}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
 \includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectroagback.png}
-	\caption{Espectro de transmisión del centro del agujero, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}.}
+	\caption{Espectro de transmisión del centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}.}
 \label{fig:espectbag}
 \end{figure}
 
@@ -731,6 +728,6 @@ En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociado
 	\end{floatrow}
 \end{figure}
 
-Se hace notar que debido a la presencia de agujeros el espectro de transmisión de la banda sufre una distorsión como se observa en los espectros de transmisión graficados en la Figura \ref{fig:espectrosagujbag}. Esto se puede ver en la Figura \ref{fig:zoomespagujs}, donde se realizó un \textit{zoom} sobre la región de longitudes de onda comprendidas entre los 520 y los 890 nm. Se puede observar que el máximo de intensidad en dicha región espectral medido en el centro del agujero (espectro de color rojo) es aproximadamente 4 veces mayor que el máximo asociado al espectro medido en un punto del filtro que no contiene al agujero (espectro de color celeste). Esto efecto podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los agujeros del filtro podrían brindar información espectral errónea ya que siempre tendrían una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión.
+Se hace notar que debido a la presencia de huecos el espectro de transmisión de la banda sufre una distorsión como se observa en los espectros de transmisión graficados en la Figura \ref{fig:espectrosagujbag}. Esto se puede ver en la Figura \ref{fig:zoomespagujs}, donde se realizó un \textit{zoom} sobre la región de longitudes de onda comprendidas entre los 520 y los 890 nm. Se puede observar que el máximo de intensidad en dicha región espectral medido en el centro del hueco (espectro de color rojo) es aproximadamente 4 veces mayor que el máximo asociado al espectro medido en un punto del filtro que no contiene al hueco (espectro de color celeste). Esto efecto podría repercutir en el espectro que se mida con la cámara multiespectral que utiliza filtros como el analizado en este trabajo. Es decir, los píxeles de la cámara multiespectral que se encuentren en la misma posición que los huecos del filtro podrían brindar información espectral errónea ya que siempre tendrían una contaminación del espectro de toda la luz que le ingrese a la cámara y no sólamente la luz del espectro de la banda asociada a los píxeles en cuestión.
 
 A continuación se discuten las conclusiones del presente trabajo y las perspectivas a futuro del equipo de caracterización explicado en ese capítulo.
