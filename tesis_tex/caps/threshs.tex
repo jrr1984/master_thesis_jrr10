@@ -37,17 +37,10 @@ Es decir, el umbral resultante constituye un valor de intensidad que separa la i
 
 \item \texttt{Triangle}: El algoritmo para determinar el \textit{threshold Triangle} es un método geométrico que no puede determinar si los datos están sesgados hacia un lado u otro (\textit{background} ó \textit{foreground}), pero supone un pico máximo cerca de un extremo del histograma y busca hacia el otro extremo. Esto causa un problema en ausencia de información previa del tipo de imagen a procesar, o cuando el máximo no está cerca de uno de los extremos del histograma, ya que se puede decaer en dos posibles regiones del umbral entre ese máximo y los extremos. El algoritmo finalmente determina en qué lado del pico máximo los datos van más lejos y se determina el umbral dentro del rango de mayor extensión \cite{triang}.
 
-\item \texttt{Yen}: El algoritmo del criterio de máxima entropía (\textit{maximum entropy criterion} (MEP) determina un umbral tal que la información total provista por el \textit{foreground} y por el \textit{background} es máxima y esto se puede observar en que la distribución de los valores de intensidad de los elementos de matriiz de la imagen se vuelve lo más uniforme posible. E
+\item \texttt{Yen}: El algoritmo del criterio de máxima entropía (\textit{maximum entropy criterion} (MEP) determina un umbral tal que la información total provista por el \textit{foreground} y por el \textit{background} es máxima y esto se puede observar en que la distribución de los valores de intensidad de los elementos de matriz de la imagen se vuelve lo más uniforme posible. 
 
 
-To reduce the computational complexity of the MaxEntropy algorithm,
-the maximum correlation criterion (MCC) was proposed by Yen
-in 1995 (Yen et al., 1995) to determine the optimal threshold \TeX, the
-construction of which, i.e., using the correlation instead of the entropy,
-comes from the theory of chaos and fractal theory. Similar to the MEC,
-the basic principle of the MCC is to choose a threshold so that the total
 
-implements thresholding based on a maximum correlation criterion [12] as a more computationally efficient alternative to entropy measures.
 
 [\cite{yen}, \cite{yen2}].
 
