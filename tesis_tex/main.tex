@@ -1,5 +1,6 @@
 \documentclass{ctuthesis}
 \usepackage{graphicx}
+\usepackage{url}
 \usepackage{wrapfig}
 \usepackage{lipsum}    
 \usepackage{floatrow}
@@ -233,8 +234,6 @@ capturadas.
 \include{caps/concls}
 
 
-\appendix
-\renewcommand{\chaptername}{Apéndice}
 \include{caps/threshs}
 
 
@@ -242,11 +241,12 @@ capturadas.
 \singlespacing
 \justifying
 \renewcommand\bibname{Referencias Bibliográficas}
+\thispagestyle{myheadings}
 \bibliographystyle{apalike}
 \bibliography{refs}
 \singlespacing
 
-\renewcommand{\chaptername}{Referencias del \texttt{Software} desarrollado}
+
 \include{caps/gitrefs}
 
 
