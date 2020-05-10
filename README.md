@@ -6,7 +6,7 @@
 
 Repositorios asociados a este trabajo:
 
-1. [defects_analysis](https://github.com/jrr1984/defects_analysis): Repositorios de los programas de procesamiento de imágenes de microscopía, de algoritmos de detección de defectos por medio de técnicas de thresholding y de análisis cuantitativo de los defectos.
+1. [defects_analysis](https://github.com/jrr1984/defects_analysis): Repositorio de los programas de procesamiento de imágenes de microscopía, de algoritmos de detección de defectos por medio de técnicas de thresholding y de análisis cuantitativo de los defectos.
 
 2. [Prototipo0_S-D_SpectralGUI](https://github.com/jrr1984/Prototipo0_S-D_SpectralGUI): Repositorio de los programas de control del prototipo preliminar del equipo de caracterización de filtros multi e hiperespectrales.
 
