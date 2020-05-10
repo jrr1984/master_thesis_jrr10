@@ -273,7 +273,7 @@ A continuación se explica el proceso de adquisición de las imágenes individua
 La adquisición de las imágenes de cada banda considerando el tiempo de seleccionar el área a adquirir, la elección de los parámetros de adquisición, etc. tuvo una duración de aproximadamente 10 minutos por banda. A continuación se explican algunas consideraciones importantes que se tuvieron respecto de los formatos de las imágenes y de los tipos de datos así como su precisión:
 \begin{itemize}
 \justifying
-\item Cada barrido completo de una banda es guardado por el software de Zeiss en un archivo de extensión .czi que contiene toda la \textit{metadata} como la información referida a la configuración del microscopio utilizada. Dicho archivo puede ser manipulado con el software de Zeiss, ó con el \href{https://imagej.net/Fiji}{Fiji-ImageJ} (distribución del software \href{https://imagej.nih.gov/ij/}{ImageJ} con \textit{plugins}) ó a través del lenguaje \textit{python} utilizando la librería \href{https://pypi.org/project/czifile/}{\textit{czifile}} (Ejemplo sencillo: \href{https://github.com/jrr1984/defects_analysis/blob/master/zeiss_cfi.ipynb}{\faGithub$_{2.1}$}).
+\item Cada barrido completo de una banda es guardado por el software de Zeiss en un archivo de extensión .czi que contiene toda la \textit{metadata} como la información referida a la configuración del microscopio utilizada. Dicho archivo puede ser manipulado con el software de Zeiss, ó con el \href{https://imagej.net/Fiji}{Fiji-ImageJ} (distribución del software \href{https://imagej.nih.gov/ij/}{ImageJ} con \textit{plugins}) ó a través del lenguaje \textit{python} utilizando la librería \href{https://pypi.org/project/czifile/}{\textit{czifile}} (Ejemplo sencillo: \href{https://github.com/jrr1984/defects_analysis/blob/master/zeiss_cfi.ipynb}{\faGithub$_{2.3.3}$}).
 \item El archivo .czi de la banda completa además contiene todas las \textit{tiles} del barrido que pueden ser exportadas como archivos individuales utilizando las herramientas de procesamiento del software de Zeiss \cite{tilezeiss}. Es muy importante exportar dichas imágenes eligiendo un formato de imagen que no modifique la calidad de la imagen original, esto es, que no se pierda precisión sobre los valores de intensidad de cada píxel. 
 \end{itemize}
 
@@ -334,7 +334,7 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\subsection{Generación de la imagen de fondo: \href{https://github.com/jrr1984/defects_analysis/blob/master/bg.py}{\faGithub$_{2.2}$}}
+\subsection{Generación de la imagen de fondo: \href{https://github.com/jrr1984/defects_analysis/blob/master/bg.py}{\faGithub$_{2.5.1}$}}
 \label{sec:genimf}
 \spacing{1.5}
 
@@ -360,7 +360,7 @@ En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \singlespacing
-\subsection{Corrección de la iluminación no uniforme de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/bg_normalization.py}{\faGithub$_{2.3}$}}
+\subsection{Corrección de la iluminación no uniforme de las imágenes individuales del barrido de una banda con la imagen de fondo \href{https://github.com/jrr1984/defects_analysis/blob/master/bg_normalization.py}{\faGithub$_{2.5.2}$}}
 \label{subs:nm}
 \spacing{1.5}
 
@@ -413,7 +413,7 @@ De la comparación entre los histogramas \texttt{iii)} y \texttt{iv)} se observa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\section{Criterio de elección del \textit{threshold} \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub}}
+\section{Criterio de elección del \textit{threshold} \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub$_{2.6}$}}
 \label{sec:tthresh}
 \spacing{1.5}
 
@@ -428,7 +428,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.5]{Figs/defectosZEISS/thresh_comparison.png}
-	\caption{Figura del \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub}).} 
+	\caption{Figura del \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub$_{2.6}$}).} 
 	\label{fig:threshcom}
 \end{figure}
 
@@ -437,7 +437,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{Figs/defectosZEISS/thresh_vivos_compar3.png}
-	\caption{Región de una imagen individual en conjunto con el \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub}).} 
+	\caption{Región de una imagen individual en conjunto con el \textit{output} del método \textit{try\_all\_threshold} de la librería \textit{scikit-image} del lenguaje \textit{python} (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/try_all_thresholds.py}{\faGithub$_{2.6}$}).} 
 	\label{fig:threshcom2}
 \end{figure}
 %# de defectos por metodo: yen,isodata,triangle
@@ -452,7 +452,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\section{Algoritmo de detección y cuantificación de los defectos \href{https://github.com/jrr1984/defects_analysis/blob/master/defects_thresholding.py}{\faGithub}}
+\section{Algoritmo de detección y cuantificación de los defectos \href{https://github.com/jrr1984/defects_analysis/blob/master/defects_thresholding.py}{\faGithub$_{2.7}$}}
 \label{sec:secalg}
 \spacing{1.5}
 
@@ -504,7 +504,7 @@ Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figur
 
 \item \texttt{Holes Binary Image}. La imagen binaria de los huecos segmentados (Ver Imagen \texttt{d)} de la Figura \ref{fig:flujoalgo}) fue generada a partir de tomar la diferencia entre la imagen binaria de los huecos tapados y la imagen binaria de los defectos. Dicha forma de segmentar los huecos como objetos matriciales cuyo borde son unos y el interior son ceros resultó ser la forma más eficiente para no obtener una gran cantidad de falsos positivos (detección de huecos que en realidad no lo son). Con este método el máximo número de huecos encontrado en una banda fue de 12 con lo cual la verificación de los falsos positivos del método se realiza rápidamente observando visualmente las imágenes en las que fueron detectados. 
 
-\hspace{0.5cm}Párrafo aparte merece la explicación de un método alternativo que se ensayó para intentar segmentar los huecos pero que arrojaba una gran cantidad de falsos positivos (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/find_contours_holes_trial.py}{\faGithub}). En el histograma de la Figura \ref{fig:histalgor} se observa claramente la región de valores de intensidad cercanos a la saturación (en escala monocromática de la imagen normalizada) que pertenecen al hueco de la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo}. Aplicando un \textit{threshold} de intensidad de 0.97 se detecta singularmente el hueco de dicha imagen. Ahora bien, este mismo umbral (ó cualquier variación del mismo) aplicado al conjunto de imágenes de la misma banda arroja miles de falsos positivos de tamaños tan grandes como los propios huecos reales detectados visualmente. Esto ocure pues el fondo de la imagen normalizada contiene regiones conectadas de píxeles con mayor ó igual valor de intensidad que tiene el centro de un hueco. Además, otro motivo por el que se descartó este método es debido a la definición matricial del hueco data anteriormente que supone que cada hueco presente en las imágenes normalizadas tiene un centro blanco con valores de intensidad cercanos a 1 pero que tiene un borde perimetral oscuro.
+\hspace{0.5cm}Párrafo aparte merece la explicación de un método alternativo que se ensayó para intentar segmentar los huecos pero que arrojaba una gran cantidad de falsos positivos (Ver \href{https://github.com/jrr1984/defects_analysis/blob/master/find_contours_holes_trial.py}{\faGithub$_{2.7.2}$}). En el histograma de la Figura \ref{fig:histalgor} se observa claramente la región de valores de intensidad cercanos a la saturación (en escala monocromática de la imagen normalizada) que pertenecen al hueco de la imagen \texttt{a)} de la Figura \ref{fig:flujoalgo}. Aplicando un \textit{threshold} de intensidad de 0.97 se detecta singularmente el hueco de dicha imagen. Ahora bien, este mismo umbral (ó cualquier variación del mismo) aplicado al conjunto de imágenes de la misma banda arroja miles de falsos positivos de tamaños tan grandes como los propios huecos reales detectados visualmente. Esto ocure pues el fondo de la imagen normalizada contiene regiones conectadas de píxeles con mayor ó igual valor de intensidad que tiene el centro de un hueco. Además, otro motivo por el que se descartó este método es debido a la definición matricial del hueco data anteriormente que supone que cada hueco presente en las imágenes normalizadas tiene un centro blanco con valores de intensidad cercanos a 1 pero que tiene un borde perimetral oscuro.
 
 \hspace{0.5cm}Ahora bien, por un lado se detectaron los huecos para poder determinar su diámetro y área de forma más precisa que al ser tratados como defectos en general como se explicó en el proceso 5, \texttt{\textit{measure\_defects}}. Además, por otro lado la segmentación de los huecos permitió ubicarlos espacialmente en el filtro de forma tal de poder caracterizarlos espectralmente como se explica en el Capítulo \ref{chap:microsp}. Esto es, para cada hueco detectado se conocen su ubicación en la imagen que fue hallado y como al mismo tiempo se conoce la posición de cada imagen individual en el barrido completo de una banda, se determinan las coordenadas espaciales del hueco en el filtro. Este \textit{feature} del algoritmo permite rápidamente descartar un filtro si no cumple con las especificaciones técnicas requeridas por la aplicación del usuario final y resulta independiente del inspector de turno del filtro como en el caso de la aplicación de la métrica de \textit{scratc \& dig} (Ver Sección \ref{sec:scanddig}).
 
@@ -515,7 +515,7 @@ Utilizando el diagrama de flujo de la Figura \ref{fig:diagflujoalgor} y la Figur
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\section{Resultados del algoritmo de detección de los defectos de superficie \href{https://github.com/jrr1984/defects_analysis/blob/master/Defects\%20analysis.ipynb}{\faGithub}}
+\section{Resultados del algoritmo de detección de los defectos de superficie \href{https://github.com/jrr1984/defects_analysis/blob/master/Defects\%20analysis.ipynb}{\faGithub$_{2.8}$}}
 \label{sec:resgrl}
 \spacing{1.5}
 
@@ -631,7 +631,7 @@ En la siguiente sección se muestra la población de defectos en general detecta
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\subsection{Población de defectos detectados en general \href{https://github.com/jrr1984/defects\_analysis/blob/master/general\_defects\_population.ipynb}{\faGithub}}
+\subsection{Población de defectos detectados en general \href{https://github.com/jrr1984/defects\_analysis/blob/master/general\_defects\_population.ipynb}{\faGithub$_{2.8.4}$}}
 \label{sec:defpob}
 \spacing{1.5}
 
