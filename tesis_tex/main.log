@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  1 MAY 2020 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.3)  15 MAY 2020 19:30
 entering extended mode
-**C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/main.tex
+**C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex/main.tex
+(C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex/main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06>
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuthesis.cls
+(C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\ctuthesis.cls
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty
 "
 Package: expl3 2020-04-06 L3 programming layer (loader) 
@@ -44,13 +44,12 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 )
 Document Class: ctuthesis 2016/06/15 v0.1 t1606152353 Class for typesetting CTU
  theses and alike
-
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-core.te
-x
+(C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\ctuth-core.tex
 File: ctuth-core.tex 2016/06/15 v0.1t1606152353 "Core" part of the class ctuthe
 sis
 \g_ctuthesis_tempa_skip=\skip47
-) ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
+)
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\bk11.clo"
 File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -68,8 +67,7 @@ File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen134
 )
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-names.t
-ex
+(C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\ctuth-names.tex
 File: ctuthesis-names.def 2014/01/18 v0.1 "Names"partoftheclassctuthesis
 ))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
@@ -100,6 +98,10 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
+)
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.st
 y"
@@ -170,7 +172,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip63
 \flrow@types=\toks22
 )
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\xargs.sty
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xargs\xargs.sty"
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.st
@@ -259,9 +261,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count195
 \@thisrulewidth=\dimen164
 )
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\todonotes.sty
-Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\todonote
+s.sty"
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -582,6 +586,18 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 r/tikz/libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\pg
+flibraryfadings.code.tex"
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count284
@@ -785,6 +801,11 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@cols=\count313
 \TX@ftn=\toks43
 )
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tikzpagenodes\tikz
+pagenodes.sty"
+Package: tikzpagenodes 2012/09/16 v1.1 Special PGF/TikZ nodes for areas of the 
+page
+)
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\fonta
 wesome5.sty"
 Package: fontawesome5 2020/03/24 v5.13.0 Font Awesome 5
@@ -804,10 +825,10 @@ Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcbskins
 jigsaw.code.tex"
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
-))
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-pkg.tex
+)) (C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\ctuth-pkg.tex
 File: ctuth-pkg.tex 2016/06/15 v0.1t1606152353 "Packages" part of the class ctu
 thesis
+
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1106,7 +1127,7 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count329
 \c@MaxMatrixCols=\count330
-\dotsspace@=\muskip16
+\dotsspace@=\muskip17
 \c@parentequation=\count331
 \dspbrk@lvl=\count332
 \tag@help=\toks50
@@ -1228,10 +1249,6 @@ Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count339
- ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen333
 
@@ -1298,74 +1315,29 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\ctuthesis_field_use:n' on input line 957.
 
-)
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\ctuth-templat
-es.tex
+) (C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\ctuth-templates.tex
 File: ctuth-templates.tex 2016/06/15 v0.1t1606152353 "Templates" part of the cl
 ass ctuthesis
 )
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.aux
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/introd.a
-ux)
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/cap3.aux
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-)
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/microesp
-.aux
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-
-LaTeX Warning: Label `fig:bgcel' multiply defined.
-
-))
+No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 219.
+LaTeX Font Info:    ... okay on input line 219.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
@@ -1399,14 +1371,20 @@ Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
 \FBsc@max=\skip98
 \FBso@max=\skip99
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 212.
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 219.
+
+LaTeX Info: Redefining \microtypecontext on input line 219.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 212.
+LaTeX Info: Redefining \showhyphens on input line 219.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1463,7 +1441,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 212.
+Package hyperref Info: Link coloring OFF on input line 219.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1479,12 +1457,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 212.
-LaTeX Info: Redefining \pageref on input line 212.
-LaTeX Info: Redefining \nameref on input line 212.
-
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.out)
+LaTeX Info: Redefining \ref on input line 219.
+LaTeX Info: Redefining \pageref on input line 219.
+LaTeX Info: Redefining \nameref on input line 219.
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -1493,36 +1468,36 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-14.
+21.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-14.
+21.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-214.
+221.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-214.
+221.
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 214.
+(Font)              <10.95> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 214.
+(Font)              <8> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 214.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 214
+(Font)              <6> on input line 221.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 221
 .
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
@@ -1532,7 +1507,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 214
+LaTeX Font Info:    Trying to load font information for U+msb on input line 221
 .
 
 ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -1542,26 +1517,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figs/Caratula/logo_uba.png, id=154, 224.84pt x 225.84375pt>
+<Figs/Caratula/logo_uba.png, id=30, 224.84pt x 225.84375pt>
 File: Figs/Caratula/logo_uba.png Graphic file (type png)
 <use Figs/Caratula/logo_uba.png>
-Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 214.
+Package pdftex.def Info: Figs/Caratula/logo_uba.png  used on input line 221.
 (pdftex.def)             Requested size: 48.68272pt x 48.90004pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 214.
+(Font)              <14.4> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 214.
+(Font)              <10> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 214.
-LaTeX Font Info:    Calculating math sizes for size <32.7> on input line 214.
+(Font)              <7> on input line 221.
+LaTeX Font Info:    Calculating math sizes for size <32.7> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <32.7> on input line 214.
+(Font)              <32.7> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <22.8899> on input line 214.
+(Font)              <22.8899> on input line 221.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <16.34999> on input line 214.
+(Font)              <16.34999> on input line 221.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 214--214
+Overfull \hbox (5.0pt too wide) in paragraph at lines 221--221
 []|| [][][] 
  []
 
@@ -1570,18 +1545,19 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 214--214
 
 
 {C:/Users/juanr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ju
-anr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/Caratula/logo_uba.pn
-g>]
+anr/Documents/master_thesis_jrr10/tesis_tex/Figs/Caratula/logo_uba.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-14.
- ("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+21.
+
+("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2
+
+[2
 
 ]
 Package microtype Info: Character `029' is missing
@@ -1591,211 +1567,165 @@ Package microtype Info: Character `029' is missing
 
 ] [4
 
-] [5] [6
+]
+
+LaTeX Warning: Citation `Pose2017' on page v undefined on input line 221.
+
+[5] [6
 
 ]
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\main.toc
-[7]
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 28.
-
-("C:\Users\juanr\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome5\ufont
-awesomebrands0.fd")
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10.95> n
-ot available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 28.
-)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
- [8]
+ [7]pdfTeX warning (ext4): destination with the same identifier (name{page.}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 \maketitle
+                 [8
+
+]
 \openout2 = `caps/introd.aux'.
 
 
-(C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex\caps/introd.t
-ex
+(C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex\caps/introd.tex
 Capítulo 1.
-
-LaTeX Warning: Reference `fig:tiercol' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Reference `fig:sat2' on page 1 undefined on input line 7.
-
-<Figs/sate_icon.png, id=241, 200.75pt x 200.75pt>
-File: Figs/sate_icon.png Graphic file (type png)
-<use Figs/sate_icon.png>
-Package pdftex.def Info: Figs/sate_icon.png  used on input line 7.
-(pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-<Figs/introduccion/nasaluna7_0.jpg, id=243, 903.375pt x 807.7678pt>
+<Figs/introduccion/nasaluna7_0.jpg, id=75, 903.375pt x 807.7678pt>
 File: Figs/introduccion/nasaluna7_0.jpg Graphic file (type jpg)
 <use Figs/introduccion/nasaluna7_0.jpg>
 Package pdftex.def Info: Figs/introduccion/nasaluna7_0.jpg  used on input line 
 11.
-(pdftex.def)             Requested size: 220.0pt x 196.71542pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 11--11
- [][] 
- []
-
-File: Figs/introduccion/nasaluna7_0.jpg Graphic file (type jpg)
-<use Figs/introduccion/nasaluna7_0.jpg>
-Package pdftex.def Info: Figs/introduccion/nasaluna7_0.jpg  used on input line 
-11.
-(pdftex.def)             Requested size: 220.0pt x 196.71542pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 11--11
- [][] 
- []
-
-<Figs/introduccion/arbolsat.png, id=248, 1284.8pt x 722.7pt>
+(pdftex.def)             Requested size: 161.7045pt x 144.59076pt.
+<Figs/introduccion/arbolsat.png, id=76, 1284.8pt x 722.7pt>
 File: Figs/introduccion/arbolsat.png Graphic file (type png)
 <use Figs/introduccion/arbolsat.png>
 Package pdftex.def Info: Figs/introduccion/arbolsat.png  used on input line 12.
 
-(pdftex.def)             Requested size: 219.98146pt x 196.32257pt.
+(pdftex.def)             Requested size: 256.95544pt x 144.53743pt.
 
-Overfull \hbox (4.98146pt too wide) in paragraph at lines 12--12
- [][] 
- []
-
-File: Figs/introduccion/arbolsat.png Graphic file (type png)
-<use Figs/introduccion/arbolsat.png>
-Package pdftex.def Info: Figs/introduccion/arbolsat.png  used on input line 12.
-
-(pdftex.def)             Requested size: 219.98146pt x 196.32257pt.
-
-Overfull \hbox (4.98146pt too wide) in paragraph at lines 12--12
- [][] 
- []
+LaTeX Warning: Citation `nattierrra' on page 1 undefined on input line 13.
 
 
-LaTeX Warning: Reference `sec:motivacion' on page 1 undefined on input line 16.
+LaTeX Warning: Citation `imsatt' on page 1 undefined on input line 13.
 
 
+LaTeX Warning: Citation `nattierrra' on page 1 undefined on input line 13.
 
-LaTeX Warning: Reference `sec:teoria' on page 1 undefined on input line 16.
+
+LaTeX Warning: Citation `imsatt' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figs:tierraysatell' on page 1 undefined on input line
+ 17.
+
+
+LaTeX Warning: Reference `figs:tierraysatell' on page 1 undefined on input line
+ 17.
 
 [1
 
 
+ <C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex/Figs/introduccion/nasa
+luna7_0.jpg> <C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex/Figs/intro
+duccion/arbolsat.png>]
 
- <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/sate_ic
-on.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/
-introduccion/nasaluna7_0.jpg> <C:/Users/juanr/Documents/master_thesis_scratch_a
-nd_dig/tesis_tex/Figs/introduccion/arbolsat.png>]
+LaTeX Warning: Reference `sec:motivacion' on page 2 undefined on input line 19.
+
+
+
+LaTeX Warning: Reference `sec:microespp' on page 2 undefined on input line 19.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 38.
+(Font)              <9> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 38.
+(Font)              <5> on input line 41.
+
+LaTeX Warning: Citation `canc' on page 2 undefined on input line 43.
 
 
-LaTeX Warning: Citation `canc' on page 2 undefined on input line 40.
+LaTeX Warning: Citation `food' on page 2 undefined on input line 44.
 
 
-LaTeX Warning: Citation `food' on page 2 undefined on input line 41.
+LaTeX Warning: Citation `cultiv' on page 2 undefined on input line 44.
 
 
-LaTeX Warning: Citation `cultiv' on page 2 undefined on input line 41.
+LaTeX Warning: Citation `fire' on page 2 undefined on input line 44.
 
 
-LaTeX Warning: Citation `fire' on page 2 undefined on input line 41.
+LaTeX Warning: Reference `fig:spectrus' on page 2 undefined on input line 51.
 
 
-Underfull \vbox (badness 1354) has occurred while \output is active []
+Underfull \vbox (badness 1097) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 49.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 52.
  [2]
-<Figs/plan_de_tesis/multivshyper.png, id=273, 1820.8025pt x 592.2125pt>
+<Figs/plan_de_tesis/multivshyper.png, id=96, 1820.8025pt x 592.2125pt>
 File: Figs/plan_de_tesis/multivshyper.png Graphic file (type png)
 <use Figs/plan_de_tesis/multivshyper.png>
 Package pdftex.def Info: Figs/plan_de_tesis/multivshyper.png  used on input lin
-e 53.
+e 56.
 (pdftex.def)             Requested size: 364.15405pt x 118.4404pt.
 
 
-LaTeX Warning: Citation `5459162' on page 3 undefined on input line 64.
+LaTeX Warning: Citation `Adao2017' on page 3 undefined on input line 61.
 
 
-LaTeX Warning: Reference `fig:se2' on page 3 undefined on input line 89.
+LaTeX Warning: Citation `Adao2017' on page 3 undefined on input line 61.
 
-[3 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan_
-de_tesis/multivshyper.png>]
-<Figs/plan_de_tesis/cam_sens.png, id=285, 380.34404pt x 245.5327pt>
+
+LaTeX Warning: Citation `5459162' on page 3 undefined on input line 67.
+
+
+LaTeX Warning: Citation `jaii' on page 3 undefined on input line 69.
+
+
+LaTeX Warning: Citation `Pose2017' on page 3 undefined on input line 75.
+
+
+LaTeX Warning: Reference `fig:esquemcamypegfilt' on page 3 undefined on input l
+ine 83.
+
+
+LaTeX Warning: Reference `fig:esquemcamypegfilt' on page 3 undefined on input l
+ine 83.
+
+[3 <C:/Users/juanr/Documents/master_thesis_jrr10/tesis_tex/Figs/plan_de_tesis/m
+ultivshyper.png>]
+<Figs/plan_de_tesis/cam_sens.png, id=107, 412.03937pt x 265.99374pt>
 File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
 <use Figs/plan_de_tesis/cam_sens.png>
-Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 97
+Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 88
 .
-(pdftex.def)             Requested size: 220.0pt x 142.0269pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 97--97
- [][] 
- []
-
-File: Figs/plan_de_tesis/cam_sens.png Graphic file (type png)
-<use Figs/plan_de_tesis/cam_sens.png>
-Package pdftex.def Info: Figs/plan_de_tesis/cam_sens.png  used on input line 97
-.
-(pdftex.def)             Requested size: 220.0pt x 142.0269pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 97--97
- [][] 
- []
-
-<Figs/introduccion/teled.png, id=290, 155.07938pt x 119.94812pt>
+(pdftex.def)             Requested size: 220.0pt x 142.02316pt.
+<Figs/introduccion/teled.png, id=108, 155.07938pt x 119.94812pt>
 File: Figs/introduccion/teled.png Graphic file (type png)
 <use Figs/introduccion/teled.png>
-Package pdftex.def Info: Figs/introduccion/teled.png  used on input line 98.
+Package pdftex.def Info: Figs/introduccion/teled.png  used on input line 89.
 (pdftex.def)             Requested size: 220.0pt x 170.16095pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 98--98
- [][] 
- []
 
-File: Figs/introduccion/teled.png Graphic file (type png)
-<use Figs/introduccion/teled.png>
-Package pdftex.def Info: Figs/introduccion/teled.png  used on input line 98.
-(pdftex.def)             Requested size: 220.0pt x 170.16095pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 98--98
- [][] 
- []
+LaTeX Warning: Citation `Martinez2008' on page 4 undefined on input line 90.
 
 
-LaTeX Warning: Reference `chap:zeiss' on page 4 undefined on input line 103.
+LaTeX Warning: Citation `sensarrib' on page 4 undefined on input line 90.
 
 
-LaTeX Warning: Reference `chap:microsp' on page 4 undefined on input line 103.
+LaTeX Warning: Citation `Martinez2008' on page 4 undefined on input line 90.
 
-<Figs/introduccion/0995.png, id=295, 5139.2pt x 5139.2pt>
-File: Figs/introduccion/0995.png Graphic file (type png)
-<use Figs/introduccion/0995.png>
-Package pdftex.def Info: Figs/introduccion/0995.png  used on input line 110.
-(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
-<Figs/introduccion/0021.png, id=296, 2569.6pt x 2569.6pt>
-File: Figs/introduccion/0021.png Graphic file (type png)
-<use Figs/introduccion/0021.png>
-Package pdftex.def Info: Figs/introduccion/0021.png  used on input line 111.
-(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
-<Figs/introduccion/0187.png, id=297, 5139.2pt x 5139.2pt>
-File: Figs/introduccion/0187.png Graphic file (type png)
-<use Figs/introduccion/0187.png>
-Package pdftex.def Info: Figs/introduccion/0187.png  used on input line 113.
-(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
-<Figs/introduccion/0689.png, id=298, 5139.2pt x 5139.2pt>
-File: Figs/introduccion/0689.png Graphic file (type png)
-<use Figs/introduccion/0689.png>
-Package pdftex.def Info: Figs/introduccion/0689.png  used on input line 114.
-(pdftex.def)             Requested size: 215.60242pt x 215.57047pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `sensarrib' on page 4 undefined on input line 90.
 
- [4 <C:/Users/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/plan
-_de_tesis/cam_sens.png> <C:/Users/juanr/Documents/master_thesis_scratch_and_dig
-/tesis_tex/Figs/introduccion/teled.png>] [5 <C:/Users/juanr/Documents/master_th
-esis_scratch_and_dig/tesis_tex/Figs/introduccion/0995.png (PNG copy)> <C:/Users
-/juanr/Documents/master_thesis_scratch_and_dig/tesis_tex/Figs/introduccion/0021
-.png>
-!pdfTeX error: pdflatex: fflush() failed (Invalid argument)
+
+LaTeX Warning: Reference `chap:zeiss' on page 4 undefined on input line 95.
+
+
+LaTeX Warning: Reference `chap:microsp' on page 4 undefined on input line 95.
+
+
+LaTeX Warning: Reference `fig:speus' on page 4 undefined on input line 98.
+
+
+!pdfTeX error: pdflatex (file C:/Users/juanr/Documents/master_thesis_jrr10/tesi
+s_tex/Figs/introduccion/0021.png): libpng: internal error
  ==> Fatal error occurred, no output PDF file produced!
