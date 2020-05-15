@@ -635,7 +635,7 @@ Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=5.0]{Figs/microespectrometro/barridoenzdefecto.png}
+	\includegraphics[scale=0.4]{Figs/microespectrometro/barridoenzdefecto.png}
 	\caption{Imagen adquirida con la cámara asociada al barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando un defecto de transmisión ó mancha que se señala en la imagen.}
 	\label{fig:batod}
 \end{figure}
@@ -644,7 +644,7 @@ En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en sim
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/microespectrometro/variacionintensidaddefecto.png}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/variacionintensidaddefecto.png}
 	\caption{Gráficos de los espectros de transmisión superpuestos de los puntos del barrido señalados en la Figura \ref{fig:barinted}, asociados al máximo de intensidad del barrido detectado de la banda considerado el 100\% y al 75\% y 60\% de transmisión respecto de dicho máximo, respectivamente.}
 	\label{fig:merrmmin}
 \end{figure}
@@ -661,7 +661,7 @@ Se podría tomar como hipótesis para un futuro trabajo que las manchas influyen
 
 \hspace{0.5cm}En esta última sección se muestran los resultados respecto de los espectros de transmisión de los huecos (Ver Figura \ref{fig:defectos} (a)). En particular, se muestran un barrido en dos dimensiones y un barrido lineal del hueco más grande del filtro (Ver \ref{fig:defectos} (a)) detectado en el Capítulo \ref{chap:zeiss}. Se ubicó dicho hueco a partir de la localización del mismo en las imágenes del \textit{tile scan} realizado en la banda azul. Con el \textit{joystick} de la platina desarrollada se posicionó el filtro con dicho hueco en el centro de la imagen adquirida con la cámara para medir su espectro de transmisión con el microespectrómetro.
 
-En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un hueco.
+En las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a) se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a) se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un hueco.
 
  \begin{figure}[H]
 	\centering
@@ -672,35 +672,32 @@ En las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag} se muestran los resu
 
 El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al hueco (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al hueco. 
 
-En la Figura \ref{fig:mapatransmag} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al hueco que se observa en la imagen de la Figura \ref{fig:agujeroimg}.
+En la Figura \ref{fig:agujeroimg} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al hueco que se observa en la imagen de la Figura \ref{fig:agujeroimg} (b).
  \begin{figure}[H]
-	\centering
+%\centering
 	\includegraphics[scale=1.0]{Figs/microespectrometro/tranhueco.png}
-	\caption{Mapa de transmisión de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$. }
-	\label{fig:mapatransmag}
-\end{figure}
-
- \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.30]{Figs/microespectrometro/imagujero.png}
-	\caption{Imagen de la banda azul que contiene al hueco caracterizado, adquirida con la cámara del equipo.}
+\hfill%
+	\includegraphics[scale=0.6]{Figs/microespectrometro/imagujero.png}
+	\hfill%
+	\hfill%
+	\caption{(a) Mapa de transmisión de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$. (b) Imagen de la banda azul que contiene al hueco caracterizado, adquirida con la cámara del equipo.}
 	\label{fig:agujeroimg}
 \end{figure}
 
 
-En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. El punto de dicho gráfico señalado con un círculo rojo está asociado unívocamente al píxel blanco recuadrado en rojo de la Figuras \ref{fig:mapargbag} y al píxel negro recuadrado en rojo de la Figura \ref{fig:mapatransmag}. Dicho punto asociado físicamente al hueco presenta una disminución de la intensidad transmitida del 64\%. El espectro de transmisión de este punto rojo se lo muestra en la Figura \ref{fig:espectbag} y se puede observar que además del espectro de transmisión esperado de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz. 
+En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:agujeroimg} (a). El punto de dicho gráfico señalado con un círculo rojo está asociado unívocamente al píxel blanco recuadrado en rojo de la Figuras \ref{fig:mapargbag} y al píxel negro recuadrado en rojo de la Figura \ref{fig:agujeroimg} (a). Dicho punto asociado físicamente al hueco presenta una disminución de la intensidad transmitida del 64\%. El espectro de transmisión de este punto rojo se lo muestra en la Figura \ref{fig:espectbag} y se puede observar que además del espectro de transmisión esperado de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz. 
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{Figs/microespectrometro/inten_totaldefecto.png}
-	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:mapatransmag}. Los puntos señalados con círculos están asociados a los espectros graficados en la Figura \ref{fig:esto}. En particular, el punto con un círculo rojo del centro del hueco, está vinculado a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}. }
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/inten_totaldefecto.png}
+	\caption{Perfil de intensidades asociados a los valores de la altura $\textit{y}$ = 11 $\mu m$ del mapa de transmisión de la Figura \ref{fig:agujeroimg} (a). Los puntos señalados con círculos están asociados a los espectros graficados en la Figura \ref{fig:esto}. En particular, el punto con un círculo rojo del centro del hueco, está vinculado a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a). }
 	\label{fig:perfilbacka}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.7]{Figs/microespectrometro/espectroagback.png}
-	\caption{Espectro de transmisión del centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:mapatransmag}.}
+\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectroagback.png}
+	\caption{Espectro de transmisión del centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a).}
 \label{fig:espectbag}
 \end{figure}
 
