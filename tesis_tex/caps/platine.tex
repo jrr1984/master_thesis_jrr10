@@ -1,0 +1,42 @@
+\singlespacing
+\mychapter{0}{Apéndice II: Resumen de las características de la platina desarrollada.}
+\label{chap:platine}
+\spacing{1.5}
+
+\pagestyle{plain}
+\begin{figure}[H]
+\begin{minipage}{0.47\textwidth}
+\centering
+\includegraphics[width=.7\textwidth,left]{Figs/microespectrometro/descarga.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.47\textwidth}
+\raggedleft
+\Huge \textbf{XY(Z) Open Frame Stage}
+\end{minipage}
+\end{figure}
+
+\texttt{Características principales y futuras mejoras:}
+
+    \begin{itemize}
+    \justifying
+        \item Grados de libertad: 2. Ejes $\textit{x}$ e $\textit{y}$  .
+        \item Longitud de recorrido de cada grado de libertad $>$ 240 mm.
+        \item Motores paso a paso NEMA 17, 0.9° de paso mínimo, 400 pasos por revolución, $I_{máx} = 1.67 A$, $V = 4V$.
+        \item Transmisión vía varilla ACME, paso 2 mm, diámetro 8 mm. Tuerca \textit{antibackslash}.
+        \item \textit{Drivers} de corriente disponibles y \textit{microstepping}:
+\begin{itemize}
+\item A4988, hasta 2 A. Opciones de \textit{microstepping:} 1, 2, 4, 8 y 16. $\xrightarrow{}$ Resoluciones (teóricas) de 5 $\mu m$, 2.5 $\mu m$, 1.25 $\mu m$ y 0.63 $\mu m$ respectivamente.
+\item DRV8825, hasta 2.5 A. Opciones de \textit{microstepping:} 1, 2, 4, 8, 16 y 32. $\xrightarrow{}$ Resoluciones (teóricas) de 5 $\mu m$, 2.5 $\mu m$, 1.25 $\mu m$, 0.63 $\mu m$ y 0.31 $\mu m$ respectivamente. 
+\end{itemize}
+\item Finales de carrera.
+\item \textit{Joystick} para manipular la platina manualmente.
+    \item Mejoras (actualidad):
+    \begin{itemize}
+ 	\item Calibración de la platina con la cámara integrada al microespectrómetro [\cite{schaa}].
+ 	\item Caracterización de la precisión y de la repetibilidad de la platina.
+        \item Implementación de rodamientos lineales LM6LUU en el eje $\textit{y}$.
+        \item Integración y desarrollo de un tercer grado de libertad, del eje $\textit{z}$, que permita variar la distancia entre el objetivo y el filtro de forma automatizada.
+        \item Inclusión de finales de carrera en el eje $\textit{y}$ y en el eje $\textit{z}$. 
+        \end{itemize}
+\end{itemize}

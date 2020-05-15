@@ -38,7 +38,7 @@ es necesario obtener información sobre la interacción entre la radiación elec
 
 La espectroscopía de imágenes multi e hiperespectrales, en inglés \textit{Multispectral and Hyperspectral Spectroscopy
 Imaging} (MSI y HSI, respectivamente), combina la espectroscopía y la adquisición de imágenes en dos dimensiones.
-Este método brinda datos espectrales para cada pixel en el campo de visión \footnote{El campo de visión, en inglés \textit{field of view} (FOV), representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor CMOS y la magnificación del microscopio.}. A partir de
+Este método brinda datos espectrales para cada pixel en el campo de visión \footnote{El campo de visión, en inglés \textit{field of view} (FOV), representa el área física de la imagen, que para el caso de una cámara el FOV viene dado por el cociente entre el tamaño del sensor de imagen y la magnificación del microscopio.}. A partir de
 dichos datos se puede extraer información sobre la emisión, reflexión ó absorción del objeto de estudio, que puede ser utilizada para determinar su composición físico-química con una cierta
 resolución espacial. De esta forma, se pueden identificar tumores de un cáncer \cite{canc}, realizar un
 control de calidad de la comida identificando bacterias en tiempo real \cite{food}, optimizar la siembra y la cosecha de ciertos cultivos \cite{cultiv}, monitorear focos de incendios \cite{fire}, entre otras
@@ -54,7 +54,7 @@ unos pocos nm (Ver Figura \ref{fig:spectrus}).
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.2]{Figs/plan_de_tesis/multivshyper.png}
-	\caption{ Representación de los espectros: (A) Multiespectral: 5 
+	\caption{ Representación de los espectros de radiación electromagnética: (A) Multiespectral: 5 
 		bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
 		generalmente entre cientos y miles de ellas. Los dibujos no se 
 		encuentran 
@@ -80,14 +80,14 @@ una cierta escena a capturar, no son necesarias pues el barrido es realizado
 por el movimiento propio del satélite respecto de la Tierra. El esquema básico 
 de este tipo de 
 cámaras multiespectales se muestra 
-en la Figura \ref{fig:esquemcamypegfilt} (a), donde una lente enfoca la luz sobre el sensor de imagen que tiene un filtro de múltiples bandas montado arriba de él (Ver Figura \ref{fig:esquemcamypegfilt} (b)).
+en la Figura \ref{fig:esquemcamypegfilt} (a), donde una lente enfoca la luz sobre el sensor de imagen que tiene un filtro de múltiples bandas montado encima de él (Ver Figura \ref{fig:esquemcamypegfilt} (b)).
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{Figs/plan_de_tesis/cam_sens.png}\hfill
 \includegraphics[width=0.5\textwidth]{Figs/introduccion/teled.png}
-\caption{(a) Esquema de una cámara multiespectral. El filtro absorbe el espectro completo de la luz incidente salvo la banda espectral que el usuario determina, por lo que sólo las longitudes de onda elegidas atraviesan el filtro y son detectadas por el sensor. Adaptado de \cite{Martinez2008}. (b) Filtro de cinco bandas montado directamente sobre el sensor CCD, es decir en el plano focal del mismo \cite{sensarrib}.}
+\caption{(a) Esquema de una cámara multiespectral. El filtro absorbe el espectro completo de la luz incidente salvo la banda espectral que el usuario determina, por lo que sólo las longitudes de onda elegidas atraviesan el filtro y son detectadas por el sensor de imagen. Adaptado de \cite{Martinez2008}. (b) Filtro de cinco bandas montado directamente sobre el sensor CCD, es decir en el plano focal del mismo \cite{sensarrib}.}
 \label{fig:esquemcamypegfilt}
 \end{figure}
 
@@ -104,7 +104,7 @@ en
 	\label{fig:speus}
 \end{figure}
 
-A continuación se realiza una introducción a la teoría detrás del equipo desarrollado en el Capítulo \ref{chap:microsp} que consistió de un microespectrómetro que es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de medir en cada volumen resoluble el espetro de transmisión del filtro.
+A continuación se realiza una introducción a la teoría detrás del equipo desarrollado en el Capítulo \ref{chap:microsp} que consistió de un microespectrómetro que es un instrumento de medición híbrido que integra la capacidad de magnificación y de resolución ópticas de un microscopio con la capacidad de medir en cada volumen resoluble el espectro de transmisión del filtro.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -118,7 +118,7 @@ A continuación se realiza una introducción a la teoría detrás del equipo des
 
 La técnica de microespectroscopía implementada en esta tesis contempla un microscopio de campo brillante integrado con un espectrómetro y una cámara digital como detectores. La microscopía de campo brillante consiste en la generación con un arreglo de lentes de la imagen de una muestra que es iluminada por una fuente de luz. En la Figura \ref{fig:mdb} se muestra el proceso de formación de imágenes de dos puntos (P1 y P2) de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Se posiciona el objetivo de forma tal que la muestra se encuentre a la distancia focal del mismo. La luz transmitida ó reflejada de la muestra es recolectada y colimada por el objetivo y luego es enfocada por la lente de tubo (en inglés, \textit{tube lens}) en el plano imagen (PI) donde un detector como el espectrómetro ó una cámara pueden ser colocados.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/introduccion/martinbordenave.png}
 	\caption{Proceso de formación de imágenes de dos puntos de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Adaptado de \cite{borden}.}
@@ -131,7 +131,7 @@ M = \frac{f_{LT}}{f_{O}},
 \end{equation}	
 donde $f_{LT}$ es la distancia focal de la lente de tubo y $f_{0}$ es la distancia focal del objetivo.
 
-El poder óptico de resolución espacial del microscopio estimado teóricamente por el Criterio de Rayleigh viene dado por la siguiente ecuación:
+El poder óptico de resolución espacial del microscopio estimado teóricamente por el criterio de Rayleigh viene dado por la siguiente ecuación:
 \begin{equation}
 d = \frac{0.61 \hspace{2pt} \lambda}{ N.A.},
 \end{equation}
@@ -146,7 +146,7 @@ un máximo en el punto focal, denominado patrón de difracción de Airy \cite{he
 	\label{fig:critrayspa}
 \end{figure}
 
-La luz que es enfocada por la lente de tubo en el plano imagen es detectada por un espectrómetro en el caso de un microespectrómetro. Para poder aprovechar el poder de resolución óptico del objetivo del microscopio, de acuerdo al Teorema de Nyquist-Shannon se debería utilizar un detector con un área sensible de detección cuyo diámetro sea igual a la mitad del valor de la resolución estimada por Rayleigh. En el caso de una cámara para poder aprovechar la resolución del objetivo cada píxel de la misma debería tener un diámetro equivalente igual a la mitad del valor de la resolución estimada teóricamente. En el caso de un espectrómetro acoplado a una fibra óptica se debe considerar el diámetro del \textit{core} de la misma que guía la luz vía reflexión interna desde el plano imagen (plano de detección) hacia la apertura del espectrómetro.
+La luz que es enfocada por la lente de tubo en el plano imagen es detectada por un espectrómetro en el caso de un microespectrómetro. Para poder aprovechar el poder de resolución óptico del objetivo del microscopio, de acuerdo al Teorema de Nyquist-Shannon se debería utilizar un detector con un área sensible de detección cuyo diámetro sea igual a la mitad del valor de la resolución estimada por Rayleigh. En el caso de una cámara para poder aprovechar la resolución del objetivo del microscopio cada píxel de la misma debería tener un diámetro equivalente igual a la mitad del valor de la resolución estimada teóricamente. En el caso de un espectrómetro acoplado a una fibra óptica se debe considerar el diámetro del \textit{core} de la misma que guía la luz vía reflexión interna desde el plano imagen (plano de detección) hacia la apertura del espectrómetro.
 
 La fibra óptica es un medio de transmisión de la luz que opera como una guía de ondas dieléctrica cilíndrica por el cual se propaga un único modo si la fibra es monomodo ó múltiples modos si la fibra es multimodo (Ver Figura \ref{fig:guiasmon}). 
 \begin{figure}[H]
