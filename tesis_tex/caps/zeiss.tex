@@ -91,7 +91,8 @@ Se hace notar que si no es especificado en la hoja de datos del componente, el \
 
 Un componente óptico supera las especificaciones de la ISO 10110 mediante el método de inspección visual si supera las siguientes condiciones:
 \begin{itemize}
-\item No pueden existir defectos con un \textit{grade number} mayor al especificado en la hoja de datos del componente.
+\item No pueden existir defectos con un \textit{grade number} mayor al especificado en la hoja de datos.
+\item No puede haber una mayor cantidad de defectos con el \textit{grade number} especificado que el máximo número de defectos permitidos (N$_{p}$) con dicho coeficiente.
 \item El área del componente óptico cubierta por defectos `relevantes'\footnote{Por defectos `relevantes' se considera a los defectos de \textit{grade number} mayor al defecto de mínimo \textit{grade number} detectado vía inspección visual. De acuerdo a la ISO 14997 que es una implementación de los métodos de control de calidad especificados por la ISO 10110-7, el \textit{grade number} del defecto más chico a considerar vía la inspección visual es de un \textit{grade number} igual a 0.040 (40 $\mu m$ de diámetro) \cite{etsol}. Ahora bien, el fabricante podría indicar que los defectos de mínimo diámetro que detecta vía inspección visual son de otro \textit{grade number}, por ejemplo 0.016 (16 $\mu m$ de diámetro).} ($A_{defectos}$) no puede superar el valor de la siguiente expresión:
 \begin{equation}
 A_{defectos} = N_{p}\hspace{2pt} .\hspace{2pt} A_{g}^{2}
@@ -118,11 +119,11 @@ A_{defectos} = N_{p}\hspace{2pt} .\hspace{2pt} A_{g}^{2}
 Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espectral de transmisión de la siguiente manera:
 \begin{itemize}
 \justifying
-\item Zona 1 - Banda Azul: (450-510) nm
-\item Zona 2 - Banda Verde: (510-580) nm
-\item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático viene de la familia de la palabra color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm
-\item Zona 4 - Banda Roja: (590-690) nm
-\item Zona 5 - Banda NIR: (750-900) nm
+\item Zona 1 - Banda Azul: (450-510) nm.
+\item Zona 2 - Banda Verde: (510-580) nm.
+\item Zona 3 - Banda Pancromática\footnote{La palabra pancromática, del griego ático donde pan significa todo y cromático viene de la familia de la palabra color, implica que dicha banda tiene un espectro de transmisión en toda la región del visible.}: (450-750) nm.
+\item Zona 4 - Banda Roja: (590-690) nm.
+\item Zona 5 - Banda NIR: (750-900) nm.
 \end{itemize}
  \hspace{0.5cm}Las especificaciones ópticas de calidad de cada banda del filtro brindadas por el fabricante fueron las siguientes: 5/2x0.063 (\textit{S/D 20-10, according to MIL PRF 13830}). Estas especificaciones implican para el caso de la ISO 10110, 5/2x0.063, que en la superficie óptica de cada banda puede haber un máximo de 2 defectos de \textit{grade number} igual a 0.063 (63 $\mu m$ de diámetro), que no puede haber defectos con un \textit{grade number} mayor a 0.063 y que el área total máxima cubierta por defectos de \textit{grade number} mayor ó igual al mínimo valor especificado por el fabricante puede ser de 7938 $\mu m^{2}$, de acuerdo a \ref{eq:isoarea}. Y, las especificaciones de \textit{scratch \& dig}, S/D 20-10, indican que en cada banda puede haber rayaduras con un brillo calibrado de \textit{scratch number} igual 20 y que la suma de todas las longitudes de las rayaduras del mismo valor de \textit{scratch number} no podrá ser superior al diámetro equivalente de cada banda, de acuerdo a \ref{eq:snumb}. Por último, cada banda del filtro no deberá tener más de 1 defecto de \textit{dig number} igual a 10 (diámetro de 100 $\mu m$)  de acuerdo a \ref{eq:nphi20}\footnote{Las dimensiones de la banda más chica son de 4.2 mm x 27.0 mm con lo cual el diámetro equivalente es de aproximadamente 12 mm. El cociente de la Ecuación \ref{eq:nphi20} es igual a 0.6, resultado que se trunca a 1. El resultado final es el mismo para todas las bandas.}  y la suma de los diámetros de todos los defectos no podrá ser superior a los 0.2 mm, de acuerdo a \ref{eq:dmenorig}. 
 
@@ -136,7 +137,7 @@ Se hace notar que entre las bandas se encuentran unas regiones rectangulares de 
 \label{sec:conf}
 \spacing{1.5}
 
-\hspace{0.5cm}Con el propósito de cuantificar y caracterizar los defectos del filtro se adquirieron imágenes micróscopicas del mismo. Para la adquisición de las imágenes se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:filtroenZEISS} (a), con un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25. Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca, en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de campo brillante para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}, ver \cite{wikiosc}).}.
+\hspace{0.5cm}Con el propósito de cuantificar y caracterizar los defectos del filtro se adquirieron imágenes de microscopía del mismo. Para la adquisición de las imágenes se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:filtroenZEISS} (a), con un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25. Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca, en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de campo brillante para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}, ver \cite{wikiosc}).}.
 
 La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y una resolución de 2.3 megapíxeles (1216x1920 píxeles), fue controlada a través del software ZEN 2.5 (\textit{Blue edition}, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio para la configuración utilizada, donde 1 píxel equivale a 0.586 $\mu m$.  Cada imagen individual tiene las dimensiones del \textit{field of view} (FOV) de la cámara, que son de 713 $\mu m$ x 1125 $\mu m$. 
 
@@ -191,7 +192,7 @@ Cada trayectoria del barrido fue realizada automáticamente de la siguiente mane
 \caption{(a) Imagen de la superficie exterior A del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.54 mm x 14.94 mm. (b) Imagen de la superficie exterior B del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.50 mm x 15.55 mm.}
 \label{fig:supsfiltro}
 \end{figure}
- En las Figuras \ref{fig:supsfiltro} (a) y \ref{fig:supsfiltro} (b) se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El \textit{overlap} configurado entre las \textit{tiles} fue de 30\%. El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ \cite{fiji}. 
+ En las Figuras \ref{fig:supsfiltro} (a) y (b) se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El \textit{overlap} configurado entre las \textit{tiles} fue de 30\%. El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ \cite{fiji}. 
 
 Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no sature alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara.
 
@@ -273,7 +274,7 @@ La adquisición de las imágenes de cada banda considerando el tiempo de selecci
 
 Las imágenes de microscopía pueden estar afectadas por las variaciones de intensidad debido a las imperfecciones inherentes del proceso de formación de imágenes. Estas variaciones de intensidad pueden venir dadas por la iluminación no uniforme de la muestra, por la orientación misma de la muestra al montarla sobre la platina del microscopio ó por el efecto de \textit{vignetting} que se materializa con la aparición de bordes negros en las imágenes y que es propio de la configuración del sensor de la cámara. Estos efectos pueden dar lugar a falsos positivos en el proceso de segmentación de los defectos, lo que constituye un grave problema a solucionar (Ver Sección \ref{sec:tthresh}).
 
-La desalineación de alguno de los componentes que se encuentran en el camino óptico entre la fuente de luz y el sensor de la cámara con el que se adquieren las imágenes (Ver Figura \ref{fig:micrososcuro} (a)), es una causa muy importante de la iluminación no uniforme de la muestra que se está analizando. En la Figura \ref{fig:micrososcuro} (b) se puede observar un ejemplo de una imagen micróscopica adquirida con una iluminación no uniforme.
+La desalineación de alguno de los componentes que se encuentran en el camino óptico entre la fuente de luz y el sensor de la cámara con el que se adquieren las imágenes (Ver Figura \ref{fig:micrososcuro} (a)), es una causa muy importante de la iluminación no uniforme de la muestra que se está analizando. En la Figura \ref{fig:micrososcuro} (b) se puede observar un ejemplo de una imagen de microscopía adquirida con una iluminación no uniforme.
 \begin{figure}[H]
 %\centering
 \hfill%
@@ -286,11 +287,9 @@ La desalineación de alguno de los componentes que se encuentran en el camino ó
 \label{fig:micrososcuro}
 	\end{figure}
 	
-Una imagen de microscopía adquirida idealmente con una iluminación uniforme perfecta tendría una imagen de fondo (\textit{background image}) como la que se muestra en la Figura \ref{fig:fon} (a). La imagen de fondo es una imagen que contiene en cada píxel la información de la iluminación del microscopio bajo ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración del sensor de la cámara utilizado. Experimentalmente, dicha imagen puede ser obtenida colocando un portaobjeto sin la muestra, en las mismas condiciones de iluminación y foco (misma distancia muestra-objetivo). Si dicha imagen de fondo experimental no pudiera ser adquirida pero se cuenta con un gran número de imágenes adquiridas bajo las mismas condiciones experimentales, una imagen de fondo puede ser generada tomando la mediana del conjunto de imágenes como se explica en la subsección \ref{sec:genimf}.
+Una imagen de microscopía adquirida idealmente con una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin considerar el ruido de Poisson de fotones tendría una imagen de fondo (\textit{background image}) como la que se muestra en la Figura \ref{fig:fon} (a). La imagen de fondo es una imagen que contiene en cada píxel la información de la iluminación del microscopio bajo ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración del sensor de la cámara utilizado. Experimentalmente, dicha imagen puede ser obtenida colocando un portaobjeto sin la muestra, en las mismas condiciones de iluminación y foco (misma distancia muestra-objetivo). Si dicha imagen de fondo experimental no pudiera ser adquirida pero se cuenta con un gran número de imágenes adquiridas bajo las mismas condiciones experimentales, una imagen de fondo puede ser generada tomando la mediana del conjunto de imágenes como se explica en la subsección \ref{sec:genimf}.
 
-Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la misma cotiene el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de los valores de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad.
-
-En la Figura \ref{fig:fon} (a) se muestra una imagen de fondo ficticia que tendría una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin considerar el ruido de Poisson de fotones. Dicha imagen tiene un histograma como el que se muestra en la Figura \ref{fig:fon} (b), en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
+Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la misma cotiene el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de los valores de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad. En la Figura \ref{fig:fon} (b) se muestra el histograma de la imagen de fondo ideal, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
 
 \begin{figure}[H]
 %\centering
