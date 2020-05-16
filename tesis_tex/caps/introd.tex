@@ -66,7 +66,7 @@ unos pocos nm (Ver Figura \ref{fig:spectrus}).
 Las cámaras de adquisición de imágenes multiespectrales estándard utilizan 
 redes de difracción o prismas como elementos dispersivos de la luz \cite{5459162}. La 
 distancia requerida entre el sensor de detección y el componente de difracción 
-de la luz, hace que este tipo de cámaras sean grandes y pesadas\footnote{Por ejemplo, la cámara prismática multiespectral modelo \textit{Fusion Series AD-080CL} del fabricante JAI, tiene una masa de 400 g y unas dimensiones de 55(H) x 55(W) x 80(D) mm \cite{jaii}.}, dos condiciones que en la industria satelital se deben optimizar 
+de la luz, hace que este tipo de cámaras sean grandes y pesadas\footnote{Por ejemplo, la cámara prismática multiespectral modelo \textit{Fusion Series AD-080CL} del fabricante JAI, tiene una masa de 400 g y unas dimensiones de 55(H) x 55(W) x 80(D) mm \cite{jaii}. La masa total de los satélites de Satellogic es menor a los 50 kg.}, dos condiciones que en la industria satelital se deben optimizar 
 fuertemente ya que el costo de la puesta en órbita de los satélites es 
 proporcional a su peso y a su tamaño. Estas cámaras suelen ser caras y 
 sensibles a desalinearse debido a las condiciones mecánicas de su construcción. 
@@ -116,7 +116,7 @@ A continuación se realiza una introducción a la teoría detrás del equipo des
 
 \hspace{0.5cm}La microespectroscopía combina la espectroscopía con la microscopía. Existen distintas aplicaciones de esta técnica para estudiar los espectros de muestras microscópicas como la microespectroscopía en el IR (infrarrojo)\cite{WALSH20071}, de FT-IR (\textit{Fourier Transform - Infrared}) \cite{kani}, de Raman \cite{defaria}, etc. En particular en este trabajo se realizaron mediciones de microespectroscopía en el espectro visible y en el cercano infrarrojo (en adelante NIR\footnote{NIR, en inglés \textit{Near-Infrared}, se le denomina a la región espectral del infrarrojo cercano que se extiende aproximadamente desde los 780 nm hasta los 2000 nm.}), en un rango de longitudes de onda comprendido entre los 450 y los 900 nm.
 
-La técnica de microespectroscopía implementada en esta tesis contempla un microscopio de campo brillante integrado con un espectrómetro y una cámara digital como detectores. La microscopía de campo brillante consiste en la generación con un arreglo de lentes de la imagen de una muestra que es iluminada por una fuente de luz. En la Figura \ref{fig:mdb} se muestra el proceso de formación de imágenes de dos puntos (P1 y P2) de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Se posiciona el objetivo de forma tal que la muestra se encuentre a la distancia focal del mismo. La luz transmitida ó reflejada de la muestra es recolectada y colimada por el objetivo y luego es enfocada por la lente de tubo (en inglés, \textit{tube lens}) en el plano imagen (PI) donde un detector como el espectrómetro ó una cámara pueden ser colocados.
+La técnica de microespectroscopía implementada en esta tesis contempla un microscopio de campo brillante integrado con un espectrómetro y una cámara digital como detectores. La microscopía de campo brillante consiste en la generación con un arreglo de lentes de la imagen de una muestra que es iluminada por una fuente de luz. En la Figura \ref{fig:mdb} se muestra el proceso de formación de imágenes de dos puntos (P1 y P2) de una muestra en un microscopio de campo brillante con un objetivo corregido a infinito (O). Se posiciona el objetivo de forma tal que la muestra se encuentre a la distancia focal del mismo. La luz transmitida ó reflejada de la muestra es recolectada y colimada por el objetivo y luego es enfocada por la lente de tubo (LT) en el plano imagen (PI) donde un detector como el espectrómetro ó una cámara pueden ser colocados.
 
 \begin{figure}
 	\centering
@@ -129,11 +129,11 @@ Las características más importantes de un microscopio son su magnificación y 
 \begin{equation}
 M = \frac{f_{LT}}{f_{O}},
 \end{equation}	
-donde $f_{LT}$ es la distancia focal de la lente de tubo y $f_{0}$ es la distancia focal del objetivo.
+donde $f_{LT}$ es la distancia focal de la lente de tubo y $f_{O}$ es la distancia focal del objetivo.
 
 El poder óptico de resolución espacial del microscopio estimado teóricamente por el criterio de Rayleigh viene dado por la siguiente ecuación:
 \begin{equation}
-d = \frac{0.61 \hspace{2pt} \lambda}{ N.A.},
+d = 0.61\hspace{2pt}\frac{\lambda}{ N.A.},
 \end{equation}
 donde \textit{d} es la distancia de separación entre los dos puntos de la muestra, $\lambda$ es la longitud de onda de la fuente de luz utilizada y $N.A. = n \hspace{2pt} sin(\alpha)$ es la apertura numérica del objetivo, con $n$ el índice de refracción del medio y $\alpha$ la mitad del ángulo de recolección del objetivo (Ver Figura \ref{fig:mdb}). El criterio de Rayleigh establece que las imágenes de dos fuentes puntuales, incoherentes, de igual intensidad pueden ser, en el límite, distinguidas por un sistema de lentes formador de imágenes, si el centro de uno de los discos de Airy\footnote{Debido a la naturaleza ondulatoria de la luz, las ondas
 electromagnéticas interfieren en el plano imagen generando un patrón de intensidad en dos dimensiones con
