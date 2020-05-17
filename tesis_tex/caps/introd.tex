@@ -8,13 +8,12 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.179]{Figs/introduccion/nasaluna7_0.jpg}\hfill
-\includegraphics[scale=0.2]{Figs/introduccion/arbolsat.png}
-\caption{(a) La primera fotografía en color de todo el planeta Tierra, satélite ATS 3 (10 de noviembre de 1967)  \cite{nattierrra}. (b) Imagen multiespectral de 1 metro de resolución adquirida con una cámara a bordo de uno de los satélites de la compañía Satellogic \cite{imsatt}.}
+\includegraphics[width=1.0\textwidth]{Figs/introduccion/satenasa.png}
+\caption{\textbf{A}: La primera fotografía en color de todo el planeta Tierra, satélite ATS 3 (10 de noviembre de 1967)  \cite{nattierrra}. \textbf{B}: Imagen multiespectral de 1 metro de resolución adquirida con una cámara a bordo de uno de los satélites de la compañía Satellogic \cite{imsatt}.}
 \label{figs:tierraysatell}
 \end{figure}
 
-Una posible respuesta a estos interrogantes puede estar en el entendimiento de la información que nos pueden brindar las imágenes adquiridas por medio de cámaras a bordo de satélites en una constelación de tamaño tal que se pueda obtener una imagen de cada región del planeta con una resolución temporal diaria. Desde la primera adquisición de una fotografía en color de todo el planeta Tierra por una cámara a bordo del satélite ATS 3 en 1967 (Ver Figura \ref{figs:tierraysatell} (a)), la industria satelital se ha desarrollado al punto de que en la actualidad se tiene la posibilidad de adquirir una imagen satelital de 1 metro de resolución espacial que permite identificar y hacer conteo individual de árboles de una región de la Tierra (Ver Figura \ref{figs:tierraysatell} (b)).
+Una posible respuesta a estos interrogantes puede estar en el entendimiento de la información que nos pueden brindar las imágenes adquiridas por medio de cámaras a bordo de satélites en una constelación de tamaño tal que se pueda obtener una imagen de cada región del planeta con una resolución temporal diaria. Desde la primera adquisición de una fotografía en color de todo el planeta Tierra por una cámara a bordo del satélite ATS 3 en 1967 (Ver Figura \ref{figs:tierraysatell} \textbf{A}), la industria satelital se ha desarrollado al punto de que en la actualidad se tiene la posibilidad de adquirir una imagen satelital de 1 metro de resolución espacial que permite identificar y hacer conteo individual de árboles de una región de la Tierra (Ver Figura \ref{figs:tierraysatell} \textbf{B}).
 
 En este capítulo se describe la motivación del proyecto por medio de la explicación del proceso de aquisición de imágenes multiespectrales [\ref{sec:motivacion}] y luego se explica la teoría general detrás del sistema de caracterización de filtros multiespectrales desarrollado en esta tesis [\ref{sec:microespp}].
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +52,7 @@ unos pocos nm (Ver Figura \ref{fig:spectrus}).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{Figs/plan_de_tesis/multivshyper.png}
+	\includegraphics[scale=0.2]{Figs/introduccion/multivshyper.png}
 	\caption{ Representación de los espectros de radiación electromagnética: (A) Multiespectral: 5 
 		bandas anchas; y, (B) Hiperespectral: muchas bandas muy estrechas, 
 		generalmente entre cientos y miles de ellas. Los dibujos no se 
@@ -80,14 +79,13 @@ una cierta escena a capturar, no son necesarias pues el barrido es realizado
 por el movimiento propio del satélite respecto de la Tierra. El esquema básico 
 de este tipo de 
 cámaras multiespectales se muestra 
-en la Figura \ref{fig:esquemcamypegfilt} (a), donde una lente enfoca la luz sobre el sensor de imagen que tiene un filtro de múltiples bandas montado encima de él (Ver Figura \ref{fig:esquemcamypegfilt} (b)).
+en la Figura \ref{fig:esquemcamypegfilt} \textbf{A}, donde una lente enfoca la luz sobre el sensor de imagen que tiene un filtro de múltiples bandas montado encima de él (Ver Figura \ref{fig:esquemcamypegfilt} \textbf{B}).
 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{Figs/plan_de_tesis/cam_sens.png}\hfill
-\includegraphics[width=0.5\textwidth]{Figs/introduccion/teled.png}
-\caption{(a) Esquema de una cámara multiespectral. El filtro absorbe el espectro completo de la luz incidente salvo la banda espectral que el usuario determina, por lo que sólo las longitudes de onda elegidas atraviesan el filtro y son detectadas por el sensor de imagen. Adaptado de \cite{Martinez2008}. (b) Filtro de cinco bandas montado directamente sobre el sensor CCD, es decir en el plano focal del mismo \cite{sensarrib}.}
+\includegraphics[width=1.0\textwidth]{Figs/introduccion/camsensor.png}
+\caption{\textbf{A} Esquema de una cámara multiespectral. El filtro absorbe el espectro completo de la luz incidente salvo la banda espectral que el usuario determina, por lo que sólo las longitudes de onda elegidas atraviesan el filtro y son detectadas por el sensor de imagen. Adaptado de \cite{Martinez2008}. \textbf{B} Filtro de cinco bandas montado directamente sobre el sensor CCD, es decir en el plano focal del mismo \cite{sensarrib}.}
 \label{fig:esquemcamypegfilt}
 \end{figure}
 
