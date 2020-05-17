@@ -15,17 +15,12 @@
 \label{sec:defectsurf}
 \spacing{1.5}
 
-\hspace{0.5cm}Se define un defecto de superficie de un componente óptico de manera general como una ruptura de la homogeneidad de la superficie óptica \cite{Gomez_1998}. Estas imperfecciones localizadas consisten de rayaduras, huecos, manchas, burbujas entre otras. La terminología varía dependiendo del sector de la industria óptica que se trate. En particular, en el presente trabajo se caracterizaron defectos de superficie denominados en adelante huecos (Ver Figura \ref{fig:defectos} (a)) y manchas (Ver Figura \ref{fig:defectos} (b)).  
+\hspace{0.5cm}Se define un defecto de superficie de un componente óptico de manera general como una ruptura de la homogeneidad de la superficie óptica \cite{Gomez_1998}. Estas imperfecciones localizadas consisten de rayaduras, huecos, manchas, burbujas entre otras. La terminología varía dependiendo del sector de la industria óptica que se trate. En particular, en el presente trabajo se caracterizaron defectos de superficie denominados en adelante huecos (Ver Figura \ref{fig:defectos} \textbf{A}) y manchas (Ver Figura \ref{fig:defectos} \textbf{B}).  
 
 \begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/hueco_cel_112.png}
-\hfill%
-\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/mancha_inicio.png}
-\hfill%
-\hfill%
-\caption{(a) Defecto de superficie denominado hueco, de $(37 \pm 1)~\mu m$ de diámetro equivalente. (b) Defecto de superficie denominado mancha, de $(6 \pm 1)~\mu m$ de diámetro equivalente.}
+\centering
+\includegraphics[scale=0.7]{Figs/defectosZEISS/manchitas.png}
+\caption{\textbf{A}: Defecto de superficie denominado hueco, de $(37 \pm 1)~\mu m$ de diámetro equivalente. \textbf{B}: Defecto de superficie denominado mancha, de $(6 \pm 1)~\mu m$ de diámetro equivalente.}
 \label{fig:defectos}
 \end{figure}
 
@@ -37,10 +32,10 @@ Los defectos de superficie de un componente óptico pueden originarse en el proc
 \label{sec:scanddig}
 \spacing{1.5}
 
-\hspace{0.5cm}La especificación técnica MIL-PRF-13830 define un \textit{scratch} (en adelante rayadura) como cualquier marca o rayadura de la superficie óptica del componente y un \textit{dig} (en adelante, simplemente defecto) como cualquier otro defecto de superficie presente en la óptica, como por ejemplo el hueco de la Figura \ref{fig:defectos} (a) ó la mancha de la Figura \ref{fig:defectos} (b). Esta reglamentación define las rayaduras y defectos permitidos en una superficie óptica utilizando una métrica dada por un par de números denominados \textit{scratch and dig numbers}: S/D. El \textit{scratch number} puede tomar alguno de los siguientes valores arbitrarios: 5, 10, 20, 40, 60, 80, que representan en orden creciente el nivel de brillo de la rayadura. Este número no proviene de una medición experimental, sino que es el resultado de comparar el brillo de la rayadura del componente a analizar con muestras de rayaduras calibradas, como las que se muestran en la Figura \ref{fig:scratchanddig}, bajo ciertas condiciones de iluminación específicas (Ver \textit{Inspection method's}: 4.2.2.1 y 4.2.2. \cite{milprf}).
+\hspace{0.5cm}La especificación técnica MIL-PRF-13830 define un \textit{scratch} (en adelante rayadura) como cualquier marca o rayadura de la superficie óptica del componente y un \textit{dig} (en adelante, simplemente defecto) como cualquier otro defecto de superficie presente en la óptica, como por ejemplo el hueco de la Figura \ref{fig:defectos} \textbf{A} ó la mancha de la Figura \ref{fig:defectos} \textbf{B}. Esta reglamentación define las rayaduras y defectos permitidos en una superficie óptica utilizando una métrica dada por un par de números denominados \textit{scratch and dig numbers}: S/D. El \textit{scratch number} puede tomar alguno de los siguientes valores arbitrarios: 5, 10, 20, 40, 60, 80, que representan en orden creciente el nivel de brillo de la rayadura. Este número no proviene de una medición experimental, sino que es el resultado de comparar el brillo de la rayadura del componente a analizar con muestras de rayaduras calibradas, como las que se muestran en la Figura \ref{fig:scratchanddig}, bajo ciertas condiciones de iluminación específicas (Ver \textit{Inspection method's}: 4.2.2.1 y 4.2.2. \cite{milprf}).
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/paddlecalibration.png}
+	\includegraphics[scale=0.8]{Figs/defectosZEISS/paddlecalibration.png}
 	\caption{Muestra calibrada de \textit{scratch \& dig} comercializada por la empresa Thorlabs \cite{sdstdthor}.}
 	\label{fig:scratchanddig}
 \end{figure}
@@ -67,7 +62,7 @@ N  <  \frac{\Phi}{20 mm}
 La Figura \ref{fig:samplescratchs} muestra una comparación de cuatro muestras de calibración de rayaduras, medidas bajo idénticas condiciones de iluminación \cite{Aikens}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.54]{Figs/cuantificaciondefectos/samplesscratch.png}
+	\includegraphics[scale=0.54]{Figs/defectosZEISS/samplesscratch.png}
 	\caption{Brillo relativo de cuatro muestras calibradas de \textit{scratch number}. \textit{Sample} en inglés significa muestra. La muestra 1 es de la empresa FLIR/Brysen (S\&D 1109), la muestra 2 es de Davidson Optronics (D-667A S/N 2431), la muestra 3 es de Eastman Kodak (\textit{paddle} EKCO CM2) y la muestra 4 es de Jenoptik (\textit{paddle} EO \#53-157 CM1). Gráfico tomado de \cite{Aikens}.}
 	\label{fig:samplescratchs}
 \end{figure}
@@ -107,12 +102,11 @@ A_{defectos} = N_{p}\hspace{2pt} .\hspace{2pt} A_{g}^{2}
 \label{sec:carfilt}
 \spacing{1.5}
 
-\hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante filtro, consiste de un arreglo de cinco filtros ópticos de interferencia  considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:dimspost} (a) se muestran las dimensiones del filtro especificadas por el fabricante y en la Figura \ref{fig:dimspost} (b) se muestra una imagen del filtro analizado.
+\hspace{0.5cm}El componente óptico analizado en la presente tesis, denominado en adelante filtro, consiste de un arreglo de cinco filtros ópticos de interferencia  considerados en adelante a cada uno de ellos como una banda. En la Figura \ref{fig:dimspost} \textbf{A} se muestran las dimensiones del filtro especificadas por el fabricante y en la Figura \ref{fig:dimspost} \textbf{B} se muestra una imagen del filtro analizado.
 \begin{figure}
 \centering
-\includegraphics[scale=0.8]{Figs/cuantificaciondefectos/dimsfiltro.png}\hfill
-\includegraphics[scale=0.15]{Figs/cuantificaciondefectos/filtro_real.jpg}
-\caption{(a) Dimensiones del filtro especificadas por el fabricante. (b) Imagen del filtro analizado.}
+\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/filtroya.png}
+\caption{\textbf{A}: Dimensiones del filtro especificadas por el fabricante. \textbf{B}: Imagen del filtro analizado.}
 \label{fig:dimspost}
 \end{figure}
 
@@ -129,7 +123,7 @@ Las zonas (en inglés, \textit{zone}) están asociadas a una cierta banda espect
 
 La hoja de datos del filtro provista por el fabricante no especificó el método de inspección utilizado para garantizar la calidad óptica del filtro de acuerd a la normativa ISO 10110. Ahora bien, como aplicación se consideró que el fabricante realizó únicamente una inspección visual con muestras calibradas para garantizar la calidad óptica de sus componentes.
 
-Se hace notar que entre las bandas se encuentran unas regiones rectangulares de un material denominado por el fabricante como cromo negro, de $(0.5 \pm 0.1)~mm $ de longitud como se muestra en la Figura \ref{fig:dimspost} (a). El cromo sirve para aislar espectralmente a cada par de bandas contiguas entre sí del filtro por lo que reduce el potencial \textit{cross-talk}\footnote{El \textit{cross-talk} sería la intromisión del espectro de transmisión de una banda en la detección del espectro de su banda contigua.} en el sensor de imagen. El mismo material cubre toda la región del filtro no contenida por las cinco bandas. 
+Se hace notar que entre las bandas se encuentran unas regiones rectangulares de un material denominado por el fabricante como cromo negro, de $(0.5 \pm 0.1)~mm $ de longitud como se muestra en la Figura \ref{fig:dimspost} \textbf{A}. El cromo sirve para aislar espectralmente a cada par de bandas contiguas entre sí del filtro por lo que reduce el potencial \textit{cross-talk}\footnote{El \textit{cross-talk} sería la intromisión del espectro de transmisión de una banda en la detección del espectro de su banda contigua.} en el sensor de imagen. El mismo material cubre toda la región del filtro no contenida por las cinco bandas. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
@@ -137,19 +131,18 @@ Se hace notar que entre las bandas se encuentran unas regiones rectangulares de 
 \label{sec:conf}
 \spacing{1.5}
 
-\hspace{0.5cm}Con el propósito de cuantificar y caracterizar los defectos del filtro se adquirieron imágenes de microscopía del mismo. Para la adquisición de las imágenes se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:filtroenZEISS} (a), con un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25. Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca, en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de campo brillante para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}, ver \cite{wikiosc}).}.
+\hspace{0.5cm}Con el propósito de cuantificar y caracterizar los defectos del filtro se adquirieron imágenes de microscopía del mismo. Para la adquisición de las imágenes se utilizó un microscopio invertido Zeiss Axio Observer Z1 como se muestra en la Figura \ref{fig:filtroenZEISS} \textbf{A}, con un objetivo Zeiss N-Achroplan de magnificación 10X y apertura numérica de 0.25. Las imágenes del filtro fueron adquiridas por transmisión utilizando una fuente de luz blanca, en condiciones de \textit{bright field}\footnote{Técnica de iluminación que en castellano suele ser denominada de campo brillante para diferenciarla de la iluminación de campo oscuro (en inglés \textit{dark field}, ver \cite{wikiosc}).}.
 
 La cámara monocromática del microscopio del fabricante Zeiss, modelo Axiocam 702, con un sensor CMOS de 1/1.2'' (diagonal de 13.3mm) y una resolución de 2.3 megapíxeles (1216x1920 píxeles), fue controlada a través del software ZEN 2.5 (\textit{Blue edition}, 2018) del mismo fabricante. Se utilizó la calibración de la cámara que viene de fábrica del microscopio para la configuración utilizada, donde 1 píxel equivale a 0.586 $\mu m$.  Cada imagen individual tiene las dimensiones del \textit{field of view} (FOV) de la cámara, que son de 713 $\mu m$ x 1125 $\mu m$. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{Figs/defectosZEISS/b.jpg}
-	\includegraphics[scale=0.1]{Figs/defectosZEISS/a.jpg}
-	\caption{(a) Microscopio invertido Zeiss Axio Observer Z1. (b) Montaje del filtro sobre el portamuestras de la platina del microscopio.}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/montzeiss.png}
+	\caption{\textbf{A}: Microscopio invertido Zeiss Axio Observer Z1. \textbf{B}: Montaje del filtro sobre el portamuestras de la platina del microscopio.}
 	\label{fig:filtroenZEISS}
 \end{figure}
 
-Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Se montó el filtro sobre el portamuestras de la platina del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS} (b) y con las perillas manuales del microscopio se puso en foco la imagen observando la adquisición en vivo en la computadora. 
+Se configuró el software para adquirir las imágenes por transmisión, en particular se eligió la fuente de luz blanca y para cada medición su intensidad, además del tiempo de exposición de la cámara. Se montó el filtro sobre el portamuestras de la platina del microscopio como se muestra en la Figura \ref{fig:filtroenZEISS} \textbf{B} y con las perillas manuales del microscopio se puso en foco la imagen observando la adquisición en vivo en la computadora. 
 
 
 
@@ -167,7 +160,7 @@ Se eligió la región total a adquirir a partir de la selección visual individu
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/tilescan.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/tilescan.png}
 	\caption{\textit{Tile scan} de la banda pancromática.}
 	\label{fig:tilescan}
 \end{figure} 
@@ -183,16 +176,14 @@ Cada trayectoria del barrido fue realizada automáticamente de la siguiente mane
 \label{subs:compl}
 \spacing{1.5}
 
-\hspace{0.5cm}Se adquirieron imágenes completas del filtro, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supsfiltro} (a) y (b).
+\hspace{0.5cm}Se adquirieron imágenes completas del filtro, para las dos superficies exteriores del filtro como se muestra en las Figuras \ref{fig:supsfiltro} \textbf{A} y \textbf{B}.
 \begin{figure}[H]
 \centering
-\includegraphics[width=7.5cm,height=7.33cm]{Figs/cuantificaciondefectos/supextex2216.png}
-\hfill
-\includegraphics[width=7.5cm,height=7.33cm]{Figs/cuantificaciondefectos/supextex1515.png}
-\caption{(a) Imagen de la superficie exterior A del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.54 mm x 14.94 mm. (b) Imagen de la superficie exterior B del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.50 mm x 15.55 mm.}
+\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/supsfiltro.png}
+\caption{\textbf{A}: Imagen de la superficie exterior A del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.54 mm x 14.94 mm. \textbf{B}: Imagen de la superficie exterior B del filtro, resultado del \textit{stitching} de las imágenes de un barrido de 15.50 mm x 15.55 mm.}
 \label{fig:supsfiltro}
 \end{figure}
- En las Figuras \ref{fig:supsfiltro} (a) y (b) se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El \textit{overlap} configurado entre las \textit{tiles} fue de 30\%. El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ \cite{fiji}. 
+ En las Figuras \ref{fig:supsfiltro} \textbf{A} y \textbf{B} se muestran las bandas espectrales del filtro en orden descendente: Azul (450-510 nm), Verde (510-580 nm), Pancromática (450-750 nm), Roja (590-690 nm). El \textit{overlap} configurado entre las \textit{tiles} fue de 30\%. El brillo, el contraste y el tamaño de las imágenes originales fueron modificados para obtener una mejor visualización, utilizando el software FIJI-ImageJ \cite{fiji}. 
 
 Para realizar el barrido completo de cada superficie se verificó en las cuatro esquinas de la superficie a medir que no se pierda el foco de la imagen. Se eligió la intensidad de la fuente de luz y el tiempo de integración de la cámara tales que no sature alguna de las bandas del filtro de forma tal poder adquirir una imagen completa del filtro en un solo barrido, y de forma tal que se utilice la mayor parte del rango dinámico de la cámara.
 
@@ -227,19 +218,19 @@ La imagen completa de cada superficie exterior del filtro permitió realizar un 
 \hspace{0.5cm}Para realizar la cuantificación de los defectos del filtro, se adquirieron imágenes individuales de cada banda espectral para una de las superficies exteriores del filtro. Para cada banda, se configuró la intensidad de la lámpara y el tiempo de integración de la cámara de forma tal de utilizar la mayor parte del rango dinámico de la cámara que se encuentra alrededor del 70 \% recomendado por el fabricante y de esta forma obtener la mejor calidad de imagen para el posterior análisis de cada banda. Así también se verificó que las cuatro esquinas de la banda a medir estuvieran en foco a partir de la visualización en vivo de la cámara. Dichas esquinas fueron elegidas en el software para determinar el área a ser barrida con el \textit{tile scan} teniendo cuidado de no incluir parte del cromo en el campo de visión de la imagen. Esto resultó importante pues de lo contrario el algoritmo de detección de los defectos detectaba al cromo como un centenar de defectos, que serían falsos positivos\footnote{En el contexto de esta tesis, un falso positivo consistiría en la detección errónea mediante un algoritmo de procesamiento de imágenes de un defecto que en realidad no lo es.}, lo que arruinaría claramente cualquier tipo de análisis cuantitativo. En las Figuras \ref{fig:tilebandaazul} a \ref{fig:tilebandanir} se muestran los \textit{tile scan} de cada banda y en sus epígrafes se detallan los parámetros de cada adquisición. No se realizó un \textit{stitching} de las imágenes de cada banda, ya que se analizaron las imágenes individuales (Ver Sección \ref{sec:preproc}). El \textit{overlap} configurado entre las \textit{tiles} de cada banda fue de 10\%.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/banda_AZUL.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/banda_AZUL.png}
 	\caption{Imagen de la banda azul del filtro obtenida mediante un \textit{Tile scan} de 26.37 mm x 4.16 mm, compuesta por 164 \textit{tiles}, con la intensidad de la lámpara configurada en 30\% y el tiempo de exposición de la cámara fue de 40 ms. No se realizó un \textit{stitching} sobre las imágenes del barrido, ya que fueron analizadas individualmente.}
 	\label{fig:tilebandaazul}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/banda_VERDE.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/banda_VERDE.png}
 	\caption{Imagen de la banda verde del filtro obtenida mediante un \textit{Tile scan} de 26.37 mm x 3.15 mm, compuesta por 123 \textit{tiles}, con la intensidad de la lámpara configurada en 17\% y el tiempo de exposición de la cámara fue de 40 ms. No se realizó un \textit{stitching} sobre las imágenes del barrido, ya que fueron analizadas individualmente.}
 	\label{fig:tilebandaverde}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/banda_PANC.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/banda_PANC.png}
 	\caption{Imagen de la banda roja del filtro obtenida mediante un \textit{Tile scan} de 26.37 mm x 3.15 mm, compuesta por 123 \textit{tiles}, con la intensidad de la lámpara configurada en 10\% y el tiempo de exposición de la cámara fue de 40 ms. No se realizó un \textit{stitching} sobre las imágenes del barrido, ya que fueron analizadas individualmente.}
 	\label{fig:tilebandapanc}
 \end{figure}
@@ -252,7 +243,7 @@ La imagen completa de cada superficie exterior del filtro permitió realizar un 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/banda_NIR.png}
+	\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/banda_NIR.png}
 	\caption{Imagen de la banda NIR del filtro obtenida mediante un \textit{Tile scan} de 26.37 mm x 4.16 mm, compuesta por 164 \textit{tiles}, con la intensidad de la lámpara configurada en 50\% y el tiempo de exposición de la cámara fue de 150 ms. No se realizó un \textit{stitching} sobre las imágenes del barrido, ya que fueron analizadas individualmente.}
 	\label{fig:tilebandanir}
 \end{figure}
@@ -274,47 +265,32 @@ La adquisición de las imágenes de cada banda considerando el tiempo de selecci
 
 Las imágenes de microscopía pueden estar afectadas por las variaciones de intensidad debido a las imperfecciones inherentes del proceso de formación de imágenes. Estas variaciones de intensidad pueden venir dadas por la iluminación no uniforme de la muestra, por la orientación misma de la muestra al montarla sobre la platina del microscopio ó por el efecto de \textit{vignetting} que se materializa con la aparición de bordes negros en las imágenes y que es propio de la configuración del sensor de la cámara. Estos efectos pueden dar lugar a falsos positivos en el proceso de segmentación de los defectos, lo que constituye un grave problema a solucionar (Ver Sección \ref{sec:tthresh}).
 
-La desalineación de alguno de los componentes que se encuentran en el camino óptico entre la fuente de luz y el sensor de la cámara con el que se adquieren las imágenes (Ver Figura \ref{fig:micrososcuro} (a)), es una causa muy importante de la iluminación no uniforme de la muestra que se está analizando. En la Figura \ref{fig:micrososcuro} (b) se puede observar un ejemplo de una imagen de microscopía adquirida con una iluminación no uniforme.
+La desalineación de alguno de los componentes que se encuentran en el camino óptico entre la fuente de luz y el sensor de la cámara con el que se adquieren las imágenes (Ver Figura \ref{fig:micrososcuro} \textbf{A}), es una causa muy importante de la iluminación no uniforme de la muestra que se está analizando. En la Figura \ref{fig:micrososcuro} \textbf{B} se puede observar un ejemplo de una imagen de microscopía adquirida con una iluminación no uniforme.
 \begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=1.0]{Figs/defectosZEISS/opticalpaths.jpg}
-\hfill%
-\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/ilumnoun.png}
-\hfill%
-\hfill%
-\caption{(a) Camino óptico de la luz desde su fuente de emisión hasta la detección en el sensor de una cámara digital \cite{olyyyy}. (b) Ejemplo de imagen de microscopía con una iluminación no uniforme \cite{nunifor}.}
+\centering
+\includegraphics[scale=0.5]{Figs/defectosZEISS/nouniform.png}
+\caption{\textbf{A}: Camino óptico de la luz desde su fuente de emisión hasta la detección en el sensor de una cámara digital \cite{olyyyy}. \textbf{B}: Ejemplo de imagen de microscopía con una iluminación no uniforme \cite{nunifor}.}
 \label{fig:micrososcuro}
 	\end{figure}
 	
-Una imagen de microscopía adquirida idealmente con una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin ruido de Poisson de fotones tendría una imagen de fondo (\textit{background image}) como la que se muestra en la Figura \ref{fig:fon} (a). La imagen de fondo es una imagen que contiene en cada píxel la información de la iluminación del microscopio bajo ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración del sensor de la cámara utilizado. Experimentalmente, dicha imagen puede ser obtenida colocando un portaobjeto sin la muestra, en las mismas condiciones de iluminación y foco (misma distancia muestra-objetivo). Si dicha imagen de fondo experimental no pudiera ser adquirida pero se cuenta con un gran número de imágenes adquiridas bajo las mismas condiciones experimentales, una imagen de fondo puede ser generada tomando la mediana del conjunto de imágenes como se explica en la subsección \ref{sec:genimf}.
+Una imagen de microscopía adquirida idealmente con una iluminación ideal uniforme, sin problemas de  \textit{vignetting} y sin ruido de Poisson de fotones tendría una imagen de fondo (\textit{background image}) como la que se muestra en la Figura \ref{fig:fon} \textbf{A}. La imagen de fondo es una imagen que contiene en cada píxel la información de la iluminación del microscopio bajo ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración del sensor de la cámara utilizado. Experimentalmente, dicha imagen puede ser obtenida colocando un portaobjeto sin la muestra, en las mismas condiciones de iluminación y foco (misma distancia muestra-objetivo). Si dicha imagen de fondo experimental no pudiera ser adquirida pero se cuenta con un gran número de imágenes adquiridas bajo las mismas condiciones experimentales, una imagen de fondo puede ser generada tomando la mediana del conjunto de imágenes como se explica en la subsección \ref{sec:genimf}.
 
-Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la misma contiene el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de los valores de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad. En la Figura \ref{fig:fon} (b) se muestra el histograma de la imagen de fondo ideal, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
+Para medir la uniformidad de la iluminación se utilizan los histogramas de las imágenes. Una imagen monocromática es manipulada computacionalmente como una matriz donde cada elemento de la misma contiene el valor de intensidad de dicho píxel asociado. El histograma de una imagen es la representación de la distribución de los valores de intensidad de la misma y se lo define como el número de píxeles presentes en una imagen con un cierto valor de intensidad. En la Figura \ref{fig:fon} \textbf{B} se muestra el histograma de la imagen de fondo ideal, en el que se puede observar que todos los píxeles de la imagen tienen el mismo valor de intensidad, lo que demuestra que el fondo es perfectamente homogéneo.
 
 \begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[width=3.0cm,height=3.8cm]{Figs/defectosZEISS/bg_teorico.png}
-\hfill%
-\includegraphics[scale=0.8]{Figs/defectosZEISS/hist_bg_teorico.png}
-\hfill%
-\hfill%
-\caption{(a) Imagen de fondo con una iluminación uniforme ideal, sin problemas de \textit{vignetting} y sin ruido de Poisson de fotones. (b) Histograma de la intensidad de los píxeles de la imagen de fondo ideal.}
+\centering
+\includegraphics[scale=1.0]{Figs/defectosZEISS/idealbg.png}
+\caption{\textbf{A}: Imagen de fondo con una iluminación uniforme ideal, sin problemas de \textit{vignetting} y sin ruido de Poisson de fotones. \textbf{B}: Histograma de la intensidad de los píxeles de la imagen de fondo ideal.}
 \label{fig:fon}
 \end{figure}
-En adelante, el fondo de cada imagen será denominado el \textit{background} de la imagen, para diferenciarlo de los defectos que se encuentran en lo que en adelante se llamará el \textit{foreground} de la imagen. Para resaltar la importancia de la corrección de la iluminación no uniforme, supongamos una imagen ficticia de alguna banda del filtro analizado en la presente tesis, adquirida con una iluminación de fondo uniforme ideal, sin problemas de \textit{vignetting} y sin ruido de Poisson de fotones, donde se puedan observar dos defectos en color negro (Ver Figura \ref{fig:2d} (a)).
+En adelante, el fondo de cada imagen será denominado el \textit{background} de la imagen, para diferenciarlo de los defectos que se encuentran en lo que en adelante se llamará el \textit{foreground} de la imagen. Para resaltar la importancia de la corrección de la iluminación no uniforme, supongamos una imagen ficticia de alguna banda del filtro analizado en la presente tesis, adquirida con una iluminación de fondo uniforme ideal, sin problemas de \textit{vignetting} y sin ruido de Poisson de fotones, donde se puedan observar dos defectos en color negro (Ver Figura \ref{fig:2d} \textbf{A}).
 \begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[width=4.0cm,height=4.5cm]{Figs/defectosZEISS/img_ideal_2defectos.png}
-\hfill%
-\includegraphics[scale=0.75]{Figs/defectosZEISS/hist_bg_condefectos_teorico.png}
-\hfill%
-\hfill%
-\caption{(a) Imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. (b) Histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}.}
+\centering
+\includegraphics[scale=1.0]{Figs/defectosZEISS/ideal2defectos.png}
+\caption{\textbf{A}: Imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. \textbf{B}: Histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}.}
 \label{fig:2d}
 \end{figure}
-En la Figura \ref{fig:2d} (b) se muestra el histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. En dicho histograma se distingue de forma binaria el \textit{foreground} (defectos) con valores de intensidad iguales a 0, del \textit{background} con valores de intensidad iguales a 195. Bajo estas condiciones ideales, la segmentación de los defectos puede ser realizada de inmediato eligiendo cualquier umbral de intensidad que se encuentre entre el \textit{foreground} y el \textit{background}. 
+En la Figura \ref{fig:2d} \textbf{B} se muestra el histograma de la intensidad de los píxeles de la imagen con dos defectos con una iluminación uniforme ideal y sin problemas de \textit{vignetting}. En dicho histograma se distingue de forma binaria el \textit{foreground} (defectos) con valores de intensidad iguales a 0, del \textit{background} con valores de intensidad iguales a 195. Bajo estas condiciones ideales, la segmentación de los defectos puede ser realizada de inmediato eligiendo cualquier umbral de intensidad que se encuentre entre el \textit{foreground} y el \textit{background}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -335,24 +311,19 @@ El pre-procesamiento de las imágenes individuales de cada banda espectral consi
 
 \hspace{0.5cm}Se construyó computacionalmente la imagen de fondo de cada banda a partir de tomar la mediana para cada píxel de todas las imágenes individuales adquiridas de la banda. Esta imagen de fondo contiene la información de la no uniformidad de la iluminación del microscopio. Dicha imagen debe ser generada para cada banda en particular ya que cada una de las bandas fue adquirida en ciertas condiciones de intensidad de la fuente de luz y del tiempo de integración de la cámara. 
 
-En la Figura \ref{fig:medio} (a) se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que podrían ser anillos de difracción, recuadrados en color azul en la imagen, son resultado de algún defecto del microscopio, ya advertido por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas.
+En la Figura \ref{fig:medio} \textbf{A} se muestra la imagen de fondo generada para la banda azul, cuya intensidad de la fuente de luz fue configurada en 30$\%$ y el tiempo de integración de la cámara fue de 40 ms. Los dos discos concéntricos que podrían ser anillos de difracción, recuadrados en color azul en la imagen, son resultado de algún defecto del microscopio, ya advertido por otros usuarios del equipo. Dichos discos fueron observados en la adquisición de las cinco bandas.
 
-Al mismo tiempo, se observa en la imagen de fondo de la Figura \ref{fig:medio} (a) que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración óptica del microscopio.
+Al mismo tiempo, se observa en la imagen de fondo de la Figura \ref{fig:medio} \textbf{A} que la iluminación del microscopio no es idealmente uniforme sino que presenta un rango de valores de intensidad que contienen píxeles más brillantes (extremo superior izquierdo) en conjunto con píxeles más oscuros (extremo inferior derecho). Esto último puede ser el efecto de alguna desalineación de la configuración óptica del microscopio.
  
 \begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul.png}
-\hfill%
-\includegraphics[scale=0.9]{Figs/defectosZEISS/bg_azul_mean.png}
-\hfill%
-\hfill%
-\caption{(a) Imagen de fondo de la banda azul del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido. (b) Imagen de fondo de la banda azul del filtro obtenida tomando el valor medio para cada píxel de todas las imágenes del barrido. Se redondearon en color verde las manchas que representan los \textit{outliers} de la imagen.}
+\centering
+\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/mediomediana.png}
+\caption{\textbf{A}: Imagen de fondo de la banda azul del filtro obtenida tomando la mediana para cada píxel de todas las imágenes del barrido. \textbf{B}: Imagen de fondo de la banda azul del filtro obtenida tomando el valor medio para cada píxel de todas las imágenes del barrido. Se redondearon en color verde las manchas que representan los \textit{outliers} de la imagen.}
 \label{fig:medio}
 \end{figure}
 
 
-En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. En la misma figura se graficaron las curvas de densidad de la intensidad estimadas a partir de los datos originales. Se observa que la imagen de fondo generada con el valor medio tiene una mayor cantidad de píxeles más oscuros que la imagen de fondo generada con la mediana; esto se observa en la Figura \ref{fig:comparhists} donde el histograma del valor medio tiene una mayor cantidad de píxeles en valores de intensidades más chicos que el histograma de la mediana. Los valores atípicos (en inglés \textit{outliers}) de intensidad influencian enormemente el valor medio de los datos. Dichos \textit{outliers} pueden observarse como manchas presentes (algunas redondeadas en color verde) en la imagen de fondo generada a partir del valor medio de la Figura \ref{fig:medio} (b). Ahora bien, la curva de densidad de la imagen de la mediana muestra que la generación de la imagen de fondo tomando la mediana es una forma exitosa de evitar incluir los \textit{outliers} en la imagen. Resulta fundamental deshacerse de estos \textit{outliers} en la imagen de fondo para no corromper las imágenes individuales originales del barrido. Esto es, si se utilizara la imagen de fondo del valor medio para corregir la iluminación no uniforme en las imágenes individuales, las mismas tendrían luego los \textit{outliers} presentes lo cual sería catastrófico para la aplicación del algoritmo de segmentación de los defectos.
+En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad de los píxeles de las imágenes de fondo generadas a partir de tomar la mediana y el valor medio. En la misma figura se graficaron las curvas de densidad de la intensidad estimadas a partir de los datos originales. Se observa que la imagen de fondo generada con el valor medio tiene una mayor cantidad de píxeles más oscuros que la imagen de fondo generada con la mediana; esto se observa en la Figura \ref{fig:comparhists} donde el histograma del valor medio tiene una mayor cantidad de píxeles en valores de intensidades más chicos que el histograma de la mediana. Los valores atípicos (en inglés \textit{outliers}) de intensidad influencian enormemente el valor medio de los datos. Dichos \textit{outliers} pueden observarse como manchas presentes (algunas redondeadas en color verde) en la imagen de fondo generada a partir del valor medio de la Figura \ref{fig:medio} \textbf{B}. Ahora bien, la curva de densidad de la imagen de la mediana muestra que la generación de la imagen de fondo tomando la mediana es una forma exitosa de evitar incluir los \textit{outliers} en la imagen. Resulta fundamental deshacerse de estos \textit{outliers} en la imagen de fondo para no corromper las imágenes individuales originales del barrido. Esto es, si se utilizara la imagen de fondo del valor medio para corregir la iluminación no uniforme en las imágenes individuales, las mismas tendrían luego los \textit{outliers} presentes lo cual sería catastrófico para la aplicación del algoritmo de segmentación de los defectos.
 \begin{figure}[H]
 	\centering
 \includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/comparhistsmedi.png}
@@ -367,10 +338,10 @@ En la Figura \ref{fig:comparhists} se muestran los histogramas de la intensidad 
 \label{subs:nm}
 \spacing{1.5}
 
-\hspace{0.5cm} Con la imagen de fondo de cada banda ya generada, se corrigió la iluminación no uniforme del microscopio \cite{Nordenfelt} y se eliminaron los anillos de difracción presentes en todas las imágenes (anillos de difracción de la Figura \ref{fig:medio} (a)).
+\hspace{0.5cm} Con la imagen de fondo de cada banda ya generada, se corrigió la iluminación no uniforme del microscopio \cite{Nordenfelt} y se eliminaron los anillos de difracción presentes en todas las imágenes (anillos de difracción de la Figura \ref{fig:medio} \textbf{A}).
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.98]{Figs/defectosZEISS/correccionilum/NIR/1.png}
+\includegraphics[scale=0.98]{Figs/defectosZEISS/1.png}
 \caption{Imágenes del proceso de corrección de la iluminación no uniforme. \texttt{a)} Imagen original individual de la banda NIR. \texttt{b)} Imagen de fondo de la banda NIR. \texttt{c)} Imagen original multiplicada por el valor medio de la imagen de fondo. \texttt{d)} Imagen de fondo multiplicada por el valor medio de la imagen original. \texttt{e)} Imagen resultante de la diferencia entre las imágenes \texttt{c)} y \texttt{d)}. \texttt{f)} Imagen final normalizada resultado de la expansión del histograma de intensidades.}
 \label{fig:correcilumims}
 \end{figure}
@@ -454,7 +425,7 @@ El criterio de elección del método del umbral fue adoptado a partir de la insp
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/diag_flujoalgor.png}
+\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/diag_flujoalgor.png}
 \caption{Diagrama de flujo del algoritmo de detección y cuantificación de los defectos del filtro.}
 \label{fig:diagflujoalgor}
 \end{figure}
@@ -548,7 +519,7 @@ Pancromática& 1 & $(51 \pm 2)~\mu m$ & $(51 \pm 2)~\mu m$  \\
  
  \begin{figure}[H]
 \centering
-\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/agujdefectocompar.png}
+\includegraphics[scale=1.0]{Figs/defectosZEISS/agujdefectocompar.png}
 	\caption{\texttt{a)} Región de una imagen normalizada con el defecto más grande de la banda azul ($(81 \pm 6)~ \mu m$ de diámetro). \texttt{b)} Imagen binaria del defecto segmentado con el umbral original y con el umbral original modificado utilizado para cuantificar las incertezas (Ver Sección \ref{sec:incert}). }
 \label{fig:deffd}
 \end{figure}
@@ -618,7 +589,7 @@ Pancromática & 0 & - \\
 
  \begin{figure}[H]
 \centering
-\includegraphics[scale=1.0]{Figs/cuantificaciondefectos/agujerross.png}
+\includegraphics[scale=1.0]{Figs/defectosZEISS/agujerross.png}
 \caption{\texttt{i)} Imagen normalizada de la banda NIR con el hueco de diámetro máximo detectado igual a $(6 \pm 1)~ \mu m$. \texttt{ii)} Imagen binaria de la banda NIR generada a partir del algoritmo de la imagen \texttt{i)}. \texttt{iii)} Imagen normalizada de la banda verde con el hueco de diámetro máximo detectado igual a $(11 \pm 1)~ \mu m$. \texttt{iv)} Imagen binaria de la banda verde generada a partir del algoritmo de la imagen \texttt{iii)}}
 \label{fig:aggjj}
 \end{figure}
@@ -660,7 +631,7 @@ Se hace notar que resulta inevitable que entre los defectos detectados haya part
 En la Figura \ref{fig:boxpl} se muestra el histograma de la distribución del diámetro de los defectos detectados hasta un diámetro de 10 $\mu m$. La mediana de dicha distribución, es decir el valor del percentil 50, fue igual a 4 $\mu m$, lo que indica que el 50\% de los defectos tuvieron un diámetro menor a 4 $\mu m$. El percentil 75 fue igual a 5 $\mu m$, es decir que el 75\% de los defectos detectados fueron de un diámetro menor a 5 $\mu m$.
 \begin{figure}
 \centering
-\includegraphics[width=1.0\textwidth]{Figs/cuantificaciondefectos/chauboxx.png}
+\includegraphics[width=1.0\textwidth]{Figs/defectosZEISS/chauboxx.png}
 \caption{Histograma de la distribución del diámetro de los defectos detectados hasta un diámetro de 10 $\mu m$.}
 \label{fig:boxpl}
 \end{figure}
@@ -683,7 +654,7 @@ donde $\lambda$ es la longitud de onda central de la fuente de luz utilizada, qu
 El error principal del algoritmo en la detección de los defectos y en consecuencia en la determinación del diámetro equivalente  y área de los mismos consistió en la precisión con la que se determinó fel borde de cada defecto. Esto último depende fuertemente del grado de contraste de la transición de los valores de intensidad en la imagen desde el borde del defecto hasta el fondo de la imagen que lo rodea \cite{quentin}. Para cuantificar este error se realizó una variación del umbral de intensidad que distinguía a los defectos del fondo de la imagen. La variación del valor del \textit{threshold} fue de hasta el 8\% del valor del \textit{threshold} original dependiendo de cada banda. A partir del valor de umbral modificado, el proceso de segmentación y determinación de las propiedades de los defectos resultó el mismo que con el valor de umbral original. El criterio de elección del porcentaje de variación del umbral consistió en que se tenía que obtener la misma cantidad de defectos que con el umbral original de forma tal de poder calcular el error de forma automatizada. Esto al mismo tiempo aseguraba que dicha variación no fuera tan grande como para que el algoritmo no pudiera segmentar dos defectos muy cercanos ó por otro lado dejar de detectar ciertos defectos. En la Figura \ref{fig:bordedefe} se muestra una región con un defecto de la banda verde (Imagen \texttt{a)}) y las imágenes binarias del \textit{threshold} original y de su variación superpuestas (Imagen \texttt{b)}). En la Imagen \texttt{c)} de la misma figura se muestra un \textit{zoom} sobre uno de los bordes del defecto donde los píxeles de color rosa están asociado a la imagen binaria generada con el \textit{threshold} original y los píxeles de color violeta están asociados a la variación de dicho umbral.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1.1]{Figs/cuantificaciondefectos/erroresborde.png}
+\includegraphics[scale=1.1]{Figs/defectosZEISS/erroresborde.png}
 \caption{\texttt{a)} Región de una imagen normalizada con un defecto de la banda verde.\texttt{b)} Imágenes binarias superpuestas del umbral original y de su variación para cuantificar el error cometido. \texttt{c)} Zoom sobre uno de los bordes del defecto.}
 \label{fig:bordedefe}
 \end{figure}
