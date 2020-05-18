@@ -41,7 +41,7 @@ Con una fuente de luz halógena, modelo \href{https://dolan-jenner.com/products/
 \label{fig:p}
 \end{figure}
 
-Respecto del segundo objetivo específico propuesto relacionado con la determinación de un mapa multiespectral ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro, se adquirió el espectro de transmisión de una región del filtro con dimensiones iguales 13 mm en el eje $\textit{x}$ y de 24.6 mm a lo largo del eje $\textit{y}$ (las cinco bandas junto al cromo que las separa tienen una altura de 25 mm (ver Figura \ref{fig:dimspost} (a)). El área del filtro adquirida fue el resultado de unir las mediciones de dos barridos cuyas dimensiones fueron para cada uno, de 13 mm a lo largo del eje $\textit{x}$ y de 12.3 mm a lo largo del eje $\textit{y}$. Los ejes fueron definidos de acuerdo al sistema de coordenadas de la Figura \ref{fig:p} (c) y el paso del desplazamiento de los motores de cada eje fue de 50 $\mu m$. La adquisición fue realizada en dos etapas debido a la limitación del recorrido de los tornillos desplazados por los motores paso a paso como se explicó anteriormente. De esta manera se adquirió en primer lugar la región superior del filtro que contiene a las bandas azul, verde y parte de la pancromática con una cierta altura de la fuente de luz y de la fibra del espectrómetro. La fuente y la fibra se encontraban montadas sobre unos posicionadores micrométricos con los cuales se varió su altura respecto del filtro para poder medir la región inferior del filtro que contenía la región no medida de la banda pancromática, la banda roja y la banda del NIR. La fuente de luz y la fibra del espectrómetro fueron posicionadas lo más cerca posible del filtro, sin intervenir su libre desplazamiento para realizar el barrido, con el fin de minimizar el tiempo de integración de cada medición del espectro de transmisión que fue de 1 ms.
+Respecto del segundo objetivo específico propuesto relacionado con la determinación de un mapa multiespectral ($\textit{x}$,$\textit{y}$,$\lambda$) del filtro, se adquirió el espectro de transmisión de una región del filtro con dimensiones iguales 13 mm en el eje $\textit{x}$ y de 24.6 mm a lo largo del eje $\textit{y}$ (las cinco bandas junto al cromo que las separa tienen una altura de 25 mm (ver Figura \ref{fig:dimspost} \textbf{A}). El área del filtro adquirida fue el resultado de unir las mediciones de dos barridos cuyas dimensiones fueron para cada uno, de 13 mm a lo largo del eje $\textit{x}$ y de 12.3 mm a lo largo del eje $\textit{y}$. Los ejes fueron definidos de acuerdo al sistema de coordenadas de la Figura \ref{fig:p} (c) y el paso del desplazamiento de los motores de cada eje fue de 50 $\mu m$. La adquisición fue realizada en dos etapas debido a la limitación del recorrido de los tornillos desplazados por los motores paso a paso como se explicó anteriormente. De esta manera se adquirió en primer lugar la región superior del filtro que contiene a las bandas azul, verde y parte de la pancromática con una cierta altura de la fuente de luz y de la fibra del espectrómetro. La fuente y la fibra se encontraban montadas sobre unos posicionadores micrométricos con los cuales se varió su altura respecto del filtro para poder medir la región inferior del filtro que contenía la región no medida de la banda pancromática, la banda roja y la banda del NIR. La fuente de luz y la fibra del espectrómetro fueron posicionadas lo más cerca posible del filtro, sin intervenir su libre desplazamiento para realizar el barrido, con el fin de minimizar el tiempo de integración de cada medición del espectro de transmisión que fue de 1 ms.
 
 Con el objetivo de visualizar una imagen completa del filtro como la que se obtuvo con el microscopio Zeiss (Ver Figura \ref{fig:supsfiltro}) pero que contenga además la información espectral de cada medición se desarrolló una interfaz gráfica interactiva que se muestra en la Figura \ref{fig:GUI00}.
 
@@ -145,180 +145,17 @@ En la Figura \ref{fig:espfth} se muestra el espectro de emisión de la fuente de
 \label{sec:platina}
 \spacing{1.5}
 
-\hspace{0.5cm}Se desarrolló una platina de microscopía con dos grados de libertad para poder desplazar el filtro lateral y verticalmente respecto de la fuente de luz y del microespectrómetro para poder medir el espectro de transmisión del filtro en distintas regiones del mismo. Una imagen representativa de una de las primeras versiones de la platina con dos grados de libertad se muestra en la Figura \ref{fig:plato0}.
+\hspace{0.5cm}Se desarrolló una platina de microscopía con dos grados de libertad para poder desplazar el filtro lateral y verticalmente respecto de la fuente de luz y del microespectrómetro para poder medir el espectro de transmisión del filtro en distintas regiones del mismo. La platina tuvo una longitud de recorrido en cada eje de 240 mm y una resolución (desplazamiento mínimo) estimada de 0.63 $\mu m$ al aplicar \textit{microstepping} igual a 16. La lógica de la platina estuvo controlada por un \textit{Arduino} y la potencia y el \textit{microstepping} de los motores fue controlada con los drivers \textit{A4988}.
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.16]{Figs/microespectrometro/stageearly.jpg}
-	\caption{Imagen de una de las primeras versiones de la platina motorizada con dos grados de libertad.}
-	\label{fig:plato0}
+Se utilizaron como actuadores unos motores paso a paso NEMA 17 de 0.9° de paso mínimo (400 pasos por revolución) que fueron acoplados a una varilla roscada ACME de \textit{pitch} igual a 2 mm con el que se realizó la transmisión del movimiento. El desplazamiento lineal de cada eje fue realizado sobre unas barras rectificadas de acero y rodamientos lineales. Se implementaron finales de carrera y un \textit{joystick} para poder manipular la platina manualmente en simultáneo con la visualización en vivo del espectro de transmisión y de la adquisición de imágenes digitales con una cámara. En la Figura \ref{fig:finalpl} se puede observar el diseño preliminar de la platina, sus piezas 3D y su ensamblaje, y la construcción y montaje de la platina final.
+ \begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/platinafinel.png}	
+\caption{\textbf{A}: Diseño preliminar de los dos ejes de la platina. \textbf{B}: Montaje final de la de la platina.}
+\label{fig:finalpl}
 \end{figure}
 
-
-La construcción y desarrollo de la platina motorizada del microespectrómetro consistió de las siguientes etapas de prototipado:
-
-\begin{enumerate}
-\item Investigación previa de la literatura sobre platinas de microscopía de bajo costo y factibles para integrar al prototipo.
-\item Elección de los componentes y materiales en función de la oferta local en Argentina.
-\item De acuerdo al ítem 2, se realizó un dimensionamiento de la platina y se determinó el recorrido total de cada uno de los grados de libertad. Esto permitió evaluar la factibilidad y aplicabilidad de la plataforma a desarrollar.
-\item En conjunto con el diseñador industrial Federico Armesto se diseñaron las piezas de impresión 3D y se montó el primer eje de la platina. Se desarrolló la electrónica y el \textit{software} necesarios.
-\item Una vez optimizado el diseño del primer eje, se montó el segundo eje de la platina. Se extendió el software y se integraron finales de carrera.
-\item Desarrollo del \textit{software} de control de la platina. Calibración preliminar.
-\end{enumerate}
-
-A continuación se describen algunas consideraciones técnicas y de diseño que se tuvieron en cuenta para el desarrollo de la platina motorizada y que podrían ser de utilidad para otros laboratorios que quisieran replicar la plataforma que aquí se presenta, realizar una adaptación ó simplemente como fuente de consulta.
-
-Respecto de la revisión de la literatura sobre platinas de microscopía de bajo costo y factibles para el prototipo, se consultaron  los prototipos cuyos proyectos hayan sido desarrollados bajo la modalidad \textit{open source} tanto para la distribución del diseño de las piezas 3D como del \textit{software}, dentro de las cuales se destacan \cite{schaa}(\textit{LabView}, EUR 250) y \cite{campbells}(Instrucciones vía puerto serie en \textit{Matlab}, \textit{LabView} y \textit{python}, USD 1000). Dichas propuestas son también denominadas en cierto contexto DIY (\textit{Do it yourself}) ya que contienen toda la documentación y herramientas necesarias para que cualquier usuario con presupuesto y acceso a los mismos componentes pueda reproducir el proyecto. Además de estos proyectos se consultaron múltiples platinas de microscopía comerciales, donde en sus páginas la mayoría de los fabricantes distribuyen los planos de diseño, las piezas 3D libres para modificar, etc (\href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=2132}{NRT150 Thorlabs} USD 2456 x 2, \href{https://www.edmundoptics.com/p/150mm-motorized-stage/16419/}{\#59-747 EO} USD 2095 x 2). Ahora bien, hasta la fecha de escritura de este trabajo no se registraban prototipos de platinas motorizadas de microscopía desarrolladas en laboratorios del país como la que aquí se presenta por lo cual por medio de la presente se comparten las piezas de diseño 3D y el \textit{software} necesarios para poder replicarla y extender sus prestaciones. El costo total aproximado de la platina aquí desarrollada fue de USD 200.
-
-El tipo de platina motorizada a desarrollar dependió del presupuesto, de la oferta local de los componentes y de los requerimientos mecánicos de precisión, longitud de recorrido y repetibilidad. Estos tres conceptos se encontraban relacionados fuertemente entre sí. Si bien se podrian haber comprado los componentes de la platina en el exterior del país, la futura necesidad de comprar nuevamente alguno de los componentes debido al desgaste ó rotura de los mismos, hacen de esta implementación de la compra una mala práctica del prototipado. En este sentido se eligieron componentes masivos en el país, los cuales se podían conseguir fácilmente sus repuestos en caso de necesidad. Al mismo tiempo, los componentes masivos son los que tienen un menor costo debido a su mayor demanda.
-
-Se consultaron fundamentalmente tres proveedores de componentes mecánicos y de electrónica, de la ciudad de Buenos Aires y de la provincia de Buenos Aires: \href{https://3dinsumos.com.ar/}{3DInsumos} (Caseros, Buenos Aires), \href{https://ingia.com.ar/}{Ingia Automatización} (Saavedra, C.A.B.A.) y \href{https://candy-ho.com/}{Candy-Ho} (Villa Martelli, C.A.B.A.). A partir de la oferta de estos y otros proveedores se eligieron los componentes de la platina tomando como idea de diseño e implementación la platina de \cite{schaa} que por su bajo costo y la utilización de piezas 3D que facilitaban el prototipado rápido (dependiendo de la disponibilidad de una impresora 3D), hacían de esa propuesta la más indicada para ser implementada.
-
-Los componentes principales de la platina son el motor paso a paso y el sistema de transmisión que transforma la rotación del motor en un desplazamiento lineal. Uno de los motores paso a paso más populares del mercado sino el más popular es el \href{https://www.pololu.com/product/1200}{NEMA 17} que es ampliamente utilizado en impresoras 3D y CNC. Por este motivo se eligió ese motor en lugar del \href{https://www.pololu.com/product/1204}{NEMA 8} utilizado en \cite{schaa}, que sólo se podía conseguir haciendo un pedido al exterior lo que encarece su costo y alarga notablemente los tiempos de prototipado.
-
-De la familia de motores paso a paso NEMA 17 (Ver Figura \ref{fig:acm} (a)) existen distintos modelos dependiendo los requerimientos de torque y de resolución fundamentalmente. El torque no fue una limitante para la elección del modelo con lo cual en función de las distintas opciones de torque se priorizó el de menor precio. Ahora bien, respecto de la precisión existen dos modelos con pasos mínimos de rotación de 1.8 grados y de 0.9 grados, con lo cual se tienen 200 y 400 pasos por revolución respectivamente. Se evaluó la oferta disponible en el mercado y se eligieron motores NEMA 17 con un paso mínimo de 0.9 grados con el fin de obtener la mayor resolución en el desplazamiento lineal, a pesar de que su costo era mayor.
-
-A la elección del motor, le sigue la elección del sistema de transmisión donde existen múltiples opciones dependiendo de la precisión, entre ellas las correa dentadas con poleas, las varillas roscadas, los husillos de bolas, etc. De acuerdo a \cite{schaa} se optó por una varilla roscada masiva en el mercado del tipo \href{https://www.mcmaster.com/acme-screws/acme-lead-screws-and-nuts/}{ACME} (Ver Figura \ref{fig:acm} (b)) de un diámetro de 8 mm y con un paso (\textit{pitch}) de 2 mm, es decir que por cada revolución completa del motor se realiza un desplazamiento lineal de 2 mm. La rotación del motor paso a paso es transferida a la varilla roscada ACME por medio de un acople sólido con agujeros para prisioneros M3 equidistanciados a 180° para que la varilla roscada quede centrada, que fue diseñado (Ver \href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/3dprintedparts/STLs/acopleRIGIDO.STL}{\faCubes$_{1}$}).
-\begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.7]{Figs/microespectrometro/nema17.jpg}
-\hfill%
-\includegraphics[scale=0.7]{Figs/microespectrometro/acmeantib.jpg}
-\hfill%
-\hfill%
-\caption{(a) Motor paso a paso \href{https://www.pololu.com/product/1200}{NEMA 17} con una resolución de 400 pasos por revolución (0.9° por paso). (b) Varilla roscada del tipo \href{https://www.mcmaster.com/acme-screws/acme-lead-screws-and-nuts/}{ACME} con un paso (\textit{pitch}) de 2 mm  y un diámetro de 8 mm, junto con una tuerca \textit{anti-backslash}.}
-\label{fig:acm}
-\end{figure}
-
-Además del sistema de transmisión se tuvo que elegir un sistema de desplazamiento que es el que permite el movimiento de los ejes de la platina. Se eligió la opción más utilizada en impresoras 3D en el que se utilizan sistemas lineales con barras rectificadas de acero de 6mm de diámetro y rodamientos lineales \href{https://uk.misumi-ec.com/vona2/detail/221000091678/?HissuCode=LM6LUU}{LM6LUU}. Dichos rodamientos y la tuerca \textit{antibackslash} fueron montados sobre un cubo diseñado e impreso con una impresora 3D (Ver \href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/cuboconLM6UU_2demarzo.STL}{\faCubes$_{2}$}) que realizó los desplazamientos lineales al deslizarse sobre las barras de acero.
-
-La resolución espacial mecánica es el mínimo desplazamiento de cada uno de los ejes de la platina. La misma viene dada teóricamente por la siguiente ecuación:
-\begin{equation}
-\text{Resolución} [\mu m / paso] = \frac{\text{\textit{Pitch} del ACME}}{\text{\# de pasos por revolución del motor}} = \frac{2 mm}{400 pasos} = \frac{5 \mu m}{paso}
-\end{equation}
-
-Además esta resolución fue modificada por medio de la electrónica que controla los motores paso a paso implementando una técnica que se conoce como \textit{microstepping} \cite{7806244}. Esta técnica permite al motor realizar rotaciones de ángulos menores al paso mínimo del motor, con lo cual se mejora la resolución ya que se puede subdividir un paso completo del motor en 2,4,8,16 e incluso hasta en 32 pasos (teóricos). Al mismo tiempo se reduce el ruido del motor y el movimiento del mismo se suaviza. La técnica es impelementada por el controlador de corriente que utiliza un algoritmo que a su salida envía una modulación sinusoidal discretizada de la corriente, donde cada paso de dicha modulación sinusoidal consiste de un micropaso y el período de la señal es igual al paso completo original del motor.
-
-Los dos controladores de corriente de los motores paso a paso más populares con la capacidad de aplicar \textit{microstepping} son el \href{https://www.pololu.com/product/2133}{DRV8825}(hasta 32 micropasos y 2.5 A) y el \href{https://www.pololu.com/product/1182}{A4988} (hasta 16 micropasos y 2 A). Se eligió finalmente para la platina el \textit{driver} A4988 (Ver Figura \ref{fig:elec} (a)) y se limitó la máxima corriente que podía entregar de acuerdo al consumo observado de los motores en condiciones de operación normales, ajustando el potenciómetro (Ver Figura \ref{fig:elec} (a)) a partir de la medición de una tensión de referencia de acuerdo a las especificaciones del manual del fabricante \cite{a4988}.
-
-\begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.3]{Figs/microespectrometro/a4988.jpg}
-\hfill%
-\includegraphics[scale=0.8]{Figs/microespectrometro/megaramps.jpg}
-\hfill%
-\hfill%
-\caption{(a) Controlador de los motores paso a paso A4988. (b) \href{https://store.arduino.cc/usa/mega-2560-r3}{\textit{Arduino MEGA 2560}} a la derecha en azul y \href{https://reprap.org/wiki/RAMPS_1.4}{\textit{Shield RAMPS 1.4}} a la izquierda en rojo.}
-\label{fig:elec}
-\end{figure}
-
-Se utilizó un \href{https://store.arduino.cc/usa/mega-2560-r3}{\textit{Arduino MEGA 2560}} para controlar la lógica de la platina vía el puerto USB de una computadora y se le montó a los pines hembra del arduino un \textit{shield} \href{https://reprap.org/wiki/RAMPS_1.4}{\textit{RAMPS 1.4}} donde se colocaron los \textit{drivers} de los motores, las conexiones de los finales de carrera y el \textit{joystick} (Ver Figura \ref{fig:elec} (b)). La RAMPS fue alimentada de forma independiente con una fuente de tensión.
-
-Antes de realizar la compra de los componentes necesarios para montar el primer eje se determinó el recorrido total de cada uno de los grados de libertad de la platina de acuerdo a la oferta de los proveedores. Por ejemplo, existen comercialmente distintas longitudes de varillas roscadas ACME y se eligió una longitud de la misma de 500 mm, de forma tal que al cortar dicha varilla se pueda obtener las dos varillas necesarias para cada eje de la platina, cada una de 250 mm de largo. El mismo razonamiento fue aplicado a las varillas de acero de 6 mm de diámetro, para las cuales se compraron dos varillas de 1 metro que cada una fue cortada en cuatro partes de 250 mm cada una. De esta manera, se realizó un diagrama con las dimensiones y la longitud de recorrido estimada de uno de los ejes de la platina con el software \textit{Solidworks} como se muestra en la Figura \ref{fig:dimejee}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.9]{Figs/microespectrometro/dimensio.png}
-	\caption{Estimación del recorrido de uno de los ejes de la platina.}
-	\label{fig:dimejee}
-\end{figure}
-
-El objetivo de esta etapa del prototipado fue el de evaluar la factibilidad y aplicabilidad de la platina para poder desplazar al filtro respecto de la fuente de luz y del espectrómetro de manera tal de poder obtener una medición del espectro en cualquier región del filtro deseada. Luego de realizar el dimensionamiento, se decidió montar el eje $\textit{x}$ de la platina únicamente. En la Figura \ref{fig:dis} (a) se muestra el diseño del eje $\textit{x}$ realizado con el software libre \textit{Fusion 360} y en la Figura \ref{fig:dis} (b) se muestra un montaje preliminar de dicho eje\footnote{Se imprimió inicialmente una porción del cubo diseñado como prueba preliminar, ya que la impresión del cubo completa podía tomar más de 10 horas. Resultó importante realizar pruebas por etapas para reducir los tiempos de prototipado.}. 
-
-\begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.83]{Figs/microespectrometro/diseo1eje.png}
-\hfill%
-\includegraphics[scale=0.073]{Figs/microespectrometro/1ejemontado.jpg}
-\hfill%
-\hfill%
-\caption{(a) Diseño de las piezas 3D del eje $\textit{x}$ de la platina [\href{https://github.com/jrr1984/open_frame_XYStage/blob/master/3dprintedparts/STLs/Ejexpreliminar.stl}{\faCubes$_{3}$}]. (b) Montaje preliminar del eje $\textit{x}$ de la platina.}
-\label{fig:dis}
-\end{figure}
-
-
-Luego de optimizar el diseño y montaje del primer eje, se montó el eje $\textit{y}$ compuesto por las mismas piezas 3D que el eje $\textit{x}$, como se muestra en la Figura \ref{fig:2e}. En este sentido se hace notar que el diseño propuesto resultó una solución completamente modular y que la configuración de los ejes aquí adoptada puede ser modificada a otras de acuerdo a las necesidades del usuario final. 
- 
-\begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.83]{Figs/microespectrometro/scanningstage.jpg}
-\hfill%
-\includegraphics[scale=0.13]{Figs/microespectrometro/2ejesmontaje.jpeg}
-\hfill%
-\hfill%		
-\caption{(a) Diseño preliminar de los dos ejes de la platina. (b) Montaje final de la de la platina.}
-\label{fig:2e}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\singlespacing
-\subsubsection{\textit{Software} de control de la platina \href{https://github.com/jrr1984/open\_frame\_XYStage}{\faGithub}$_{3.2.2}$  y calibración preliminar}
-\label{sec:softcalib}
-\spacing{1.5}
-
-\hspace{0.5cm}Se desarrolló un \textit{software} de control de la platina que fue integrado al \textit{software} de control del espectrómetro y de la cámara. En [\cite{campbells},\href{https://github.com/raacampbell/openstage/tree/master/serialInterfaceScripts}{\faGithub$_{3.2.2.2}$}] se desarrollaron instrucciones específicas de comandos a ejecutar vía el puerto serie al que se conectó el arduino que controla la lógica de la platina, por medio de los lenguajes de programación \textit{Matlab}, \textit{LabView} y \textit{python}. En el proyecto \textit{open source} \href{https://www.youtube.com/watch?v=Lm8oprDhAnQ}{RDL} [\href{https://forum.arduino.cc/index.php?topic=469343}{\faCode}] se desarrolló un \textit{software} de comandos muy exhaustivo a ejecutar únicamente por el puerto serie de arduino.
-
-El \textit{software} de control de la platina fue organizado como se muestra en la Figura \ref{fig:cnpl}. A nivel del microcontrolador las instrucciones a los \textit{drivers} que regulan la corriente de los motores y le envían los pulsos PWM para que realicen la cantidad de pasos elegidos fueron desarrolladas con la librería de \textit{Arduino} \href{https://www.airspayce.com/mikem/arduino/AccelStepper/}{AccelStepper}. Dichas instrucciones escritas en el lenguaje de programación propio de arduino incluyen métodos para asignarle las posiciones de los motores, para leer las posiciones de los motores, para prenderlos, apagarlos, determinar si llegaron a la posición asignada ó no, para ponerlos en la posición inicial de la platina, para leer los finales de carrera, etc. Todos los métodos escritos se pueden ver en el \textit{header} del \textit{driver} desarrollado [\href{https://github.com/jrr1984/open_frame_XYStage/tree/master/ino_main}{\faGithub$_{3.2.2.3}$}].
-Ahora bien, para poder integrar el control de la platina con el espectrómetro y con la cámara se tuvo que establecer una comunicación por medio de mensajes a través del puerto serie de la computadora. Para ello se utilizó la librería \href{https://github.com/kroimon/Arduino-SerialCommand}{\textit{SerialCommand}} que permitió unir la lógica a nivel del microcontrolador del \textit{Arduino} con la lógica a nivel del procesador de la computadora. De esta manera, en el lenguaje de programación \textit{python} se escribió una clase [\href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/XYStage.py}{\faGithub$_{3.2.2.4}$}] con los mismos métodos de control de la platina escritos con la librería \textit{AccelStepper} en \textit{Arduino} de forma tal de enviar mensajes al puerto serie de la computadora que el \textit{Arduino} se encontraba constantemente escuchando. Así por ejemplo, desde \textit{python} se envía un mensaje al puerto serie para mover el motor del eje $\textit{x}$ una distancia de 2 mm, el \textit{Arduino} escucha ese mensaje y le envía los pulsos PWM al motor para realizar el desplazamiento. En la Sección \ref{sec:softadq} se explica el \textit{software} desarrollado para automatizar las mediciones que integró el control de la platina con el espectrómetro y la cámara.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/diagflujoplatina.png}
-	\caption{Diagrama de la comunicación vía el puerto serie de la computadora entre el microcontrolador \textit{Arduino} y el proceso principal de la computadora programado en \textit{python} en el que se integró el espectrómetro y la cámara.}
-	\label{fig:cnpl}
-\end{figure}
-
-Se realizó una calibración preliminar de la platina para determinar las incertezas de su resolución (mínimo paso de desplazamiento) que fueron luego utilizadas en la medición de la resolución espacial del microespectrómetro (Ver Sección \ref{sec:focoresol}). En el trabajo de \cite{schaa} realizaron una calibración de la platina adquiriendo sucesivas imágenes de una muestra calibrada de distancias (1951 USAF \textit{test target}), midiendo el desplazamiento relativo respecto de un punto de referencia situado en la imagen inicial adquirida. Al momento de escribir esta tesis se iba a realizar la calibración con el mismo método. El \textit{software} de adquisición ya se había desarrollado [\href{https://github.com/jrr1984/defectsGUI/blob/master/views.py}{\faGithub$_{3.2.4.2}$}] y ya se contaba con una pieza 3D impresa que hacía de soporte de una regla calibrada de microscopía colocada sobre un portamuestra, para realizar la calibración de la platina.
-
-Ahora bien, en primer lugar se midió la precisión y exactitud de los desplazamientos de la platina en el orden de los milímetros. Para ello, por medio del \textit{software} desarrollado se asignaron posiciones a cada uno de los ejes de la platina y se comparó el valor medido con una regla metálica calibrada en milímetros con los valores asignados por \textit{software}. Se observó que la platina tenía exactitud en milímetros, ya que no se encontraron diferencias entre los valores de las posiciones asignadas y las posiciones medidas. Y, de la repetición de las mediciones se verificó su precisión en milímetros ya que las mediciones no presentaron dispersiones en los valores obtenidos.
-
-Para medir la precisión y exactitud en el orden de los micrones, se utilizaron las mediciones del microespectrómetro como calibración preliminar. Se eligió la resolución teórica de 1 $\mu m$ del desplazamiento de cada eje de la platina en la adquisición de barridos de ciertas regiones del filtro con el microespectrómero. Dicha resolución representa el desplazamiento mínimo que cada eje de la platina podría realizar y su valor fue elegido considerando un compromiso entre el tiempo de duración de un barrido y la resolución del mismo ya que en cada paso de la platina se realiza una medición individual.
-En primer lugar se utilizó como patrón de calibración la longitud del cromo que separa dos bandas del filtro medida con el microscopio Zeiss (Ver Sección \ref{subs:compl}). En la Figura \ref{fig:barrcromoo} se muestra el barrido del cromo entre las bandas roja y pancromática realizado con un paso de 1 $\mu m$.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{Figs/microespectrometro/barridocromocalib.png}
-	\caption{Gráfico de la intensidad total detectada en función de la posición medida del filtro en un barrido lineal del cromo que separa las bandas roja de la pancromática.}
-	\label{fig:barrcromoo}
-\end{figure}
-
-En el gráfico de la Figura \ref{fig:barrcromoo} se muestra la intensidad total detectada, esto es la suma de la intensidad detectada para cada longitud de onda del espectro medido, en función de la posición del filtro. El barrido fue lineal, es decir en una dimensión. Se asignó por \textit{software} a la platina un desplazamiento de 1000 $\mu m$, con un paso de 1 $\mu m$. En cada paso de la platina el microespectrómetro obtuvo una medición del espectro. Los espectros no fueron normalizados con la fuente de luz y es por eso que se puede observar un mayor valor de intensidad total para la banda pancromática que para la banda roja. El valor del cromo que separa la banda roja de la pancromática medido con el \textit{software} Fiji de una imagen completa del filtro adquirida con el microscopio Zeiss fue de $( 516 \pm 10)~ \mu m$.
-Para determinar el valor medido de la longitud del cromo con el microespectrómetro se ajustó cada transición de una banda al cromo con la función error, \textit{erf(x)}, que es la integral del perfil gaussiano del haz de luz en una dimensión. La función utilizada para el ajuste fue, para la transición izquierda y derecha respectivamente:
-\begin{equation}
-\text{transición\_izquierda} (x,a,b,c) = \frac{a}{2}\hspace{2pt}.\hspace{2pt}erf\left(\sqrt{2}\hspace{1pt}.\hspace{1pt}\frac{(x-b)}{c}\right)
-\label{eq:iz}
-\end{equation}
-\begin{equation}
-\text{transición\_derecha} (x,a,b,c) = \frac{a}{2}\hspace{2pt}.\hspace{2pt}\left(1+erf\left(\sqrt{2}\hspace{1pt}.\hspace{1pt}\frac{(x-b)}{c}\right)\right),
-\label{eq:der}
- \end{equation} para la transición izquierda [\ref{eq:iz}] y derecha [\ref{eq:der}] respectivamente. Así por ejemplo para el barrido de la Figura \ref{fig:barrcromoo} se ajustaron ambas transiciones como se muestra en las Figuras \ref{fig:ajustess} (a) y (b). En azul se muestra el resultado del ajuste y los puntos rojos fueron datos eliminados de cada ajuste.
-\begin{figure}[H]
-%\centering
-\hfill%
-\includegraphics[scale=0.25]{Figs/microespectrometro/ajustebarrladoizq.png}
-\hfill%
-\includegraphics[scale=0.25]{Figs/microespectrometro/ajustebarrladoder.png}
-\hfill%
-\hfill%
-\caption{(a) Ajuste de los datos de la transición de la banda roja al cromo por una función \textit{erf(x)}. (b) Ajuste de los datos de la transición del cromo a la banda pancromática por una función \textit{erf(x)}.}
-\label{fig:ajustess}
-\end{figure}
-
-A partir de los parámetros del ajuste se determinó la longitud medida del cromo, $l_{cromo}$ de la siguiente manera:
-\begin{equation}
-l_{cromo} = (b_{der} - c_{der}) - (b_{izq} + c_{izq}),
-\end{equation}
-donde $b_{izq}, c_{izq}, b_{der} yc_{der}$ son los parámetros del ajuste de la transición entre la banda roja y el cromo (izq) y entre el cromo y la banda pancromática (der). Así, para el barrido que se muestra en la Figura \ref{fig:barrcromoo} se obtuvo una longitud del cromo igual a 540 micrones, con lo cual para esta medición la diferencia entre el valor medido con el microespectrómetro y el valor tomado como referencia medido con el Zeiss, fue del 5\%.
-
-En esta sección se describió la platina desarrollada para poder caracterizar al filtro en cualquier punto del mismo y con la suficiente resolución como para poder muestrear correctamente la resolución óptica del microespectrómetro, que se explica en la Sección \ref{sec:caractequipo}. En el Apéndice \ref{chap:platine} se muestra un resumen de las características principales de la platina desarrollada y las futuras mejoras que serán implementadas.
-
+En el Apéndice \ref{chap:platine} se explican los detalles del desarrollo e implementación de la platina.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -624,33 +461,26 @@ La medición de los espectros de transmisión de cada banda resultó fundamental
 
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etc., pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para cada longitud de onda, se puede obtener el espectro de transmisión.
 
-Con el objetivo de determinar las inhomogeneidades del filtro, se caracterizaron en primer lugar los defectos del tipo manchas  (Ver Figura \ref{fig:defectos} (b)). En la Figura \ref{fig:barinted} se muestra el barrido lineal realizado de 150 $\mu m$, con un paso de 1 $\mu m$, desde la banda azul hasta el cromo atravesando un defecto de transmisión o mancha. En la imagen de la Figura \ref{fig:batod} se señala con un círculo blanco dicha mancha. Del ajuste de la transición entre la banda azul y el cromo se determinó que dicho barrido fue realizado con una resolución espacial de $(14 \pm 2)~\mu m$, resultado que no se solapa con el esperado teóricamente de 10 $\mu m$.
+Con el objetivo de determinar las imperfecciones del filtro, se caracterizaron en primer lugar los defectos del tipo manchas. En la imagen de la Figura \ref{fig:barinted} \textbf{A} se muestra una imagen de una mancha adquirida con la cámara del equipo desarrollado. En la Figura \ref{fig:barinted} \textbf{B} se muestra el gráfico de la intensidad total detectada en función de la posición del filtro medida, para un barrido lineal realizado de 150 $\mu m$, con un paso de 1 $\mu m$, desde la banda azul hasta el cromo atravesando una mancha. Del ajuste de la transición entre la banda azul y el cromo se determinó que dicho barrido fue realizado con una resolución espacial de $(14 \pm 2)~\mu m$, resultado que no se solapa con el esperado teóricamente de 10 $\mu m$.
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/barridolamancha.png}
-	\caption{Barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando el defecto que se señala en la imagen.}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/manchacondetalles.png}
+	\caption{\textbf{A}: Imagen adquirida con la cámara asociada al barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando una mancha. \textbf{B}: Barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando el defecto que se señala en la imagen.}
 	\label{fig:barinted}
 \end{figure}
 
- \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{Figs/microespectrometro/barridoenzdefecto.png}
-	\caption{Imagen adquirida con la cámara asociada al barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando un defecto de transmisión ó mancha que se señala en la imagen.}
-	\label{fig:batod}
-\end{figure}
 
-En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en simultáneo de los puntos señalados en el gráfico de la Figura \ref{fig:barinted}, para los casos del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda, del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. Se hace notar que se determinó experimentalmente que este defecto de transmisión ó mancha no modifica la signatura espectral, es decir la forma funcional del espectro sino que produce una merma en la intensidad detectada en la banda, de acuerdo a la resolución espacial con la que fue medido. 
+En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en simultáneo de los puntos señalados con flechas en el gráfico de la Figura \ref{fig:barinted} \textbf{B}, para los casos del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda, del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. 
 
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/variacionintensidaddefecto.png}
-	\caption{Gráficos de los espectros de transmisión superpuestos de los puntos del barrido señalados en la Figura \ref{fig:barinted}, asociados al máximo de intensidad del barrido detectado de la banda considerado el 100\% y al 75\% y 60\% de transmisión respecto de dicho máximo, respectivamente.}
+	\caption{Gráficos de los espectros superpuestos de los puntos del barrido señalados en la Figura \ref{fig:barinted}, asociados al máximo de intensidad del barrido detectado de la banda considerado el 100\% y al 75\% y 60\% de transmisión respecto de dicho máximo, respectivamente. Los espectros graficados muestran la intensidad detectada en función de la longitud de onda, es decir no se normalizó el espectro medido con el espectro de la fuente de luz.}
 	\label{fig:merrmmin}
 \end{figure}
 
-Se podría tomar como hipótesis para un futuro trabajo que las manchas influyen en las imágenes multiespectrales adquiridas con las cámaras satelitales de forma tal que los valores de intensidad de los píxeles de la cámara que estén en la misma posición que este tipo de defectos presentes en el filtro tendrían una merma en su valor original, produciendo una distorsión del espectro adquirido.
-
+Se determinó experimentalmente que esta mancha no modifica la huella espectral de la banda del filtro, es decir la forma funcional del espectro de diseño sino que produce una merma en la intensidad detectada en la banda, de acuerdo a la resolución espacial con la que fue medido. Ahora bien, se podría tomar como hipótesis para un futuro trabajo que las manchas influyen en las imágenes hiperespectrales adquiridas con las cámaras satelitales de forma tal que los valores de intensidad de los píxeles de la cámara que estén en la misma posición que este tipo de defectos presentes en el filtro tendrían una merma en la componente espectral asociada a la banda del filtro, produciendo una distorsión del espectro adquirido en una adquisición completa de una escena espectral. Para el caso de la adquisición de imágenes multiespectrales satelitales estas manchas se hacen presentes directamente en los píxeles de las imágenes capturadas ya que el filtro se encuentra posicionado en el plano focal del sensor de imagen como se explicó en la Introducción.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -659,18 +489,19 @@ Se podría tomar como hipótesis para un futuro trabajo que las manchas influyen
 \label{sec:defctag}
 \spacing{1.5}
 
-\hspace{0.5cm}En esta última sección se muestran los resultados respecto de los espectros de transmisión de los huecos (Ver Figura \ref{fig:defectos} (a)). En particular, se muestran un barrido en dos dimensiones y un barrido lineal del hueco más grande del filtro (Ver \ref{fig:defectos} (a)) detectado en el Capítulo \ref{chap:zeiss}. Se ubicó dicho hueco a partir de la localización del mismo en las imágenes del \textit{tile scan} realizado en la banda azul. Con el \textit{joystick} de la platina desarrollada se posicionó el filtro con dicho hueco en el centro de la imagen adquirida con la cámara para medir su espectro de transmisión con el microespectrómetro.
+\hspace{0.5cm}En esta última sección se muestran los resultados respecto de los espectros de transmisión de los huecos. En particular, se muestran un barrido en dos dimensiones y un barrido lineal del hueco más grande del filtro (Ver \ref{fig:defectos} \textbf{A}) detectado en el Capítulo \ref{chap:zeiss}. Se ubicó dicho hueco a partir de la localización del mismo en las imágenes del \textit{tile scan} realizado en la banda azul. Con el \textit{joystick} de la platina desarrollada se posicionó el filtro con dicho hueco en el centro de la imagen adquirida con la cámara para medir su espectro de transmisión con el microespectrómetro.
 
-En las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a) se muestran los resultados de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$, con pasos de 1 $\mu m$ en cada eje, dispuestos en un mapa de colores y un mapa de transmisión respectivamente\footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a) se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. Estas mediciones podrían ser integradas a la interfaz gráfica de visualización desarrollada para facilitar su interpretación (Ver \ref{fig:GUI00}), ya que para cada píxel de la imágenes generadas se puede observar el espectro de transmisión correspondiente. En la Figura \ref{fig:agujeroimg} se muestra una imagen que fue adquirida con la cámara en simultáneo con la adquisición de los espectros de transmisión, donde se puede ver señalado con un círculo rojo el defecto tipo mancha que contiene a un hueco.
+En la Figura \ref{fig:huecoims} \textbf{A} se muestra una imagen adquirida con la cámara del equipo con el hueco recubierto por una mancha que se caracterizó espectralmente. En la Figura \ref{fig:huecoims} \textbf{B} se muestra un mapa de colores del espectro visible de 50 $\mu m$ x 50 $\mu m$, realizado a partir de las mediciones del espectro de transmisión de dicha región, con pasos de 1 $\mu m$ en cada eje, con lo cual cada píxel del mapa de colores indica el espectro medido en cada micrón desplazado por la platina \footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:} y \ref{fig:agujeroimg} (a) se puede observar que la platina presenta problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. 
+
+El mapa de colores de la Figura \ref{fig:huecoims} \textbf{B} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible y en particular de estas mediciones del espectro de transmisión de la banda azul. El espectro de diseño del fabricante de la banda azul sin presencia de defectos se puede observar en la Figura \ref{fig:huecoims} \textbf{C} y está asociado a un píxel de la región medida indicado por una flecha. Ahora bien, se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al hueco ya que se observan en el mapa de colores, píxeles de color blanco que deberían ser de color celeste. En la Figura \ref{fig:huecoims} \textbf{D} se muestra el espectro del píxel recuadrado de la Figura \ref{fig:huecoims} \textbf{B} y 
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1.0]{Figs/microespectrometro/imhueco.png}
-	\caption{Mapa de colores del espectro visible de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$.}
-	\label{fig:mapargbag}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/huecocondetalles.png}
+	\caption{\textbf{A}: Imagen de la banda azul que contiene al hueco caracterizado, adquirida con la cámara del equipo. \textbf{B}: Mapa de colores del espectro visible de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$. \textbf{C}: Espectro de la banda azul en una región medida sin defectos detectados, es decir el espectro de diseño del fabricante del filtro. \textbf{D}:Espectro medido en el centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a). El espectro graficado muestra la intensidad detectada en función de la longitud de onda, es decir no se normalizó el espectro medido con el espectro de la fuente de luz.}
+	\label{fig:huecoims}
 \end{figure}
 
-El mapa de colores de la Figura \ref{fig:mapargbag} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible. Se puede observar que el espectro de transmisión no es homogéneo en la región que contiene al hueco (señalada con el círculo blanco), ya que se observan píxeles de color blanco que deberían ser de color celeste. Al mismo tiempo se observan píxeles azules de mayor intensidad que están asociados a la mancha que recubre al hueco. 
 
 En la Figura \ref{fig:agujeroimg} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al hueco que se observa en la imagen de la Figura \ref{fig:agujeroimg} (b).
  \begin{figure}[H]
@@ -681,7 +512,7 @@ En la Figura \ref{fig:agujeroimg} se muestra el mapa de transmisión de la regi�
 	\includegraphics[scale=0.6]{Figs/microespectrometro/imagujero.png}
 	\hfill%
 	\hfill%
-	\caption{(a) Mapa de transmisión de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$. (b) Imagen de la banda azul que contiene al hueco caracterizado, adquirida con la cámara del equipo.}
+	\caption{(a) Mapa de transmisión de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$. (b) }
 	\label{fig:agujeroimg}
 \end{figure}
 
@@ -698,7 +529,7 @@ En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociado
 \begin{figure}[H]
 	\centering
 \includegraphics[width=1.0\textwidth]{Figs/microespectrometro/espectroagback.png}
-	\caption{Espectro de transmisión del centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a).}
+	\caption{Espectro de transmisión del centro del hueco, asociado al punto señalado con un círculo rojo en el gráfico de la Figura \ref{fig:perfilbacka} y a los píxeles recuadrados en rojo de las Figuras \ref{fig:mapargbag} y \ref{fig:agujeroimg} (a). El espectro graficado muestra la intensidad detectada en función de la longitud de onda, es decir no se normalizó el espectro medido con el espectro de la fuente de luz.}
 \label{fig:espectbag}
 \end{figure}
 
@@ -710,7 +541,7 @@ En la Figura \ref{fig:perfilbacka} se muestra el perfil de intensidades asociado
 \includegraphics[scale=0.5]{Figs/microespectrometro/zoomdistorsionazul.png}
 \hfill%
 \hfill%
-\caption{(a) Espectros de transmisión de los puntos señalados con un círculo de colores rojo, negro y celeste en la Figura \ref{fig:perfilbacka}. (b) \textit{Zoom} del espectro de transmisión para la región de longitudes de onda entre los 520 y los 890 nm.}
+\caption{(a) Espectros de transmisión de los puntos señalados con un círculo de colores rojo, negro y celeste en la Figura \ref{fig:perfilbacka}. (b) \textit{Zoom} del espectro de transmisión para la región de longitudes de onda entre los 520 y los 890 nm. Los espectros graficados muestran la intensidad detectada en función de la longitud de onda, es decir no se normalizó el espectro medido con el espectro de la fuente de luz.}
 \label{fig:esto}
 \end{figure}
 
