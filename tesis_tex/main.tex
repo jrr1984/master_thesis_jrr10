@@ -1,0 +1,259 @@
+\documentclass{ctuthesis}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{lipsum}    
+\usepackage{floatrow}
+\usepackage{xargs}
+\usepackage{setspace}                  
+\usepackage[pdftex,dvipsnames,usenames,nonamebreak,table]{xcolor}
+\usepackage{booktabs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}	
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+\definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
+\def\justifying{%
+	\rightskip=0pt
+	\spaceskip=0pt
+	\xspaceskip=0pt
+	\relax
+}
+
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}		
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{fontawesome5}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+%\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\tcbset{tab2/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+		colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!40!white,
+		coltitle=black,center title}}
+	
+
+
+
+%\usepackage{csquotes}
+%\renewcommand*{\labelalphaothers}{}
+
+\newtcolorbox{warningbox}[1][]{%
+  enhanced jigsaw, % better frame drawing
+  borderline west={2pt}{0pt}{red}, % straight vertical line at the left edge
+  sharp corners, % No rounded corners
+  boxrule=0pt, % no real frame,
+  fonttitle={\large\bfseries},
+  colframe = {red!25},  
+  colback  = {red!10},
+  coltitle={red!20!black},  % Black colour for title
+  attach title to upper, % Move the title into the box
+  #1
+}
+
+
+\ctusetup{
+	xdoctype = B,
+	xfaculty = FCEyN,
+	mainlanguage = czech,
+	titlelanguage = czech,
+	title-english = {},
+	title-czech = {Construcción e implementación de un sistema integral de 
+		caracterización de filtros ópticos utilizados en 
+		cámaras 
+		multiespectrales.},
+	department-czech = {Departamento de Física},
+	author = {Juan Reto Reynal},
+	supervisor = {Prof. Dr. Hernán Grecco},
+	supervisor-address = {Laboratorio de Electrónica Cuántica, DF, FCEyN, UBA.},
+	month = 5,
+	year = 2020,
+}
+
+
+\ctuprocess
+
+
+
+
+
+\def\ctucaptionsenglish{
+	\def\appendicesname{Appendices}
+	\def\thanksname{Carátula}
+	\def\abstractname{Abstract}
+	\def\declarationname{}
+	\def\listfigurename{Figures}
+	\def\listtablename{Tables}
+	\def\supervisorname{Supervisor}
+	\def\supervisorspecialistname{Supervisor--specialist}
+	\def\fieldofstudyname{Field\ of\ study}
+	\def\subfieldofstudyname{Subfield}
+	\def\specificationname{Project\ Specification}
+	\def\keywordsname{Keywords}
+	\def\titletranslationname{Title\ translation}
+}
+
+\def\ctucaptionsczech{
+	\def\appendicesname{Apéndice}
+	\def\thanksname{}
+	\def\contentsname{Índice}
+	\def\abstractname{Resumen}
+	\def\declarationname{}
+	\def\listfigurename{Índice de Figuras}
+	\def\listtablename{Índice de Tablas}
+	\def\supervisorname{Director}
+	\def\supervisorspecialistname{\v Skolitel--specialista}
+	\def\fieldofstudyname{Obor}
+	\def\subfieldofstudyname{Zam\v e\v ren\'i}
+	\def\specificationname{Zad\'an\'i\ pr\'ace}
+	\def\keywordsname{Palabras clave}
+	\def\titletranslationname{P\v reklad\ n\'azvu}
+}
+
+\newcommand\Chapter[2]{\chapter[#1]{#1\\[1ex]\large#2}}
+
+\begin{thanks}
+	
+	\raggedright
+	\textsc{TEMA:} Construcción e implementación de un sistema integral de caracterización de filtros
+	
+	 \hspace{1.6cm}ópticos utilizados en cámaras multiespectrales.
+	
+	\bigskip
+	
+	\textsc{ALUMNO:} Juan Reto Reynal
+	
+	\bigskip
+	
+	\textsc{L.U. N$^{\circ}$:} 777/12
+	
+	\bigskip
+	
+	\textsc{LUGAR DE TRABAJO:} LEC, Departamento de Física, FCEyN, UBA.
+	
+	
+	\bigskip
+	
+	\textsc{DIRECTOR DEL TRABAJO:} Dr. Hernán E. Grecco
+	
+	\bigskip
+	
+	\textsc{FECHA DE INICIACIÓN:} 6 de Mayo de 2019
+	
+	\bigskip
+	
+	\textsc{FECHA DE FINALIZACIÓN:} 17 de Mayo de 2020
+	
+	\bigskip
+	
+	{\large FECHA DE EXAMEN: }
+	
+	\bigskip
+	
+	\textsc{INFORME FINAL APROBADO POR:}
+	\vspace{2cm}
+	
+	\begin{center}
+		\begin{tabular}{lll}
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Autor:  & \hspace{2cm} & Jurada\ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+			\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\
+			&& \\
+			&& \\
+			&& \\
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Director: \ \ \ \ \ \ \ \ \ \ \ \ \  & \hspace{2cm} & Jurado\\
+			&& \\	
+			&& \\
+			&& \\
+			\cline{1-1}\cline{1-1}\cline{3-3}\cline{3-3}%
+			Profesora: Silvina Ponce Dawson  & \hspace{2cm} & Jurado\\
+			&& \\
+			&& \\
+			&& \\
+		\end{tabular}	
+	\end{center}
+\justifying
+\end{thanks}
+
+\singlespacing
+\begin{declaration}
+\spacing{1.5}
+
+\hspace{0.5cm}En la tesis de licenciatura de Agustina Pose \cite{Pose2017}, dirigida 
+por Hernán Grecco quien también dirigió esta tesis, ambos evaluaron un prototipo 
+de cámaras multi e hiperespectrales para uso satelital junto a la empresa Satellogic. Tras 
+la realización de pruebas y mediciones en tierra, se aprobó la 
+prueba de concepto del prototipo y se lo adaptó a un diseño robusto. La 
+cámara hiperespectral diseñada es hoy una de las cargas útiles (ó 
+\textit{payloads}) a bordo de los satélites argentinos NewSat 1 y NewSat 2 
+(alias Fresco y Batata), puestos en órbita el 30 de Mayo de 2016, construidos 
+por la empresa Satellogic.
+
+\hspace{0.5cm}En la presente tesis se propuso una continuación de dicho trabajo, en colaboración con la empresa Satellogic, a partir del desarrollo de un 
+sistema integral de caracterización de los filtros de interferencia de banda 
+que son utilizados en las cámaras multiespectrales. Estos filtros permiten el 
+paso de las longitudes de onda que se desean capturar con el sensor 
+de detección principal de la cámara que sólo detecta intensidad lumínica. En consecuencia, la caracterización de los 
+filtros resulta fundamental para garantizar la calidad óptica de las imágenes 
+capturadas. 
+
+\end{declaration}
+
+
+\newcommand{\mychapter}[2]{
+    \setcounter{chapter}{#1}
+    \setcounter{section}{0}
+    \chapter*{#2}	
+}
+
+
+\begin{document}	
+
+\maketitle
+
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\interfootnotelinepenalty=10000
+
+
+
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{1em}
+
+%\include{caps/introd}
+
+%\include{caps/zeiss}
+
+\include{caps/microesp}
+
+%\include{caps/concls}
+
+
+%\include{caps/threshs}
+
+%\include{caps/platine}
+
+
+\singlespacing
+\justifying
+\renewcommand\bibname{Referencias Bibliográficas}
+\thispagestyle{myheadings}
+\bibliographystyle{apalike}
+\bibliography{refs}
+\singlespacing
+
+
+%\include{caps/gitrefs}
+
+
+\end{document}
