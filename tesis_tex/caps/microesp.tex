@@ -333,7 +333,7 @@ Luego de poner en foco la cámara se realizó el \textit{mapeo} de la región de
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/diagopticomapcamspec.png}
+	\includegraphics[scale=0.25]{Figs/microespectrometro/diagopticomapcamspec.png}
 	\caption{Diagrama óptico del \textit{mapeo} del espectrómetro con la cámara.}
 	\label{fig:caminmapp}
 \end{figure}
@@ -344,7 +344,7 @@ Luego de realizar el \textit{mapeo}, el equipo quedó configurado de forma tal d
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{Figs/microespectrometro/mapspectrometrocamera.png}
+	\includegraphics[scale=0.25]{Figs/microespectrometro/mapspectrometrocamera.png}
 	\caption{Visualización en la cámara de la reflexión del haz de luz enfocado sobre el filtro.}
 	\label{fig:refhazz}
 \end{figure}
@@ -368,18 +368,16 @@ Luego de realizar el \textit{mapeo}, el equipo quedó configurado de forma tal d
 
 \hspace{0.5cm}En esta sección se explica el procedimiento general realizado para medir el espectro de transmisión de cada una de las bandas espectrales del filtro. Luego de poner en foco el microespectrómetro, con el \textit{joystick} de la platina se desplazó al filtro para adquirir el espectro de cada una de sus bandas. Para eliminar el ruido de fotones propio del sensor del CCD del espectrómetro y otras fuentes de luz del laboratorio, se debe adquirir una medición con la fuente de luz que incide sobre el filtro apagada y con todas las luces del laboratorio apagadas además de recubir el equipo con la cartulina \textit{foam} negra. Dicho ruido de fondo puede ser luego eliminado de las mediciones del espectro de las bandas del filtro, o bien incluyéndolo como argumento del método \textit{take\_data}, \textit{use\_background}, del \textit{driver} de control del espectrómetro (\href{https://github.com/jrr1984/open\_frame\_XYStage/blob/master/XYStageAndSpec.py}{\faGithub$_{3.4.1.2}$}) ó bien tomando la diferencia entre el espectro de la banda medido y el ruido de fondo adquirido.
 
-Para obtener el espectro de transmisión de cada banda se debe normalizar cada medición con el espectro de la fuente de luz utilizada, habiendo empleado los mismos tiempos de integración. La normalización es implementada realizando el cociente entre la medición del espectro de una banda y el espectro de la fuente de luz. Al mismo tiempo, las mediciones del espectro de cada banda deben ser realizadas con una buena relación señal-ruido.
-
-En las Figuras \ref{fig:bnir}, \ref{fig:broja}, \ref{fig:bpanc}, \ref{fig:bverde} y \ref{fig:bazul} se muestran los espectros de transmisión de las bandas NIR, roja, pancromática, verde y azul del filtro respectivamente. Al mismo tiempo en la Figura \ref{fig:batod} se muestran los espectros de todas las bandas superpuestos a excepción de la banda pancromática.
+Para obtener el espectro de transmisión de cada banda se debe normalizar cada medición con el espectro de la fuente de luz utilizada, habiendo empleado los mismos tiempos de integración. La normalización es implementada realizando el cociente entre la medición del espectro de una banda y el espectro de la fuente de luz. Al mismo tiempo, las mediciones del espectro de cada banda deben ser realizadas con una buena relación señal-ruido. En las Figuras \ref{fig:bnir}, \ref{fig:broja}, \ref{fig:bpanc}, \ref{fig:bverde} y \ref{fig:bazul} se muestran los espectros de transmisión de las bandas NIR, roja, pancromática, verde y azul del filtro respectivamente. Al mismo tiempo en la Figura \ref{fig:batod} se muestran los espectros de todas las bandas superpuestos a excepción de la banda pancromática.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_nirt.png}
+	\includegraphics[scale=1.0]{Figs/microespectrometro/espectro_nirt.png}
 	\caption{Espectro de transmisión de la banda NIR. Tiempo de integración de la luz: 10 ms.}
 	\label{fig:bnir}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/microespectrometro/espectro_rojat.png}
+	\includegraphics[scale=1.0]{Figs/microespectrometro/espectro_rojat.png}
 	\caption{Espectro de transmisión de la banda roja. Tiempo de integración de la luz: 5 ms.}
 	\label{fig:broja}
 \end{figure}
@@ -404,7 +402,7 @@ En las Figuras \ref{fig:bnir}, \ref{fig:broja}, \ref{fig:bpanc}, \ref{fig:bverde
 
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{Figs/microespectrometro/4bandas_conimshowT.png}
+	\includegraphics[scale=1.0]{Figs/microespectrometro/4bandas_conimshowT.png}
 	\caption{Espectro de transmisión de todas las bandas a excepción de la banda pancromática.}
 	\label{fig:batod}
 \end{figure}
@@ -441,8 +439,7 @@ La medición de los espectros de transmisión de cada banda resultó fundamental
 \hspace{0.5cm}Los resultados del algoritmo de detección de los defectos en las imágenes de microscopía adquiridas (Ver Sección \ref{sec:secalg}), permitieron determinar su tamaño, área, etcétera, pero no permitieron establecer si los defectos introducían modificaciones en el espectro de transmisión del filtro. Es decir, las imágenes de microscopía nos brindaron información de un valor de intensidad para cada posición ($\textit{x,y}$) de una cierta imagen de una región del filtro. Con el microespectrómetro se pudo obtener la misma y mayor información pues para cada posición del filtro además de su valor de intensidad que sería la suma de las intensidades detectadas para cada longitud de onda, se puede obtener el espectro de transmisión.
 
 Con el objetivo de determinar las imperfecciones del filtro, se caracterizaron en primer lugar los defectos del tipo manchas. En la imagen de la Figura \ref{fig:barinted} \textbf{A} se muestra una imagen de una mancha adquirida con la cámara del equipo desarrollado. En la Figura \ref{fig:barinted} \textbf{B} se muestra el gráfico de la intensidad total detectada en función de la posición del filtro medida, para un barrido lineal realizado de 150 $\mu m$, con un paso de 1 $\mu m$, desde la banda azul hasta el cromo atravesando una mancha. Del ajuste de la transición entre la banda azul y el cromo se determinó que dicho barrido fue realizado con una resolución espacial de $(14 \pm 2)~\mu m$, resultado que no se solapa con el estimado teóricamente de 10 $\mu m$.
-
- \begin{figure}[H]
+ \begin{figure}
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/manchacondetalles.png}
 	\caption{\textbf{A}: Imagen adquirida con la cámara asociada al barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando una mancha. \textbf{B}: Barrido lineal realizado de 150 $\mu m$, desde la banda azul hacia el cromo atravesando el defecto que se señala en la imagen.}
@@ -450,9 +447,9 @@ Con el objetivo de determinar las imperfecciones del filtro, se caracterizaron e
 \end{figure}
 
 
-En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en simultáneo de los puntos señalados con flechas en el gráfico de la Figura \ref{fig:barinted} \textbf{B}, para los casos del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda, del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. 
+En el gráfico de la Figura \ref{fig:merrmmin} se muestran tres espectros en simultáneo de los puntos señalados con flechas de colores rojo, verde y celeste en el gráfico del barrido lineal de la Figura \ref{fig:barinted} \textbf{B}: se muestran los espectros del máximo de la suma de las intensidades detectadas dentro de la banda azul considerada la señal medida del 100\% de la transmisión de dicha banda y los espectros del 75\% y 60\% de la transmisión respecto de dicho máximo, respectivamente. 
 
- \begin{figure}[H]
+ \begin{figure}
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/variacionintensidaddefecto.png}
 	\caption{Gráficos de los espectros superpuestos de los puntos del barrido señalados en la Figura \ref{fig:barinted}, asociados al máximo de intensidad del barrido detectado de la banda considerado el 100\% y al 75\% y 60\% de transmisión respecto de dicho máximo, respectivamente. Los espectros graficados muestran la intensidad detectada en función de la longitud de onda, es decir no se normalizó el espectro medido con el espectro de la fuente de luz.}
@@ -472,8 +469,6 @@ Se determinó experimentalmente que esta mancha no modifica la huella espectral 
 
 En la Figura \ref{fig:huecoims} \textbf{A} se muestra una imagen adquirida con la cámara del equipo con el hueco recubierto por una mancha que se caracterizó espectralmente. En la Figura \ref{fig:huecoims} \textbf{B} se muestra un mapa de colores del espectro visible de 50 $\mu m$ x 50 $\mu m$, realizado a partir de las mediciones del espectro de transmisión de dicha región, con pasos de 1 $\mu m$ en cada eje, con lo cual cada píxel del mapa de colores indica el espectro medido en cada micrón desplazado por la platina \footnote{Se hace notar que la platina estaba siendo optimizada al momento de escribir esta tesis, a partir de la inclusión de rodamientos lineales LM6LUU en el eje \textit{$y$}. Del barrido en dos dimensiones que se muestra en las Figuras \ref{fig:huecoims} \textbf{B} y \ref{fig:huecotr} \textbf{A} se puede observar que la platina presentaba problemas de repetibilidad de las posiciones, en el orden de los desplazamientos micrométricos.}. 
 
-El mapa de colores de la Figura \ref{fig:huecoims} \textbf{B} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible y en particular de estas mediciones del espectro de transmisión de la banda azul. El espectro de diseño del fabricante de la banda azul sin presencia de defectos se puede observar en la Figura \ref{fig:huecoims} \textbf{C} y está asociado a un píxel de la región medida indicado por una flecha de color celeste. Ahora bien, se determinó que el espectro de transmisión no es homogéneo en la región que contiene al hueco ya que se observaron en el mapa de colores, píxeles de color blanco que deberían ser de color celeste. En la Figura \ref{fig:huecoims} \textbf{D} se muestra el espectro del píxel recuadrado de la Figura \ref{fig:huecoims} \textbf{B} y señalado con las dos flechas negras. Dicho espectro está asociado al espectro del centro del hueco y se puede observar que además del espectro de transmisión de propio de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz.
-
  \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/huecocondetalles.png}
@@ -481,16 +476,20 @@ El mapa de colores de la Figura \ref{fig:huecoims} \textbf{B} indica para cada p
 	\label{fig:huecoims}
 \end{figure}
 
+El mapa de colores de la Figura \ref{fig:huecoims} \textbf{B} indica para cada píxel de la imagen que se generó, es decir para cada medición, el color asociado dentro del espectro visible y en particular de estas mediciones del espectro de transmisión de la banda azul. El espectro de diseño del fabricante de la banda azul sin presencia de defectos se puede observar en la Figura \ref{fig:huecoims} \textbf{C} y está asociado a un píxel de la región medida indicado por una flecha de color celeste. Ahora bien, se determinó que el espectro de transmisión no es homogéneo en la región que contiene al hueco ya que se observaron en el mapa de colores, píxeles de color blanco que deberían ser de color celeste. En la Figura \ref{fig:huecoims} \textbf{D} se muestra el espectro del píxel recuadrado de la Figura \ref{fig:huecoims} \textbf{B} y señalado con las dos flechas negras. Dicho espectro está asociado al espectro del centro del hueco y se puede observar que además del espectro de transmisión de propio de la banda azul hay una fuerte componente espectral que contiene al rango de longitudes de onda de emisión de la fuente de luz.
 
 En la Figura \ref{fig:huecotr} \textbf{A} se muestra el mapa de transmisión de la región adquirida, que consiste de una imagen generada donde en cada píxel se representa el valor de la suma de las intensidades para cada longitud de onda de la medición asociada, normalizada con el máximo valor de dichos valores. Los píxeles negros del mapa de transmisión están asociados a la mancha que recubre al hueco que se observa en la imagen de la Figura \ref{fig:huecoims} \textbf{A}.
 En la Figura \ref{fig:huecotr} se muestra el perfil de intensidades asociados a los valores de la columna $\textit{x}$ = 10 $\mu m$ del mapa de transmisión. El punto de dicho gráfico señalado con un círculo rojo está asociado al píxel de color blanco recuadrado en rojo de la Figura \ref{fig:huecoims} \textbf{B} y al píxel negro recuadrado en rojo de la Figura \ref{fig:huecotr} \textbf{A}. Dicho punto asociado físicamente al centro del hueco presenta una disminución de la intensidad total transmitida del 60\%, respecto de la máxima intensidad transmitida de la banda azul en la que fueron realizadas estas mediciones.
+
+Debido a la presencia de huecos el espectro de transmisión de la banda sufre una distorsión como se observa en los espectros de transmisión graficados en la Figura \ref{fig:huecotr} \textbf{C}. Esto se puede ver en la Figura \ref{fig:huecotr} \textbf{D}, donde se realizó un \textit{zoom} sobre la región de longitudes de onda comprendidas entre los 520 y los 950 nm. Se puede observar que el máximo de intensidad en dicha región espectral medido en el centro del hueco (espectro de color rojo) es aproximadamente 4 veces mayor que el máximo asociado al espectro medido en un punto del filtro que no contiene al hueco (espectro de color celeste).
+
  \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{Figs/microespectrometro/huecotranscondetalles.png}
+	\includegraphics[width=1.0\textwidth]{Figs/microespectrometro/huecotranscondetalles.png}
 	\caption{\textbf{A}: Mapa de transmisión de una medición del espectro de transmisión de una región de 50 $\mu m$ x 50 $\mu m$ que contiene al hueco caracterizado.  \textbf{B}: Perfil de intensidades asociados a los valores de la columna $\textit{x}$ = 10 $\mu m$ del mapa de transmisión. \textbf{C}: Espectros de transmisión de los puntos señalados con círculos de colores rojo, magenta y celeste en el gráfico del perfil de intensidades de la columna $\textit{x}$ = 10 $\mu m$ (asociados a los píxeles recuadrados con su color correspondiente en el mapa de transmisión). \textbf{D}: \textit{Zoom} del espectro de transmisión de la Figura \ref{fig:huecotr} \textbf{C} para la región de longitudes de onda entre los 520 y los 890 nm. Los espectros graficados muestran la intensidad detectada en función de la longitud de onda, es decir no se normalizó cada espectro medido con el espectro de la fuente de luz.}
 	\label{fig:huecotr}
 \end{figure}
 
-Debido a la presencia de huecos el espectro de transmisión de la banda sufre una distorsión como se observa en los espectros de transmisión graficados en la Figura \ref{fig:huecotr} \textbf{C}. Esto se puede ver en la Figura \ref{fig:huecotr} \textbf{D}, donde se realizó un \textit{zoom} sobre la región de longitudes de onda comprendidas entre los 520 y los 950 nm. Se puede observar que el máximo de intensidad en dicha región espectral medido en el centro del hueco (espectro de color rojo) es aproximadamente 4 veces mayor que el máximo asociado al espectro medido en un punto del filtro que no contiene al hueco (espectro de color celeste).
+
 
 Se determinó experimentalmente que la presencia de un hueco modifica la huella espectral de diseño del fabricante de la banda asociada al filtro y además produce una variación de la intensidad de luz total transmitida. Esto último podría tener efectos sobre las imágenes hiperespectrales satelitales adquiridas ya que se detectaría un valor de intensidad distinto al valor de diseño estimado por el fabricante.
