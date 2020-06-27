@@ -2,6 +2,11 @@
 
 [PDF - Tesis de Licenciatura](https://github.com/jrr1984/master_thesis_scratch_and_dig/blob/master/tesis_tex/main.pdf)
 
+[Defensa online realiza vía youtube](https://www.youtube.com/watch?v=dRbFsOl1fco)
+
+[Slides de la defensa](bit.ly/2XpAYxT)
+
+
 Repositorios asociados a este trabajo:
 
 1. [defects_analysis](https://github.com/jrr1984/defects_analysis): Repositorio de los programas de procesamiento de imágenes de microscopía, de algoritmos de detección de defectos por medio de técnicas de thresholding y de análisis cuantitativo de los defectos.
