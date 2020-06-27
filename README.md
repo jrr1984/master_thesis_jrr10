@@ -2,7 +2,7 @@
 
 [PDF - Tesis de Licenciatura](https://github.com/jrr1984/master_thesis_scratch_and_dig/blob/master/tesis_tex/main.pdf)
 
-[Defensa online vía youtube](https://www.youtube.com/watch?v=dRbFsOl1fco)
+[Defensa en youtube](https://www.youtube.com/watch?v=dRbFsOl1fco)
 
 [Slides de la defensa](bit.ly/2XpAYxT)
 
