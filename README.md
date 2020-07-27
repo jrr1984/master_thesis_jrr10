@@ -15,7 +15,7 @@ Repositorios asociados a este trabajo:
 
 3. [open_frame_XYStage](https://github.com/jrr1984/open_frame_XYStage): Repositorio del software de control de la platina de microscopía desarrollada y de la integración del control de un espectrómetro CCS200 de Thorlabs a un software automatizado e implementado con multithreading de mediciones con un microespectrómetro.
 
-4. [defectsGUI](https://github.com/jrr1984/defectsGUI): Repositorio de la interfaz gráfica desarrollada con PyQt5 para visualizar simultáneamente la adquisición espectral de un espectrómetro CCS200 de Thorlbas y de una cámara web LifeCam HD 3000.
+4. [defectsGUI](https://github.com/jrr1984/defectsGUI): Repositorio de la interfaz gráfica desarrollada con PyQt5 para visualizar simultáneamente la adquisición espectral de un espectrómetro CCS200 de Thorlabs y de una cámara web LifeCam HD 3000.
 
 [Sobre el código fuente del latex](https://github.com/jrr1984/master_thesis_jrr10/blob/master/tesis_tex/dependencias.txt)
 
