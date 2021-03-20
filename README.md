@@ -4,7 +4,7 @@
 
 [Defensa en youtube](https://www.youtube.com/watch?v=dRbFsOl1fco)
 
-[Slides de la defensa](bit.ly/2XpAYxT)
+[Slides de la defensa](https://docs.google.com/presentation/d/1aYwiokxg-BN8Q9XJ_8DoCyDGxjy6OldxieSgc9U1yNU/edit?usp=sharing)
 
 
 Repositorios asociados a este trabajo:
